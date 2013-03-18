@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=org.heartlenv.Shell.HotplugSniffer
+Exec=@libexecdir@/heartlenv-shell-hotplug-sniffer
