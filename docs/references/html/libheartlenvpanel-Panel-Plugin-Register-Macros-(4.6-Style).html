@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Panel Plugin Register Macros (4.6 Style)</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<link rel="home" href="index.html" title="Libheartlenvpanel Reference Manual">
+<link rel="up" href="libheartlenvpanel-plugins.html" title="Part II. Panel Plugins">
+<link rel="prev" href="libheartlenvpanel-Panel-Plugin-Register-Macros.html" title="Panel Plugin Register Macros">
+<link rel="next" href="libheartlenvpanel-GObject-Oriented-Panel-Plugin-Registers-Macros.html" title="GObject Oriented Panel Plugin Registers Macros">
+<meta name="generator" content="GTK-Doc V1.17 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="libheartlenvpanel-Panel-Plugin-Register-Macros.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="libheartlenvpanel-plugins.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Libheartlenvpanel Reference Manual</th>
+<td><a accesskey="n" href="libheartlenvpanel-GObject-Oriented-Panel-Plugin-Registers-Macros.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#libheartlenvpanel-Panel-Plugin-Register-Macros-(4.6-Style).synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#libheartlenvpanel-Panel-Plugin-Register-Macros-(4.6-Style).description" class="shortcut">Description</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="libheartlenvpanel-Panel-Plugin-Register-Macros-(4.6-Style)"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libheartlenvpanel-Panel-Plugin-Register-Macros-(4.6-Style).top_of_page"></a>Panel Plugin Register Macros (4.6 Style)</span></h2>
+<p>Panel Plugin Register Macros (4.6 Style) — The 4.6 way of registering plugins that compiled as executables</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="libheartlenvpanel-Panel-Plugin-Register-Macros-(4.6-Style).synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">
+#include &lt;libheartlenvpanel/libheartlenvpanel.h&gt;
+
+#define             <a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros-(4.6-Style).html#XFCE-PANEL-PLUGIN-REGISTER-EXTERNAL:CAPS" title="XFCE_PANEL_PLUGIN_REGISTER_EXTERNAL()">XFCE_PANEL_PLUGIN_REGISTER_EXTERNAL</a> (construct_func)
+#define             <a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros-(4.6-Style).html#XFCE-PANEL-PLUGIN-REGISTER-EXTERNAL-FULL:CAPS" title="XFCE_PANEL_PLUGIN_REGISTER_EXTERNAL_FULL()">XFCE_PANEL_PLUGIN_REGISTER_EXTERNAL_FULL</a>(construct_func,
+                                                         preinit_func,
+                                                         check_func)
+#define             <a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros-(4.6-Style).html#XFCE-PANEL-PLUGIN-REGISTER-EXTERNAL-WITH-CHECK:CAPS" title="XFCE_PANEL_PLUGIN_REGISTER_EXTERNAL_WITH_CHECK()">XFCE_PANEL_PLUGIN_REGISTER_EXTERNAL_WITH_CHECK</a>(construct_func,
+                                                         check_func)
+
+#define             <a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros-(4.6-Style).html#XFCE-PANEL-PLUGIN-REGISTER-INTERNAL:CAPS" title="XFCE_PANEL_PLUGIN_REGISTER_INTERNAL()">XFCE_PANEL_PLUGIN_REGISTER_INTERNAL</a> (construct_func)
+#define             <a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros-(4.6-Style).html#XFCE-PANEL-PLUGIN-REGISTER-INTERNAL-WITH-CHECK:CAPS" title="XFCE_PANEL_PLUGIN_REGISTER_INTERNAL_WITH_CHECK()">XFCE_PANEL_PLUGIN_REGISTER_INTERNAL_WITH_CHECK</a>(construct_func,
+                                                         check_func)
+</pre>
+</div>
+<div class="refsect1">
+<a name="libheartlenvpanel-Panel-Plugin-Register-Macros-(4.6-Style).description"></a><h2>Description</h2>
+<p>
+Macros to register old external panel plugins that are compiled as executables.
+</p>
+</div>
+<div class="refsect1">
+<a name="libheartlenvpanel-Panel-Plugin-Register-Macros-(4.6-Style).details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="XFCE-PANEL-PLUGIN-REGISTER-EXTERNAL:CAPS"></a><h3>XFCE_PANEL_PLUGIN_REGISTER_EXTERNAL()</h3>
+<pre class="programlisting">#define             XFCE_PANEL_PLUGIN_REGISTER_EXTERNAL(construct_func)</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">XFCE_PANEL_PLUGIN_REGISTER_EXTERNAL</code> has been deprecated since version 4.8 and should not be used in newly-written code. Deprecation is not entirely true, but it should be made
+                 clear that it is recommended to use <a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XFCE-PANEL-PLUGIN-REGISTER:CAPS" title="XFCE_PANEL_PLUGIN_REGISTER()"><code class="function">XFCE_PANEL_PLUGIN_REGISTER()</code></a>.
+                 See the <a class="link" href="libheartlenvpanel-plugins.html#libheartlenvpanel-register" title="Register plugins with the panel">Registering Plugins</a>
+                 for more information.</p>
+</div>
+<p>
+Registers and initializes the plugin. This is the only thing that is
+required to create a panel plugin.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>construct_func</code></em> :</span></p></td>
+<td>name of a function that can be cast to an
+<a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XfcePanelPluginFunc" title="XfcePanelPluginFunc ()"><span class="type">XfcePanelPluginFunc</span></a>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="XFCE-PANEL-PLUGIN-REGISTER-EXTERNAL-FULL:CAPS"></a><h3>XFCE_PANEL_PLUGIN_REGISTER_EXTERNAL_FULL()</h3>
+<pre class="programlisting">#define             XFCE_PANEL_PLUGIN_REGISTER_EXTERNAL_FULL(construct_func, preinit_func, check_func)</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">XFCE_PANEL_PLUGIN_REGISTER_EXTERNAL_FULL</code> has been deprecated since version 4.8 and should not be used in newly-written code. Deprecation is not entirely true, but it should be made
+                 clear that it is recommended to use <a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XFCE-PANEL-PLUGIN-REGISTER-FULL:CAPS" title="XFCE_PANEL_PLUGIN_REGISTER_FULL()"><code class="function">XFCE_PANEL_PLUGIN_REGISTER_FULL()</code></a>.
+                 See the <a class="link" href="libheartlenvpanel-plugins.html#libheartlenvpanel-register" title="Register plugins with the panel">Registering Plugins</a>
+                 for more information.</p>
+</div>
+<p>
+Same as <a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros-(4.6-Style).html#XFCE-PANEL-PLUGIN-REGISTER-EXTERNAL-WITH-CHECK:CAPS" title="XFCE_PANEL_PLUGIN_REGISTER_EXTERNAL_WITH_CHECK()"><code class="function">XFCE_PANEL_PLUGIN_REGISTER_EXTERNAL_WITH_CHECK()</code></a>, but with a
+preinit function that is called before <code class="function">gtk_init()</code>. This allows plugins
+to initialize libraries or threads.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>construct_func</code></em> :</span></p></td>
+<td>name of a function that can be cast to an
+<a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XfcePanelPluginFunc" title="XfcePanelPluginFunc ()"><span class="type">XfcePanelPluginFunc</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>preinit_func</code></em> :</span></p></td>
+<td>name of a function that can be case to <a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XfcePanelPluginPreInit" title="XfcePanelPluginPreInit ()"><span class="type">XfcePanelPluginPreInit</span></a>
+or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>check_func</code></em> :</span></p></td>
+<td>name of a function that can be cast to an
+<a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XfcePanelPluginCheck" title="XfcePanelPluginCheck ()"><span class="type">XfcePanelPluginCheck</span></a> or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since 4.6</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="XFCE-PANEL-PLUGIN-REGISTER-EXTERNAL-WITH-CHECK:CAPS"></a><h3>XFCE_PANEL_PLUGIN_REGISTER_EXTERNAL_WITH_CHECK()</h3>
+<pre class="programlisting">#define             XFCE_PANEL_PLUGIN_REGISTER_EXTERNAL_WITH_CHECK(construct_func ,check_func)</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">XFCE_PANEL_PLUGIN_REGISTER_EXTERNAL_WITH_CHECK</code> has been deprecated since version 4.8 and should not be used in newly-written code. Deprecation is not entirely true, but it should be made
+                 clear that it is recommended to use <a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XFCE-PANEL-PLUGIN-REGISTER-WITH-CHECK:CAPS" title="XFCE_PANEL_PLUGIN_REGISTER_WITH_CHECK()"><code class="function">XFCE_PANEL_PLUGIN_REGISTER_WITH_CHECK()</code></a>.
+                 See the <a class="link" href="libheartlenvpanel-plugins.html#libheartlenvpanel-register" title="Register plugins with the panel">Registering Plugins</a>
+                 for more information.</p>
+</div>
+<p>
+Registers and initializes the plugin. This is the only thing that is
+required to create a panel plugin. The <em class="parameter"><code>check</code></em> functions is run before
+creating the plugin, and should return FALSE if plugin creation is not
+possible.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>construct_func</code></em> :</span></p></td>
+<td>name of a function that can be cast to an
+<a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XfcePanelPluginFunc" title="XfcePanelPluginFunc ()"><span class="type">XfcePanelPluginFunc</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>check_func</code></em> :</span></p></td>
+<td>name of a function that can be cast to an
+<a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XfcePanelPluginCheck" title="XfcePanelPluginCheck ()"><span class="type">XfcePanelPluginCheck</span></a> or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="XFCE-PANEL-PLUGIN-REGISTER-INTERNAL:CAPS"></a><h3>XFCE_PANEL_PLUGIN_REGISTER_INTERNAL()</h3>
+<pre class="programlisting">#define             XFCE_PANEL_PLUGIN_REGISTER_INTERNAL(construct_func)</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">XFCE_PANEL_PLUGIN_REGISTER_INTERNAL</code> has been deprecated since version 4.8 and should not be used in newly-written code. Use <a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XFCE-PANEL-PLUGIN-REGISTER:CAPS" title="XFCE_PANEL_PLUGIN_REGISTER()"><code class="function">XFCE_PANEL_PLUGIN_REGISTER()</code></a> instead.</p>
+</div>
+<p>
+See <a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XFCE-PANEL-PLUGIN-REGISTER:CAPS" title="XFCE_PANEL_PLUGIN_REGISTER()"><code class="function">XFCE_PANEL_PLUGIN_REGISTER()</code></a> for more information.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>construct_func</code></em> :</span></p></td>
+<td>name of a function that can be cast to an
+<a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XfcePanelPluginFunc" title="XfcePanelPluginFunc ()"><span class="type">XfcePanelPluginFunc</span></a>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="XFCE-PANEL-PLUGIN-REGISTER-INTERNAL-WITH-CHECK:CAPS"></a><h3>XFCE_PANEL_PLUGIN_REGISTER_INTERNAL_WITH_CHECK()</h3>
+<pre class="programlisting">#define             XFCE_PANEL_PLUGIN_REGISTER_INTERNAL_WITH_CHECK(construct_func ,check_func)</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">XFCE_PANEL_PLUGIN_REGISTER_INTERNAL_WITH_CHECK</code> has been deprecated since version 4.8 and should not be used in newly-written code. use <a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XFCE-PANEL-PLUGIN-REGISTER-WITH-CHECK:CAPS" title="XFCE_PANEL_PLUGIN_REGISTER_WITH_CHECK()"><code class="function">XFCE_PANEL_PLUGIN_REGISTER_WITH_CHECK()</code></a> instead.</p>
+</div>
+<p>
+See <a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XFCE-PANEL-PLUGIN-REGISTER:CAPS" title="XFCE_PANEL_PLUGIN_REGISTER()"><code class="function">XFCE_PANEL_PLUGIN_REGISTER()</code></a> for more information.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>construct_func</code></em> :</span></p></td>
+<td>name of a function that can be cast to an
+<a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XfcePanelPluginFunc" title="XfcePanelPluginFunc ()"><span class="type">XfcePanelPluginFunc</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>check_func</code></em> :</span></p></td>
+<td>name of a function that can be cast to an
+<a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XfcePanelPluginCheck" title="XfcePanelPluginCheck ()"><span class="type">XfcePanelPluginCheck</span></a> or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.17</div>
+</body>
+</html>

@@ -1,1740 +1,1603 @@
-# Chinese (Taiwan) translation for heartlenv-shell.
-# Copyright (C) 2010 heartlenv-shell's COPYRIGHT HOLDER
-# This file is distributed under the same license as the heartlenv-shell package.
-# Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>, 2010.
-# Wei-Lun Chao <chaoweilun@gmail.com>, 2010.
+# Traditional Chinese translations for heartlenv-panel package.
+# Copyright (C) 2002-2006 The Xfce development team.
+# This file is distributed under the same license as the heartlenv-panel package.
+# umm <umm@pchome.com.tw>, 2003.
+# Ambrose Li <acli@ada.dhs.org>, 2004.
+# Hydonsingore Cia <hydonsingore@educities.edu.tw>, 2005.
+# Cheng-Chia Tseng <pswo10680@gmail.com>, 2010.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: heartlenv-shell 3.3.90\n"
+"Project-Id-Version: heartlenv-panel 4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-25 08:18+0800\n"
-"PO-Revision-Date: 2012-03-22 23:35+0800\n"
-"Last-Translator: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>\n"
-"Language-Team: Chinese (Taiwan) <zh-l10n@lists.linux.org.tw>\n"
-"Language: \n"
+"POT-Creation-Date: 2011-02-12 05:10+0000\n"
+"PO-Revision-Date: 2011-02-12 15:02+0800\n"
+"Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
+"Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: zh_TW\n"
 
-#: ../data/heartlenv-shell.desktop.in.in.h:1
-msgid "GNOME Shell"
-msgstr "GNOME Shell"
+#: ../panel-desktop-handler.desktop.in.h:1
+msgid "Add a new launcher to the panel based on the information of this desktop file"
+msgstr "加入新的啟動器 (以此桌面檔資訊為基礎) 至面板"
 
-#: ../data/heartlenv-shell.desktop.in.in.h:2
-msgid "Window management and application launching"
-msgstr "視窗管理與應用程式的執行"
+#: ../panel-desktop-handler.desktop.in.h:2
+msgid "Create Launcher on the panel"
+msgstr "於面板上建立啟動器"
 
-#: ../data/heartlenv-shell-extension-prefs.desktop.in.in.h:1
-msgid "Configure GNOME Shell Extensions"
-msgstr "設定 GNOME Shell 擴充功能"
+#: ../panel-preferences.desktop.in.h:1
+msgid "Customize the panel"
+msgstr "自訂面板"
 
-#: ../data/heartlenv-shell-extension-prefs.desktop.in.in.h:2
-#: ../js/extensionPrefs/main.js:153
-msgid "GNOME Shell Extension Preferences"
-msgstr "GNOME Shell 擴充功能偏好設定"
+#: ../panel-preferences.desktop.in.h:2
+#: ../panel/panel-preferences-dialog.glade.h:24
+#: ../panel/panel-window.c:2247
+#: ../migrate/main.c:84
+msgid "Panel"
+msgstr "面板"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:1
-msgid ""
-"Allows access to internal debugging and monitoring tools using the Alt-F2 "
-"dialog."
-msgstr "允許使用 Alt-F2 對話盒存取內部除錯和監控工具。"
+#: ../common/panel-utils.c:155
+msgid "_Read Online"
+msgstr "線上閱讀(_R)"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:2
-msgid "Enable internal tools useful for developers and testers from Alt-F2"
-msgstr "啟用讓開發者與測試者能以 Alt-F2 使用好用的內部工具"
+#: ../common/panel-utils.c:156
+msgid "You can read the user manual online. This manual may however not exactly match your panel version."
+msgstr "您可以線上閱讀使用者手冊。該手冊有可能不與您的面板版本吻合。"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:3
-msgid "File extension used for storing the screencast"
-msgstr "用來儲存畫面廣播的延伸檔名"
+#: ../common/panel-utils.c:158
+msgid "The user manual is not installed on your computer"
+msgstr "您的電腦上沒有安裝使用者手冊"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:4
-msgid "Framerate used for recording screencasts."
-msgstr "錄製畫面廣播的框架率。"
+#. display an error message to the user
+#: ../common/panel-utils.c:171
+msgid "Failed to open the documentation browser"
+msgstr "未能開啟文件瀏覽器"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:5
-msgid ""
-"GNOME Shell extensions have a uuid property; this key lists extensions which "
-"should be loaded. Any extension that wants to be loaded needs to be in this "
-"list. You can also manipulate this list with the EnableExtension and "
-"DisableExtension DBus methods on org.heartlenv.Shell."
-msgstr ""
-"GNOME Shell 擴充功能有 uuid 屬性；這個設定鍵列出了應載入的擴充功能。任何要載"
-"入的擴充功能都要出現在這個清單中。您也可以用 org.heartlenv.Shell 中的 "
-"EnableExtension 和 DisableExtension DBus 方法來操作這個清單。"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:6
-msgid "History for command (Alt-F2) dialog"
-msgstr "指令 (Alt-F2) 對話盒歷史紀錄"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:7
-msgid "History for the looking glass dialog"
-msgstr "Looking glass 對話盒歷史紀錄"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:8
-msgid "If true, display date in the clock, in addition to time."
-msgstr "如設定為「true」，除了在時鐘內顯示日期外還顯示時刻。"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:9
-msgid "If true, display seconds in time."
-msgstr "如設定為「true」，在時刻中顯示秒數。"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:10
-msgid "If true, display the ISO week date in the calendar."
-msgstr "如果設為 true，在日曆中顯示 ISO 週數。"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:11
-msgid ""
-"Internally used to store the last IM presence explicitly set by the user. "
-"The value here is from the TpConnectionPresenceType enumeration."
-msgstr ""
-"內部由使用者明確設定用來儲存最新 IM 上線狀況。這裡的數值是來自 "
-"TpConnectionPresenceType 列舉。"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:12
-msgid ""
-"Internally used to store the last session presence status for the user. The "
-"value here is from the GsmPresenceStatus enumeration."
-msgstr ""
-"內部用來儲存使用者最新作業階段上線狀況。這裡的數值是來自 GsmPresenceStatus 列"
-"舉。"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:13
-msgid "List of desktop file IDs for favorite applications"
-msgstr "喜好的應用程式桌面檔案 ID 清單"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:15
-#, no-c-format
-msgid ""
-"Sets the GStreamer pipeline used to encode recordings. It follows the syntax "
-"used for gst-launch. The pipeline should have an unconnected sink pad where "
-"the recorded video is recorded. It will normally have a unconnected source "
-"pad; output from that pad will be written into the output file. However the "
-"pipeline can also take care of its own output - this might be used to send "
-"the output to an icecast server via shout2send or similar. When unset or set "
-"to an empty value, the default pipeline will be used. This is currently "
-"'vp8enc quality=8 speed=6 threads=%T ! queue ! webmmux' and records to WEBM "
-"using the VP8 codec. %T is used as a placeholder for a guess at the optimal "
-"thread count on the system."
-msgstr ""
-"設定用來錄製的 GStreamer 管線。它依據 gst-launch 使用的語法。管線應該要有未連"
-"接的出口(sink pad)，提供錄製視訊之用。它通常會有未連接的入口(source pad)；從"
-"出口輸出的資訊就寫入輸出檔案。然而管線本身也會處理它本身的輸出 - 習慣上是透"
-"過 shout2send 之類將輸出傳送到 icecast 伺服器。當取消設定或設定為空值時，就會"
-"使用預設的管線。這個值目前為 'vp8enc quality=8 speed=6 threads=%T ! queue ! "
-"webmmux' 即使用 VP8 codec 錄製 WEBM。%T 是在系統的最佳化執行緒計數猜測時使用"
-"的佔位符。"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:16
-msgid "Show date in clock"
-msgstr "在時鐘內顯示日期"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:17
-msgid "Show the week date in the calendar"
-msgstr "在日曆中顯示週數"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:18
-msgid "Show time with seconds"
-msgstr "在時刻中顯示秒數"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:19
-msgid ""
-"The applications corresponding to these identifiers will be displayed in the "
-"favorites area."
-msgstr "對應這些辨別碼的應用程式會顯示在喜好區域。"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:20
-msgid ""
-"The filename for recorded screencasts will be a unique filename based on the "
-"current date, and use this extension. It should be changed when recording to "
-"a different container format."
-msgstr ""
-"錄製好的畫面廣播檔案名稱會以目前的時刻作為獨特的檔名，並使用這個延伸檔名。當"
-"錄製為不同的容器格式時應該做適當變更。"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:21
-msgid ""
-"The framerate of the resulting screencast recordered by GNOME Shell's "
-"screencast recorder in frames-per-second."
-msgstr ""
-"由 GNOME Shell 的畫面廣播錄製程式所錄製成果的框架率，以 frames-per-second "
-"計。"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:22
-msgid "The gstreamer pipeline used to encode the screencast"
-msgstr "用來編碼畫面廣播的 gstreamer 管線"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:23
-msgid ""
-"The shell normally monitors active applications in order to present the most "
-"used ones (e.g. in launchers). While this data will be kept private, you may "
-"want to disable this for privacy reasons. Please note that doing so won't "
-"remove already saved data."
-msgstr ""
-"這個 shell 通常會監控使用中的應用程式以便能顯示出最常使用的（例如，在程式執行"
-"器中）。雖然這個資料會保持隱密，但是您可能會基於隱私的理由想要停用這個功能。"
-"請注意這麼做並不會移除已儲存的資料。"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:24
-msgid "The type of keyboard to use."
-msgstr "要使用的鍵盤類型。"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:25
-msgid "Uuids of extensions to enable"
-msgstr "要啟用的擴充功能 Uuid"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:26
-msgid "Whether to collect stats about applications usage"
-msgstr "是否收集關於應用程式使用率的狀態"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:27
-msgid "Which keyboard to use"
-msgstr "要使用哪種鍵盤"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:28
-msgid "disabled OpenSearch providers"
-msgstr "已停用 OpenSearch 提供者"
-
-#: ../js/extensionPrefs/main.js:125
+#. I18N: %s is the name of the plugin
+#: ../libheartlenvpanel/xfce-panel-plugin.c:889
+#: ../panel/panel-preferences-dialog.c:1048
 #, c-format
-msgid "There was an error loading the preferences dialog for %s:"
-msgstr "載入 %s 的偏好設定對話盒時發生錯誤："
+msgid "Are you sure that you want to remove \"%s\"?"
+msgstr "您確定要移除「%s」嗎？"
 
-#: ../js/extensionPrefs/main.js:165
-msgid "<b>Extension</b>"
-msgstr "<b>擴充功能</b>"
+#: ../libheartlenvpanel/xfce-panel-plugin.c:894
+#: ../panel/panel-preferences-dialog.c:1051
+msgid "If you remove the item from the panel, it is permanently lost."
+msgstr "如果您要從面板移除該項目，它將永遠消失。"
 
-#: ../js/extensionPrefs/main.js:189
-msgid "Select an extension to configure using the combobox above."
-msgstr "使用上面的組合方塊選擇要設定的擴充功能。"
+#. move item
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1054
+msgid "_Move"
+msgstr "移動(_M)"
 
-#: ../js/gdm/loginDialog.js:624
-msgid "Session..."
-msgstr "作業階段…"
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1088
+msgid "Pane_l"
+msgstr "面板(_L)"
 
-#: ../js/gdm/loginDialog.js:786
-msgctxt "title"
-msgid "Sign In"
-msgstr "登入"
+#. add new items
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1096
+#: ../panel/panel-window.c:2259
+msgid "Add _New Items..."
+msgstr "加入新項目(_N)..."
 
-#. Translators: this message is shown below the password entry field
-#. to indicate the user can swipe their finger instead
-#: ../js/gdm/loginDialog.js:831
-msgid "(or swipe finger)"
-msgstr "(或是滑過手指)"
+#. customize panel
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1107
+#: ../panel/panel-window.c:2270
+msgid "Panel Pr_eferences..."
+msgstr "面板偏好設定(_E)..."
 
-#. translators: this message is shown below the user list on the
-#. login screen. It can be activated to reveal an entry for
-#. manually entering the username.
-#: ../js/gdm/loginDialog.js:852
-msgid "Not listed?"
-msgstr "沒有列出來？"
+#. logout item
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1124
+#: ../panel/panel-window.c:2286
+msgid "Log _Out"
+msgstr "登出(_O)"
 
-#: ../js/gdm/loginDialog.js:1020 ../js/ui/endSessionDialog.js:401
-#: ../js/ui/extensionSystem.js:399 ../js/ui/networkAgent.js:153
-#: ../js/ui/polkitAuthenticationAgent.js:175 ../js/ui/status/bluetooth.js:462
-msgid "Cancel"
-msgstr "取消"
+#: ../panel/main.c:78
+msgid "Show the 'Panel Preferences' dialog"
+msgstr "顯示「面板偏好設定」對話窗"
 
-#: ../js/gdm/loginDialog.js:1025
-msgctxt "button"
-msgid "Sign In"
-msgstr "登入"
+#: ../panel/main.c:78
+#: ../panel/main.c:79
+msgid "PANEL-NUMBER"
+msgstr "面板號碼"
 
-#: ../js/gdm/loginDialog.js:1377
-msgid "Login Window"
-msgstr "登入視窗"
+#: ../panel/main.c:79
+msgid "Show the 'Add New Items' dialog"
+msgstr "顯示「加入新項目」對話窗"
 
-#: ../js/gdm/powerMenu.js:155 ../js/ui/userMenu.js:597
-#: ../js/ui/userMenu.js:599 ../js/ui/userMenu.js:668
+#: ../panel/main.c:80
+msgid "Save the panel configuration"
+msgstr "儲存面板組態"
+
+#: ../panel/main.c:81
+msgid "Add a new plugin to the panel"
+msgstr "加入新插件至面板"
+
+#: ../panel/main.c:81
+msgid "PLUGIN-NAME"
+msgstr "插件名稱"
+
+#: ../panel/main.c:82
+msgid "Restart the running panel instance"
+msgstr "重新啟動執行中的面板實體"
+
+#: ../panel/main.c:83
+msgid "Quit the running panel instance"
+msgstr "退出執行中的面板實體"
+
+#: ../panel/main.c:84
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:33
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:33
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:33
+msgid "Print version information and exit"
+msgstr "印出版本資訊並離開"
+
+#. parse context options
+#: ../panel/main.c:240
+msgid "[ARGUMENTS...]"
+msgstr "[參數...]"
+
+#: ../panel/main.c:247
+#, c-format
+msgid "Type \"%s --help\" for usage."
+msgstr "輸入 \"%s --help\" 以瞭解用法。"
+
+#: ../panel/main.c:266
+msgid "The Xfce development team. All rights reserved."
+msgstr "Xfce 開發團隊。保留所有權利。"
+
+#: ../panel/main.c:267
+#, c-format
+msgid "Please report bugs to <%s>."
+msgstr "請回報錯誤至 <%s>。"
+
+#: ../panel/main.c:318
+msgid "There is already a running instance"
+msgstr "已經有執行中的實體"
+
+#. spawn ourselfs again
+#: ../panel/main.c:367
+msgid "Restarting..."
+msgstr "正在重新啟動..."
+
+#: ../panel/main.c:382
+msgid "Failed to show the preferences dialog"
+msgstr "未能顯示偏好設定對話窗"
+
+#: ../panel/main.c:384
+msgid "Failed to show the add new items dialog"
+msgstr "未能顯示加入新項目對話窗"
+
+#: ../panel/main.c:386
+msgid "Failed to save the panel configuration"
+msgstr "未能儲存面板組態"
+
+#: ../panel/main.c:388
+msgid "Failed to add a plugin to the panel"
+msgstr "未能加入插件至面板"
+
+#: ../panel/main.c:390
+msgid "Failed to restart the panel"
+msgstr "未能重新啟動面板"
+
+#: ../panel/main.c:392
+msgid "Failed to quit the panel"
+msgstr "未能退出面板"
+
+#: ../panel/main.c:394
+msgid "Failed to send D-Bus message"
+msgstr "未能傳送 D-Bus 訊息"
+
+#: ../panel/main.c:405
+msgid "Do you want to start the panel? If you do, make sure you save the session on logout, so the panel is automatically started the next time you login."
+msgstr "您想要啟動面板嗎？如果要的話，請確認在登出時您有儲存工作階段，這樣該面板才能在下一次您登入時自動啟動。"
+
+#: ../panel/main.c:408
+#: ../panel/main.c:422
+#, c-format
+msgid "No running instance of %s was found"
+msgstr "找不到執行中的 %s 實體"
+
+#: ../panel/panel-application.c:195
+msgid "Failed to launch the migration application"
+msgstr "未能啟動轉移應用程式"
+
+#: ../panel/panel-application.c:1464
+#: ../plugins/actions/actions.c:427
+msgid "You have started X without session manager. Clicking Quit will close the X server."
+msgstr "若您未透過工作階段管理程式啟動 X。只要點擊「退出」就會關閉 X 伺服器。"
+
+#: ../panel/panel-application.c:1465
+#: ../plugins/actions/actions.c:428
+msgid "Are you sure you want to quit the panel?"
+msgstr "您確定要退出該面板嗎？"
+
+#: ../panel/panel-application.c:1473
+#: ../plugins/actions/actions.c:436
+#, c-format
+msgid "Failed to execute command \"%s\""
+msgstr "未能執行指令 \"%s\""
+
+#: ../panel/panel-dbus-client.c:208
+msgid "Invalid plugin event syntax specified. Use PLUGIN-NAME:NAME[:TYPE:VALUE]."
+msgstr "指定了無效的插件事件語法。請使用 PLUGIN-NAME:NAME[:TYPE:VALUE]。"
+
+#: ../panel/panel-dbus-client.c:241
+#, c-format
+msgid "Invalid hint type \"%s\". Valid types are bool, double, int, string and uint."
+msgstr "無效的暗示類型「%s」。有效的類型為真假值 (bool)、倍精度 (double)、整數 (int)、字串 (string)、單位 (unit)。"
+
+#: ../panel/panel-dialogs.c:76
+msgid "The panel of the Xfce Desktop Environment"
+msgstr "Xfce 桌面環境的面板"
+
+#: ../panel/panel-dialogs.c:81
+msgid "translator-credits"
+msgstr "Cheng-Chia Tseng <pswo10680@gmail.com>, 2010."
+
+#. setup the dialog
+#: ../panel/panel-dialogs.c:122
+#: ../plugins/launcher/launcher-dialog.glade.h:1
+msgid "Add New Item"
+msgstr "加入新項目"
+
+#: ../panel/panel-dialogs.c:136
+msgid "Please choose a panel for the new plugin:"
+msgstr "請為新插件選擇面板："
+
+#. I18N: panel combo box in the preferences dialog
+#: ../panel/panel-dialogs.c:147
+#: ../panel/panel-preferences-dialog.c:767
+#, c-format
+msgid "Panel %d"
+msgstr "面板 %d"
+
+#: ../panel/panel-dialogs.c:183
+msgid "Because the panel is running in kiosk mode, you are not allowed to make changes to the panel configuration as a regular user"
+msgstr "因為面板正在以 kiosk 模式執行中，您不被允許以一般使用者身份變更面板的組態"
+
+#: ../panel/panel-dialogs.c:185
+msgid "Modifying the panel is not allowed"
+msgstr "修改面板不被允許"
+
+#: ../panel/panel-item-dialog.c:188
+msgid "Add New Items"
+msgstr "加入新項目"
+
+#: ../panel/panel-item-dialog.c:190
+msgid "Add new plugins to the panel"
+msgstr "加入新插件至面板"
+
+#: ../panel/panel-item-dialog.c:213
+#: ../plugins/launcher/launcher-dialog.glade.h:23
+msgid "_Search:"
+msgstr "搜尋(_S)："
+
+#: ../panel/panel-item-dialog.c:221
+msgid "Enter search phrase here"
+msgstr "在這裡輸入搜尋詞語"
+
+#: ../panel/panel-plugin-external.c:420
+#, c-format
+msgid "Plugin \"%s\" unexpectedly left the panel, do you want to restart it?"
+msgstr "插件「%s」無預期退出面板，您想要重新啟動它嗎？"
+
+#: ../panel/panel-plugin-external.c:422
+#, c-format
+msgid "The plugin restarted more than once in the last %d seconds. If you press Execute the panel will try to restart the plugin otherwise it will be permanently removed from the panel."
+msgstr "該插件在 %d 秒內重新啟動超過一次。若您按下「執行」，面板將試著重新啟動該插件，否則它將永久自面板上移除。"
+
+#: ../panel/panel-preferences-dialog.c:453
+msgid "Automatic"
+msgstr "自動"
+
+#. I18N: screen name in the output selector
+#: ../panel/panel-preferences-dialog.c:472
+#, c-format
+msgid "Screen %d"
+msgstr "螢幕 %d"
+
+#. I18N: monitor name in the output selector
+#: ../panel/panel-preferences-dialog.c:498
+#, c-format
+msgid "Monitor %d"
+msgstr "顯示器 %d"
+
+#: ../panel/panel-preferences-dialog.c:828
+msgid "The panel and plugin configurations will be permanently removed"
+msgstr "面板與插件組態將被永久移除"
+
+#: ../panel/panel-preferences-dialog.c:829
+#, c-format
+msgid "Are you sure you want to remove panel %d?"
+msgstr "您確定要移除面板 %d 嗎？"
+
+#. I18N: append (external) in the preferences dialog if the plugin
+#. * runs external
+#: ../panel/panel-preferences-dialog.c:912
+#, c-format
+msgid "%s <span color=\"grey\" size=\"small\">(external)</span>"
+msgstr "%s <span color=\"grey\" size=\"small\">(外部)</span>"
+
+#. I18N: tooltip in preferences dialog when hovering an item in the list
+#. * for external plugins
+#: ../panel/panel-preferences-dialog.c:917
+#, c-format
+msgid ""
+"Internal name: %s-%d\n"
+"PID: %d"
+msgstr ""
+"內部名稱：%s-%d\n"
+"PID: %d"
+
+#. I18N: tooltip in preferences dialog when hovering an item in the list
+#. * for internal plugins
+#: ../panel/panel-preferences-dialog.c:929
+#, c-format
+msgid "Internal name: %s-%d"
+msgstr "內部名稱：%s-%d"
+
+#: ../panel/panel-preferences-dialog.glade.h:1
+msgid "A_utomatically increase the length"
+msgstr "自動增加長度(_U)"
+
+#: ../panel/panel-preferences-dialog.glade.h:2
+msgid "Add a new panel"
+msgstr "加入新面板"
+
+#: ../panel/panel-preferences-dialog.glade.h:3
+msgid "Add new item to this panel"
+msgstr "加入新項目至此面板"
+
+#: ../panel/panel-preferences-dialog.glade.h:4
+msgid "Alpha value of the panel background, with 0 being fully transparent and 100 fully opaque."
+msgstr "背景的 Alpha 值，0 代表完全透明，100 代表完全不透明。"
+
+#: ../panel/panel-preferences-dialog.glade.h:5
+msgid "Appeara_nce"
+msgstr "外觀(_N)"
+
+#: ../panel/panel-preferences-dialog.glade.h:6
+msgid "Automatically show and _hide the panel"
+msgstr "自動顯示與隱藏面板(_H)"
+
+#: ../panel/panel-preferences-dialog.glade.h:7
+msgid "Background"
+msgstr "背景"
+
+#: ../panel/panel-preferences-dialog.glade.h:8
+msgid "Background image"
+msgstr "背景影像"
+
+#: ../panel/panel-preferences-dialog.glade.h:9
+msgid "C_olor:"
+msgstr "色彩(_O)："
+
+#: ../panel/panel-preferences-dialog.glade.h:10
+msgid "D_isplay"
+msgstr "顯示(_I)"
+
+#: ../panel/panel-preferences-dialog.glade.h:11
+#: ../plugins/launcher/launcher-dialog.glade.h:9
+msgid "Edit the currently selected item"
+msgstr "編輯目前所選的項目"
+
+#: ../panel/panel-preferences-dialog.glade.h:12
+#: ../plugins/launcher/launcher-dialog.glade.h:10
+msgid "General"
+msgstr "一般"
+
+#: ../panel/panel-preferences-dialog.glade.h:13
+msgid "Horizontal"
+msgstr "水平"
+
+#: ../panel/panel-preferences-dialog.glade.h:14
+msgid "Ite_ms"
+msgstr "項目(_M)"
+
+#: ../panel/panel-preferences-dialog.glade.h:16
+#, no-c-format
+msgid "L_ength (%):"
+msgstr "長度 (%)(_E)："
+
+#. I18N: name of the section (frame) in the panel preferences where the user can define the length and size of the panel
+#: ../panel/panel-preferences-dialog.glade.h:18
+msgid "Measurements"
+msgstr "測量"
+
+#: ../panel/panel-preferences-dialog.glade.h:19
+#: ../plugins/launcher/launcher-dialog.glade.h:13
+msgid "Move currently selected item down by one row"
+msgstr "將目前所選的項目向下移動一列"
+
+#: ../panel/panel-preferences-dialog.glade.h:20
+#: ../plugins/launcher/launcher-dialog.glade.h:14
+msgid "Move currently selected item up by one row"
+msgstr "將目前所選的項目向上移動一列"
+
+#: ../panel/panel-preferences-dialog.glade.h:21
+msgid "None (use system style)"
+msgstr "無 (使用系統樣式)"
+
+#: ../panel/panel-preferences-dialog.glade.h:22
+msgid "O_utput:"
+msgstr "輸入(_U)："
+
+#: ../panel/panel-preferences-dialog.glade.h:23
+msgid "Opacity"
+msgstr "不透明度"
+
+#: ../panel/panel-preferences-dialog.glade.h:25
+msgid "Pick a Panel Color"
+msgstr "挑選面板顏色"
+
+#: ../panel/panel-preferences-dialog.glade.h:26
+msgid "Remove currently selected item"
+msgstr "移除目前所選的項目"
+
+#: ../panel/panel-preferences-dialog.glade.h:27
+msgid "Remove the currently selected panel"
+msgstr "移除目前所選的面板"
+
+#: ../panel/panel-preferences-dialog.glade.h:28
+msgid "Select A Background Image"
+msgstr "選取背景影像"
+
+#: ../panel/panel-preferences-dialog.glade.h:29
+msgid "Select this option to automatically increase the length of the panel if the plugins request more space."
+msgstr "選取此選項以在插件需要更多空間時自動增長面板。"
+
+#: ../panel/panel-preferences-dialog.glade.h:30
+msgid "Select this option to extend the panel over multiple monitors."
+msgstr "選取此選項以將面板擴展至多個螢幕。"
+
+#: ../panel/panel-preferences-dialog.glade.h:31
+msgid "Select this option to hide the handles of the panel and lock its position."
+msgstr "選取此選項以隱藏面板的控制把並且鎖住其位置。"
+
+#: ../panel/panel-preferences-dialog.glade.h:32
+msgid "Select this option to hide the panel when the pointer is not above it. This only works when the panel is attached to a screen edge."
+msgstr "選取此選項以在指標不在面板上時隱藏面板。這只對於附在螢幕邊緣的面板有效。"
+
+#: ../panel/panel-preferences-dialog.glade.h:33
+msgid "Show about information of the currently selected item"
+msgstr "顯示關於目前所選項目的資訊"
+
+#: ../panel/panel-preferences-dialog.glade.h:34
+msgid "Solid color"
+msgstr "填滿色彩"
+
+#: ../panel/panel-preferences-dialog.glade.h:35
+msgid "Span mo_nitors"
+msgstr "跨越螢幕(_N)"
+
+#: ../panel/panel-preferences-dialog.glade.h:36
+msgid "Transparency when the pointer is hovering over the panel, with 0 being fully transparent and 100 fully opaque."
+msgstr "當指標停在面板上時的透明度，0 代表完全透明，100 代表完全不透明。"
+
+#: ../panel/panel-preferences-dialog.glade.h:37
+msgid "Transparency when the pointer is not hovering over the panel, with 0 being fully transparent and 100 fully opaque."
+msgstr "當指標沒有停在面板上時的透明度，0 代表完全透明，100 代表完全不透明。"
+
+#: ../panel/panel-preferences-dialog.glade.h:38
+msgid "Vertical"
+msgstr "垂直"
+
+#: ../panel/panel-preferences-dialog.glade.h:39
+msgid "_Alpha:"
+msgstr "_Alpha："
+
+#. I18N: label for the enter transparency slider
+#: ../panel/panel-preferences-dialog.glade.h:41
+msgid "_Enter:"
+msgstr "進入(_E)："
+
+#: ../panel/panel-preferences-dialog.glade.h:42
+msgid "_File:"
+msgstr "檔案(_F)："
+
+#. I18N: label for the leave transparency slider
+#: ../panel/panel-preferences-dialog.glade.h:44
+msgid "_Leave:"
+msgstr "退出(_L)："
+
+#: ../panel/panel-preferences-dialog.glade.h:45
+msgid "_Lock panel"
+msgstr "鎖住面板(_L)"
+
+#: ../panel/panel-preferences-dialog.glade.h:46
+msgid "_Orientation:"
+msgstr "方向(_O)："
+
+#: ../panel/panel-preferences-dialog.glade.h:47
+msgid "_Size (pixels):"
+msgstr "大小 (像素)(_S)："
+
+#: ../panel/panel-preferences-dialog.glade.h:48
+#: ../plugins/separator/separator-dialog.glade.h:8
+msgid "_Style:"
+msgstr "樣式(_S)："
+
+#: ../panel/panel-tic-tac-toe.c:123
+msgid "_New Game"
+msgstr "新增遊戲(_N)"
+
+#: ../panel/panel-tic-tac-toe.c:134
+msgid "_Level:"
+msgstr "等級(_L)："
+
+#: ../panel/panel-tic-tac-toe.c:140
+msgid "Novice"
+msgstr "新手"
+
+#: ../panel/panel-tic-tac-toe.c:141
+msgid "Intermediate"
+msgstr "中等"
+
+#: ../panel/panel-tic-tac-toe.c:142
+msgid "Experienced"
+msgstr "老手"
+
+#: ../panel/panel-tic-tac-toe.c:143
+msgid "Expert"
+msgstr "專家"
+
+#: ../migrate/main.c:78
+msgid "Welcome to the first start of the panel"
+msgstr "歡迎初次使用本面板"
+
+#: ../migrate/main.c:80
+msgid "Because the panel moved to a new system for storing the settings, it has to load a fresh initial configuration."
+msgstr "由於該面板移動至新系統，若要儲存設定值它必須載入全新的初始組態。"
+
+#: ../migrate/main.c:83
+msgid "Choose below which setup you want for the first startup."
+msgstr "從下方選擇您想要最先啟動的設置。"
+
+#: ../migrate/main.c:89
+msgid "Migrate old config"
+msgstr "轉移舊組態"
+
+#: ../migrate/main.c:90
+msgid "Migrate the old 4.6 configuration to Xfconf"
+msgstr "轉移舊式 4.6 組態至 Xfconf"
+
+#: ../migrate/main.c:95
+msgid "Use default config"
+msgstr "使用預設組態"
+
+#: ../migrate/main.c:96
+msgid "Load the default configuration"
+msgstr "載入預設組態"
+
+#: ../migrate/main.c:102
+msgid "One empty panel"
+msgstr "一個空面板"
+
+#: ../migrate/main.c:103
+msgid "Start with one empty panel"
+msgstr "以空面板作為開始"
+
+#: ../migrate/main.c:115
+msgid "Failed to migrate the old panel configuration"
+msgstr "未能轉移舊式面板組態"
+
+#: ../migrate/main.c:125
+msgid "Failed to load the default configuration"
+msgstr "未能載入預設組態"
+
+#: ../plugins/actions/actions-dialog.glade.h:1
+#: ../plugins/actions/actions.desktop.in.h:1
+msgid "Action Buttons"
+msgstr "動作按鈕"
+
+#: ../plugins/actions/actions-dialog.glade.h:2
+msgid "Button Actions"
+msgstr "按鈕動作"
+
+#: ../plugins/actions/actions-dialog.glade.h:3
+msgid "_First button:"
+msgstr "第一個按鈕(_F)："
+
+#: ../plugins/actions/actions-dialog.glade.h:4
+msgid "_Second button:"
+msgstr "第二個按鈕(_S)："
+
+#: ../plugins/actions/actions.c:108
+msgid "Disabled"
+msgstr "停用"
+
+#: ../plugins/actions/actions.c:109
+msgid "Log Out Dialog"
+msgstr "登出對話窗"
+
+#: ../plugins/actions/actions.c:110
+msgid "Log Out"
+msgstr "登出"
+
+#: ../plugins/actions/actions.c:111
+msgid "Lock Screen"
+msgstr "鎖住螢幕"
+
+#: ../plugins/actions/actions.c:112
+msgid "Shut Down"
+msgstr "關機"
+
+#: ../plugins/actions/actions.c:113
+msgid "Restart"
+msgstr "重新啟動"
+
+#: ../plugins/actions/actions.c:114
 msgid "Suspend"
 msgstr "暫停"
 
-#: ../js/gdm/powerMenu.js:160
-msgid "Restart"
-msgstr "重新啟動"
+#: ../plugins/actions/actions.c:115
+msgid "Hibernate"
+msgstr "休眠"
 
-#: ../js/gdm/powerMenu.js:165
-msgid "Power Off"
-msgstr "關閉電源"
+#: ../plugins/actions/actions.desktop.in.h:2
+msgid "Log out, lock or other system actions"
+msgstr "登出、鎖住螢幕或是其它系統動作"
 
-#: ../js/misc/util.js:92
-msgid "Command not found"
-msgstr "找不到指令"
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:1
+#: ../plugins/clock/clock-dialog.glade.h:3
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:1
+#: ../plugins/pager/pager-dialog.glade.h:1
+#: ../plugins/separator/separator-dialog.glade.h:1
+#: ../plugins/systray/systray-dialog.glade.h:1
+#: ../plugins/tasklist/tasklist-dialog.glade.h:2
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:1
+msgid "Appearance"
+msgstr "外觀"
 
-#. Replace "Error invoking GLib.shell_parse_argv: " with
-#. something nicer
-#: ../js/misc/util.js:119
-msgid "Could not parse command:"
-msgstr "無法分析指令："
+#. I18N: default tooltip of the application menu
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:2
+#: ../plugins/applicationsmenu/applicationsmenu.c:38
+#: ../plugins/applicationsmenu/applicationsmenu.desktop.in.h:1
+msgid "Applications Menu"
+msgstr "應用程式選單"
 
-#: ../js/misc/util.js:127
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:3
+msgid "Button _title:"
+msgstr "按鈕標題(_T)："
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:4
+msgid "Ed_it Menu"
+msgstr "編輯選單(_I)"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:5
+msgid "Menu File"
+msgstr "選單檔案"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:6
+msgid "Menu _file:"
+msgstr "選單檔案(_F)："
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:7
+msgid "Select A Menu File"
+msgstr "選取選單檔案"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:8
+msgid "Select this option to show the generic application name in the menu, for example \"File Manager\" instead of \"Thunar\""
+msgstr "選取此選項以在選單內顯示通用應用程式名稱，舉例：「檔案管理員」而不是「Thunar」"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:9
+msgid "Show application d_escription in tooltip"
+msgstr "於提示框顯示應用程式描述(_E)"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:10
+msgid "Show generic application n_ames"
+msgstr "顯示通用應用程式名稱(_N)"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:11
+msgid "Show ic_ons in menu"
+msgstr "於選單內顯示圖示(_O)"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:12
+msgid "Use c_ustom menu file:"
+msgstr "使用自訂選單檔案(_U)："
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:13
+msgid "Use the _default menu"
+msgstr "使用預設選單(_D)"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:14
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:9
+msgid "_Icon:"
+msgstr "圖示(_I)："
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:15
+msgid "_Show button title"
+msgstr "顯示按鈕標題(_S)"
+
+#: ../plugins/applicationsmenu/applicationsmenu.c:475
+#: ../plugins/directorymenu/directorymenu.c:378
+msgid "Select An Icon"
+msgstr "選取圖示"
+
+#: ../plugins/applicationsmenu/applicationsmenu.c:513
+#: ../plugins/applicationsmenu/applicationsmenu.c:754
+#: ../plugins/launcher/launcher.c:2289
 #, c-format
-msgid "Execution of '%s' failed:"
-msgstr "執行「%s」失敗："
+msgid "Failed to execute command \"%s\"."
+msgstr "未能執行「%s」。"
 
-#. Translators: Filter to display all applications
-#: ../js/ui/appDisplay.js:255
-msgid "All"
-msgstr "全部"
+#: ../plugins/applicationsmenu/applicationsmenu.c:1010
+msgid "No applications found"
+msgstr "找不到應用程式"
 
-#: ../js/ui/appDisplay.js:314
-msgid "APPLICATIONS"
-msgstr "程式集"
+#: ../plugins/applicationsmenu/applicationsmenu.c:1033
+msgid "Failed to load the applications menu"
+msgstr "未能載入應用程式選單"
 
-#: ../js/ui/appDisplay.js:375
-msgid "SETTINGS"
-msgstr "設定值"
+#: ../plugins/applicationsmenu/applicationsmenu.desktop.in.h:2
+msgid "Show a menu containing categories of installed applications"
+msgstr "顯示包含已安裝應用程式分類的選單"
 
-#: ../js/ui/appDisplay.js:680
-msgid "New Window"
-msgstr "新視窗"
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:27
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:27
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:27
+msgid "Usage:"
+msgstr "用法："
 
-#: ../js/ui/appDisplay.js:683
-msgid "Remove from Favorites"
-msgstr "自喜好中移除"
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:28
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:28
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:28
+msgid "OPTION"
+msgstr "選項"
 
-#: ../js/ui/appDisplay.js:684
-msgid "Add to Favorites"
-msgstr "加入喜好"
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:30
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:30
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:30
+msgid "Options:"
+msgstr "選項："
 
-#: ../js/ui/appFavorites.js:87
-#, c-format
-msgid "%s has been added to your favorites."
-msgstr "%s 已加入您的喜好中。"
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:31
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:31
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:31
+msgid "Popup menu at current mouse position"
+msgstr "於目前滑鼠位置彈出選單"
 
-#: ../js/ui/appFavorites.js:118
-#, c-format
-msgid "%s has been removed from your favorites."
-msgstr "%s 已經從您的喜好中移除。"
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:32
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:32
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:32
+msgid "Show help options"
+msgstr "顯示幫助選項"
 
-#: ../js/ui/autorunManager.js:265
-msgid "Removable Devices"
-msgstr "可移除式裝置"
+#: ../plugins/clock/clock.c:146
+msgid "Week %V"
+msgstr "第 %V 週"
 
-#: ../js/ui/autorunManager.js:560
-#, c-format
-msgid "Open with %s"
-msgstr "用 %s 開啟"
+#: ../plugins/clock/clock.c:407
+msgid "Failed to execute clock command"
+msgstr "未能執行時鐘指令"
 
-#: ../js/ui/autorunManager.js:586
-msgid "Eject"
-msgstr "退出"
+#: ../plugins/clock/clock.c:719
+msgid "Custom Format"
+msgstr "自訂格式"
 
-#. Translators: Shown in calendar event list for all day events
-#. * Keep it short, best if you can use less then 10 characters
-#.
-#: ../js/ui/calendar.js:62
-msgctxt "event list time"
-msgid "All Day"
-msgstr "整天"
+#: ../plugins/clock/clock-dialog.glade.h:1
+msgid "24-_hour clock"
+msgstr "24小時制時鐘(_H)"
 
-#. Translators: Shown in calendar event list, if 24h format
-#: ../js/ui/calendar.js:67
-msgctxt "event list time"
-msgid "%H:%M"
-msgstr "%H:%M"
+#: ../plugins/clock/clock-dialog.glade.h:2
+msgid "Analog"
+msgstr "指針式"
 
-#. Transators: Shown in calendar event list, if 12h format
-#: ../js/ui/calendar.js:74
-msgctxt "event list time"
-msgid "%l:%M %p"
-msgstr "%p %l:%M"
+#: ../plugins/clock/clock-dialog.glade.h:4
+msgid "Binary"
+msgstr "二進位"
 
-#. Translators: Calendar grid abbreviation for Sunday.
-#. *
-#. * NOTE: These grid abbreviations are always shown together
-#. * and in order, e.g. "S M T W T F S".
-#.
-#: ../js/ui/calendar.js:114
-msgctxt "grid sunday"
-msgid "S"
-msgstr "日"
+#  set names to use in option menus
+#: ../plugins/clock/clock-dialog.glade.h:5
+#: ../plugins/clock/clock.desktop.in.h:1
+msgid "Clock"
+msgstr "時鐘"
 
-#. Translators: Calendar grid abbreviation for Monday
-#: ../js/ui/calendar.js:116
-msgctxt "grid monday"
-msgid "M"
+#: ../plugins/clock/clock-dialog.glade.h:6
+msgid "Clock Options"
+msgstr "時鐘選項"
+
+#: ../plugins/clock/clock-dialog.glade.h:7
+msgid "Digital"
+msgstr "數位式"
+
+#: ../plugins/clock/clock-dialog.glade.h:8
+msgid "Display _seconds"
+msgstr "顯示秒(_S)"
+
+#: ../plugins/clock/clock-dialog.glade.h:9
+msgid "F_ormat:"
+msgstr "格式(_O)："
+
+#. I18N: the fuzziness the *precision* of the fuzzy clock. Time steps of 5, 15 or parts of the day.
+#: ../plugins/clock/clock-dialog.glade.h:11
+msgid "F_uzziness:"
+msgstr "模糊度(_U)："
+
+#: ../plugins/clock/clock-dialog.glade.h:12
+msgid "Fl_ash time separators"
+msgstr "讓時間分隔符閃爍(_F)"
+
+#: ../plugins/clock/clock-dialog.glade.h:13
+msgid "Fuzzy"
+msgstr "模糊"
+
+#: ../plugins/clock/clock-dialog.glade.h:14
+msgid "LCD"
+msgstr "LCD"
+
+#: ../plugins/clock/clock-dialog.glade.h:15
+msgid "Sho_w AM/PM"
+msgstr "顯示 AM/PM(_W)"
+
+#: ../plugins/clock/clock-dialog.glade.h:16
+#: ../plugins/systray/systray-dialog.glade.h:5
+msgid "Show _frame"
+msgstr "顯示框架(_F)"
+
+#: ../plugins/clock/clock-dialog.glade.h:17
+msgid "Show _inactive dots"
+msgstr "顯示非作用中的點(_I)"
+
+#: ../plugins/clock/clock-dialog.glade.h:18
+msgid "Show gri_d"
+msgstr "顯示格欄(_F)"
+
+#: ../plugins/clock/clock-dialog.glade.h:20
+#, no-c-format
+msgid "The format describes the date and time parts to insert into the file name. For example, %Y will be substituted with the year, %m with the month and %d with the day. See the documentation of the date utility for additional information."
+msgstr "要插入檔案名稱內用來描述日期與時間的格式。舉例來說，%Y 會被年份替換，%m 會被月份替換，而 %d 則是日期。請查看日期公用程式的文件以瞭解額外資訊。"
+
+#: ../plugins/clock/clock-dialog.glade.h:21
+msgid "True _binary clock"
+msgstr "真實二進位時鐘(_B)"
+
+#: ../plugins/clock/clock-dialog.glade.h:22
+msgid "_Layout:"
+msgstr "配置(_L)："
+
+#: ../plugins/clock/clock-dialog.glade.h:23
+msgid "_Tooltip format:"
+msgstr "提示框格式(_T)："
+
+#: ../plugins/clock/clock-fuzzy.c:86
+msgid "Night"
+msgstr "深夜"
+
+#: ../plugins/clock/clock-fuzzy.c:87
+msgid "Early morning"
+msgstr "清晨"
+
+#: ../plugins/clock/clock-fuzzy.c:88
+msgid "Morning"
+msgstr "早上"
+
+#: ../plugins/clock/clock-fuzzy.c:89
+msgid "Almost noon"
+msgstr "傍午"
+
+#: ../plugins/clock/clock-fuzzy.c:90
+msgid "Noon"
+msgstr "中午"
+
+#: ../plugins/clock/clock-fuzzy.c:91
+msgid "Afternoon"
+msgstr "午後"
+
+#: ../plugins/clock/clock-fuzzy.c:92
+msgid "Evening"
+msgstr "傍晚"
+
+#: ../plugins/clock/clock-fuzzy.c:93
+msgid "Late evening"
+msgstr "晚上"
+
+#. I18N: %0 will be replaced with the preceding hour, %1 with
+#. * the comming hour
+#: ../plugins/clock/clock-fuzzy.c:100
+#, no-c-format
+msgid "%0 o'clock"
+msgstr "%0點鐘"
+
+#: ../plugins/clock/clock-fuzzy.c:101
+#, no-c-format
+msgid "five past %0"
+msgstr "%0點過五分"
+
+#: ../plugins/clock/clock-fuzzy.c:102
+#, no-c-format
+msgid "ten past %0"
+msgstr "%0點過十分"
+
+#: ../plugins/clock/clock-fuzzy.c:103
+#, no-c-format
+msgid "quarter past %0"
+msgstr "%0點過十五分"
+
+#: ../plugins/clock/clock-fuzzy.c:104
+#, no-c-format
+msgid "twenty past %0"
+msgstr "%0點過二十分"
+
+#: ../plugins/clock/clock-fuzzy.c:105
+#, no-c-format
+msgid "twenty five past %0"
+msgstr "%0點過二十五分"
+
+#: ../plugins/clock/clock-fuzzy.c:106
+#, no-c-format
+msgid "half past %0"
+msgstr "%0點半"
+
+#: ../plugins/clock/clock-fuzzy.c:107
+#, no-c-format
+msgid "twenty five to %1"
+msgstr "二十五分後%1點"
+
+#: ../plugins/clock/clock-fuzzy.c:108
+#, no-c-format
+msgid "twenty to %1"
+msgstr "二十分後%1點"
+
+#: ../plugins/clock/clock-fuzzy.c:109
+#, no-c-format
+msgid "quarter to %1"
+msgstr "十五分後%1點"
+
+#: ../plugins/clock/clock-fuzzy.c:110
+#, no-c-format
+msgid "ten to %1"
+msgstr "十分後%1點"
+
+#: ../plugins/clock/clock-fuzzy.c:111
+#, no-c-format
+msgid "five to %1"
+msgstr "五分後%1點"
+
+#: ../plugins/clock/clock-fuzzy.c:112
+#, no-c-format
+msgid "%1 o'clock"
+msgstr "%1點鐘"
+
+#. I18N: some languages have a singular form for the first hour,
+#. * other languages should just use the same strings as above
+#: ../plugins/clock/clock-fuzzy.c:119
+#, no-c-format
+msgctxt "one"
+msgid "%0 o'clock"
+msgstr "%0點鐘"
+
+#: ../plugins/clock/clock-fuzzy.c:120
+#, no-c-format
+msgctxt "one"
+msgid "five past %0"
+msgstr "%0點過五分"
+
+#: ../plugins/clock/clock-fuzzy.c:121
+#, no-c-format
+msgctxt "one"
+msgid "ten past %0"
+msgstr "%0點過十分"
+
+#: ../plugins/clock/clock-fuzzy.c:122
+#, no-c-format
+msgctxt "one"
+msgid "quarter past %0"
+msgstr "%0點過十五分"
+
+#: ../plugins/clock/clock-fuzzy.c:123
+#, no-c-format
+msgctxt "one"
+msgid "twenty past %0"
+msgstr "%0點過二十分"
+
+#: ../plugins/clock/clock-fuzzy.c:124
+#, no-c-format
+msgctxt "one"
+msgid "twenty five past %0"
+msgstr "%0點過二十五分"
+
+#: ../plugins/clock/clock-fuzzy.c:125
+#, no-c-format
+msgctxt "one"
+msgid "half past %0"
+msgstr "%0點半"
+
+#: ../plugins/clock/clock-fuzzy.c:126
+#, no-c-format
+msgctxt "one"
+msgid "twenty five to %1"
+msgstr "二十五分後%1點"
+
+#: ../plugins/clock/clock-fuzzy.c:127
+#, no-c-format
+msgctxt "one"
+msgid "twenty to %1"
+msgstr "二十分後%1點"
+
+#: ../plugins/clock/clock-fuzzy.c:128
+#, no-c-format
+msgctxt "one"
+msgid "quarter to %1"
+msgstr "十五分後%1點"
+
+#: ../plugins/clock/clock-fuzzy.c:129
+#, no-c-format
+msgctxt "one"
+msgid "ten to %1"
+msgstr "十分後%1點"
+
+#: ../plugins/clock/clock-fuzzy.c:130
+#, no-c-format
+msgctxt "one"
+msgid "five to %1"
+msgstr "五分後%1點"
+
+#: ../plugins/clock/clock-fuzzy.c:131
+#, no-c-format
+msgctxt "one"
+msgid "%1 o'clock"
+msgstr "%1點鐘"
+
+#: ../plugins/clock/clock-fuzzy.c:136
+msgid "one"
 msgstr "一"
 
-#. Translators: Calendar grid abbreviation for Tuesday
-#: ../js/ui/calendar.js:118
-msgctxt "grid tuesday"
-msgid "T"
+#: ../plugins/clock/clock-fuzzy.c:137
+msgid "two"
 msgstr "二"
 
-#. Translators: Calendar grid abbreviation for Wednesday
-#: ../js/ui/calendar.js:120
-msgctxt "grid wednesday"
-msgid "W"
+#: ../plugins/clock/clock-fuzzy.c:138
+msgid "three"
 msgstr "三"
 
-#. Translators: Calendar grid abbreviation for Thursday
-#: ../js/ui/calendar.js:122
-msgctxt "grid thursday"
-msgid "T"
+#: ../plugins/clock/clock-fuzzy.c:139
+msgid "four"
 msgstr "四"
 
-#. Translators: Calendar grid abbreviation for Friday
-#: ../js/ui/calendar.js:124
-msgctxt "grid friday"
-msgid "F"
+#: ../plugins/clock/clock-fuzzy.c:140
+msgid "five"
 msgstr "五"
 
-#. Translators: Calendar grid abbreviation for Saturday
-#: ../js/ui/calendar.js:126
-msgctxt "grid saturday"
-msgid "S"
+#: ../plugins/clock/clock-fuzzy.c:141
+msgid "six"
 msgstr "六"
 
-#. Translators: Event list abbreviation for Sunday.
-#. *
-#. * NOTE: These list abbreviations are normally not shown together
-#. * so they need to be unique (e.g. Tuesday and Thursday cannot
-#. * both be 'T').
-#.
-#: ../js/ui/calendar.js:139
-msgctxt "list sunday"
-msgid "Su"
-msgstr "日"
+#: ../plugins/clock/clock-fuzzy.c:142
+msgid "seven"
+msgstr "七"
 
-#. Translators: Event list abbreviation for Monday
-#: ../js/ui/calendar.js:141
-msgctxt "list monday"
-msgid "M"
-msgstr "一"
+#: ../plugins/clock/clock-fuzzy.c:143
+msgid "eight"
+msgstr "八"
 
-#. Translators: Event list abbreviation for Tuesday
-#: ../js/ui/calendar.js:143
-msgctxt "list tuesday"
-msgid "T"
-msgstr "二"
+#: ../plugins/clock/clock-fuzzy.c:144
+msgid "nine"
+msgstr "九"
 
-#. Translators: Event list abbreviation for Wednesday
-#: ../js/ui/calendar.js:145
-msgctxt "list wednesday"
-msgid "W"
-msgstr "三"
+#: ../plugins/clock/clock-fuzzy.c:145
+msgid "ten"
+msgstr "十"
 
-#. Translators: Event list abbreviation for Thursday
-#: ../js/ui/calendar.js:147
-msgctxt "list thursday"
-msgid "Th"
-msgstr "四"
+#: ../plugins/clock/clock-fuzzy.c:146
+msgid "eleven"
+msgstr "十一"
 
-#. Translators: Event list abbreviation for Friday
-#: ../js/ui/calendar.js:149
-msgctxt "list friday"
-msgid "F"
-msgstr "五"
+#: ../plugins/clock/clock-fuzzy.c:147
+msgid "twelve"
+msgstr "十二"
 
-#. Translators: Event list abbreviation for Saturday
-#: ../js/ui/calendar.js:151
-msgctxt "list saturday"
-msgid "S"
-msgstr "六"
+#: ../plugins/clock/clock.desktop.in.h:2
+msgid "What time is it?"
+msgstr "現在幾點？"
 
-#. Translators: Text to show if there are no events
-#: ../js/ui/calendar.js:681
-msgid "Nothing Scheduled"
-msgstr "沒有預訂行程"
+#: ../plugins/directorymenu/directorymenu.c:250
+#: ../plugins/directorymenu/directorymenu.desktop.in.h:1
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:2
+msgid "Directory Menu"
+msgstr "目錄選單"
 
-#. Translators: Shown on calendar heading when selected day occurs on current year
-#: ../js/ui/calendar.js:697
-msgctxt "calendar heading"
-msgid "%A, %B %d"
-msgstr "%m月%d日%A"
-
-#. Translators: Shown on calendar heading when selected day occurs on different year
-#: ../js/ui/calendar.js:700
-msgctxt "calendar heading"
-msgid "%A, %B %d, %Y"
-msgstr "%Y年%m月%d日%A"
-
-#: ../js/ui/calendar.js:710
-msgid "Today"
-msgstr "今天"
-
-#: ../js/ui/calendar.js:714
-msgid "Tomorrow"
-msgstr "明天"
-
-#: ../js/ui/calendar.js:723
-msgid "This week"
-msgstr "本週"
-
-#: ../js/ui/calendar.js:731
-msgid "Next week"
-msgstr "下週"
-
-#: ../js/ui/contactDisplay.js:66 ../js/ui/notificationDaemon.js:486
-#: ../js/ui/status/power.js:215 ../src/shell-app.c:374
-msgid "Unknown"
-msgstr "不明"
-
-#: ../js/ui/contactDisplay.js:89 ../js/ui/userMenu.js:129
-msgid "Available"
-msgstr "有空"
-
-#: ../js/ui/contactDisplay.js:94 ../js/ui/userMenu.js:138
-msgid "Away"
-msgstr "離開"
-
-#: ../js/ui/contactDisplay.js:98 ../js/ui/userMenu.js:132
-msgid "Busy"
-msgstr "忙碌"
-
-#: ../js/ui/contactDisplay.js:102
-msgid "Offline"
-msgstr "離線"
-
-#: ../js/ui/contactDisplay.js:153
-msgid "CONTACTS"
-msgstr "連絡人"
-
-#: ../js/ui/dash.js:229 ../js/ui/messageTray.js:1207
-msgid "Remove"
-msgstr "移除"
-
-#: ../js/ui/dateMenu.js:103
-msgid "Date and Time Settings"
-msgstr "日期與時刻設定值"
-
-#: ../js/ui/dateMenu.js:129
-msgid "Open Calendar"
-msgstr "開啟行事曆"
-
-#. Translators: This is the time format with date used
-#. in 24-hour mode.
-#: ../js/ui/dateMenu.js:187
-msgid "%a %b %e, %R:%S"
-msgstr "%m月%e日(%a), %R:%S"
-
-#: ../js/ui/dateMenu.js:188
-msgid "%a %b %e, %R"
-msgstr "%m月%e日(%a), %R"
-
-#. Translators: This is the time format without date used
-#. in 24-hour mode.
-#: ../js/ui/dateMenu.js:192
-msgid "%a %R:%S"
-msgstr "(%a) %R:%S"
-
-#: ../js/ui/dateMenu.js:193
-msgid "%a %R"
-msgstr "(%a) %R"
-
-#. Translators: This is a time format with date used
-#. for AM/PM.
-#: ../js/ui/dateMenu.js:200
-msgid "%a %b %e, %l:%M:%S %p"
-msgstr "%m月%e日(%a), %p %l:%M:%S"
-
-#: ../js/ui/dateMenu.js:201
-msgid "%a %b %e, %l:%M %p"
-msgstr "%m月%e日(%a), %p %l:%M"
-
-#. Translators: This is a time format without date used
-#. for AM/PM.
-#: ../js/ui/dateMenu.js:205
-msgid "%a %l:%M:%S %p"
-msgstr "(%a) %p %l:%M:%S"
-
-#: ../js/ui/dateMenu.js:206
-msgid "%a %l:%M %p"
-msgstr "(%a) %p %l:%M"
-
-#. Translators: This is the date format to use when the calendar popup is
-#. * shown - it is shown just below the time in the shell (e.g. "Tue 9:29 AM").
-#.
-#: ../js/ui/dateMenu.js:217
-msgid "%A %B %e, %Y"
-msgstr "%Y年%m月%e日%A"
-
-#: ../js/ui/endSessionDialog.js:61
+#: ../plugins/directorymenu/directorymenu.c:559
 #, c-format
-msgctxt "title"
-msgid "Log Out %s"
-msgstr "登出 %s"
+msgid "Failed to launch application \"%s\""
+msgstr "無法啟動應用程式「%s」"
 
-#: ../js/ui/endSessionDialog.js:62
-msgctxt "title"
-msgid "Log Out"
-msgstr "登出"
-
-#: ../js/ui/endSessionDialog.js:63
-msgid "Click Log Out to quit these applications and log out of the system."
-msgstr "點選登出以結束這些應用程式並登出系統。"
-
-#: ../js/ui/endSessionDialog.js:65
+#: ../plugins/directorymenu/directorymenu.c:590
 #, c-format
-msgid "%s will be logged out automatically in %d second."
-msgid_plural "%s will be logged out automatically in %d seconds."
-msgstr[0] "%s 會在 %d 秒後自動登出。"
+msgid "Failed to query content type for \"%s\""
+msgstr "無法查詢「%s」的內容類型"
 
-#: ../js/ui/endSessionDialog.js:70
+#: ../plugins/directorymenu/directorymenu.c:599
 #, c-format
-msgid "You will be logged out automatically in %d second."
-msgid_plural "You will be logged out automatically in %d seconds."
-msgstr[0] "您會在 %d 秒後自動登出。"
+msgid "No default application found for \"%s\""
+msgstr "找不到「%s」的預設應用程式"
 
-#: ../js/ui/endSessionDialog.js:74
-msgid "Logging out of the system."
-msgstr "登出系統。"
-
-#: ../js/ui/endSessionDialog.js:76
-msgctxt "button"
-msgid "Log Out"
-msgstr "登出"
-
-#: ../js/ui/endSessionDialog.js:81
-msgctxt "title"
-msgid "Power Off"
-msgstr "關閉電源"
-
-#: ../js/ui/endSessionDialog.js:82
-msgid "Click Power Off to quit these applications and power off the system."
-msgstr "點選關閉電源以結束這些應用程式並關閉系統電源。"
-
-#: ../js/ui/endSessionDialog.js:84
+#: ../plugins/directorymenu/directorymenu.c:614
 #, c-format
-msgid "The system will power off automatically in %d second."
-msgid_plural "The system will power off automatically in %d seconds."
-msgstr[0] "系統會在 %d 秒後關閉電源。"
+msgid "Failed to launch default application for \"%s\""
+msgstr "無法為「%s」啟動預設應用程式"
 
-#: ../js/ui/endSessionDialog.js:88
-msgid "Powering off the system."
-msgstr "關閉系統的電源。"
-
-#: ../js/ui/endSessionDialog.js:90 ../js/ui/endSessionDialog.js:107
-msgctxt "button"
-msgid "Restart"
-msgstr "重新啟動"
-
-#: ../js/ui/endSessionDialog.js:92
-msgctxt "button"
-msgid "Power Off"
-msgstr "關閉電源"
-
-#: ../js/ui/endSessionDialog.js:98
-msgctxt "title"
-msgid "Restart"
-msgstr "重新啟動"
-
-#: ../js/ui/endSessionDialog.js:99
-msgid "Click Restart to quit these applications and restart the system."
-msgstr "點選重新啟動以結束這些應用程式並將系統重新啟動。"
-
-#: ../js/ui/endSessionDialog.js:101
+#: ../plugins/directorymenu/directorymenu.c:705
 #, c-format
-msgid "The system will restart automatically in %d second."
-msgid_plural "The system will restart automatically in %d seconds."
-msgstr[0] "系統會在 %d 秒後自動重新啟動。"
+msgid "Failed to execute the preferred application for category \"%s\""
+msgstr "未能執行分類「%s」的偏好應用程式"
 
-#: ../js/ui/endSessionDialog.js:105
-msgid "Restarting the system."
-msgstr "重新啟動系統。"
+#: ../plugins/directorymenu/directorymenu.c:778
+msgid "Open Folder"
+msgstr "開啟資料夾"
 
-#: ../js/ui/extensionSystem.js:403
-msgid "Install"
-msgstr "安裝"
+#: ../plugins/directorymenu/directorymenu.c:789
+msgid "Open in Terminal"
+msgstr "在終端機內開啟"
 
-#: ../js/ui/extensionSystem.js:407
+#: ../plugins/directorymenu/directorymenu.desktop.in.h:2
+msgid "Show a directory tree in a menu"
+msgstr "在選單內顯示目錄樹"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:3
+msgid "Enter a list of patterns that will be used to determine which files are visible in a directory. If you specify more than one pattern here, the list items must be separated with semicolons (e.g. *.txt;*.doc)."
+msgstr "輸入用來決定目錄內哪些檔案可見的樣式清單。若您在此處指定超過一種樣式，那些清單項目一定要以半形分號隔開 (例：*.txt;*.doc)。"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:4
+#: ../plugins/tasklist/tasklist-dialog.glade.h:5
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:5
+msgid "Filtering"
+msgstr "過濾方式"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:5
+msgid "Select A Directory"
+msgstr "選取目錄"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:6
+msgid "Show _hidden files"
+msgstr "顯示隱藏檔(_F)"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:7
+msgid "_Base Directory:"
+msgstr "基礎目錄(_B)："
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:8
+msgid "_File Pattern:"
+msgstr "檔案樣式(_F)："
+
+#: ../plugins/launcher/launcher.c:407
+msgid "Open launcher menu"
+msgstr "開啟啟動器選單"
+
+#: ../plugins/launcher/launcher.c:1558
+msgid "Unnamed Item"
+msgstr "未命名項目"
+
+#: ../plugins/launcher/launcher.c:1701
+msgid "No items"
+msgstr "無項目"
+
+#: ../plugins/launcher/launcher-dialog.c:740
+msgid "If you delete an item, it will be permanently removed"
+msgstr "若您刪除項目，它將被永遠移除"
+
+#: ../plugins/launcher/launcher-dialog.c:741
 #, c-format
-msgid "Download and install '%s' from extensions.heartlenv.org?"
-msgstr "是否從 extensions.heartlenv.org 下載並安裝「%s」？"
+msgid "Are you sure you want to remove \"%s\"?"
+msgstr "您確定要移除「%s」嗎？"
 
-#: ../js/ui/keyboard.js:327
-msgid "tray"
-msgstr "系統匣"
+#: ../plugins/launcher/launcher-dialog.c:742
+msgid "Unnamed item"
+msgstr "未命名項目"
 
-#: ../js/ui/keyboard.js:544 ../js/ui/status/power.js:203
-msgid "Keyboard"
-msgstr "鍵盤"
+#: ../plugins/launcher/launcher-dialog.c:787
+msgid "Failed to open desktop item editor"
+msgstr "未能開啟桌面項目編輯器"
 
-#: ../js/ui/keyringPrompt.js:85 ../js/ui/polkitAuthenticationAgent.js:272
-msgid "Password:"
-msgstr "密碼： "
+#: ../plugins/launcher/launcher-dialog.glade.h:2
+msgid "Add a new empty item"
+msgstr "加入新的空項目"
 
-#: ../js/ui/keyringPrompt.js:101
-msgid "Type again:"
-msgstr "再輸入一次："
+#: ../plugins/launcher/launcher-dialog.glade.h:3
+msgid "Add one or more existing items to the launcher"
+msgstr "加入一個或多個現存的項目至啟動器"
 
-#: ../js/ui/lookingGlass.js:725
-msgid "No extensions installed"
-msgstr "沒有安裝擴充功能"
+#: ../plugins/launcher/launcher-dialog.glade.h:4
+msgid "Advanced"
+msgstr "進階"
 
-#. Translators: argument is an extension UUID.
-#: ../js/ui/lookingGlass.js:779
-#, c-format
-msgid "%s has not emitted any errors."
-msgstr "%s 沒有發出任何錯誤。"
-
-#: ../js/ui/lookingGlass.js:785
-msgid "Hide Errors"
-msgstr "隱藏錯誤"
-
-#: ../js/ui/lookingGlass.js:789 ../js/ui/lookingGlass.js:840
-msgid "Show Errors"
-msgstr "顯示錯誤"
-
-#: ../js/ui/lookingGlass.js:798
-msgid "Enabled"
-msgstr "已啟用"
-
-#. translators:
-#. * The device has been disabled
-#: ../js/ui/lookingGlass.js:801 ../src/gvc/gvc-mixer-control.c:1093
-msgid "Disabled"
-msgstr "已停用"
-
-#: ../js/ui/lookingGlass.js:803
-msgid "Error"
-msgstr "錯誤"
-
-#: ../js/ui/lookingGlass.js:805
-msgid "Out of date"
-msgstr "過期"
-
-#: ../js/ui/lookingGlass.js:807
-msgid "Downloading"
-msgstr "下載中"
-
-#: ../js/ui/lookingGlass.js:828
-msgid "View Source"
-msgstr "檢示來源"
-
-#: ../js/ui/lookingGlass.js:834
-msgid "Web Page"
-msgstr "網頁"
-
-#. Translators: this is a filename used for screencast recording
-#: ../js/ui/main.js:118
-#, no-c-format
-msgid "Screencast from %d %t"
-msgstr "Screencast from %d %t"
-
-#: ../js/ui/messageTray.js:1200
-msgid "Open"
-msgstr "開啟"
-
-#: ../js/ui/messageTray.js:1217
-msgid "Unmute"
-msgstr "取消靜音"
-
-#: ../js/ui/messageTray.js:1217
-msgid "Mute"
-msgstr "靜音"
-
-#: ../js/ui/messageTray.js:2490
-msgid "System Information"
-msgstr "系統資訊"
-
-#: ../js/ui/networkAgent.js:148
-msgid "Connect"
-msgstr "連線"
-
-#. Cisco LEAP
-#: ../js/ui/networkAgent.js:243 ../js/ui/networkAgent.js:255
-#: ../js/ui/networkAgent.js:282 ../js/ui/networkAgent.js:302
-#: ../js/ui/networkAgent.js:312
-msgid "Password: "
-msgstr "密碼： "
-
-#. static WEP
-#: ../js/ui/networkAgent.js:248
-msgid "Key: "
-msgstr "金鑰："
-
-#. TTLS and PEAP are actually much more complicated, but this complication
-#. is not visible here since we only care about phase2 authentication
-#. (and don't even care of which one)
-#: ../js/ui/networkAgent.js:280 ../js/ui/networkAgent.js:298
-msgid "Username: "
-msgstr "使用者名稱："
-
-#: ../js/ui/networkAgent.js:286
-msgid "Identity: "
-msgstr "識別："
-
-#: ../js/ui/networkAgent.js:288
-msgid "Private key password: "
-msgstr "私密金鑰密碼："
-
-#: ../js/ui/networkAgent.js:300
-msgid "Service: "
-msgstr "服務："
-
-#: ../js/ui/networkAgent.js:329
-msgid "Authentication required by wireless network"
-msgstr "無線網路所需要的驗證"
-
-#: ../js/ui/networkAgent.js:330
-#, c-format
-msgid ""
-"Passwords or encryption keys are required to access the wireless network "
-"'%s'."
-msgstr "需要密碼或是加密金鑰來存取無線網路「%s」。"
-
-#: ../js/ui/networkAgent.js:334
-msgid "Wired 802.1X authentication"
-msgstr "有線網路 802.1X 驗證"
-
-#: ../js/ui/networkAgent.js:336
-msgid "Network name: "
-msgstr "網路名稱："
-
-#: ../js/ui/networkAgent.js:341
-msgid "DSL authentication"
-msgstr "DSL 驗證"
-
-#: ../js/ui/networkAgent.js:348
-msgid "PIN code required"
-msgstr "需要 PIN 碼"
-
-#: ../js/ui/networkAgent.js:349
-msgid "PIN code is needed for the mobile broadband device"
-msgstr "這個行動寬頻裝置需要 PIN 碼"
-
-#: ../js/ui/networkAgent.js:350
-msgid "PIN: "
-msgstr "PIN： "
-
-#: ../js/ui/networkAgent.js:356
-msgid "Mobile broadband network password"
-msgstr "行動寬頻網路密碼"
-
-#: ../js/ui/networkAgent.js:357
-#, c-format
-msgid "A password is required to connect to '%s'."
-msgstr "連線至「%s」需要密碼。"
-
-#: ../js/ui/overview.js:90
-msgid "Undo"
-msgstr "復原"
-
-#: ../js/ui/overview.js:132
-msgid "Overview"
-msgstr "概覽"
-
-#: ../js/ui/overview.js:202
-msgid "Windows"
-msgstr "視窗"
-
-#: ../js/ui/overview.js:205
-msgid "Applications"
-msgstr "應用程式"
-
-#. Translators: this is the name of the dock/favorites area on
-#. the left of the overview
-#: ../js/ui/overview.js:231
-msgid "Dash"
-msgstr "Dash"
-
-#: ../js/ui/panel.js:591
-msgid "Quit"
-msgstr "結束"
-
-#. Translators: If there is no suitable word for "Activities"
-#. in your language, you can use the word for "Overview".
-#: ../js/ui/panel.js:623
-msgid "Activities"
-msgstr "概覽 "
-
-#: ../js/ui/panel.js:998
-msgid "Top Bar"
-msgstr "頂端列"
-
-#: ../js/ui/placeDisplay.js:115
-#, c-format
-msgid "Failed to unmount '%s'"
-msgstr "無法卸載「%s」"
-
-#: ../js/ui/placeDisplay.js:118
-msgid "Retry"
-msgstr "重試"
-
-#: ../js/ui/placeDisplay.js:156
-msgid "Connect to..."
-msgstr "連接到…"
-
-#: ../js/ui/placeDisplay.js:367
-msgid "PLACES & DEVICES"
-msgstr "位置 & 裝置"
-
-#: ../js/ui/polkitAuthenticationAgent.js:71
-msgid "Authentication Required"
-msgstr "要求驗證"
-
-#: ../js/ui/polkitAuthenticationAgent.js:109
-msgid "Administrator"
-msgstr "系統管理員"
-
-#: ../js/ui/polkitAuthenticationAgent.js:179
-msgid "Authenticate"
-msgstr "驗證"
-
-#. Translators: "that didn't work" refers to the fact that the
-#. * requested authentication was not gained; this can happen
-#. * because of an authentication error (like invalid password),
-#. * for instance.
-#: ../js/ui/polkitAuthenticationAgent.js:260
-msgid "Sorry, that didn't work. Please try again."
-msgstr "抱歉，那樣無法運作。請再試一次。"
-
-#. Translators: this MUST be either "toggle-switch-us"
-#. (for toggle switches containing the English words
-#. "ON" and "OFF") or "toggle-switch-intl" (for toggle
-#. switches containing "◯" and "|"). Other values will
-#. simply result in invisible toggle switches.
-#: ../js/ui/popupMenu.js:724
-msgid "toggle-switch-us"
-msgstr "toggle-switch-us"
-
-#: ../js/ui/runDialog.js:205
-msgid "Please enter a command:"
-msgstr "請輸入指令："
-
-#: ../js/ui/searchDisplay.js:332
-msgid "Searching..."
-msgstr "搜尋中…"
-
-#: ../js/ui/searchDisplay.js:414
-msgid "No matching results."
-msgstr "沒有相符的結果。"
-
-#: ../js/ui/shellEntry.js:26
-msgid "Copy"
-msgstr "複製"
-
-#: ../js/ui/shellEntry.js:31
-msgid "Paste"
-msgstr "貼上"
-
-#: ../js/ui/shellEntry.js:77
-msgid "Show Text"
-msgstr "顯示文字"
-
-#: ../js/ui/shellEntry.js:79
-msgid "Hide Text"
-msgstr "隱藏文字"
-
-#: ../js/ui/shellMountOperation.js:271
-msgid "Wrong password, please try again"
-msgstr "密碼錯誤，請再試一次"
-
-#: ../js/ui/status/accessibility.js:47
-msgid "Accessibility"
-msgstr "無障礙功能"
-
-#: ../js/ui/status/accessibility.js:52
-msgid "Zoom"
-msgstr "縮放"
-
-#. let screenReader = this._buildItem(_("Screen Reader"), APPLICATIONS_SCHEMA,
-#. 'screen-reader-enabled');
-#. this.menu.addMenuItem(screenReader);
-#: ../js/ui/status/accessibility.js:63
-msgid "Screen Keyboard"
-msgstr "螢幕鍵盤"
-
-#: ../js/ui/status/accessibility.js:67
-msgid "Visual Alerts"
-msgstr "視覺警示"
-
-#: ../js/ui/status/accessibility.js:70
-msgid "Sticky Keys"
-msgstr "黏性特殊鍵"
-
-#: ../js/ui/status/accessibility.js:73
-msgid "Slow Keys"
-msgstr "遲緩按鍵"
-
-#: ../js/ui/status/accessibility.js:76
-msgid "Bounce Keys"
-msgstr "回鍵"
-
-#: ../js/ui/status/accessibility.js:79
-msgid "Mouse Keys"
-msgstr "滑鼠按鍵"
-
-#: ../js/ui/status/accessibility.js:83
-msgid "Universal Access Settings"
-msgstr "無障礙功能設定值"
-
-#: ../js/ui/status/accessibility.js:117
-msgid "High Contrast"
-msgstr "高反差"
-
-#: ../js/ui/status/accessibility.js:154
-msgid "Large Text"
-msgstr "大型文字"
-
-#: ../js/ui/status/bluetooth.js:31 ../js/ui/status/bluetooth.js:35
-#: ../js/ui/status/bluetooth.js:258 ../js/ui/status/bluetooth.js:341
-#: ../js/ui/status/bluetooth.js:371 ../js/ui/status/bluetooth.js:407
-#: ../js/ui/status/bluetooth.js:436 ../js/ui/status/network.js:893
-msgid "Bluetooth"
-msgstr "藍牙"
-
-#: ../js/ui/status/bluetooth.js:48
-msgid "Visibility"
-msgstr "顯示狀態"
-
-#: ../js/ui/status/bluetooth.js:62
-msgid "Send Files to Device..."
-msgstr "傳送檔案到裝置…"
-
-#: ../js/ui/status/bluetooth.js:63
-msgid "Set up a New Device..."
-msgstr "設定新的裝置…"
-
-#: ../js/ui/status/bluetooth.js:87
-msgid "Bluetooth Settings"
-msgstr "藍牙設定值"
-
-#. TRANSLATORS: this means that bluetooth was disabled by hardware rfkill
-#: ../js/ui/status/bluetooth.js:107 ../js/ui/status/network.js:256
-msgid "hardware disabled"
-msgstr "硬體已停用"
-
-#: ../js/ui/status/bluetooth.js:203
-msgid "Connection"
-msgstr "連線"
-
-#: ../js/ui/status/bluetooth.js:214 ../js/ui/status/network.js:491
-msgid "disconnecting..."
-msgstr "正在中斷…"
-
-#: ../js/ui/status/bluetooth.js:227 ../js/ui/status/network.js:497
-msgid "connecting..."
-msgstr "連線中…"
-
-#: ../js/ui/status/bluetooth.js:245
-msgid "Send Files..."
-msgstr "傳送檔案…"
-
-#: ../js/ui/status/bluetooth.js:250
-msgid "Browse Files..."
-msgstr "瀏覽檔案…"
-
-#: ../js/ui/status/bluetooth.js:259
-msgid "Error browsing device"
-msgstr "瀏覽裝置時發生錯誤"
-
-#: ../js/ui/status/bluetooth.js:260
-#, c-format
-msgid "The requested device cannot be browsed, error is '%s'"
-msgstr "要求的裝置是不能瀏覽的，錯誤為「%s」"
-
-#: ../js/ui/status/bluetooth.js:268
-msgid "Keyboard Settings"
-msgstr "鍵盤設定值"
-
-#: ../js/ui/status/bluetooth.js:271
-msgid "Mouse Settings"
-msgstr "滑鼠設定值"
-
-#: ../js/ui/status/bluetooth.js:276 ../js/ui/status/volume.js:59
-msgid "Sound Settings"
-msgstr "音效設定值"
-
-#: ../js/ui/status/bluetooth.js:372
-#, c-format
-msgid "Authorization request from %s"
-msgstr "來自「%s」的驗證要求"
-
-#: ../js/ui/status/bluetooth.js:378
-#, c-format
-msgid "Device %s wants access to the service '%s'"
-msgstr "裝置 %s 想要存取服務「%s」"
-
-#: ../js/ui/status/bluetooth.js:380
-msgid "Always grant access"
-msgstr "永遠准許存取"
-
-#: ../js/ui/status/bluetooth.js:381
-msgid "Grant this time only"
-msgstr "只有這次准許"
-
-#: ../js/ui/status/bluetooth.js:382 ../js/ui/telepathyClient.js:1091
-msgid "Reject"
-msgstr "拒絕"
-
-#: ../js/ui/status/bluetooth.js:408
-#, c-format
-msgid "Pairing confirmation for %s"
-msgstr "%s 的配對確認"
-
-#: ../js/ui/status/bluetooth.js:414 ../js/ui/status/bluetooth.js:444
-#, c-format
-msgid "Device %s wants to pair with this computer"
-msgstr "裝置 %s 想要和這個電腦配對"
-
-#: ../js/ui/status/bluetooth.js:415
-#, c-format
-msgid "Please confirm whether the PIN '%s' matches the one on the device."
-msgstr "請確認 PIN「%s」是否和裝置上的相符。"
-
-#: ../js/ui/status/bluetooth.js:417
-msgid "Matches"
-msgstr "相符"
-
-#: ../js/ui/status/bluetooth.js:418
-msgid "Does not match"
-msgstr "不相符"
-
-#: ../js/ui/status/bluetooth.js:437
-#, c-format
-msgid "Pairing request for %s"
-msgstr "%s 的配對請求"
-
-#: ../js/ui/status/bluetooth.js:445
-msgid "Please enter the PIN mentioned on the device."
-msgstr "請輸入裝置所提及的 PIN。"
-
-#: ../js/ui/status/bluetooth.js:461
-msgid "OK"
-msgstr "確定"
-
-#: ../js/ui/status/keyboard.js:68
-msgid "Show Keyboard Layout"
-msgstr "顯示鍵盤配置"
-
-#: ../js/ui/status/keyboard.js:73
-msgid "Region and Language Settings"
-msgstr "地區和語言設定值"
-
-#: ../js/ui/status/network.js:96
-msgid "<unknown>"
-msgstr "<不明>"
-
-#. Translators: this indicates that wireless or wwan is disabled by hardware killswitch
-#: ../js/ui/status/network.js:278
-msgid "disabled"
-msgstr "已停用"
-
-#. Translators: this is for network devices that are physically present but are not
-#. under NetworkManager's control (and thus cannot be used in the menu)
-#: ../js/ui/status/network.js:489
-msgid "unmanaged"
-msgstr "未管理"
-
-#. Translators: this is for network connections that require some kind of key or password
-#: ../js/ui/status/network.js:500
-msgid "authentication required"
-msgstr "要求驗證"
-
-#. Translators: this is for devices that require some kind of firmware or kernel
-#. module, which is missing
-#: ../js/ui/status/network.js:510
-msgid "firmware missing"
-msgstr "缺少韌體"
-
-#. Translators: this is for wired network devices that are physically disconnected
-#: ../js/ui/status/network.js:517
-msgid "cable unplugged"
-msgstr "纜線已拔除"
-
-#. Translators: this is for a network device that cannot be activated (for example it
-#. is disabled by rfkill, or it has no coverage
-#: ../js/ui/status/network.js:522
-msgid "unavailable"
-msgstr "無法使用"
-
-#: ../js/ui/status/network.js:524
-msgid "connection failed"
-msgstr "連線失敗"
-
-#: ../js/ui/status/network.js:585 ../js/ui/status/network.js:1505
-msgid "More..."
-msgstr "更多…"
-
-#. TRANSLATORS: this is the indication that a connection for another logged in user is active,
-#. and we cannot access its settings (including the name)
-#: ../js/ui/status/network.js:621 ../js/ui/status/network.js:1440
-msgid "Connected (private)"
-msgstr "已連線 (私人)"
-
-#: ../js/ui/status/network.js:696
-msgid "Auto Ethernet"
-msgstr "自動使用乙太網路"
-
-#: ../js/ui/status/network.js:757
-msgid "Auto broadband"
-msgstr "自動使用行動寬頻"
-
-#: ../js/ui/status/network.js:760
-msgid "Auto dial-up"
-msgstr "自動使用撥接"
-
-#. TRANSLATORS: this the automatic wireless connection name (including the network name)
-#: ../js/ui/status/network.js:879 ../js/ui/status/network.js:1452
-#, c-format
-msgid "Auto %s"
-msgstr "自動使用 %s"
-
-#: ../js/ui/status/network.js:881
-msgid "Auto bluetooth"
-msgstr "自動使用藍牙"
-
-#: ../js/ui/status/network.js:1454
-msgid "Auto wireless"
-msgstr "自動使用無線網路"
-
-#: ../js/ui/status/network.js:1541
-msgid "Network"
-msgstr "網路"
-
-#: ../js/ui/status/network.js:1548
-msgid "Enable networking"
-msgstr "啟用網路"
-
-#: ../js/ui/status/network.js:1560
-msgid "Wired"
-msgstr "有線"
-
-#: ../js/ui/status/network.js:1571
-msgid "Wireless"
-msgstr "無線"
-
-#: ../js/ui/status/network.js:1581
-msgid "Mobile broadband"
-msgstr "行動寬頻"
-
-#: ../js/ui/status/network.js:1591
-msgid "VPN Connections"
-msgstr "VPN 連線"
-
-#: ../js/ui/status/network.js:1602
-msgid "Network Settings"
-msgstr "網路設定值"
-
-#: ../js/ui/status/network.js:1739
-msgid "Connection failed"
-msgstr "連線失敗"
-
-#: ../js/ui/status/network.js:1740
-msgid "Activation of network connection failed"
-msgstr "啟動網路連線失敗"
-
-#: ../js/ui/status/network.js:1993
-msgid "Networking is disabled"
-msgstr "網路已停用"
-
-#: ../js/ui/status/network.js:2117
-msgid "Network Manager"
-msgstr "網路管理員"
-
-#: ../js/ui/status/power.js:59
-msgid "Battery"
-msgstr "電池"
-
-#: ../js/ui/status/power.js:76
-msgid "Power Settings"
-msgstr "電源設定值"
-
-#. 0 is reported when UPower does not have enough data
-#. to estimate battery life
-#: ../js/ui/status/power.js:98
-msgid "Estimating..."
-msgstr "評估中…"
-
-#: ../js/ui/status/power.js:105
-#, c-format
-msgid "%d hour remaining"
-msgid_plural "%d hours remaining"
-msgstr[0] "可使用 %d 小時"
-
-#. TRANSLATORS: this is a time string, as in "%d hours %d minutes remaining"
-#: ../js/ui/status/power.js:108
-#, c-format
-msgid "%d %s %d %s remaining"
-msgstr "剩下 %d %s %d %s"
-
-#: ../js/ui/status/power.js:110
-msgid "hour"
-msgid_plural "hours"
-msgstr[0] "小時"
-
-#: ../js/ui/status/power.js:110
-msgid "minute"
-msgid_plural "minutes"
-msgstr[0] "分鐘"
-
-#: ../js/ui/status/power.js:113
-#, c-format
-msgid "%d minute remaining"
-msgid_plural "%d minutes remaining"
-msgstr[0] "剩下 %d 分鐘"
-
-#: ../js/ui/status/power.js:116 ../js/ui/status/power.js:186
-#, c-format
-msgctxt "percent of battery remaining"
-msgid "%d%%"
-msgstr "%d%%"
-
-#: ../js/ui/status/power.js:193
-msgid "AC adapter"
-msgstr "AC 電源"
-
-#: ../js/ui/status/power.js:195
-msgid "Laptop battery"
-msgstr "筆記型電腦電池"
-
-#: ../js/ui/status/power.js:197
-msgid "UPS"
-msgstr "不斷電系統"
-
-#: ../js/ui/status/power.js:199
-msgid "Monitor"
-msgstr "監視器"
-
-#: ../js/ui/status/power.js:201
-msgid "Mouse"
-msgstr "滑鼠"
-
-#: ../js/ui/status/power.js:205
-msgid "PDA"
-msgstr "PDA"
-
-#: ../js/ui/status/power.js:207
-msgid "Cell phone"
-msgstr "行動電話"
-
-#: ../js/ui/status/power.js:209
-msgid "Media player"
-msgstr "媒體播放器"
-
-#: ../js/ui/status/power.js:211
-msgid "Tablet"
-msgstr "手寫板"
-
-#: ../js/ui/status/power.js:213
-msgid "Computer"
-msgstr "電腦"
-
-#. Translators: This is the label for audio volume
-#: ../js/ui/status/volume.js:25 ../js/ui/status/volume.js:39
-msgid "Volume"
-msgstr "音量"
-
-#: ../js/ui/status/volume.js:51
-msgid "Microphone"
-msgstr "麥克風"
-
-#. FIXME: We don't have a 'chat room' icon (bgo #653737) use
-#. system-users for now as Empathy does.
-#: ../js/ui/telepathyClient.js:220
-msgid "Invitation"
-msgstr "邀請"
-
-#. We got the TpContact
-#: ../js/ui/telepathyClient.js:271
-msgid "Call"
-msgstr "通話"
-
-#. We got the TpContact
-#: ../js/ui/telepathyClient.js:287
-msgid "File Transfer"
-msgstr "檔案傳輸程式"
-
-#: ../js/ui/telepathyClient.js:369
-msgid "Subscription request"
-msgstr "訂閱要求"
-
-#: ../js/ui/telepathyClient.js:405
-msgid "Connection error"
-msgstr "連線錯誤"
-
-#: ../js/ui/telepathyClient.js:663
-#, c-format
-msgid "%s is online."
-msgstr "%s 現在上線。"
-
-#: ../js/ui/telepathyClient.js:667
-#, c-format
-msgid "%s is offline."
-msgstr "%s 現在離線。"
-
-#: ../js/ui/telepathyClient.js:671
-#, c-format
-msgid "%s is away."
-msgstr "%s 已離開。"
-
-#: ../js/ui/telepathyClient.js:674
-#, c-format
-msgid "%s is busy."
-msgstr "%s 正忙碌。"
-
-#. Translators: this is a time format string followed by a date.
-#. If applicable, replace %X with a strftime format valid for your
-#. locale, without seconds.
-#: ../js/ui/telepathyClient.js:887
-#, no-c-format
-msgid "Sent at <b>%X</b> on <b>%A</b>"
-msgstr "傳送於 <b>%X</b> <b>%A</b>"
-
-#. Translators: this is a time format in the style of "Wednesday, May 25",
-#. shown when you get a chat message in the same year.
-#: ../js/ui/telepathyClient.js:893
-#, no-c-format
-msgid "Sent on <b>%A</b>, <b>%B %d</b>"
-msgstr "傳送於 <b>%m月%d日</b><b>%A</b>"
-
-#. Translators: this is a time format in the style of "Wednesday, May 25, 2012",
-#. shown when you get a chat message in a different year.
-#: ../js/ui/telepathyClient.js:898
-#, no-c-format
-msgid "Sent on <b>%A</b>, <b>%B %d</b>, %Y"
-msgstr "傳送於 %Y年<b>%m月%d日</b><b>%A</b>"
-
-#. Translators: this is the other person changing their old IM name to their new
-#. IM name.
-#: ../js/ui/telepathyClient.js:940
-#, c-format
-msgid "%s is now known as %s"
-msgstr "%s 現在被稱為 %s"
-
-#. translators: argument is a room name like
-#. * room@jabber.org for example.
-#: ../js/ui/telepathyClient.js:1042
-#, c-format
-msgid "Invitation to %s"
-msgstr "邀請加入 %s"
-
-#. translators: first argument is the name of a contact and the second
-#. * one the name of a room. "Alice is inviting you to join room@jabber.org
-#. * for example.
-#: ../js/ui/telepathyClient.js:1050
-#, c-format
-msgid "%s is inviting you to join %s"
-msgstr "%s 正在邀請您加入 %s"
-
-#: ../js/ui/telepathyClient.js:1052 ../js/ui/telepathyClient.js:1131
-#: ../js/ui/telepathyClient.js:1229
-msgid "Decline"
-msgstr "拒絕"
-
-#: ../js/ui/telepathyClient.js:1053 ../js/ui/telepathyClient.js:1132
-#: ../js/ui/telepathyClient.js:1230
-msgid "Accept"
-msgstr "接受"
-
-#. translators: argument is a contact name like Alice for example.
-#: ../js/ui/telepathyClient.js:1083
-#, c-format
-msgid "Video call from %s"
-msgstr "來自 %s 的視訊電話"
-
-#. translators: argument is a contact name like Alice for example.
-#: ../js/ui/telepathyClient.js:1086
-#, c-format
-msgid "Call from %s"
-msgstr "%s 來電"
-
-#. translators: this is a button label (verb), not a noun
-#: ../js/ui/telepathyClient.js:1093
-msgid "Answer"
-msgstr "接聽"
-
-#. To translators: The first parameter is
-#. * the contact's alias and the second one is the
-#. * file name. The string will be something
-#. * like: "Alice is sending you test.ogg"
-#.
-#: ../js/ui/telepathyClient.js:1125
-#, c-format
-msgid "%s is sending you %s"
-msgstr "%s 正傳送給您 %s"
-
-#. To translators: The parameter is the contact's alias
-#: ../js/ui/telepathyClient.js:1194
-#, c-format
-msgid "%s would like permission to see when you are online"
-msgstr "%s 想要得到查看您上線狀態的許可"
-
-#: ../js/ui/telepathyClient.js:1287
-msgid "Network error"
-msgstr "網路錯誤"
-
-#: ../js/ui/telepathyClient.js:1289
-msgid "Authentication failed"
-msgstr "驗證失敗"
-
-#: ../js/ui/telepathyClient.js:1291
-msgid "Encryption error"
-msgstr "加密發生錯誤"
-
-#: ../js/ui/telepathyClient.js:1293
-msgid "Certificate not provided"
-msgstr "沒有提供憑證"
-
-#: ../js/ui/telepathyClient.js:1295
-msgid "Certificate untrusted"
-msgstr "憑證不被信任"
-
-#: ../js/ui/telepathyClient.js:1297
-msgid "Certificate expired"
-msgstr "憑證已逾期"
-
-#: ../js/ui/telepathyClient.js:1299
-msgid "Certificate not activated"
-msgstr "憑證尚未使用"
-
-#: ../js/ui/telepathyClient.js:1301
-msgid "Certificate hostname mismatch"
-msgstr "憑證主機名稱不符"
-
-#: ../js/ui/telepathyClient.js:1303
-msgid "Certificate fingerprint mismatch"
-msgstr "憑證數位指紋不符"
-
-#: ../js/ui/telepathyClient.js:1305
-msgid "Certificate self-signed"
-msgstr "憑證為自我簽署"
-
-#: ../js/ui/telepathyClient.js:1307
-msgid "Status is set to offline"
-msgstr "狀態設為離線"
-
-#: ../js/ui/telepathyClient.js:1309
-msgid "Encryption is not available"
-msgstr "加密無法使用"
-
-#: ../js/ui/telepathyClient.js:1311
-msgid "Certificate is invalid"
-msgstr "憑證無效"
-
-#: ../js/ui/telepathyClient.js:1313
-msgid "Connection has been refused"
-msgstr "連線遭到拒絕"
-
-#: ../js/ui/telepathyClient.js:1315
-msgid "Connection can't be established"
-msgstr "無法建立連線"
-
-#: ../js/ui/telepathyClient.js:1317
-msgid "Connection has been lost"
-msgstr "已失去連線"
-
-#: ../js/ui/telepathyClient.js:1319
-msgid "This account is already connected to the server"
-msgstr "這個帳號已連接至該伺服器"
-
-#: ../js/ui/telepathyClient.js:1321
-msgid ""
-"Connection has been replaced by a new connection using the same resource"
-msgstr "連線已被使用相同資源的新連線取代"
-
-#: ../js/ui/telepathyClient.js:1323
-msgid "The account already exists on the server"
-msgstr "該帳號已經存在於伺服器上"
-
-#: ../js/ui/telepathyClient.js:1325
-msgid "Server is currently too busy to handle the connection"
-msgstr "伺服器目前過於忙碌以致於無法處理該連線"
-
-#: ../js/ui/telepathyClient.js:1327
-msgid "Certificate has been revoked"
-msgstr "憑證已被撤銷"
-
-#: ../js/ui/telepathyClient.js:1329
-msgid ""
-"Certificate uses an insecure cipher algorithm or is cryptographically weak"
-msgstr "憑證使用不安全的密碼演算法，或是密碼處理上較弱"
-
-#: ../js/ui/telepathyClient.js:1331
-msgid ""
-"The length of the server certificate, or the depth of the server certificate "
-"chain, exceed the limits imposed by the cryptography library"
-msgstr "伺服器憑證的長度，或是伺服器憑證鏈的深度超過密碼函式庫所能處理的範圍"
-
-#: ../js/ui/telepathyClient.js:1333
-msgid "Internal error"
-msgstr "內部的錯誤"
-
-#. translators: argument is the account name, like
-#. * name@jabber.org for example.
-#: ../js/ui/telepathyClient.js:1343
-#, c-format
-msgid "Connection to %s failed"
-msgstr "連線到 %s 失敗"
-
-#: ../js/ui/telepathyClient.js:1352
-msgid "Reconnect"
-msgstr "重新連接"
-
-#: ../js/ui/telepathyClient.js:1353
-msgid "Edit account"
-msgstr "編輯帳號"
-
-#: ../js/ui/telepathyClient.js:1399
-msgid "Unknown reason"
-msgstr "不明原因"
-
-#: ../js/ui/userMenu.js:135
-msgid "Hidden"
-msgstr "隱藏"
-
-#: ../js/ui/userMenu.js:141
-msgid "Idle"
-msgstr "閒置"
-
-#: ../js/ui/userMenu.js:144
-msgid "Unavailable"
-msgstr "沒空"
-
-#: ../js/ui/userMenu.js:595 ../js/ui/userMenu.js:599 ../js/ui/userMenu.js:669
-msgid "Power Off..."
-msgstr "關閉電源…"
-
-#: ../js/ui/userMenu.js:631
-msgid "Notifications"
-msgstr "通知"
-
-#: ../js/ui/userMenu.js:639
-msgid "Online Accounts"
-msgstr "線上帳號"
-
-#: ../js/ui/userMenu.js:643
-msgid "System Settings"
-msgstr "系統設定值"
-
-#: ../js/ui/userMenu.js:650
-msgid "Lock Screen"
-msgstr "鎖定畫面"
-
-#: ../js/ui/userMenu.js:655
-msgid "Switch User"
-msgstr "切換使用者"
-
-#: ../js/ui/userMenu.js:660
-msgid "Log Out..."
-msgstr "登出…"
-
-#: ../js/ui/userMenu.js:688
-msgid "Your chat status will be set to busy"
-msgstr "您的聊天狀態會設為忙碌"
-
-#: ../js/ui/userMenu.js:689
-msgid ""
-"Notifications are now disabled, including chat messages. Your online status "
-"has been adjusted to let others know that you might not see their messages."
-msgstr ""
-"通知現在已被停用，包含聊天訊息。您的上線狀態也調整為讓其他人知道您沒時間看他"
-"們的訊息。"
-
-#. Translators: this is the text displayed
-#. in the search entry when no search is
-#. active; it should not exceed ~30
-#. characters.
-#: ../js/ui/viewSelector.js:113
-msgid "Type to search..."
-msgstr "輸入以搜尋…"
-
-#: ../js/ui/viewSelector.js:131 ../src/shell-util.c:252
-msgid "Search"
-msgstr "搜尋"
-
-#: ../js/ui/wanda.js:124
-#, c-format
-msgid ""
-"Sorry, no wisdom for you today:\n"
-"%s"
-msgstr ""
-"抱歉，今天可能有些問題：\n"
-"%s"
-
-#: ../js/ui/wanda.js:128
-#, c-format
-msgid "%s the Oracle says"
-msgstr "%s Oracle 說："
-
-#: ../js/ui/wanda.js:168
-msgid "Your favorite Easter Egg"
-msgstr "您喜好的復活節彩蛋"
-
-#: ../js/ui/windowAttentionHandler.js:19
-#, c-format
-msgid "'%s' is ready"
-msgstr "「%s」已就緒"
-
-#. translators:
-#. * The number of sound outputs on a particular device
-#: ../src/gvc/gvc-mixer-control.c:1100
-#, c-format
-msgid "%u Output"
-msgid_plural "%u Outputs"
-msgstr[0] "%u 輸出"
-
-#. translators:
-#. * The number of sound inputs on a particular device
-#: ../src/gvc/gvc-mixer-control.c:1110
-#, c-format
-msgid "%u Input"
-msgid_plural "%u Inputs"
-msgstr[0] "%u 輸入"
-
-#: ../src/gvc/gvc-mixer-control.c:1408
-msgid "System Sounds"
-msgstr "系統音效"
-
-#: ../src/main.c:255
-msgid "Print version"
-msgstr "顯示版本"
-
-#: ../src/main.c:261
-msgid "Mode used by GDM for login screen"
-msgstr "GDM 在登入畫面使用的模式"
-
-#: ../src/shell-app.c:619
-#, c-format
-msgid "Failed to launch '%s'"
-msgstr "無法啟動「%s」"
-
-#: ../src/shell-keyring-prompt.c:708
-msgid "Passwords do not match."
-msgstr "密碼不相符。"
-
-#: ../src/shell-keyring-prompt.c:716
-msgid "Password cannot be blank"
-msgstr "密碼不能為空白"
-
-#: ../src/shell-mobile-providers.c:80
-msgid "United Kingdom"
-msgstr "英國"
-
-#: ../src/shell-mobile-providers.c:526
+#: ../plugins/launcher/launcher-dialog.glade.h:5
 msgid "Default"
-msgstr "預設值"
+msgstr "預設"
 
-#: ../src/shell-polkit-authentication-agent.c:339
-msgid "Authentication dialog was dismissed by the user"
-msgstr "驗證對話盒被使用者取消了"
+#: ../plugins/launcher/launcher-dialog.glade.h:6
+msgid "Delete the currently selected item"
+msgstr "刪除目前所選的項目"
 
-#. Translators: this is the same string as the one found in
-#. * nautilus
-#: ../src/shell-util.c:97
-msgid "Home"
-msgstr "家目錄"
+#: ../plugins/launcher/launcher-dialog.glade.h:7
+msgid "Disable t_ooltips"
+msgstr "停用提示框(_O)"
 
-#. Translators: this is the same string as the one found in
-#. * nautilus
-#: ../src/shell-util.c:106
-msgid "File System"
-msgstr "檔案系統"
+#: ../plugins/launcher/launcher-dialog.glade.h:8
+msgid "East"
+msgstr "東方"
 
-#. Translators: the first string is the name of a gvfs
-#. * method, and the second string is a path. For
-#. * example, "Trash: some-directory". It means that the
-#. * directory called "some-directory" is in the trash.
-#.
-#: ../src/shell-util.c:302
+#: ../plugins/launcher/launcher-dialog.glade.h:11
+msgid "Inside Button"
+msgstr "按鈕內"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:12
+#: ../plugins/launcher/launcher.desktop.in.h:1
+msgid "Launcher"
+msgstr "啟動器"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:15
+msgid "North"
+msgstr "北方"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:16
+msgid "Select this option to disable the tooltips when moving over the panel button or menu items."
+msgstr "選取此選項以停用移動至面板按鈕上方或選單項目上方所顯示的提示框"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:17
+msgid "Select this option to move the clicked menu item to the panel."
+msgstr "選取此項目將點擊的選單項目移至面板。"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:18
+msgid "Show _label instead of icon"
+msgstr "顯示標籤而不是圖示(_L)"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:19
+msgid "Show last _used item in panel"
+msgstr "在面板內顯示最近使用的項目(_U)"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:20
+msgid "South"
+msgstr "南方"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:21
+msgid "West"
+msgstr "西方"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:22
+msgid "_Arrow button position:"
+msgstr "箭號按鈕位置(_A)："
+
+#: ../plugins/launcher/launcher.desktop.in.h:2
+msgid "Program launcher with optional menu"
+msgstr "程式啟動器，可附加選單"
+
+#: ../plugins/pager/pager.c:354
+#: ../plugins/pager/pager-dialog.glade.h:8
+msgid "Workspace _Settings..."
+msgstr "工作區設定值(_S)..."
+
+#: ../plugins/pager/pager.c:429
+msgid "Unable to open the workspace settings"
+msgstr "無法開啟工作區設定值"
+
+#: ../plugins/pager/pager-buttons.c:555
+#: ../plugins/windowmenu/windowmenu.c:854
 #, c-format
-msgid "%1$s: %2$s"
-msgstr "%1$s：%2$s"
+msgid "Workspace %d"
+msgstr "工作區 %d"
 
-#~ msgid "RECENT ITEMS"
-#~ msgstr "最近使用項目"
+#: ../plugins/pager/pager-dialog.glade.h:2
+#: ../plugins/tasklist/tasklist-dialog.glade.h:3
+msgid "Behaviour"
+msgstr "行為"
+
+#: ../plugins/pager/pager-dialog.glade.h:3
+msgid "Number of _rows:"
+msgstr "列數(_R)："
+
+#: ../plugins/pager/pager-dialog.glade.h:4
+msgid "Show a miniature view of the workspace with rectangles for the visible windows"
+msgstr "顯示工作區的微型檢視，以矩形代表可見視窗"
+
+#: ../plugins/pager/pager-dialog.glade.h:5
+msgid "Show mi_niature view"
+msgstr "顯示微型檢視(_N)"
+
+#: ../plugins/pager/pager-dialog.glade.h:6
+msgid "Switch workspaces using the mouse _wheel"
+msgstr "用滑鼠滾輪切換工作區(_W)"
+
+#: ../plugins/pager/pager-dialog.glade.h:7
+#: ../plugins/pager/pager.desktop.in.h:2
+msgid "Workspace Switcher"
+msgstr "工作區切換器"
+
+#: ../plugins/pager/pager.desktop.in.h:1
+msgid "Switch between virtual desktops"
+msgstr "在虛擬桌面之間切換"
+
+#: ../plugins/separator/separator-dialog.glade.h:2
+msgid "Dots"
+msgstr "點"
+
+#: ../plugins/separator/separator-dialog.glade.h:3
+msgid "Handle"
+msgstr "控制把"
+
+#: ../plugins/separator/separator-dialog.glade.h:4
+msgid "New Line"
+msgstr "新列"
+
+#: ../plugins/separator/separator-dialog.glade.h:5
+#: ../plugins/separator/separator.desktop.in.h:2
+msgid "Separator"
+msgstr "分隔符"
+
+#: ../plugins/separator/separator-dialog.glade.h:6
+msgid "Transparent"
+msgstr "透明"
+
+#: ../plugins/separator/separator-dialog.glade.h:7
+msgid "_Expand"
+msgstr "延展(_E)"
+
+#: ../plugins/separator/separator.desktop.in.h:1
+msgid "Adds a separator or space between panel items"
+msgstr "在面板項目間加入分隔符或空格"
+
+#: ../plugins/showdesktop/showdesktop.c:194
+msgid "Restore the minimized windows"
+msgstr "還原最小化的視窗"
+
+#: ../plugins/showdesktop/showdesktop.c:196
+msgid "Minimize all open windows and show the desktop"
+msgstr "最小化所有開啟視窗並顯示桌面"
+
+#: ../plugins/showdesktop/showdesktop.c:203
+#: ../plugins/showdesktop/showdesktop.desktop.in.h:2
+msgid "Show Desktop"
+msgstr "顯示桌面"
+
+#: ../plugins/showdesktop/showdesktop.desktop.in.h:1
+msgid "Hide all windows and show the desktop"
+msgstr "隱藏所有視窗並顯示桌面"
+
+#: ../plugins/systray/systray.c:382
+msgid "Unable to start the notification area"
+msgstr "無法啟動通知區域"
+
+#. create fake error and show it
+#: ../plugins/systray/systray.c:850
+msgid "Most likely another widget took over the function of a notification area. This area will be unused."
+msgstr "很有可能另一套工具組接管了通知區域的功能。此區域將無法使用。"
+
+#: ../plugins/systray/systray.c:852
+msgid "The notification area lost selection"
+msgstr "通知區域失去選取項目"
+
+#: ../plugins/systray/systray.c:1005
+msgid "Are you sure you want to clear the list of known applications?"
+msgstr "您確定要清除已知應用程式的清單嗎？"
+
+#: ../plugins/systray/systray-dialog.glade.h:2
+msgid "C_lear Known Applications"
+msgstr "清除已知應用程式(_L)"
+
+#: ../plugins/systray/systray-dialog.glade.h:3
+msgid "Known Applications"
+msgstr "已知應用程式"
+
+#: ../plugins/systray/systray-dialog.glade.h:4
+#: ../plugins/systray/systray.desktop.in.h:2
+msgid "Notification Area"
+msgstr "通知區域"
+
+#: ../plugins/systray/systray-dialog.glade.h:6
+msgid "_Maximum icon size (px):"
+msgstr "最大圖示大小 (px)(_M)："
+
+#: ../plugins/systray/systray-manager.c:404
+#, c-format
+msgid "Failed to acquire manager selection for screen %d"
+msgstr "未能獲取螢幕 %d 的管理程式選取"
+
+#: ../plugins/systray/systray.desktop.in.h:1
+msgid "Area where notification icons appear"
+msgstr "顯示通知圖示的區域"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:1
+msgid "Always"
+msgstr "總是"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:4
+msgid "D_raw window frame when hovering a button"
+msgstr "當滑鼠停在按鈕上時繪製視窗框架(_D)"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:6
+msgid "Group title and timestamp"
+msgstr "群組標題與時間戳記"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:7
+msgid "Group title and window title"
+msgstr "群組標題與視窗標題"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:8
+msgid "Never"
+msgstr "永不"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:9
+msgid "Restore minimized windows to current _workspace"
+msgstr "還原最小化視窗至目前工作區(_W)"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:10
+msgid "Ro_tate buttons in vertical panel"
+msgstr "旋轉垂直面板上的按鈕(_T)"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:11
+msgid "Show _flat buttons"
+msgstr "顯示扁平按鈕(_F)"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:12
+msgid "Show _handle"
+msgstr "顯示控制把(_F)"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:13
+msgid "Show button _labels"
+msgstr "顯示按鈕標籤(_L)"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:14
+msgid "Show only _minimized windows"
+msgstr "只顯示最小化的視窗(_M)"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:15
+msgid "Show windows from _all workspaces or viewports"
+msgstr "顯示所有工作區或 viewport 內的視窗(_A)"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:16
+msgid "Show windows from all mo_nitors"
+msgstr "顯示所有螢幕的視窗(_N)"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:17
+msgid "Sorting _order:"
+msgstr "排序(_O)："
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:18
+msgid "Timestamp"
+msgstr "時間戳記"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:19
+msgid "When space is limited"
+msgstr "當空間受到限制時"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:20
+#: ../plugins/tasklist/tasklist.desktop.in.h:2
+msgid "Window Buttons"
+msgstr "視窗按鈕"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:21
+msgid "Window _grouping:"
+msgstr "視窗群組(_G)："
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:22
+msgid "Window title"
+msgstr "視窗標題"
+
+#: ../plugins/tasklist/tasklist-widget.c:3013
+msgid "Mi_nimize All"
+msgstr "最小化全部(_N)"
+
+#: ../plugins/tasklist/tasklist-widget.c:3022
+msgid "Un_minimize All"
+msgstr "取消"
+
+#: ../plugins/tasklist/tasklist-widget.c:3028
+msgid "Ma_ximize All"
+msgstr "最大化全部(_X)"
+
+#: ../plugins/tasklist/tasklist-widget.c:3037
+msgid "_Unmaximize All"
+msgstr "取消最大化(_U)"
+
+#: ../plugins/tasklist/tasklist-widget.c:3047
+msgid "_Close All"
+msgstr "關閉全部(_C)"
+
+#: ../plugins/tasklist/tasklist.desktop.in.h:1
+msgid "Switch between open windows using buttons"
+msgstr "使用按鈕在開啟視窗間切換"
+
+#: ../plugins/windowmenu/windowmenu.c:652
+msgid "Desktop"
+msgstr "桌面"
+
+#: ../plugins/windowmenu/windowmenu.c:1243
+msgid "No Windows"
+msgstr "無視窗"
+
+#: ../plugins/windowmenu/windowmenu.c:1258
+msgid "Urgent Windows"
+msgstr "緊急視窗"
+
+#: ../plugins/windowmenu/windowmenu.c:1300
+msgid "Add Workspace"
+msgstr "新增工作區"
+
+#: ../plugins/windowmenu/windowmenu.c:1320
+#, c-format
+msgid "Remove Workspace \"%s\""
+msgstr "移除工作區「%s」"
+
+#: ../plugins/windowmenu/windowmenu.c:1322
+#, c-format
+msgid "Remove Workspace %d"
+msgstr "移除工作區 %d"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:2
+msgid "Arrow"
+msgstr "箭號"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:3
+msgid "Button layout:"
+msgstr "按鈕配置："
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:4
+msgid "Enable _urgency notification"
+msgstr "啟用緊急通知(_U)"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:6
+msgid "Icon"
+msgstr "圖示"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:7
+msgid "Show windows from _all workspaces"
+msgstr "顯示所有工作區的視窗(_A)"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:8
+msgid "Show workspace _names"
+msgstr "顯示工作區名稱(_N)"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:9
+msgid "Show workspace a_ctions"
+msgstr "顯示工作區動作(_C)"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:10
+#: ../plugins/windowmenu/windowmenu.desktop.in.h:2
+msgid "Window Menu"
+msgstr "視窗選單"
+
+#: ../plugins/windowmenu/windowmenu.desktop.in.h:1
+msgid "Switch between open windows using a menu"
+msgstr "使用選單在開啟視窗間切換"
+
+#~ msgid "Failed to remove the desktop file from the config directory"
+#~ msgstr "未能從組態目錄移除桌面檔"
+
+#~ msgid "_Number of rows:"
+#~ msgstr "列數(_N)："
+
+#~ msgid "Create a new launcher on the Xfce Panel"
+#~ msgstr "在 Xfce 面板上建立新的啟動器"
+
+#~ msgid "Panel Preferences"
+#~ msgstr "面板偏好設定"
+
+#~ msgid "_Xfce Panel"
+#~ msgstr "Xfce 面板(_X)"
+
+#~ msgid "Transparency"
+#~ msgstr "透明度"
+
+#~ msgid "Transparency when the pointer is not hovering the panel."
+#~ msgstr "當指標不在面板上時的透明度。"
+
+#~ msgid "Xfce Panel"
+#~ msgstr "Xfce 面板"
+
+#~ msgid "Xfce Menu"
+#~ msgstr "Xfce 選單"
+
+#~ msgid "_Restart"
+#~ msgstr "重新啟動"
+
+#~ msgid "Failed to open manual"
+#~ msgstr "無法執行\"%s\""
+
+#~ msgid "C_ompositing"
+#~ msgstr "位置"
+
+#~ msgid "Action Button"
+#~ msgstr "動作按鈕"

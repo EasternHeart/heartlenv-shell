@@ -1,0 +1,133 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      xmlns:e="http://projectmallard.org/experimental/"
+      type="topic"
+      id="separator">
+
+  <info>
+    <link type="guide" xref="index#plugins"/>
+    <desc>Adds a separator or space between panel plugins</desc>
+    <credit type="author">
+      <name>Nick Schermer</name>
+      <email>nick@xfce.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+  <title>Separator</title>
+  <p>Adds a seperator or space between panel items.</p>
+
+  <section id="properties">
+    <title>Properties</title>
+    <figure>
+      <title>Separator dialog</title>
+      <media type="image" src="figures/separator.png" mime="image/png" style="right"/>
+    </figure>
+
+    <section id="appearance">
+      <title>Appearance</title>
+      <p>
+        You can control the appearance of individual panel seperators through these settings.
+      </p>
+
+      <section id="style">
+        <title>Style</title>
+          <p>
+            Various styles can be applied to the panel separator.
+          </p>
+
+          <table>
+            <tr>
+              <td>
+                <p><gui>Transparent</gui></p>
+              </td>
+              <td>
+                <p></p>
+              </td>
+              <td> 
+                <p>
+                  The separator is invisible.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p><gui>Separator</gui></p>
+              </td>
+              <td>
+                <p></p>
+              </td>
+              <td>
+                <p>
+                  A dividing line is inserted into the separator.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p><gui>Handle</gui></p>
+              </td>
+              <td>
+                <p></p>
+              </td>
+              <td>
+                <p>
+                  Three lines are inserted into the center of the separator.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p><gui>Dots</gui></p>
+              </td>
+              <td>
+                <p></p>
+              </td>
+              <td>
+                <p>
+                  Dots are shown across the separator.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p><gui>New Line</gui></p>
+              </td>
+              <td>
+                <p></p>
+              </td>
+              <td>
+                <p>
+                  Moves plugins that are to the right of the seperator into a new line.
+                  Use this if you do not want to create a new panel, but need more space 
+                  for plugins.
+                </p>
+              </td>
+            </tr>
+
+          </table>
+      </section>
+
+      <terms>
+        <item>
+          <title><gui>Expand</gui></title>
+          <p>
+            This expands the length of the seperator.
+          </p>
+        </item>
+      </terms>
+    </section>
+    
+  </section>
+
+  <section id="theming">
+    <title>Theming Properties</title>
+
+  </section>
+
+</page>

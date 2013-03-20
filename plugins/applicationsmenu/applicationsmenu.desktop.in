@@ -1,0 +1,7 @@
+[Xfce Panel]
+Type=X-XFCE-PanelPlugin
+_Name=Applications Menu
+_Comment=Show a menu containing categories of installed applications
+Icon=heartlenv-panel-menu
+X-XFCE-Module=applicationsmenu
+X-XFCE-Internal=TRUE

@@ -1,0 +1,103 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      xmlns:e="http://projectmallard.org/experimental/"
+      type="topic"
+      id="windowmenu">
+
+  <info>
+    <link type="guide" xref="index#plugins"/>
+    <desc>Switch between open windows using a menu</desc>
+    <credit type="author">
+      <name>Nick Schermer</name>
+      <email>nick@xfce.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+  <title>Window Menu</title>
+
+  <p>
+    This allows you to switch between application windows using a menu.
+  </p>
+
+  <section id="properties">
+    <title>Properties</title>
+
+    <figure>
+      <title>Window Menu's properties dialog</title>
+      <media type="image" src="figures/windowmenu.png" mime="image/png" style="right"/>
+    </figure>
+    
+    <section id="appearance">
+      <title>Appearance</title>
+      
+      <terms>
+        <item>
+          <title><gui>Button Layout</gui></title>
+          <p>
+            Changes the appearance of the <app>Window Menu</app> icon in the panel.
+          </p>
+          <terms>
+            <item>
+              <title><gui>Icon</gui></title>
+              <p>
+                Displays the icon of the application window that is currently in focus.
+              </p>
+            </item>
+            <item>
+              <title><gui>Arrow</gui></title>
+              <p>
+                Displays a dropdown arrow instead of an application icon.
+              </p>
+            </item>
+          </terms>
+        </item>
+        
+        <item>
+          <title><gui>Show workplace actions</gui></title>
+          <p>
+            Enables the ability to add or remove workspaces from within the 
+            <app>Window Menu</app>.
+          </p>
+        </item>
+        
+        <item>
+          <title><gui>Show workspace names</gui></title>
+          <p>
+            Displays the names of available workspaces in the menu.
+          </p>
+        </item>
+        
+        <item>
+          <title><gui>Enable emergency notification</gui></title>
+          <p>
+            Enables emergency notification for applications which require immediate 
+            focus.
+          </p>
+        </item>
+      </terms>
+    
+    </section>
+    
+    <section id="filtering">
+      <title><gui>Filtering</gui></title>
+      <terms>
+        <item>
+        <title><gui>Show windows from all workspaces</gui></title>
+        <p>
+          When enabled, the <app>Window Menu</app> shows windows from all available workspaces. 
+          When disabled, only windows from the current workspace will be shown.
+        </p>
+        </item>
+      </terms>
+    </section>
+    
+  </section>
+
+  <section id="theming">
+    <title>Style Properties</title>
+    
+  </section>
+
+</page>

@@ -1,1697 +1,1559 @@
-# This file is distributed under the same license as the heartlenv-shell package.
-# Lucian Adrian Grijincu <lucian.grijincu@gmail.com>, 2009, 2010, 2011.
-# Daniel Șerbănescu <cyber19rider@gmail.com>, 2010, 2011.
-# laurion <me_lawr@yahoo.com>, 2010.
-# Ion Laurențiu Cristian <me_lawr@yahoo.com>, 2010.
+# Romanian translation of heartlenv-panel.
+# Copyright (C) 2002-2011 The Xfce development team.
+# This file is distributed under the same license as the heartlenv-panel package.
+# Mișu Moldovan <dumol@xfce.org>, 2004-2011.
+# 
 msgid ""
 msgstr ""
-"Project-Id-Version: heartlenv-shell master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.heartlenv.org/enter_bug.cgi?product=heartlenv-"
-"shell&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-11-25 20:25+0000\n"
-"PO-Revision-Date: 2011-11-26 03:55+0300\n"
-"Last-Translator: Lucian Adrian Grijincu <lucian.grijincu@gmail.com>\n"
-"Language-Team: Romanian Gnome Team <heartlenvro-list@lists.sourceforge.net>\n"
+"Project-Id-Version: heartlenv-panel 4.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-07-31 04:34+0000\n"
+"PO-Revision-Date: 2011-01-15 22:00+0200\n"
+"Last-Translator: Mișu Moldovan <dumol@xfce.org>\n"
+"Language-Team: Romanian <debian-l10n-romanian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ro\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
-"20)) ? 1 : 2);;\n"
-"X-Generator: Virtaal 0.7.0\n"
-"X-Project-Style: heartlenv\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2);;\n"
+"X-Generator: Virtaal 0.6.1\n"
 
-#: ../data/heartlenv-shell.desktop.in.in.h:1
-msgid "GNOME Shell"
-msgstr "GNOME Shell"
+#: ../panel-desktop-handler.desktop.in.h:1
+msgid "Add a new launcher to the panel based on the information of this desktop file"
+msgstr "Adăugați un nou lansator în panou folosind informațiile din acest fișier desktop"
 
-#: ../data/heartlenv-shell.desktop.in.in.h:2
-msgid "Window management and application launching"
-msgstr "Administrare de ferestre și lansare de aplicații"
+#: ../panel-desktop-handler.desktop.in.h:2
+msgid "Create Launcher on the panel"
+msgstr "Creați un lansator în panou"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:1
+#: ../panel-preferences.desktop.in.h:1
+msgid "Customize the panel"
+msgstr "Personalizați panoul"
+
+#: ../panel-preferences.desktop.in.h:2
+#: ../panel/panel-preferences-dialog.glade.h:24 ../panel/panel-window.c:2263
+#: ../migrate/main.c:84
+msgid "Panel"
+msgstr "Panou"
+
+#: ../common/panel-utils.c:157
+msgid "_Read Online"
+msgstr "Citiți _online"
+
+#: ../common/panel-utils.c:158
+msgid "You can read the user manual online. This manual may however not exactly match your panel version."
+msgstr "Puteți citi manualul de utilizare online. Acest manual s-ar putea însă să nu se potrivească perfect versiunii curente a panoului."
+
+#: ../common/panel-utils.c:160
+msgid "The user manual is not installed on your computer"
+msgstr "Manualul de utilizare nu este instalat în acest sistem"
+
+#. display an error message to the user
+#: ../common/panel-utils.c:175
+msgid "Failed to open the documentation browser"
+msgstr "Nu s-a putut deschide navigatorul de documentație"
+
+#. I18N: %s is the name of the plugin
+#: ../libheartlenvpanel/xfce-panel-plugin.c:889
+#: ../panel/panel-preferences-dialog.c:1048
+#, c-format
+msgid "Are you sure that you want to remove \"%s\"?"
+msgstr "Sigur doriți să eliminați „%s”?"
+
+#: ../libheartlenvpanel/xfce-panel-plugin.c:894
+#: ../panel/panel-preferences-dialog.c:1051
+msgid "If you remove the item from the panel, it is permanently lost."
+msgstr "Dacă eliminați acest element din panou, proprietățile sale se vor pierde."
+
+#. move item
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1054
+msgid "_Move"
+msgstr "_Mută"
+
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1088
+msgid "Pane_l"
+msgstr "P_anou"
+
+#. add new items
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1096 ../panel/panel-window.c:2275
+msgid "Add _New Items..."
+msgstr "Elemente _noi..."
+
+#. customize panel
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1107 ../panel/panel-window.c:2286
+msgid "Panel Pr_eferences..."
+msgstr "Pr_eferințe..."
+
+#. logout item
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1124 ../panel/panel-window.c:2302
+msgid "Log _Out"
+msgstr "_Ieșire"
+
+#: ../panel/main.c:79
+msgid "Show the 'Panel Preferences' dialog"
+msgstr "Arată fereastra cu preferințele panoului"
+
+#: ../panel/main.c:79 ../panel/main.c:80
+msgid "PANEL-NUMBER"
+msgstr "NUMĂR-PANOU"
+
+#: ../panel/main.c:80
+msgid "Show the 'Add New Items' dialog"
+msgstr "Arată fereastra „Adăugare de elemente noi”"
+
+#: ../panel/main.c:81
+msgid "Save the panel configuration"
+msgstr "Salvează configurația panoului"
+
+#: ../panel/main.c:82
+msgid "Add a new plugin to the panel"
+msgstr "Adaugă un nou modul în panou"
+
+#: ../panel/main.c:82
+msgid "PLUGIN-NAME"
+msgstr "NUME-MODUL"
+
+#: ../panel/main.c:83
+msgid "Restart the running panel instance"
+msgstr "Repornește instanța pornită a panoului"
+
+#: ../panel/main.c:84
+msgid "Quit the running panel instance"
+msgstr "Termină instanța pornită a panoului"
+
+#: ../panel/main.c:85
+msgid "Do not wait for a window manager on startup"
+msgstr "Nu aștepta la pornire după managerul de ferestre"
+
+#: ../panel/main.c:86
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:33
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:33
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:33
+msgid "Print version information and exit"
+msgstr "Arată detaliile versiunii și ieși"
+
+#. parse context options
+#: ../panel/main.c:250
+msgid "[ARGUMENTS...]"
+msgstr "[ARGUMENTE...]"
+
+#: ../panel/main.c:257
+#, c-format
+msgid "Type \"%s --help\" for usage."
+msgstr "Încercați „%s --help” pentru detalii de utilizare."
+
+#: ../panel/main.c:276
+msgid "The Xfce development team. All rights reserved."
+msgstr "Echipa de dezvoltare Xfce. Toate drepturile sunt rezervate."
+
+#: ../panel/main.c:277
+#, c-format
+msgid "Please report bugs to <%s>."
+msgstr "Raportați problemele la <%s>."
+
+#: ../panel/main.c:328
+msgid "There is already a running instance"
+msgstr "Există o instanță pornită deja"
+
+#. spawn ourselfs again
+#: ../panel/main.c:378
+msgid "Restarting..."
+msgstr "Repornire..."
+
+#: ../panel/main.c:393
+msgid "Failed to show the preferences dialog"
+msgstr "Nu s-a putut deschide fereastra cu preferințe"
+
+#: ../panel/main.c:395
+msgid "Failed to show the add new items dialog"
+msgstr "Nu s-a putut deschide fereastra de adăugare de noi elemente"
+
+#: ../panel/main.c:397
+msgid "Failed to save the panel configuration"
+msgstr "Nu s-a putut salva configurația panoului"
+
+#: ../panel/main.c:399
+msgid "Failed to add a plugin to the panel"
+msgstr "Nu s-a putut adăuga un modul în panou"
+
+#: ../panel/main.c:401
+msgid "Failed to restart the panel"
+msgstr "Nu s-a putut reporni panoul"
+
+#: ../panel/main.c:403
+msgid "Failed to quit the panel"
+msgstr "Nu s-a putut închide panoul"
+
+#: ../panel/main.c:405
+msgid "Failed to send D-Bus message"
+msgstr "Nu s-a putut trimite un mesaj D-Bus"
+
+#: ../panel/main.c:416
+msgid "Do you want to start the panel? If you do, make sure you save the session on logout, so the panel is automatically started the next time you login."
+msgstr "Doriți să porniți panoul? Dacă da, salvați sesiunea la ieșire, astfel încât panoul să fie automat pornit la următoarea autentificare."
+
+#: ../panel/main.c:419 ../panel/main.c:433
+#, c-format
+msgid "No running instance of %s was found"
+msgstr "Nu s-a găsit o instanță pornită a %s"
+
+#: ../panel/panel-application.c:217
+msgid "Failed to launch the migration application"
+msgstr "Nu s-a putut porni programul de migrare"
+
+#: ../panel/panel-application.c:1585 ../plugins/actions/actions.c:421
+msgid "You have started X without session manager. Clicking Quit will close the X server."
+msgstr "Ați pornit X fără un manager de sesiune. Dacă alegeți „Ieșire”, serverul X va fi închis."
+
+#: ../panel/panel-application.c:1586 ../plugins/actions/actions.c:422
+msgid "Are you sure you want to quit the panel?"
+msgstr "Sigur doriți să închideți panoul?"
+
+#: ../panel/panel-application.c:1594 ../plugins/actions/actions.c:430
+#, c-format
+msgid "Failed to execute command \"%s\""
+msgstr "Nu s-a putut executa comanda „%s”"
+
+#: ../panel/panel-dbus-client.c:208
+msgid "Invalid plugin event syntax specified. Use PLUGIN-NAME:NAME[:TYPE:VALUE]."
+msgstr "Sintaxa introdusă pentru acest modul este greșită. Utilizați NUME-MODUL:NUME [:TIP:VALOARE]."
+
+#: ../panel/panel-dbus-client.c:241
+#, c-format
+msgid "Invalid hint type \"%s\". Valid types are bool, double, int, string and uint."
+msgstr "Tipul „%s” este greșit. Tipurile valide sunt: „bool”, „double”, „int”, „string” și „uint”."
+
+#: ../panel/panel-dialogs.c:76
+msgid "The panel of the Xfce Desktop Environment"
+msgstr "Panoul mediului desktop Xfce"
+
+#: ../panel/panel-dialogs.c:81
+msgid "translator-credits"
+msgstr "Mișu Moldovan <dumol@xfce.org>"
+
+#. setup the dialog
+#: ../panel/panel-dialogs.c:122 ../plugins/launcher/launcher-dialog.glade.h:1
+msgid "Add New Item"
+msgstr "Adăugați un element nou"
+
+#: ../panel/panel-dialogs.c:136
+msgid "Please choose a panel for the new plugin:"
+msgstr "Alegeți un panou pentru noul modul:"
+
+#. I18N: panel combo box in the preferences dialog
+#: ../panel/panel-dialogs.c:147 ../panel/panel-preferences-dialog.c:767
+#, c-format
+msgid "Panel %d"
+msgstr "Panoul %d"
+
+#: ../panel/panel-dialogs.c:183
+msgid "Because the panel is running in kiosk mode, you are not allowed to make changes to the panel configuration as a regular user"
+msgstr "Nu puteți schimba configurația panoului ca utilizator obișnuit din cauză că panoul este pornit în modul chioșc."
+
+#: ../panel/panel-dialogs.c:185
+msgid "Modifying the panel is not allowed"
+msgstr "Modificarea panoului nu este permisă"
+
+#: ../panel/panel-item-dialog.c:188
+msgid "Add New Items"
+msgstr "Adăugați elemente noi"
+
+#: ../panel/panel-item-dialog.c:190
+msgid "Add new plugins to the panel"
+msgstr "Adăugați noi module la panou"
+
+#: ../panel/panel-item-dialog.c:213
+#: ../plugins/launcher/launcher-dialog.glade.h:23
+msgid "_Search:"
+msgstr "Cau_tă:"
+
+#: ../panel/panel-item-dialog.c:221
+msgid "Enter search phrase here"
+msgstr "Introduceți aici termenii de căutat"
+
+#: ../panel/panel-plugin-external.c:426
+#, c-format
+msgid "Plugin \"%s\" unexpectedly left the panel, do you want to restart it?"
+msgstr "Modulul „%s” din panou s-a terminat în mod neașteptat. Doriți să-l reporniți?"
+
+#: ../panel/panel-plugin-external.c:428
+#, c-format
+msgid "The plugin restarted more than once in the last %d seconds. If you press Execute the panel will try to restart the plugin otherwise it will be permanently removed from the panel."
+msgstr "Modulul s-a repornit de mai multe ori în ultimele %d secunde. Dacă alegeți „Repornire”, panoul va încerca să repornească modulul, altfel va fi eliminat definitiv din panou."
+
+#: ../panel/panel-preferences-dialog.c:453
+msgid "Automatic"
+msgstr "Auto"
+
+#. I18N: screen name in the output selector
+#: ../panel/panel-preferences-dialog.c:472
+#, c-format
+msgid "Screen %d"
+msgstr "Ecranul %d"
+
+#. I18N: monitor name in the output selector
+#: ../panel/panel-preferences-dialog.c:498
+#, c-format
+msgid "Monitor %d"
+msgstr "Monitorul %d"
+
+#: ../panel/panel-preferences-dialog.c:828
+msgid "The panel and plugin configurations will be permanently removed"
+msgstr "Panoul va fi eliminat definitiv, cu toate modulele și opțiunile asociate"
+
+#: ../panel/panel-preferences-dialog.c:829
+#, c-format
+msgid "Are you sure you want to remove panel %d?"
+msgstr "Sigur doriți să eliminați panoul %d?"
+
+#. I18N: append (external) in the preferences dialog if the plugin
+#. * runs external
+#: ../panel/panel-preferences-dialog.c:912
+#, c-format
+msgid "%s <span color=\"grey\" size=\"small\">(external)</span>"
+msgstr "%s <span color=\"grey\" size=\"small\">(extern)</span>"
+
+#. I18N: tooltip in preferences dialog when hovering an item in the list
+#. * for external plugins
+#: ../panel/panel-preferences-dialog.c:917
+#, c-format
 msgid ""
-"Allows access to internal debugging and monitoring tools using the Alt-F2 "
-"dialog."
+"Internal name: %s-%d\n"
+"PID: %d"
 msgstr ""
-"Permite accesul la unelte interne de depanare și monitorizare folosind "
-"dialogul Alt-F2."
+"Nume intern: %s-%d\n"
+"PID: %d"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:2
-msgid "Enable internal tools useful for developers and testers from Alt-F2"
-msgstr ""
-"Activează uneltele interne utile dezvoltatorilor și testerilor din Alt-F2"
+#. I18N: tooltip in preferences dialog when hovering an item in the list
+#. * for internal plugins
+#: ../panel/panel-preferences-dialog.c:929
+#, c-format
+msgid "Internal name: %s-%d"
+msgstr "Nume intern: %s-%d"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:3
-msgid "File extension used for storing the screencast"
-msgstr "Extensia de fișier utilizată pentru stocarea înregistrărilor de ecran"
+#: ../panel/panel-preferences-dialog.glade.h:1
+msgid "A_utomatically increase the length"
+msgstr "Mărește a_utomat lungimea"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:4
-msgid "Framerate used for recording screencasts."
-msgstr "Frecvența de cadre utilizată pentru înregistrările de ecran."
+#: ../panel/panel-preferences-dialog.glade.h:2
+msgid "Add a new panel"
+msgstr "Adăugați un nou panou"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:5
-msgid ""
-"GNOME Shell extensions have a uuid property; this key lists extensions which "
-"should be loaded. Any extension that wants to be loaded needs to be in this "
-"list. You can also manipulate this list with the EnableExtension and "
-"DisableExtension DBus methods on org.heartlenv.Shell."
-msgstr ""
-"Extensiile GNOME Shell au o proprietate uuid; această cheie listează "
-"extensiile care ar trebui încărcate. Orice extensie care trebuie încărcată "
-"trebuie să fie în listă. Puteți de asemenea să manipulați această listă cu "
-"metodele DBus EnableExtension și DisableExtension pe org.heartlenv.Shell."
+#: ../panel/panel-preferences-dialog.glade.h:3
+msgid "Add new item to this panel"
+msgstr "Adăugați un nou element în acest panou"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:6
-msgid "History for command (Alt-F2) dialog"
-msgstr "Istoricul dialogului de comenzi (Alt-F2)"
+#: ../panel/panel-preferences-dialog.glade.h:4
+msgid "Alpha value of the panel background, with 0 being fully transparent and 100 fully opaque."
+msgstr "Valoare alpha pentru fundalul panoului, unde 0 înseamnă complet transparent și 100 înseamnă complet opac."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:7
-msgid "History for the looking glass dialog"
-msgstr "Istoric pentru lupa de căutare"
+#: ../panel/panel-preferences-dialog.glade.h:5
+msgid "Appeara_nce"
+msgstr "A_spect"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:8
-msgid "If true, display date in the clock, in addition to time."
-msgstr "Dacă este adevărat, afișează data în ceas, lângă oră."
+#: ../panel/panel-preferences-dialog.glade.h:6
+msgid "Automatically show and _hide the panel"
+msgstr "Ascun_de și arată automat panoul"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:9
-msgid "If true, display seconds in time."
-msgstr "Dacă este adevărat, afișează secundele lângă oră."
+#: ../panel/panel-preferences-dialog.glade.h:7
+msgid "Background"
+msgstr "Fundal"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:10
-msgid "If true, display the ISO week date in the calendar."
-msgstr "Dacă este adevărat, afișează săptămâna ISO în calendar."
+#: ../panel/panel-preferences-dialog.glade.h:8
+msgid "Background image"
+msgstr "Imagine de fundal"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:11
-msgid "List of desktop file IDs for favorite applications"
-msgstr ""
-"Lista de identificatori ale fișierelor desktop pentru aplicațiile favorite"
+#: ../panel/panel-preferences-dialog.glade.h:9
+msgid "C_olor:"
+msgstr "C_uloare:"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:13
+#: ../panel/panel-preferences-dialog.glade.h:10
+msgid "D_isplay"
+msgstr "A_fișare"
+
+#: ../panel/panel-preferences-dialog.glade.h:11
+#: ../plugins/launcher/launcher-dialog.glade.h:9
+msgid "Edit the currently selected item"
+msgstr "Editați elementul selectat"
+
+#: ../panel/panel-preferences-dialog.glade.h:12
+#: ../plugins/launcher/launcher-dialog.glade.h:10
+msgid "General"
+msgstr "Generale"
+
+#: ../panel/panel-preferences-dialog.glade.h:13
+msgid "Horizontal"
+msgstr "Orizontală"
+
+#: ../panel/panel-preferences-dialog.glade.h:14
+msgid "Ite_ms"
+msgstr "_Elemente"
+
+#: ../panel/panel-preferences-dialog.glade.h:16
 #, no-c-format
-msgid ""
-"Sets the GStreamer pipeline used to encode recordings. It follows the syntax "
-"used for gst-launch. The pipeline should have an unconnected sink pad where "
-"the recorded video is recorded. It will normally have a unconnected source "
-"pad; output from that pad will be written into the output file. However the "
-"pipeline can also take care of its own output - this might be used to send "
-"the output to an icecast server via shout2send or similar. When unset or set "
-"to an empty value, the default pipeline will be used. This is currently "
-"'videorate ! vp8enc quality=10 speed=2 threads=%T ! queue ! webmmux' and "
-"records to WEBM using the VP8 codec. %T is used as a placeholder for a guess "
-"at the optimal thread count on the system."
-msgstr ""
-"Definește linia de asamblare GStreamer utilizată pentru a coda "
-"înregistrările. Folosește aceeași sintaxă ca la gst-launch. Linia de "
-"asamblare ar trebui să aibă un sink pad neconectat unde va fi înregistrat "
-"ecranul. În mod normal va avea un source pad neconectat și o ieșire care va "
-"fi scrisă în fișierul de ieșire. Cu toate acestea, linia de asamblare poate "
-"să aibă grijă de ieșirea proprie - aceasta ar putea fi utilizată pentru a "
-"trimite ieșirea la un server icecast, shout2send sau un alt server similar. "
-"Când este dezactivată, sau are o valoare vidă, se utilizează linia de "
-"asamblare implicită. Aceasta este acum definită ca „videorate ! vp8enc "
-"quality=10 speed=2 threads=%T ! queue ! webmmux” și înregistrează în WEBM "
-"folosind codecul VP8. %T este folosit ca înlocuitor pentru o valoare "
-"estimativă a numărului optim de fire de execuție pe acest sistem."
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:14
-msgid "Show date in clock"
-msgstr "Afișează data în ceas"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:15
-msgid "Show the week date in the calendar"
-msgstr "Afișează data săptămânii în calendar"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:16
-msgid "Show time with seconds"
-msgstr "Afișează ora cu secunde"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:17
-msgid ""
-"The applications corresponding to these identifiers will be displayed in the "
-"favorites area."
-msgstr ""
-"Aplicațiile corespunzătoare acestor identificatori vor fi afișate în zona "
-"favoritelor."
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:18
-msgid ""
-"The filename for recorded screencasts will be a unique filename based on the "
-"current date, and use this extension. It should be changed when recording to "
-"a different container format."
-msgstr ""
-"Numele de fișier ale înregistrărilor de ecran vor fi unice, bazate pe data "
-"curentă și vor folosi această extensie. Ar trebui să fie modificată când se "
-"înregistrează într-un format de container diferit."
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:19
-msgid ""
-"The framerate of the resulting screencast recordered by GNOME Shell's "
-"screencast recorder in frames-per-second."
-msgstr ""
-"Frecvența de cadre a capturii de ecran realizată de către înregistratorul de "
-"ecran al GNOME Shell, în cadre pe secundă."
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:20
-msgid "The gstreamer pipeline used to encode the screencast"
-msgstr "Linia de asamblare gstreamer folosită pentru a coda captura de ecran"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:21
-msgid ""
-"The shell normally monitors active applications in order to present the most "
-"used ones (e.g. in launchers). While this data will be kept private, you may "
-"want to disable this for privacy reasons. Please note that doing so won't "
-"remove already saved data."
-msgstr ""
-"În mod normal shell-ul monitorizează aplicațiile active pentru a le prezenta "
-"cele mai folosite (de ex: în lansatoare de aplicații). Deși aceste date vor "
-"fi păstrate private este posibil să vreți să dezactivați această "
-"funcționalitate din motive de intimitate. Dezactivarea nu va șterge datele "
-"deja salvate."
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:22
-msgid "The type of keyboard to use."
-msgstr "Tipul de tastatură de folosit."
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:23
-msgid "Uuids of extensions to enable"
-msgstr "Uuid-urile extensiilor de activat"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:24
-msgid "Whether to collect stats about applications usage"
-msgstr "Dacă să fie colectate detalii despre utilizarea aplicațiilor"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:25
-msgid "Which keyboard to use"
-msgstr "Ce tastatură să fie folosită"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:26
-msgid "disabled OpenSearch providers"
-msgstr "furnizori OpenSearch dezactivați"
-
-#: ../js/gdm/loginDialog.js:623
-msgid "Session..."
-msgstr "Sesiune..."
-
-#: ../js/gdm/loginDialog.js:785
-msgctxt "title"
-msgid "Sign In"
-msgstr "Autentificare"
-
-#. Translators: this message is shown below the password entry field
-#. to indicate the user can swipe their finger instead
-#: ../js/gdm/loginDialog.js:830
-msgid "(or swipe finger)"
-msgstr "(sau treceți degetul peste)"
-
-#. translators: this message is shown below the user list on the
-#. login screen. It can be activated to reveal an entry for
-#. manually entering the username.
-#: ../js/gdm/loginDialog.js:851
-msgid "Not listed?"
-msgstr "Nelistat?"
-
-#: ../js/gdm/loginDialog.js:1019 ../js/ui/endSessionDialog.js:418
-#: ../js/ui/extensionSystem.js:516 ../js/ui/networkAgent.js:145
-#: ../js/ui/polkitAuthenticationAgent.js:175 ../js/ui/status/bluetooth.js:463
-msgid "Cancel"
-msgstr "Anulează"
-
-#: ../js/gdm/loginDialog.js:1024
-msgctxt "button"
-msgid "Sign In"
-msgstr "Autentificare"
-
-#: ../js/gdm/loginDialog.js:1376
-msgid "Login Window"
-msgstr "Fereastră de autentificare"
-
-#: ../js/gdm/powerMenu.js:113 ../js/ui/userMenu.js:578
-#: ../js/ui/userMenu.js:580 ../js/ui/userMenu.js:649
-msgid "Suspend"
-msgstr "Suspendare"
-
-#: ../js/gdm/powerMenu.js:118
-msgid "Restart"
-msgstr "Repornire"
-
-#: ../js/gdm/powerMenu.js:123
-msgid "Power Off"
-msgstr "Oprire"
-
-#: ../js/misc/util.js:92
-msgid "Command not found"
-msgstr "Comanda nu a fost găsită"
-
-#. Replace "Error invoking GLib.shell_parse_argv: " with
-#. something nicer
-#: ../js/misc/util.js:119
-msgid "Could not parse command:"
-msgstr "Nu s-a putut analiza comanda:"
-
-#: ../js/misc/util.js:127
-#, c-format
-msgid "Execution of '%s' failed:"
-msgstr "Execuția comenzii „%s” a eșuat:"
-
-#. Translators: Filter to display all applications
-#: ../js/ui/appDisplay.js:251
-msgid "All"
-msgstr "Toate"
-
-#: ../js/ui/appDisplay.js:310
-msgid "APPLICATIONS"
-msgstr "APLICAȚII"
-
-#: ../js/ui/appDisplay.js:366
-msgid "SETTINGS"
-msgstr "SETĂRI"
-
-#: ../js/ui/appDisplay.js:664
-msgid "New Window"
-msgstr "Fereastră nouă"
-
-#: ../js/ui/appDisplay.js:667
-msgid "Remove from Favorites"
-msgstr "Elimină din favorite"
-
-#: ../js/ui/appDisplay.js:668
-msgid "Add to Favorites"
-msgstr "Adaugă la Favorite"
-
-#: ../js/ui/appFavorites.js:87
-#, c-format
-msgid "%s has been added to your favorites."
-msgstr "%s a fost adăugat la favorite."
-
-#: ../js/ui/appFavorites.js:118
-#, c-format
-msgid "%s has been removed from your favorites."
-msgstr "%s a fost eliminat de la favorite."
-
-#: ../js/ui/autorunManager.js:265
-msgid "Removable Devices"
-msgstr "Dispozitive care pot fi eliminate"
-
-#: ../js/ui/autorunManager.js:560
-#, c-format
-msgid "Open with %s"
-msgstr "Deschide cu %s"
-
-#: ../js/ui/autorunManager.js:586
-msgid "Eject"
-msgstr "Scoate"
-
-#. Translators: Shown in calendar event list for all day events
-#. * Keep it short, best if you can use less then 10 characters
-#.
-#: ../js/ui/calendar.js:62
-msgctxt "event list time"
-msgid "All Day"
-msgstr "Toată ziua"
-
-#. Translators: Shown in calendar event list, if 24h format
-#: ../js/ui/calendar.js:67
-msgctxt "event list time"
-msgid "%H:%M"
-msgstr "%H:%M"
-
-#. Transators: Shown in calendar event list, if 12h format
-#: ../js/ui/calendar.js:74
-msgctxt "event list time"
-msgid "%l:%M %p"
-msgstr "%l:%M %p"
-
-#. Translators: Calendar grid abbreviation for Sunday.
-#. *
-#. * NOTE: These grid abbreviations are always shown together
-#. * and in order, e.g. "S M T W T F S".
-#.
-#: ../js/ui/calendar.js:114
-msgctxt "grid sunday"
-msgid "S"
-msgstr "D"
-
-#. Translators: Calendar grid abbreviation for Monday
-#: ../js/ui/calendar.js:116
-msgctxt "grid monday"
-msgid "M"
-msgstr "L"
-
-#. Translators: Calendar grid abbreviation for Tuesday
-#: ../js/ui/calendar.js:118
-msgctxt "grid tuesday"
-msgid "T"
-msgstr "M"
-
-#. Translators: Calendar grid abbreviation for Wednesday
-#: ../js/ui/calendar.js:120
-msgctxt "grid wednesday"
-msgid "W"
-msgstr "M"
-
-#. Translators: Calendar grid abbreviation for Thursday
-#: ../js/ui/calendar.js:122
-msgctxt "grid thursday"
-msgid "T"
-msgstr "J"
-
-#. Translators: Calendar grid abbreviation for Friday
-#: ../js/ui/calendar.js:124
-msgctxt "grid friday"
-msgid "F"
-msgstr "V"
-
-#. Translators: Calendar grid abbreviation for Saturday
-#: ../js/ui/calendar.js:126
-msgctxt "grid saturday"
-msgid "S"
-msgstr "S"
-
-#. Translators: Event list abbreviation for Sunday.
-#. *
-#. * NOTE: These list abbreviations are normally not shown together
-#. * so they need to be unique (e.g. Tuesday and Thursday cannot
-#. * both be 'T').
-#.
-#: ../js/ui/calendar.js:139
-msgctxt "list sunday"
-msgid "Su"
-msgstr "D"
-
-#. Translators: Event list abbreviation for Monday
-#: ../js/ui/calendar.js:141
-msgctxt "list monday"
-msgid "M"
-msgstr "L"
-
-#. Translators: Event list abbreviation for Tuesday
-#: ../js/ui/calendar.js:143
-msgctxt "list tuesday"
-msgid "T"
-msgstr "Ma"
-
-#. Translators: Event list abbreviation for Wednesday
-#: ../js/ui/calendar.js:145
-msgctxt "list wednesday"
-msgid "W"
-msgstr "Mi"
-
-#. Translators: Event list abbreviation for Thursday
-#: ../js/ui/calendar.js:147
-msgctxt "list thursday"
-msgid "Th"
-msgstr "J"
-
-#. Translators: Event list abbreviation for Friday
-#: ../js/ui/calendar.js:149
-msgctxt "list friday"
-msgid "F"
-msgstr "V"
-
-#. Translators: Event list abbreviation for Saturday
-#: ../js/ui/calendar.js:151
-msgctxt "list saturday"
-msgid "S"
-msgstr "S"
-
-#. Translators: Text to show if there are no events
-#: ../js/ui/calendar.js:681
-msgid "Nothing Scheduled"
-msgstr "Nimic programat"
-
-#. Translators: Shown on calendar heading when selected day occurs on current year
-#: ../js/ui/calendar.js:697
-msgctxt "calendar heading"
-msgid "%A, %B %d"
-msgstr "%A %d %B"
-
-#. Translators: Shown on calendar heading when selected day occurs on different year
-#: ../js/ui/calendar.js:700
-msgctxt "calendar heading"
-msgid "%A, %B %d, %Y"
-msgstr "%A %d %B %Y"
-
-#: ../js/ui/calendar.js:710
-msgid "Today"
-msgstr "Astăzi"
-
-#: ../js/ui/calendar.js:714
-msgid "Tomorrow"
-msgstr "Mâine"
-
-#: ../js/ui/calendar.js:723
-msgid "This week"
-msgstr "Săptămâna aceasta"
-
-#: ../js/ui/calendar.js:731
-msgid "Next week"
-msgstr "Săptămâna viitoare"
-
-#: ../js/ui/contactDisplay.js:63 ../js/ui/notificationDaemon.js:466
-#: ../js/ui/status/power.js:215 ../src/shell-app.c:350
-msgid "Unknown"
-msgstr "Necunoscut"
-
-#: ../js/ui/contactDisplay.js:84 ../js/ui/userMenu.js:127
-msgid "Available"
-msgstr "Disponibil"
-
-#: ../js/ui/contactDisplay.js:89 ../js/ui/userMenu.js:136
-msgid "Away"
-msgstr "Plecat"
-
-#: ../js/ui/contactDisplay.js:93 ../js/ui/userMenu.js:130
-msgid "Busy"
-msgstr "Ocupat"
-
-#: ../js/ui/contactDisplay.js:97
-msgid "Offline"
-msgstr "Deconectat"
-
-#: ../js/ui/contactDisplay.js:141
-msgid "CONTACTS"
-msgstr "CONTACTE"
-
-#: ../js/ui/dash.js:169 ../js/ui/messageTray.js:1204
-msgid "Remove"
-msgstr "Elimină"
-
-#: ../js/ui/dateMenu.js:96
-msgid "Date and Time Settings"
-msgstr "Setări pentru dată și oră"
-
-#: ../js/ui/dateMenu.js:122
-msgid "Open Calendar"
-msgstr "Deschide calendarul"
-
-#. Translators: This is the time format with date used
-#. in 24-hour mode.
-#: ../js/ui/dateMenu.js:180
-msgid "%a %b %e, %R:%S"
-msgstr "%a %e %b, %R:%S"
-
-#: ../js/ui/dateMenu.js:181
-msgid "%a %b %e, %R"
-msgstr "%a %e %b, %R"
-
-#. Translators: This is the time format without date used
-#. in 24-hour mode.
-#: ../js/ui/dateMenu.js:185
-msgid "%a %R:%S"
-msgstr "%a %R:%S"
-
-#: ../js/ui/dateMenu.js:186
-msgid "%a %R"
-msgstr "%a %R"
-
-#. Translators: This is a time format with date used
-#. for AM/PM.
-#: ../js/ui/dateMenu.js:193
-msgid "%a %b %e, %l:%M:%S %p"
-msgstr "%a %e %b, %l:%M:%S %p"
-
-#: ../js/ui/dateMenu.js:194
-msgid "%a %b %e, %l:%M %p"
-msgstr "%a %e %b, %l:%M %p"
-
-#. Translators: This is a time format without date used
-#. for AM/PM.
-#: ../js/ui/dateMenu.js:198
-msgid "%a %l:%M:%S %p"
-msgstr "%a %l:%M:%S %p"
-
-#: ../js/ui/dateMenu.js:199
-msgid "%a %l:%M %p"
-msgstr "%a %l:%M %p"
-
-#. Translators: This is the date format to use when the calendar popup is
-#. * shown - it is shown just below the time in the shell (e.g. "Tue 9:29 AM").
-#.
-#: ../js/ui/dateMenu.js:210
-msgid "%A %B %e, %Y"
-msgstr "%A %e %B %Y"
-
-#: ../js/ui/docDisplay.js:13
-msgid "RECENT ITEMS"
-msgstr "ELEMENTE RECENTE"
-
-#: ../js/ui/endSessionDialog.js:61
-#, c-format
-msgctxt "title"
-msgid "Log Out %s"
-msgstr "Ieșire din sesiune pentru %s"
-
-#: ../js/ui/endSessionDialog.js:62
-msgctxt "title"
-msgid "Log Out"
-msgstr "Ieșire din sesiune"
-
-#: ../js/ui/endSessionDialog.js:63
-msgid "Click Log Out to quit these applications and log out of the system."
-msgstr ""
-"Apăsați „Ieșire din sesiune” pentru a închide aceste aplicații și a ieși din "
-"sistem."
-
-#: ../js/ui/endSessionDialog.js:65
-#, c-format
-msgid "%s will be logged out automatically in %d second."
-msgid_plural "%s will be logged out automatically in %d seconds."
-msgstr[0] "%s va fi scos din sesiune automat în %d secundă."
-msgstr[1] "%s va fi scos din sesiune automat în %d secunde."
-msgstr[2] "%s va fi scos din sesiune automat în %d de secunde."
-
-#: ../js/ui/endSessionDialog.js:70
-#, c-format
-msgid "You will be logged out automatically in %d second."
-msgid_plural "You will be logged out automatically in %d seconds."
-msgstr[0] "Veți fi scos din sesiune automat în %d secundă."
-msgstr[1] "Veți fi scos din sesiune automat în %d secunde."
-msgstr[2] "Veți fi scos din sesiune automat în %d de secunde."
-
-#: ../js/ui/endSessionDialog.js:74
-msgid "Logging out of the system."
-msgstr "Deconectare din sistem."
-
-#: ../js/ui/endSessionDialog.js:76
-msgctxt "button"
-msgid "Log Out"
-msgstr "Ieșire din sesiune"
-
-#: ../js/ui/endSessionDialog.js:81
-msgctxt "title"
-msgid "Power Off"
-msgstr "Oprire"
-
-#: ../js/ui/endSessionDialog.js:82
-msgid "Click Power Off to quit these applications and power off the system."
-msgstr "Apăsați „Oprire” pentru a închide aceste aplicații și a opri sistemul."
-
-#: ../js/ui/endSessionDialog.js:84
-#, c-format
-msgid "The system will power off automatically in %d second."
-msgid_plural "The system will power off automatically in %d seconds."
-msgstr[0] "Sistemul se va opri automat în %d secundă."
-msgstr[1] "Sistemul se va opri automat în %d secunde."
-msgstr[2] "Sistemul se va opri automat în %d de secunde."
-
-#: ../js/ui/endSessionDialog.js:88
-msgid "Powering off the system."
-msgstr "Se oprește sistemul."
-
-#: ../js/ui/endSessionDialog.js:90 ../js/ui/endSessionDialog.js:107
-msgctxt "button"
-msgid "Restart"
-msgstr "Repornire"
-
-#: ../js/ui/endSessionDialog.js:92
-msgctxt "button"
-msgid "Power Off"
-msgstr "Oprire"
-
-#: ../js/ui/endSessionDialog.js:98
-msgctxt "title"
-msgid "Restart"
-msgstr "Repornire"
-
-#: ../js/ui/endSessionDialog.js:99
-msgid "Click Restart to quit these applications and restart the system."
-msgstr ""
-"Apăsați „Repornire” pentru a închide aceste aplicații și a reporni sistemul."
-
-#: ../js/ui/endSessionDialog.js:101
-#, c-format
-msgid "The system will restart automatically in %d second."
-msgid_plural "The system will restart automatically in %d seconds."
-msgstr[0] "Sistemul se va reporni automat în %d secundă."
-msgstr[1] "Sistemul se va reporni automat în %d secunde."
-msgstr[2] "Sistemul se va reporni automat în %d de secunde."
-
-#: ../js/ui/endSessionDialog.js:105
-msgid "Restarting the system."
-msgstr "Se repornește sistemul."
-
-#: ../js/ui/extensionSystem.js:520
-msgid "Install"
-msgstr "Instalează"
-
-#: ../js/ui/extensionSystem.js:524
-#, c-format
-msgid "Download and install '%s' from extensions.heartlenv.org?"
-msgstr "Doriți să descărcați și instalați „%s” de la extensions.heartlenv.org?"
-
-#: ../js/ui/keyboard.js:322
-msgid "tray"
-msgstr "zonă de notificare"
-
-#: ../js/ui/keyboard.js:539 ../js/ui/status/power.js:203
-msgid "Keyboard"
-msgstr "Tastatură"
-
-#: ../js/ui/lookingGlass.js:724
-msgid "No extensions installed"
-msgstr "Nicio extensie instalată"
-
-#. Translators: argument is an extension UUID.
-#: ../js/ui/lookingGlass.js:779
-#, c-format
-msgid "%s has not emitted any errors."
-msgstr "%s nu a emis nicio eroare."
-
-#: ../js/ui/lookingGlass.js:785
-msgid "Hide Errors"
-msgstr "Ascunde erorile"
-
-#: ../js/ui/lookingGlass.js:789 ../js/ui/lookingGlass.js:840
-msgid "Show Errors"
-msgstr "Afișează erorile"
-
-#: ../js/ui/lookingGlass.js:798
-msgid "Enabled"
-msgstr "Activat"
-
-#. translators:
-#. * The device has been disabled
-#: ../js/ui/lookingGlass.js:801 ../src/gvc/gvc-mixer-control.c:1093
+msgid "L_ength (%):"
+msgstr "_Lungime (%):"
+
+#. I18N: name of the section (frame) in the panel preferences where the user
+#. can define the length and size of the panel
+#: ../panel/panel-preferences-dialog.glade.h:18
+msgid "Measurements"
+msgstr "Dimensiuni"
+
+#: ../panel/panel-preferences-dialog.glade.h:19
+#: ../plugins/launcher/launcher-dialog.glade.h:13
+msgid "Move currently selected item down by one row"
+msgstr "Mutați elementul selectat mai jos cu un rând"
+
+#: ../panel/panel-preferences-dialog.glade.h:20
+#: ../plugins/launcher/launcher-dialog.glade.h:14
+msgid "Move currently selected item up by one row"
+msgstr "Mutați elementul selectat mai sus cu un rând"
+
+#: ../panel/panel-preferences-dialog.glade.h:21
+msgid "None (use system style)"
+msgstr "Fără (utilizează stilul temei)"
+
+#: ../panel/panel-preferences-dialog.glade.h:22
+msgid "O_utput:"
+msgstr "_Ieșire video:"
+
+#: ../panel/panel-preferences-dialog.glade.h:23
+msgid "Opacity"
+msgstr "Opacitate"
+
+#: ../panel/panel-preferences-dialog.glade.h:25
+msgid "Pick a Panel Color"
+msgstr "Alegeți o culoare pentru panou"
+
+#: ../panel/panel-preferences-dialog.glade.h:26
+msgid "Remove currently selected item"
+msgstr "Eliminați elementul selectat"
+
+#: ../panel/panel-preferences-dialog.glade.h:27
+msgid "Remove the currently selected panel"
+msgstr "Elimină panoul selectat"
+
+#: ../panel/panel-preferences-dialog.glade.h:28
+msgid "Select A Background Image"
+msgstr "Alegeți o imagine pentru fundal"
+
+#: ../panel/panel-preferences-dialog.glade.h:29
+msgid "Select this option to automatically increase the length of the panel if the plugins request more space."
+msgstr "Alegeți această opțiune pentru a crește automat lungimea panoului dacă modulele sale necesită mai mult spațiu."
+
+#: ../panel/panel-preferences-dialog.glade.h:30
+msgid "Select this option to extend the panel over multiple monitors."
+msgstr "Alegeți această opțiune pentru a extinde panoul pe mai multe monitoare."
+
+#: ../panel/panel-preferences-dialog.glade.h:31
+msgid "Select this option to hide the handles of the panel and lock its position."
+msgstr "Alegeți această opțiune pentru a ascunde mânerele panoului și a-l bloca în poziția curentă."
+
+#: ../panel/panel-preferences-dialog.glade.h:32
+msgid "Select this option to hide the panel when the pointer is not above it. This only works when the panel is attached to a screen edge."
+msgstr "Alegeți această opțiune pentru a ascunde panoul când cursorul mausului nu este deasupra sa. E necesar ca panoul să fie atașat unei margini a ecranului."
+
+#: ../panel/panel-preferences-dialog.glade.h:33
+msgid "Show about information of the currently selected item"
+msgstr "Arată detalii de versiune pentru elementul selectat"
+
+#: ../panel/panel-preferences-dialog.glade.h:34
+msgid "Solid color"
+msgstr "Culoare solidă"
+
+#: ../panel/panel-preferences-dialog.glade.h:35
+msgid "Span mo_nitors"
+msgstr "_Pe toate monitoarele"
+
+#: ../panel/panel-preferences-dialog.glade.h:36
+msgid "Transparency when the pointer is hovering over the panel, with 0 being fully transparent and 100 fully opaque."
+msgstr "Transparența panoului atunci când cursorul mousului este deasupra sa, 0 însemnând complet transparent, iar 100 însemnând complet opac."
+
+#: ../panel/panel-preferences-dialog.glade.h:37
+msgid "Transparency when the pointer is not hovering over the panel, with 0 being fully transparent and 100 fully opaque."
+msgstr "Transparența panoului atunci când cursorul mousului nu e deasupra sa, 0 însemnând complet transparent, iar 100 însemnând complet opac."
+
+#: ../panel/panel-preferences-dialog.glade.h:38
+msgid "Vertical"
+msgstr "Verticală"
+
+#: ../panel/panel-preferences-dialog.glade.h:39
+msgid "_Alpha:"
+msgstr "_Alfa:"
+
+#. I18N: label for the enter transparency slider
+#: ../panel/panel-preferences-dialog.glade.h:41
+msgid "_Enter:"
+msgstr "La intrar_e:"
+
+#: ../panel/panel-preferences-dialog.glade.h:42
+msgid "_File:"
+msgstr "Fișie_r:"
+
+#. I18N: label for the leave transparency slider
+#: ../panel/panel-preferences-dialog.glade.h:44
+msgid "_Leave:"
+msgstr "_La ieșire:"
+
+#: ../panel/panel-preferences-dialog.glade.h:45
+msgid "_Lock panel"
+msgstr "Blochea_ză panoul"
+
+#: ../panel/panel-preferences-dialog.glade.h:46
+msgid "_Orientation:"
+msgstr "_Orientare:"
+
+#: ../panel/panel-preferences-dialog.glade.h:47
+msgid "_Size (pixels):"
+msgstr "Mă_rime (în pixeli):"
+
+#: ../panel/panel-preferences-dialog.glade.h:48
+#: ../plugins/separator/separator-dialog.glade.h:8
+msgid "_Style:"
+msgstr "S_til:"
+
+#: ../panel/panel-tic-tac-toe.c:123
+msgid "_New Game"
+msgstr "Joc _nou"
+
+#: ../panel/panel-tic-tac-toe.c:134
+msgid "_Level:"
+msgstr "Ni_vel:"
+
+#: ../panel/panel-tic-tac-toe.c:140
+msgid "Novice"
+msgstr "Începător"
+
+#: ../panel/panel-tic-tac-toe.c:141
+msgid "Intermediate"
+msgstr "Intermediar"
+
+#: ../panel/panel-tic-tac-toe.c:142
+msgid "Experienced"
+msgstr "Avansat"
+
+#: ../panel/panel-tic-tac-toe.c:143
+msgid "Expert"
+msgstr "Expert"
+
+#: ../migrate/main.c:78
+msgid "Welcome to the first start of the panel"
+msgstr "Bun venit în noul panou!"
+
+#: ../migrate/main.c:80
+msgid "Because the panel moved to a new system for storing the settings, it has to load a fresh initial configuration."
+msgstr "Pentru că s-a trecut la un nou sistem de stocare a opțiunilor panoului, se va încărca o nouă configurație inițială."
+
+#: ../migrate/main.c:83
+msgid "Choose below which setup you want for the first startup."
+msgstr "Alegeți mai jos ce ce fel de configurație doriți pentru prima pornire."
+
+#: ../migrate/main.c:89
+msgid "Migrate old config"
+msgstr "Cea veche"
+
+#: ../migrate/main.c:90
+msgid "Migrate the old 4.6 configuration to Xfconf"
+msgstr "Migrează configurația versiunii 4.6 în Xfconf"
+
+#: ../migrate/main.c:95
+msgid "Use default config"
+msgstr "Cea implicită"
+
+#: ../migrate/main.c:96
+msgid "Load the default configuration"
+msgstr "Încarcă configurația implicită"
+
+#: ../migrate/main.c:102
+msgid "One empty panel"
+msgstr "Un panou gol"
+
+#: ../migrate/main.c:103
+msgid "Start with one empty panel"
+msgstr "Pornește cu un panou gol"
+
+#: ../migrate/main.c:115
+msgid "Failed to migrate the old panel configuration"
+msgstr "Nu s-a putut migra vechea configurație a panoului"
+
+#: ../migrate/main.c:125
+msgid "Failed to load the default configuration"
+msgstr "Nu s-a putut încărca configurația implicită"
+
+#: ../plugins/actions/actions-dialog.glade.h:1
+#: ../plugins/actions/actions.desktop.in.h:1
+msgid "Action Buttons"
+msgstr "Butoane cu acțiuni"
+
+#: ../plugins/actions/actions-dialog.glade.h:2
+msgid "Button Actions"
+msgstr "Acțiunile butoanelor"
+
+#: ../plugins/actions/actions-dialog.glade.h:3
+msgid "_First button:"
+msgstr "_Primul buton:"
+
+#: ../plugins/actions/actions-dialog.glade.h:4
+msgid "_Second button:"
+msgstr "Al _doilea buton:"
+
+#: ../plugins/actions/actions.c:108
 msgid "Disabled"
 msgstr "Dezactivat"
 
-#: ../js/ui/lookingGlass.js:803
-msgid "Error"
-msgstr "Eroare"
-
-#: ../js/ui/lookingGlass.js:805
-msgid "Out of date"
-msgstr "Învechit"
-
-#: ../js/ui/lookingGlass.js:807
-msgid "Downloading"
-msgstr "Se descarcă"
-
-#: ../js/ui/lookingGlass.js:828
-msgid "View Source"
-msgstr "Vizualizează sursa"
-
-#: ../js/ui/lookingGlass.js:834
-msgid "Web Page"
-msgstr "Pagină Web"
-
-#: ../js/ui/messageTray.js:1197
-msgid "Open"
-msgstr "Deschide"
-
-#: ../js/ui/messageTray.js:1214
-msgid "Unmute"
-msgstr "Activează sunetul"
-
-#: ../js/ui/messageTray.js:1214
-msgid "Mute"
-msgstr "Mut"
-
-#: ../js/ui/messageTray.js:2424
-msgid "System Information"
-msgstr "Informații despre sistem"
-
-#: ../js/ui/networkAgent.js:140
-msgid "Connect"
-msgstr "Conectare"
-
-#. Cisco LEAP
-#: ../js/ui/networkAgent.js:235 ../js/ui/networkAgent.js:247
-#: ../js/ui/networkAgent.js:274 ../js/ui/networkAgent.js:294
-#: ../js/ui/networkAgent.js:304
-msgid "Password: "
-msgstr "Parolă: "
-
-#. static WEP
-#: ../js/ui/networkAgent.js:240
-msgid "Key: "
-msgstr "Cheie: "
-
-#. TTLS and PEAP are actually much more complicated, but this complication
-#. is not visible here since we only care about phase2 authentication
-#. (and don't even care of which one)
-#: ../js/ui/networkAgent.js:272 ../js/ui/networkAgent.js:290
-msgid "Username: "
-msgstr "Nume utilizator: "
-
-#: ../js/ui/networkAgent.js:278
-msgid "Identity: "
-msgstr "Identitate: "
-
-#: ../js/ui/networkAgent.js:280
-msgid "Private key password: "
-msgstr "Parolă pentru cheia privată: "
-
-#: ../js/ui/networkAgent.js:292
-msgid "Service: "
-msgstr "Serviciu: "
-
-#: ../js/ui/networkAgent.js:321
-msgid "Authentication required by wireless network"
-msgstr "Autentificare cerută de către rețeaua fără fir"
-
-#: ../js/ui/networkAgent.js:322
-#, c-format
-msgid ""
-"Passwords or encryption keys are required to access the wireless network '%"
-"s'."
-msgstr ""
-"Sunt necesare parole sau chei de criptare pentru a accesa rețeaua fără fir „%"
-"s”."
-
-#: ../js/ui/networkAgent.js:326
-msgid "Wired 802.1X authentication"
-msgstr "Autentificare 802.1X prin cablu"
-
-#: ../js/ui/networkAgent.js:328
-msgid "Network name: "
-msgstr "Nume de rețea: "
-
-#: ../js/ui/networkAgent.js:333
-msgid "DSL authentication"
-msgstr "Autentificare DSL"
-
-#: ../js/ui/networkAgent.js:340
-msgid "PIN code required"
-msgstr "Este necesar codul PIN"
-
-#: ../js/ui/networkAgent.js:341
-msgid "PIN code is needed for the mobile broadband device"
-msgstr "Este necesar codul PIN pentru dispozitivul mobil de bandă largă"
-
-#: ../js/ui/networkAgent.js:342
-msgid "PIN: "
-msgstr "PIN: "
-
-#: ../js/ui/networkAgent.js:348
-msgid "Mobile broadband network password"
-msgstr "Parolă rețea mobilă de bandă largă"
-
-#: ../js/ui/networkAgent.js:349
-#, c-format
-msgid "A password is required to connect to '%s'."
-msgstr "Este necesară o parolă pentru conectarea la „%s”."
-
-#: ../js/ui/overview.js:89
-msgid "Undo"
-msgstr "Anulează"
-
-#: ../js/ui/overview.js:201
-msgid "Windows"
-msgstr "Ferestre"
-
-#: ../js/ui/overview.js:204
-msgid "Applications"
-msgstr "Aplicații"
-
-#. Translators: this is the name of the dock/favorites area on
-#. the left of the overview
-#: ../js/ui/overview.js:226
-msgid "Dash"
-msgstr "Dash"
-
-#. TODO - _quit() doesn't really work on apps in state STARTING yet
-#: ../js/ui/panel.js:532
-#, c-format
-msgid "Quit %s"
-msgstr "Închide %s"
-
-#. Translators: If there is no suitable word for "Activities"
-#. in your language, you can use the word for "Overview".
-#: ../js/ui/panel.js:565
-msgid "Activities"
-msgstr "Activități"
-
-#: ../js/ui/panel.js:953
-msgid "Top Bar"
-msgstr "Bara de sus"
-
-#: ../js/ui/placeDisplay.js:115
-#, c-format
-msgid "Failed to unmount '%s'"
-msgstr "Nu s-a putut demonta „%s”"
-
-#: ../js/ui/placeDisplay.js:118
-msgid "Retry"
-msgstr "Reîncearcă"
-
-#: ../js/ui/placeDisplay.js:156
-msgid "Connect to..."
-msgstr "Conectare la..."
-
-#: ../js/ui/placeDisplay.js:364
-msgid "PLACES & DEVICES"
-msgstr "LOCURI & DISPOZITIVE"
-
-#: ../js/ui/polkitAuthenticationAgent.js:71
-msgid "Authentication Required"
-msgstr "Necesită autentificare"
-
-#: ../js/ui/polkitAuthenticationAgent.js:109
-msgid "Administrator"
-msgstr "Administrator"
-
-#: ../js/ui/polkitAuthenticationAgent.js:179
-msgid "Authenticate"
-msgstr "Autentificare"
-
-#. Translators: "that didn't work" refers to the fact that the
-#. * requested authentication was not gained; this can happen
-#. * because of an authentication error (like invalid password),
-#. * for instance.
-#: ../js/ui/polkitAuthenticationAgent.js:260
-msgid "Sorry, that didn't work. Please try again."
-msgstr "Nu a funcționat. Încercați din nou."
-
-#: ../js/ui/polkitAuthenticationAgent.js:272
-msgid "Password:"
-msgstr "Parolă:"
-
-#. Translators: this MUST be either "toggle-switch-us"
-#. (for toggle switches containing the English words
-#. "ON" and "OFF") or "toggle-switch-intl" (for toggle
-#. switches containing "◯" and "|"). Other values will
-#. simply result in invisible toggle switches.
-#: ../js/ui/popupMenu.js:717
-msgid "toggle-switch-us"
-msgstr "toggle-switch-us"
-
-#: ../js/ui/runDialog.js:205
-msgid "Please enter a command:"
-msgstr "Introduceți o comandă:"
-
-#: ../js/ui/searchDisplay.js:333
-msgid "Searching..."
-msgstr "Se caută..."
-
-#: ../js/ui/searchDisplay.js:356
-msgid "No matching results."
-msgstr "Niciun rezultat nu s-a potrivit."
-
-#: ../js/ui/shellEntry.js:26
-msgid "Copy"
-msgstr "Copiere"
-
-#: ../js/ui/shellEntry.js:31
-msgid "Paste"
-msgstr "Lipire"
-
-#: ../js/ui/shellEntry.js:77
-msgid "Show Text"
-msgstr "Afișează text"
-
-#: ../js/ui/shellEntry.js:79
-msgid "Hide Text"
-msgstr "Ascunde text"
-
-#: ../js/ui/shellMountOperation.js:269
-msgid "Wrong password, please try again"
-msgstr "Parolă greșită, încercați din nou"
-
-#: ../js/ui/status/accessibility.js:52
-msgid "Zoom"
-msgstr "Zoom"
-
-#. let screenReader = this._buildItem(_("Screen Reader"), APPLICATIONS_SCHEMA,
-#. 'screen-reader-enabled');
-#. this.menu.addMenuItem(screenReader);
-#: ../js/ui/status/accessibility.js:63
-msgid "Screen Keyboard"
-msgstr "Tastatură virtuală"
-
-#: ../js/ui/status/accessibility.js:67
-msgid "Visual Alerts"
-msgstr "Alerte vizuale"
-
-#: ../js/ui/status/accessibility.js:70
-msgid "Sticky Keys"
-msgstr "Taste persistente"
-
-#: ../js/ui/status/accessibility.js:73
-msgid "Slow Keys"
-msgstr "Taste încete"
-
-#: ../js/ui/status/accessibility.js:76
-msgid "Bounce Keys"
-msgstr "Taste fără repetiție"
-
-#: ../js/ui/status/accessibility.js:79
-msgid "Mouse Keys"
-msgstr "Butoanele mausului"
-
-#: ../js/ui/status/accessibility.js:83
-msgid "Universal Access Settings"
-msgstr "Setări acces universal"
-
-#: ../js/ui/status/accessibility.js:117
-msgid "High Contrast"
-msgstr "Contrast ridicat"
-
-#: ../js/ui/status/accessibility.js:154
-msgid "Large Text"
-msgstr "Text mare"
-
-#: ../js/ui/status/bluetooth.js:36 ../js/ui/status/bluetooth.js:259
-#: ../js/ui/status/bluetooth.js:342 ../js/ui/status/bluetooth.js:372
-#: ../js/ui/status/bluetooth.js:408 ../js/ui/status/bluetooth.js:437
-msgid "Bluetooth"
-msgstr "Bluetooth"
-
-#: ../js/ui/status/bluetooth.js:49
-msgid "Visibility"
-msgstr "Vizibilitate"
-
-#: ../js/ui/status/bluetooth.js:63
-msgid "Send Files to Device..."
-msgstr "Trimite fișiere către dispozitiv..."
-
-#: ../js/ui/status/bluetooth.js:64
-msgid "Set up a New Device..."
-msgstr "Configurează un dispozitiv nou..."
-
-#: ../js/ui/status/bluetooth.js:88
-msgid "Bluetooth Settings"
-msgstr "Setări Bluetooth"
-
-#. TRANSLATORS: this means that bluetooth was disabled by hardware rfkill
-#: ../js/ui/status/bluetooth.js:108
-msgid "hardware disabled"
-msgstr "hardware dezactivat"
-
-#: ../js/ui/status/bluetooth.js:204
-msgid "Connection"
-msgstr "Conexiune"
-
-#: ../js/ui/status/bluetooth.js:215 ../js/ui/status/network.js:475
-msgid "disconnecting..."
-msgstr "se deconectează..."
-
-#: ../js/ui/status/bluetooth.js:228 ../js/ui/status/network.js:481
-msgid "connecting..."
-msgstr "se conectează..."
-
-#: ../js/ui/status/bluetooth.js:246
-msgid "Send Files..."
-msgstr "Trimite fișiere..."
-
-#: ../js/ui/status/bluetooth.js:251
-msgid "Browse Files..."
-msgstr "Explorează fișiere..."
-
-#: ../js/ui/status/bluetooth.js:260
-msgid "Error browsing device"
-msgstr "Eroare la explorarea dispozitivului"
-
-#: ../js/ui/status/bluetooth.js:261
-#, c-format
-msgid "The requested device cannot be browsed, error is '%s'"
-msgstr "Dispozitivul solicitat nu poate fi explorat, eroarea este „%s”"
-
-#: ../js/ui/status/bluetooth.js:269
-msgid "Keyboard Settings"
-msgstr "Setări tastatură"
-
-#: ../js/ui/status/bluetooth.js:272
-msgid "Mouse Settings"
-msgstr "Setări maus"
-
-#: ../js/ui/status/bluetooth.js:277 ../js/ui/status/volume.js:58
-msgid "Sound Settings"
-msgstr "Setări sonor"
-
-#: ../js/ui/status/bluetooth.js:373
-#, c-format
-msgid "Authorization request from %s"
-msgstr "Cerere de autorizare de la %s"
-
-#: ../js/ui/status/bluetooth.js:379
-#, c-format
-msgid "Device %s wants access to the service '%s'"
-msgstr "Dispozitivul %s dorește acces la serviciul „%s”"
-
-#: ../js/ui/status/bluetooth.js:381
-msgid "Always grant access"
-msgstr "Permite mereu accesul"
-
-#: ../js/ui/status/bluetooth.js:382
-msgid "Grant this time only"
-msgstr "Permite accesul doar de această dată"
-
-#: ../js/ui/status/bluetooth.js:383 ../js/ui/telepathyClient.js:1181
-msgid "Reject"
-msgstr "Respingere"
-
-#: ../js/ui/status/bluetooth.js:409
-#, c-format
-msgid "Pairing confirmation for %s"
-msgstr "Confirmarea asocierii pentru %s"
-
-#: ../js/ui/status/bluetooth.js:415 ../js/ui/status/bluetooth.js:445
-#, c-format
-msgid "Device %s wants to pair with this computer"
-msgstr "Dispozitivul %s vrea să se asocieze cu acest calculator"
-
-#: ../js/ui/status/bluetooth.js:416
-#, c-format
-msgid "Please confirm whether the PIN '%s' matches the one on the device."
-msgstr "Confirmați dacă PIN-ul „%s” se potrivește cu cel de pe dispozitiv."
-
-#: ../js/ui/status/bluetooth.js:418
-msgid "Matches"
-msgstr "Potriviri"
-
-#: ../js/ui/status/bluetooth.js:419
-msgid "Does not match"
-msgstr "Nu se potrivește"
-
-#: ../js/ui/status/bluetooth.js:438
-#, c-format
-msgid "Pairing request for %s"
-msgstr "Cererea de asociere pentru %s"
-
-#: ../js/ui/status/bluetooth.js:446
-msgid "Please enter the PIN mentioned on the device."
-msgstr "Introduceți PIN-ul menționat pe dispozitiv."
-
-#: ../js/ui/status/bluetooth.js:462
-msgid "OK"
-msgstr "OK"
-
-#: ../js/ui/status/keyboard.js:68
-msgid "Show Keyboard Layout"
-msgstr "Afișează aranjamentul tastaturii"
-
-#: ../js/ui/status/keyboard.js:73
-msgid "Region and Language Settings"
-msgstr "Setări de regiune și limbă"
-
-#: ../js/ui/status/network.js:96
-msgid "<unknown>"
-msgstr "<necunoscut>"
-
-#. Translators: this indicates that wireless or wwan is disabled by hardware killswitch
-#: ../js/ui/status/network.js:275
-msgid "disabled"
-msgstr "dezactivat"
-
-#. Translators: this is for network devices that are physically present but are not
-#. under NetworkManager's control (and thus cannot be used in the menu)
-#: ../js/ui/status/network.js:473
-msgid "unmanaged"
-msgstr "negestionate"
-
-#. Translators: this is for network connections that require some kind of key or password
-#: ../js/ui/status/network.js:484
-msgid "authentication required"
-msgstr "necesită autentificare"
-
-#. Translators: this is for devices that require some kind of firmware or kernel
-#. module, which is missing
-#: ../js/ui/status/network.js:494
-msgid "firmware missing"
-msgstr "firmware lipsă"
-
-#. Translators: this is for wired network devices that are physically disconnected
-#: ../js/ui/status/network.js:501
-msgid "cable unplugged"
-msgstr "cablu deconectat"
-
-#. Translators: this is for a network device that cannot be activated (for example it
-#. is disabled by rfkill, or it has no coverage
-#: ../js/ui/status/network.js:506
-msgid "unavailable"
-msgstr "indisponibil"
-
-#: ../js/ui/status/network.js:508
-msgid "connection failed"
-msgstr "conexiune eșuată"
-
-#: ../js/ui/status/network.js:564 ../js/ui/status/network.js:1506
-msgid "More..."
-msgstr "Mai multe..."
-
-#. TRANSLATORS: this is the indication that a connection for another logged in user is active,
-#. and we cannot access its settings (including the name)
-#: ../js/ui/status/network.js:600 ../js/ui/status/network.js:1441
-msgid "Connected (private)"
-msgstr "Conectat (privat)"
-
-#: ../js/ui/status/network.js:675
-msgid "Auto Ethernet"
-msgstr "Ethernet automat"
-
-#: ../js/ui/status/network.js:736
-msgid "Auto broadband"
-msgstr "Rețea de bandă largă automată"
-
-#: ../js/ui/status/network.js:739
-msgid "Auto dial-up"
-msgstr "Dial-up automat"
-
-#. TRANSLATORS: this the automatic wireless connection name (including the network name)
-#: ../js/ui/status/network.js:858 ../js/ui/status/network.js:1453
-#, c-format
-msgid "Auto %s"
-msgstr "%s automat"
-
-#: ../js/ui/status/network.js:860
-msgid "Auto bluetooth"
-msgstr "Bluetooth automat"
-
-#: ../js/ui/status/network.js:1455
-msgid "Auto wireless"
-msgstr "Rețea fără fir automată"
-
-#: ../js/ui/status/network.js:1547
-msgid "Enable networking"
-msgstr "Activare rețea"
-
-#: ../js/ui/status/network.js:1559
-msgid "Wired"
-msgstr "Cu fir"
-
-#: ../js/ui/status/network.js:1570
-msgid "Wireless"
-msgstr "Fără fir"
-
-#: ../js/ui/status/network.js:1580
-msgid "Mobile broadband"
-msgstr "Rețea de bandă largă mobilă"
-
-#: ../js/ui/status/network.js:1590
-msgid "VPN Connections"
-msgstr "Conexiuni VPN"
-
-#: ../js/ui/status/network.js:1601
-msgid "Network Settings"
-msgstr "Setări de rețea"
-
-#: ../js/ui/status/network.js:1738
-msgid "Connection failed"
-msgstr "Conexiune eșuată"
-
-#: ../js/ui/status/network.js:1739
-msgid "Activation of network connection failed"
-msgstr "Activarea conexiunii de rețea a eșuat"
-
-#: ../js/ui/status/network.js:1989
-msgid "Networking is disabled"
-msgstr "Rețeaua este dezactivată"
-
-#: ../js/ui/status/network.js:2113
-msgid "Network Manager"
-msgstr "Administrator de rețea"
-
-#: ../js/ui/status/power.js:77
-msgid "Power Settings"
-msgstr "Setări consum"
-
-#. 0 is reported when UPower does not have enough data
-#. to estimate battery life
-#: ../js/ui/status/power.js:98
-msgid "Estimating..."
-msgstr "Se estimează..."
-
-#: ../js/ui/status/power.js:105
-#, c-format
-msgid "%d hour remaining"
-msgid_plural "%d hours remaining"
-msgstr[0] "%d oră rămasă"
-msgstr[1] "%d ore rămase"
-msgstr[2] "%d de ore rămase"
-
-#. TRANSLATORS: this is a time string, as in "%d hours %d minutes remaining"
-#: ../js/ui/status/power.js:108
-#, c-format
-msgid "%d %s %d %s remaining"
-msgstr "%d %s %d %s rămase"
-
-#: ../js/ui/status/power.js:110
-msgid "hour"
-msgid_plural "hours"
-msgstr[0] "oră"
-msgstr[1] "ore"
-msgstr[2] "de ore"
-
-#: ../js/ui/status/power.js:110
-msgid "minute"
-msgid_plural "minutes"
-msgstr[0] "minut"
-msgstr[1] "minute"
-msgstr[2] "de minute"
-
-#: ../js/ui/status/power.js:113
-#, c-format
-msgid "%d minute remaining"
-msgid_plural "%d minutes remaining"
-msgstr[0] "%d minut rămas"
-msgstr[1] "%d minute rămase"
-msgstr[2] "%d de minute rămase"
-
-#: ../js/ui/status/power.js:116 ../js/ui/status/power.js:186
-#, c-format
-msgctxt "percent of battery remaining"
-msgid "%d%%"
-msgstr "%d%%"
-
-#: ../js/ui/status/power.js:193
-msgid "AC adapter"
-msgstr "Adaptor AC"
-
-#: ../js/ui/status/power.js:195
-msgid "Laptop battery"
-msgstr "Baterie laptop"
-
-#: ../js/ui/status/power.js:197
-msgid "UPS"
-msgstr "UPS"
-
-#: ../js/ui/status/power.js:199
-msgid "Monitor"
-msgstr "Monitor"
-
-#: ../js/ui/status/power.js:201
-msgid "Mouse"
-msgstr "Maus"
-
-#: ../js/ui/status/power.js:205
-msgid "PDA"
-msgstr "PDA"
-
-#: ../js/ui/status/power.js:207
-msgid "Cell phone"
-msgstr "Telefon Mobil"
-
-#: ../js/ui/status/power.js:209
-msgid "Media player"
-msgstr "Player Media"
-
-#: ../js/ui/status/power.js:211
-msgid "Tablet"
-msgstr "Tabletă"
-
-#: ../js/ui/status/power.js:213
-msgid "Computer"
-msgstr "Calculator"
-
-#: ../js/ui/status/volume.js:38
-msgid "Volume"
-msgstr "Volum"
-
-#: ../js/ui/status/volume.js:50
-msgid "Microphone"
-msgstr "Microfon"
-
-#. We got the TpContact
-#. FIXME: We don't have a 'chat room' icon (bgo #653737) use
-#. system-users for now as Empathy does.
-#: ../js/ui/telepathyClient.js:256
-msgid "Invitation"
-msgstr "Invitație"
-
-#. We got the TpContact
-#: ../js/ui/telepathyClient.js:324
-msgid "Call"
-msgstr "Apel"
-
-#. We got the TpContact
-#: ../js/ui/telepathyClient.js:354
-msgid "File Transfer"
-msgstr "Transfer de fișiere"
-
-#: ../js/ui/telepathyClient.js:435
-msgid "Subscription request"
-msgstr "Cerere de abonare"
-
-#: ../js/ui/telepathyClient.js:471
-msgid "Connection error"
-msgstr "Eroare de conexiune"
-
-#: ../js/ui/telepathyClient.js:735
-#, c-format
-msgid "%s is online."
-msgstr "%s este conectat."
-
-#: ../js/ui/telepathyClient.js:740
-#, c-format
-msgid "%s is offline."
-msgstr "%s este deconectat."
-
-#: ../js/ui/telepathyClient.js:743
-#, c-format
-msgid "%s is away."
-msgstr "%s este plecat."
-
-#: ../js/ui/telepathyClient.js:746
-#, c-format
-msgid "%s is busy."
-msgstr "%s este ocupat."
-
-#. Translators: this is a time format string followed by a date.
-#. If applicable, replace %X with a strftime format valid for your
-#. locale, without seconds.
-#: ../js/ui/telepathyClient.js:977
-#, no-c-format
-msgid "Sent at <b>%X</b> on <b>%A</b>"
-msgstr "Trimis la <b>%X</b> pe <b>%A</b>"
-
-#. Translators: this is a time format in the style of "Wednesday, May 25",
-#. shown when you get a chat message in the same year.
-#: ../js/ui/telepathyClient.js:983
-#, no-c-format
-msgid "Sent on <b>%A</b>, <b>%B %d</b>"
-msgstr "Trimis pe <b>%A</b>. <b>%d %B</b>"
-
-#. Translators: this is a time format in the style of "Wednesday, May 25, 2012",
-#. shown when you get a chat message in a different year.
-#: ../js/ui/telepathyClient.js:988
-#, no-c-format
-msgid "Sent on <b>%A</b>, <b>%B %d</b>, %Y"
-msgstr "Trimis pe <b>%A</b>, <b>%d %B</b> %Y"
-
-#. Translators: this is the other person changing their old IM name to their new
-#. IM name.
-#: ../js/ui/telepathyClient.js:1030
-#, c-format
-msgid "%s is now known as %s"
-msgstr "%s este acum cunoscut ca %s"
-
-#. translators: argument is a room name like
-#. * room@jabber.org for example.
-#: ../js/ui/telepathyClient.js:1132
-#, c-format
-msgid "Invitation to %s"
-msgstr "Invitație către %s"
-
-#. translators: first argument is the name of a contact and the second
-#. * one the name of a room. "Alice is inviting you to join room@jabber.org
-#. * for example.
-#: ../js/ui/telepathyClient.js:1140
-#, c-format
-msgid "%s is inviting you to join %s"
-msgstr "%s vă invită să vă alăturați %s"
-
-#: ../js/ui/telepathyClient.js:1142 ../js/ui/telepathyClient.js:1222
-#: ../js/ui/telepathyClient.js:1320
-msgid "Decline"
-msgstr "Refuză"
-
-#: ../js/ui/telepathyClient.js:1143 ../js/ui/telepathyClient.js:1223
-#: ../js/ui/telepathyClient.js:1321
-msgid "Accept"
-msgstr "Acceptă"
-
-#. translators: argument is a contact name like Alice for example.
-#: ../js/ui/telepathyClient.js:1173
-#, c-format
-msgid "Video call from %s"
-msgstr "Apel video de la %s"
-
-#. translators: argument is a contact name like Alice for example.
-#: ../js/ui/telepathyClient.js:1176
-#, c-format
-msgid "Call from %s"
-msgstr "Apel de la %s"
-
-#. translators: this is a button label (verb), not a noun
-#: ../js/ui/telepathyClient.js:1183
-msgid "Answer"
-msgstr "Răspunde"
-
-#. To translators: The first parameter is
-#. * the contact's alias and the second one is the
-#. * file name. The string will be something
-#. * like: "Alice is sending you test.ogg"
-#.
-#: ../js/ui/telepathyClient.js:1216
-#, c-format
-msgid "%s is sending you %s"
-msgstr "%s vă trimite %s"
-
-#. To translators: The parameter is the contact's alias
-#: ../js/ui/telepathyClient.js:1285
-#, c-format
-msgid "%s would like permission to see when you are online"
-msgstr "%s ar dori permisiunea să știe când sunteți online"
-
-#: ../js/ui/telepathyClient.js:1378
-msgid "Network error"
-msgstr "Eroare de rețea"
-
-#: ../js/ui/telepathyClient.js:1380
-msgid "Authentication failed"
-msgstr "Autentificare eșuată"
-
-#: ../js/ui/telepathyClient.js:1382
-msgid "Encryption error"
-msgstr "Eroare de criptare"
-
-#: ../js/ui/telepathyClient.js:1384
-msgid "Certificate not provided"
-msgstr "Certificat nefurnizat"
-
-#: ../js/ui/telepathyClient.js:1386
-msgid "Certificate untrusted"
-msgstr "Certificat nesigur"
-
-#: ../js/ui/telepathyClient.js:1388
-msgid "Certificate expired"
-msgstr "Certificat expirat"
-
-#: ../js/ui/telepathyClient.js:1390
-msgid "Certificate not activated"
-msgstr "Certificat neactivat"
-
-#: ../js/ui/telepathyClient.js:1392
-msgid "Certificate hostname mismatch"
-msgstr "Numele de gazdă al certificatului nu se potrivește"
-
-#: ../js/ui/telepathyClient.js:1394
-msgid "Certificate fingerprint mismatch"
-msgstr "Amprenta certificatului nu se potrivește"
-
-#: ../js/ui/telepathyClient.js:1396
-msgid "Certificate self-signed"
-msgstr "Certificat subsemnat"
-
-#: ../js/ui/telepathyClient.js:1398
-msgid "Status is set to offline"
-msgstr "Starea este setată pe deconectat"
-
-#: ../js/ui/telepathyClient.js:1400
-msgid "Encryption is not available"
-msgstr "Criptarea nu este disponibilă"
-
-#: ../js/ui/telepathyClient.js:1402
-msgid "Certificate is invalid"
-msgstr "Certificatul este invalid"
-
-#: ../js/ui/telepathyClient.js:1404
-msgid "Connection has been refused"
-msgstr "Conexiunea a fost refuzată"
-
-#: ../js/ui/telepathyClient.js:1406
-msgid "Connection can't be established"
-msgstr "Conexiunea nu poate fi stabilită"
-
-#: ../js/ui/telepathyClient.js:1408
-msgid "Connection has been lost"
-msgstr "Conexiunea a fost pierdută"
-
-#: ../js/ui/telepathyClient.js:1410
-msgid "This resource is already connected to the server"
-msgstr "Această resursă este deja conectată la server"
-
-#: ../js/ui/telepathyClient.js:1412
-msgid ""
-"Connection has been replaced by a new connection using the same resource"
-msgstr ""
-"Conexiunea a fost înlocuită de o nouă conexiune folosind aceeași resursă"
-
-#: ../js/ui/telepathyClient.js:1414
-msgid "The account already exists on the server"
-msgstr "Acest cont există deja pe server"
-
-#: ../js/ui/telepathyClient.js:1416
-msgid "Server is currently too busy to handle the connection"
-msgstr "Serverul este acum prea încărcat să accepte conexiunea"
-
-#: ../js/ui/telepathyClient.js:1418
-msgid "Certificate has been revoked"
-msgstr "Certificatul a fost revocat"
-
-#: ../js/ui/telepathyClient.js:1420
-msgid ""
-"Certificate uses an insecure cipher algorithm or is cryptographically weak"
-msgstr ""
-"Certificatul folosește un algoritm de cifrare nesigur sau este slab "
-"criptografic"
-
-#: ../js/ui/telepathyClient.js:1422
-msgid ""
-"The length of the server certificate, or the depth of the server certificate "
-"chain, exceed the limits imposed by the cryptography library"
-msgstr ""
-"Lungimea certificatului serverului sau adâncimea lanțului de certificare a "
-"serverului depășește limita impusă de către biblioteca criptografică"
-
-#. translators: argument is the account name, like
-#. * name@jabber.org for example.
-#: ../js/ui/telepathyClient.js:1432
-#, c-format
-msgid "Connection to %s failed"
-msgstr "Conexiunea la %s a eșuat"
-
-#: ../js/ui/telepathyClient.js:1441
-msgid "Reconnect"
-msgstr "Reconectează"
-
-#: ../js/ui/telepathyClient.js:1442
-msgid "Edit account"
-msgstr "Editează contul"
-
-#: ../js/ui/telepathyClient.js:1488
-msgid "Unknown reason"
-msgstr "Cauză necunoscută"
-
-#: ../js/ui/userMenu.js:133
-msgid "Hidden"
-msgstr "Ascuns"
-
-#: ../js/ui/userMenu.js:139
-msgid "Idle"
-msgstr "Inactiv"
-
-#: ../js/ui/userMenu.js:142
-msgid "Unavailable"
-msgstr "Indisponibil"
-
-#: ../js/ui/userMenu.js:576 ../js/ui/userMenu.js:580 ../js/ui/userMenu.js:650
-msgid "Power Off..."
-msgstr "Oprire..."
-
-#: ../js/ui/userMenu.js:612
-msgid "Notifications"
-msgstr "Notificări"
-
-#: ../js/ui/userMenu.js:620
-msgid "Online Accounts"
-msgstr "Conturi online"
-
-#: ../js/ui/userMenu.js:624
-msgid "System Settings"
-msgstr "Setări de sistem"
-
-#: ../js/ui/userMenu.js:631
+#: ../plugins/actions/actions.c:109
+msgid "Log Out Dialog"
+msgstr "Fereastră de ieșire din sesiune"
+
+#: ../plugins/actions/actions.c:110
+msgid "Log Out"
+msgstr "_Ieșire"
+
+#: ../plugins/actions/actions.c:111
 msgid "Lock Screen"
 msgstr "Blochează ecranul"
 
-#: ../js/ui/userMenu.js:636
-msgid "Switch User"
-msgstr "Comută utilizatorul"
+#: ../plugins/actions/actions.c:112
+msgid "Shut Down"
+msgstr "Oprire"
 
-#: ../js/ui/userMenu.js:641
-msgid "Log Out..."
-msgstr "Ieșire din sesiune..."
+#: ../plugins/actions/actions.c:113
+msgid "Restart"
+msgstr "Repornire"
 
-#: ../js/ui/userMenu.js:669
-msgid "Your chat status will be set to busy"
-msgstr "Starea de chat va fi trecută pe ocupat"
+#: ../plugins/actions/actions.c:114
+msgid "Suspend"
+msgstr "Suspendare"
 
-#: ../js/ui/userMenu.js:670
-msgid ""
-"Notifications are now disabled, including chat messages. Your online status "
-"has been adjusted to let others know that you might not see their messages."
-msgstr ""
-"Notificările sunt acum dezactivate, incluzând mesajele de chat. Starea a "
-"fost ajustată pentru ca alții să știe că este posibil să nu le vedeți "
-"mesajele."
+#: ../plugins/actions/actions.c:115
+msgid "Hibernate"
+msgstr "Hibernare"
 
-#. Translators: this is the text displayed
-#. in the search entry when no search is
-#. active; it should not exceed ~30
-#. characters.
-#: ../js/ui/viewSelector.js:113
-msgid "Type to search..."
-msgstr "Tastați pentru a căuta..."
+#: ../plugins/actions/actions.desktop.in.h:2
+msgid "Log out, lock or other system actions"
+msgstr "Ieșire, repornire și alte acțiuni de sistem"
 
-#: ../js/ui/viewSelector.js:131 ../src/shell-util.c:244
-msgid "Search"
-msgstr "Caută"
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:1
+#: ../plugins/clock/clock-dialog.glade.h:3
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:1
+#: ../plugins/pager/pager-dialog.glade.h:1
+#: ../plugins/separator/separator-dialog.glade.h:1
+#: ../plugins/systray/systray-dialog.glade.h:1
+#: ../plugins/tasklist/tasklist-dialog.glade.h:2
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:1
+msgid "Appearance"
+msgstr "Aspect"
 
-#: ../js/ui/windowAttentionHandler.js:33
+#. I18N: default tooltip of the application menu
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:2
+#: ../plugins/applicationsmenu/applicationsmenu.c:38
+#: ../plugins/applicationsmenu/applicationsmenu.desktop.in.h:1
+msgid "Applications Menu"
+msgstr "Meniu cu programe"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:3
+msgid "Button _title:"
+msgstr "_Titlul butonului:"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:4
+msgid "Ed_it Menu"
+msgstr "Ed_itați meniul"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:5
+msgid "Menu File"
+msgstr "Fișierul meniului"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:6
+msgid "Menu _file:"
+msgstr "_Fișierul meniului:"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:7
+msgid "Select A Menu File"
+msgstr "Selectați un fișier de meniu"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:8
+msgid "Select this option to show the generic application name in the menu, for example \"File Manager\" instead of \"Thunar\""
+msgstr "Alegeți această opțiune pentru a afișa nume generice de programe în meniu, de exemplu „Manager de fișiere” pentru Thunar."
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:9
+msgid "Show application d_escription in tooltip"
+msgstr "Arată d_escrierea programului în indiciu"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:10
+msgid "Show generic application n_ames"
+msgstr "Arată _nume generice de programe"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:11
+msgid "Show ic_ons in menu"
+msgstr "Arată ic_onițe în meniu"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:12
+msgid "Use c_ustom menu file:"
+msgstr "_Utilizează un fișier de meniu personalizat:"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:13
+msgid "Use the _default menu"
+msgstr "Utilizează fișierul _de meniu implicit"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:14
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:9
+msgid "_Icon:"
+msgstr "_Iconiță:"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:15
+msgid "_Show button title"
+msgstr "Arată titlul _butonului"
+
+#: ../plugins/applicationsmenu/applicationsmenu.c:475
+#: ../plugins/directorymenu/directorymenu.c:369
+msgid "Select An Icon"
+msgstr "Selectați o iconiță"
+
+#: ../plugins/applicationsmenu/applicationsmenu.c:513
+#: ../plugins/applicationsmenu/applicationsmenu.c:754
+#: ../plugins/launcher/launcher.c:2295
 #, c-format
-msgid "'%s' is ready"
-msgstr "„%s” este gata"
+msgid "Failed to execute command \"%s\"."
+msgstr "Nu s-a putut executa comanda „%s”."
 
-#. translators:
-#. * The number of sound outputs on a particular device
-#: ../src/gvc/gvc-mixer-control.c:1100
+#: ../plugins/applicationsmenu/applicationsmenu.c:1010
+msgid "No applications found"
+msgstr "Nu s-a găsit niciun program"
+
+#: ../plugins/applicationsmenu/applicationsmenu.c:1033
+msgid "Failed to load the applications menu"
+msgstr "Nu s-a putut încărca meniul cu programe"
+
+#: ../plugins/applicationsmenu/applicationsmenu.desktop.in.h:2
+msgid "Show a menu containing categories of installed applications"
+msgstr "Arată un meniu ce conține pe categorii programele instalate"
+
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:27
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:27
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:27
+msgid "Usage:"
+msgstr "Utilizare:"
+
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:28
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:28
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:28
+msgid "OPTION"
+msgstr "OPȚIUNE"
+
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:30
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:30
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:30
+msgid "Options:"
+msgstr "Opțiuni:"
+
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:31
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:31
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:31
+msgid "Popup menu at current mouse position"
+msgstr "Deschide meniul la poziția curentă a mausului"
+
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:32
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:32
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:32
+msgid "Show help options"
+msgstr "Arată opțiunile pentru ajutor"
+
+#: ../plugins/clock/clock.c:146
+msgid "Week %V"
+msgstr "Săptămâna %V"
+
+#: ../plugins/clock/clock.c:407
+msgid "Failed to execute clock command"
+msgstr "Nu s-a putut executa comanda clock"
+
+#: ../plugins/clock/clock.c:719
+msgid "Custom Format"
+msgstr "Format personalizat"
+
+#: ../plugins/clock/clock-dialog.glade.h:1
+msgid "24-_hour clock"
+msgstr "Ceas cu 24 de _ore"
+
+#: ../plugins/clock/clock-dialog.glade.h:2
+msgid "Analog"
+msgstr "Analog"
+
+#: ../plugins/clock/clock-dialog.glade.h:4
+msgid "Binary"
+msgstr "Binar"
+
+#: ../plugins/clock/clock-dialog.glade.h:5
+#: ../plugins/clock/clock.desktop.in.h:1
+msgid "Clock"
+msgstr "Ceas"
+
+#: ../plugins/clock/clock-dialog.glade.h:6
+msgid "Clock Options"
+msgstr "Opțiunile ceasului"
+
+#: ../plugins/clock/clock-dialog.glade.h:7
+msgid "Digital"
+msgstr "Digital"
+
+#: ../plugins/clock/clock-dialog.glade.h:8
+msgid "Display _seconds"
+msgstr "Arată _secundele"
+
+#: ../plugins/clock/clock-dialog.glade.h:9
+msgid "F_ormat:"
+msgstr "F_ormat:"
+
+#. I18N: the fuzziness the *precision* of the fuzzy clock. Time steps of 5, 15
+#. or parts of the day.
+#: ../plugins/clock/clock-dialog.glade.h:11
+msgid "F_uzziness:"
+msgstr "Preci_zie:"
+
+#: ../plugins/clock/clock-dialog.glade.h:12
+msgid "Fl_ash time separators"
+msgstr "Sep_arator ce clipește"
+
+#: ../plugins/clock/clock-dialog.glade.h:13
+msgid "Fuzzy"
+msgstr "Aproximativ"
+
+#: ../plugins/clock/clock-dialog.glade.h:14
+msgid "LCD"
+msgstr "LCD"
+
+#: ../plugins/clock/clock-dialog.glade.h:15
+msgid "Sho_w AM/PM"
+msgstr "Ara_tă AM/PM"
+
+#: ../plugins/clock/clock-dialog.glade.h:16
+#: ../plugins/systray/systray-dialog.glade.h:5
+msgid "Show _frame"
+msgstr "Arată ca_drul"
+
+#: ../plugins/clock/clock-dialog.glade.h:17
+msgid "Show _inactive dots"
+msgstr "Separatori _inactivi"
+
+#: ../plugins/clock/clock-dialog.glade.h:18
+msgid "Show gri_d"
+msgstr "A_rată grila"
+
+#: ../plugins/clock/clock-dialog.glade.h:20
+#, no-c-format
+msgid "The format describes the date and time parts to insert into the file name. For example, %Y will be substituted with the year, %m with the month and %d with the day. See the documentation of the date utility for additional information."
+msgstr "Formatul descrie părțile din oră și dată de inserat în numele fișierului. De exemplu, %Y reprezintă anul, %m luna, iar %d ziua. Consultați documentația utilitarului „date” pentru detalii."
+
+#: ../plugins/clock/clock-dialog.glade.h:21
+msgid "True _binary clock"
+msgstr "Ceas cu adevărat _binar"
+
+#: ../plugins/clock/clock-dialog.glade.h:22
+msgid "_Layout:"
+msgstr "A_spect:"
+
+#: ../plugins/clock/clock-dialog.glade.h:23
+msgid "_Tooltip format:"
+msgstr "Forma_tul indiciului:"
+
+#: ../plugins/clock/clock-fuzzy.c:86
+msgid "Night"
+msgstr "Noapte"
+
+#: ../plugins/clock/clock-fuzzy.c:87
+msgid "Early morning"
+msgstr "Dimineață devreme"
+
+#: ../plugins/clock/clock-fuzzy.c:88
+msgid "Morning"
+msgstr "Dimineață"
+
+#: ../plugins/clock/clock-fuzzy.c:89
+msgid "Almost noon"
+msgstr "Aproape amiază"
+
+#: ../plugins/clock/clock-fuzzy.c:90
+msgid "Noon"
+msgstr "Amiază"
+
+#: ../plugins/clock/clock-fuzzy.c:91
+msgid "Afternoon"
+msgstr "După-masă"
+
+#: ../plugins/clock/clock-fuzzy.c:92
+msgid "Evening"
+msgstr "Seară"
+
+#: ../plugins/clock/clock-fuzzy.c:93
+msgid "Late evening"
+msgstr "Seară târziu"
+
+#. I18N: %0 will be replaced with the preceding hour, %1 with
+#. * the comming hour
+#: ../plugins/clock/clock-fuzzy.c:100
+#, no-c-format
+msgid "%0 o'clock"
+msgstr "ora %0"
+
+#: ../plugins/clock/clock-fuzzy.c:101
+#, no-c-format
+msgid "five past %0"
+msgstr "%0 și cinci"
+
+#: ../plugins/clock/clock-fuzzy.c:102
+#, no-c-format
+msgid "ten past %0"
+msgstr "%0 și zece"
+
+#: ../plugins/clock/clock-fuzzy.c:103
+#, no-c-format
+msgid "quarter past %0"
+msgstr "%0 și un sfert"
+
+#: ../plugins/clock/clock-fuzzy.c:104
+#, no-c-format
+msgid "twenty past %0"
+msgstr "%0 și douăzeci"
+
+#: ../plugins/clock/clock-fuzzy.c:105
+#, no-c-format
+msgid "twenty five past %0"
+msgstr "%0 și două'ș'cinci"
+
+#: ../plugins/clock/clock-fuzzy.c:106
+#, no-c-format
+msgid "half past %0"
+msgstr "%0 jumate"
+
+#: ../plugins/clock/clock-fuzzy.c:107
+#, no-c-format
+msgid "twenty five to %1"
+msgstr "%1 fără două'ș'cinci"
+
+#: ../plugins/clock/clock-fuzzy.c:108
+#, no-c-format
+msgid "twenty to %1"
+msgstr "%1 fără douăzeci"
+
+#: ../plugins/clock/clock-fuzzy.c:109
+#, no-c-format
+msgid "quarter to %1"
+msgstr "%1 fără un sfert"
+
+#: ../plugins/clock/clock-fuzzy.c:110
+#, no-c-format
+msgid "ten to %1"
+msgstr "%1 fără zece"
+
+#: ../plugins/clock/clock-fuzzy.c:111
+#, no-c-format
+msgid "five to %1"
+msgstr "%1 fără cinci"
+
+#: ../plugins/clock/clock-fuzzy.c:112
+#, no-c-format
+msgid "%1 o'clock"
+msgstr "ora %1"
+
+#. I18N: some languages have a singular form for the first hour,
+#. * other languages should just use the same strings as above
+#: ../plugins/clock/clock-fuzzy.c:119
+#, no-c-format
+msgctxt "one"
+msgid "%0 o'clock"
+msgstr "ora %0"
+
+#: ../plugins/clock/clock-fuzzy.c:120
+#, no-c-format
+msgctxt "one"
+msgid "five past %0"
+msgstr "%0 și cinci"
+
+#: ../plugins/clock/clock-fuzzy.c:121
+#, no-c-format
+msgctxt "one"
+msgid "ten past %0"
+msgstr "%0 și zece"
+
+#: ../plugins/clock/clock-fuzzy.c:122
+#, no-c-format
+msgctxt "one"
+msgid "quarter past %0"
+msgstr "%0 și un sfert"
+
+#: ../plugins/clock/clock-fuzzy.c:123
+#, no-c-format
+msgctxt "one"
+msgid "twenty past %0"
+msgstr "%0 și douăzeci"
+
+#: ../plugins/clock/clock-fuzzy.c:124
+#, no-c-format
+msgctxt "one"
+msgid "twenty five past %0"
+msgstr "%0 și două'ș'cinci"
+
+#: ../plugins/clock/clock-fuzzy.c:125
+#, no-c-format
+msgctxt "one"
+msgid "half past %0"
+msgstr "%0 jumate"
+
+#: ../plugins/clock/clock-fuzzy.c:126
+#, no-c-format
+msgctxt "one"
+msgid "twenty five to %1"
+msgstr "%1 fără două'ș'cinci"
+
+#: ../plugins/clock/clock-fuzzy.c:127
+#, no-c-format
+msgctxt "one"
+msgid "twenty to %1"
+msgstr "%1 fără douăzeci"
+
+#: ../plugins/clock/clock-fuzzy.c:128
+#, no-c-format
+msgctxt "one"
+msgid "quarter to %1"
+msgstr "%1 fără un sfert"
+
+#: ../plugins/clock/clock-fuzzy.c:129
+#, no-c-format
+msgctxt "one"
+msgid "ten to %1"
+msgstr "%1 fără zece"
+
+#: ../plugins/clock/clock-fuzzy.c:130
+#, no-c-format
+msgctxt "one"
+msgid "five to %1"
+msgstr "%1 fără cinci"
+
+#: ../plugins/clock/clock-fuzzy.c:131
+#, no-c-format
+msgctxt "one"
+msgid "%1 o'clock"
+msgstr "ora %1"
+
+#: ../plugins/clock/clock-fuzzy.c:136
+msgid "one"
+msgstr "unu"
+
+#: ../plugins/clock/clock-fuzzy.c:137
+msgid "two"
+msgstr "două"
+
+#: ../plugins/clock/clock-fuzzy.c:138
+msgid "three"
+msgstr "trei"
+
+#: ../plugins/clock/clock-fuzzy.c:139
+msgid "four"
+msgstr "patru"
+
+#: ../plugins/clock/clock-fuzzy.c:140
+msgid "five"
+msgstr "cinci"
+
+#: ../plugins/clock/clock-fuzzy.c:141
+msgid "six"
+msgstr "șase"
+
+#: ../plugins/clock/clock-fuzzy.c:142
+msgid "seven"
+msgstr "șapte"
+
+#: ../plugins/clock/clock-fuzzy.c:143
+msgid "eight"
+msgstr "opt"
+
+#: ../plugins/clock/clock-fuzzy.c:144
+msgid "nine"
+msgstr "nouă"
+
+#: ../plugins/clock/clock-fuzzy.c:145
+msgid "ten"
+msgstr "zece"
+
+#: ../plugins/clock/clock-fuzzy.c:146
+msgid "eleven"
+msgstr "unșpe"
+
+#: ../plugins/clock/clock-fuzzy.c:147
+msgid "twelve"
+msgstr "doișpe"
+
+#: ../plugins/clock/clock.desktop.in.h:2
+msgid "What time is it?"
+msgstr "Cât e ceasul?"
+
+#: ../plugins/directorymenu/directorymenu.c:243
+#: ../plugins/directorymenu/directorymenu.desktop.in.h:1
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:2
+msgid "Directory Menu"
+msgstr "Meniul directorului"
+
+#: ../plugins/directorymenu/directorymenu.c:550
 #, c-format
-msgid "%u Output"
-msgid_plural "%u Outputs"
-msgstr[0] "%u rezultat"
-msgstr[1] "%u rezultate"
-msgstr[2] "%u de rezultate"
+msgid "Failed to launch application \"%s\""
+msgstr "Nu s-a putut porni programul „%s”"
 
-#. translators:
-#. * The number of sound inputs on a particular device
-#: ../src/gvc/gvc-mixer-control.c:1110
+#: ../plugins/directorymenu/directorymenu.c:581
 #, c-format
-msgid "%u Input"
-msgid_plural "%u Inputs"
-msgstr[0] "%u intrare"
-msgstr[1] "%u intrări"
-msgstr[2] "%u de intrări"
+msgid "Failed to query content type for \"%s\""
+msgstr "Nu s-a putut obține tipul de conținut pentru „%s”"
 
-#: ../src/gvc/gvc-mixer-control.c:1408
-msgid "System Sounds"
-msgstr "Sunete de sistem"
-
-#: ../src/main.c:508
-msgid "Print version"
-msgstr "Tipărește versiunea"
-
-#: ../src/main.c:514
-msgid "Mode used by GDM for login screen"
-msgstr "Mod folosit de GDM pentru meniul de autentificare"
-
-#: ../src/shell-app.c:567
+#: ../plugins/directorymenu/directorymenu.c:590
 #, c-format
-msgid "Failed to launch '%s'"
-msgstr "Nu s-a putut lansa „%s”"
+msgid "No default application found for \"%s\""
+msgstr "Nu s-a găsit un program asociat implicit pentru „%s”"
 
-#: ../src/shell-mobile-providers.c:80
-msgid "United Kingdom"
-msgstr "Regatul Unit"
+#: ../plugins/directorymenu/directorymenu.c:605
+#, c-format
+msgid "Failed to launch default application for \"%s\""
+msgstr "Nu s-a putut porni programul asociat implicit pentru „%s”"
 
-#: ../src/shell-mobile-providers.c:526
+#: ../plugins/directorymenu/directorymenu.c:696
+#, c-format
+msgid "Failed to execute the preferred application for category \"%s\""
+msgstr "Nu s-a putut executa programul preferat pentru categoria „%s”"
+
+#: ../plugins/directorymenu/directorymenu.c:769
+msgid "Open Folder"
+msgstr "Deschide dosarul"
+
+#: ../plugins/directorymenu/directorymenu.c:780
+msgid "Open in Terminal"
+msgstr "Deschide în terminal"
+
+#: ../plugins/directorymenu/directorymenu.desktop.in.h:2
+msgid "Show a directory tree in a menu"
+msgstr "Arată un arbore de directoare în meniu"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:3
+msgid "Enter a list of patterns that will be used to determine which files are visible in a directory. If you specify more than one pattern here, the list items must be separated with semicolons (e.g. *.txt;*.doc)."
+msgstr "Introduceți o listă de modele ce vor fi folosite pentru a determina ce fișiere vor fi vizibile într-un director. Dacă specificați aici mai mult de un model, separați lista elementelor prin punct și virgulă (de ex. *.txt;*.doc)."
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:4
+#: ../plugins/tasklist/tasklist-dialog.glade.h:5
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:5
+msgid "Filtering"
+msgstr "Filtrare"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:5
+msgid "Select A Directory"
+msgstr "Selectați un director"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:6
+msgid "Show _hidden files"
+msgstr "Arată _fișierele ascunse"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:7
+msgid "_Base Directory:"
+msgstr "Director de _bază:"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:8
+msgid "_File Pattern:"
+msgstr "_Model de fișiere:"
+
+#: ../plugins/launcher/launcher.c:406
+msgid "Open launcher menu"
+msgstr "Deschide meniul lansatorului"
+
+#: ../plugins/launcher/launcher.c:1574
+msgid "Unnamed Item"
+msgstr "Element fără nume"
+
+#: ../plugins/launcher/launcher.c:1715
+msgid "No items"
+msgstr "Niciun element"
+
+#: ../plugins/launcher/launcher-dialog.c:744
+msgid "If you delete an item, it will be permanently removed"
+msgstr "Dacă ștergeți un element, el va fi eliminat definitiv"
+
+#: ../plugins/launcher/launcher-dialog.c:745
+#, c-format
+msgid "Are you sure you want to remove \"%s\"?"
+msgstr "Sigur doriți să eliminați „%s”?"
+
+#: ../plugins/launcher/launcher-dialog.c:746
+msgid "Unnamed item"
+msgstr "Element fără nume"
+
+#: ../plugins/launcher/launcher-dialog.c:791
+msgid "Failed to open desktop item editor"
+msgstr "Nu s-a putut deschide editorul elementelor de pe desktop"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:2
+msgid "Add a new empty item"
+msgstr "Adăugați un nou element gol"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:3
+msgid "Add one or more existing items to the launcher"
+msgstr "Adăugați în lansator unul sau mai multe elemente existente"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:4
+msgid "Advanced"
+msgstr "Avansate"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:5
 msgid "Default"
 msgstr "Implicit"
 
-#: ../src/shell-polkit-authentication-agent.c:334
-msgid "Authentication dialog was dismissed by the user"
-msgstr "Fereastra de autentificare a fost închisă de către utilizator"
+#: ../plugins/launcher/launcher-dialog.glade.h:6
+msgid "Delete the currently selected item"
+msgstr "Șterge elementul selectat"
 
-#. Translators: this is the same string as the one found in
-#. * nautilus
-#: ../src/shell-util.c:89
-msgid "Home"
-msgstr "Acasă"
+#: ../plugins/launcher/launcher-dialog.glade.h:7
+msgid "Disable t_ooltips"
+msgstr "Dezactivare a indiciil_or"
 
-#. Translators: this is the same string as the one found in
-#. * nautilus
-#: ../src/shell-util.c:98
-msgid "File System"
-msgstr "Sistem de fișiere"
+#: ../plugins/launcher/launcher-dialog.glade.h:8
+msgid "East"
+msgstr "Est"
 
-#. Translators: the first string is the name of a gvfs
-#. * method, and the second string is a path. For
-#. * example, "Trash: some-directory". It means that the
-#. * directory called "some-directory" is in the trash.
-#.
-#: ../src/shell-util.c:294
+#: ../plugins/launcher/launcher-dialog.glade.h:11
+msgid "Inside Button"
+msgstr "În buton"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:12
+#: ../plugins/launcher/launcher.desktop.in.h:1
+msgid "Launcher"
+msgstr "Lansator"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:15
+msgid "North"
+msgstr "Nord"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:16
+msgid "Select this option to disable the tooltips when moving over the panel button or menu items."
+msgstr "Selectați această opțiune pentru a dezactiva indiciile la trecerea mausului peste butonul din panou ori peste elementele din meniu."
+
+#: ../plugins/launcher/launcher-dialog.glade.h:17
+msgid "Select this option to move the clicked menu item to the panel."
+msgstr "Selectați această opțiune pentru a muta prin clic un element din meniu în panou"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:18
+msgid "Show _label instead of icon"
+msgstr "Arată o etichetă în _loc de iconiță"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:19
+msgid "Show last _used item in panel"
+msgstr "Arată în panou _ultimul element utilizat"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:20
+msgid "South"
+msgstr "Sud"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:21
+msgid "West"
+msgstr "Vest"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:22
+msgid "_Arrow button position:"
+msgstr "Poziția butonului de tip _săgeată:"
+
+#: ../plugins/launcher/launcher.desktop.in.h:2
+msgid "Program launcher with optional menu"
+msgstr "Lansator de programe cu meniu opțional"
+
+#: ../plugins/pager/pager.c:353 ../plugins/pager/pager-dialog.glade.h:8
+msgid "Workspace _Settings..."
+msgstr "Opțiuni pentru _spații de lucru..."
+
+#: ../plugins/pager/pager.c:428
+msgid "Unable to open the workspace settings"
+msgstr "Nu s-a putut deschide fereastra opțiunilor pentru spațiile de lucru"
+
+#: ../plugins/pager/pager-buttons.c:561 ../plugins/windowmenu/windowmenu.c:854
 #, c-format
-msgid "%1$s: %2$s"
-msgstr "%1$s: %2$s"
+msgid "Workspace %d"
+msgstr "Spațiul de lucru %d"
+
+#: ../plugins/pager/pager-dialog.glade.h:2
+#: ../plugins/tasklist/tasklist-dialog.glade.h:3
+msgid "Behaviour"
+msgstr "Comportament"
+
+#: ../plugins/pager/pager-dialog.glade.h:3
+msgid "Number of _rows:"
+msgstr "Număr de _rânduri:"
+
+#: ../plugins/pager/pager-dialog.glade.h:4
+msgid "Show a miniature view of the workspace with rectangles for the visible windows"
+msgstr "Arată o vizualizare miniaturală a spațiilor de lucru cu dreptunghiuri ce reprezintă ferestrele vizibile"
+
+#: ../plugins/pager/pager-dialog.glade.h:5
+msgid "Show mi_niature view"
+msgstr "Arată mi_niaturi"
+
+#: ../plugins/pager/pager-dialog.glade.h:6
+msgid "Switch workspaces using the mouse _wheel"
+msgstr "Comutare între spațiile de lucru cu rotița de _maus"
+
+#: ../plugins/pager/pager-dialog.glade.h:7
+#: ../plugins/pager/pager.desktop.in.h:2
+msgid "Workspace Switcher"
+msgstr "Comutare între spațiile de lucru"
+
+#: ../plugins/pager/pager.desktop.in.h:1
+msgid "Switch between virtual desktops"
+msgstr "Comutare între desktopurile virtuale"
+
+#: ../plugins/separator/separator-dialog.glade.h:2
+msgid "Dots"
+msgstr "Puncte"
+
+#: ../plugins/separator/separator-dialog.glade.h:3
+msgid "Handle"
+msgstr "Mâner"
+
+#: ../plugins/separator/separator-dialog.glade.h:4
+msgid "New Line"
+msgstr "Rând nou"
+
+#: ../plugins/separator/separator-dialog.glade.h:5
+#: ../plugins/separator/separator.desktop.in.h:2
+msgid "Separator"
+msgstr "Separator"
+
+#: ../plugins/separator/separator-dialog.glade.h:6
+msgid "Transparent"
+msgstr "Transparent"
+
+#: ../plugins/separator/separator-dialog.glade.h:7
+msgid "_Expand"
+msgstr "_Extinde"
+
+#: ../plugins/separator/separator.desktop.in.h:1
+msgid "Adds a separator or space between panel items"
+msgstr "Adaugă un separator ori un spațiu între elementele panoului"
+
+#: ../plugins/showdesktop/showdesktop.c:194
+msgid "Restore the minimized windows"
+msgstr "Restaurează ferestrele ascunse"
+
+#: ../plugins/showdesktop/showdesktop.c:196
+msgid "Minimize all open windows and show the desktop"
+msgstr "Ascunde toate ferestrele deschise și arată desktopul"
+
+#: ../plugins/showdesktop/showdesktop.c:199
+#: ../plugins/showdesktop/showdesktop.desktop.in.h:2
+msgid "Show Desktop"
+msgstr "Arată desktopul"
+
+#: ../plugins/showdesktop/showdesktop.desktop.in.h:1
+msgid "Hide all windows and show the desktop"
+msgstr "Ascunde toate ferestrele și arată desktopul"
+
+#: ../plugins/systray/systray.c:385
+msgid "Unable to start the notification area"
+msgstr "Nu s-a putut inițializa zona de notificare"
+
+#. create fake error and show it
+#: ../plugins/systray/systray.c:855
+msgid "Most likely another widget took over the function of a notification area. This area will be unused."
+msgstr "Cel mai probabil un alt widget funcționează ca zonă de notificare. Zona proprie de notificare nu va fi folosită."
+
+#: ../plugins/systray/systray.c:857
+msgid "The notification area lost selection"
+msgstr "Zonei de notificare a pierdut selecția"
+
+#: ../plugins/systray/systray.c:1010
+msgid "Are you sure you want to clear the list of known applications?"
+msgstr "Sigur doriți să goliți lista programelor cunoscute?"
+
+#: ../plugins/systray/systray-dialog.glade.h:2
+msgid "C_lear Known Applications"
+msgstr "Goleșt_e lista programele cunoscute"
+
+#: ../plugins/systray/systray-dialog.glade.h:3
+msgid "Known Applications"
+msgstr "Programe cunoscute"
+
+#: ../plugins/systray/systray-dialog.glade.h:4
+#: ../plugins/systray/systray.desktop.in.h:2
+msgid "Notification Area"
+msgstr "Zonă de notificare"
+
+#: ../plugins/systray/systray-dialog.glade.h:6
+msgid "_Maximum icon size (px):"
+msgstr "Mărime ma_ximă pentru iconițe (px):"
+
+#: ../plugins/systray/systray-manager.c:404
+#, c-format
+msgid "Failed to acquire manager selection for screen %d"
+msgstr "Nu s-a putut obține selecția de manager pentru ecranul %d"
+
+#: ../plugins/systray/systray.desktop.in.h:1
+msgid "Area where notification icons appear"
+msgstr "Zona cu iconițele de notificare"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:1
+msgid "Always"
+msgstr "Întotdeauna"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:4
+msgid "D_raw window frame when hovering a button"
+msgstr "A_rată cadrul ferestrei când mausul trece peste buton"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:6
+msgid "Group title and timestamp"
+msgstr "Titlul grupului și marcajul de timp"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:7
+msgid "Group title and window title"
+msgstr "Titlul și titlul ferestrei"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:8
+msgid "Never"
+msgstr "Niciodată"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:9
+msgid "None, allow drag-and-drop"
+msgstr "Nimic, permite aranjare interactivă"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:10
+msgid "Restore minimized windows to current _workspace"
+msgstr "Restaurează ferestrele minimi_zate în spațiul curent"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:11
+msgid "Ro_tate buttons in vertical panel"
+msgstr "Ro_tește butoanele în panourile verticale"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:12
+msgid "Show _flat buttons"
+msgstr "Utilizează _butoane plate"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:13
+msgid "Show _handle"
+msgstr "Arată ca_drul"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:14
+msgid "Show button _labels"
+msgstr "Arată _etichetele butoanelor"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:15
+msgid "Show only _minimized windows"
+msgstr "Arată doar ferestrele _minimizate"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:16
+msgid "Show windows from _all workspaces or viewports"
+msgstr "Arată _ferestrele din toate vizoarele și spațiile de lucru"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:17
+msgid "Show windows from all mo_nitors"
+msgstr "Arată ferestrele din toate mo_nitoarele"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:18
+msgid "Sorting _order:"
+msgstr "_Ordonează după:"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:19
+msgid "Timestamp"
+msgstr "Marcajul de timp"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:20
+msgid "When space is limited"
+msgstr "Când spațiul e limitat"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:21
+#: ../plugins/tasklist/tasklist.desktop.in.h:2
+msgid "Window Buttons"
+msgstr "Butoane pentru ferestre"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:22
+msgid "Window _grouping:"
+msgstr "_Grupează ferestrele:"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:23
+msgid "Window title"
+msgstr "Titlul ferestrei"
+
+#: ../plugins/tasklist/tasklist-widget.c:3176
+msgid "Mi_nimize All"
+msgstr "Mi_nimizează tot"
+
+#: ../plugins/tasklist/tasklist-widget.c:3185
+msgid "Un_minimize All"
+msgstr "Restaurează t_ot"
+
+#: ../plugins/tasklist/tasklist-widget.c:3191
+msgid "Ma_ximize All"
+msgstr "Ma_ximizează tot"
+
+#: ../plugins/tasklist/tasklist-widget.c:3200
+msgid "_Unmaximize All"
+msgstr "_Demaximizează tot"
+
+#: ../plugins/tasklist/tasklist-widget.c:3210
+msgid "_Close All"
+msgstr "În_chide tot"
+
+#: ../plugins/tasklist/tasklist.desktop.in.h:1
+msgid "Switch between open windows using buttons"
+msgstr "Ciclați între ferestrele deschise folosind butoane"
+
+#: ../plugins/windowmenu/windowmenu.c:652
+msgid "Desktop"
+msgstr "Desktop"
+
+#: ../plugins/windowmenu/windowmenu.c:1243
+msgid "No Windows"
+msgstr "Nicio fereastră"
+
+#: ../plugins/windowmenu/windowmenu.c:1258
+msgid "Urgent Windows"
+msgstr "Ferestre urgente"
+
+#: ../plugins/windowmenu/windowmenu.c:1300
+msgid "Add Workspace"
+msgstr "Adaugă un spațiu de lucru"
+
+#: ../plugins/windowmenu/windowmenu.c:1320
+#, c-format
+msgid "Remove Workspace \"%s\""
+msgstr "Elimină spațiul de lucru „%s”"
+
+#: ../plugins/windowmenu/windowmenu.c:1322
+#, c-format
+msgid "Remove Workspace %d"
+msgstr "Elimină spațiul de lucru %d"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:2
+msgid "Arrow"
+msgstr "Săgeată"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:3
+msgid "Button layout:"
+msgstr "Aspectul butonului:"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:4
+msgid "Enable _urgency notification"
+msgstr "Activează notificarea de _urgență"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:6
+msgid "Icon"
+msgstr "Iconiță"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:7
+msgid "Show windows from _all workspaces"
+msgstr "Arată _ferestrele din toate spațiile de lucru"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:8
+msgid "Show workspace _names"
+msgstr "Arată _numele spațiilor de lucru"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:9
+msgid "Show workspace a_ctions"
+msgstr "A_rată acțiunile spațiilor de lucru"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:10
+#: ../plugins/windowmenu/windowmenu.desktop.in.h:2
+msgid "Window Menu"
+msgstr "Listă de ferestre"
+
+#: ../plugins/windowmenu/windowmenu.desktop.in.h:1
+msgid "Switch between open windows using a menu"
+msgstr "Ciclați între ferestrele active folosind un meniu"

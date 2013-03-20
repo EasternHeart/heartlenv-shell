@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Convenience Functions</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<link rel="home" href="index.html" title="Libheartlenvpanel Reference Manual">
+<link rel="up" href="libheartlenvpanel-miscelleanous.html" title="Part IV. Miscelleanous">
+<link rel="prev" href="libheartlenvpanel-miscelleanous.html" title="Part IV. Miscelleanous">
+<link rel="next" href="api-index-full.html" title="Index of all symbols">
+<meta name="generator" content="GTK-Doc V1.17 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="libheartlenvpanel-miscelleanous.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="libheartlenvpanel-miscelleanous.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Libheartlenvpanel Reference Manual</th>
+<td><a accesskey="n" href="api-index-full.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#libheartlenvpanel-Convenience-Functions.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#libheartlenvpanel-Convenience-Functions.description" class="shortcut">Description</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="libheartlenvpanel-Convenience-Functions"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libheartlenvpanel-Convenience-Functions.top_of_page"></a>Convenience Functions</span></h2>
+<p>Convenience Functions — Special purpose widgets and utilities</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="libheartlenvpanel-Convenience-Functions.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">
+#include &lt;libheartlenvpanel/libheartlenvpanel.h&gt;
+
+<span class="returnvalue">GtkWidget</span> *         <a class="link" href="libheartlenvpanel-Convenience-Functions.html#xfce-panel-create-button" title="xfce_panel_create_button ()">xfce_panel_create_button</a>            (<em class="parameter"><code><span class="type">void</span></code></em>);
+<span class="returnvalue">GtkWidget</span> *         <a class="link" href="libheartlenvpanel-Convenience-Functions.html#xfce-panel-create-toggle-button" title="xfce_panel_create_toggle_button ()">xfce_panel_create_toggle_button</a>     (<em class="parameter"><code><span class="type">void</span></code></em>);
+const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="libheartlenvpanel-Convenience-Functions.html#xfce-panel-get-channel-name" title="xfce_panel_get_channel_name ()">xfce_panel_get_channel_name</a>         (<em class="parameter"><code><span class="type">void</span></code></em>);
+<a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *         <a class="link" href="libheartlenvpanel-Convenience-Functions.html#xfce-panel-pixbuf-from-source" title="xfce_panel_pixbuf_from_source ()">xfce_panel_pixbuf_from_source</a>       (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *source</code></em>,
+                                                         <em class="parameter"><code><span class="type">GtkIconTheme</span> *icon_theme</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> size</code></em>);
+#define             <a class="link" href="libheartlenvpanel-Convenience-Functions.html#xfce-allow-panel-customization" title="xfce_allow_panel_customization">xfce_allow_panel_customization</a>
+#define             <a class="link" href="libheartlenvpanel-Convenience-Functions.html#xfce-create-panel-button" title="xfce_create_panel_button">xfce_create_panel_button</a>
+#define             <a class="link" href="libheartlenvpanel-Convenience-Functions.html#xfce-create-panel-toggle-button" title="xfce_create_panel_toggle_button">xfce_create_panel_toggle_button</a>
+</pre>
+</div>
+<div class="refsect1">
+<a name="libheartlenvpanel-Convenience-Functions.description"></a><h2>Description</h2>
+<p>
+This section describes a number of functions that were created
+to help developers of Xfce Panel plugins.
+</p>
+</div>
+<div class="refsect1">
+<a name="libheartlenvpanel-Convenience-Functions.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="xfce-panel-create-button"></a><h3>xfce_panel_create_button ()</h3>
+<pre class="programlisting"><span class="returnvalue">GtkWidget</span> *         xfce_panel_create_button            (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+Create regular <span class="type">GtkButton</span> with a few properties set to be useful in the
+Xfce panel: Flat (<code class="literal">GTK_RELIEF_NONE</code>), no focus on click and minimal padding.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>newly created <span class="type">GtkButton</span>.</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="xfce-panel-create-toggle-button"></a><h3>xfce_panel_create_toggle_button ()</h3>
+<pre class="programlisting"><span class="returnvalue">GtkWidget</span> *         xfce_panel_create_toggle_button     (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+Create regular <span class="type">GtkToggleButton</span> with a few properties set to be useful in
+Xfce panel: Flat (<code class="literal">GTK_RELIEF_NONE</code>), no focus on click and minimal padding.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>newly created <span class="type">GtkToggleButton</span>.</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="xfce-panel-get-channel-name"></a><h3>xfce_panel_get_channel_name ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       xfce_panel_get_channel_name         (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+Function for the name of the Xfconf channel used by the panel. By default
+this returns "heartlenv-panel", but you can override this value with the
+environment variable XFCE_PANEL_CHANNEL_NAME.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>name of the Xfconf channel
+See also: XFCE_PANEL_CHANNEL_NAME,
+xfce_panel_plugin_xfconf_channel_new and
+xfce_panel_plugin_get_property_base</td>
+</tr></tbody>
+</table></div>
+<p class="since">Since 4.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="xfce-panel-pixbuf-from-source"></a><h3>xfce_panel_pixbuf_from_source ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *         xfce_panel_pixbuf_from_source       (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *source</code></em>,
+                                                         <em class="parameter"><code><span class="type">GtkIconTheme</span> *icon_theme</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> size</code></em>);</pre>
+<p>
+Try to load a pixbug from a source string. The source could be
+an abolute path, an icon name or a filename that point to a
+file in the pixmaps directory.
+</p>
+<p>
+This function is particularly usefull for loading names from
+the Icon key of desktop files.
+</p>
+<p>
+The pixbufs is never bigger then <em class="parameter"><code>size</code></em>. If it is when loaded from the
+disk, the pixbuf is scales preserving the aspect ratio.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>source</code></em> :</span></p></td>
+<td>string that contains the location of an icon</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>icon_theme</code></em> :</span></p></td>
+<td>icon theme or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to use the default icon theme</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>size</code></em> :</span></p></td>
+<td>size the icon should be loaded</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a GdkPixbuf or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> is nothing was found. The value should
+be released with g_object_unref is no long used.
+See also: XfcePanelImage</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since 4.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="xfce-allow-panel-customization"></a><h3>xfce_allow_panel_customization</h3>
+<pre class="programlisting">#define xfce_allow_panel_customization  (FALSE)
+</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">xfce_allow_panel_customization</code> has been deprecated since version 4.8 and should not be used in newly-written code. Look at <a class="link" href="XfcePanelPlugin.html#xfce-panel-plugin-get-locked" title="xfce_panel_plugin_get_locked ()"><code class="function">xfce_panel_plugin_get_locked()</code></a>.</p>
+</div>
+<p>
+Always returns <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>. Plugins can be locked on a plugin basis
+level in the future, so this function is useless.
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="xfce-create-panel-button"></a><h3>xfce_create_panel_button</h3>
+<pre class="programlisting">#define xfce_create_panel_button xfce_panel_create_button
+</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">xfce_create_panel_button</code> has been deprecated since version 4.8 and should not be used in newly-written code. Use <a class="link" href="libheartlenvpanel-Convenience-Functions.html#xfce-panel-create-button" title="xfce_panel_create_button ()"><code class="function">xfce_panel_create_button()</code></a> instead.</p>
+</div>
+<p>
+See <a class="link" href="libheartlenvpanel-Convenience-Functions.html#xfce-panel-create-button" title="xfce_panel_create_button ()"><code class="function">xfce_panel_create_button()</code></a> for more information.
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="xfce-create-panel-toggle-button"></a><h3>xfce_create_panel_toggle_button</h3>
+<pre class="programlisting">#define xfce_create_panel_toggle_button xfce_panel_create_toggle_button
+</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">xfce_create_panel_toggle_button</code> has been deprecated since version 4.8 and should not be used in newly-written code. Use <a class="link" href="libheartlenvpanel-Convenience-Functions.html#xfce-panel-create-toggle-button" title="xfce_panel_create_toggle_button ()"><code class="function">xfce_panel_create_toggle_button()</code></a> instead.</p>
+</div>
+<p>
+See <a class="link" href="libheartlenvpanel-Convenience-Functions.html#xfce-panel-create-toggle-button" title="xfce_panel_create_toggle_button ()"><code class="function">xfce_panel_create_toggle_button()</code></a> for more information.
+</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.17</div>
+</body>
+</html>

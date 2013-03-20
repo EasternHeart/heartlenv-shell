@@ -1,0 +1,7 @@
+[Xfce Panel]
+Type=X-XFCE-PanelPlugin
+_Name=Workspace Switcher
+_Comment=Switch between virtual desktops
+Icon=heartlenv-workspaces
+X-XFCE-Module=pager
+X-XFCE-Internal=TRUE

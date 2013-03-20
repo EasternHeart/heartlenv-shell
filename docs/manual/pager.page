@@ -1,0 +1,80 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      xmlns:e="http://projectmallard.org/experimental/"
+      type="topic"
+      id="pager">
+
+  <info>
+    <link type="guide" xref="index#plugins"/>
+    <desc>Switch between virtual desktops</desc>
+    <credit type="author">
+      <name>Nick Schermer</name>
+      <email>nick@xfce.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+  <title>Workspace Switcher</title>
+
+  <p>
+    The <app>Workspace Switcher</app> panel plugin allows you to switch between 
+    virtual desktops and display your workspace layout in your panel.
+  </p>
+
+  <section id="properties">
+    <title>Properties</title>
+
+    <figure>
+      <title>Workspace Switcher dialog</title>
+      <media type="image" src="figures/pager.png" mime="image/png" style="right"/>
+    </figure>
+    
+    <section id="appearance">
+    <title>Appearance</title>
+      <terms>
+        <item>
+          <title><gui>Number of rows</gui></title>
+          <p>
+            Specify the number of rows to display your available workspaces in.
+          </p>
+        </item>
+        
+        <item>
+          <title><gui>Show miniature view</gui></title>
+          <p>
+            When checked, this displays available workspaces in a miniature view. 
+            When not checked, the names of available workspaces will be visible.
+          </p>
+        </item>
+        
+        <item>
+          <title><gui>Workspace Settings</gui></title>
+          <p>
+            This displays the <app>Workspace Settings</app> dialogue.
+          </p>
+        </item>
+      </terms>
+    </section>
+    
+    <section id="behaviour">
+      <title>Behaviour</title>
+      <terms>
+        <item>
+          <title><gui>Switch workspaces using the mousewheel</gui></title>
+          <p>
+            Allows you to switch between available workspaces using the mousewheel.
+          </p>
+        </item>
+      </terms>
+    </section>
+  </section>
+
+  <section id="theming">
+    <title>Style Properties</title>
+
+  </section>
+  
+</page>
+
+

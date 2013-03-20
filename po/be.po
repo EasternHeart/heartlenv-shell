@@ -1,1795 +1,1731 @@
-# Ihar Hrachyshka <ihar.hrachyshka@gmail.com>, 2011.
-# Kasia Bondarava <kasia.bondarava@gmail.com>, 2012.
+# Belarusian translations for heartlenv-panel package.
+# Copyright (C) 2002-2006 The Xfce development team.
+# This file is distributed under the same license as the heartlenv-panel package.
+# Ales Nyakhaychyk <nab@mail.by>, 2004.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: heartlenv-shell.master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.heartlenv.org/enter_bug.cgi?product=heartlenv-"
-"shell&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-03-30 17:59+0000\n"
-"PO-Revision-Date: 2012-04-05 15:36+0300\n"
-"Last-Translator: Kasia Bondarava <kasia.bondarava@gmail.com>\n"
-"Language-Team: Belarusian <i18n-bel-heartlenv@googlegroups.com>\n"
+"Project-Id-Version: heartlenv-panel 4.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-16 17:01+0100\n"
+"PO-Revision-Date: 2008-11-09 11:38+0200\n"
+"Last-Translator: Alexander Nyakhaychyk <nyakhaychyk@gmail.com>\n"
+"Language-Team: Belarusian <i18n@mova.org>\n"
+"Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: be\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Virtaal 0.7.0\n"
-"X-Project-Style: heartlenv\n"
+"X-Rosetta-Export-Date: 2007-01-03 10:28+0000\n"
 
-#: ../data/heartlenv-shell.desktop.in.in.h:1
-msgid "GNOME Shell"
-msgstr "Абалонка GNOME"
-
-#: ../data/heartlenv-shell.desktop.in.in.h:2
-msgid "Window management and application launching"
-msgstr "Кіраванне вокнамі і пуск праграм"
-
-#: ../data/heartlenv-shell-extension-prefs.desktop.in.in.h:1
-#: ../js/extensionPrefs/main.js:153
-msgid "GNOME Shell Extension Preferences"
-msgstr "Настройкі пашырэння абалонкі GNOME"
-
-#: ../data/heartlenv-shell-extension-prefs.desktop.in.in.h:2
-msgid "Configure GNOME Shell Extensions"
-msgstr "Настройкі пашырэнняў абалонкі GNOME"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:1
-msgid "Enable internal tools useful for developers and testers from Alt-F2"
-msgstr ""
-"Уключыць унутраныя прылады, прыдатныя для распрацоўшчыкаў і тэстараў, для "
-"Alt-F2"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:2
+#: ../panel-desktop-handler.desktop.in.h:1
 msgid ""
-"Allows access to internal debugging and monitoring tools using the Alt-F2 "
-"dialog."
+"Add a new launcher to the panel based on the information of this desktop file"
 msgstr ""
-"Дазваляе доступ да ўнутраных адладачных і маніторынгавых прылад для дыялогу "
-"Alt-F2."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:3
-msgid "Uuids of extensions to enable"
-msgstr "UUID-значэнні пашырэнняў, якія трэба ўключыць"
+#: ../panel-desktop-handler.desktop.in.h:2
+#, fuzzy
+msgid "Create Launcher on the panel"
+msgstr "Пра Панэль Xfce"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:4
+#: ../panel-preferences.desktop.in.h:1
+#, fuzzy
+msgid "Customize the panel"
+msgstr "Пра Панэль Xfce"
+
+#: ../panel-preferences.desktop.in.h:2
+#: ../panel/panel-preferences-dialog.glade.h:24 ../panel/panel-window.c:2222
+#: ../migrate/main.c:84
+#, fuzzy
+msgid "Panel"
+msgstr "Панэль %d"
+
+#: ../common/panel-utils.c:155
+msgid "_Read Online"
+msgstr ""
+
+#: ../common/panel-utils.c:156
 msgid ""
-"GNOME Shell extensions have a uuid property; this key lists extensions which "
-"should be loaded. Any extension that wants to be loaded needs to be in this "
-"list. You can also manipulate this list with the EnableExtension and "
-"DisableExtension DBus methods on org.heartlenv.Shell."
+"You can read the user manual online. This manual may however not exactly "
+"match your panel version."
 msgstr ""
-"Пашырэнні абалонкі GNOME маюць уласцівасць uuid; у гэтым ключы пералічаны "
-"пашырэнні, якія неабходна загрузіць. Усе пашырэнні, якія вы хочаце "
-"загрузіць, трэба ўпісаць у гэты спіс. Вы таксама можаце кіраваць гэтым "
-"спісам метадамі DBus EnableExtension і DisableExtension паслугі org.heartlenv."
-"Shell."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:5
-msgid "Whether to collect stats about applications usage"
-msgstr "Ці збіраць статыстыку пра выкарыстанне праграм"
+#: ../common/panel-utils.c:158
+msgid "The user manual is not installed on your computer"
+msgstr ""
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:6
+#. display an error message to the user
+#: ../common/panel-utils.c:171
+msgid "Failed to open the documentation browser"
+msgstr ""
+
+#. I18N: %s is the name of the plugin
+#: ../libheartlenvpanel/xfce-panel-plugin.c:889
+#: ../panel/panel-preferences-dialog.c:1048
+#, fuzzy, c-format
+msgid "Are you sure that you want to remove \"%s\"?"
+msgstr "Вы насамрэч жадаеце выдаліць прастору \"%s\"?"
+
+#: ../libheartlenvpanel/xfce-panel-plugin.c:894
+#: ../panel/panel-preferences-dialog.c:1051
+msgid "If you remove the item from the panel, it is permanently lost."
+msgstr ""
+
+#. move item
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1054
+#, fuzzy
+msgid "_Move"
+msgstr "Перамясьціць"
+
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1088
+#, fuzzy
+msgid "Pane_l"
+msgstr "Панэль %d"
+
+#. add new items
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1096 ../panel/panel-window.c:2234
+#, fuzzy
+msgid "Add _New Items..."
+msgstr "Дадаць новы элемэнт"
+
+#. customize panel
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1107 ../panel/panel-window.c:2245
+msgid "Panel Pr_eferences..."
+msgstr ""
+
+#. logout item
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1124 ../panel/panel-window.c:2261
+msgid "Log _Out"
+msgstr ""
+
+#: ../panel/main.c:78
+#, fuzzy
+msgid "Show the 'Panel Preferences' dialog"
+msgstr "Наладзіць панэль"
+
+#: ../panel/main.c:78 ../panel/main.c:79
+msgid "PANEL-NUMBER"
+msgstr ""
+
+#: ../panel/main.c:79
+#, fuzzy
+msgid "Show the 'Add New Items' dialog"
+msgstr "Дадаць новы элемэнт"
+
+#: ../panel/main.c:80
+#, fuzzy
+msgid "Save the panel configuration"
+msgstr "Захаваць наладку"
+
+#: ../panel/main.c:81
+#, fuzzy
+msgid "Add a new plugin to the panel"
+msgstr "Дадаць новыя элемэнты"
+
+#: ../panel/main.c:81
+msgid "PLUGIN-NAME"
+msgstr ""
+
+#: ../panel/main.c:82
+#, fuzzy
+msgid "Restart the running panel instance"
+msgstr "Перазапуска heartlenv-panel..."
+
+#: ../panel/main.c:83
+msgid "Quit the running panel instance"
+msgstr ""
+
+#: ../panel/main.c:84
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:33
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:33
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:33
+msgid "Print version information and exit"
+msgstr ""
+
+#. parse context options
+#: ../panel/main.c:240
+msgid "[ARGUMENTS...]"
+msgstr ""
+
+#: ../panel/main.c:247
+#, c-format
+msgid "Type \"%s --help\" for usage."
+msgstr ""
+
+#: ../panel/main.c:266
+msgid "The Xfce development team. All rights reserved."
+msgstr "Каманда распрацоўкі Xfce. Усе правы абаронены."
+
+#: ../panel/main.c:267
+#, c-format
+msgid "Please report bugs to <%s>."
+msgstr "Калі ласка, паведамляйце пра памылкі на <%s>."
+
+#: ../panel/main.c:318
+#, fuzzy
+msgid "There is already a running instance"
+msgstr "На гэтым экране ўжо прысутнічае сыстэмная прастора паведамленьняў"
+
+#. spawn ourselfs again
+#: ../panel/main.c:367
+#, fuzzy
+msgid "Restarting..."
+msgstr "Перазапуск"
+
+#: ../panel/main.c:382
+#, fuzzy
+msgid "Failed to show the preferences dialog"
+msgstr "Немагчыма адкрыць дысплэй"
+
+#: ../panel/main.c:384
+#, fuzzy
+msgid "Failed to show the add new items dialog"
+msgstr "Дадаць новы элемэнт"
+
+#: ../panel/main.c:386
+#, fuzzy
+msgid "Failed to save the panel configuration"
+msgstr "Захаваць наладку"
+
+#: ../panel/main.c:388
+msgid "Failed to add a plugin to the panel"
+msgstr ""
+
+#: ../panel/main.c:390
+#, fuzzy
+msgid "Failed to restart the panel"
+msgstr "Дадаць элемэнт на Панэль"
+
+#: ../panel/main.c:392
+#, fuzzy
+msgid "Failed to quit the panel"
+msgstr "Немагчыма выканаць \"heartlenv-panel -c\""
+
+#: ../panel/main.c:394
+#, fuzzy
+msgid "Failed to send D-Bus message"
+msgstr "Немагчыма адкрыць дысплэй"
+
+#: ../panel/main.c:405
 msgid ""
-"The shell normally monitors active applications in order to present the most "
-"used ones (e.g. in launchers). While this data will be kept private, you may "
-"want to disable this for privacy reasons. Please note that doing so won't "
-"remove already saved data."
+"Do you want to start the panel? If you do, make sure you save the session on "
+"logout, so the panel is automatically started the next time you login."
 msgstr ""
-"Абалонка звычайна назірае за актыўнымі праграмамі, каб вызначыць найбольш "
-"папулярныя (напрыклад, сярод стартараў). Магчыма, вы захочаце выключыць гэты "
-"параметр з прычынаў прыватнасці, хоць гэтыя даныя і захоўваюцца прыватна. "
-"Звярніце ўвагу, што гэта не прывядзе да выдалення ўжо захаваных даных."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:7
-msgid "List of desktop file IDs for favorite applications"
-msgstr "Спіс ідэнтыфікатараў артыкульных файлаў стала для ўпадабаных праграм"
+#: ../panel/main.c:408 ../panel/main.c:422
+#, c-format
+msgid "No running instance of %s was found"
+msgstr ""
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:8
+#: ../panel/panel-application.c:196
+msgid "Failed to launch the migration application"
+msgstr ""
+
+#: ../panel/panel-application.c:1446 ../plugins/actions/actions.c:413
 msgid ""
-"The applications corresponding to these identifiers will be displayed in the "
-"favorites area."
+"You have started X without session manager. Clicking Quit will close the X "
+"server."
 msgstr ""
-"Праграмы з адпаведнымі ідэнтыфікатарамі будуць паказаны ў абшары ўпадабаных "
-"праграм."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:9
-msgid "disabled OpenSearch providers"
-msgstr "выключаныя правайдары OpenSearch"
+#: ../panel/panel-application.c:1447 ../plugins/actions/actions.c:414
+#, fuzzy
+msgid "Are you sure you want to quit the panel?"
+msgstr "Вы насамрэч жадаеце выдаліць прастору %d?"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:10
-msgid "History for command (Alt-F2) dialog"
-msgstr "Журнал загаднага дыялогу (Alt-F2)"
+#: ../panel/panel-application.c:1455 ../plugins/actions/actions.c:422
+#, fuzzy, c-format
+msgid "Failed to execute command \"%s\""
+msgstr "Немагчыма запусьціць \"%s\""
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:11
-msgid "History for the looking glass dialog"
-msgstr "Журнал дыялогу Looking Glass"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:12
+#: ../panel/panel-dbus-client.c:209
 msgid ""
-"Internally used to store the last IM presence explicitly set by the user. "
-"The value here is from the TpConnectionPresenceType enumeration."
+"Invalid plugin event syntax specified. Use PLUGIN-NAME:NAME[:TYPE:VALUE]."
 msgstr ""
-"Выкарыстоўваецца ўнутры сістэмы для захавання апошняга стану прысутнасці "
-"камунікатара, настаўленага асабіста карыстальнікам. Гэта значэнне - адно з "
-"пераліку TpConnectionPresenceType."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:13
+#: ../panel/panel-dbus-client.c:242
+#, c-format
 msgid ""
-"Internally used to store the last session presence status for the user. The "
-"value here is from the GsmPresenceStatus enumeration."
+"Invalid hint type \"%s\". Valid types are bool, double, int, string and uint."
 msgstr ""
-"Выкарыстоўваецца ўнутры сістэмы для захавання апошняга стану прысутнасці "
-"камунікатара карыстальніка. Гэта значэнне - з пераліку GsmPresenceStatus."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:14
-msgid "Show the week date in the calendar"
-msgstr "Паказваць тыдзень у календары"
+#: ../panel/panel-dialogs.c:76
+msgid "The panel of the Xfce Desktop Environment"
+msgstr ""
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:15
-msgid "If true, display the ISO week date in the calendar."
-msgstr "Калі ўключана, паказваць тыдзень у календары ў ISO-фармаце."
+#: ../panel/panel-dialogs.c:81
+msgid "translator-credits"
+msgstr ""
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:16
-msgid "Keybinding to open the application menu"
-msgstr "Клавіятурны скарот для адкрыцця праграмнага меню"
+#. setup the dialog
+#: ../panel/panel-dialogs.c:122 ../plugins/launcher/launcher-dialog.glade.h:1
+#, fuzzy
+msgid "Add New Item"
+msgstr "Дадаць новы элемэнт"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:17
-msgid "Keybinding to open the application menu."
-msgstr "Клавіятурны скарот для адкрыцця праграмнага меню."
+#: ../panel/panel-dialogs.c:136
+msgid "Please choose a panel for the new plugin:"
+msgstr ""
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:18
-msgid "Which keyboard to use"
-msgstr "Ужываная клавіятура"
+#. I18N: panel combo box in the preferences dialog
+#: ../panel/panel-dialogs.c:147 ../panel/panel-preferences-dialog.c:767
+#, c-format
+msgid "Panel %d"
+msgstr "Панэль %d"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:19
-msgid "The type of keyboard to use."
-msgstr "Від ужыванай клавіятуры."
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:20
-msgid "Show time with seconds"
-msgstr "Паказваць час з секундамі"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:21
-msgid "If true, display seconds in time."
-msgstr "Калі ўключана, паказваць час з секундамі."
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:22
-msgid "Show date in clock"
-msgstr "Паказваць дату на гадзінніку"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:23
-msgid "If true, display date in the clock, in addition to time."
-msgstr "Калі ўключана, паказваць на гадзінніку дату разам з часам."
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:24
-msgid "Framerate used for recording screencasts."
-msgstr "Частата змены кадраў для запісу скрынкасту."
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:25
+#: ../panel/panel-dialogs.c:183
 msgid ""
-"The framerate of the resulting screencast recordered by GNOME Shell's "
-"screencast recorder in frames-per-second."
+"Because the panel is running in kiosk mode, you are not allowed to make "
+"changes to the panel configuration as a regular user"
 msgstr ""
-"Частата змены кадраў выніковага скрынкасту, запісанага пры дапамозе абалонкі "
-"GNOME (кадраў на секунду)."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:26
-msgid "The gstreamer pipeline used to encode the screencast"
-msgstr "Канвеер gstreamer для кадавання скрынкастаў"
+#: ../panel/panel-dialogs.c:185
+msgid "Modifying the panel is not allowed"
+msgstr ""
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:28
+#: ../panel/panel-item-dialog.c:188
+#, fuzzy
+msgid "Add New Items"
+msgstr "Дадаць новы элемэнт"
+
+#: ../panel/panel-item-dialog.c:190
+#, fuzzy
+msgid "Add new plugins to the panel"
+msgstr "Дадаць элемэнт на Панэль"
+
+#: ../panel/panel-item-dialog.c:213
+#: ../plugins/launcher/launcher-dialog.glade.h:23
+msgid "_Search:"
+msgstr ""
+
+#: ../panel/panel-item-dialog.c:221
+msgid "Enter search phrase here"
+msgstr ""
+
+#: ../panel/panel-plugin-external.c:420
+#, c-format
+msgid "Plugin \"%s\" unexpectedly left the panel, do you want to restart it?"
+msgstr ""
+
+#: ../panel/panel-plugin-external.c:422
+#, c-format
+msgid ""
+"The plugin restarted more than once in the last %d seconds. If you press "
+"Execute the panel will try to restart the plugin otherwise it will be "
+"permanently removed from the panel."
+msgstr ""
+
+#: ../panel/panel-preferences-dialog.c:453
+msgid "Automatic"
+msgstr "Аўтаматычна"
+
+#. I18N: screen name in the output selector
+#: ../panel/panel-preferences-dialog.c:472
+#, c-format
+msgid "Screen %d"
+msgstr ""
+
+#. I18N: monitor name in the output selector
+#: ../panel/panel-preferences-dialog.c:498
+#, fuzzy, c-format
+msgid "Monitor %d"
+msgstr "Зьвязаныя маніторы"
+
+#: ../panel/panel-preferences-dialog.c:828
+#, fuzzy
+msgid "The panel and plugin configurations will be permanently removed"
+msgstr "Вылучаная панэль будзе выдалена з усімі яе элемэнтамі."
+
+#: ../panel/panel-preferences-dialog.c:829
+#, fuzzy, c-format
+msgid "Are you sure you want to remove panel %d?"
+msgstr "Вы насамрэч жадаеце выдаліць прастору %d?"
+
+#. I18N: append (external) in the preferences dialog if the plugin
+#. * runs external
+#: ../panel/panel-preferences-dialog.c:912
+#, c-format
+msgid "%s <span color=\"grey\" size=\"small\">(external)</span>"
+msgstr ""
+
+#. I18N: tooltip in preferences dialog when hovering an item in the list
+#. * for external plugins
+#: ../panel/panel-preferences-dialog.c:917
+#, c-format
+msgid ""
+"Internal name: %s-%d\n"
+"PID: %d"
+msgstr ""
+
+#. I18N: tooltip in preferences dialog when hovering an item in the list
+#. * for internal plugins
+#: ../panel/panel-preferences-dialog.c:929
+#, c-format
+msgid "Internal name: %s-%d"
+msgstr ""
+
+#: ../panel/panel-preferences-dialog.glade.h:1
+msgid "A_utomatically increase the length"
+msgstr ""
+
+#: ../panel/panel-preferences-dialog.glade.h:2
+#, fuzzy
+msgid "Add a new panel"
+msgstr "Дадаць новыя элемэнты"
+
+#: ../panel/panel-preferences-dialog.glade.h:3
+#, fuzzy
+msgid "Add new item to this panel"
+msgstr "Дадаць элемэнт на Панэль"
+
+#: ../panel/panel-preferences-dialog.glade.h:4
+msgid ""
+"Alpha value of the panel background, with 0 being fully transparent and 100 "
+"fully opaque."
+msgstr ""
+
+#: ../panel/panel-preferences-dialog.glade.h:5
+#, fuzzy
+msgid "Appeara_nce"
+msgstr "Вонкавы выгляд"
+
+#: ../panel/panel-preferences-dialog.glade.h:6
+msgid "Automatically show and _hide the panel"
+msgstr ""
+
+#: ../panel/panel-preferences-dialog.glade.h:7
+msgid "Background"
+msgstr ""
+
+#: ../panel/panel-preferences-dialog.glade.h:8
+msgid "Background image"
+msgstr ""
+
+#: ../panel/panel-preferences-dialog.glade.h:9
+msgid "C_olor:"
+msgstr ""
+
+#: ../panel/panel-preferences-dialog.glade.h:10
+msgid "D_isplay"
+msgstr ""
+
+#: ../panel/panel-preferences-dialog.glade.h:11
+#: ../plugins/launcher/launcher-dialog.glade.h:9
+msgid "Edit the currently selected item"
+msgstr ""
+
+#: ../panel/panel-preferences-dialog.glade.h:12
+#: ../plugins/launcher/launcher-dialog.glade.h:10
+msgid "General"
+msgstr ""
+
+#: ../panel/panel-preferences-dialog.glade.h:13
+msgid "Horizontal"
+msgstr "Гарызантальная"
+
+#: ../panel/panel-preferences-dialog.glade.h:14
+#, fuzzy
+msgid "Ite_ms"
+msgstr "Дадаць элемэнт"
+
+#: ../panel/panel-preferences-dialog.glade.h:16
 #, no-c-format
+msgid "L_ength (%):"
+msgstr ""
+
+#. I18N: name of the section (frame) in the panel preferences where the user can define the length and size of the panel
+#: ../panel/panel-preferences-dialog.glade.h:18
+msgid "Measurements"
+msgstr ""
+
+#: ../panel/panel-preferences-dialog.glade.h:19
+#: ../plugins/launcher/launcher-dialog.glade.h:13
+msgid "Move currently selected item down by one row"
+msgstr ""
+
+#: ../panel/panel-preferences-dialog.glade.h:20
+#: ../plugins/launcher/launcher-dialog.glade.h:14
+msgid "Move currently selected item up by one row"
+msgstr ""
+
+#: ../panel/panel-preferences-dialog.glade.h:21
+msgid "None (use system style)"
+msgstr ""
+
+#: ../panel/panel-preferences-dialog.glade.h:22
+msgid "O_utput:"
+msgstr ""
+
+#: ../panel/panel-preferences-dialog.glade.h:23
+msgid "Opacity"
+msgstr ""
+
+#: ../panel/panel-preferences-dialog.glade.h:25
+msgid "Pick a Panel Color"
+msgstr ""
+
+#: ../panel/panel-preferences-dialog.glade.h:26
+msgid "Remove currently selected item"
+msgstr ""
+
+#: ../panel/panel-preferences-dialog.glade.h:27
+msgid "Remove the currently selected panel"
+msgstr ""
+
+#: ../panel/panel-preferences-dialog.glade.h:28
+#, fuzzy
+msgid "Select A Background Image"
+msgstr "Вылучыце загад"
+
+#: ../panel/panel-preferences-dialog.glade.h:29
 msgid ""
-"Sets the GStreamer pipeline used to encode recordings. It follows the syntax "
-"used for gst-launch. The pipeline should have an unconnected sink pad where "
-"the recorded video is recorded. It will normally have a unconnected source "
-"pad; output from that pad will be written into the output file. However the "
-"pipeline can also take care of its own output - this might be used to send "
-"the output to an icecast server via shout2send or similar. When unset or set "
-"to an empty value, the default pipeline will be used. This is currently "
-"'vp8enc quality=8 speed=6 threads=%T ! queue ! webmmux' and records to WEBM "
-"using the VP8 codec. %T is used as a placeholder for a guess at the optimal "
-"thread count on the system."
+"Select this option to automatically increase the length of the panel if the "
+"plugins request more space."
 msgstr ""
-"Настаўляе канвеер GStreamer для кадавання запісаў. Ён прытрымліваецца "
-"сінтаксіса gst-launch. Неабходна, каб з боку элемента канвеера, дзе "
-"запісваецца відэа, не было нічога падлучана. Звычайна ён будзе мець "
-"непадлучаны ўваход; вывад з гэтага боку будзе запісаны ў файл вываду. Аднак, "
-"канвеер таксама можа самастойна абслугоўваць свой вывад. Напрыклад, гэта "
-"можа спатрэбіцца для пасылкі вываду на icecast-сервер пры дапамозе "
-"shout2send ці пад. Калі не настаўлена ці настаўлена пустое значэнне, будзе "
-"ўжыты прадвызначаны канвеер. Цяпер выкарыстоўваецца \"vp8enc quality=8 "
-"speed=6 threads=%T ! queue ! webmmux\" і запісвае ў WEBM з дапамогай кодэка "
-"VP8. %T ўжываецца ў якасці замены аптымальнай для сістэмы колькасці ніцяў."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:29
-msgid "File extension used for storing the screencast"
-msgstr "Пашырэнне файла для захавання скрынкасту"
+#: ../panel/panel-preferences-dialog.glade.h:30
+msgid "Select this option to extend the panel over multiple monitors."
+msgstr ""
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:30
+#: ../panel/panel-preferences-dialog.glade.h:31
 msgid ""
-"The filename for recorded screencasts will be a unique filename based on the "
-"current date, and use this extension. It should be changed when recording to "
-"a different container format."
+"Select this option to hide the handles of the panel and lock its position."
 msgstr ""
-"Назва файла для запісаных скрынкастаў будзе ўнікальнай назвай, створанай на "
-"аснове бягучай даты з такім пашырэннем. Яго неабходна змяніць у выпадку "
-"запісу ў іншым фармаце кантэйнера."
 
-#: ../js/extensionPrefs/main.js:125
-#, c-format
-msgid "There was an error loading the preferences dialog for %s:"
-msgstr "Падчас загрузкі дыялогу настроек для %s узнікла памылка:"
-
-#: ../js/extensionPrefs/main.js:165
-msgid "<b>Extension</b>"
-msgstr "<b>Пашырэнне</b>"
-
-#: ../js/extensionPrefs/main.js:189
-msgid "Select an extension to configure using the combobox above."
+#: ../panel/panel-preferences-dialog.glade.h:32
+msgid ""
+"Select this option to hide the panel when the pointer is not above it. This "
+"only works when the panel is attached to a screen edge."
 msgstr ""
-"Абярыце пашырэнне, каб настроіць графу з выплыўным спісам, якая знаходзіцца "
-"вышэй."
 
-#: ../js/gdm/loginDialog.js:624
-msgid "Session..."
-msgstr "Сеанс..."
-
-#: ../js/gdm/loginDialog.js:786
-msgctxt "title"
-msgid "Sign In"
-msgstr "Уваход"
-
-#. Translators: this message is shown below the password entry field
-#. to indicate the user can swipe their finger instead
-#: ../js/gdm/loginDialog.js:831
-msgid "(or swipe finger)"
-msgstr "(або правядзіце пальцам)"
-
-#. translators: this message is shown below the user list on the
-#. login screen. It can be activated to reveal an entry for
-#. manually entering the username.
-#: ../js/gdm/loginDialog.js:852
-msgid "Not listed?"
-msgstr "Няма ў спісе?"
-
-#: ../js/gdm/loginDialog.js:1020 ../js/ui/endSessionDialog.js:401
-#: ../js/ui/extensionSystem.js:399 ../js/ui/networkAgent.js:153
-#: ../js/ui/polkitAuthenticationAgent.js:175 ../js/ui/status/bluetooth.js:462
-msgid "Cancel"
-msgstr "Скасаваць"
-
-#: ../js/gdm/loginDialog.js:1025
-msgctxt "button"
-msgid "Sign In"
-msgstr "Увайсці"
-
-#: ../js/gdm/loginDialog.js:1377
-msgid "Login Window"
-msgstr "Акно ўваходу"
-
-#: ../js/gdm/powerMenu.js:155 ../js/ui/userMenu.js:597
-#: ../js/ui/userMenu.js:599 ../js/ui/userMenu.js:668
-msgid "Suspend"
-msgstr "Прыпыніць камп'ютар"
-
-#: ../js/gdm/powerMenu.js:160
-msgid "Restart"
-msgstr "Перазапусціць сістэму"
-
-#: ../js/gdm/powerMenu.js:165
-msgid "Power Off"
-msgstr "Выключыць камп'ютар"
-
-#: ../js/misc/util.js:92
-msgid "Command not found"
-msgstr "Загад не знойдзены"
-
-#. Replace "Error invoking GLib.shell_parse_argv: " with
-#. something nicer
-#: ../js/misc/util.js:119
-msgid "Could not parse command:"
-msgstr "Не ўдалося разабраць загад:"
-
-#: ../js/misc/util.js:127
-#, c-format
-msgid "Execution of '%s' failed:"
-msgstr "Не ўдалося выканаць \"%s\":"
-
-#. Translators: Filter to display all applications
-#: ../js/ui/appDisplay.js:255
-msgid "All"
-msgstr "Усе"
-
-#: ../js/ui/appDisplay.js:314
-msgid "APPLICATIONS"
-msgstr "ПРАГРАМЫ"
-
-#: ../js/ui/appDisplay.js:375
-msgid "SETTINGS"
-msgstr "НАСТРОЙКІ"
-
-#: ../js/ui/appDisplay.js:680
-msgid "New Window"
-msgstr "Новае акно"
-
-#: ../js/ui/appDisplay.js:683
-msgid "Remove from Favorites"
-msgstr "Выдаліць са спіса ўпадабанага"
-
-#: ../js/ui/appDisplay.js:684
-msgid "Add to Favorites"
-msgstr "Дадаць у спіс упадабанага"
-
-#: ../js/ui/appFavorites.js:87
-#, c-format
-msgid "%s has been added to your favorites."
-msgstr "%s дададзены ў ваш спіс упадабанага."
-
-#: ../js/ui/appFavorites.js:118
-#, c-format
-msgid "%s has been removed from your favorites."
-msgstr "%s выдалены з вашага спіса ўпадабанага."
-
-#: ../js/ui/autorunManager.js:265
-msgid "Removable Devices"
-msgstr "Зменныя прыстасаванні"
-
-#: ../js/ui/autorunManager.js:560
-#, c-format
-msgid "Open with %s"
-msgstr "Адкрыць у %s"
-
-#: ../js/ui/autorunManager.js:586
-msgid "Eject"
-msgstr "Выняць"
-
-#. Translators: Shown in calendar event list for all day events
-#. * Keep it short, best if you can use less then 10 characters
-#.
-#: ../js/ui/calendar.js:62
-msgctxt "event list time"
-msgid "All Day"
-msgstr "Увесь дзень"
-
-#. Translators: Shown in calendar event list, if 24h format
-#: ../js/ui/calendar.js:67
-msgctxt "event list time"
-msgid "%H:%M"
-msgstr "%H:%M"
-
-#. Transators: Shown in calendar event list, if 12h format
-#: ../js/ui/calendar.js:74
-msgctxt "event list time"
-msgid "%l:%M %p"
-msgstr "%l:%M %p"
-
-#. Translators: Calendar grid abbreviation for Sunday.
-#. *
-#. * NOTE: These grid abbreviations are always shown together
-#. * and in order, e.g. "S M T W T F S".
-#.
-#: ../js/ui/calendar.js:114
-msgctxt "grid sunday"
-msgid "S"
-msgstr "Н"
-
-#. Translators: Calendar grid abbreviation for Monday
-#: ../js/ui/calendar.js:116
-msgctxt "grid monday"
-msgid "M"
-msgstr "П"
-
-#. Translators: Calendar grid abbreviation for Tuesday
-#: ../js/ui/calendar.js:118
-msgctxt "grid tuesday"
-msgid "T"
-msgstr "А"
-
-#. Translators: Calendar grid abbreviation for Wednesday
-#: ../js/ui/calendar.js:120
-msgctxt "grid wednesday"
-msgid "W"
-msgstr "С"
-
-#. Translators: Calendar grid abbreviation for Thursday
-#: ../js/ui/calendar.js:122
-msgctxt "grid thursday"
-msgid "T"
-msgstr "Ч"
-
-#. Translators: Calendar grid abbreviation for Friday
-#: ../js/ui/calendar.js:124
-msgctxt "grid friday"
-msgid "F"
-msgstr "П"
-
-#. Translators: Calendar grid abbreviation for Saturday
-#: ../js/ui/calendar.js:126
-msgctxt "grid saturday"
-msgid "S"
-msgstr "С"
-
-#. Translators: Event list abbreviation for Sunday.
-#. *
-#. * NOTE: These list abbreviations are normally not shown together
-#. * so they need to be unique (e.g. Tuesday and Thursday cannot
-#. * both be 'T').
-#.
-#: ../js/ui/calendar.js:139
-msgctxt "list sunday"
-msgid "Su"
-msgstr "Н"
-
-#. Translators: Event list abbreviation for Monday
-#: ../js/ui/calendar.js:141
-msgctxt "list monday"
-msgid "M"
-msgstr "Пн"
-
-#. Translators: Event list abbreviation for Tuesday
-#: ../js/ui/calendar.js:143
-msgctxt "list tuesday"
-msgid "T"
-msgstr "А"
-
-#. Translators: Event list abbreviation for Wednesday
-#: ../js/ui/calendar.js:145
-msgctxt "list wednesday"
-msgid "W"
-msgstr "Ср"
-
-#. Translators: Event list abbreviation for Thursday
-#: ../js/ui/calendar.js:147
-msgctxt "list thursday"
-msgid "Th"
-msgstr "Ч"
-
-#. Translators: Event list abbreviation for Friday
-#: ../js/ui/calendar.js:149
-msgctxt "list friday"
-msgid "F"
-msgstr "Пт"
-
-#. Translators: Event list abbreviation for Saturday
-#: ../js/ui/calendar.js:151
-msgctxt "list saturday"
-msgid "S"
-msgstr "Сб"
-
-#. Translators: Text to show if there are no events
-#: ../js/ui/calendar.js:681
-msgid "Nothing Scheduled"
-msgstr "Нічога не прымеркавана"
-
-#. Translators: Shown on calendar heading when selected day occurs on current year
-#: ../js/ui/calendar.js:697
-msgctxt "calendar heading"
-msgid "%A, %B %d"
-msgstr "%A, %d %B"
-
-#. Translators: Shown on calendar heading when selected day occurs on different year
-#: ../js/ui/calendar.js:700
-msgctxt "calendar heading"
-msgid "%A, %B %d, %Y"
-msgstr "%A, %d %B, %Y"
-
-#: ../js/ui/calendar.js:710
-msgid "Today"
-msgstr "Сёння"
-
-#: ../js/ui/calendar.js:714
-msgid "Tomorrow"
-msgstr "Заўтра"
-
-#: ../js/ui/calendar.js:723
-msgid "This week"
-msgstr "На гэтым тыдні"
-
-#: ../js/ui/calendar.js:731
-msgid "Next week"
-msgstr "На наступным тыдні"
-
-#: ../js/ui/contactDisplay.js:66 ../js/ui/notificationDaemon.js:486
-#: ../js/ui/status/power.js:215 ../src/shell-app.c:374
-msgid "Unknown"
-msgstr "Невядома"
-
-#: ../js/ui/contactDisplay.js:89 ../js/ui/userMenu.js:129
-msgid "Available"
-msgstr "Даступны"
-
-#: ../js/ui/contactDisplay.js:94 ../js/ui/userMenu.js:138
-msgid "Away"
-msgstr "Адсутны"
-
-#: ../js/ui/contactDisplay.js:98 ../js/ui/userMenu.js:132
-msgid "Busy"
-msgstr "Заняты"
-
-#: ../js/ui/contactDisplay.js:102
-msgid "Offline"
-msgstr "Па-за сеткай"
-
-#: ../js/ui/contactDisplay.js:153
-msgid "CONTACTS"
-msgstr "КАНТАКТЫ"
-
-#: ../js/ui/dash.js:229 ../js/ui/messageTray.js:1207
-msgid "Remove"
-msgstr "Выдаліць"
-
-#: ../js/ui/dateMenu.js:103
-msgid "Date and Time Settings"
-msgstr "Настройкі даты і часу"
-
-#: ../js/ui/dateMenu.js:129
-msgid "Open Calendar"
-msgstr "Адкрыць каляндар"
-
-#. Translators: This is the time format with date used
-#. in 24-hour mode.
-#: ../js/ui/dateMenu.js:187
-msgid "%a %b %e, %R:%S"
-msgstr "%a, %e %b, %R:%S"
-
-#: ../js/ui/dateMenu.js:188
-msgid "%a %b %e, %R"
-msgstr "%a, %e %b, %R"
-
-#. Translators: This is the time format without date used
-#. in 24-hour mode.
-#: ../js/ui/dateMenu.js:192
-msgid "%a %R:%S"
-msgstr "%a %R:%S"
-
-#: ../js/ui/dateMenu.js:193
-msgid "%a %R"
-msgstr "%a %R"
-
-#. Translators: This is a time format with date used
-#. for AM/PM.
-#: ../js/ui/dateMenu.js:200
-msgid "%a %b %e, %l:%M:%S %p"
-msgstr "%a, %e %b, %l:%M:%S %p"
-
-#: ../js/ui/dateMenu.js:201
-msgid "%a %b %e, %l:%M %p"
-msgstr "%a, %e %b, %l:%M %p"
-
-#. Translators: This is a time format without date used
-#. for AM/PM.
-#: ../js/ui/dateMenu.js:205
-msgid "%a %l:%M:%S %p"
-msgstr "%a %l:%M:%S %p"
-
-#: ../js/ui/dateMenu.js:206
-msgid "%a %l:%M %p"
-msgstr "%a %l:%M %p"
-
-#. Translators: This is the date format to use when the calendar popup is
-#. * shown - it is shown just below the time in the shell (e.g. "Tue 9:29 AM").
-#.
-#: ../js/ui/dateMenu.js:217
-msgid "%A %B %e, %Y"
-msgstr "%A, %e %B, %Y"
-
-#: ../js/ui/endSessionDialog.js:61
-#, c-format
-msgctxt "title"
-msgid "Log Out %s"
-msgstr "Заканчэнне сеанса (%s)"
-
-#: ../js/ui/endSessionDialog.js:62
-msgctxt "title"
-msgid "Log Out"
-msgstr "Заканчэнне сеанса"
-
-#: ../js/ui/endSessionDialog.js:63
-msgid "Click Log Out to quit these applications and log out of the system."
+#: ../panel/panel-preferences-dialog.glade.h:33
+msgid "Show about information of the currently selected item"
 msgstr ""
-"Пстрыкніце \"Скончыць сеанс\", каб выйсці з усіх праграм і скончыць сеанс "
-"працы з сістэмай."
 
-#: ../js/ui/endSessionDialog.js:65
-#, c-format
-msgid "%s will be logged out automatically in %d second."
-msgid_plural "%s will be logged out automatically in %d seconds."
-msgstr[0] "%s аўтаматычна скончыць сеанс працы з сістэмай праз %d секунду."
-msgstr[1] "%s аўтаматычна скончыць сеанс працы з сістэмай праз %d секунды."
-msgstr[2] "%s аўтаматычна скончыць сеанс працы з сістэмай праз %d секунд."
-
-#: ../js/ui/endSessionDialog.js:70
-#, c-format
-msgid "You will be logged out automatically in %d second."
-msgid_plural "You will be logged out automatically in %d seconds."
-msgstr[0] "Вы аўтаматычна скончыце сеанс працы з сістэмай праз %d секунду."
-msgstr[1] "Вы аўтаматычна скончыце сеанс працы з сістэмай праз %d секунды."
-msgstr[2] "Вы аўтаматычна скончыце сеанс працы з сістэмай праз %d секунд."
-
-#: ../js/ui/endSessionDialog.js:74
-msgid "Logging out of the system."
-msgstr "Заканчэнне сеанса працы з сістэмай."
-
-#: ../js/ui/endSessionDialog.js:76
-msgctxt "button"
-msgid "Log Out"
-msgstr "Скончыць сеанс"
-
-#: ../js/ui/endSessionDialog.js:81
-msgctxt "title"
-msgid "Power Off"
-msgstr "Выключэнне камп'ютара"
-
-#: ../js/ui/endSessionDialog.js:82
-msgid "Click Power Off to quit these applications and power off the system."
+#: ../panel/panel-preferences-dialog.glade.h:34
+msgid "Solid color"
 msgstr ""
-"Пстрыкніце \"Выключыць камп'ютар\", каб выйсці з усіх праграм і выключыць "
-"сістэму."
 
-#: ../js/ui/endSessionDialog.js:84
-#, c-format
-msgid "The system will power off automatically in %d second."
-msgid_plural "The system will power off automatically in %d seconds."
-msgstr[0] "Сістэма аўтаматычна выключыцца праз %d секунду."
-msgstr[1] "Сістэма аўтаматычна выключыцца праз %d секунды."
-msgstr[2] "Сістэма аўтаматычна выключыцца праз %d секунд."
+#: ../panel/panel-preferences-dialog.glade.h:35
+#, fuzzy
+msgid "Span mo_nitors"
+msgstr "Зьвязаныя маніторы"
 
-#: ../js/ui/endSessionDialog.js:88
-msgid "Powering off the system."
-msgstr "Выключэнне сістэмы."
-
-#: ../js/ui/endSessionDialog.js:90 ../js/ui/endSessionDialog.js:107
-msgctxt "button"
-msgid "Restart"
-msgstr "Перазапусціць сістэму"
-
-#: ../js/ui/endSessionDialog.js:92
-msgctxt "button"
-msgid "Power Off"
-msgstr "Выключыць камп'ютар"
-
-#: ../js/ui/endSessionDialog.js:98
-msgctxt "title"
-msgid "Restart"
-msgstr "Перазапуск сістэмы"
-
-#: ../js/ui/endSessionDialog.js:99
-msgid "Click Restart to quit these applications and restart the system."
+#: ../panel/panel-preferences-dialog.glade.h:36
+msgid ""
+"Transparency when the pointer is hovering over the panel, with 0 being fully "
+"transparent and 100 fully opaque."
 msgstr ""
-"Пстрыкніце \"Перазапусціць сістэму\", каб выйсці з усіх праграм і "
-"перазапусціць камп'ютар."
 
-#: ../js/ui/endSessionDialog.js:101
-#, c-format
-msgid "The system will restart automatically in %d second."
-msgid_plural "The system will restart automatically in %d seconds."
-msgstr[0] "Сістэма аўтаматычна перазапусціцца праз %d секунду."
-msgstr[1] "Сістэма аўтаматычна перазапусціцца праз %d секунды."
-msgstr[2] "Сістэма аўтаматычна перазапусціцца праз %d секунд."
+#: ../panel/panel-preferences-dialog.glade.h:37
+msgid ""
+"Transparency when the pointer is not hovering over the panel, with 0 being "
+"fully transparent and 100 fully opaque."
+msgstr ""
 
-#: ../js/ui/endSessionDialog.js:105
-msgid "Restarting the system."
-msgstr "Перазапуск сістэмы."
+#: ../panel/panel-preferences-dialog.glade.h:38
+msgid "Vertical"
+msgstr "Вэртыкальная"
 
-#: ../js/ui/extensionSystem.js:403
-msgid "Install"
-msgstr "Усталяваць"
+#: ../panel/panel-preferences-dialog.glade.h:39
+msgid "_Alpha:"
+msgstr ""
 
-#: ../js/ui/extensionSystem.js:407
-#, c-format
-msgid "Download and install '%s' from extensions.heartlenv.org?"
-msgstr "Сцягнуць і ўсталяваць \"%s\" з extensions.heartlenv.org?"
+#. I18N: label for the enter transparency slider
+#: ../panel/panel-preferences-dialog.glade.h:41
+msgid "_Enter:"
+msgstr ""
 
-#: ../js/ui/keyboard.js:327
-msgid "tray"
-msgstr "трэй"
+#: ../panel/panel-preferences-dialog.glade.h:42
+msgid "_File:"
+msgstr ""
 
-#: ../js/ui/keyboard.js:544 ../js/ui/status/power.js:203
-msgid "Keyboard"
-msgstr "Клавіятура"
+#. I18N: label for the leave transparency slider
+#: ../panel/panel-preferences-dialog.glade.h:44
+#, fuzzy
+msgid "_Leave:"
+msgstr "_Назва"
 
-#: ../js/ui/keyringPrompt.js:85 ../js/ui/polkitAuthenticationAgent.js:272
-msgid "Password:"
-msgstr "Пароль:"
+#: ../panel/panel-preferences-dialog.glade.h:45
+#, fuzzy
+msgid "_Lock panel"
+msgstr "За_мкнуць экран"
 
-#: ../js/ui/keyringPrompt.js:101
-msgid "Type again:"
-msgstr "Паўтарыце пароль:"
+#: ../panel/panel-preferences-dialog.glade.h:46
+#, fuzzy
+msgid "_Orientation:"
+msgstr "Арыентацыя:"
 
-#: ../js/ui/lookingGlass.js:732
-msgid "No extensions installed"
-msgstr "Няма ўсталяваных пашырэнняў"
+#: ../panel/panel-preferences-dialog.glade.h:47
+#, fuzzy
+msgid "_Size (pixels):"
+msgstr "Памер (піксэлі):"
 
-#. Translators: argument is an extension UUID.
-#: ../js/ui/lookingGlass.js:786
-#, c-format
-msgid "%s has not emitted any errors."
-msgstr "%s не зрабіў ніякіх памылак."
+#: ../panel/panel-preferences-dialog.glade.h:48
+#: ../plugins/separator/separator-dialog.glade.h:8
+msgid "_Style:"
+msgstr ""
 
-#: ../js/ui/lookingGlass.js:792
-msgid "Hide Errors"
-msgstr "Хаваць памылкі"
+#: ../panel/panel-tic-tac-toe.c:123
+msgid "_New Game"
+msgstr ""
 
-#: ../js/ui/lookingGlass.js:796 ../js/ui/lookingGlass.js:847
-msgid "Show Errors"
-msgstr "Паказваць памылкі"
+#: ../panel/panel-tic-tac-toe.c:134
+#, fuzzy
+msgid "_Level:"
+msgstr "_Назва"
 
-#: ../js/ui/lookingGlass.js:805
-msgid "Enabled"
-msgstr "Уключана"
+#: ../panel/panel-tic-tac-toe.c:140
+msgid "Novice"
+msgstr ""
 
-#. translators:
-#. * The device has been disabled
-#: ../js/ui/lookingGlass.js:808 ../src/gvc/gvc-mixer-control.c:1093
+#: ../panel/panel-tic-tac-toe.c:141
+msgid "Intermediate"
+msgstr ""
+
+#: ../panel/panel-tic-tac-toe.c:142
+msgid "Experienced"
+msgstr ""
+
+#: ../panel/panel-tic-tac-toe.c:143
+msgid "Expert"
+msgstr ""
+
+#: ../migrate/main.c:78
+#, fuzzy
+msgid "Welcome to the first start of the panel"
+msgstr "Дадаць элемэнт на Панэль"
+
+#: ../migrate/main.c:80
+msgid ""
+"Because the panel moved to a new system for storing the settings, it has to "
+"load a fresh initial configuration."
+msgstr ""
+
+#: ../migrate/main.c:83
+msgid "Choose below which setup you want for the first startup."
+msgstr ""
+
+#: ../migrate/main.c:89
+msgid "Migrate old config"
+msgstr ""
+
+#: ../migrate/main.c:90
+#, fuzzy
+msgid "Migrate the old 4.6 configuration to Xfconf"
+msgstr "Захаваць наладку"
+
+#: ../migrate/main.c:95
+msgid "Use default config"
+msgstr ""
+
+#: ../migrate/main.c:96
+#, fuzzy
+msgid "Load the default configuration"
+msgstr "Захаваць наладку"
+
+#: ../migrate/main.c:102
+msgid "One empty panel"
+msgstr ""
+
+#: ../migrate/main.c:103
+msgid "Start with one empty panel"
+msgstr ""
+
+#: ../migrate/main.c:115
+#, fuzzy
+msgid "Failed to migrate the old panel configuration"
+msgstr "Захаваць наладку"
+
+#: ../migrate/main.c:125
+#, fuzzy
+msgid "Failed to load the default configuration"
+msgstr "Захаваць наладку"
+
+#: ../plugins/actions/actions-dialog.glade.h:1
+#: ../plugins/actions/actions.desktop.in.h:1
+msgid "Action Buttons"
+msgstr "Кнопкі дзеяньняў"
+
+#: ../plugins/actions/actions-dialog.glade.h:2
+#, fuzzy
+msgid "Button Actions"
+msgstr "Дзяньні Панэлі"
+
+#: ../plugins/actions/actions-dialog.glade.h:3
+#, fuzzy
+msgid "_First button:"
+msgstr "_Стрэлка"
+
+#: ../plugins/actions/actions-dialog.glade.h:4
+#, fuzzy
+msgid "_Second button:"
+msgstr "_Значка"
+
+#: ../plugins/actions/actions.c:108
+#, fuzzy
 msgid "Disabled"
-msgstr "Выключана"
+msgstr "В_ыключана"
 
-#: ../js/ui/lookingGlass.js:810
-msgid "Error"
-msgstr "Памылка"
-
-#: ../js/ui/lookingGlass.js:812
-msgid "Out of date"
-msgstr "Састарэла"
-
-#: ../js/ui/lookingGlass.js:814
-msgid "Downloading"
-msgstr "Сцягванне"
-
-#: ../js/ui/lookingGlass.js:835
-msgid "View Source"
-msgstr "Паглядзець выточны код"
-
-#: ../js/ui/lookingGlass.js:841
-msgid "Web Page"
-msgstr "Сеціўная старонка"
-
-#. Translators: this is a filename used for screencast recording
-#: ../js/ui/main.js:118
-#, no-c-format
-msgid "Screencast from %d %t"
-msgstr "Скрынкаст %d %t"
-
-#: ../js/ui/messageTray.js:1200
-msgid "Open"
-msgstr "Адкрыць"
-
-#: ../js/ui/messageTray.js:1217
-msgid "Unmute"
-msgstr "Вярнуць гук"
-
-#: ../js/ui/messageTray.js:1217
-msgid "Mute"
-msgstr "Абязгучыць"
-
-#: ../js/ui/messageTray.js:2490
-msgid "System Information"
-msgstr "Сістэмная інфармацыя"
-
-#: ../js/ui/networkAgent.js:148
-msgid "Connect"
-msgstr "Злучыць"
-
-#. Cisco LEAP
-#: ../js/ui/networkAgent.js:243 ../js/ui/networkAgent.js:255
-#: ../js/ui/networkAgent.js:282 ../js/ui/networkAgent.js:302
-#: ../js/ui/networkAgent.js:312
-msgid "Password: "
-msgstr "Пароль: "
-
-#. static WEP
-#: ../js/ui/networkAgent.js:248
-msgid "Key: "
-msgstr "Ключ: "
-
-#. TTLS and PEAP are actually much more complicated, but this complication
-#. is not visible here since we only care about phase2 authentication
-#. (and don't even care of which one)
-#: ../js/ui/networkAgent.js:280 ../js/ui/networkAgent.js:298
-msgid "Username: "
-msgstr "Імя карыстальніка: "
-
-#: ../js/ui/networkAgent.js:286
-msgid "Identity: "
-msgstr "Ідэнтычнасць: "
-
-#: ../js/ui/networkAgent.js:288
-msgid "Private key password: "
-msgstr "Пароль да прыватнага ключа: "
-
-#: ../js/ui/networkAgent.js:300
-msgid "Service: "
-msgstr "Паслуга: "
-
-#: ../js/ui/networkAgent.js:329
-msgid "Authentication required by wireless network"
-msgstr "Для бесправадной сеткі патрэбная ідэнтыфікацыя"
-
-#: ../js/ui/networkAgent.js:330
-#, c-format
-msgid ""
-"Passwords or encryption keys are required to access the wireless network '%"
-"s'."
+#: ../plugins/actions/actions.c:109
+msgid "Log Out Dialog"
 msgstr ""
-"Для доступу да бесправадной сеткі \"%s\" патрэбны пароль або ключы "
-"шыфравання."
 
-#: ../js/ui/networkAgent.js:334
-msgid "Wired 802.1X authentication"
-msgstr "Правадная ідэнтыфікацыя 802.1X"
-
-#: ../js/ui/networkAgent.js:336
-msgid "Network name: "
-msgstr "Назва сеткі: "
-
-#: ../js/ui/networkAgent.js:341
-msgid "DSL authentication"
-msgstr "DSL-ідэнтыфікацыя"
-
-#: ../js/ui/networkAgent.js:348
-msgid "PIN code required"
-msgstr "Патрэбны PIN-код"
-
-#: ../js/ui/networkAgent.js:349
-msgid "PIN code is needed for the mobile broadband device"
+#: ../plugins/actions/actions.c:110
+msgid "Log Out"
 msgstr ""
-"Для прыстасавання для доступу да шырокапалоснай мабільнай сеткі патрэбны PIN-"
-"код"
 
-#: ../js/ui/networkAgent.js:350
-msgid "PIN: "
-msgstr "PIN-код: "
-
-#: ../js/ui/networkAgent.js:356
-msgid "Mobile broadband network password"
-msgstr "Пароль да шырокапалоснай мабільнай сеткі"
-
-#: ../js/ui/networkAgent.js:357
-#, c-format
-msgid "A password is required to connect to '%s'."
-msgstr "Каб злучыцца з \"%s\", патрэбны пароль."
-
-#: ../js/ui/overview.js:90
-msgid "Undo"
-msgstr "Адрабіць"
-
-#: ../js/ui/overview.js:132
-msgid "Overview"
-msgstr "Агляд"
-
-#: ../js/ui/overview.js:202
-msgid "Windows"
-msgstr "Вокны"
-
-#: ../js/ui/overview.js:205
-msgid "Applications"
-msgstr "Праграмы"
-
-#. Translators: this is the name of the dock/favorites area on
-#. the left of the overview
-#: ../js/ui/overview.js:231
-msgid "Dash"
-msgstr "Прыборная дошка"
-
-#: ../js/ui/panel.js:592
-msgid "Quit"
-msgstr "Выйсці"
-
-#. Translators: If there is no suitable word for "Activities"
-#. in your language, you can use the word for "Overview".
-#: ../js/ui/panel.js:624
-msgid "Activities"
-msgstr "Заняткі"
-
-#: ../js/ui/panel.js:999
-msgid "Top Bar"
-msgstr "Верхняя панэль"
-
-#: ../js/ui/placeDisplay.js:115
-#, c-format
-msgid "Failed to unmount '%s'"
-msgstr "Не ўдалося адмацаваць \"%s\""
-
-#: ../js/ui/placeDisplay.js:118
-msgid "Retry"
-msgstr "Паўтарыць спробу"
-
-#: ../js/ui/placeDisplay.js:156
-msgid "Connect to..."
-msgstr "Злучыць..."
-
-#: ../js/ui/placeDisplay.js:367
-msgid "PLACES & DEVICES"
-msgstr "МЕСЦЫ І ПРЫСТАСАВАННІ"
-
-#: ../js/ui/polkitAuthenticationAgent.js:71
-msgid "Authentication Required"
-msgstr "Патрэбная ідэнтыфікацыя"
-
-#: ../js/ui/polkitAuthenticationAgent.js:109
-msgid "Administrator"
-msgstr "Адміністратар"
-
-#: ../js/ui/polkitAuthenticationAgent.js:179
-msgid "Authenticate"
-msgstr "Ідэнтыфікаваць"
-
-#. Translators: "that didn't work" refers to the fact that the
-#. * requested authentication was not gained; this can happen
-#. * because of an authentication error (like invalid password),
-#. * for instance.
-#: ../js/ui/polkitAuthenticationAgent.js:260
-msgid "Sorry, that didn't work. Please try again."
-msgstr "На жаль, ідэнтыфікацыя не адбылася. Паўтарыце спробу."
-
-#. Translators: this MUST be either "toggle-switch-us"
-#. (for toggle switches containing the English words
-#. "ON" and "OFF") or "toggle-switch-intl" (for toggle
-#. switches containing "◯" and "|"). Other values will
-#. simply result in invisible toggle switches.
-#: ../js/ui/popupMenu.js:724
-msgid "toggle-switch-us"
-msgstr "toggle-switch-intl"
-
-#: ../js/ui/runDialog.js:205
-msgid "Please enter a command:"
-msgstr "Увядзіце загад:"
-
-#: ../js/ui/searchDisplay.js:332
-msgid "Searching..."
-msgstr "Пошук..."
-
-#: ../js/ui/searchDisplay.js:414
-msgid "No matching results."
-msgstr "Нічога адпаведнага не знойдзена."
-
-#: ../js/ui/shellEntry.js:26
-msgid "Copy"
-msgstr "Скапіраваць"
-
-#: ../js/ui/shellEntry.js:31
-msgid "Paste"
-msgstr "Уставіць"
-
-#: ../js/ui/shellEntry.js:77
-msgid "Show Text"
-msgstr "Паказваць тэкст"
-
-#: ../js/ui/shellEntry.js:79
-msgid "Hide Text"
-msgstr "Хаваць тэкст"
-
-#: ../js/ui/shellMountOperation.js:271
-msgid "Wrong password, please try again"
-msgstr "Хібны пароль, паўтарыце спробу"
-
-#: ../js/ui/status/accessibility.js:47
-msgid "Accessibility"
-msgstr "Даступнасць"
-
-#: ../js/ui/status/accessibility.js:52
-msgid "Zoom"
-msgstr "Маштабаванне"
-
-#. let screenReader = this._buildItem(_("Screen Reader"), APPLICATIONS_SCHEMA,
-#. 'screen-reader-enabled');
-#. this.menu.addMenuItem(screenReader);
-#: ../js/ui/status/accessibility.js:63
-msgid "Screen Keyboard"
-msgstr "Экранная клавіятура"
-
-#: ../js/ui/status/accessibility.js:67
-msgid "Visual Alerts"
-msgstr "Візуальныя сігналы"
-
-#: ../js/ui/status/accessibility.js:70
-msgid "Sticky Keys"
-msgstr "Грузкія клавішы"
-
-#: ../js/ui/status/accessibility.js:73
-msgid "Slow Keys"
-msgstr "Марудныя клавішы"
-
-#: ../js/ui/status/accessibility.js:76
-msgid "Bounce Keys"
-msgstr "Рыкашэтныя клавішы"
-
-#: ../js/ui/status/accessibility.js:79
-msgid "Mouse Keys"
-msgstr "Мышыныя клавішы"
-
-#: ../js/ui/status/accessibility.js:83
-msgid "Universal Access Settings"
-msgstr "Настройкі ўніверсальнага доступу"
-
-#: ../js/ui/status/accessibility.js:117
-msgid "High Contrast"
-msgstr "Высокая кантраснасць"
-
-#: ../js/ui/status/accessibility.js:154
-msgid "Large Text"
-msgstr "Буйны тэкст"
-
-#: ../js/ui/status/bluetooth.js:31 ../js/ui/status/bluetooth.js:35
-#: ../js/ui/status/bluetooth.js:258 ../js/ui/status/bluetooth.js:341
-#: ../js/ui/status/bluetooth.js:371 ../js/ui/status/bluetooth.js:407
-#: ../js/ui/status/bluetooth.js:436 ../js/ui/status/network.js:893
-msgid "Bluetooth"
-msgstr "Bluetooth"
-
-#: ../js/ui/status/bluetooth.js:48
-msgid "Visibility"
-msgstr "Відочнасць"
-
-#: ../js/ui/status/bluetooth.js:62
-msgid "Send Files to Device..."
-msgstr "Паслаць файлы на прыстасаванне..."
-
-#: ../js/ui/status/bluetooth.js:63
-msgid "Set up a New Device..."
-msgstr "Настроіць новае прыстасаванне..."
-
-#: ../js/ui/status/bluetooth.js:87
-msgid "Bluetooth Settings"
-msgstr "Настройкі Bluetooth"
-
-#. TRANSLATORS: this means that bluetooth was disabled by hardware rfkill
-#: ../js/ui/status/bluetooth.js:107 ../js/ui/status/network.js:256
-msgid "hardware disabled"
-msgstr "апаратура выключана"
-
-#: ../js/ui/status/bluetooth.js:203
-msgid "Connection"
-msgstr "Злучэнне"
-
-#: ../js/ui/status/bluetooth.js:214 ../js/ui/status/network.js:491
-msgid "disconnecting..."
-msgstr "адлучэнне..."
-
-#: ../js/ui/status/bluetooth.js:227 ../js/ui/status/network.js:497
-msgid "connecting..."
-msgstr "усталяванне злучэння..."
-
-#: ../js/ui/status/bluetooth.js:245
-msgid "Send Files..."
-msgstr "Паслаць файлы..."
-
-#: ../js/ui/status/bluetooth.js:250
-msgid "Browse Files..."
-msgstr "Аглядзець файлы..."
-
-#: ../js/ui/status/bluetooth.js:259
-msgid "Error browsing device"
-msgstr "Памылка агляду прыстасавання"
-
-#: ../js/ui/status/bluetooth.js:260
-#, c-format
-msgid "The requested device cannot be browsed, error is '%s'"
-msgstr ""
-"Немагчыма аглядзець запатрабаванае прыстасаванне: адбылася памылка \"%s\""
-
-#: ../js/ui/status/bluetooth.js:268
-msgid "Keyboard Settings"
-msgstr "Настройкі клавіятуры"
-
-#: ../js/ui/status/bluetooth.js:271
-msgid "Mouse Settings"
-msgstr "Настройкі мышы"
-
-#: ../js/ui/status/bluetooth.js:276 ../js/ui/status/volume.js:59
-msgid "Sound Settings"
-msgstr "Настройкі гуку"
-
-#: ../js/ui/status/bluetooth.js:372
-#, c-format
-msgid "Authorization request from %s"
-msgstr "Запыт на ўпаўнаважанне ад %s"
-
-#: ../js/ui/status/bluetooth.js:378
-#, c-format
-msgid "Device %s wants access to the service '%s'"
-msgstr "Прыстасаванне %s хоча даступіцца да паслугі \"%s\""
-
-#: ../js/ui/status/bluetooth.js:380
-msgid "Always grant access"
-msgstr "Заўсёды даваць дазвол"
-
-#: ../js/ui/status/bluetooth.js:381
-msgid "Grant this time only"
-msgstr "Даць дазвол аднойчы"
-
-#: ../js/ui/status/bluetooth.js:382 ../js/ui/telepathyClient.js:1091
-msgid "Reject"
-msgstr "Адмовіць"
-
-#: ../js/ui/status/bluetooth.js:408
-#, c-format
-msgid "Pairing confirmation for %s"
-msgstr "Пацвярджэнне спарвання з %s"
-
-#: ../js/ui/status/bluetooth.js:414 ../js/ui/status/bluetooth.js:444
-#, c-format
-msgid "Device %s wants to pair with this computer"
-msgstr "Прыстасаванне %s хоча спарыцца з гэтым камп'ютарам"
-
-#: ../js/ui/status/bluetooth.js:415
-#, c-format
-msgid "Please confirm whether the PIN '%s' matches the one on the device."
-msgstr "Праверце, ці супадае PIN \"%s\" з нумарам на прыстасаванні."
-
-#: ../js/ui/status/bluetooth.js:417
-msgid "Matches"
-msgstr "Супадае"
-
-#: ../js/ui/status/bluetooth.js:418
-msgid "Does not match"
-msgstr "Не супадае"
-
-#: ../js/ui/status/bluetooth.js:437
-#, c-format
-msgid "Pairing request for %s"
-msgstr "Запыт на спарванне з %s"
-
-#: ../js/ui/status/bluetooth.js:445
-msgid "Please enter the PIN mentioned on the device."
-msgstr "Увядзіце PIN, які паказвае прыстасаванне."
-
-#: ../js/ui/status/bluetooth.js:461
-msgid "OK"
-msgstr "Добра"
-
-#: ../js/ui/status/keyboard.js:68
-msgid "Show Keyboard Layout"
-msgstr "Паказаць раскладку"
-
-#: ../js/ui/status/keyboard.js:73
-msgid "Region and Language Settings"
-msgstr "Настройкі мясцовасці і мовы"
-
-#: ../js/ui/status/network.js:96
-msgid "<unknown>"
-msgstr "<невядома>"
-
-#. Translators: this indicates that wireless or wwan is disabled by hardware killswitch
-#: ../js/ui/status/network.js:278
-msgid "disabled"
-msgstr "выключана"
-
-#. Translators: this is for network devices that are physically present but are not
-#. under NetworkManager's control (and thus cannot be used in the menu)
-#: ../js/ui/status/network.js:489
-msgid "unmanaged"
-msgstr "непадкантрольна"
-
-#. Translators: this is for network connections that require some kind of key or password
-#: ../js/ui/status/network.js:500
-msgid "authentication required"
-msgstr "патрэбная ідэнтыфікацыя"
-
-#. Translators: this is for devices that require some kind of firmware or kernel
-#. module, which is missing
-#: ../js/ui/status/network.js:510
-msgid "firmware missing"
-msgstr "няма апаратнага апраграмавання"
-
-#. Translators: this is for wired network devices that are physically disconnected
-#: ../js/ui/status/network.js:517
-msgid "cable unplugged"
-msgstr "кабель адлучаны"
-
-#. Translators: this is for a network device that cannot be activated (for example it
-#. is disabled by rfkill, or it has no coverage
-#: ../js/ui/status/network.js:522
-msgid "unavailable"
-msgstr "недаступна"
-
-#: ../js/ui/status/network.js:524
-msgid "connection failed"
-msgstr "не ўдалося злучыцца"
-
-#: ../js/ui/status/network.js:585 ../js/ui/status/network.js:1505
-msgid "More..."
-msgstr "Яшчэ..."
-
-#. TRANSLATORS: this is the indication that a connection for another logged in user is active,
-#. and we cannot access its settings (including the name)
-#: ../js/ui/status/network.js:621 ../js/ui/status/network.js:1440
-msgid "Connected (private)"
-msgstr "Злучана (прыватна)"
-
-#: ../js/ui/status/network.js:696
-msgid "Auto Ethernet"
-msgstr "Аўтаматычна: Ethernet"
-
-#: ../js/ui/status/network.js:757
-msgid "Auto broadband"
-msgstr "Аўтаматычна: broadband"
-
-#: ../js/ui/status/network.js:760
-msgid "Auto dial-up"
-msgstr "Аўтаматычна: мадэм"
-
-#. TRANSLATORS: this the automatic wireless connection name (including the network name)
-#: ../js/ui/status/network.js:879 ../js/ui/status/network.js:1452
-#, c-format
-msgid "Auto %s"
-msgstr "Аўтаматычна: %s"
-
-#: ../js/ui/status/network.js:881
-msgid "Auto bluetooth"
-msgstr "Аўтаматычна: Bluetooth"
-
-#: ../js/ui/status/network.js:1454
-msgid "Auto wireless"
-msgstr "Аўтаматычна: wireless"
-
-#: ../js/ui/status/network.js:1541
-msgid "Network"
-msgstr "Сетка"
-
-#: ../js/ui/status/network.js:1548
-msgid "Enable networking"
-msgstr "Уключыць сеткавыя функцыі"
-
-#: ../js/ui/status/network.js:1560
-msgid "Wired"
-msgstr "Правадное злучэнне"
-
-#: ../js/ui/status/network.js:1571
-msgid "Wireless"
-msgstr "Бесправадное злучэнне"
-
-#: ../js/ui/status/network.js:1581
-msgid "Mobile broadband"
-msgstr "Мабільны broadband"
-
-#: ../js/ui/status/network.js:1591
-msgid "VPN Connections"
-msgstr "VPN-злучэнні"
-
-#: ../js/ui/status/network.js:1602
-msgid "Network Settings"
-msgstr "Сеткавыя настройкі"
-
-#: ../js/ui/status/network.js:1739
-msgid "Connection failed"
-msgstr "Не ўдалося злучыцца"
-
-#: ../js/ui/status/network.js:1740
-msgid "Activation of network connection failed"
-msgstr "Не ўдалося ўключыць сеткавае злучэнне"
-
-#: ../js/ui/status/network.js:1993
-msgid "Networking is disabled"
-msgstr "Сеткавыя функцыі выключаныя"
-
-#: ../js/ui/status/network.js:2117
-msgid "Network Manager"
-msgstr "Сеткавы кіраўнік"
-
-#: ../js/ui/status/power.js:59
-msgid "Battery"
-msgstr "Батарэя"
-
-#: ../js/ui/status/power.js:76
-msgid "Power Settings"
-msgstr "Настройкі сілкавання"
-
-#. 0 is reported when UPower does not have enough data
-#. to estimate battery life
-#: ../js/ui/status/power.js:98
-msgid "Estimating..."
-msgstr "Прыблізная ацэнка..."
-
-#: ../js/ui/status/power.js:105
-#, c-format
-msgid "%d hour remaining"
-msgid_plural "%d hours remaining"
-msgstr[0] "засталося: %d гадзіна"
-msgstr[1] "засталося: %d гадзіны"
-msgstr[2] "засталося: %d гадзін"
-
-#. TRANSLATORS: this is a time string, as in "%d hours %d minutes remaining"
-#: ../js/ui/status/power.js:108
-#, c-format
-msgid "%d %s %d %s remaining"
-msgstr "засталося: %d %s %d %s"
-
-#: ../js/ui/status/power.js:110
-msgid "hour"
-msgid_plural "hours"
-msgstr[0] "гадзіна"
-msgstr[1] "гадзіны"
-msgstr[2] "гадзін"
-
-#: ../js/ui/status/power.js:110
-msgid "minute"
-msgid_plural "minutes"
-msgstr[0] "хвіліна"
-msgstr[1] "хвіліны"
-msgstr[2] "хвілін"
-
-#: ../js/ui/status/power.js:113
-#, c-format
-msgid "%d minute remaining"
-msgid_plural "%d minutes remaining"
-msgstr[0] "засталося: %d хвіліна"
-msgstr[1] "засталося: %d хвіліны"
-msgstr[2] "засталося: %d хвілін"
-
-#: ../js/ui/status/power.js:116 ../js/ui/status/power.js:186
-#, c-format
-msgctxt "percent of battery remaining"
-msgid "%d%%"
-msgstr "%d%%"
-
-#: ../js/ui/status/power.js:193
-msgid "AC adapter"
-msgstr "Адаптар сілкавання"
-
-#: ../js/ui/status/power.js:195
-msgid "Laptop battery"
-msgstr "Батарэйка ноўтбука"
-
-#: ../js/ui/status/power.js:197
-msgid "UPS"
-msgstr "UPS"
-
-#: ../js/ui/status/power.js:199
-msgid "Monitor"
-msgstr "Манітор"
-
-#: ../js/ui/status/power.js:201
-msgid "Mouse"
-msgstr "Мыш"
-
-#: ../js/ui/status/power.js:205
-msgid "PDA"
-msgstr "PDA"
-
-#: ../js/ui/status/power.js:207
-msgid "Cell phone"
-msgstr "Мабільны тэлефон"
-
-#: ../js/ui/status/power.js:209
-msgid "Media player"
-msgstr "Медыяплэер"
-
-#: ../js/ui/status/power.js:211
-msgid "Tablet"
-msgstr "Планшэт"
-
-#: ../js/ui/status/power.js:213
-msgid "Computer"
-msgstr "Камп'ютар"
-
-#. Translators: This is the label for audio volume
-#: ../js/ui/status/volume.js:25 ../js/ui/status/volume.js:39
-msgid "Volume"
-msgstr "Гучнасць"
-
-#: ../js/ui/status/volume.js:51
-msgid "Microphone"
-msgstr "Мікрафон"
-
-#. FIXME: We don't have a 'chat room' icon (bgo #653737) use
-#. system-users for now as Empathy does.
-#: ../js/ui/telepathyClient.js:220
-msgid "Invitation"
-msgstr "Запрашэнне"
-
-#. We got the TpContact
-#: ../js/ui/telepathyClient.js:271
-msgid "Call"
-msgstr "Званок"
-
-#. We got the TpContact
-#: ../js/ui/telepathyClient.js:287
-msgid "File Transfer"
-msgstr "Перадача файла"
-
-#: ../js/ui/telepathyClient.js:369
-msgid "Subscription request"
-msgstr "Запыт на падпіску"
-
-#: ../js/ui/telepathyClient.js:405
-msgid "Connection error"
-msgstr "Памылка злучэння"
-
-#: ../js/ui/telepathyClient.js:663
-#, c-format
-msgid "%s is online."
-msgstr "%s у сетцы."
-
-#: ../js/ui/telepathyClient.js:667
-#, c-format
-msgid "%s is offline."
-msgstr "%s па-за сеткай."
-
-#: ../js/ui/telepathyClient.js:671
-#, c-format
-msgid "%s is away."
-msgstr "%s далёка ад камп'ютара."
-
-#: ../js/ui/telepathyClient.js:674
-#, c-format
-msgid "%s is busy."
-msgstr "%s мае пільныя справы."
-
-#. Translators: this is a time format string followed by a date.
-#. If applicable, replace %X with a strftime format valid for your
-#. locale, without seconds.
-#: ../js/ui/telepathyClient.js:887
-#, no-c-format
-msgid "Sent at <b>%X</b> on <b>%A</b>"
-msgstr "Адпраўлена ў <b>%X</b>, <b>%A</b>"
-
-#. Translators: this is a time format in the style of "Wednesday, May 25",
-#. shown when you get a chat message in the same year.
-#: ../js/ui/telepathyClient.js:893
-#, no-c-format
-msgid "Sent on <b>%A</b>, <b>%B %d</b>"
-msgstr "Адпраўлена ў <b>%A</b>, <b>%d %B</b>"
-
-#. Translators: this is a time format in the style of "Wednesday, May 25, 2012",
-#. shown when you get a chat message in a different year.
-#: ../js/ui/telepathyClient.js:898
-#, no-c-format
-msgid "Sent on <b>%A</b>, <b>%B %d</b>, %Y"
-msgstr "Адпраўлена ў <b>%A</b>, <b>%d %B</b>, %Y"
-
-#. Translators: this is the other person changing their old IM name to their new
-#. IM name.
-#: ../js/ui/telepathyClient.js:940
-#, c-format
-msgid "%s is now known as %s"
-msgstr "%s змяніў імя на %s"
-
-#. translators: argument is a room name like
-#. * room@jabber.org for example.
-#: ../js/ui/telepathyClient.js:1042
-#, c-format
-msgid "Invitation to %s"
-msgstr "Запрашэнне ў %s"
-
-#. translators: first argument is the name of a contact and the second
-#. * one the name of a room. "Alice is inviting you to join room@jabber.org
-#. * for example.
-#: ../js/ui/telepathyClient.js:1050
-#, c-format
-msgid "%s is inviting you to join %s"
-msgstr "Удзельнік %s запрашае вас далучыцца да %s"
-
-#: ../js/ui/telepathyClient.js:1052 ../js/ui/telepathyClient.js:1131
-#: ../js/ui/telepathyClient.js:1229
-msgid "Decline"
-msgstr "Адмовіцца"
-
-#: ../js/ui/telepathyClient.js:1053 ../js/ui/telepathyClient.js:1132
-#: ../js/ui/telepathyClient.js:1230
-msgid "Accept"
-msgstr "Прыняць"
-
-#. translators: argument is a contact name like Alice for example.
-#: ../js/ui/telepathyClient.js:1083
-#, c-format
-msgid "Video call from %s"
-msgstr "Відэазванок ад %s"
-
-#. translators: argument is a contact name like Alice for example.
-#: ../js/ui/telepathyClient.js:1086
-#, c-format
-msgid "Call from %s"
-msgstr "Званок ад %s"
-
-#. translators: this is a button label (verb), not a noun
-#: ../js/ui/telepathyClient.js:1093
-msgid "Answer"
-msgstr "Адказаць"
-
-#. To translators: The first parameter is
-#. * the contact's alias and the second one is the
-#. * file name. The string will be something
-#. * like: "Alice is sending you test.ogg"
-#.
-#: ../js/ui/telepathyClient.js:1125
-#, c-format
-msgid "%s is sending you %s"
-msgstr "%s пасылае вам %s"
-
-#. To translators: The parameter is the contact's alias
-#: ../js/ui/telepathyClient.js:1194
-#, c-format
-msgid "%s would like permission to see when you are online"
-msgstr "%s просіць дазволу на прагляд вашага сеткавага стану"
-
-#: ../js/ui/telepathyClient.js:1287
-msgid "Network error"
-msgstr "Сеткавая памылка"
-
-#: ../js/ui/telepathyClient.js:1289
-msgid "Authentication failed"
-msgstr "Няўдалая ідэнтыфікацыя"
-
-#: ../js/ui/telepathyClient.js:1291
-msgid "Encryption error"
-msgstr "Памылка шыфравання"
-
-#: ../js/ui/telepathyClient.js:1293
-msgid "Certificate not provided"
-msgstr "Сертыфікат не пададзены"
-
-#: ../js/ui/telepathyClient.js:1295
-msgid "Certificate untrusted"
-msgstr "Сертыфікат не заслугоўвае даверу"
-
-#: ../js/ui/telepathyClient.js:1297
-msgid "Certificate expired"
-msgstr "Сертыфікат састарэў"
-
-#: ../js/ui/telepathyClient.js:1299
-msgid "Certificate not activated"
-msgstr "Сертыфікат не актывізаваны"
-
-#: ../js/ui/telepathyClient.js:1301
-msgid "Certificate hostname mismatch"
-msgstr "Назва камп'ютара ў сертыфікаце не адпавядае патрэбнай"
-
-#: ../js/ui/telepathyClient.js:1303
-msgid "Certificate fingerprint mismatch"
-msgstr "Адбітак сертыфіката не адпавядае патрэбнаму"
-
-#: ../js/ui/telepathyClient.js:1305
-msgid "Certificate self-signed"
-msgstr "Сертыфікат уласнаручна падпісаны"
-
-#: ../js/ui/telepathyClient.js:1307
-msgid "Status is set to offline"
-msgstr "Уключаны рэжым па-за сеткай"
-
-#: ../js/ui/telepathyClient.js:1309
-msgid "Encryption is not available"
-msgstr "Шыфраванне недаступнае"
-
-#: ../js/ui/telepathyClient.js:1311
-msgid "Certificate is invalid"
-msgstr "Хібны сертыфікат"
-
-#: ../js/ui/telepathyClient.js:1313
-msgid "Connection has been refused"
-msgstr "Адмоўлена ў злучэнні"
-
-#: ../js/ui/telepathyClient.js:1315
-msgid "Connection can't be established"
-msgstr "Не ўдалося ўсталяваць злучэнне"
-
-#: ../js/ui/telepathyClient.js:1317
-msgid "Connection has been lost"
-msgstr "Злучэнне страчана"
-
-#: ../js/ui/telepathyClient.js:1319
-msgid "This account is already connected to the server"
-msgstr "Гэты конт ужо злучаны з серверам"
-
-#: ../js/ui/telepathyClient.js:1321
-msgid ""
-"Connection has been replaced by a new connection using the same resource"
-msgstr "Злучэнне заменена новым для таго ж самага рэсурсу"
-
-#: ../js/ui/telepathyClient.js:1323
-msgid "The account already exists on the server"
-msgstr "Такі конт ужо існуе на серверы"
-
-#: ../js/ui/telepathyClient.js:1325
-msgid "Server is currently too busy to handle the connection"
-msgstr "Сервер надта заняты і не можа абслужыць гэта злучэнне"
-
-#: ../js/ui/telepathyClient.js:1327
-msgid "Certificate has been revoked"
-msgstr "Сертыфікат быў адкліканы"
-
-#: ../js/ui/telepathyClient.js:1329
-msgid ""
-"Certificate uses an insecure cipher algorithm or is cryptographically weak"
-msgstr "Для сертыфіката выкарыстаны слабы або небяспечны алгарытм шыфравання"
-
-#: ../js/ui/telepathyClient.js:1331
-msgid ""
-"The length of the server certificate, or the depth of the server certificate "
-"chain, exceed the limits imposed by the cryptography library"
-msgstr ""
-"Даўжыня сертыфіката сервера або глыбіня яго ланцуга перавышае абмежаванне, "
-"выстаўленае крыптаграфічнай бібліятэкай"
-
-#: ../js/ui/telepathyClient.js:1333
-msgid "Internal error"
-msgstr "Унутраная памылка"
-
-#. translators: argument is the account name, like
-#. * name@jabber.org for example.
-#: ../js/ui/telepathyClient.js:1343
-#, c-format
-msgid "Connection to %s failed"
-msgstr "не ўдалося злучыцца з %s"
-
-#: ../js/ui/telepathyClient.js:1352
-msgid "Reconnect"
-msgstr "Перазлучыцца"
-
-#: ../js/ui/telepathyClient.js:1353
-msgid "Edit account"
-msgstr "Рэдагаваць конт"
-
-#: ../js/ui/telepathyClient.js:1399
-msgid "Unknown reason"
-msgstr "Невядомая прычына"
-
-#: ../js/ui/userMenu.js:135
-msgid "Hidden"
-msgstr "Схаваны"
-
-#: ../js/ui/userMenu.js:141
-msgid "Idle"
-msgstr "Бяздзейны"
-
-#: ../js/ui/userMenu.js:144
-msgid "Unavailable"
-msgstr "Недаступны"
-
-#: ../js/ui/userMenu.js:595 ../js/ui/userMenu.js:599 ../js/ui/userMenu.js:669
-msgid "Power Off..."
-msgstr "Выключыць камп'ютар..."
-
-#: ../js/ui/userMenu.js:631
-msgid "Notifications"
-msgstr "Апавяшчэнні"
-
-#: ../js/ui/userMenu.js:639
-msgid "Online Accounts"
-msgstr "Сеціўныя конты"
-
-#: ../js/ui/userMenu.js:643
-msgid "System Settings"
-msgstr "Сістэмныя настройкі"
-
-#: ../js/ui/userMenu.js:650
+#: ../plugins/actions/actions.c:111
+#, fuzzy
 msgid "Lock Screen"
 msgstr "Замкнуць экран"
 
-#: ../js/ui/userMenu.js:655
-msgid "Switch User"
-msgstr "Перамяніць карыстальніка"
-
-#: ../js/ui/userMenu.js:660
-msgid "Log Out..."
-msgstr "Скончыць сеанс..."
-
-#: ../js/ui/userMenu.js:688
-msgid "Your chat status will be set to busy"
-msgstr "Вам прызначаны стан занятасці для чату"
-
-#: ../js/ui/userMenu.js:689
-msgid ""
-"Notifications are now disabled, including chat messages. Your online status "
-"has been adjusted to let others know that you might not see their messages."
+#: ../plugins/actions/actions.c:112
+msgid "Shut Down"
 msgstr ""
-"Апавяшчэнні выключаныя, у тым ліку аб новых паведамленнях у чаце. Ваш "
-"сеціўны стан абноўлены інфармацыяй аб тым, што вы можаце не ўбачыць чужых "
-"паведамленняў у час."
 
-#. Translators: this is the text displayed
-#. in the search entry when no search is
-#. active; it should not exceed ~30
-#. characters.
-#: ../js/ui/viewSelector.js:113
-msgid "Type to search..."
-msgstr "Увядзіце тэкст для пошуку..."
+#: ../plugins/actions/actions.c:113
+msgid "Restart"
+msgstr "Перазапуск"
 
-#: ../js/ui/viewSelector.js:131 ../src/shell-util.c:252
-msgid "Search"
-msgstr "Пошук"
+#: ../plugins/actions/actions.c:114
+#, fuzzy
+msgid "Suspend"
+msgstr "Гук"
 
-#: ../js/ui/wanda.js:124
-#, c-format
-msgid ""
-"Sorry, no wisdom for you today:\n"
-"%s"
+#: ../plugins/actions/actions.c:115
+msgid "Hibernate"
 msgstr ""
-"На жаль, на сёння не хапіла мудрасцяў:\n"
-"%s"
 
-#: ../js/ui/wanda.js:128
+#: ../plugins/actions/actions.desktop.in.h:2
+#, fuzzy
+msgid "Log out, lock or other system actions"
+msgstr "Выйсьці альбо замкнуць экран"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:1
+#: ../plugins/clock/clock-dialog.glade.h:3
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:1
+#: ../plugins/pager/pager-dialog.glade.h:1
+#: ../plugins/separator/separator-dialog.glade.h:1
+#: ../plugins/systray/systray-dialog.glade.h:1
+#: ../plugins/tasklist/tasklist-dialog.glade.h:2
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:1
+msgid "Appearance"
+msgstr "Вонкавы выгляд"
+
+#. I18N: default tooltip of the application menu
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:2
+#: ../plugins/applicationsmenu/applicationsmenu.c:38
+#: ../plugins/applicationsmenu/applicationsmenu.desktop.in.h:1
+#, fuzzy
+msgid "Applications Menu"
+msgstr "Схаваныя дастасаваньні"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:3
+#, fuzzy
+msgid "Button _title:"
+msgstr "Дзяньні Панэлі"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:4
+msgid "Ed_it Menu"
+msgstr ""
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:5
+msgid "Menu File"
+msgstr ""
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:6
+msgid "Menu _file:"
+msgstr ""
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:7
+#, fuzzy
+msgid "Select A Menu File"
+msgstr "Вылучыце загад"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:8
+msgid ""
+"Select this option to show the generic application name in the menu, for "
+"example \"File Manager\" instead of \"Thunar\""
+msgstr ""
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:9
+msgid "Show application d_escription in tooltip"
+msgstr ""
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:10
+#, fuzzy
+msgid "Show generic application n_ames"
+msgstr "Схаваныя дастасаваньні"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:11
+msgid "Show ic_ons in menu"
+msgstr ""
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:12
+msgid "Use c_ustom menu file:"
+msgstr ""
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:13
+msgid "Use the _default menu"
+msgstr ""
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:14
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:9
+#, fuzzy
+msgid "_Icon:"
+msgstr "_Значка"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:15
+#, fuzzy
+msgid "_Show button title"
+msgstr "Паказваць назвы дас_тасаваньняў"
+
+#: ../plugins/applicationsmenu/applicationsmenu.c:475
+#: ../plugins/directorymenu/directorymenu.c:369
+#, fuzzy
+msgid "Select An Icon"
+msgstr "Вылучыце загад"
+
+#: ../plugins/applicationsmenu/applicationsmenu.c:513
+#: ../plugins/applicationsmenu/applicationsmenu.c:754
+#: ../plugins/launcher/launcher.c:2264
+#, fuzzy, c-format
+msgid "Failed to execute command \"%s\"."
+msgstr "Немагчыма запусьціць \"%s\""
+
+#: ../plugins/applicationsmenu/applicationsmenu.c:1010
+#, fuzzy
+msgid "No applications found"
+msgstr "Вылучыце значку для \"%s\""
+
+#: ../plugins/applicationsmenu/applicationsmenu.c:1033
+#, fuzzy
+msgid "Failed to load the applications menu"
+msgstr "Немагчыма запусьціць \"%s\""
+
+#: ../plugins/applicationsmenu/applicationsmenu.desktop.in.h:2
+msgid "Show a menu containing categories of installed applications"
+msgstr ""
+
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:27
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:27
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:27
+msgid "Usage:"
+msgstr ""
+
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:28
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:28
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:28
+msgid "OPTION"
+msgstr ""
+
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:30
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:30
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:30
+#, fuzzy
+msgid "Options:"
+msgstr "Опцыі гадзіньніа"
+
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:31
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:31
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:31
+msgid "Popup menu at current mouse position"
+msgstr ""
+
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:32
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:32
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:32
+#, fuzzy
+msgid "Show help options"
+msgstr "Плоскія кнопкі"
+
+#: ../plugins/clock/clock.c:146
+msgid "Week %V"
+msgstr ""
+
+#: ../plugins/clock/clock.c:407
+msgid "Failed to execute clock command"
+msgstr ""
+
+#: ../plugins/clock/clock.c:719
+#, fuzzy
+msgid "Custom Format"
+msgstr "Асабісты"
+
+#: ../plugins/clock/clock-dialog.glade.h:1
+#, fuzzy
+msgid "24-_hour clock"
+msgstr "24-х гадзінны фармат"
+
+#: ../plugins/clock/clock-dialog.glade.h:2
+msgid "Analog"
+msgstr "Стрэлачны"
+
+#: ../plugins/clock/clock-dialog.glade.h:4
+msgid "Binary"
+msgstr "Бінарны"
+
+#: ../plugins/clock/clock-dialog.glade.h:5
+#: ../plugins/clock/clock.desktop.in.h:1
+msgid "Clock"
+msgstr "Гадзіньнік"
+
+#: ../plugins/clock/clock-dialog.glade.h:6
+msgid "Clock Options"
+msgstr "Опцыі гадзіньніа"
+
+#: ../plugins/clock/clock-dialog.glade.h:7
+msgid "Digital"
+msgstr "Лічбавы"
+
+#: ../plugins/clock/clock-dialog.glade.h:8
+msgid "Display _seconds"
+msgstr "Паказваць _сэкунды"
+
+#: ../plugins/clock/clock-dialog.glade.h:9
+msgid "F_ormat:"
+msgstr ""
+
+#. I18N: the fuzziness the *precision* of the fuzzy clock. Time steps of 5, 15 or parts of the day.
+#: ../plugins/clock/clock-dialog.glade.h:11
+msgid "F_uzziness:"
+msgstr ""
+
+#: ../plugins/clock/clock-dialog.glade.h:12
+#, fuzzy
+msgid "Fl_ash time separators"
+msgstr "Мі_льгаць падзяляльнікамі"
+
+#: ../plugins/clock/clock-dialog.glade.h:13
+msgid "Fuzzy"
+msgstr ""
+
+#: ../plugins/clock/clock-dialog.glade.h:14
+msgid "LCD"
+msgstr "Дыёдны"
+
+#: ../plugins/clock/clock-dialog.glade.h:15
+msgid "Sho_w AM/PM"
+msgstr "Паказ_ваць AM/PM"
+
+#: ../plugins/clock/clock-dialog.glade.h:16
+#: ../plugins/systray/systray-dialog.glade.h:5
+msgid "Show _frame"
+msgstr "Паказаць _рамку"
+
+#: ../plugins/clock/clock-dialog.glade.h:17
+msgid "Show _inactive dots"
+msgstr ""
+
+#: ../plugins/clock/clock-dialog.glade.h:18
+#, fuzzy
+msgid "Show gri_d"
+msgstr "Паказаць за_чэпку"
+
+#: ../plugins/clock/clock-dialog.glade.h:20
+#, no-c-format
+msgid ""
+"The format describes the date and time parts to insert into the file name. "
+"For example, %Y will be substituted with the year, %m with the month and %d "
+"with the day. See the documentation of the date utility for additional "
+"information."
+msgstr ""
+
+#: ../plugins/clock/clock-dialog.glade.h:21
+msgid "True _binary clock"
+msgstr "Сапраўдны _бінарны гадзіньнік"
+
+#: ../plugins/clock/clock-dialog.glade.h:22
+msgid "_Layout:"
+msgstr ""
+
+#: ../plugins/clock/clock-dialog.glade.h:23
+#, fuzzy
+msgid "_Tooltip format:"
+msgstr "Фармат падказкі:"
+
+#: ../plugins/clock/clock-fuzzy.c:86
+#, fuzzy
+msgid "Night"
+msgstr "Праваруч"
+
+#: ../plugins/clock/clock-fuzzy.c:87
+msgid "Early morning"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:88
+msgid "Morning"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:89
+msgid "Almost noon"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:90
+#, fuzzy
+msgid "Noon"
+msgstr "Значка адсутнічае"
+
+#: ../plugins/clock/clock-fuzzy.c:91
+msgid "Afternoon"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:92
+msgid "Evening"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:93
+msgid "Late evening"
+msgstr ""
+
+#. I18N: %0 will be replaced with the preceding hour, %1 with
+#. * the comming hour
+#: ../plugins/clock/clock-fuzzy.c:100
+#, no-c-format
+msgid "%0 o'clock"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:101
+#, no-c-format
+msgid "five past %0"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:102
+#, no-c-format
+msgid "ten past %0"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:103
+#, no-c-format
+msgid "quarter past %0"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:104
+#, no-c-format
+msgid "twenty past %0"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:105
+#, no-c-format
+msgid "twenty five past %0"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:106
+#, no-c-format
+msgid "half past %0"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:107
+#, no-c-format
+msgid "twenty five to %1"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:108
+#, no-c-format
+msgid "twenty to %1"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:109
+#, no-c-format
+msgid "quarter to %1"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:110
+#, no-c-format
+msgid "ten to %1"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:111
+#, no-c-format
+msgid "five to %1"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:112
+#, no-c-format
+msgid "%1 o'clock"
+msgstr ""
+
+#. I18N: some languages have a singular form for the first hour,
+#. * other languages should just use the same strings as above
+#: ../plugins/clock/clock-fuzzy.c:119
+#, no-c-format
+msgctxt "one"
+msgid "%0 o'clock"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:120
+#, no-c-format
+msgctxt "one"
+msgid "five past %0"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:121
+#, no-c-format
+msgctxt "one"
+msgid "ten past %0"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:122
+#, no-c-format
+msgctxt "one"
+msgid "quarter past %0"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:123
+#, no-c-format
+msgctxt "one"
+msgid "twenty past %0"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:124
+#, no-c-format
+msgctxt "one"
+msgid "twenty five past %0"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:125
+#, no-c-format
+msgctxt "one"
+msgid "half past %0"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:126
+#, no-c-format
+msgctxt "one"
+msgid "twenty five to %1"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:127
+#, no-c-format
+msgctxt "one"
+msgid "twenty to %1"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:128
+#, no-c-format
+msgctxt "one"
+msgid "quarter to %1"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:129
+#, no-c-format
+msgctxt "one"
+msgid "ten to %1"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:130
+#, no-c-format
+msgctxt "one"
+msgid "five to %1"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:131
+#, no-c-format
+msgctxt "one"
+msgid "%1 o'clock"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:136
+msgid "one"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:137
+#, fuzzy
+msgid "two"
+msgstr "Сетка"
+
+#: ../plugins/clock/clock-fuzzy.c:138
+msgid "three"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:139
+msgid "four"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:140
+#, fuzzy
+msgid "five"
+msgstr "Офіс"
+
+#: ../plugins/clock/clock-fuzzy.c:141
+msgid "six"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:142
+msgid "seven"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:143
+#, fuzzy
+msgid "eight"
+msgstr "Праваруч"
+
+#: ../plugins/clock/clock-fuzzy.c:144
+#, fuzzy
+msgid "nine"
+msgstr "Л_інія"
+
+#: ../plugins/clock/clock-fuzzy.c:145
+msgid "ten"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:146
+msgid "eleven"
+msgstr ""
+
+#: ../plugins/clock/clock-fuzzy.c:147
+msgid "twelve"
+msgstr ""
+
+#: ../plugins/clock/clock.desktop.in.h:2
+msgid "What time is it?"
+msgstr "Колькі зараз часу?"
+
+#: ../plugins/directorymenu/directorymenu.c:550
+#, fuzzy, c-format
+msgid "Failed to launch application \"%s\""
+msgstr "Немагчыма запусьціць \"%s\""
+
+#: ../plugins/directorymenu/directorymenu.c:581
 #, c-format
-msgid "%s the Oracle says"
-msgstr "Так сказаў Вяшчун %s"
+msgid "Failed to query content type for \"%s\""
+msgstr ""
 
-#: ../js/ui/wanda.js:168
-msgid "Your favorite Easter Egg"
-msgstr "Ваша ўлюбёнае велікоднае яйка"
+#: ../plugins/directorymenu/directorymenu.c:590
+#, fuzzy, c-format
+msgid "No default application found for \"%s\""
+msgstr "Вылучыце значку для \"%s\""
 
-#: ../js/ui/windowAttentionHandler.js:19
+#: ../plugins/directorymenu/directorymenu.c:605
+#, fuzzy, c-format
+msgid "Failed to launch default application for \"%s\""
+msgstr "Немагчыма запусьціць \"%s\""
+
+#: ../plugins/directorymenu/directorymenu.c:696
 #, c-format
-msgid "'%s' is ready"
-msgstr "\"%s\" гатова"
+msgid "Failed to execute the preferred application for category \"%s\""
+msgstr ""
 
-#. translators:
-#. * The number of sound outputs on a particular device
-#: ../src/gvc/gvc-mixer-control.c:1100
-#, c-format
-msgid "%u Output"
-msgid_plural "%u Outputs"
-msgstr[0] "%u выхад"
-msgstr[1] "%u выхады"
-msgstr[2] "%u выхадаў"
+#: ../plugins/directorymenu/directorymenu.c:769
+msgid "Open Folder"
+msgstr ""
 
-#. translators:
-#. * The number of sound inputs on a particular device
-#: ../src/gvc/gvc-mixer-control.c:1110
-#, c-format
-msgid "%u Input"
-msgid_plural "%u Inputs"
-msgstr[0] "%u уваход"
-msgstr[1] "%u уваходы"
-msgstr[2] "%u уваходаў"
+#: ../plugins/directorymenu/directorymenu.c:780
+#, fuzzy
+msgid "Open in Terminal"
+msgstr "Выконваць у _тэрмінале"
 
-#: ../src/gvc/gvc-mixer-control.c:1408
-msgid "System Sounds"
-msgstr "Сістэмныя гукі"
+#: ../plugins/directorymenu/directorymenu.desktop.in.h:1
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:2
+msgid "Directory Menu"
+msgstr ""
 
-#: ../src/main.c:255
-msgid "Print version"
-msgstr "Вывесці нумар версіі праграмы"
+#: ../plugins/directorymenu/directorymenu.desktop.in.h:2
+msgid "Show a directory tree in a menu"
+msgstr ""
 
-#: ../src/main.c:261
-msgid "Mode used by GDM for login screen"
-msgstr "Рэжым, які выкарыстоўвае GDM для экрана ўваходу"
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:3
+msgid ""
+"Enter a list of patterns that will be used to determine which files are "
+"visible in a directory. If you specify more than one pattern here, the list "
+"items must be separated with semicolons (e.g. *.txt;*.doc)."
+msgstr ""
 
-#: ../src/shell-app.c:619
-#, c-format
-msgid "Failed to launch '%s'"
-msgstr "Не ўдалося запусціць \"%s\""
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:4
+#: ../plugins/tasklist/tasklist-dialog.glade.h:5
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:5
+msgid "Filtering"
+msgstr ""
 
-#: ../src/shell-keyring-prompt.c:708
-msgid "Passwords do not match."
-msgstr "Паролі адрозніваюцца."
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:5
+#, fuzzy
+msgid "Select A Directory"
+msgstr "Вылучыце загад"
 
-#: ../src/shell-keyring-prompt.c:716
-msgid "Password cannot be blank"
-msgstr "Пароль не можа быць пустым"
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:6
+#, fuzzy
+msgid "Show _hidden files"
+msgstr "Паказаць за_чэпку"
 
-#: ../src/shell-mobile-providers.c:80
-msgid "United Kingdom"
-msgstr "Злучанае Каралеўства"
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:7
+msgid "_Base Directory:"
+msgstr ""
 
-#: ../src/shell-mobile-providers.c:526
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:8
+msgid "_File Pattern:"
+msgstr ""
+
+#: ../plugins/launcher/launcher.c:1555
+#, fuzzy
+msgid "Unnamed Item"
+msgstr "Безназоўны"
+
+#: ../plugins/launcher/launcher.c:1696
+#, fuzzy
+msgid "No items"
+msgstr "Новы элемэнт"
+
+#: ../plugins/launcher/launcher-dialog.c:740
+msgid "If you delete an item, it will be permanently removed"
+msgstr ""
+
+#: ../plugins/launcher/launcher-dialog.c:741
+#, fuzzy, c-format
+msgid "Are you sure you want to remove \"%s\"?"
+msgstr "Вы насамрэч жадаеце выдаліць прастору \"%s\"?"
+
+#: ../plugins/launcher/launcher-dialog.c:742
+#, fuzzy
+msgid "Unnamed item"
+msgstr "Безназоўны"
+
+#: ../plugins/launcher/launcher-dialog.c:787
+#, fuzzy
+msgid "Failed to open desktop item editor"
+msgstr "Немагчыма адкрыць дысплэй"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:2
+#, fuzzy
+msgid "Add a new empty item"
+msgstr "Дадаць новыя элемэнты"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:3
+msgid "Add one or more existing items to the launcher"
+msgstr ""
+
+#: ../plugins/launcher/launcher-dialog.glade.h:4
+#, fuzzy
+msgid "Advanced"
+msgstr "Дадаць запускальнік"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:5
 msgid "Default"
-msgstr "Прадвызначана"
+msgstr "Прадвызначаны"
 
-#: ../src/shell-polkit-authentication-agent.c:339
-msgid "Authentication dialog was dismissed by the user"
-msgstr "Карыстальнік праігнараваў дыялогавае акенца ідэнтыфікацыі"
+#: ../plugins/launcher/launcher-dialog.glade.h:6
+msgid "Delete the currently selected item"
+msgstr ""
 
-#. Translators: this is the same string as the one found in
-#. * nautilus
-#: ../src/shell-util.c:97
-msgid "Home"
-msgstr "Дом"
+#: ../plugins/launcher/launcher-dialog.glade.h:7
+msgid "Disable t_ooltips"
+msgstr ""
 
-#. Translators: this is the same string as the one found in
-#. * nautilus
-#: ../src/shell-util.c:106
-msgid "File System"
-msgstr "Файлавая сістэма"
+#: ../plugins/launcher/launcher-dialog.glade.h:8
+msgid "East"
+msgstr ""
 
-#. Translators: the first string is the name of a gvfs
-#. * method, and the second string is a path. For
-#. * example, "Trash: some-directory". It means that the
-#. * directory called "some-directory" is in the trash.
-#.
-#: ../src/shell-util.c:302
+#: ../plugins/launcher/launcher-dialog.glade.h:11
+msgid "Inside Button"
+msgstr "Унутры кнопкі"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:12
+#: ../plugins/launcher/launcher.desktop.in.h:1
+msgid "Launcher"
+msgstr "Запускальнік"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:15
+msgid "North"
+msgstr ""
+
+#: ../plugins/launcher/launcher-dialog.glade.h:16
+msgid ""
+"Select this option to disable the tooltips when moving over the panel button "
+"or menu items."
+msgstr ""
+
+#: ../plugins/launcher/launcher-dialog.glade.h:17
+msgid "Select this option to move the clicked menu item to the panel."
+msgstr ""
+
+#: ../plugins/launcher/launcher-dialog.glade.h:18
+#, fuzzy
+msgid "Show _label instead of icon"
+msgstr "Паказваць значкі дас_тасаваньняў"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:19
+msgid "Show last _used item in panel"
+msgstr ""
+
+#: ../plugins/launcher/launcher-dialog.glade.h:20
+#, fuzzy
+msgid "South"
+msgstr "Пра..."
+
+#: ../plugins/launcher/launcher-dialog.glade.h:21
+msgid "West"
+msgstr ""
+
+#: ../plugins/launcher/launcher-dialog.glade.h:22
+#, fuzzy
+msgid "_Arrow button position:"
+msgstr "_Стрэлка"
+
+#: ../plugins/launcher/launcher.desktop.in.h:2
+msgid "Program launcher with optional menu"
+msgstr "Запускальнік праграм з апцыянальным мэню"
+
+#: ../plugins/pager/pager.c:354 ../plugins/pager/pager-dialog.glade.h:8
+#, fuzzy
+msgid "Workspace _Settings..."
+msgstr "Працоўная прастора %d"
+
+#: ../plugins/pager/pager.c:429
+msgid "Unable to open the workspace settings"
+msgstr ""
+
+#: ../plugins/pager/pager-buttons.c:555 ../plugins/windowmenu/windowmenu.c:854
 #, c-format
-msgid "%1$s: %2$s"
-msgstr "%1$s: %2$s"
+msgid "Workspace %d"
+msgstr "Працоўная прастора %d"
+
+#: ../plugins/pager/pager-dialog.glade.h:2
+#: ../plugins/tasklist/tasklist-dialog.glade.h:3
+msgid "Behaviour"
+msgstr "Паводзіны"
+
+#: ../plugins/pager/pager-dialog.glade.h:3
+#, fuzzy
+msgid "Number of _rows:"
+msgstr "Колькасьць радкоў:"
+
+#: ../plugins/pager/pager-dialog.glade.h:4
+msgid ""
+"Show a miniature view of the workspace with rectangles for the visible "
+"windows"
+msgstr ""
+
+#: ../plugins/pager/pager-dialog.glade.h:5
+msgid "Show mi_niature view"
+msgstr ""
+
+#: ../plugins/pager/pager-dialog.glade.h:6
+#, fuzzy
+msgid "Switch workspaces using the mouse _wheel"
+msgstr "Пераключэньне працоўных прастораў паваротам кола мышы"
+
+#: ../plugins/pager/pager-dialog.glade.h:7
+#: ../plugins/pager/pager.desktop.in.h:2
+#, fuzzy
+msgid "Workspace Switcher"
+msgstr "Працоўная прастора %d"
+
+#: ../plugins/pager/pager.desktop.in.h:1
+#, fuzzy
+msgid "Switch between virtual desktops"
+msgstr "Мініяцюрны выгляд усіх працоўных прастораў"
+
+#: ../plugins/separator/separator-dialog.glade.h:2
+#, fuzzy
+msgid "Dots"
+msgstr "Кр_опкі"
+
+#: ../plugins/separator/separator-dialog.glade.h:3
+#, fuzzy
+msgid "Handle"
+msgstr "Зачэпка:"
+
+#: ../plugins/separator/separator-dialog.glade.h:4
+#, fuzzy
+msgid "New Line"
+msgstr "Стварыць Панэль"
+
+#: ../plugins/separator/separator-dialog.glade.h:5
+#: ../plugins/separator/separator.desktop.in.h:2
+#, fuzzy
+msgid "Separator"
+msgstr "Стыль падзяляльніка"
+
+#: ../plugins/separator/separator-dialog.glade.h:6
+#, fuzzy
+msgid "Transparent"
+msgstr "Празрыстасьць (%):"
+
+#: ../plugins/separator/separator-dialog.glade.h:7
+msgid "_Expand"
+msgstr "Па_шырыць"
+
+#: ../plugins/separator/separator.desktop.in.h:1
+#, fuzzy
+msgid "Adds a separator or space between panel items"
+msgstr "Дадае прастору альбо лінію паміж элемэнтамі панэлі"
+
+#: ../plugins/showdesktop/showdesktop.c:193
+#, fuzzy
+msgid "Restore the minimized windows"
+msgstr "Аднавіць схаваныя вокны"
+
+#: ../plugins/showdesktop/showdesktop.c:194
+#, fuzzy
+msgid "Minimize all open windows and show the desktop"
+msgstr "Схаваць вокны й паказаць Сталец"
+
+#: ../plugins/showdesktop/showdesktop.desktop.in.h:1
+#, fuzzy
+msgid "Hide all windows and show the desktop"
+msgstr "Схаваць вокны й паказаць Сталец"
+
+#: ../plugins/showdesktop/showdesktop.desktop.in.h:2
+msgid "Show Desktop"
+msgstr "Паказаць сталец"
+
+#: ../plugins/systray/systray.c:382
+#, fuzzy
+msgid "Unable to start the notification area"
+msgstr "Прыцягненьне ўвагі"
+
+#. create fake error and show it
+#: ../plugins/systray/systray.c:850
+msgid ""
+"Most likely another widget took over the function of a notification area. "
+"This area will be unused."
+msgstr ""
+
+#: ../plugins/systray/systray.c:852
+#, fuzzy
+msgid "The notification area lost selection"
+msgstr "Кіраўнік сподка згубіў вылучэньне"
+
+#: ../plugins/systray/systray.c:1005
+msgid "Are you sure you want to clear the list of known applications?"
+msgstr "Вы насамрэч жадаеце ачысьціць сьпіс вядомых дастасаваньняў?"
+
+#: ../plugins/systray/systray-dialog.glade.h:2
+#, fuzzy
+msgid "C_lear Known Applications"
+msgstr "Вылучыце дастасаваньне"
+
+#: ../plugins/systray/systray-dialog.glade.h:3
+#, fuzzy
+msgid "Known Applications"
+msgstr "Схаваныя дастасаваньні"
+
+#: ../plugins/systray/systray-dialog.glade.h:4
+#: ../plugins/systray/systray.desktop.in.h:2
+#, fuzzy
+msgid "Notification Area"
+msgstr "Прыцягненьне ўвагі"
+
+#: ../plugins/systray/systray-dialog.glade.h:6
+msgid "_Maximum icon size (px):"
+msgstr ""
+
+#: ../plugins/systray/systray-manager.c:406
+#, c-format
+msgid "Failed to acquire manager selection for screen %d"
+msgstr "Немагчыма атрымаць кіраўніка вылучэньня для экрана %d"
+
+#: ../plugins/systray/systray.desktop.in.h:1
+#, fuzzy
+msgid "Area where notification icons appear"
+msgstr "Паказвае значкі нагадваньня"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:1
+#, fuzzy
+msgid "Always"
+msgstr "Заўсёды зьверху:"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:4
+msgid "D_raw window frame when hovering a button"
+msgstr ""
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:6
+msgid "Group title and timestamp"
+msgstr ""
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:7
+msgid "Group title and window title"
+msgstr ""
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:8
+msgid "Never"
+msgstr ""
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:9
+msgid "Restore minimized windows to current _workspace"
+msgstr ""
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:10
+msgid "Ro_tate buttons in vertical panel"
+msgstr ""
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:11
+#, fuzzy
+msgid "Show _flat buttons"
+msgstr "Плоскія кнопкі"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:12
+#, fuzzy
+msgid "Show _handle"
+msgstr "Паказаць за_чэпку"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:13
+#, fuzzy
+msgid "Show button _labels"
+msgstr "Паказваць назвы дас_тасаваньняў"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:14
+msgid "Show only _minimized windows"
+msgstr ""
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:15
+#, fuzzy
+msgid "Show windows from _all workspaces or viewports"
+msgstr "Паказваць вокны з _усіх працоўных прастораў"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:16
+#, fuzzy
+msgid "Show windows from all mo_nitors"
+msgstr "Паказваць вокны з _усіх працоўных прастораў"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:17
+msgid "Sorting _order:"
+msgstr ""
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:18
+msgid "Timestamp"
+msgstr ""
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:19
+msgid "When space is limited"
+msgstr ""
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:20
+#: ../plugins/tasklist/tasklist.desktop.in.h:2
+#, fuzzy
+msgid "Window Buttons"
+msgstr "Кнопкі дзеяньняў"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:21
+msgid "Window _grouping:"
+msgstr ""
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:22
+#, fuzzy
+msgid "Window title"
+msgstr "Сьпіс вокнаў"
+
+#: ../plugins/tasklist/tasklist-widget.c:3012
+msgid "Mi_nimize All"
+msgstr ""
+
+#: ../plugins/tasklist/tasklist-widget.c:3021
+msgid "Un_minimize All"
+msgstr ""
+
+#: ../plugins/tasklist/tasklist-widget.c:3027
+msgid "Ma_ximize All"
+msgstr ""
+
+#: ../plugins/tasklist/tasklist-widget.c:3036
+msgid "_Unmaximize All"
+msgstr ""
+
+#: ../plugins/tasklist/tasklist-widget.c:3046
+msgid "_Close All"
+msgstr ""
+
+#: ../plugins/tasklist/tasklist.desktop.in.h:1
+msgid "Switch between open windows using buttons"
+msgstr ""
+
+#: ../plugins/windowmenu/windowmenu.c:652
+#, fuzzy
+msgid "Desktop"
+msgstr "Паказаць сталец"
+
+#: ../plugins/windowmenu/windowmenu.c:1243
+#, fuzzy
+msgid "No Windows"
+msgstr "Сьпіс вокнаў"
+
+#: ../plugins/windowmenu/windowmenu.c:1258
+msgid "Urgent Windows"
+msgstr ""
+
+#: ../plugins/windowmenu/windowmenu.c:1300
+#, fuzzy
+msgid "Add Workspace"
+msgstr "Дадаць прастору"
+
+#: ../plugins/windowmenu/windowmenu.c:1320
+#, fuzzy, c-format
+msgid "Remove Workspace \"%s\""
+msgstr "Выдаліць Прастору \"%s\""
+
+#: ../plugins/windowmenu/windowmenu.c:1322
+#, c-format
+msgid "Remove Workspace %d"
+msgstr "Выдаліць Прастору %d"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:2
+#, fuzzy
+msgid "Arrow"
+msgstr "_Стрэлка:"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:3
+#, fuzzy
+msgid "Button layout:"
+msgstr "Кнопка №1:"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:4
+#, fuzzy
+msgid "Enable _urgency notification"
+msgstr "Прыцягненьне ўвагі"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:6
+#, fuzzy
+msgid "Icon"
+msgstr "_Значка"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:7
+#, fuzzy
+msgid "Show windows from _all workspaces"
+msgstr "Паказваць вокны з _усіх працоўных прастораў"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:8
+#, fuzzy
+msgid "Show workspace _names"
+msgstr "Паказваць назвы прастораў"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:9
+#, fuzzy
+msgid "Show workspace a_ctions"
+msgstr "Паказваць дзяньні над _прасторамі"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:10
+#: ../plugins/windowmenu/windowmenu.desktop.in.h:2
+#, fuzzy
+msgid "Window Menu"
+msgstr "Сьпіс вокнаў"
+
+#: ../plugins/windowmenu/windowmenu.desktop.in.h:1
+msgid "Switch between open windows using a menu"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Transparency"
+#~ msgstr "Празрыстасьць (%):"
+
+#~ msgid "Xfce Panel"
+#~ msgstr "Панэль Xfce"
+
+#, fuzzy
+#~ msgid "Xfce Menu"
+#~ msgstr "Панэль Xfce"
+
+#~ msgid "_Number of rows:"
+#~ msgstr "_Колькасьць радкоў:"
+
+#~ msgid "_Restart"
+#~ msgstr "Пераза_пусьціць"
+
+#, fuzzy
+#~ msgid "Failed to open manual"
+#~ msgstr "Немагчыма адкрыць дысплэй"
+
+#, fuzzy
+#~ msgid "C_ompositing"
+#~ msgstr "Становішча"
+
+#, fuzzy
+#~ msgid "Action Button"
+#~ msgstr "Кнопкі дзеяньняў"

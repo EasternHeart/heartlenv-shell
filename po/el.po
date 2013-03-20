@@ -1,1846 +1,1683 @@
+# Greek translation of heartlenv-panel
+# Copyright (C) 2002-2006, 2008-2010 The Xfce development team.
+# This file is distributed under the same license as the heartlenv-panel package.
+# Stavros Giannouris <stavros@hellug.gr>, 2005, 2006, 2008, 2009, 2010.
+# Evaggelos Balaskas <ebal@ebal.gr>, 2008, 2009, 2010.
+# Spiros Georgaras <sng@hellug.gr>, 2010.
+# Stathis Kamperis <ekamperi@auth.gr>, 2006.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: heartlenv-shell.po.master\n"
+"Project-Id-Version: heartlenv-panel git version\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-11-21 09:14+0200\n"
-"PO-Revision-Date: 2011-11-21 09:08+0200\n"
-"Last-Translator: Kostas Papadimas <pkst@heartlenv.org>\n"
-"Language-Team: Greek <team@heartlenv.gr>\n"
+"POT-Creation-Date: 2011-01-16 17:01+0100\n"
+"PO-Revision-Date: 2011-01-07 17:47+0200\n"
+"Last-Translator: Spiros Georgaras <sng@hellug.gr>\n"
+"Language-Team: Greek <nls@tux.hellug.gr>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-DamnedLies-Scope: partial\n"
-"X-Generator: KBabel 1.11.4\n"
 "X-Poedit-Language: Greek\n"
-"X-Poedit-Country: GREECE\n"
 "X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Country: GREECE\n"
 
-#: ../data/heartlenv-shell.desktop.in.in.h:1
-msgid "GNOME Shell"
-msgstr "GNOME Shell"
-
-#: ../data/heartlenv-shell.desktop.in.in.h:2
-msgid "Window management and application launching"
-msgstr "Διαχείριση παραθύρων και εκκίνηση εφαρμογών"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:1
+#: ../panel-desktop-handler.desktop.in.h:1
 msgid ""
-"Allows access to internal debugging and monitoring tools using the Alt-F2 "
-"dialog."
-msgstr ""
-"Επιτρέπει την πρόσβαση σε εσωτερικά εργαλεία αποσφαλμάτωσης και "
-"παρακολούθησης με τη χρήση του διαλόγου Alt-F2."
+"Add a new launcher to the panel based on the information of this desktop file"
+msgstr "Δημιουργία νέου εκκινητή στο ταμπλό από αυτό το αρχείο .desktop"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:2
-msgid "Enable internal tools useful for developers and testers from Alt-F2"
-msgstr ""
-"Ενεργοποίηση εσωτερικών εργαλείων χρήσιμων για τους προγραμματιστές και τους "
-"δοκιμαστές με το Alt-F2"
+#: ../panel-desktop-handler.desktop.in.h:2
+msgid "Create Launcher on the panel"
+msgstr "Δημιουργία εκκινητή στο ταμπλό"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:3
-msgid "File extension used for storing the screencast"
-msgstr ""
-"Επέκταση αρχείου που θα χρησιμοποιηθεί για την αποθήκευση του στιγμιότυπου "
-"οθόνης"
+#: ../panel-preferences.desktop.in.h:1
+msgid "Customize the panel"
+msgstr "Προσαρμογή του ταμπλό"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:4
-msgid "Framerate used for recording screencasts."
-msgstr ""
-"Ο ρυθμός καρέ που θα χρησιμοποιηθεί για την καταγραφή των στιγμιοτύπων "
-"οθόνης."
+#: ../panel-preferences.desktop.in.h:2
+#: ../panel/panel-preferences-dialog.glade.h:24 ../panel/panel-window.c:2222
+#: ../migrate/main.c:84
+msgid "Panel"
+msgstr "Ταμπλό"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:5
+#: ../common/panel-utils.c:155
+msgid "_Read Online"
+msgstr "_Διάβαστε διαδικτυακά"
+
+#: ../common/panel-utils.c:156
 msgid ""
-"GNOME Shell extensions have a uuid property; this key lists extensions which "
-"should be loaded. Any extension that wants to be loaded needs to be in this "
-"list. You can also manipulate this list with the EnableExtension and "
-"DisableExtension DBus methods on org.heartlenv.Shell."
+"You can read the user manual online. This manual may however not exactly "
+"match your panel version."
 msgstr ""
-"Η επεκτάσεις του GNOME Shell έχουν μια ιδιότητα uuid. Αυτό το κλειδί "
-"εμφανίζει τις επεκτάσεις που πρέπει να φορτωθούν. Οποιαδήποτε επέκταση που "
-"επιθυμεί να φορτωθεί πρέπει να είναι στη λίστα. Μπορείτε ακόμη να "
-"χειριστείτε αυτή τη λίστα μέσω των μεθόδων EnableExtension and "
-"DisableExtension DBus στο org.heartlenv.Shell."
+"Μπορείτε να διαβάσετε το εγχειρίδιο χρήσης στο διαδίκτυο. Σημειώνεται ότι η "
+"παρεχόμενη έκδοση μπορεί μην ταιριάζει με την έκδοση του εγκατεστημένου "
+"λογισμικού."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:6
-msgid "History for command (Alt-F2) dialog"
-msgstr "Ιστορικό του διαλόγου εντολών (Alt-F2)"
+#: ../common/panel-utils.c:158
+msgid "The user manual is not installed on your computer"
+msgstr "To εγχειρίδιο χρήστη δεν είναι εγκατεστημένο στον υπολογιστή σας"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:7
-msgid "History for the looking glass dialog"
-msgstr "Ιστορικό του διαλόγου \"καθρέπτη\""
+#. display an error message to the user
+#: ../common/panel-utils.c:171
+msgid "Failed to open the documentation browser"
+msgstr "Το άνοιγμα του αναγνώστη τεκμηρίωσης απέτυχε"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:8
-msgid "If true, display date in the clock, in addition to time."
-msgstr "Αν αληθές, εμφανίζει την ημερομηνία στο ρολόι επιπλέον της ώρας."
+#. I18N: %s is the name of the plugin
+#: ../libheartlenvpanel/xfce-panel-plugin.c:889
+#: ../panel/panel-preferences-dialog.c:1048
+#, c-format
+msgid "Are you sure that you want to remove \"%s\"?"
+msgstr "Είστε σίγουροι ότι θέλετε να αφαιρέσετε το \"%s\";"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:9
-msgid "If true, display seconds in time."
-msgstr "Αν αληθές, εμφανίζει δευτερόλεπτα στην ώρα."
+#: ../libheartlenvpanel/xfce-panel-plugin.c:894
+#: ../panel/panel-preferences-dialog.c:1051
+msgid "If you remove the item from the panel, it is permanently lost."
+msgstr "Εάν αφαιρέσετε αυτό το αντικείμενο από το ταμπλό, θα χαθεί για πάντα."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:10
-msgid "If true, display the ISO week date in the calendar."
+#. move item
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1054
+msgid "_Move"
+msgstr "_Μετακίνηση"
+
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1088
+msgid "Pane_l"
+msgstr "Ταμπ_λό"
+
+#. add new items
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1096 ../panel/panel-window.c:2234
+msgid "Add _New Items..."
+msgstr "Προσθήκη _νέων αντικειμένων..."
+
+#. customize panel
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1107 ../panel/panel-window.c:2245
+msgid "Panel Pr_eferences..."
+msgstr "Π_ροτιμήσεις ταμπλό..."
+
+#. logout item
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1124 ../panel/panel-window.c:2261
+msgid "Log _Out"
+msgstr "Απ_οσύνδεση"
+
+#: ../panel/main.c:78
+msgid "Show the 'Panel Preferences' dialog"
+msgstr "Εμφάνιση του διαλόγου 'Ρυθμίσεις ταμπλό´"
+
+#: ../panel/main.c:78 ../panel/main.c:79
+msgid "PANEL-NUMBER"
+msgstr "ΑΡΙΘΜΟΣ-ΤΑΜΠΛΟ"
+
+#: ../panel/main.c:79
+msgid "Show the 'Add New Items' dialog"
+msgstr "Εμφάνιση του διαλόγου 'Προσθήκη νέων αντικειμένων'"
+
+#: ../panel/main.c:80
+msgid "Save the panel configuration"
+msgstr "Αποθήκευση ρυθμίσεων"
+
+#: ../panel/main.c:81
+msgid "Add a new plugin to the panel"
+msgstr "Προσθήκη ενός νέου αρθρώματος στο ταμπλό"
+
+#: ../panel/main.c:81
+msgid "PLUGIN-NAME"
+msgstr "ΟΝΟΜΑ-ΑΡΘΡΩΜΑΤΟΣ"
+
+#: ../panel/main.c:82
+msgid "Restart the running panel instance"
+msgstr "Επανεκκίνηση της εκτελέσιμης διεργασίας του ταμπλό"
+
+#: ../panel/main.c:83
+msgid "Quit the running panel instance"
+msgstr "Τερματισμός της εκτελούμενης διεργασίας του ταμπλό"
+
+#: ../panel/main.c:84
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:33
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:33
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:33
+msgid "Print version information and exit"
+msgstr "Εμφάνιση πληροφοριών έκδοσης"
+
+#. parse context options
+#: ../panel/main.c:240
+msgid "[ARGUMENTS...]"
+msgstr "[ΟΡΙΣΜΑΤΑ...]"
+
+#: ../panel/main.c:247
+#, c-format
+msgid "Type \"%s --help\" for usage."
+msgstr "Πληκτρολογήστε  \"%s --help\"  για βοήθεια."
+
+#: ../panel/main.c:266
+msgid "The Xfce development team. All rights reserved."
 msgstr ""
-"Αν αληθές, εμφανίζει τον αριθμό εβδομάδας σύμφωνα με το ISO στο ημερολόγιο."
+"Η ομάδα ανάπτυξης του Xfce. Με την επιφύλαξη παντός νόμιμου δικαιώματος."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:11
-msgid "List of desktop file IDs for favorite applications"
-msgstr "Λίστα ID αρχείων επιφάνειας εργασίας για προτιμώμενες εφαρμογές"
+#: ../panel/main.c:267
+#, c-format
+msgid "Please report bugs to <%s>."
+msgstr "Παρακαλώ αναφέρετε τυχόν σφάλματα στο <%s>"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:13
+#: ../panel/main.c:318
+msgid "There is already a running instance"
+msgstr "Υπάρχει ήδη μια εκτελούμενη διεργασία"
+
+#. spawn ourselfs again
+#: ../panel/main.c:367
+msgid "Restarting..."
+msgstr "Επανεκκίνηση ..."
+
+#: ../panel/main.c:382
+msgid "Failed to show the preferences dialog"
+msgstr "Δεν είναι δυνατή η εμφάνιση του διαλόγου προτιμήσεων"
+
+#: ../panel/main.c:384
+msgid "Failed to show the add new items dialog"
+msgstr "Δεν είναι δυνατή η εμφάνιση του διαλόγου 'Προσθήκη νέων αντικειμένων'"
+
+#: ../panel/main.c:386
+msgid "Failed to save the panel configuration"
+msgstr "Αποτυχία αποθήκευσης των ρυθμίσεων του ταμπλό"
+
+#: ../panel/main.c:388
+msgid "Failed to add a plugin to the panel"
+msgstr "Αποτυχία προσθήκης ενός νέου αρθρώματος στο ταμπλό"
+
+#: ../panel/main.c:390
+msgid "Failed to restart the panel"
+msgstr "Αποτυχία επανεκκίνησης του ταμπλό"
+
+#: ../panel/main.c:392
+msgid "Failed to quit the panel"
+msgstr "Αποτυχία τερματισμού του ταμπλό"
+
+#: ../panel/main.c:394
+msgid "Failed to send D-Bus message"
+msgstr "Αποτυχία αποστολής μηνύματος D-BUS"
+
+#: ../panel/main.c:405
+msgid ""
+"Do you want to start the panel? If you do, make sure you save the session on "
+"logout, so the panel is automatically started the next time you login."
+msgstr ""
+"Θέλετε να εκκινηθεί το ταμπλό; Αν το εκκινήσετε, αποθηκεύστε τη συνεδρία "
+"κατά την αποσύνδεσή σας, ώστε το ταμπλό να εκκινηθεί αυτόματα την επόμενη "
+"φορά που θα συνδεθείτε."
+
+#: ../panel/main.c:408 ../panel/main.c:422
+#, c-format
+msgid "No running instance of %s was found"
+msgstr "Δεν βρέθηκε να τρέχει κάποια διεργασία του %s"
+
+#: ../panel/panel-application.c:196
+msgid "Failed to launch the migration application"
+msgstr "Απέτυχε η εκτέλεση της εφαρμογής μεταφοράς ρυθμίσεων"
+
+#: ../panel/panel-application.c:1446 ../plugins/actions/actions.c:413
+msgid ""
+"You have started X without session manager. Clicking Quit will close the X "
+"server."
+msgstr ""
+"Ξεκινήσατε το Xfce χωρίς διαχειριστή συνεδρίας. Επιλέγοντας έξοδος θα "
+"κλείσει ο X server."
+
+#: ../panel/panel-application.c:1447 ../plugins/actions/actions.c:414
+msgid "Are you sure you want to quit the panel?"
+msgstr "Είστε σίγουροι ότι θέλετε να κλείσετε το ταμπλό;"
+
+#: ../panel/panel-application.c:1455 ../plugins/actions/actions.c:422
+#, c-format
+msgid "Failed to execute command \"%s\""
+msgstr "Αδυναμία εκτέλεσης της εντολής \"%s\""
+
+#: ../panel/panel-dbus-client.c:209
+msgid ""
+"Invalid plugin event syntax specified. Use PLUGIN-NAME:NAME[:TYPE:VALUE]."
+msgstr ""
+"Προσδιορίστηκε μη έγκυρη σύνταξη του γεγονότος αρθρώματος: Χρησιμοποιήστε το "
+"ΟΝΟΜΑ-ΑΡΘΡΩΜΑΤΟΣ:ΟΝΟΜΑ[:ΤΥΠΟΣ:ΤΙΜΗ]."
+
+#: ../panel/panel-dbus-client.c:242
+#, c-format
+msgid ""
+"Invalid hint type \"%s\". Valid types are bool, double, int, string and uint."
+msgstr ""
+"Μη έγκυρος τύπος \"%s\". Έγκυροι τύπο είναι οι εξής: bool, double, int, "
+"string και uint."
+
+#: ../panel/panel-dialogs.c:76
+msgid "The panel of the Xfce Desktop Environment"
+msgstr "Το ταμπλό του περιβάλλοντος εργασίας Xfce"
+
+#: ../panel/panel-dialogs.c:81
+msgid "translator-credits"
+msgstr ""
+"Ευάγγελος Μπαλάσκας <ebalaskas@ebalaskas.gr>\n"
+"Σταύρος Γιαννούρης <stavrosg@hellug.gr>\n"
+"Στάθης Καμπέρης <ekamperi@auth.gr>\n"
+"Σπύρος Γεωργαράς <sng@hellug.gr>"
+
+#. setup the dialog
+#: ../panel/panel-dialogs.c:122 ../plugins/launcher/launcher-dialog.glade.h:1
+msgid "Add New Item"
+msgstr "Προσθήκη νέου αντικειμένου"
+
+#: ../panel/panel-dialogs.c:136
+msgid "Please choose a panel for the new plugin:"
+msgstr "Παρακαλώ επιλέξτε ένα ταμπλό για το νέο άρθρωμα:"
+
+#. I18N: panel combo box in the preferences dialog
+#: ../panel/panel-dialogs.c:147 ../panel/panel-preferences-dialog.c:767
+#, c-format
+msgid "Panel %d"
+msgstr "Ταμπλό %d"
+
+#: ../panel/panel-dialogs.c:183
+msgid ""
+"Because the panel is running in kiosk mode, you are not allowed to make "
+"changes to the panel configuration as a regular user"
+msgstr ""
+"Επειδή το ταμπλό που εκτελείτε είναι σε kiosk mode, δεν επιτρέπεται να "
+"γίνουν αλλαγές στις ρυθμίσεις του ταμπλό από απλούς χρήστες."
+
+#: ../panel/panel-dialogs.c:185
+msgid "Modifying the panel is not allowed"
+msgstr "Η τροποποίηση του ταμπλό δεν επιτρέπεται"
+
+#: ../panel/panel-item-dialog.c:188
+msgid "Add New Items"
+msgstr "Προσθήκη νέων αντικειμένων"
+
+#: ../panel/panel-item-dialog.c:190
+msgid "Add new plugins to the panel"
+msgstr "Προσθήκη νέων αρθρωμάτων στο ταμπλό"
+
+#: ../panel/panel-item-dialog.c:213
+#: ../plugins/launcher/launcher-dialog.glade.h:23
+msgid "_Search:"
+msgstr "Ανα_ζήτηση:"
+
+#: ../panel/panel-item-dialog.c:221
+msgid "Enter search phrase here"
+msgstr "Εισάγετε εδώ τη φράση για αναζήτηση"
+
+#: ../panel/panel-plugin-external.c:420
+#, c-format
+msgid "Plugin \"%s\" unexpectedly left the panel, do you want to restart it?"
+msgstr ""
+"Το άρθρωμα \"%s\" έφυγε απροσδόκητα από το ταμπλό, θέλετε να το "
+"επανεκκινήσετε;"
+
+#: ../panel/panel-plugin-external.c:422
+#, c-format
+msgid ""
+"The plugin restarted more than once in the last %d seconds. If you press "
+"Execute the panel will try to restart the plugin otherwise it will be "
+"permanently removed from the panel."
+msgstr ""
+"Το άρθρωμα επανεκκινήθηκε περισσότερες από μία φορές τα τελευταία %d "
+"δευτερόλεπτα. Εάν πατήσετε εκτέλεση, το ταμπλό θα προσπαθήσει να "
+"επανεκκινήσει το άρθρωμα αλλιώς αυτό θα απομακρυνθεί οριστικά από το ταμπλό."
+
+#: ../panel/panel-preferences-dialog.c:453
+msgid "Automatic"
+msgstr "Αυτόματο"
+
+#. I18N: screen name in the output selector
+#: ../panel/panel-preferences-dialog.c:472
+#, c-format
+msgid "Screen %d"
+msgstr "Οθόνη %d"
+
+#. I18N: monitor name in the output selector
+#: ../panel/panel-preferences-dialog.c:498
+#, c-format
+msgid "Monitor %d"
+msgstr "Οθόνη %d"
+
+#: ../panel/panel-preferences-dialog.c:828
+msgid "The panel and plugin configurations will be permanently removed"
+msgstr "Οι ρυθμίσεις του ταμπλό και του αρθρώματος διαγραφούν οριστικά."
+
+#: ../panel/panel-preferences-dialog.c:829
+#, c-format
+msgid "Are you sure you want to remove panel %d?"
+msgstr "Είστε σίγουροι ότι θέλετε να αφαιρέσετε το ταμπλό %d;"
+
+#. I18N: append (external) in the preferences dialog if the plugin
+#. * runs external
+#: ../panel/panel-preferences-dialog.c:912
+#, c-format
+msgid "%s <span color=\"grey\" size=\"small\">(external)</span>"
+msgstr "%s <span color=\"grey\" size=\"small\">(εξωτερικό/)</span>"
+
+#. I18N: tooltip in preferences dialog when hovering an item in the list
+#. * for external plugins
+#: ../panel/panel-preferences-dialog.c:917
+#, c-format
+msgid ""
+"Internal name: %s-%d\n"
+"PID: %d"
+msgstr ""
+"Εσωτερικό όνομα: %s-%d\n"
+"PID: %d"
+
+#. I18N: tooltip in preferences dialog when hovering an item in the list
+#. * for internal plugins
+#: ../panel/panel-preferences-dialog.c:929
+#, c-format
+msgid "Internal name: %s-%d"
+msgstr "Εσωτερικό όνομα: %s-%d"
+
+#: ../panel/panel-preferences-dialog.glade.h:1
+msgid "A_utomatically increase the length"
+msgstr "Α_υτόματη αύξηση του μήκους"
+
+#: ../panel/panel-preferences-dialog.glade.h:2
+msgid "Add a new panel"
+msgstr "Προσθήκη ενός νέου ταμπλό"
+
+#: ../panel/panel-preferences-dialog.glade.h:3
+msgid "Add new item to this panel"
+msgstr "Προσθήκη νέου αντικειμένου σε αυτό το ταμπλό."
+
+#: ../panel/panel-preferences-dialog.glade.h:4
+msgid ""
+"Alpha value of the panel background, with 0 being fully transparent and 100 "
+"fully opaque."
+msgstr ""
+"Διαφάνεια του παρασκηνίου του ταμπλό, μεταξύ 0 (διαφανές) και 100 "
+"(αδιαφανές)."
+
+#: ../panel/panel-preferences-dialog.glade.h:5
+msgid "Appeara_nce"
+msgstr "Εμφά_νιση"
+
+#: ../panel/panel-preferences-dialog.glade.h:6
+msgid "Automatically show and _hide the panel"
+msgstr "Αυτόματη απόκρυψη και εμ_φάνιση του ταμπλό"
+
+#: ../panel/panel-preferences-dialog.glade.h:7
+msgid "Background"
+msgstr "Παρασκηνίο"
+
+#: ../panel/panel-preferences-dialog.glade.h:8
+msgid "Background image"
+msgstr "Εικόνα φόντου"
+
+#: ../panel/panel-preferences-dialog.glade.h:9
+msgid "C_olor:"
+msgstr "_Χρώμα:"
+
+#: ../panel/panel-preferences-dialog.glade.h:10
+msgid "D_isplay"
+msgstr "Πρ_οβολή"
+
+#: ../panel/panel-preferences-dialog.glade.h:11
+#: ../plugins/launcher/launcher-dialog.glade.h:9
+msgid "Edit the currently selected item"
+msgstr "Επεξεργασία του επιλεγμένου αντικείμενο μενού"
+
+#: ../panel/panel-preferences-dialog.glade.h:12
+#: ../plugins/launcher/launcher-dialog.glade.h:10
+msgid "General"
+msgstr "Γενικά"
+
+#: ../panel/panel-preferences-dialog.glade.h:13
+msgid "Horizontal"
+msgstr "Οριζόντιο"
+
+#: ../panel/panel-preferences-dialog.glade.h:14
+msgid "Ite_ms"
+msgstr "Αντικεί_μενα"
+
+#: ../panel/panel-preferences-dialog.glade.h:16
 #, no-c-format
+msgid "L_ength (%):"
+msgstr "_Μήκος (%):"
+
+#. I18N: name of the section (frame) in the panel preferences where the user can define the length and size of the panel
+#: ../panel/panel-preferences-dialog.glade.h:18
+msgid "Measurements"
+msgstr "Μετρήσεις"
+
+#: ../panel/panel-preferences-dialog.glade.h:19
+#: ../plugins/launcher/launcher-dialog.glade.h:13
+msgid "Move currently selected item down by one row"
+msgstr "Μετακίνηση του επιλεγμένου αντικειμένου μια γραμμή κάτω"
+
+#: ../panel/panel-preferences-dialog.glade.h:20
+#: ../plugins/launcher/launcher-dialog.glade.h:14
+msgid "Move currently selected item up by one row"
+msgstr "Μετακίνηση του επιλεγμένου αντικειμένου μια γραμμή επάνω"
+
+#: ../panel/panel-preferences-dialog.glade.h:21
+msgid "None (use system style)"
+msgstr "Κανένα (χρήση του στυλ συστήματος)"
+
+#: ../panel/panel-preferences-dialog.glade.h:22
+msgid "O_utput:"
+msgstr "Έ_ξοδος:"
+
+#: ../panel/panel-preferences-dialog.glade.h:23
+msgid "Opacity"
+msgstr "Αδιαφάνεια"
+
+#: ../panel/panel-preferences-dialog.glade.h:25
+msgid "Pick a Panel Color"
+msgstr "Επιλέξτε χρώμα γοα το ταμπλό"
+
+#: ../panel/panel-preferences-dialog.glade.h:26
+msgid "Remove currently selected item"
+msgstr "Αφαίρεση του τρέχοντος επιλεγμένου αντικειμένου"
+
+#: ../panel/panel-preferences-dialog.glade.h:27
+msgid "Remove the currently selected panel"
+msgstr "Αφαίρεση του τρέχοντος επιλεγμένου ταμπλό"
+
+#: ../panel/panel-preferences-dialog.glade.h:28
+msgid "Select A Background Image"
+msgstr "Επιλέξτε μία εικόνα φόντου"
+
+#: ../panel/panel-preferences-dialog.glade.h:29
 msgid ""
-"Sets the GStreamer pipeline used to encode recordings. It follows the syntax "
-"used for gst-launch. The pipeline should have an unconnected sink pad where "
-"the recorded video is recorded. It will normally have a unconnected source "
-"pad; output from that pad will be written into the output file. However the "
-"pipeline can also take care of its own output - this might be used to send "
-"the output to an icecast server via shout2send or similar. When unset or set "
-"to an empty value, the default pipeline will be used. This is currently "
-"'videorate ! vp8enc quality=10 speed=2 threads=%T ! queue ! webmmux' and "
-"records to WEBM using the VP8 codec. %T is used as a placeholder for a guess "
-"at the optimal thread count on the system."
+"Select this option to automatically increase the length of the panel if the "
+"plugins request more space."
 msgstr ""
-"Ορίζει το δίαυλο του GStreamer που θα χρησιμοποιηθεί για την κωδικοποίηση "
-"των εγγραφών. Ακολουθεί το συντακτικό που χρησιμοποιείται για το gst-launch. "
-"Ο δίαυλος θα πρέπει να έχει έναν μη συνδεδεμένο απαγωγέα όπου θα εγγράφεται "
-"το καταγραφέα βίντεο. Φυσιολογικά θα έχει μια μη συνδεδεμένη πηγή. Η έξοδος "
-"της πηγής θα εγγράφεται στο αρχείο εξόδου. Όμως, ο δίαυλος μπορεί να "
-"επιληφθεί της δικής του εξόδου - αυτό μπορεί να χρησιμοποιηθεί για την "
-"αποστολή της εξόδου σε έναν διακομιστή icecast μέσω του shout2send ή κάποιου "
-"παρόμοιου. Όταν δεν έχει ορισθεί ή έχει ορισθεί σε κενή τιμή, θα "
-"χρησιμοποιηθεί ο προεπιλεγμένος δίαυλος. Αυτός είναι αυτή τη στιγμή ο "
-"'videorate ! vp8enc quality=10 speed=2 threads=%T ! queue ! webmmux' και "
-"γράφει σε WEBM με κωδικοποίηση VP8. Το %T χρησιμοποιείται ως παράδειγμα για "
-"το πιθανό βέλτιστο αριθμό πυρήνων του συστήματος."
+"Ενεργοποιήστε αυτή την επιλογή για να γίνεται αυτόματη αύξηση του μήκους του "
+"ταμπλό, όταν τα αρθρώματα ζητούν περισσότερο χώρο."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:14
-msgid "Show date in clock"
-msgstr "Εμφάνιση ημερομηνίας στο ρολόι"
+#: ../panel/panel-preferences-dialog.glade.h:30
+msgid "Select this option to extend the panel over multiple monitors."
+msgstr ""
+"Επιλέξτε αυτή την επιλογή για να επεκτείνεται το ταμπλό σε πολλαπλές οθόνες."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:15
-msgid "Show the week date in the calendar"
-msgstr "Εμφάνιση του αριθμού εβδομάδας στο ημερολόγιο"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:16
-msgid "Show time with seconds"
-msgstr "Εμφάνιση ώρας με δευτερόλεπτα"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:17
+#: ../panel/panel-preferences-dialog.glade.h:31
 msgid ""
-"The applications corresponding to these identifiers will be displayed in the "
-"favorites area."
+"Select this option to hide the handles of the panel and lock its position."
 msgstr ""
-"Οι εφαρμογές που αντιστοιχούν σε αυτά τα αναγνωριστικά θα εμφανισθούν στην "
-"περιοχή αγαπημένων."
+"Επιλέξτε αυτή την επιλογή για να αποκυψετε τους χειριστές του ταμπλό και να "
+"το κλειδώσετε στην θέση του."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:18
+#: ../panel/panel-preferences-dialog.glade.h:32
 msgid ""
-"The filename for recorded screencasts will be a unique filename based on the "
-"current date, and use this extension. It should be changed when recording to "
-"a different container format."
+"Select this option to hide the panel when the pointer is not above it. This "
+"only works when the panel is attached to a screen edge."
 msgstr ""
-"Το όνομα αρχείου για τα καταγεγραμμένα στιγμιότυπα οθόνης θα είναι μοναδικό, "
-"βασισμένο στην τρέχουσα ημερομηνία και θα χρησιμοποιεί αυτή την επέκταση. Θα "
-"πρέπει να αλλάζει όταν γίνεται εγγραφή σε διαφορετικό πρότυπο περιέκτη."
+"Επιλέξτε αυτή την επιλογή για να αποκρύψετε το ταμπλό όταν ο κέρσορας δεν "
+"είναι από πάνω του. Αυτό δουλεύει μόνο όταν το ταμπλό είναι προσαρτημένο "
+"στην άκρη της οθόνης."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:19
+#: ../panel/panel-preferences-dialog.glade.h:33
+msgid "Show about information of the currently selected item"
+msgstr "Εμφάνιση πληροφοριών για το επιλεγμένο αντιμκείμενο"
+
+#: ../panel/panel-preferences-dialog.glade.h:34
+msgid "Solid color"
+msgstr "Συμπαγές χρώμα"
+
+#: ../panel/panel-preferences-dialog.glade.h:35
+msgid "Span mo_nitors"
+msgstr "Επέκταση στις ο_θόνες"
+
+#: ../panel/panel-preferences-dialog.glade.h:36
 msgid ""
-"The framerate of the resulting screencast recordered by GNOME Shell's "
-"screencast recorder in frames-per-second."
+"Transparency when the pointer is hovering over the panel, with 0 being fully "
+"transparent and 100 fully opaque."
 msgstr ""
-"Ο ρυθμός καρέ του στιγμιότυπου που παράγεται από τον εγγραφέα στιγμιοτύπων "
-"οθόνης του GNOME Shell σε καρέ ανά δευτερόλεπτο."
+"Διαφάνεια όταν ο κέρσορας περνάει από πάνω από το ταμπλό, μεταξύ 0 "
+"(διαφανές) και 100 (αδιαφανές)."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:20
-msgid "The gstreamer pipeline used to encode the screencast"
-msgstr ""
-"Ο δίαυλος του gstreamer που χρησιμοποιήθηκε για την κωδικοποίηση του "
-"στιγμιότυπου"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:21
+#: ../panel/panel-preferences-dialog.glade.h:37
 msgid ""
-"The shell normally monitors active applications in order to present the most "
-"used ones (e.g. in launchers). While this data will be kept private, you may "
-"want to disable this for privacy reasons. Please note that doing so won't "
-"remove already saved data."
+"Transparency when the pointer is not hovering over the panel, with 0 being "
+"fully transparent and 100 fully opaque."
 msgstr ""
-"Το κέλυφος κανονικά παρακολουθεί τις ενεργές εφαρμογές για να παρουσιάσει "
-"τις πιο συχνά χρησιμοποιούμενες (π.χ. στους εκκινητές). Παρόλο που αυτά τα "
-"δεδομένα θα παραμείνουν ιδιωτικά, μπορεί να επιθυμείτε να απενεργοποιήσετε "
-"αυτή τη λειτουργία για λόγους απορρήτου. Παρακαλούμε έχετε υπ' όψιν ότι η "
-"απενεργοποίηση δεν θα αφαιρέσει τα ήδη αποθηκευμένα δεδομένα."
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:22
-msgid "The type of keyboard to use."
-msgstr "Ο τύπος του πληκτρολογίου που θα χρησιμοποιηθεί"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:23
-msgid "Uuids of extensions to enable"
-msgstr "Uuid των επεκτάσεων που θα ενεργοποιηθούν"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:24
-msgid "Whether to collect stats about applications usage"
-msgstr "Εάν θα συλλέγονται στατιστικά χρήσης των εφαρμογών"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:25
-msgid "Which keyboard to use"
-msgstr "Ποιό πληκτρολόγιο θα χρησιμοποιηθεί"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:26
-msgid "disabled OpenSearch providers"
-msgstr "απενεργοποιημένοι πάροχοι OpenSearch"
-
-#: ../js/gdm/loginDialog.js:633
-msgid "Session..."
-msgstr "Συνεδρία..."
-
-#: ../js/gdm/loginDialog.js:804
-msgctxt "title"
-msgid "Sign In"
-msgstr "Σύνδεση"
-
-#. Translators: this message is shown below the password entry field
-#. to indicate the user can swipe their finger instead
-#: ../js/gdm/loginDialog.js:849
-msgid "(or swipe finger)"
-msgstr "(ή περάστε το δάκτυλο σας)"
-
-#. translators: this message is shown below the user list on the
-#. login screen. It can be activated to reveal an entry for
-#. manually entering the username.
-#: ../js/gdm/loginDialog.js:870
-msgid "Not listed?"
-msgstr "Δεν είστε στη λίστα;"
-
-#: ../js/gdm/loginDialog.js:1038 ../js/ui/endSessionDialog.js:428
-#: ../js/ui/extensionSystem.js:519 ../js/ui/networkAgent.js:148
-#: ../js/ui/polkitAuthenticationAgent.js:178 ../js/ui/status/bluetooth.js:481
-msgid "Cancel"
-msgstr "Ακύρωση"
-
-#: ../js/gdm/loginDialog.js:1043
-msgctxt "button"
-msgid "Sign In"
-msgstr "Σύνδεση"
-
-#: ../js/gdm/loginDialog.js:1395
-msgid "Login Window"
-msgstr "Παράθυρο σύνδεσης"
-
-#: ../js/gdm/powerMenu.js:116 ../js/ui/userMenu.js:591
-#: ../js/ui/userMenu.js:593 ../js/ui/userMenu.js:662
-msgid "Suspend"
-msgstr "Αναστολή"
-
-#: ../js/gdm/powerMenu.js:121
-msgid "Restart"
-msgstr "Επανεκκίνηση"
-
-#: ../js/gdm/powerMenu.js:126
-msgid "Power Off"
-msgstr "Απενεργοποιήση"
-
-#: ../js/misc/util.js:92
-msgid "Command not found"
-msgstr "Δεν βρέθηκε η εντολή"
-
-#. Replace "Error invoking GLib.shell_parse_argv: " with
-#. something nicer
-#: ../js/misc/util.js:119
-msgid "Could not parse command:"
-msgstr "Δεν ήταν δυνατό να επεξεργαστεί η εντολή:"
-
-#: ../js/misc/util.js:127
-#, c-format
-msgid "Execution of '%s' failed:"
-msgstr "Η εκτέλεση του '%s' απέτυχε:"
-
-#. Translators: Filter to display all applications
-#: ../js/ui/appDisplay.js:255
-msgid "All"
-msgstr "Όλα"
-
-#: ../js/ui/appDisplay.js:319
-msgid "APPLICATIONS"
-msgstr "ΕΦΑΡΜΟΓΕΣ"
-
-#: ../js/ui/appDisplay.js:377
-msgid "SETTINGS"
-msgstr "ΡΥΘΜΙΣΕΙΣ"
-
-#: ../js/ui/appDisplay.js:684
-msgid "New Window"
-msgstr "Νέο παράθυρο"
-
-#: ../js/ui/appDisplay.js:687
-msgid "Remove from Favorites"
-msgstr "Αφαίρεση από τα αγαπημένα"
-
-#: ../js/ui/appDisplay.js:688
-msgid "Add to Favorites"
-msgstr "Προσθήκη στα αγαπημένα"
-
-#: ../js/ui/appFavorites.js:89
-#, c-format
-msgid "%s has been added to your favorites."
-msgstr "To %s προστέθηκε στα αγαπημένα σας"
-
-#: ../js/ui/appFavorites.js:120
-#, c-format
-msgid "%s has been removed from your favorites."
-msgstr "To %s αφαιρέθηκε από τα αγαπημένα σας"
-
-#: ../js/ui/autorunManager.js:272
-msgid "Removable Devices"
-msgstr "Αφαιρούμενες συσκευές"
-
-#: ../js/ui/autorunManager.js:582
-#, c-format
-msgid "Open with %s"
-msgstr "Άνοιγμα με %s"
-
-#: ../js/ui/autorunManager.js:608
-msgid "Eject"
-msgstr "Εξαγωγή"
-
-#. Translators: Shown in calendar event list for all day events
-#. * Keep it short, best if you can use less then 10 characters
-#.
-#: ../js/ui/calendar.js:62
-msgctxt "event list time"
-msgid "All Day"
-msgstr "Όλη μέρα"
-
-#. Translators: Shown in calendar event list, if 24h format
-#: ../js/ui/calendar.js:67
-msgctxt "event list time"
-msgid "%H:%M"
-msgstr "%H:%M"
-
-#. Transators: Shown in calendar event list, if 12h format
-#: ../js/ui/calendar.js:74
-msgctxt "event list time"
-msgid "%l:%M %p"
-msgstr "%l:%M %p"
-
-#. Translators: Calendar grid abbreviation for Sunday.
-#. *
-#. * NOTE: These grid abbreviations are always shown together
-#. * and in order, e.g. "S M T W T F S".
-#.
-#: ../js/ui/calendar.js:114
-msgctxt "grid sunday"
-msgid "S"
-msgstr "Κ"
-
-#. Translators: Calendar grid abbreviation for Monday
-#: ../js/ui/calendar.js:116
-msgctxt "grid monday"
-msgid "M"
-msgstr "Δ"
-
-#. Translators: Calendar grid abbreviation for Tuesday
-#: ../js/ui/calendar.js:118
-msgctxt "grid tuesday"
-msgid "T"
-msgstr "Τρ"
-
-#. Translators: Calendar grid abbreviation for Wednesday
-#: ../js/ui/calendar.js:120
-msgctxt "grid wednesday"
-msgid "W"
-msgstr "Τε"
-
-#. Translators: Calendar grid abbreviation for Thursday
-#: ../js/ui/calendar.js:122
-msgctxt "grid thursday"
-msgid "T"
-msgstr "Πε"
-
-#. Translators: Calendar grid abbreviation for Friday
-#: ../js/ui/calendar.js:124
-msgctxt "grid friday"
-msgid "F"
-msgstr "Πα"
-
-#. Translators: Calendar grid abbreviation for Saturday
-#: ../js/ui/calendar.js:126
-msgctxt "grid saturday"
-msgid "S"
-msgstr "Σ"
-
-#. Translators: Event list abbreviation for Sunday.
-#. *
-#. * NOTE: These list abbreviations are normally not shown together
-#. * so they need to be unique (e.g. Tuesday and Thursday cannot
-#. * both be 'T').
-#.
-#: ../js/ui/calendar.js:139
-msgctxt "list sunday"
-msgid "Su"
-msgstr "Κ"
-
-#. Translators: Event list abbreviation for Monday
-#: ../js/ui/calendar.js:141
-msgctxt "list monday"
-msgid "M"
-msgstr "Δ"
-
-#. Translators: Event list abbreviation for Tuesday
-#: ../js/ui/calendar.js:143
-msgctxt "list tuesday"
-msgid "T"
-msgstr "Τρ"
-
-#. Translators: Event list abbreviation for Wednesday
-#: ../js/ui/calendar.js:145
-msgctxt "list wednesday"
-msgid "W"
-msgstr "Τε"
-
-#. Translators: Event list abbreviation for Thursday
-#: ../js/ui/calendar.js:147
-msgctxt "list thursday"
-msgid "Th"
-msgstr "Πε"
-
-#. Translators: Event list abbreviation for Friday
-#: ../js/ui/calendar.js:149
-msgctxt "list friday"
-msgid "F"
-msgstr "Π"
-
-#. Translators: Event list abbreviation for Saturday
-#: ../js/ui/calendar.js:151
-msgctxt "list saturday"
-msgid "S"
-msgstr "Σ"
-
-#. Translators: Text to show if there are no events
-#: ../js/ui/calendar.js:692
-msgid "Nothing Scheduled"
-msgstr "Τίποτα προγραμματισμένο"
-
-#. Translators: Shown on calendar heading when selected day occurs on current year
-#: ../js/ui/calendar.js:708
-msgctxt "calendar heading"
-msgid "%A, %B %d"
-msgstr "%A, %B %d"
-
-#. Translators: Shown on calendar heading when selected day occurs on different year
-#: ../js/ui/calendar.js:711
-msgctxt "calendar heading"
-msgid "%A, %B %d, %Y"
-msgstr "%A, %B %d, %Y"
-
-#: ../js/ui/calendar.js:721
-msgid "Today"
-msgstr "Σήμερα"
-
-#: ../js/ui/calendar.js:725
-msgid "Tomorrow"
-msgstr "Αύριο"
-
-#: ../js/ui/calendar.js:734
-msgid "This week"
-msgstr "Αυτή η εβδομάδα"
-
-#: ../js/ui/calendar.js:742
-msgid "Next week"
-msgstr "Επόμενη εβδομάδα"
-
-#: ../js/ui/contactDisplay.js:65 ../js/ui/notificationDaemon.js:468
-#: ../js/ui/status/power.js:220 ../src/shell-app.c:350
-msgid "Unknown"
-msgstr "Άγνωστο"
-
-#: ../js/ui/contactDisplay.js:86 ../js/ui/userMenu.js:138
-msgid "Available"
-msgstr "Διαθέσιμος"
-
-#: ../js/ui/contactDisplay.js:91 ../js/ui/userMenu.js:147
-msgid "Away"
-msgstr "Μακρυά"
-
-#: ../js/ui/contactDisplay.js:95 ../js/ui/userMenu.js:141
-msgid "Busy"
-msgstr "Απασχολημένος"
-
-#: ../js/ui/contactDisplay.js:99
-msgid "Offline"
-msgstr "Εκτός σύνδεσης"
-
-#: ../js/ui/contactDisplay.js:146
-msgid "CONTACTS"
-msgstr "ΕΠΑΦΕΣ"
-
-#: ../js/ui/dash.js:174 ../js/ui/messageTray.js:1214
-msgid "Remove"
-msgstr "Απομάκρυνση"
-
-#: ../js/ui/dateMenu.js:99
-msgid "Date and Time Settings"
-msgstr "Ρυθμίσεις ώρας και ημερομηνίας"
-
-#: ../js/ui/dateMenu.js:125
-msgid "Open Calendar"
-msgstr "Άνοιγμα ημερολογίου"
-
-#. Translators: This is the time format with date used
-#. in 24-hour mode.
-#: ../js/ui/dateMenu.js:183
-msgid "%a %b %e, %R:%S"
-msgstr "%a %e %b, %R:%S"
-
-#: ../js/ui/dateMenu.js:184
-msgid "%a %b %e, %R"
-msgstr "%a %e %b, %R"
-
-#. Translators: This is the time format without date used
-#. in 24-hour mode.
-#: ../js/ui/dateMenu.js:188
-msgid "%a %R:%S"
-msgstr "%a %R%a %R:%S"
-
-#: ../js/ui/dateMenu.js:189
-msgid "%a %R"
-msgstr "%a %R"
-
-#. Translators: This is a time format with date used
-#. for AM/PM.
-#: ../js/ui/dateMenu.js:196
-msgid "%a %b %e, %l:%M:%S %p"
-msgstr "%a %e %b, %l:%M:%S %p"
-
-#: ../js/ui/dateMenu.js:197
-msgid "%a %b %e, %l:%M %p"
-msgstr "%a %e %b, %l:%M %p"
-
-#. Translators: This is a time format without date used
-#. for AM/PM.
-#: ../js/ui/dateMenu.js:201
-msgid "%a %l:%M:%S %p"
-msgstr "%a %l:%M:%S %p"
-
-#: ../js/ui/dateMenu.js:202
-msgid "%a %l:%M %p"
-msgstr "%a %l:%M %p"
-
-#. Translators: This is the date format to use when the calendar popup is
-#. * shown - it is shown just below the time in the shell (e.g. "Tue 9:29 AM").
-#.
-#: ../js/ui/dateMenu.js:213
-msgid "%A %B %e, %Y"
-msgstr "%A %B %e, %Y"
-
-#: ../js/ui/docDisplay.js:16
-msgid "RECENT ITEMS"
-msgstr "ΠΡΟΣΦΑΤΑ ΑΝΤΙΚΕΙΜΕΝΑ"
-
-#: ../js/ui/endSessionDialog.js:61
-#, c-format
-msgctxt "title"
-msgid "Log Out %s"
-msgstr "Αποσύνδεση %s"
-
-#: ../js/ui/endSessionDialog.js:62
-msgctxt "title"
-msgid "Log Out"
-msgstr "Αποσύνδεση"
-
-#: ../js/ui/endSessionDialog.js:63
-msgid "Click Log Out to quit these applications and log out of the system."
+"Διαφάνεια όταν ο κέρσορας είναι εκτός ταμπλό, μεταξύ 0 (διαφανές) και 100 "
+"(αδιαφανές)."
+
+#: ../panel/panel-preferences-dialog.glade.h:38
+msgid "Vertical"
+msgstr "Κάθετο"
+
+#: ../panel/panel-preferences-dialog.glade.h:39
+msgid "_Alpha:"
+msgstr "Άλφ_α:"
+
+#. I18N: label for the enter transparency slider
+#: ../panel/panel-preferences-dialog.glade.h:41
+msgid "_Enter:"
+msgstr "Ε_ισαγωγή:"
+
+#: ../panel/panel-preferences-dialog.glade.h:42
+msgid "_File:"
+msgstr "_Αρχείο:"
+
+#. I18N: label for the leave transparency slider
+#: ../panel/panel-preferences-dialog.glade.h:44
+msgid "_Leave:"
+msgstr "Απο_χώρηση:"
+
+#: ../panel/panel-preferences-dialog.glade.h:45
+msgid "_Lock panel"
+msgstr "Κ_λείδωμα ταμπλό"
+
+#: ../panel/panel-preferences-dialog.glade.h:46
+msgid "_Orientation:"
+msgstr "Προ_σανατολισμός:"
+
+#: ../panel/panel-preferences-dialog.glade.h:47
+msgid "_Size (pixels):"
+msgstr "Μέγεθος (pixel_s):"
+
+#: ../panel/panel-preferences-dialog.glade.h:48
+#: ../plugins/separator/separator-dialog.glade.h:8
+msgid "_Style:"
+msgstr "_Στυλ:"
+
+#: ../panel/panel-tic-tac-toe.c:123
+msgid "_New Game"
+msgstr "_Νέο παιχνίδι"
+
+#: ../panel/panel-tic-tac-toe.c:134
+msgid "_Level:"
+msgstr "_Επίπεδο:"
+
+#: ../panel/panel-tic-tac-toe.c:140
+msgid "Novice"
+msgstr "Αρχάριος"
+
+#: ../panel/panel-tic-tac-toe.c:141
+msgid "Intermediate"
+msgstr "Ενδιάμεσο"
+
+#: ../panel/panel-tic-tac-toe.c:142
+msgid "Experienced"
+msgstr "Ππεπειραμένος"
+
+#: ../panel/panel-tic-tac-toe.c:143
+msgid "Expert"
+msgstr "Έμπειρος"
+
+#: ../migrate/main.c:78
+msgid "Welcome to the first start of the panel"
+msgstr "Καλώς ήλθατε στην πρώτη εκτέλεση του ταμπλό"
+
+#: ../migrate/main.c:80
+msgid ""
+"Because the panel moved to a new system for storing the settings, it has to "
+"load a fresh initial configuration."
 msgstr ""
-"Πατήστε Αποσύνδεση για να κλείσετε αυτές τις εφαρμογές και να αποσυνδεθείτε "
-"από το σύστημα."
+"Επειδή το ταμπλό μετακινήθηκε σε ένα νέο σύστημα αποθήκευσης ρυθμίσεων, "
+"πρέπει να φορτωθεί μία καθαρή αρχική ρύθμιση."
 
-#: ../js/ui/endSessionDialog.js:65
-#, c-format
-msgid "%s will be logged out automatically in %d second."
-msgid_plural "%s will be logged out automatically in %d seconds."
-msgstr[0] "Ο/Η %s θα αποσυνδεθεί αυτόματα σε %d δευτερόλεπτο."
-msgstr[1] "Ο/Η %s θα αποσυνδεθεί αυτόματα σε %d δευτερόλεπτα."
+#: ../migrate/main.c:83
+msgid "Choose below which setup you want for the first startup."
+msgstr "Επιλέξτε παρακάτω ποια ρύθμιση θέλετε για την πρώτη εκκίνηση."
 
-#: ../js/ui/endSessionDialog.js:70
-#, c-format
-msgid "You will be logged out automatically in %d second."
-msgid_plural "You will be logged out automatically in %d seconds."
-msgstr[0] "Θα αποσυνδεθείτε αυτόματα σε %d δευτερόλεπτο."
-msgstr[1] "Θα αποσυνδεθείτε αυτόματα σε %d δευτερόλεπτα."
+#: ../migrate/main.c:89
+msgid "Migrate old config"
+msgstr "Μεταφορά παλαιών ρυθμίσεων"
 
-#: ../js/ui/endSessionDialog.js:74
-msgid "Logging out of the system."
-msgstr "Αποσύνδεση απο το σύστημα."
+#: ../migrate/main.c:90
+msgid "Migrate the old 4.6 configuration to Xfconf"
+msgstr "Μεταφορά των ρυθμίσεων της 4.6 στο Xfconf"
 
-#: ../js/ui/endSessionDialog.js:76
-msgctxt "button"
-msgid "Log Out"
-msgstr "Αποσύνδεση"
+#: ../migrate/main.c:95
+msgid "Use default config"
+msgstr "Χρήση _προκαθορισμένων ρυθμίσεων"
 
-#: ../js/ui/endSessionDialog.js:81
-msgctxt "title"
-msgid "Power Off"
-msgstr "Απενεργοποίηση"
+#: ../migrate/main.c:96
+msgid "Load the default configuration"
+msgstr "Φόρτωση των προκαθορισμένων ρυθμίσεων"
 
-#: ../js/ui/endSessionDialog.js:82
-msgid "Click Power Off to quit these applications and power off the system."
-msgstr ""
-"Πατήστε Τερματισμός για να κλείσετε αυτές τις εφαρμογές και να τερματίσετε "
-"το σύστημα."
+#: ../migrate/main.c:102
+msgid "One empty panel"
+msgstr "Ένα κενό ταμπλό"
 
-#: ../js/ui/endSessionDialog.js:84
-#, c-format
-msgid "The system will power off automatically in %d second."
-msgid_plural "The system will power off automatically in %d seconds."
-msgstr[0] "Το σύστημα θα τερματιστεί αυτόματα σε %d δευτερόλεπτο."
-msgstr[1] "Το σύστημα θα τερματιστεί αυτόματα σε %d δευτερόλεπτα."
+#: ../migrate/main.c:103
+msgid "Start with one empty panel"
+msgstr "Εκκίνηση με ένα κενό ταμπλό"
 
-#: ../js/ui/endSessionDialog.js:88
-msgid "Powering off the system."
-msgstr "Απενεργοποίηση του συστήματος"
+#: ../migrate/main.c:115
+msgid "Failed to migrate the old panel configuration"
+msgstr "Η μεταφορά των παλαιών ρυθμίσεων του ταμπλό απέτυχε"
 
-#: ../js/ui/endSessionDialog.js:90 ../js/ui/endSessionDialog.js:107
-msgctxt "button"
-msgid "Restart"
-msgstr "Επανεκκίνηση"
+#: ../migrate/main.c:125
+msgid "Failed to load the default configuration"
+msgstr "Η φόρτωση των προκαθορισμένων ρυθμίσεων απέτυχε"
 
-#: ../js/ui/endSessionDialog.js:92
-msgctxt "button"
-msgid "Power Off"
-msgstr "Απενεργοποίηση"
+#: ../plugins/actions/actions-dialog.glade.h:1
+#: ../plugins/actions/actions.desktop.in.h:1
+msgid "Action Buttons"
+msgstr "Κουμπιά ενεργειών "
 
-#: ../js/ui/endSessionDialog.js:98
-msgctxt "title"
-msgid "Restart"
-msgstr "Επανεκκίνηση"
+#: ../plugins/actions/actions-dialog.glade.h:2
+msgid "Button Actions"
+msgstr "Ενέργειες κουμπιών"
 
-#: ../js/ui/endSessionDialog.js:99
-msgid "Click Restart to quit these applications and restart the system."
-msgstr ""
-"Πατήστε Επανεκκίνηση για να κλείσετε αυτές τις εφαρμογές και να "
-"επανεκκινήσετε το σύστημα."
+#: ../plugins/actions/actions-dialog.glade.h:3
+msgid "_First button:"
+msgstr "Π_ρώτο κουμπί:"
 
-#: ../js/ui/endSessionDialog.js:101
-#, c-format
-msgid "The system will restart automatically in %d second."
-msgid_plural "The system will restart automatically in %d seconds."
-msgstr[0] "Το σύστημα θα επανεκκινήσει αυτόματα σε %d δευτερόλεπτο."
-msgstr[1] "Το σύστημα θα επανεκκινήσει αυτόματα σε %d δευτερόλεπτα."
+#: ../plugins/actions/actions-dialog.glade.h:4
+msgid "_Second button:"
+msgstr "_Δεύτερο κουμπί:"
 
-#: ../js/ui/endSessionDialog.js:105
-msgid "Restarting the system."
-msgstr "Επανεκκινείται το σύστημα"
-
-#: ../js/ui/extensionSystem.js:523
-msgid "Install"
-msgstr "Εγκατάσταση"
-
-#: ../js/ui/extensionSystem.js:527
-#, c-format
-msgid "Download and install '%s' from extensions.heartlenv.org?"
-msgstr "Λήψη και εγκατάσταση '%s' από το extensions.heartlenv.org;"
-
-#: ../js/ui/keyboard.js:325
-msgid "tray"
-msgstr "συρτάρι"
-
-#: ../js/ui/keyboard.js:547 ../js/ui/status/power.js:208
-msgid "Keyboard"
-msgstr "Πληκτρολόγιο"
-
-#: ../js/ui/lookingGlass.js:744
-msgid "No extensions installed"
-msgstr "Δεν υπάρχουν εγκατεστημένες επεκτάσεις"
-
-#. Translators: argument is an extension UUID.
-#: ../js/ui/lookingGlass.js:799
-#, c-format
-msgid "%s has not emitted any errors."
-msgstr "Το %s δεν έδωσε σφάλματα"
-
-#: ../js/ui/lookingGlass.js:805
-msgid "Hide Errors"
-msgstr "Απόκρυψη σφαλμάτων"
-
-#: ../js/ui/lookingGlass.js:809 ../js/ui/lookingGlass.js:860
-msgid "Show Errors"
-msgstr "Εμφάνιση σφαλμάτων"
-
-#: ../js/ui/lookingGlass.js:818
-msgid "Enabled"
-msgstr "Ενεργοποιημένο"
-
-#. translators:
-#. * The device has been disabled
-#: ../js/ui/lookingGlass.js:821 ../src/gvc/gvc-mixer-control.c:1093
+#: ../plugins/actions/actions.c:108
 msgid "Disabled"
 msgstr "Απενεργοποιημένο"
 
-#: ../js/ui/lookingGlass.js:823
-msgid "Error"
-msgstr "Σφάλμα"
-
-#: ../js/ui/lookingGlass.js:825
-msgid "Out of date"
-msgstr "Μη ενημερωμένο"
-
-#: ../js/ui/lookingGlass.js:827
-msgid "Downloading"
-msgstr "Γίνεται λήψη"
-
-#: ../js/ui/lookingGlass.js:848
-msgid "View Source"
-msgstr "Προβολή πηγής"
-
-#: ../js/ui/lookingGlass.js:854
-msgid "Web Page"
-msgstr "Ιστοσελίδα"
-
-#: ../js/ui/messageTray.js:1207
-msgid "Open"
-msgstr "Άνοιγμα"
-
-#: ../js/ui/messageTray.js:1224
-msgid "Unmute"
-msgstr "Άρση σίγασης"
-
-#: ../js/ui/messageTray.js:1224
-msgid "Mute"
-msgstr "Σίγαση"
-
-#: ../js/ui/messageTray.js:2439
-msgid "System Information"
-msgstr "Πληροφορίες Συστήματος"
-
-#: ../js/ui/networkAgent.js:143
-msgid "Connect"
-msgstr "Σύνδεση"
-
-#. Cisco LEAP
-#: ../js/ui/networkAgent.js:238 ../js/ui/networkAgent.js:250
-#: ../js/ui/networkAgent.js:277 ../js/ui/networkAgent.js:297
-#: ../js/ui/networkAgent.js:307
-msgid "Password: "
-msgstr "Κωδικός:"
-
-#. static WEP
-#: ../js/ui/networkAgent.js:243
-msgid "Key: "
-msgstr "Κλειδί:"
-
-#. TTLS and PEAP are actually much more complicated, but this complication
-#. is not visible here since we only care about phase2 authentication
-#. (and don't even care of which one)
-#: ../js/ui/networkAgent.js:275 ../js/ui/networkAgent.js:293
-msgid "Username: "
-msgstr "Όνομα χρήστη:"
-
-#: ../js/ui/networkAgent.js:281
-msgid "Identity: "
-msgstr "Ταυτότητα:"
-
-#: ../js/ui/networkAgent.js:283
-msgid "Private key password: "
-msgstr "Κωδικός ιδιωτικού κλειδιού:"
-
-#: ../js/ui/networkAgent.js:295
-msgid "Service: "
-msgstr "Υπηρεσία:"
-
-#: ../js/ui/networkAgent.js:324
-msgid "Authentication required by wireless network"
-msgstr "Απαιτείται πιστοποίηση από το ασύρματο δίκτυο"
-
-#: ../js/ui/networkAgent.js:325
-#, c-format
-msgid ""
-"Passwords or encryption keys are required to access the wireless network "
-"'%s'."
-msgstr ""
-"Κωδικοί ή κλειδιά κρυπτογράφησης απαιτούνται για πρόσβαση στο ασύρματο "
-"δίκτυο '%s'."
-
-#: ../js/ui/networkAgent.js:329
-msgid "Wired 802.1X authentication"
-msgstr "Πιστοποίηση ενσύρματου 802.1X "
-
-#: ../js/ui/networkAgent.js:331
-msgid "Network name: "
-msgstr "Όνομα δικτύου:"
-
-#: ../js/ui/networkAgent.js:336
-msgid "DSL authentication"
-msgstr "Πιστοποίηση DSL"
-
-#: ../js/ui/networkAgent.js:343
-msgid "PIN code required"
-msgstr "Απαιτείται κωδικός PIN"
-
-#: ../js/ui/networkAgent.js:344
-msgid "PIN code is needed for the mobile broadband device"
-msgstr "Ο κωδικός PIN απαιτείται για την συσκευή κινητής ευρυζωνικής"
-
-#: ../js/ui/networkAgent.js:345
-msgid "PIN: "
-msgstr "PIN: "
-
-#: ../js/ui/networkAgent.js:351
-msgid "Mobile broadband network password"
-msgstr "Κωδικός  δικτύου κινητής ευρυζωνικής"
-
-#: ../js/ui/networkAgent.js:352
-#, c-format
-msgid "A password is required to connect to '%s'."
-msgstr "Απαιτείται ένας κωδικός για σύνδεση στο '%s'"
-
-#: ../js/ui/overview.js:91
-msgid "Undo"
-msgstr "Αναίρεση"
-
-#: ../js/ui/overview.js:205
-msgid "Windows"
-msgstr "Παράθυρα"
-
-#: ../js/ui/overview.js:208
-msgid "Applications"
-msgstr "Εφαρμογές"
-
-#. Translators: this is the name of the dock/favorites area on
-#. the left of the overview
-#: ../js/ui/overview.js:230
-msgid "Dash"
-msgstr "Ταμπλό"
-
-#. TODO - _quit() doesn't really work on apps in state STARTING yet
-#: ../js/ui/panel.js:539
-#, c-format
-msgid "Quit %s"
-msgstr "Έξοδος %s"
-
-#. Translators: If there is no suitable word for "Activities"
-#. in your language, you can use the word for "Overview".
-#: ../js/ui/panel.js:575
-msgid "Activities"
-msgstr "Δραστηριότητες"
-
-#: ../js/ui/panel.js:967
-msgid "Top Bar"
-msgstr "Πάνω Μπάρα"
-
-#: ../js/ui/placeDisplay.js:120
-#, c-format
-msgid "Failed to unmount '%s'"
-msgstr "Αποτυχία αποπροσάρτησης '%s'"
-
-#: ../js/ui/placeDisplay.js:123
-msgid "Retry"
-msgstr "Προσπάθεια ξανά"
-
-#: ../js/ui/placeDisplay.js:163
-msgid "Connect to..."
-msgstr "Σύνδεση σε..."
-
-#: ../js/ui/placeDisplay.js:375
-msgid "PLACES & DEVICES"
-msgstr "ΤΟΠΟΘΕΣΙΕΣ & ΣΥΣΚΕΥΕΣ"
-
-#: ../js/ui/polkitAuthenticationAgent.js:74
-msgid "Authentication Required"
-msgstr "Απαιτείται πιστοποίηση"
-
-#: ../js/ui/polkitAuthenticationAgent.js:112
-msgid "Administrator"
-msgstr "Διαχειριστής"
-
-#: ../js/ui/polkitAuthenticationAgent.js:182
-msgid "Authenticate"
-msgstr "Πιστοποίηση"
-
-#. Translators: "that didn't work" refers to the fact that the
-#. * requested authentication was not gained; this can happen
-#. * because of an authentication error (like invalid password),
-#. * for instance.
-#: ../js/ui/polkitAuthenticationAgent.js:263
-msgid "Sorry, that didn't work. Please try again."
-msgstr "Συγνώμη, αυτό δεν λειτούργησε. Παρακαλώ προσπαθήστε ξανά."
-
-#: ../js/ui/polkitAuthenticationAgent.js:275
-msgid "Password:"
-msgstr "Κωδικός:"
-
-#. Translators: this MUST be either "toggle-switch-us"
-#. (for toggle switches containing the English words
-#. "ON" and "OFF") or "toggle-switch-intl" (for toggle
-#. switches containing "◯" and "|"). Other values will
-#. simply result in invisible toggle switches.
-#: ../js/ui/popupMenu.js:733
-msgid "toggle-switch-us"
-msgstr "toggle-switch-intl"
-
-#: ../js/ui/runDialog.js:209
-msgid "Please enter a command:"
-msgstr "Παρακαλώ εισάγετε μία εντολή:"
-
-#: ../js/ui/searchDisplay.js:340
-msgid "Searching..."
-msgstr "Αναζήτηση..."
-
-#: ../js/ui/searchDisplay.js:363
-msgid "No matching results."
-msgstr "Δεν βρέθηκαν αποτελέσματα."
-
-#: ../js/ui/shellEntry.js:30
-msgid "Copy"
-msgstr "Αντιγραφή"
-
-#: ../js/ui/shellEntry.js:35
-msgid "Paste"
-msgstr "Επικόλληση"
-
-#: ../js/ui/shellEntry.js:81
-msgid "Show Text"
-msgstr "Εμφάνιση κειμένου"
-
-#: ../js/ui/shellEntry.js:83
-msgid "Hide Text"
-msgstr "Απόκρυψη κειμένου"
-
-#: ../js/ui/shellMountOperation.js:285
-msgid "Wrong password, please try again"
-msgstr "Εσφαλμένος κωδικός, προσπαθήστε ξανά"
-
-#: ../js/ui/status/accessibility.js:56
-msgid "Zoom"
-msgstr "Εστίαση"
-
-#. let screenReader = this._buildItem(_("Screen Reader"), APPLICATIONS_SCHEMA,
-#. 'screen-reader-enabled');
-#. this.menu.addMenuItem(screenReader);
-#: ../js/ui/status/accessibility.js:67
-msgid "Screen Keyboard"
-msgstr "Πληκτρολόγιο οθόνης"
-
-#: ../js/ui/status/accessibility.js:71
-msgid "Visual Alerts"
-msgstr "Οπτικές ειδοποιήσεις"
-
-#: ../js/ui/status/accessibility.js:74
-msgid "Sticky Keys"
-msgstr "Κολλώδη πλήκτρα"
-
-#: ../js/ui/status/accessibility.js:77
-msgid "Slow Keys"
-msgstr "Αργά πλήκτρα"
-
-#: ../js/ui/status/accessibility.js:80
-msgid "Bounce Keys"
-msgstr "Πλήκτρα αναπήδησης"
-
-#: ../js/ui/status/accessibility.js:83
-msgid "Mouse Keys"
-msgstr "Πλήκτρα ποντικιού"
-
-#: ../js/ui/status/accessibility.js:87
-msgid "Universal Access Settings"
-msgstr "Ρυθμίσεις καθολικής πρόσβασης"
-
-#: ../js/ui/status/accessibility.js:121
-msgid "High Contrast"
-msgstr "Υψηλή αντίθεση"
-
-#: ../js/ui/status/accessibility.js:158
-msgid "Large Text"
-msgstr "Μεγάλο κείμενο"
-
-#: ../js/ui/status/bluetooth.js:39 ../js/ui/status/bluetooth.js:262
-#: ../js/ui/status/bluetooth.js:348 ../js/ui/status/bluetooth.js:382
-#: ../js/ui/status/bluetooth.js:422 ../js/ui/status/bluetooth.js:455
-msgid "Bluetooth"
-msgstr "Bluetooth"
-
-#: ../js/ui/status/bluetooth.js:52
-msgid "Visibility"
-msgstr "Ορατότητα"
-
-#: ../js/ui/status/bluetooth.js:66
-msgid "Send Files to Device..."
-msgstr "Αποστολή αρχείων σε συσκευή..."
-
-#: ../js/ui/status/bluetooth.js:67
-msgid "Set up a New Device..."
-msgstr "Ρύθμιση μιας νέας συσκευής..."
-
-#: ../js/ui/status/bluetooth.js:91
-msgid "Bluetooth Settings"
-msgstr "Ρυθμίσεις Bluetooth"
-
-#. TRANSLATORS: this means that bluetooth was disabled by hardware rfkill
-#: ../js/ui/status/bluetooth.js:111
-msgid "hardware disabled"
-msgstr "απενεργοποιημένο μέσω διακόπτη"
-
-#: ../js/ui/status/bluetooth.js:207
-msgid "Connection"
-msgstr "Σύνδεση"
-
-#: ../js/ui/status/bluetooth.js:218 ../js/ui/status/network.js:485
-msgid "disconnecting..."
-msgstr "αποσύνδεση..."
-
-#: ../js/ui/status/bluetooth.js:231 ../js/ui/status/network.js:491
-msgid "connecting..."
-msgstr "σύνδεση..."
-
-#: ../js/ui/status/bluetooth.js:249
-msgid "Send Files..."
-msgstr "Αποστολή αρχείων..."
-
-#: ../js/ui/status/bluetooth.js:254
-msgid "Browse Files..."
-msgstr "Εξερεύνηση αρχείων..."
-
-#: ../js/ui/status/bluetooth.js:263
-msgid "Error browsing device"
-msgstr "Σφάλμα περιήγησης συσκευής"
-
-#: ../js/ui/status/bluetooth.js:264
-#, c-format
-msgid "The requested device cannot be browsed, error is '%s'"
-msgstr ""
-"Δεν είναι δυνατή η περιήγηση στην αιτούμενη συσκευή, το σφάλμα είναι '%s'"
-
-#: ../js/ui/status/bluetooth.js:272
-msgid "Keyboard Settings"
-msgstr "Ρυθμίσεις πληκτρολογίου"
-
-#: ../js/ui/status/bluetooth.js:275
-msgid "Mouse Settings"
-msgstr "Ρυθμίσεις ποντικιού"
-
-#: ../js/ui/status/bluetooth.js:280 ../js/ui/status/volume.js:61
-msgid "Sound Settings"
-msgstr "Ρυθμίσεις ήχου"
-
-#: ../js/ui/status/bluetooth.js:383
-#, c-format
-msgid "Authorization request from %s"
-msgstr "Αίτηση διαπίστευσης από %s"
-
-#: ../js/ui/status/bluetooth.js:389
-#, c-format
-msgid "Device %s wants access to the service '%s'"
-msgstr "Η συσκευή %s επιθυμεί πρόσβαση στην υπηρεσία '%s'"
-
-#: ../js/ui/status/bluetooth.js:391
-msgid "Always grant access"
-msgstr "Να επιτρέπεται πάντα η πρόσβαση"
-
-#: ../js/ui/status/bluetooth.js:392
-msgid "Grant this time only"
-msgstr "Μόνο για αυτή τη φορά"
-
-#: ../js/ui/status/bluetooth.js:393 ../js/ui/telepathyClient.js:1203
-msgid "Reject"
-msgstr "Απόρριψη"
-
-#: ../js/ui/status/bluetooth.js:423
-#, c-format
-msgid "Pairing confirmation for %s"
-msgstr "Επιβεβαίωση σύζευξης για %s"
-
-#: ../js/ui/status/bluetooth.js:429 ../js/ui/status/bluetooth.js:463
-#, c-format
-msgid "Device %s wants to pair with this computer"
-msgstr "Η συσκευή %s επιθυμεί να συνδεθεί με αυτόν τον υπολογιστή"
-
-#: ../js/ui/status/bluetooth.js:430
-#, c-format
-msgid "Please confirm whether the PIN '%s' matches the one on the device."
-msgstr "Παρακαλώ επιβεβαιώστε αν το PIN '%s' ταιριάζει με αυτό στη συσκευή."
-
-#: ../js/ui/status/bluetooth.js:432
-msgid "Matches"
-msgstr "Ταιριάζει"
-
-#: ../js/ui/status/bluetooth.js:433
-msgid "Does not match"
-msgstr "Δεν ταιριάζει"
-
-#: ../js/ui/status/bluetooth.js:456
-#, c-format
-msgid "Pairing request for %s"
-msgstr "Αίτηση σύζευξης για %s"
-
-#: ../js/ui/status/bluetooth.js:464
-msgid "Please enter the PIN mentioned on the device."
-msgstr "Παρακαλώ εισάγετε το PIN που αναφέρεται στην συσκευή"
-
-#: ../js/ui/status/bluetooth.js:480
-msgid "OK"
-msgstr "ΟΚ"
-
-#: ../js/ui/status/keyboard.js:73
-msgid "Show Keyboard Layout"
-msgstr "Εμφάνιση διάταξης πληκτρολογίου"
-
-#: ../js/ui/status/keyboard.js:78
-msgid "Region and Language Settings"
-msgstr "Ρυθμίσεις  περιοχής και γλώσσας"
-
-#: ../js/ui/status/network.js:96
-msgid "<unknown>"
-msgstr "<άγνωστο>"
-
-#. Translators: this indicates that wireless or wwan is disabled by hardware killswitch
-#: ../js/ui/status/network.js:284
-msgid "disabled"
-msgstr "απενεργοποιημένο"
-
-#. Translators: this is for network devices that are physically present but are not
-#. under NetworkManager's control (and thus cannot be used in the menu)
-#: ../js/ui/status/network.js:483
-msgid "unmanaged"
-msgstr "μη διαχειριζόμενες"
-
-#. Translators: this is for network connections that require some kind of key or password
-#: ../js/ui/status/network.js:494
-msgid "authentication required"
-msgstr "απαιτείται πιστοποίηση"
-
-#. Translators: this is for devices that require some kind of firmware or kernel
-#. module, which is missing
-#: ../js/ui/status/network.js:504
-msgid "firmware missing"
-msgstr "έλλειψη firmware"
-
-#. Translators: this is for wired network devices that are physically disconnected
-#: ../js/ui/status/network.js:511
-msgid "cable unplugged"
-msgstr "καλώδιο αποσυνδέθηκε"
-
-#. Translators: this is for a network device that cannot be activated (for example it
-#. is disabled by rfkill, or it has no coverage
-#: ../js/ui/status/network.js:516
-msgid "unavailable"
-msgstr "Μη διαθέσιμος-η"
-
-#: ../js/ui/status/network.js:518
-msgid "connection failed"
-msgstr "αποτυχία σύνδεσης"
-
-#: ../js/ui/status/network.js:574 ../js/ui/status/network.js:1531
-msgid "More..."
-msgstr "Περισσότερα..."
-
-#. TRANSLATORS: this is the indication that a connection for another logged in user is active,
-#. and we cannot access its settings (including the name)
-#: ../js/ui/status/network.js:610 ../js/ui/status/network.js:1466
-msgid "Connected (private)"
-msgstr "Συνδεμένο (ιδιωτικό)"
-
-#: ../js/ui/status/network.js:688
-msgid "Auto Ethernet"
-msgstr "Αυτόματα Ethernet"
-
-#: ../js/ui/status/network.js:752
-msgid "Auto broadband"
-msgstr "Αυτόματα Ευρυζωνική"
-
-#: ../js/ui/status/network.js:755
-msgid "Auto dial-up"
-msgstr "Αυτόματα dial-up"
-
-#. TRANSLATORS: this the automatic wireless connection name (including the network name)
-#: ../js/ui/status/network.js:877 ../js/ui/status/network.js:1478
-#, c-format
-msgid "Auto %s"
-msgstr "Αυτόματα %s"
-
-#: ../js/ui/status/network.js:879
-msgid "Auto bluetooth"
-msgstr "Αυτόματα bluetooth"
-
-#: ../js/ui/status/network.js:1480
-msgid "Auto wireless"
-msgstr "Αυτόματα ασύρματο"
-
-#: ../js/ui/status/network.js:1574
-msgid "Enable networking"
-msgstr "Ενεργοποίηση δικτύωσης"
-
-#: ../js/ui/status/network.js:1586
-msgid "Wired"
-msgstr "Ενσύρματο"
-
-#: ../js/ui/status/network.js:1597
-msgid "Wireless"
-msgstr "Ασύρματο"
-
-#: ../js/ui/status/network.js:1607
-msgid "Mobile broadband"
-msgstr "Κινήτη ευρυζωνική"
-
-#: ../js/ui/status/network.js:1617
-msgid "VPN Connections"
-msgstr "Συνδέσεις VPN"
-
-#: ../js/ui/status/network.js:1628
-msgid "Network Settings"
-msgstr "Ρυθμίσεις Δικτύου"
-
-#: ../js/ui/status/network.js:1765
-msgid "Connection failed"
-msgstr "Αποτυχία σύνδεσης"
-
-#: ../js/ui/status/network.js:1766
-msgid "Activation of network connection failed"
-msgstr "Αποτυχία ενεργοποίησης σύνδεσης δικτύου"
-
-#: ../js/ui/status/network.js:2016
-msgid "Networking is disabled"
-msgstr "Η δικτύωση είναι απενεργοποιημένη"
-
-#: ../js/ui/status/network.js:2143
-msgid "Network Manager"
-msgstr "Διαχειριστής δικτύου"
-
-#: ../js/ui/status/power.js:79
-msgid "Power Settings"
-msgstr "Ρυθμίσεις τροφοδοσίας"
-
-#. 0 is reported when UPower does not have enough data
-#. to estimate battery life
-#: ../js/ui/status/power.js:100
-msgid "Estimating..."
-msgstr "Υπολογισμός..."
-
-#: ../js/ui/status/power.js:107
-#, c-format
-msgid "%d hour remaining"
-msgid_plural "%d hours remaining"
-msgstr[0] "%d ώρα απομένει"
-msgstr[1] "%d ώρες απομένουν"
-
-#. TRANSLATORS: this is a time string, as in "%d hours %d minutes remaining"
-#: ../js/ui/status/power.js:110
-#, c-format
-msgid "%d %s %d %s remaining"
-msgstr "Απομένουν %d %s %d %s "
-
-#: ../js/ui/status/power.js:112
-msgid "hour"
-msgid_plural "hours"
-msgstr[0] "ώρα"
-msgstr[1] "ώρες"
-
-#: ../js/ui/status/power.js:112
-msgid "minute"
-msgid_plural "minutes"
-msgstr[0] "λεπτό"
-msgstr[1] "λεπτά"
-
-#: ../js/ui/status/power.js:115
-#, c-format
-msgid "%d minute remaining"
-msgid_plural "%d minutes remaining"
-msgstr[0] "%d λεπτό απομένει"
-msgstr[1] "%d λεπτά απομένουν"
-
-#: ../js/ui/status/power.js:118 ../js/ui/status/power.js:191
-#, c-format
-msgctxt "percent of battery remaining"
-msgid "%d%%"
-msgstr "%d%%"
-
-#: ../js/ui/status/power.js:198
-msgid "AC adapter"
-msgstr "Τροφοδοσία AC"
-
-#: ../js/ui/status/power.js:200
-msgid "Laptop battery"
-msgstr "Μπαταρία φορητού"
-
-#: ../js/ui/status/power.js:202
-msgid "UPS"
-msgstr "UPS"
-
-#: ../js/ui/status/power.js:204
-msgid "Monitor"
-msgstr "Οθόνη"
-
-#: ../js/ui/status/power.js:206
-msgid "Mouse"
-msgstr "Ποντίκι"
-
-#: ../js/ui/status/power.js:210
-msgid "PDA"
-msgstr "PDA"
-
-#: ../js/ui/status/power.js:212
-msgid "Cell phone"
-msgstr "Κινητό"
-
-#: ../js/ui/status/power.js:214
-msgid "Media player"
-msgstr "Αναπαραγωγή πολυμέσων"
-
-#: ../js/ui/status/power.js:216
-msgid "Tablet"
-msgstr "Ταμπλέτα"
-
-#: ../js/ui/status/power.js:218
-msgid "Computer"
-msgstr "Υπολογιστής"
-
-#: ../js/ui/status/volume.js:41
-msgid "Volume"
-msgstr "Ένταση ήχου"
-
-#: ../js/ui/status/volume.js:53
-msgid "Microphone"
-msgstr "Μικρόφωνο"
-
-#. We got the TpContact
-#. FIXME: We don't have a 'chat room' icon (bgo #653737) use
-#. system-users for now as Empathy does.
-#: ../js/ui/telepathyClient.js:258
-msgid "Invitation"
-msgstr "Πρόσκληση"
-
-#. We got the TpContact
-#: ../js/ui/telepathyClient.js:326
-msgid "Call"
-msgstr "Κλήση"
-
-#. We got the TpContact
-#: ../js/ui/telepathyClient.js:356
-msgid "File Transfer"
-msgstr "Μεταφορά αρχείου"
-
-#: ../js/ui/telepathyClient.js:437
-msgid "Subscription request"
-msgstr "Αίτηση συνδρομής"
-
-#: ../js/ui/telepathyClient.js:473
-msgid "Connection error"
-msgstr "Σφάλμα σύνδεσης"
-
-#: ../js/ui/telepathyClient.js:740
-#, c-format
-msgid "%s is online."
-msgstr "Ο/η %s είναι συνδεδεμένος"
-
-#: ../js/ui/telepathyClient.js:745
-#, c-format
-msgid "%s is offline."
-msgstr "Ο/η %s είναι αποσυνδεδεμένος"
-
-#: ../js/ui/telepathyClient.js:748
-#, c-format
-msgid "%s is away."
-msgstr "Ο/η '%s' είναι εκτός. "
-
-#: ../js/ui/telepathyClient.js:751
-#, c-format
-msgid "%s is busy."
-msgstr "%s είναι απασχολημένος/η"
-
-#. Translators: this is a time format string followed by a date.
-#. If applicable, replace %X with a strftime format valid for your
-#. locale, without seconds.
-#: ../js/ui/telepathyClient.js:985
-#, no-c-format
-msgid "Sent at <b>%X</b> on <b>%A</b>"
-msgstr "Στάλθηκε στις  <b>%A</b> και ώρα  <b>%X</b>"
-
-#. Translators: this is a time format in the style of "Wednesday, May 25",
-#. shown when you get a chat message in the same year.
-#: ../js/ui/telepathyClient.js:991
-#, no-c-format
-msgid "Sent on <b>%A</b>, <b>%B %d</b>"
-msgstr "Στάλθηκε την <b>%A</b>, <b>%d %B</b>"
-
-#. Translators: this is a time format in the style of "Wednesday, May 25, 2012",
-#. shown when you get a chat message in a different year.
-#: ../js/ui/telepathyClient.js:996
-#, no-c-format
-msgid "Sent on <b>%A</b>, <b>%B %d</b>, %Y"
-msgstr "Στάλθηκε την <b>%A</b>, <b>%d %B</b>, %Y"
-
-#. Translators: this is the other person changing their old IM name to their new
-#. IM name.
-#: ../js/ui/telepathyClient.js:1038
-#, c-format
-msgid "%s is now known as %s"
-msgstr "Ο/η %s είναι τώρα γνωστός ως %s"
-
-#. translators: argument is a room name like
-#. * room@jabber.org for example.
-#: ../js/ui/telepathyClient.js:1147
-#, c-format
-msgid "Invitation to %s"
-msgstr "Πρόσκληση στο δωμάτιο %s"
-
-#. translators: first argument is the name of a contact and the second
-#. * one the name of a room. "Alice is inviting you to join room@jabber.org
-#. * for example.
-#: ../js/ui/telepathyClient.js:1155
-#, c-format
-msgid "%s is inviting you to join %s"
-msgstr "Ο/η %s σας προσκαλεί να μπείτε στο δωμάτιο %s"
-
-#: ../js/ui/telepathyClient.js:1157 ../js/ui/telepathyClient.js:1247
-#: ../js/ui/telepathyClient.js:1351
-msgid "Decline"
-msgstr "Άρνηση"
-
-#: ../js/ui/telepathyClient.js:1158 ../js/ui/telepathyClient.js:1248
-#: ../js/ui/telepathyClient.js:1352
-msgid "Accept"
-msgstr "Αποδοχή"
-
-#. translators: argument is a contact name like Alice for example.
-#: ../js/ui/telepathyClient.js:1191
-#, c-format
-msgid "Video call from %s"
-msgstr "Βιντεοκλήση από %s"
-
-#. translators: argument is a contact name like Alice for example.
-#: ../js/ui/telepathyClient.js:1194
-#, c-format
-msgid "Call from %s"
-msgstr "Κλήση από %s"
-
-#. translators: this is a button label (verb), not a noun
-#: ../js/ui/telepathyClient.js:1205
-msgid "Answer"
-msgstr "Απάντηση"
-
-#. To translators: The first parameter is
-#. * the contact's alias and the second one is the
-#. * file name. The string will be something
-#. * like: "Alice is sending you test.ogg"
-#.
-#: ../js/ui/telepathyClient.js:1241
-#, c-format
-msgid "%s is sending you %s"
-msgstr "Ο/η %s σας στέλνει %s"
-
-#. To translators: The parameter is the contact's alias
-#: ../js/ui/telepathyClient.js:1316
-#, c-format
-msgid "%s would like permission to see when you are online"
-msgstr "Ο/η %s ζητάει την άδεια σας για να βλέπει πότε είστε συνδεδεμένος"
-
-#: ../js/ui/telepathyClient.js:1414
-msgid "Network error"
-msgstr "Σφάλμα δικτύου"
-
-#: ../js/ui/telepathyClient.js:1416
-msgid "Authentication failed"
-msgstr "Απαιτείται πιστοποίηση"
-
-#: ../js/ui/telepathyClient.js:1418
-msgid "Encryption error"
-msgstr "Σφάλμα κρυπτογράφησης"
-
-#: ../js/ui/telepathyClient.js:1420
-msgid "Certificate not provided"
-msgstr "Δεν υπάρχει πιστοποιητικό"
-
-#: ../js/ui/telepathyClient.js:1422
-msgid "Certificate untrusted"
-msgstr "Μη έμπιστο πιστοποιητικό"
-
-#: ../js/ui/telepathyClient.js:1424
-msgid "Certificate expired"
-msgstr "Ληγμένο πιστοποιητικό"
-
-#: ../js/ui/telepathyClient.js:1426
-msgid "Certificate not activated"
-msgstr "Το πιστοποιητικό δεν ενεργοποιήθηκε"
-
-#: ../js/ui/telepathyClient.js:1428
-msgid "Certificate hostname mismatch"
-msgstr "Αταίριαστο όνομα κεντρικού υπολογιστή πιστοποιητικού"
-
-#: ../js/ui/telepathyClient.js:1430
-msgid "Certificate fingerprint mismatch"
-msgstr "Αταίριαστο αποτύπωμα πιστοποιητικού"
-
-#: ../js/ui/telepathyClient.js:1432
-msgid "Certificate self-signed"
-msgstr "Αυτο-υπογεγραμμένο πιστοποιητικό"
-
-#: ../js/ui/telepathyClient.js:1434
-msgid "Status is set to offline"
-msgstr "Η κατάσταση έχει ορισθεί σε αποσυνδεδεμένος"
-
-#: ../js/ui/telepathyClient.js:1436
-msgid "Encryption is not available"
-msgstr "Δεν υπάρχει διαθέσιμη κρυπτογράφηση"
-
-#: ../js/ui/telepathyClient.js:1438
-msgid "Certificate is invalid"
-msgstr "Το πιστοποιητικό δεν είναι έγκυρο"
-
-#: ../js/ui/telepathyClient.js:1440
-msgid "Connection has been refused"
-msgstr "Άρνηση σύνδεσης"
-
-#: ../js/ui/telepathyClient.js:1442
-msgid "Connection can't be established"
-msgstr "Δεν είναι δυνατή η σύνδεση"
-
-#: ../js/ui/telepathyClient.js:1444
-msgid "Connection has been lost"
-msgstr "Η σύνδεση χάθηκε"
-
-#: ../js/ui/telepathyClient.js:1446
-msgid "This resource is already connected to the server"
-msgstr "Αυτός ο πόρος είναι ήδη συνδεδεμένος με τον εξυπηρετητή"
-
-#: ../js/ui/telepathyClient.js:1448
-msgid ""
-"Connection has been replaced by a new connection using the same resource"
-msgstr ""
-"Η σύνδεση έχει αντικατασταθεί από μια νέα σύνδεση που χρησιμοποιεί τον ίδιο "
-"πόρο"
-
-#: ../js/ui/telepathyClient.js:1450
-msgid "The account already exists on the server"
-msgstr "Ο λογαριασμός υπάρχει ήδη στον διακομιστή"
-
-#: ../js/ui/telepathyClient.js:1452
-msgid "Server is currently too busy to handle the connection"
-msgstr "Ο διακομιστής είναι πολύ απασχολημένος ώστε να χειριστεί την σύνδεση"
-
-#: ../js/ui/telepathyClient.js:1454
-msgid "Certificate has been revoked"
-msgstr "Το πιστοποιητικό έχει ανακληθεί"
-
-#: ../js/ui/telepathyClient.js:1456
-msgid ""
-"Certificate uses an insecure cipher algorithm or is cryptographically weak"
-msgstr ""
-"Το πιστοποιητικό χρησιμοποιεί ένα μη ασφαλή αλγόριθμο αποτυπώματος ή είναι "
-"αδύναμα κρυπτογραφημένο"
-
-#: ../js/ui/telepathyClient.js:1458
-msgid ""
-"The length of the server certificate, or the depth of the server certificate "
-"chain, exceed the limits imposed by the cryptography library"
-msgstr ""
-"Το μέγεθος του πιστοποιητικού του εξυπηρετητή, ή το βάθος της αλυσίδας "
-"πιστοποιητικού του εξυπηρετητή υπερβαίνει τα όρια που επιτρέπει η βιβλιοθήκη "
-"κρυπτογραφίας"
-
-#. translators: argument is the account name, like
-#. * name@jabber.org for example.
-#: ../js/ui/telepathyClient.js:1467
-#, c-format
-msgid "Connection to %s failed"
-msgstr "Η σύνδεση στο %s απέτυχε"
-
-#: ../js/ui/telepathyClient.js:1476
-msgid "Reconnect"
-msgstr "Επανασύνδεση"
-
-#: ../js/ui/telepathyClient.js:1477
-msgid "Edit account"
-msgstr "Επεξεργασία λογαριασμού"
-
-#: ../js/ui/telepathyClient.js:1523
-msgid "Unknown reason"
-msgstr "Άγνωστος λόγος"
-
-#: ../js/ui/userMenu.js:144
-msgid "Hidden"
-msgstr "Αόρατος"
-
-#: ../js/ui/userMenu.js:150
-msgid "Idle"
-msgstr "Αδρανής"
-
-#: ../js/ui/userMenu.js:153
-msgid "Unavailable"
-msgstr "Μη διαθέσιμος-η"
-
-#: ../js/ui/userMenu.js:589 ../js/ui/userMenu.js:593 ../js/ui/userMenu.js:663
-msgid "Power Off..."
-msgstr "Απενεργοποίηση..."
-
-#: ../js/ui/userMenu.js:625
-msgid "Notifications"
-msgstr "Ειδοποιήσεις"
-
-#: ../js/ui/userMenu.js:633
-msgid "Online Accounts"
-msgstr "Διαδικτυακοί λογαριασμοί"
-
-#: ../js/ui/userMenu.js:637
-msgid "System Settings"
-msgstr "Ρυθμίσεις συστήματος"
-
-#: ../js/ui/userMenu.js:644
+#: ../plugins/actions/actions.c:109
+msgid "Log Out Dialog"
+msgstr "Διάλογος αποσύνδεσης"
+
+#: ../plugins/actions/actions.c:110
+msgid "Log Out"
+msgstr "Αποσύνδεση"
+
+#: ../plugins/actions/actions.c:111
 msgid "Lock Screen"
 msgstr "Κλείδωμα οθόνης"
 
-#: ../js/ui/userMenu.js:649
-msgid "Switch User"
-msgstr "Αλλαγή χρήστη"
+#: ../plugins/actions/actions.c:112
+msgid "Shut Down"
+msgstr "Τερματισμός"
 
-#: ../js/ui/userMenu.js:654
-msgid "Log Out..."
-msgstr "Αποσύνδεση..."
+#: ../plugins/actions/actions.c:113
+msgid "Restart"
+msgstr "Επανεκκίνηση"
 
-#: ../js/ui/userMenu.js:682
-msgid "Your chat status will be set to busy"
-msgstr "Η κατάσταση συνομιλίας σας θα ορισθεί σε απασχολημένος"
+#: ../plugins/actions/actions.c:114
+msgid "Suspend"
+msgstr "Αναστολή"
 
-#: ../js/ui/userMenu.js:683
+#: ../plugins/actions/actions.c:115
+msgid "Hibernate"
+msgstr "Αδρανοποίηση"
+
+#: ../plugins/actions/actions.desktop.in.h:2
+msgid "Log out, lock or other system actions"
+msgstr "Αποσύνδεση, κλείδωμα οθόνης και άλλες ενέργειες συστήματος"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:1
+#: ../plugins/clock/clock-dialog.glade.h:3
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:1
+#: ../plugins/pager/pager-dialog.glade.h:1
+#: ../plugins/separator/separator-dialog.glade.h:1
+#: ../plugins/systray/systray-dialog.glade.h:1
+#: ../plugins/tasklist/tasklist-dialog.glade.h:2
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:1
+msgid "Appearance"
+msgstr "Εμφάνιση"
+
+#. I18N: default tooltip of the application menu
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:2
+#: ../plugins/applicationsmenu/applicationsmenu.c:38
+#: ../plugins/applicationsmenu/applicationsmenu.desktop.in.h:1
+msgid "Applications Menu"
+msgstr "Μενού εφαρμογών"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:3
+msgid "Button _title:"
+msgstr "Τίτλος _κουμπιού:"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:4
+msgid "Ed_it Menu"
+msgstr "Επε_ξεργασία μενού"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:5
+msgid "Menu File"
+msgstr "Αρχείο μενού"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:6
+msgid "Menu _file:"
+msgstr "Αρ_χείο μενού:"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:7
+msgid "Select A Menu File"
+msgstr "Επιλογή αρχείου μενού"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:8
 msgid ""
-"Notifications are now disabled, including chat messages. Your online status "
-"has been adjusted to let others know that you might not see their messages."
+"Select this option to show the generic application name in the menu, for "
+"example \"File Manager\" instead of \"Thunar\""
 msgstr ""
-"Οι ειδοποιήσεις είναι τώρα απενεργοποιημένες, όπως και τα μηνύματα chat. Η "
-"κατάσταση σας έχει  ορισθεί έτσι ώστε να γίνεται γνωστό ότι πιθανόν να μην "
-"δείτε τα μηνύματα τους,"
+"Επιλέξτε αυτή την επιλογή για να δείτε τα γενικά ονόματα εφαρμογών στο "
+"μενού, για παράδειγμα \"Διαχειριστής αρχείων\" αντί του \"Thunar\""
 
-#. Translators: this is the text displayed
-#. in the search entry when no search is
-#. active; it should not exceed ~30
-#. characters.
-#: ../js/ui/viewSelector.js:121
-msgid "Type to search..."
-msgstr "Πληκτρολογήστε για αναζήτηση..."
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:9
+msgid "Show application d_escription in tooltip"
+msgstr "Εμφάνιση της περιγραφής της εφαρμογής υπό μορφή υπόδει_ξης"
 
-#: ../js/ui/viewSelector.js:142 ../src/shell-util.c:244
-msgid "Search"
-msgstr "Αναζήτηση"
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:10
+msgid "Show generic application n_ames"
+msgstr "Εμφάνιση γενικού ονόματος εφ_αρμογών"
 
-#: ../js/ui/windowAttentionHandler.js:35
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:11
+msgid "Show ic_ons in menu"
+msgstr "Εμφάνιση εικον_ιδίων στο μενού"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:12
+msgid "Use c_ustom menu file:"
+msgstr "Χρήση _προσαρμοσμένου αρχείου μενού"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:13
+msgid "Use the _default menu"
+msgstr "Χρήση του προκαθορισμένου αρχείου _μενού"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:14
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:9
+msgid "_Icon:"
+msgstr "Ε_ικονίδιο:"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:15
+msgid "_Show button title"
+msgstr "_Εμφάνιση τίτλου στο κουμπί"
+
+#: ../plugins/applicationsmenu/applicationsmenu.c:475
+#: ../plugins/directorymenu/directorymenu.c:369
+msgid "Select An Icon"
+msgstr "Επιλογή εικονιδίου"
+
+#: ../plugins/applicationsmenu/applicationsmenu.c:513
+#: ../plugins/applicationsmenu/applicationsmenu.c:754
+#: ../plugins/launcher/launcher.c:2264
 #, c-format
-msgid "'%s' is ready"
-msgstr "Το '%s' είναι έτοιμο"
+msgid "Failed to execute command \"%s\"."
+msgstr "Αδυναμία εκτέλεσης της εντολής \"%s\"."
 
-#. translators:
-#. * The number of sound outputs on a particular device
-#: ../src/gvc/gvc-mixer-control.c:1100
+#: ../plugins/applicationsmenu/applicationsmenu.c:1010
+msgid "No applications found"
+msgstr "Δε βρέθηκαν εφαρμογές"
+
+#: ../plugins/applicationsmenu/applicationsmenu.c:1033
+msgid "Failed to load the applications menu"
+msgstr "Η φόρτωση του μενού της εφαρμογής απέτυχε"
+
+#: ../plugins/applicationsmenu/applicationsmenu.desktop.in.h:2
+msgid "Show a menu containing categories of installed applications"
+msgstr "Εμφάνιση μενού με τις κατηγορίες των εγκατεστημένων εφαρμογών"
+
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:27
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:27
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:27
+msgid "Usage:"
+msgstr "Χρήση:"
+
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:28
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:28
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:28
+msgid "OPTION"
+msgstr "ΕΠΙΛΟΓΗ"
+
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:30
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:30
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:30
+msgid "Options:"
+msgstr "Επιλογές:"
+
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:31
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:31
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:31
+msgid "Popup menu at current mouse position"
+msgstr "Αναδυόμενο μενού στην τρέχουσα θέση του ποντικιού"
+
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:32
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:32
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:32
+msgid "Show help options"
+msgstr "Εμφάνιση επιλογών βοήθειας"
+
+#: ../plugins/clock/clock.c:146
+msgid "Week %V"
+msgstr "Εβδομάδα %V"
+
+#: ../plugins/clock/clock.c:407
+msgid "Failed to execute clock command"
+msgstr "Αποτυχία εκτέλεσης της εντολής ρολογιού"
+
+#: ../plugins/clock/clock.c:719
+msgid "Custom Format"
+msgstr "Προσαρμοσμένη μορφή"
+
+#: ../plugins/clock/clock-dialog.glade.h:1
+msgid "24-_hour clock"
+msgstr "_Χρήση 24ώρου ρολογιού"
+
+#: ../plugins/clock/clock-dialog.glade.h:2
+msgid "Analog"
+msgstr "Αναλογικό"
+
+#: ../plugins/clock/clock-dialog.glade.h:4
+msgid "Binary"
+msgstr "Δυαδικό"
+
+#: ../plugins/clock/clock-dialog.glade.h:5
+#: ../plugins/clock/clock.desktop.in.h:1
+msgid "Clock"
+msgstr "Ρολόι"
+
+#: ../plugins/clock/clock-dialog.glade.h:6
+msgid "Clock Options"
+msgstr "Επιλογές ρολογιού"
+
+#: ../plugins/clock/clock-dialog.glade.h:7
+msgid "Digital"
+msgstr "Ψηφιακό"
+
+#: ../plugins/clock/clock-dialog.glade.h:8
+msgid "Display _seconds"
+msgstr "Προβολή _δεπτερολέπτων"
+
+#: ../plugins/clock/clock-dialog.glade.h:9
+msgid "F_ormat:"
+msgstr "Μ_ορφοποίηση:"
+
+#. I18N: the fuzziness the *precision* of the fuzzy clock. Time steps of 5, 15 or parts of the day.
+#: ../plugins/clock/clock-dialog.glade.h:11
+msgid "F_uzziness:"
+msgstr "Α_σάφεια:"
+
+#: ../plugins/clock/clock-dialog.glade.h:12
+msgid "Fl_ash time separators"
+msgstr "Ο δι_αχωριστής ώρας αναβοσβήνει"
+
+#: ../plugins/clock/clock-dialog.glade.h:13
+msgid "Fuzzy"
+msgstr "Ασαφές"
+
+#: ../plugins/clock/clock-dialog.glade.h:14
+msgid "LCD"
+msgstr "LCD"
+
+#: ../plugins/clock/clock-dialog.glade.h:15
+msgid "Sho_w AM/PM"
+msgstr "Προ_βολή ΠΜ/ΜΜ"
+
+#: ../plugins/clock/clock-dialog.glade.h:16
+#: ../plugins/systray/systray-dialog.glade.h:5
+msgid "Show _frame"
+msgstr "Εμ_φάνιση πλαισίου"
+
+#: ../plugins/clock/clock-dialog.glade.h:17
+msgid "Show _inactive dots"
+msgstr "Εμφάν_ιση ανενεργών κουκκίδων"
+
+#: ../plugins/clock/clock-dialog.glade.h:18
+msgid "Show gri_d"
+msgstr "Εμφάνιση πλέγμα_τος"
+
+#: ../plugins/clock/clock-dialog.glade.h:20
+#, no-c-format
+msgid ""
+"The format describes the date and time parts to insert into the file name. "
+"For example, %Y will be substituted with the year, %m with the month and %d "
+"with the day. See the documentation of the date utility for additional "
+"information."
+msgstr ""
+"Αυτή η μορφή εξηγεί τα τμήματα της ημερομηνίας και της ώρας που μπορούν να "
+"εισαχθούν στο όνομα του αρχείου. Για παράδειγμα, το %Y αντικαθίσταται με το "
+"έτος, %m με το μήνα και %d με την ημέρα. Δείτε την τεκμηρίωση της εντολής "
+"date για περισσότερες πληροφορίες."
+
+#: ../plugins/clock/clock-dialog.glade.h:21
+msgid "True _binary clock"
+msgstr "Αληθινά _δυαδικό ρολόι"
+
+#: ../plugins/clock/clock-dialog.glade.h:22
+msgid "_Layout:"
+msgstr "_Διάταξη:"
+
+#: ../plugins/clock/clock-dialog.glade.h:23
+msgid "_Tooltip format:"
+msgstr "Μορφή υπο_δείξεων:"
+
+#: ../plugins/clock/clock-fuzzy.c:86
+msgid "Night"
+msgstr "Νύχτα"
+
+#: ../plugins/clock/clock-fuzzy.c:87
+msgid "Early morning"
+msgstr "Νωρίς το πρωί"
+
+#: ../plugins/clock/clock-fuzzy.c:88
+msgid "Morning"
+msgstr "Πρωί"
+
+#: ../plugins/clock/clock-fuzzy.c:89
+msgid "Almost noon"
+msgstr "Σχεδόν μεσημέρι"
+
+#: ../plugins/clock/clock-fuzzy.c:90
+msgid "Noon"
+msgstr "Μεσημέρι"
+
+#: ../plugins/clock/clock-fuzzy.c:91
+msgid "Afternoon"
+msgstr "Απόγευμα"
+
+#: ../plugins/clock/clock-fuzzy.c:92
+msgid "Evening"
+msgstr "Βράδυ"
+
+#: ../plugins/clock/clock-fuzzy.c:93
+msgid "Late evening"
+msgstr "Αργά το βράδυ"
+
+#. I18N: %0 will be replaced with the preceding hour, %1 with
+#. * the comming hour
+#: ../plugins/clock/clock-fuzzy.c:100
+#, no-c-format
+msgid "%0 o'clock"
+msgstr "%0 ακριβώς"
+
+#: ../plugins/clock/clock-fuzzy.c:101
+#, no-c-format
+msgid "five past %0"
+msgstr "%0 και πέντε"
+
+#: ../plugins/clock/clock-fuzzy.c:102
+#, no-c-format
+msgid "ten past %0"
+msgstr "%0 και δέκα"
+
+#: ../plugins/clock/clock-fuzzy.c:103
+#, no-c-format
+msgid "quarter past %0"
+msgstr "%0 και τέταρτο"
+
+#: ../plugins/clock/clock-fuzzy.c:104
+#, no-c-format
+msgid "twenty past %0"
+msgstr "%0 και είκοσι"
+
+#: ../plugins/clock/clock-fuzzy.c:105
+#, no-c-format
+msgid "twenty five past %0"
+msgstr "είκοσι πέντε παρά %0"
+
+#: ../plugins/clock/clock-fuzzy.c:106
+#, no-c-format
+msgid "half past %0"
+msgstr "%0 και μισή"
+
+#: ../plugins/clock/clock-fuzzy.c:107
+#, no-c-format
+msgid "twenty five to %1"
+msgstr "%1 παρά είκοσι πέντε"
+
+#: ../plugins/clock/clock-fuzzy.c:108
+#, no-c-format
+msgid "twenty to %1"
+msgstr "%1 παρά είκοσι"
+
+#: ../plugins/clock/clock-fuzzy.c:109
+#, no-c-format
+msgid "quarter to %1"
+msgstr "%1 παρά τέταρτο"
+
+#: ../plugins/clock/clock-fuzzy.c:110
+#, no-c-format
+msgid "ten to %1"
+msgstr "%1 παρά δέκα"
+
+#: ../plugins/clock/clock-fuzzy.c:111
+#, no-c-format
+msgid "five to %1"
+msgstr "%1 παρά πέντε"
+
+#: ../plugins/clock/clock-fuzzy.c:112
+#, no-c-format
+msgid "%1 o'clock"
+msgstr "%1 ακριβώς"
+
+#. I18N: some languages have a singular form for the first hour,
+#. * other languages should just use the same strings as above
+#: ../plugins/clock/clock-fuzzy.c:119
+#, no-c-format
+msgctxt "one"
+msgid "%0 o'clock"
+msgstr "%0 ακριβώς"
+
+#: ../plugins/clock/clock-fuzzy.c:120
+#, no-c-format
+msgctxt "one"
+msgid "five past %0"
+msgstr "%0 και πέντε"
+
+#: ../plugins/clock/clock-fuzzy.c:121
+#, no-c-format
+msgctxt "one"
+msgid "ten past %0"
+msgstr "%0 και δέκα"
+
+#: ../plugins/clock/clock-fuzzy.c:122
+#, no-c-format
+msgctxt "one"
+msgid "quarter past %0"
+msgstr "%0 και τέταρτο"
+
+#: ../plugins/clock/clock-fuzzy.c:123
+#, no-c-format
+msgctxt "one"
+msgid "twenty past %0"
+msgstr "%0 και είκοσι"
+
+#: ../plugins/clock/clock-fuzzy.c:124
+#, no-c-format
+msgctxt "one"
+msgid "twenty five past %0"
+msgstr "είκοσι πέντε παρά %0"
+
+#: ../plugins/clock/clock-fuzzy.c:125
+#, no-c-format
+msgctxt "one"
+msgid "half past %0"
+msgstr "%0 και μισή"
+
+#: ../plugins/clock/clock-fuzzy.c:126
+#, no-c-format
+msgctxt "one"
+msgid "twenty five to %1"
+msgstr "%1 παρά είκοσι πέντε"
+
+#: ../plugins/clock/clock-fuzzy.c:127
+#, no-c-format
+msgctxt "one"
+msgid "twenty to %1"
+msgstr "%1 παρά είκοσι"
+
+#: ../plugins/clock/clock-fuzzy.c:128
+#, no-c-format
+msgctxt "one"
+msgid "quarter to %1"
+msgstr "%1 παρά τέταρτο"
+
+#: ../plugins/clock/clock-fuzzy.c:129
+#, no-c-format
+msgctxt "one"
+msgid "ten to %1"
+msgstr "%1 παρά δέκα"
+
+#: ../plugins/clock/clock-fuzzy.c:130
+#, no-c-format
+msgctxt "one"
+msgid "five to %1"
+msgstr "%1 παρά πέντε"
+
+#: ../plugins/clock/clock-fuzzy.c:131
+#, no-c-format
+msgctxt "one"
+msgid "%1 o'clock"
+msgstr "%1 ακριβώς"
+
+#: ../plugins/clock/clock-fuzzy.c:136
+msgid "one"
+msgstr "ένα"
+
+#: ../plugins/clock/clock-fuzzy.c:137
+msgid "two"
+msgstr "δύο"
+
+#: ../plugins/clock/clock-fuzzy.c:138
+msgid "three"
+msgstr "τρία"
+
+#: ../plugins/clock/clock-fuzzy.c:139
+msgid "four"
+msgstr "τέσσερα"
+
+#: ../plugins/clock/clock-fuzzy.c:140
+msgid "five"
+msgstr "πέντε"
+
+#: ../plugins/clock/clock-fuzzy.c:141
+msgid "six"
+msgstr "έξι"
+
+#: ../plugins/clock/clock-fuzzy.c:142
+msgid "seven"
+msgstr "επτά"
+
+#: ../plugins/clock/clock-fuzzy.c:143
+msgid "eight"
+msgstr "οχτώ"
+
+#: ../plugins/clock/clock-fuzzy.c:144
+msgid "nine"
+msgstr "εννιά"
+
+#: ../plugins/clock/clock-fuzzy.c:145
+msgid "ten"
+msgstr "δέκα"
+
+#: ../plugins/clock/clock-fuzzy.c:146
+msgid "eleven"
+msgstr "έντεκα"
+
+#: ../plugins/clock/clock-fuzzy.c:147
+msgid "twelve"
+msgstr "δώδεκα"
+
+#: ../plugins/clock/clock.desktop.in.h:2
+msgid "What time is it?"
+msgstr "Τι ώρα είναι;"
+
+#: ../plugins/directorymenu/directorymenu.c:550
 #, c-format
-msgid "%u Output"
-msgid_plural "%u Outputs"
-msgstr[0] "%u έξοδος"
-msgstr[1] "%u έξοδοι"
+msgid "Failed to launch application \"%s\""
+msgstr "Απέτυχε η εκκίνηση της εφαρμογής \"%s\""
 
-#. translators:
-#. * The number of sound inputs on a particular device
-#: ../src/gvc/gvc-mixer-control.c:1110
+#: ../plugins/directorymenu/directorymenu.c:581
 #, c-format
-msgid "%u Input"
-msgid_plural "%u Inputs"
-msgstr[0] "%u είσοδος"
-msgstr[1] "%u είσοδοι"
+msgid "Failed to query content type for \"%s\""
+msgstr "Αποτυχία αναζήτησης τύπου περιεχομένου για το \"%s\""
 
-#: ../src/gvc/gvc-mixer-control.c:1408
-msgid "System Sounds"
-msgstr "Ήχοι συστήματος"
-
-#: ../src/main.c:508
-msgid "Print version"
-msgstr "Εκτύπωση έκδοσης"
-
-#: ../src/main.c:514
-msgid "Mode used by GDM for login screen"
-msgstr "Λειτουργία που απαιτείται από το GDM για την οθόνη σύνδεσης."
-
-#: ../src/shell-app.c:567
+#: ../plugins/directorymenu/directorymenu.c:590
 #, c-format
-msgid "Failed to launch '%s'"
-msgstr "Αποτυχία εκκίνησης '%s'"
+msgid "No default application found for \"%s\""
+msgstr "Δεν βρέθηκε προκαθορισμένη εφαρμογή για το \"%s\""
 
-#: ../src/shell-mobile-providers.c:80
-msgid "United Kingdom"
-msgstr "Ηνωμένο Βασίλειο"
+#: ../plugins/directorymenu/directorymenu.c:605
+#, c-format
+msgid "Failed to launch default application for \"%s\""
+msgstr "Η εκτέλεση της προκαθορισμένης εφαρμογής για το \"%s\" απέτυχε"
 
-#: ../src/shell-mobile-providers.c:526
+#: ../plugins/directorymenu/directorymenu.c:696
+#, c-format
+msgid "Failed to execute the preferred application for category \"%s\""
+msgstr "Απέτυχε η εκτέλεση της προτιμώμενης εφαρμογής για την κατηγορία \"%s\""
+
+#: ../plugins/directorymenu/directorymenu.c:769
+msgid "Open Folder"
+msgstr "Άνοιγμα φακέλου"
+
+#: ../plugins/directorymenu/directorymenu.c:780
+msgid "Open in Terminal"
+msgstr "Εκτέλεση σε τερματικό"
+
+#: ../plugins/directorymenu/directorymenu.desktop.in.h:1
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:2
+msgid "Directory Menu"
+msgstr "Μενού καταλόγου"
+
+#: ../plugins/directorymenu/directorymenu.desktop.in.h:2
+msgid "Show a directory tree in a menu"
+msgstr "Εμφάνιση δέντρου καταλόγων σε μενού"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:3
+msgid ""
+"Enter a list of patterns that will be used to determine which files are "
+"visible in a directory. If you specify more than one pattern here, the list "
+"items must be separated with semicolons (e.g. *.txt;*.doc)."
+msgstr ""
+"Εισαγωγή λίστας μοτίβων τα οποία θα χρησιμοποιηθούν στον προσδιορισμό ποια "
+"αρχεία θα είναι εμφανή σε έναν κατάλογο. Εάν προσδιορίσετε παραπάνω από ένα "
+"μοτίβο εδώ, η λίστα των αντικειμένων θα πρέπει να διαχωρίζεται με "
+"ερωτηματικό (π.χ.*.txt;*.doc)."
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:4
+#: ../plugins/tasklist/tasklist-dialog.glade.h:5
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:5
+msgid "Filtering"
+msgstr "Φιλτράρισμα"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:5
+msgid "Select A Directory"
+msgstr "Επιλογή φακέλου"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:6
+msgid "Show _hidden files"
+msgstr "Εμφάνιση _κρυφών αρχείων"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:7
+msgid "_Base Directory:"
+msgstr "_Βασικός κατάλογος:"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:8
+msgid "_File Pattern:"
+msgstr "_Μοτίβο αρχείου:"
+
+#: ../plugins/launcher/launcher.c:1555
+msgid "Unnamed Item"
+msgstr "Αντικείμενο χωρίς όνομα"
+
+#: ../plugins/launcher/launcher.c:1696
+msgid "No items"
+msgstr "Δε βρέθηκαν αντικείμενα"
+
+#: ../plugins/launcher/launcher-dialog.c:740
+msgid "If you delete an item, it will be permanently removed"
+msgstr "Εάν διαγράψετε ένα αντικείμενο, θα αφαιρεθεί οριστικά"
+
+#: ../plugins/launcher/launcher-dialog.c:741
+#, c-format
+msgid "Are you sure you want to remove \"%s\"?"
+msgstr "Είστε σίγουροι ότι θέλετε να διαγράψετε το \"%s\";"
+
+#: ../plugins/launcher/launcher-dialog.c:742
+msgid "Unnamed item"
+msgstr "Αντικείμενο χωρίς όνομα"
+
+#: ../plugins/launcher/launcher-dialog.c:787
+msgid "Failed to open desktop item editor"
+msgstr ""
+"Δεν ήταν δυνατό το άνοιγμα του επεξεργαστή αντικειμένου επιφάνειας εργασίας"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:2
+msgid "Add a new empty item"
+msgstr "Προσθήκη ενός νέου κενού αντικειμένου"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:3
+msgid "Add one or more existing items to the launcher"
+msgstr "Προσθήκη ενός ή περισσοτέρων αντικειμένων στον εκκινητή."
+
+#: ../plugins/launcher/launcher-dialog.glade.h:4
+msgid "Advanced"
+msgstr "Για προχωρημένους"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:5
 msgid "Default"
-msgstr "Προεπιλογή"
+msgstr "Προκαθορισμένο"
 
-#: ../src/shell-polkit-authentication-agent.c:334
-msgid "Authentication dialog was dismissed by the user"
-msgstr "Το παράθυρο πιστοποίησης έκλεισε από τον χρήστη"
+#: ../plugins/launcher/launcher-dialog.glade.h:6
+msgid "Delete the currently selected item"
+msgstr "Διαγραφή του επιλεγμένου αντικειμένου"
 
-#. Translators: this is the same string as the one found in
-#. * nautilus
-#: ../src/shell-util.c:89
-msgid "Home"
-msgstr "Προσωπικός φάκελος"
+#: ../plugins/launcher/launcher-dialog.glade.h:7
+msgid "Disable t_ooltips"
+msgstr "Απενεργοποίηση συμβ_ουλών εργαλείων"
 
-#. Translators: this is the same string as the one found in
-#. * nautilus
-#: ../src/shell-util.c:98
-msgid "File System"
-msgstr "Σύστημα αρχείων"
+#: ../plugins/launcher/launcher-dialog.glade.h:8
+msgid "East"
+msgstr "Ανατολικά"
 
-#. Translators: the first string is the name of a gvfs
-#. * method, and the second string is a path. For
-#. * example, "Trash: some-directory". It means that the
-#. * directory called "some-directory" is in the trash.
-#.
-#: ../src/shell-util.c:294
+#: ../plugins/launcher/launcher-dialog.glade.h:11
+msgid "Inside Button"
+msgstr "Εσωτερικό κουμπί"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:12
+#: ../plugins/launcher/launcher.desktop.in.h:1
+msgid "Launcher"
+msgstr "Εκκινητής"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:15
+msgid "North"
+msgstr "Βορράς"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:16
+msgid ""
+"Select this option to disable the tooltips when moving over the panel button "
+"or menu items."
+msgstr ""
+"Επιλέξτε αυτή την επιλογή και θα απενεργοποιηθούν οι συμβουλές όταν "
+"μεταφέρονται τα πλήκτρα του ταμπλό ή τα αντικείμενα του μενού."
+
+#: ../plugins/launcher/launcher-dialog.glade.h:17
+msgid "Select this option to move the clicked menu item to the panel."
+msgstr ""
+"Επιλέξτε αυτή την επιλογή για να μετακινήσετε τα επιλεγμένα αντικείμενα του "
+"μενού στο ταμπλό."
+
+#: ../plugins/launcher/launcher-dialog.glade.h:18
+msgid "Show _label instead of icon"
+msgstr "Εμφάνιση ετι_κέτας αντί εικονιδίου"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:19
+msgid "Show last _used item in panel"
+msgstr "Εμφάνιση του τελευταίου _χρησιμοποιημένου αντικειμένου στο ταμπλό"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:20
+msgid "South"
+msgstr "Νότια"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:21
+msgid "West"
+msgstr "Δυτικά"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:22
+msgid "_Arrow button position:"
+msgstr "_Θέση κουμπιού βέλους:"
+
+#: ../plugins/launcher/launcher.desktop.in.h:2
+msgid "Program launcher with optional menu"
+msgstr "Εκκινητής προγραμμάτων με προαιρετικό μενού"
+
+#: ../plugins/pager/pager.c:354 ../plugins/pager/pager-dialog.glade.h:8
+msgid "Workspace _Settings..."
+msgstr "Ρυθμίσεις _χώρου εργασίας..."
+
+#: ../plugins/pager/pager.c:429
+msgid "Unable to open the workspace settings"
+msgstr "Αδυναμία ανοίγματος των ρυθμίσεων των χώρων εργασίας"
+
+#: ../plugins/pager/pager-buttons.c:555 ../plugins/windowmenu/windowmenu.c:854
 #, c-format
-msgid "%1$s: %2$s"
-msgstr "%1$s: %2$s"
+msgid "Workspace %d"
+msgstr "Χώρος εργασίας %d"
 
-#~ msgid ""
-#~ "GNOME Shell extensions have a uuid property; this key lists extensions "
-#~ "which should not be loaded."
+#: ../plugins/pager/pager-dialog.glade.h:2
+#: ../plugins/tasklist/tasklist-dialog.glade.h:3
+msgid "Behaviour"
+msgstr "Συμπεριφορά"
+
+#: ../plugins/pager/pager-dialog.glade.h:3
+msgid "Number of _rows:"
+msgstr "Αριθμός γ_ραμμών:"
+
+#: ../plugins/pager/pager-dialog.glade.h:4
+msgid ""
+"Show a miniature view of the workspace with rectangles for the visible "
+"windows"
+msgstr ""
+"Προβολή μικρογραφίας του χώρου εργασίας με ορθογώνια για τα ορατά παράθυρα"
+
+#: ../plugins/pager/pager-dialog.glade.h:5
+msgid "Show mi_niature view"
+msgstr "Προβολή μικρογρα_φιών"
+
+#: ../plugins/pager/pager-dialog.glade.h:6
+msgid "Switch workspaces using the mouse _wheel"
+msgstr "Εναλλαγή χώρων εργασίας με χρήση της ροδέλα_ς του ποντικιού"
+
+#: ../plugins/pager/pager-dialog.glade.h:7
+#: ../plugins/pager/pager.desktop.in.h:2
+msgid "Workspace Switcher"
+msgstr "Εναλλάκτης χώρων εργασίας"
+
+#: ../plugins/pager/pager.desktop.in.h:1
+msgid "Switch between virtual desktops"
+msgstr "Εναλλαγή μεταξύ εικονικών επιφανειών εργασίας"
+
+#: ../plugins/separator/separator-dialog.glade.h:2
+msgid "Dots"
+msgstr "Τελίτσες"
+
+#: ../plugins/separator/separator-dialog.glade.h:3
+msgid "Handle"
+msgstr "Χειρολαβή"
+
+#: ../plugins/separator/separator-dialog.glade.h:4
+msgid "New Line"
+msgstr "Νέα γραμμή"
+
+#: ../plugins/separator/separator-dialog.glade.h:5
+#: ../plugins/separator/separator.desktop.in.h:2
+msgid "Separator"
+msgstr "Διαχωριστικό"
+
+#: ../plugins/separator/separator-dialog.glade.h:6
+msgid "Transparent"
+msgstr "Διαφανές"
+
+#: ../plugins/separator/separator-dialog.glade.h:7
+msgid "_Expand"
+msgstr "_Ανάπτυξη"
+
+#: ../plugins/separator/separator.desktop.in.h:1
+msgid "Adds a separator or space between panel items"
+msgstr "Προσθέτει ένα κενό ή μια γραμμή μεταξύ των αντικειμένων του ταμπλό"
+
+#: ../plugins/showdesktop/showdesktop.c:193
+msgid "Restore the minimized windows"
+msgstr "Επαναφορά των ελαχιστοποιημένων παραθύρων"
+
+#: ../plugins/showdesktop/showdesktop.c:194
+msgid "Minimize all open windows and show the desktop"
+msgstr "Ελαχιστοποίηση όλων των παραθύρων και εμφάνιση της επιφάνειας εργασίας"
+
+#: ../plugins/showdesktop/showdesktop.desktop.in.h:1
+msgid "Hide all windows and show the desktop"
+msgstr "Απόκρυψη των παραθύρων και εμφάνιση της επιφάνειας εργασίας"
+
+#: ../plugins/showdesktop/showdesktop.desktop.in.h:2
+msgid "Show Desktop"
+msgstr "Εμφάνιση επιφάνειας εργασίας"
+
+#: ../plugins/systray/systray.c:382
+msgid "Unable to start the notification area"
+msgstr "Δεν ήταν δυνατή η εκκίνηση της περιοχής ειδοποιήσεων"
+
+#. create fake error and show it
+#: ../plugins/systray/systray.c:850
+msgid ""
+"Most likely another widget took over the function of a notification area. "
+"This area will be unused."
+msgstr ""
+"Το πιο πιθανό ένα άλλο widget να δέσμευσε την λειτουργικότητα της περιοχής "
+"ειδοποιήσεων. Αυτή η περιοχή δεν θα χρησιμοποιηθεί."
+
+#: ../plugins/systray/systray.c:852
+msgid "The notification area lost selection"
+msgstr "Ο διαχειριστής πλαισίου συστήματος έχασε την επιλογή"
+
+#: ../plugins/systray/systray.c:1005
+msgid "Are you sure you want to clear the list of known applications?"
+msgstr "Σίγουρα θέλετε να καθαρίσετε τη λίστα γνωστών εφαρμογών;"
+
+#: ../plugins/systray/systray-dialog.glade.h:2
+msgid "C_lear Known Applications"
+msgstr "Καθαρισμός _γνωστών εφαρμογών"
+
+#: ../plugins/systray/systray-dialog.glade.h:3
+msgid "Known Applications"
+msgstr "Γνωστές εφαρμογές"
+
+#: ../plugins/systray/systray-dialog.glade.h:4
+#: ../plugins/systray/systray.desktop.in.h:2
+msgid "Notification Area"
+msgstr "Περιοχή ειδοποιήσεων"
+
+#: ../plugins/systray/systray-dialog.glade.h:6
+msgid "_Maximum icon size (px):"
+msgstr "_Μέγιστο μέγεθος εικονιδίου (px):"
+
+#: ../plugins/systray/systray-manager.c:406
+#, c-format
+msgid "Failed to acquire manager selection for screen %d"
+msgstr "Η λήψη επιλογής διαχειριστή απέτυχε για την οθόνη %d"
+
+#: ../plugins/systray/systray.desktop.in.h:1
+msgid "Area where notification icons appear"
+msgstr "Περιοχή που εμφανίζονται τα εικονίδια ειδοποίησης"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:1
+msgid "Always"
+msgstr "Πάντα"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:4
+msgid "D_raw window frame when hovering a button"
+msgstr ""
+"Σχ_εδίαση του περιγράμματος ενός παραθύρου όταν περνάει πάνω από ένα πλήκτρο"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:6
+msgid "Group title and timestamp"
+msgstr "Ομαδοποίηση τίτλου και χρόνου"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:7
+msgid "Group title and window title"
+msgstr "Ομαδοποίηση τίτλου και τίτλου παραθύρου"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:8
+msgid "Never"
+msgstr "Ποτέ"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:9
+msgid "Restore minimized windows to current _workspace"
+msgstr "Επαναφορά ελα_χιστοποίησης των παραθύρων στο τωρινό χώρο εργασίας"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:10
+msgid "Ro_tate buttons in vertical panel"
+msgstr "Περιστροφή κουμπιών στο κάθετο _ταμπλό"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:11
+msgid "Show _flat buttons"
+msgstr "Χρήση ε_πίπεδων κουμπιών"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:12
+msgid "Show _handle"
+msgstr "Εμφάνιση _χειρολαβής"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:13
+msgid "Show button _labels"
+msgstr "Εμφάνιση ετικετών στα _κουμπιά"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:14
+msgid "Show only _minimized windows"
+msgstr "Εμφάνιση μόνο ελα_χιστοποιημένων εφαρμογών"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:15
+msgid "Show windows from _all workspaces or viewports"
+msgstr "Προβολή παραθύρων από ό_λους τους χώρους εργασίας ή παράθυρα προβολής"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:16
+msgid "Show windows from all mo_nitors"
+msgstr "Προβολή παραθύρων από όλα τα mo_nitor"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:17
+msgid "Sorting _order:"
+msgstr "Σειρά τ_αξινόμησης:"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:18
+msgid "Timestamp"
+msgstr "Χρονοσήμανση"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:19
+msgid "When space is limited"
+msgstr "Όταν ο χώρος είναι περιορισμένος"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:20
+#: ../plugins/tasklist/tasklist.desktop.in.h:2
+msgid "Window Buttons"
+msgstr "Κουμπιά παραθύρων"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:21
+msgid "Window _grouping:"
+msgstr "Ομ_αδοποίηση παραθύρων:"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:22
+msgid "Window title"
+msgstr "Τίτλος παραθύρου"
+
+#: ../plugins/tasklist/tasklist-widget.c:3012
+msgid "Mi_nimize All"
+msgstr "Ελα_χιστοποίηση όλων"
+
+#: ../plugins/tasklist/tasklist-widget.c:3021
+msgid "Un_minimize All"
+msgstr "Αποε_λαχιστοποίηση όλων"
+
+#: ../plugins/tasklist/tasklist-widget.c:3027
+msgid "Ma_ximize All"
+msgstr "Με_γιστοποίηση όλων"
+
+#: ../plugins/tasklist/tasklist-widget.c:3036
+msgid "_Unmaximize All"
+msgstr "Α_πομεγιστοποίηση όλων"
+
+#: ../plugins/tasklist/tasklist-widget.c:3046
+msgid "_Close All"
+msgstr "_Κλείσιμο Όλων"
+
+#: ../plugins/tasklist/tasklist.desktop.in.h:1
+msgid "Switch between open windows using buttons"
+msgstr "Χρήση πλήκτρων για την εναλλαγή μεταξύ των ανοιχτών παραθύρων"
+
+#: ../plugins/windowmenu/windowmenu.c:652
+msgid "Desktop"
+msgstr "Επιφάνεια εργασίας"
+
+#: ../plugins/windowmenu/windowmenu.c:1243
+msgid "No Windows"
+msgstr "Δεν υπάρχουν παράθυρα"
+
+#: ../plugins/windowmenu/windowmenu.c:1258
+msgid "Urgent Windows"
+msgstr "Επείγοντα παράθυρα"
+
+#: ../plugins/windowmenu/windowmenu.c:1300
+msgid "Add Workspace"
+msgstr "Προσθήκη χώρου εργασίας"
+
+#: ../plugins/windowmenu/windowmenu.c:1320
+#, c-format
+msgid "Remove Workspace \"%s\""
+msgstr "Αφαίρεση του χώρου εργασίας \"%s\""
+
+#: ../plugins/windowmenu/windowmenu.c:1322
+#, c-format
+msgid "Remove Workspace %d"
+msgstr "Διαγραφή χώρου εργασίας %d"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:2
+msgid "Arrow"
+msgstr "Βέλος"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:3
+msgid "Button layout:"
+msgstr "Διάταξη κουμπιών:"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:4
+msgid "Enable _urgency notification"
+msgstr "Ενεργοποίηση επ_είγουσας ειδοποίησης"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:6
+msgid "Icon"
+msgstr "Εικονίδιο"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:7
+msgid "Show windows from _all workspaces"
+msgstr "Προβολή παραθύρων από ό_λους τους χώρους εργασίας"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:8
+msgid "Show workspace _names"
+msgstr "Προβολή ο_νομάτων χώρων εργασίας"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:9
+msgid "Show workspace a_ctions"
+msgstr "Εμφάνιση εν_εργειών στους χώρους εργασίας"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:10
+#: ../plugins/windowmenu/windowmenu.desktop.in.h:2
+msgid "Window Menu"
+msgstr "Μενού παραθύρων"
+
+#: ../plugins/windowmenu/windowmenu.desktop.in.h:1
+msgid "Switch between open windows using a menu"
+msgstr "Χρήση μενού για την εναλλαγή μεταξύ των ανοιχτών παραθύρων"
+
+#~ msgid "Create a new launcher on the Xfce Panel"
+#~ msgstr "Δημιουργία μίας νέας εκκίνησης προγράμματος στο ταμπλό του Χfce"
+
+#~ msgid "Panel Preferences"
+#~ msgstr "Προτιμήσεις ταμπλό"
+
+#~ msgid "_Xfce Panel"
+#~ msgstr "Ταμπλό του Xfce"
+
+#~ msgid "Transparency"
+#~ msgstr "Διαφάνεια"
+
+#~ msgid "Transparency when the pointer is not hovering the panel."
+#~ msgstr "Διαφανές όταν ο κέρσορας δεν περνάει πάνω από το ταμπλό."
+
+#~ msgid "Xfce Panel"
+#~ msgstr "Ταμπλό του Xfce"
+
+#~ msgid "Xfce Menu"
+#~ msgstr "Μενού του Xfce"
+
+#~ msgid "Failed to remove the desktop file from the config directory"
 #~ msgstr ""
-#~ "Οι επεκτάσεις του GNOME Shell έχουν μια ιδιότητα uuid. Αυτό το κλειδί "
-#~ "απαριθμεί ποιες επεκτάσεις δεν θα πρέπει να φορτωθούν."
+#~ "Αποτυχία αφαίρεσης του αρχείου επιφάνειας από τον κατάλογο ρυθμίσεων"
 
-#~ msgid "Localization Settings"
-#~ msgstr "Ρυθμίσεις γλώσσας"
+#~ msgid "_Number of rows:"
+#~ msgstr "_Αριθμός γραμμών:"
 
-#~ msgid "You're now connected to mobile broadband connection '%s'"
-#~ msgstr "Είστε συνδεμένοι στο δίκτυο κινητής ευρυζωνικής '%s'"
+#~ msgid "_Restart"
+#~ msgstr "_Επανεκκίνηση"
 
-#~ msgid "You're now connected to wireless network '%s'"
-#~ msgstr "Είστε συνδεμένοι στο ασύρματο δίκτυο '%s'"
-
-#~ msgid "You're now connected to wired network '%s'"
-#~ msgstr "Είστε συνδεμένοι στο ενσύρματο δίκτυο '%s'"
-
-#~ msgid "You're now connected to VPN network '%s'"
-#~ msgstr "Είστε συνδεμένοι στο VPN δίκτυο '%s'"
-
-#~ msgid "%s has finished starting"
-#~ msgstr "Το %s ολοκλήρωσε την εκκίνηση "
-
-#~ msgid "Less than a minute ago"
-#~ msgstr "Λιγότερο από ένα λεπτό πριν"
-
-#~ msgid "%d minute ago"
-#~ msgid_plural "%d minutes ago"
-#~ msgstr[0] "%d λεπτό πριν"
-#~ msgstr[1] "%d λεπτά πριν"
-
-#~ msgid "%d hour ago"
-#~ msgid_plural "%d hours ago"
-#~ msgstr[0] "%d ώρα πριν"
-#~ msgstr[1] "%d ώρες πριν"
-
-#~ msgid "%d day ago"
-#~ msgid_plural "%d days ago"
-#~ msgstr[0] "%d ημέρα πριν"
-#~ msgstr[1] "%d ημέρες πριν"
-
-#~ msgid "%d week ago"
-#~ msgid_plural "%d weeks ago"
-#~ msgstr[0] "%d εβδομάδα πριν"
-#~ msgstr[1] "%d εβδομάδες πριν"
-
-#~ msgid "Home Folder"
-#~ msgstr "Προσωπικός φάκελος"
-
-#, fuzzy
-#~ msgid "No such application"
-#~ msgstr "Εφαρμογές"
-
-#, fuzzy
-#~ msgid "Shut Down"
-#~ msgstr "Τερματισμός..."
-
-#~ msgid "Screen Reader"
-#~ msgstr "Αναγνώστης οθόνης"
-
-#~ msgid "Clip the crosshairs at the center"
-#~ msgstr "Περικοπή του σκοπεύτρου στο κέντρο"
-
-#~ msgid "Color of the crosshairs"
-#~ msgstr "Χρώμα του σκόπευτρου"
-
-#~ msgid ""
-#~ "Determines the length of the vertical and horizontal lines that make up "
-#~ "the crosshairs."
-#~ msgstr ""
-#~ "Καθορίζει το μήκος των κάθετων και οριζόντιων γραμμών που απαρτίζουν το "
-#~ "σκόπευτρο"
-
-#~ msgid "Enable lens mode"
-#~ msgstr "Ενεργοποίηση λειτουργίας φακού"
-
-#~ msgid ""
-#~ "Enables/disables display of crosshairs centered on the magnified mouse "
-#~ "sprite."
-#~ msgstr ""
-#~ "Ενεργοποιεί/απενεργοποιεί την εμφάνιση σκοπεύτρου στο δείκτη μεγέθυνσης "
-#~ "του ποντικιού"
-
-#~ msgid "Length of the crosshairs"
-#~ msgstr "Μήκος του σκοπεύτρου"
-
-#~ msgid "Magnification factor"
-#~ msgstr "Παράγοντας μεγέθυνσης"
-
-#~ msgid "Mouse Tracking Mode"
-#~ msgstr "Λειτουργία Mouse Tracking "
-
-#~ msgid "Opacity of the crosshairs"
-#~ msgstr "Αδιαφάνεια του σκοπεύτρου"
-
-#~ msgid "Screen position"
-#~ msgstr "Θέση οθόνης"
-
-#~ msgid "Scroll magnified contents beyond the edges of the desktop"
-#~ msgstr ""
-#~ "Κύλιση σε μεγεθυμένα περιεχόμενα που βρίσκονται έξω από την επιφάνεια"
-
-#~ msgid "Show or hide crosshairs"
-#~ msgstr "Προβολή ή απόκρυψη του σκοπεύτρου"
-
-#~ msgid "Show or hide the magnifier"
-#~ msgstr "Προβολή ή απόκρυψη του μεγεθυντή"
-
-#~ msgid "Show or hide the magnifier and all of its zoom regions."
-#~ msgstr "Προβολή ή απόκρυψη του μεγεθυντή και όλων των περιοχών μεγέθυνσης"
-
-#~ msgid ""
-#~ "The color of the the vertical and horizontal lines that make up the "
-#~ "crosshairs."
-#~ msgstr ""
-#~ "Το χρώμα των κάθετων και οριζόντιων γραμμών που απαρτίζουν το σκόπευτρο"
-
-#~ msgid "Thickness of the crosshairs"
-#~ msgstr "Πάχος των γραμμών σκοπεύτρου"
-
-#~ msgid ""
-#~ "Width of the vertical and horizontal lines that make up the crosshairs."
-#~ msgstr ""
-#~ " Το πάχος των κάθετων και οριζόντιων γραμμών που απαρτίζουν το σκόπευτρο"
-
-#~ msgid "PREFERENCES"
-#~ msgstr "ΠΡΟΤΙΜΗΣΕΙΣ"
-
-#~ msgid "Shut Down..."
-#~ msgstr "Τερματισμός..."
-
-#~ msgid "Bluetooth Agent"
-#~ msgstr "Υποστήριξη Bluetooth"
-
-#~ msgid "Search your computer"
-#~ msgstr "Αναζήτηση στον υπολογιστή σας"
-
-#~ msgid ""
-#~ "Can't add a new workspace because maximum workspaces limit has been "
-#~ "reached."
-#~ msgstr ""
-#~ "Αδυναμία προσθήκης νέου χώρου εργασίας επειδή έχετε φτάσει το μέγιστο "
-#~ "αριθμό χώρων εργασίας."
-
-#~ msgid "Can't remove the first workspace."
-#~ msgstr "Δεν είναι δυνατή η αφαίρεση του πρώτου χώρου εργασίας."
+#~ msgid "C_ompositing"
+#~ msgstr "Θέση"

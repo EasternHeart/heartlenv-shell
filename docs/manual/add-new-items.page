@@ -1,0 +1,49 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      xmlns:e="http://projectmallard.org/experimental/"
+      type="topic"
+      id="add-new-items">
+
+  <info>
+    <link type="guide" xref="index#panel"/>
+    <link type="seealso" xref="preferences"/>
+    <desc>Add new plugins to the <app>Xfce Panel</app></desc>
+    <credit type="author">
+      <name>Nick Schermer</name>
+      <email>nick@xfce.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+  <title>Add New Plugins</title>
+  <p>
+    The <app>Add New Items</app> dialogue allows you insert plugins into your
+    panel.
+  </p>
+
+  <figure>
+    <title>Add new items dialog</title>
+    <media type="image" src="figures/add-new-items.png" mime="image/png" style="right"/>
+  </figure>
+
+  <section>
+    <title>Accessing <app>Add New Items</app></title>
+    <p>
+      The <app>Add New Items</app> dialogue can be opened by right clicking on
+      empty space on a panel and going to <gui>Add New Items</gui>. If you right
+      click on a space occupied by a panel plugin, you can access <app>Add New
+      Items</app> by going to <guiseq><gui>Panel</gui><gui>Add New
+      Items</gui></guiseq>.
+  </p>
+  </section>
+
+  <section>
+    <title>Adding Panel Plugins</title>
+    <p>
+      To add a panel plugin to a panel, select a plugin in the list and click
+      <gui>Add</gui>. The panel plugin you have selected will appear in the panel.
+    </p>
+  </section>
+
+</page>

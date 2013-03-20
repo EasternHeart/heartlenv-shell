@@ -1,0 +1,288 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      xmlns:e="http://projectmallard.org/experimental/"
+      type="topic"
+      id="preferences">
+
+  <info>
+    <link type="guide" xref="index#panel"/>
+    <desc>Configure the <app>Xfce Panel</app></desc>
+    <credit type="author">
+      <name>Nick Schermer</name>
+      <email>nick@xfce.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+  <title>Preferences</title>
+
+   <p>
+       The Xfce panel preferences dialog gives you the ability
+       to customize your panel. You can change the size, appearance,
+       and orentation of your panels. You can also add or remove extra 
+       panels on your desktop.  
+   </p> 
+
+  <figure>
+    <title>Panel Preferences Dialog</title>
+    <media type="image" src="figures/preferences.png" mime="image/png" style="right"/>
+  </figure>
+
+  <section>
+    <title>Accessing Panel Preferences</title>
+
+    <p>
+    The panel preferences can be opened by going to <guiseq>
+    <gui>Settings</gui><gui>Panel</gui></guiseq> in your applications menu. 
+    You can also access panel preferences by right clicking on your panel
+    and going to <gui>Panel Settings</gui>. If you right click on space occupied by a 
+    panel plugin, you can access panel preferences by going to <guiseq><gui>Panel</gui>
+    <gui>Panel Settings</gui></guiseq>.
+    </p>
+  </section>
+  
+  <section>
+    <title>Selecting a panel</title>
+    
+    <p>
+      You can select a panel from the dropdown list at the top of the dialog.
+      Next to this are two buttons that can be used to remove (-) the currently 
+      selected panel or add (+) a new empty panel.
+    </p>
+    
+    <p>
+      The panel selected in the dialog should also show a slection around
+      the panel, so it is clear which panel you are editing.
+    </p>
+  </section>
+  
+  <section>
+    <title>Display</title>
+     
+    <p>
+      This tab hold the settings how the panel is positioned on the
+      screen.
+    </p>
+    
+    <section>
+      <title>General</title>
+      
+      <terms>
+        <item>
+          <title><gui>Orientation</gui></title>
+          <p>
+            Set the panel orientation to horizontal or vertical.
+          </p>
+        </item>
+        
+        <item>
+          <title><gui>Output</gui></title>
+          <p>
+            Select the output (such as an secondary monitor) on which this panel should appear. 
+          If the output is not connected, the panel will not be shown.
+          </p>
+        </item>
+        
+        <item>
+          <title><gui>Span monitors</gui></title>
+          <p>
+            If you have multiple monitors connected to the computer, this
+            option will appear in the properties dialog. This will tell the panel
+          to stretch across multiple monitors instead of only being restricted to
+          one monitor. This tells the panel to look at the total screen size instead
+          of the size of an individual monitor.
+          </p>
+        </item>
+        
+        <item>
+          <title><gui>Lock panel</gui></title>
+          <p>
+            Don't show the handles on the panel which allow you to move
+            the panel. When this option is disabled, you can drag the panel 
+          anywhere you want on your screen. The panel will also snap to the 
+          edges of your screen.
+          </p>
+        </item>
+        
+        <item>
+          <title><gui>Automatically show and hide the panel</gui></title>
+          <p>
+            Automatically hide the panel if the mouse is not hovering over it.
+          </p>
+        </item>
+      </terms>
+    </section>
+    
+    <section>
+      <title>Measurements</title>
+      
+      <terms>
+        <item>
+          <title><gui>Size</gui></title>
+          <p>
+            Change the height (or width if the orientation is vertical) 
+            of the panel. The size is in pixels.
+          </p>
+        </item>
+      
+        <item>
+          <title><gui>Length</gui></title>
+          <p>
+            Change the width (or height if the orientation is vertical) 
+            of the panel. The size is a percentage of the monitor or
+            screen size.
+          </p>
+        </item>
+        
+        <item>
+          <title><gui>Automatically increase length</gui></title>
+          <p>
+            Increase the panel size to fit the contents of the panel. Is
+            work with expanding plugins, like the <link xref="tasklist">
+            window buttons</link> plugins.
+          </p>
+        </item>
+      </terms>
+    </section>
+  </section>
+  
+  <section id="appearance">
+    <title>Appearance</title>
+    
+    <p>
+      This tab contains the style settings of the currently selected panel.
+    </p>
+    
+    <section>
+      <title>Background</title>
+      
+      <terms>
+        <item>
+          <title><gui>Style</gui></title>
+       <p>
+        This allows you to change the transparency, color, and background
+        image of the panel. You have three options to choose from.
+       </p>
+        
+      <terms>
+        <item>
+          <title><gui>None (user system style)</gui></title>
+          <p>
+            The panel inherits colors from the currently selected GTK+
+            theme. You can view and change the current GTK+ theme by going to
+            <guiseq><gui>Settings</gui><gui>Appearance</gui></guiseq>.
+          </p>
+        </item>
+        
+        <item>
+          <title><gui>Solid Color</gui></title>
+          <p>
+            You can select a color using the provided color picker. 
+            The color you select will be applied to the panel.
+          </p>
+        </item>
+        
+        <item>
+          <title><gui>Background Image</gui></title>
+          <p>
+            Select a background for your panel.
+          </p>
+        </item>
+      </terms>
+        </item>
+        
+        <item>
+          <title><gui>Alpha</gui></title>
+          <p>
+            Change the alpha transparency of the panel.
+            Some panel plugins may still retain a non-transparent backgound.
+            This option is only available if your panel style is set to <gui>None</gui>
+            or <gui>Solid Color</gui>.
+          </p>
+        </item>
+        
+        <item>
+          <title><gui>Color</gui></title>
+          <p>
+            Clicking this activates a color picker. You can select a color
+            by using the color wheel, entering a hex value, or entering a color
+            name. This option is only available if your panel style is set to
+            <gui>Solid Color</gui>.
+          </p>
+        </item>
+        
+        <item>
+          <title><gui>File</gui></title>
+          <p>
+            This allows you to select a background for the panel using
+            a file browser. This option is only available if your panel style
+            is set to <gui>Background Image</gui>.
+          </p>
+        </item>
+      </terms>
+    </section>
+    
+    <section>
+      <title>Opacity</title>
+        These options set the transparency of the entire panel.
+      <terms>
+        <item>
+          <title><gui>Enter</gui></title>
+          <p>
+            This controls the transparency of the panel when a mouse pointer is
+            not hovering over it. Ranges from 0 (fully transparent) and 100 (fully opaque).
+            All panel plugins will be affected by this setting.
+          </p>
+        </item>
+      
+        <item>
+          <title><gui>Leave</gui></title>
+          <p>
+            This controls the transparency of the panel when a mouse pointer is
+            not hovering over it. Ranges from 0 (fully transparent) and 
+            100 (fully opaque). All panel plugins will be affected by this setting.
+          </p>
+        </item>
+      </terms>
+    </section>
+  </section>
+  
+  <section>
+    <title>Items</title>
+    
+    <p>
+      This shows the items that are placed on the currently selected panel.
+      In case items are hard to move or edit on the panel using the
+      right-click menu, this tab allows you to move, add, remove and access
+      the preferences of the items on the panel.
+    </p>
+    
+    <p>
+      This tab contains a row of buttons that allow you to manipulate the items
+      on the panel.
+    </p>
+    
+    <p>
+      With the <gui>up</gui> and <gui>down</gui> buttons you can move the currently selected 
+      item in the panel.
+    </p>
+    
+    <p>
+      The <gui>add</gui> button opens the <link xref="add-new-items">add new items
+      dialog</link>. With the <gui>remove</gui> button you can remove the currently
+      selected item from the panel.
+    </p>
+    
+    <p>
+      The <gui>preferences</gui> and <gui>about</gui> buttons are only active if the plugin
+      support these features. It will open the selected items' settings.
+    </p>
+    
+    <p>
+      Only limition in this dialog, compared to mouse handling, is that
+      you cannot move items between panels and access custom menu items
+      a plugin can add in the item menu.
+    </p>
+  </section>
+</page>

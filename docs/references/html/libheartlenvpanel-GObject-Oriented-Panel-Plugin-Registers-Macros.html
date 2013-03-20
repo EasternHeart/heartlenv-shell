@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GObject Oriented Panel Plugin Registers Macros</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<link rel="home" href="index.html" title="Libheartlenvpanel Reference Manual">
+<link rel="up" href="libheartlenvpanel-plugins.html" title="Part II. Panel Plugins">
+<link rel="prev" href="libheartlenvpanel-Panel-Plugin-Register-Macros-(4.6-Style).html" title="Panel Plugin Register Macros (4.6 Style)">
+<link rel="next" href="libheartlenvpanel-widgets.html" title="Part III. Additional Widgets">
+<meta name="generator" content="GTK-Doc V1.17 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="libheartlenvpanel-Panel-Plugin-Register-Macros-(4.6-Style).html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="libheartlenvpanel-plugins.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Libheartlenvpanel Reference Manual</th>
+<td><a accesskey="n" href="libheartlenvpanel-widgets.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#libheartlenvpanel-GObject-Oriented-Panel-Plugin-Registers-Macros.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#libheartlenvpanel-GObject-Oriented-Panel-Plugin-Registers-Macros.description" class="shortcut">Description</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="libheartlenvpanel-GObject-Oriented-Panel-Plugin-Registers-Macros"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libheartlenvpanel-GObject-Oriented-Panel-Plugin-Registers-Macros.top_of_page"></a>GObject Oriented Panel Plugin Registers Macros</span></h2>
+<p>GObject Oriented Panel Plugin Registers Macros — Macros to register panel plugins, written as GObjects.</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="libheartlenvpanel-GObject-Oriented-Panel-Plugin-Registers-Macros.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">
+#include &lt;libheartlenvpanel/libheartlenvpanel.h&gt;
+
+typedef             <a class="link" href="libheartlenvpanel-GObject-Oriented-Panel-Plugin-Registers-Macros.html#XfcePanelTypeModule" title="XfcePanelTypeModule">XfcePanelTypeModule</a>;
+#define             <a class="link" href="libheartlenvpanel-GObject-Oriented-Panel-Plugin-Registers-Macros.html#XFCE-PANEL-DEFINE-PLUGIN:CAPS" title="XFCE_PANEL_DEFINE_PLUGIN()">XFCE_PANEL_DEFINE_PLUGIN</a>            (TypeName,
+                                                         type_name,
+                                                         args...)
+#define             <a class="link" href="libheartlenvpanel-GObject-Oriented-Panel-Plugin-Registers-Macros.html#XFCE-PANEL-DEFINE-PLUGIN-RESIDENT:CAPS" title="XFCE_PANEL_DEFINE_PLUGIN_RESIDENT()">XFCE_PANEL_DEFINE_PLUGIN_RESIDENT</a>   (TypeName,
+                                                         type_name,
+                                                         args...)
+#define             <a class="link" href="libheartlenvpanel-GObject-Oriented-Panel-Plugin-Registers-Macros.html#XFCE-PANEL-DEFINE-TYPE:CAPS" title="XFCE_PANEL_DEFINE_TYPE()">XFCE_PANEL_DEFINE_TYPE</a>              (TypeName,
+                                                         type_name,
+                                                         TYPE_PARENT)
+#define             <a class="link" href="libheartlenvpanel-GObject-Oriented-Panel-Plugin-Registers-Macros.html#XFCE-PANEL-DEFINE-PREINIT-FUNC:CAPS" title="XFCE_PANEL_DEFINE_PREINIT_FUNC()">XFCE_PANEL_DEFINE_PREINIT_FUNC</a>      (preinit_func)
+</pre>
+</div>
+<div class="refsect1">
+<a name="libheartlenvpanel-GObject-Oriented-Panel-Plugin-Registers-Macros.description"></a><h2>Description</h2>
+<p>
+Macros to register panel plugin types and custom types inside panel plugins.
+</p>
+</div>
+<div class="refsect1">
+<a name="libheartlenvpanel-GObject-Oriented-Panel-Plugin-Registers-Macros.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="XfcePanelTypeModule"></a><h3>XfcePanelTypeModule</h3>
+<pre class="programlisting">typedef GTypeModule XfcePanelTypeModule;
+</pre>
+<p>
+Typedef for GTypeModule for possible future expansion.
+</p>
+<p class="since">Since 4.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="XFCE-PANEL-DEFINE-PLUGIN:CAPS"></a><h3>XFCE_PANEL_DEFINE_PLUGIN()</h3>
+<pre class="programlisting">#define             XFCE_PANEL_DEFINE_PLUGIN(TypeName, type_name, args...)</pre>
+<p>
+Define a new (resident) GObject panel plugin, the parent type of the object
+should be XFCE_TYPE_PANEL_PLUGIN.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>TypeName</code></em> :</span></p></td>
+<td>The name of the new type, in Camel case.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>type_name</code></em> :</span></p></td>
+<td>The name of the new type, in lowercase, with words separated by '_'.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>args...</code></em> :</span></p></td>
+<td>Optional list of *_register_type() function from other
+objects in the plugin created with <a class="link" href="libheartlenvpanel-GObject-Oriented-Panel-Plugin-Registers-Macros.html#XFCE-PANEL-DEFINE-TYPE:CAPS" title="XFCE_PANEL_DEFINE_TYPE()"><span class="type">XFCE_PANEL_DEFINE_TYPE</span></a>.</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since 4.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="XFCE-PANEL-DEFINE-PLUGIN-RESIDENT:CAPS"></a><h3>XFCE_PANEL_DEFINE_PLUGIN_RESIDENT()</h3>
+<pre class="programlisting">#define             XFCE_PANEL_DEFINE_PLUGIN_RESIDENT(TypeName, type_name, args...)</pre>
+<p>
+Same as <a class="link" href="libheartlenvpanel-GObject-Oriented-Panel-Plugin-Registers-Macros.html#XFCE-PANEL-DEFINE-PLUGIN:CAPS" title="XFCE_PANEL_DEFINE_PLUGIN()"><span class="type">XFCE_PANEL_DEFINE_PLUGIN</span></a>, but if you use special libraries or objects,
+it is possible the plugin will give problems when unloading the library,
+a resident plugin will never be unloaded after the first load, avoiding
+those issues.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>TypeName</code></em> :</span></p></td>
+<td>The name of the new type, in Camel case.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>type_name</code></em> :</span></p></td>
+<td>The name of the new type, in lowercase, with words separated by '_'.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>args...</code></em> :</span></p></td>
+<td>Optional list of *_register_type() function from other
+objects in the plugin created with <a class="link" href="libheartlenvpanel-GObject-Oriented-Panel-Plugin-Registers-Macros.html#XFCE-PANEL-DEFINE-TYPE:CAPS" title="XFCE_PANEL_DEFINE_TYPE()"><span class="type">XFCE_PANEL_DEFINE_TYPE</span></a>.</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since 4.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="XFCE-PANEL-DEFINE-TYPE:CAPS"></a><h3>XFCE_PANEL_DEFINE_TYPE()</h3>
+<pre class="programlisting">#define             XFCE_PANEL_DEFINE_TYPE(TypeName, type_name, TYPE_PARENT)</pre>
+<p>
+A convenient macro of <a href="http://library.gnome.org/devel/gobject/unstable/GTypeModule.html#G-DEFINE-DYNAMIC-TYPE:CAPS"><span class="type">G_DEFINE_DYNAMIC_TYPE</span></a> for panel plugins. Only
+difference with <a href="http://library.gnome.org/devel/gobject/unstable/GTypeModule.html#G-DEFINE-DYNAMIC-TYPE:CAPS"><span class="type">G_DEFINE_DYNAMIC_TYPE</span></a> is that the type name send to
+<a href="http://library.gnome.org/devel/gobject/unstable/GTypeModule.html#g-type-module-register-type"><code class="function">g_type_module_register_type()</code></a> is prefixed with "Xfce". This allows you
+use use shorted structure names in the code, while the real name of the
+object is a full "Xfce" name.
+</p>
+<p>
+The _register_type function should be added to the args in
+<a class="link" href="libheartlenvpanel-GObject-Oriented-Panel-Plugin-Registers-Macros.html#XFCE-PANEL-DEFINE-PLUGIN:CAPS" title="XFCE_PANEL_DEFINE_PLUGIN()"><span class="type">XFCE_PANEL_DEFINE_PLUGIN</span></a>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>TypeName</code></em> :</span></p></td>
+<td>The name of the new type, in Camel case.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>type_name</code></em> :</span></p></td>
+<td>The name of the new type, in lowercase, with words separated by '_'.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>TYPE_PARENT</code></em> :</span></p></td>
+<td>The GType of the parent type.</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since 4.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="XFCE-PANEL-DEFINE-PREINIT-FUNC:CAPS"></a><h3>XFCE_PANEL_DEFINE_PREINIT_FUNC()</h3>
+<pre class="programlisting">#define             XFCE_PANEL_DEFINE_PREINIT_FUNC(preinit_func)</pre>
+<p>
+Registers a pre-init function in the plugin module. This function
+is called before <code class="function">gtk_init()</code> and can be used to initialize
+special libaries.
+Downside of this that the plugin cannot run internal. Even if you
+set X-XFCE-Interal=TRUE in the desktop file, the panel will force
+the plugin to run inside a wrapper (this because the panel called
+<code class="function">gtk_init()</code> long before it starts to load the plugins).
+</p>
+<p>
+Note that you can only use this once and it only works in
+combination with the plugins register/define functions added
+in 4.8.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>preinit_func</code></em> :</span></p></td>
+<td>name of the function that points to an
+<a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XfcePanelPluginPreInit" title="XfcePanelPluginPreInit ()"><span class="type">XfcePanelPluginPreInit</span></a> function.</td>
+</tr></tbody>
+</table></div>
+<p class="since">Since 4.8</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.17</div>
+</body>
+</html>

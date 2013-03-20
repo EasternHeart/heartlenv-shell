@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Commonly used plugin macros</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<link rel="home" href="index.html" title="Libheartlenvpanel Reference Manual">
+<link rel="up" href="libheartlenvpanel-fundamentals.html" title="Part I. Fundamentals">
+<link rel="prev" href="libheartlenvpanel-Standard-Enumerations.html" title="Standard Enumerations">
+<link rel="next" href="libheartlenvpanel-plugins.html" title="Part II. Panel Plugins">
+<meta name="generator" content="GTK-Doc V1.17 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="libheartlenvpanel-Standard-Enumerations.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="libheartlenvpanel-fundamentals.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Libheartlenvpanel Reference Manual</th>
+<td><a accesskey="n" href="libheartlenvpanel-plugins.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#libheartlenvpanel-Commonly-used-plugin-macros.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#libheartlenvpanel-Commonly-used-plugin-macros.description" class="shortcut">Description</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="libheartlenvpanel-Commonly-used-plugin-macros"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libheartlenvpanel-Commonly-used-plugin-macros.top_of_page"></a>Commonly used plugin macros</span></h2>
+<p>Commonly used plugin macros — Various macros to make life easier for plugin developers.</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="libheartlenvpanel-Commonly-used-plugin-macros.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">
+#include &lt;libheartlenvpanel/libheartlenvpanel.h&gt;
+
+#define             <a class="link" href="libheartlenvpanel-Commonly-used-plugin-macros.html#XFCE-PANEL-CHANNEL-NAME:CAPS" title="XFCE_PANEL_CHANNEL_NAME">XFCE_PANEL_CHANNEL_NAME</a>
+
+#define             <a class="link" href="libheartlenvpanel-Commonly-used-plugin-macros.html#panel-slice-alloc" title="panel_slice_alloc()">panel_slice_alloc</a>                   (block_size)
+#define             <a class="link" href="libheartlenvpanel-Commonly-used-plugin-macros.html#panel-slice-alloc0" title="panel_slice_alloc0()">panel_slice_alloc0</a>                  (block_size)
+#define             <a class="link" href="libheartlenvpanel-Commonly-used-plugin-macros.html#panel-slice-free" title="panel_slice_free()">panel_slice_free</a>                    (type,
+                                                         ptr)
+#define             <a class="link" href="libheartlenvpanel-Commonly-used-plugin-macros.html#panel-slice-free1" title="panel_slice_free1()">panel_slice_free1</a>                   (block_size,
+                                                         mem_block)
+#define             <a class="link" href="libheartlenvpanel-Commonly-used-plugin-macros.html#panel-slice-new" title="panel_slice_new()">panel_slice_new</a>                     (type)
+#define             <a class="link" href="libheartlenvpanel-Commonly-used-plugin-macros.html#panel-slice-new0" title="panel_slice_new0()">panel_slice_new0</a>                    (type)
+
+#define             <a class="link" href="libheartlenvpanel-Commonly-used-plugin-macros.html#PANEL-PARAM-READABLE:CAPS" title="PANEL_PARAM_READABLE">PANEL_PARAM_READABLE</a>
+#define             <a class="link" href="libheartlenvpanel-Commonly-used-plugin-macros.html#PANEL-PARAM-READWRITE:CAPS" title="PANEL_PARAM_READWRITE">PANEL_PARAM_READWRITE</a>
+#define             <a class="link" href="libheartlenvpanel-Commonly-used-plugin-macros.html#PANEL-PARAM-WRITABLE:CAPS" title="PANEL_PARAM_WRITABLE">PANEL_PARAM_WRITABLE</a>
+</pre>
+</div>
+<div class="refsect1">
+<a name="libheartlenvpanel-Commonly-used-plugin-macros.description"></a><h2>Description</h2>
+<p>
+Some commonly used macros in panel plugins.
+</p>
+</div>
+<div class="refsect1">
+<a name="libheartlenvpanel-Commonly-used-plugin-macros.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="XFCE-PANEL-CHANNEL-NAME:CAPS"></a><h3>XFCE_PANEL_CHANNEL_NAME</h3>
+<pre class="programlisting">#define XFCE_PANEL_CHANNEL_NAME (xfce_panel_get_channel_name ())
+</pre>
+<p>
+Macro to return the value of <a class="link" href="libheartlenvpanel-Convenience-Functions.html#xfce-panel-get-channel-name" title="xfce_panel_get_channel_name ()"><code class="function">xfce_panel_get_channel_name()</code></a>.
+</p>
+<p>
+See also: xfce_panel_plugin_xfconf_channel_new,
+          xfce_panel_plugin_get_property_base
+</p>
+<p class="since">Since 4.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="panel-slice-alloc"></a><h3>panel_slice_alloc()</h3>
+<pre class="programlisting">#define panel_slice_alloc(block_size) (g_slice_alloc ((block_size)))
+</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">panel_slice_alloc</code> has been deprecated since version 4.8 and should not be used in newly-written code. Deprecated because panel depends on recent enough
+                 version of glib. Use <a href="http://library.gnome.org/devel/glib/unstable/glib-Memory-Slices.html#g-slice-alloc"><code class="function">g_slice_alloc()</code></a> instead.</p>
+</div>
+<p>
+See <a href="http://library.gnome.org/devel/glib/unstable/glib-Memory-Slices.html#g-slice-alloc"><code class="function">g_slice_alloc()</code></a> for more information.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>block_size</code></em> :</span></p></td>
+<td>the number of bytes to allocate</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a pointer to the allocated memory block</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="panel-slice-alloc0"></a><h3>panel_slice_alloc0()</h3>
+<pre class="programlisting">#define panel_slice_alloc0(block_size) (g_slice_alloc0 ((block_size)))
+</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">panel_slice_alloc0</code> has been deprecated since version 4.8 and should not be used in newly-written code. Deprecated because panel depends on recent enough
+                 version of glib. Use <a href="http://library.gnome.org/devel/glib/unstable/glib-Memory-Slices.html#g-slice-alloc0"><code class="function">g_slice_alloc0()</code></a> instead.</p>
+</div>
+<p>
+See <a href="http://library.gnome.org/devel/glib/unstable/glib-Memory-Slices.html#g-slice-alloc0"><code class="function">g_slice_alloc0()</code></a> for more information.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>block_size</code></em> :</span></p></td>
+<td>the number of bytes to allocate</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a pointer to the allocated memory block</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="panel-slice-free"></a><h3>panel_slice_free()</h3>
+<pre class="programlisting">#define panel_slice_free(type, ptr) G_STMT_START{ g_slice_free (type, (ptr)); }G_STMT_END
+</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">panel_slice_free</code> has been deprecated since version 4.8 and should not be used in newly-written code. Deprecated because panel depends on recent enough
+                 version of glib. Use <a href="http://library.gnome.org/devel/glib/unstable/glib-Memory-Slices.html#g-slice-free"><code class="function">g_slice_free()</code></a> instead.</p>
+</div>
+<p>
+See <a href="http://library.gnome.org/devel/glib/unstable/glib-Memory-Slices.html#g-slice-free"><code class="function">g_slice_free()</code></a> for more information.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>type</code></em> :</span></p></td>
+<td>the type to allocate, typically a structure name</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>ptr</code></em> :</span></p></td>
+<td>a pointer to the block to free</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="panel-slice-free1"></a><h3>panel_slice_free1()</h3>
+<pre class="programlisting">#define panel_slice_free1(block_size, mem_block) G_STMT_START{ g_slice_free1 ((block_size), (mem_block)); }G_STMT_END
+</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">panel_slice_free1</code> has been deprecated since version 4.8 and should not be used in newly-written code. Deprecated because panel depends on recent enough
+                 version of glib. Use <a href="http://library.gnome.org/devel/glib/unstable/glib-Memory-Slices.html#g-slice-free1"><code class="function">g_slice_free1()</code></a> instead.</p>
+</div>
+<p>
+See <a href="http://library.gnome.org/devel/glib/unstable/glib-Memory-Slices.html#g-slice-free1"><code class="function">g_slice_free1()</code></a> for more information.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>block_size</code></em> :</span></p></td>
+<td>the size of the block</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>mem_block</code></em> :</span></p></td>
+<td>a pointer to the block to free</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="panel-slice-new"></a><h3>panel_slice_new()</h3>
+<pre class="programlisting">#define panel_slice_new(type) (g_slice_new (type))
+</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">panel_slice_new</code> has been deprecated since version 4.8 and should not be used in newly-written code. Deprecated because panel depends on recent enough
+                 version of glib. Use <a href="http://library.gnome.org/devel/glib/unstable/glib-Memory-Slices.html#g-slice-new"><code class="function">g_slice_new()</code></a> instead.</p>
+</div>
+<p>
+See <a href="http://library.gnome.org/devel/glib/unstable/glib-Memory-Slices.html#g-slice-new"><code class="function">g_slice_new()</code></a> for more information.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>type</code></em> :</span></p></td>
+<td>the type to allocate, typically a structure name</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a pointer to the allocated memory block</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="panel-slice-new0"></a><h3>panel_slice_new0()</h3>
+<pre class="programlisting">#define panel_slice_new0(type) (g_slice_new0 (type))
+</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">panel_slice_new0</code> has been deprecated since version 4.8 and should not be used in newly-written code. Deprecated because panel depends on recent enough
+                 version of glib. Use <a href="http://library.gnome.org/devel/glib/unstable/glib-Memory-Slices.html#g-slice-new0"><code class="function">g_slice_new0()</code></a> instead.</p>
+</div>
+<p>
+See <a href="http://library.gnome.org/devel/glib/unstable/glib-Memory-Slices.html#g-slice-new0"><code class="function">g_slice_new0()</code></a> for more information.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>type</code></em> :</span></p></td>
+<td>the type to allocate, typically a structure name</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a pointer to the allocated memory block</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PANEL-PARAM-READABLE:CAPS"></a><h3>PANEL_PARAM_READABLE</h3>
+<pre class="programlisting">#define PANEL_PARAM_READABLE (G_PARAM_READABLE | G_PARAM_STATIC_STRINGS)
+</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">PANEL_PARAM_READABLE</code> has been deprecated since version 4.8 and should not be used in newly-written code. Deprecated because panel depends on recent enough
+                 version of glib. Use <a href="http://library.gnome.org/devel/gobject/unstable/gobject-GParamSpec.html#G-PARAM-READABLE:CAPS"><span class="type">G_PARAM_READABLE</span></a>
+                 | <a href="http://library.gnome.org/devel/gobject/unstable/gobject-GParamSpec.html#G-PARAM-STATIC-STRINGS:CAPS"><span class="type">G_PARAM_STATIC_STRINGS</span></a> instead.</p>
+</div>
+<p>
+Macro for <a href="http://library.gnome.org/devel/gobject/unstable/gobject-GParamSpec.html#G-PARAM-READABLE:CAPS"><span class="type">G_PARAM_READABLE</span></a> with static strings.
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PANEL-PARAM-READWRITE:CAPS"></a><h3>PANEL_PARAM_READWRITE</h3>
+<pre class="programlisting">#define PANEL_PARAM_READWRITE (G_PARAM_READWRITE | G_PARAM_STATIC_STRINGS)
+</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">PANEL_PARAM_READWRITE</code> has been deprecated since version 4.8 and should not be used in newly-written code. Deprecated because panel depends on recent enough
+                 version of glib. Use <a href="http://library.gnome.org/devel/gobject/unstable/gobject-GParamSpec.html#G-PARAM-READWRITE:CAPS"><span class="type">G_PARAM_READWRITE</span></a>
+                 | <a href="http://library.gnome.org/devel/gobject/unstable/gobject-GParamSpec.html#G-PARAM-STATIC-STRINGS:CAPS"><span class="type">G_PARAM_STATIC_STRINGS</span></a> instead.</p>
+</div>
+<p>
+Macro for <a href="http://library.gnome.org/devel/gobject/unstable/gobject-GParamSpec.html#G-PARAM-READWRITE:CAPS"><span class="type">G_PARAM_READWRITE</span></a> with static strings.
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="PANEL-PARAM-WRITABLE:CAPS"></a><h3>PANEL_PARAM_WRITABLE</h3>
+<pre class="programlisting">#define PANEL_PARAM_WRITABLE (G_PARAM_WRITABLE | G_PARAM_STATIC_STRINGS)
+</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">PANEL_PARAM_WRITABLE</code> has been deprecated since version 4.8 and should not be used in newly-written code. Deprecated because panel depends on recent enough
+                 version of glib. Use <a href="http://library.gnome.org/devel/gobject/unstable/gobject-GParamSpec.html#G-PARAM-WRITABLE:CAPS"><span class="type">G_PARAM_WRITABLE</span></a>
+                 | <a href="http://library.gnome.org/devel/gobject/unstable/gobject-GParamSpec.html#G-PARAM-STATIC-STRINGS:CAPS"><span class="type">G_PARAM_STATIC_STRINGS</span></a> instead.</p>
+</div>
+<p>
+Macro for <a class="link" href="libheartlenvpanel-Commonly-used-plugin-macros.html#PANEL-PARAM-WRITABLE:CAPS" title="PANEL_PARAM_WRITABLE"><span class="type">PANEL_PARAM_WRITABLE</span></a> with static strings.
+</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.17</div>
+</body>
+</html>

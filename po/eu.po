@@ -1,1832 +1,1601 @@
-# translation of eu.po to Basque
-# Basque translation for heartlenv-shell.
-# Copyright (C) 2011 heartlenv-shell's COPYRIGHT HOLDER
-# This file is distributed under the same license as the heartlenv-shell package.
-# Julen Ruiz Aizpuru <julenx@gmail.com>, 2011.
-# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2011, 2012.
+# translation of eu.po to Euskara
+# Euskera translations for heartlenv-panel package.
+# Copyright (C) 2002-2006 The Xfce development team.
+# This file is distributed under the same license as the heartlenv-panel package.
+# 
+# Jon Latorre Martinez <patataman@airtel.net>, 2003.
+# Piarres Beobide Egaña <pi@beobide.net>, 2004, 2005, 2006, 2007, 2008, 2009.
+# Piarres Beobide <pi+debian@beobide.net>, 2009, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: eu\n"
+"Project-Id-Version: heartlenv-panel 4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-05 12:13+0100\n"
-"PO-Revision-Date: 2012-03-05 12:37+0100\n"
-"Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
-"Language-Team: American English <kde-i18n-doc@kde.org>\n"
-"Language: eu\n"
+"POT-Creation-Date: 2011-09-11 22:36+0000\n"
+"PO-Revision-Date: 2010-05-07 10:59+0200\n"
+"Last-Translator: Piarres Beobide <pi+debian@beobide.net>\n"
+"Language-Team: Basque <debian-l10n-basque@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: eu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 1.0\n"
-"X-Project-Style: heartlenv\n"
 
-#: ../data/heartlenv-shell.desktop.in.in.h:1
-msgid "GNOME Shell"
-msgstr "GNOME Shell"
+#: ../panel-desktop-handler.desktop.in.h:1
+msgid "Add a new launcher to the panel based on the information of this desktop file"
+msgstr "Gehitu abiarazle berri bat panelera mahaigain fitxategi honen argibideetan oinarriturik"
 
-#: ../data/heartlenv-shell.desktop.in.in.h:2
-msgid "Window management and application launching"
-msgstr "Leiho-kudeaketa eta aplikazioak abiaraztea"
+#: ../panel-desktop-handler.desktop.in.h:2
+msgid "Create Launcher on the panel"
+msgstr "Sortu abiarazle bat panelean"
 
-#: ../data/heartlenv-shell-extension-prefs.desktop.in.in.h:1
-msgid "Configure GNOME Shell Extensions"
-msgstr "Konfiguratu GNOME Shell-eko gehigarriak"
+#: ../panel-preferences.desktop.in.h:1
+msgid "Customize the panel"
+msgstr "Pertsonalizatu panela"
 
-#: ../data/heartlenv-shell-extension-prefs.desktop.in.in.h:2
-#: ../js/extensionPrefs/main.js:153
-msgid "GNOME Shell Extension Preferences"
-msgstr "GNOME Shell-eko gehigarrien hobespenak"
+#: ../panel-preferences.desktop.in.h:2
+#: ../panel/panel-preferences-dialog.glade.h:24 ../panel/panel-window.c:2263
+#: ../migrate/main.c:84
+msgid "Panel"
+msgstr "Panela"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:1
+#: ../common/panel-utils.c:157
+msgid "_Read Online"
+msgstr "_Irakurri linean"
+
+#: ../common/panel-utils.c:158
+msgid "You can read the user manual online. This manual may however not exactly match your panel version."
+msgstr "Erabiltzaile manuala linean irakurri dezakezu. Manual horrek hala ere ez du zehazki bertsio hau argitzen."
+
+#: ../common/panel-utils.c:160
+msgid "The user manual is not installed on your computer"
+msgstr "Erabiltzaile manuala ez dago instalaturik zure ordenagailuan"
+
+#. display an error message to the user
+#: ../common/panel-utils.c:175
+msgid "Failed to open the documentation browser"
+msgstr "Huts dokumentazio arakatzailea irekitzean"
+
+#. I18N: %s is the name of the plugin
+#: ../libheartlenvpanel/xfce-panel-plugin.c:889
+#: ../panel/panel-preferences-dialog.c:1048
+#, c-format
+msgid "Are you sure that you want to remove \"%s\"?"
+msgstr "Ziur al zaude \"%s\" idazmahaia ezabatu nahi duzula?"
+
+#: ../libheartlenvpanel/xfce-panel-plugin.c:894
+#: ../panel/panel-preferences-dialog.c:1051
+msgid "If you remove the item from the panel, it is permanently lost."
+msgstr "Elementua paneletik ezabatzen baduzu betirako galduko da."
+
+#. move item
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1054
+msgid "_Move"
+msgstr "_Mugitu"
+
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1088
+msgid "Pane_l"
+msgstr "Pane_la"
+
+#. add new items
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1096 ../panel/panel-window.c:2275
+msgid "Add _New Items..."
+msgstr "Gehitu elementu _berriak..."
+
+#. customize panel
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1107 ../panel/panel-window.c:2286
+msgid "Panel Pr_eferences..."
+msgstr "Panel hob_espenak"
+
+#. logout item
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1124 ../panel/panel-window.c:2302
+msgid "Log _Out"
+msgstr "Sai_oa itxi"
+
+#: ../panel/main.c:79
+msgid "Show the 'Panel Preferences' dialog"
+msgstr "Ikusi 'Pertsonalizatu panela' leihoa"
+
+#: ../panel/main.c:79 ../panel/main.c:80
+msgid "PANEL-NUMBER"
+msgstr "PANEL-ZENBAKIA"
+
+#: ../panel/main.c:80
+msgid "Show the 'Add New Items' dialog"
+msgstr "Ikusi 'Gehitu elementu berriak' leihoa"
+
+#: ../panel/main.c:81
+msgid "Save the panel configuration"
+msgstr "Gorde panel konfigurazioa"
+
+#: ../panel/main.c:82
+msgid "Add a new plugin to the panel"
+msgstr "Gehitu plugin berri bat panelera"
+
+#: ../panel/main.c:82
+msgid "PLUGIN-NAME"
+msgstr "PLUGIN-IZENA"
+
+#: ../panel/main.c:83
+msgid "Restart the running panel instance"
+msgstr "Berrabiarazi abiarazitako panel instantzia"
+
+#: ../panel/main.c:84
+msgid "Quit the running panel instance"
+msgstr "Itxi abiarazitako panel instantzia"
+
+#: ../panel/main.c:85
+msgid "Do not wait for a window manager on startup"
+msgstr "Ez itxoin leiho kudeatzailea abioan"
+
+#: ../panel/main.c:86
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:33
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:33
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:33
+msgid "Print version information and exit"
+msgstr "Inprimatu bertsio argibideak eta irten"
+
+#. parse context options
+#: ../panel/main.c:250
+msgid "[ARGUMENTS...]"
+msgstr "[ARGUMENTUAK...]"
+
+#: ../panel/main.c:257
+#, c-format
+msgid "Type \"%s --help\" for usage."
+msgstr "Idatzi \"%s --help\" erabilera argibideentzat."
+
+#: ../panel/main.c:276
+msgid "The Xfce development team. All rights reserved."
+msgstr "Xfce garapen taldea. Eskubide guztiak erreserbaturik."
+
+#: ../panel/main.c:277
+#, c-format
+msgid "Please report bugs to <%s>."
+msgstr "Mesedez programa erroreen berri <%s>-n eman"
+
+#: ../panel/main.c:328
+msgid "There is already a running instance"
+msgstr "Dagoeneko badago instantzia bat abiarazita"
+
+#. spawn ourselfs again
+#: ../panel/main.c:378
+msgid "Restarting..."
+msgstr "Berrabiarazi"
+
+#: ../panel/main.c:393
+msgid "Failed to show the preferences dialog"
+msgstr "Huts hobespen leihoa bistaratzean"
+
+#: ../panel/main.c:395
+msgid "Failed to show the add new items dialog"
+msgstr "Huts 'Gehitu elementu berriak' leihoa bistaratzean"
+
+#: ../panel/main.c:397
+msgid "Failed to save the panel configuration"
+msgstr "Huts panel konfigurazioa gordetzean"
+
+#: ../panel/main.c:399
+msgid "Failed to add a plugin to the panel"
+msgstr "Huts panelera plugin bat gehitzean"
+
+#: ../panel/main.c:401
+msgid "Failed to restart the panel"
+msgstr "Huts panela berrabiaraztean"
+
+#: ../panel/main.c:403
+msgid "Failed to quit the panel"
+msgstr "Huts panela ixterakoan"
+
+#: ../panel/main.c:405
+msgid "Failed to send D-Bus message"
+msgstr "Huts D-Bus mezua bidaltzean"
+
+#: ../panel/main.c:416
+msgid "Do you want to start the panel? If you do, make sure you save the session on logout, so the panel is automatically started the next time you login."
+msgstr "Panela abiarazi nahi dfuzu? Hala bada ziurtatu zaitez saioa gordetzen duzula ixterakoan, horrela saioa hastean panela automatikoki abiaraziko da."
+
+#: ../panel/main.c:419 ../panel/main.c:433
+#, c-format
+msgid "No running instance of %s was found"
+msgstr "Ez da %s-ren instantzia abiarazirik topatu."
+
+#: ../panel/panel-application.c:217
+msgid "Failed to launch the migration application"
+msgstr "Huts migrazio aplikazioa abiaraztean"
+
+#: ../panel/panel-application.c:1585 ../plugins/actions/actions.c:421
+msgid "You have started X without session manager. Clicking Quit will close the X server."
+msgstr "X saio kudeatzaile gabe abiarazi duzu, Itxi sakatzean X zerbitzaria itxiko du."
+
+#: ../panel/panel-application.c:1586 ../plugins/actions/actions.c:422
+msgid "Are you sure you want to quit the panel?"
+msgstr "Ziur al zaude panela ezabatu nahi duzula?"
+
+#: ../panel/panel-application.c:1594 ../plugins/actions/actions.c:430
+#, c-format
+msgid "Failed to execute command \"%s\""
+msgstr "Ezin da \"%s\" komandoa exekutatu."
+
+#: ../panel/panel-dbus-client.c:208
+msgid "Invalid plugin event syntax specified. Use PLUGIN-NAME:NAME[:TYPE:VALUE]."
+msgstr "Okerreko plugin gertaera sintaxia ezarria. Erabili PLUGIN-IZENA[:MOTA:BALIOA]."
+
+#: ../panel/panel-dbus-client.c:241
+#, c-format
+msgid "Invalid hint type \"%s\". Valid types are bool, double, int, string and uint."
+msgstr "Okerreko \"%s\" gomendio mota. Mota erabilgarriak bool, double, int, string eta uint dira,"
+
+#: ../panel/panel-dialogs.c:76
+msgid "The panel of the Xfce Desktop Environment"
+msgstr "Xfce mahaigain inguruneko panela"
+
+#: ../panel/panel-dialogs.c:81
+msgid "translator-credits"
+msgstr "Piarres Beobide"
+
+#. setup the dialog
+#: ../panel/panel-dialogs.c:122 ../plugins/launcher/launcher-dialog.glade.h:1
+msgid "Add New Item"
+msgstr "Gehitu elementu berri bat"
+
+#: ../panel/panel-dialogs.c:136
+msgid "Please choose a panel for the new plugin:"
+msgstr "Mesedez hautatu plugin berriarentzat panel bat:"
+
+#. I18N: panel combo box in the preferences dialog
+#: ../panel/panel-dialogs.c:147 ../panel/panel-preferences-dialog.c:767
+#, c-format
+msgid "Panel %d"
+msgstr "%d panela"
+
+#: ../panel/panel-dialogs.c:183
+msgid "Because the panel is running in kiosk mode, you are not allowed to make changes to the panel configuration as a regular user"
+msgstr "Panela kiosko moduan abiarazirik dagoenez ezin dizkiozu aldaketarik egin erabiltzaile arrunt gisa."
+
+#: ../panel/panel-dialogs.c:185
+msgid "Modifying the panel is not allowed"
+msgstr "Ez da onartzen panela eraldatzean"
+
+#: ../panel/panel-item-dialog.c:188
+msgid "Add New Items"
+msgstr "Gehitu elementu berriak"
+
+#: ../panel/panel-item-dialog.c:190
+msgid "Add new plugins to the panel"
+msgstr "Gehitu plugin berriak panelera"
+
+#: ../panel/panel-item-dialog.c:213
+#: ../plugins/launcher/launcher-dialog.glade.h:23
+msgid "_Search:"
+msgstr "_Bilatu:"
+
+#: ../panel/panel-item-dialog.c:221
+msgid "Enter search phrase here"
+msgstr "Idatzi bilaketa katea hemen"
+
+#: ../panel/panel-plugin-external.c:426
+#, c-format
+msgid "Plugin \"%s\" unexpectedly left the panel, do you want to restart it?"
+msgstr "\"%s\" pluginak panela ustekabean utzi du, berriz abiaraztea nahi al duzu?"
+
+#: ../panel/panel-plugin-external.c:428
+#, c-format
+msgid "The plugin restarted more than once in the last %d seconds. If you press Execute the panel will try to restart the plugin otherwise it will be permanently removed from the panel."
+msgstr "Plugin-a behin baino gehiago berrabiarazi da azken %d segundoetan. Abiarazi sakatuaz panela abiarazten saiatuko da bestela betirako kenduko da paneletik."
+
+#: ../panel/panel-preferences-dialog.c:453
+msgid "Automatic"
+msgstr "Automatikoa"
+
+#. I18N: screen name in the output selector
+#: ../panel/panel-preferences-dialog.c:472
+#, c-format
+msgid "Screen %d"
+msgstr "%d pantaila"
+
+#. I18N: monitor name in the output selector
+#: ../panel/panel-preferences-dialog.c:498
+#, c-format
+msgid "Monitor %d"
+msgstr "%d monitorea"
+
+#: ../panel/panel-preferences-dialog.c:828
+msgid "The panel and plugin configurations will be permanently removed"
+msgstr "Panela eta plugin konfigurazioak betirako kenduko dira"
+
+#: ../panel/panel-preferences-dialog.c:829
+#, c-format
+msgid "Are you sure you want to remove panel %d?"
+msgstr "Ziur al zaude %d panela ezabatu nahi duzula?"
+
+#. I18N: append (external) in the preferences dialog if the plugin
+#. * runs external
+#: ../panel/panel-preferences-dialog.c:912
+#, c-format
+msgid "%s <span color=\"grey\" size=\"small\">(external)</span>"
+msgstr "%s <span color=\"grey\" size=\"small\">(kanpokoa)</span>"
+
+#. I18N: tooltip in preferences dialog when hovering an item in the list
+#. * for external plugins
+#: ../panel/panel-preferences-dialog.c:917
+#, c-format
 msgid ""
-"Allows access to internal debugging and monitoring tools using the Alt-F2 "
-"dialog."
+"Internal name: %s-%d\n"
+"PID: %d"
 msgstr ""
-"Barneko arazte- eta gainbegiraketa-tresnen atzipena onartzen du Alt-F2 "
-"elkarrizketa-koadroa erabiliz."
+"Barne-izena: %s-%d\n"
+"PID: %d"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:2
-msgid "Enable internal tools useful for developers and testers from Alt-F2"
-msgstr "Gaitu garatzaile eta probatzaileentzako barne-tresnak Alt-F2 bitartez"
+#. I18N: tooltip in preferences dialog when hovering an item in the list
+#. * for internal plugins
+#: ../panel/panel-preferences-dialog.c:929
+#, c-format
+msgid "Internal name: %s-%d"
+msgstr "Barne-izena: %s-%d"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:3
-msgid "File extension used for storing the screencast"
-msgstr "Pantailako bideoa gordetzeko erabilitako luzapena"
+#: ../panel/panel-preferences-dialog.glade.h:1
+msgid "A_utomatically increase the length"
+msgstr "A_utomatikoki handitu luzera"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:4
-msgid "Framerate used for recording screencasts."
-msgstr "Pantailatik bideoak grabatzean erabilitako fotograma-emaria."
+#: ../panel/panel-preferences-dialog.glade.h:2
+msgid "Add a new panel"
+msgstr "Gehitu panel berri bayt"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:5
-msgid ""
-"GNOME Shell extensions have a uuid property; this key lists extensions which "
-"should be loaded. Any extension that wants to be loaded needs to be in this "
-"list. You can also manipulate this list with the EnableExtension and "
-"DisableExtension DBus methods on org.heartlenv.Shell."
-msgstr ""
-"GNOME Shell gehigarriek UUID propietatea dute; kargatu beharko liratekeen "
-"gehigarriak zerrendatzen ditu gako honek. Kargatzea nahi diren gehigarri "
-"guztiak zerrendan agertu behar dute. Zerrenda hau alda dezakezu D-Bus-eko "
-"'EnableExtension' (gehitu hedapena) eta 'DisableExtension' (desgaitu "
-"hedapena) "
-"metodoekin 'org.heartlenv.Shell'-en."
+#: ../panel/panel-preferences-dialog.glade.h:3
+msgid "Add new item to this panel"
+msgstr "Gehitu elementu berri bat panel honetara"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:6
-msgid "History for command (Alt-F2) dialog"
-msgstr "Komandoen (Alt-F2) elkarrizketa-koadroaren historia"
+#: ../panel/panel-preferences-dialog.glade.h:4
+msgid "Alpha value of the panel background, with 0 being fully transparent and 100 fully opaque."
+msgstr "Panelaren atzealdearen alpha balioa 0 (gardena) eta 100 (opakoa) artekoa."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:7
-msgid "History for the looking glass dialog"
-msgstr "Ikuskatzailearen elkarrizketa-koadroaren historia"
+#: ../panel/panel-preferences-dialog.glade.h:5
+msgid "Appeara_nce"
+msgstr "Itxu_ra"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:8
-msgid "If true, display date in the clock, in addition to time."
-msgstr "Ezarrita badago, orduaz gain data ere bistaratzen du."
+#: ../panel/panel-preferences-dialog.glade.h:6
+msgid "Automatically show and _hide the panel"
+msgstr "Automatikoki bistarazi eta e_zkutatu panela"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:9
-msgid "If true, display seconds in time."
-msgstr "Ezarrita badago, segundoak bistaratzen ditu orduan."
+#: ../panel/panel-preferences-dialog.glade.h:7
+msgid "Background"
+msgstr "Atzealdea"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:10
-msgid "If true, display the ISO week date in the calendar."
-msgstr "Ezarrita badago, ISO aste-data bistaratzen du egutegian."
+#: ../panel/panel-preferences-dialog.glade.h:8
+msgid "Background image"
+msgstr "Atzealdeko irudia"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:11
-msgid ""
-"Internally used to store the last IM presence explicitly set by the user. "
-"The value here is from the TpConnectionPresenceType enumeration."
-msgstr ""
-"Barnean erabilita erabiltzaileak ezarritako azken BMren presentzia "
-"esplizituki gordetzeko. "
-"Hemengo balioa TpConnectionPresenceType zerrendapenetik dator."
+#: ../panel/panel-preferences-dialog.glade.h:9
+msgid "C_olor:"
+msgstr "K_olorea"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:12
-msgid ""
-"Internally used to store the last session presence status for the user. The "
-"value here is from the GsmPresenceStatus enumeration."
-msgstr ""
-"Barnean erabilita erabiltzailearen azken saioaren presentziaren egoera "
-"esplizituki gordetzeko. "
-"Hemengo balioa GsmPresenceStatus zerrendapenetik dator."
+#: ../panel/panel-preferences-dialog.glade.h:10
+msgid "D_isplay"
+msgstr "Panta_ila"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:13
-msgid "List of desktop file IDs for favorite applications"
-msgstr "Gogoko aplikazioen mahaigaineko fitxategien IDen zerrenda"
+#: ../panel/panel-preferences-dialog.glade.h:11
+#: ../plugins/launcher/launcher-dialog.glade.h:9
+msgid "Edit the currently selected item"
+msgstr "Editatu hautaturik dagoen elementua"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:15
+#: ../panel/panel-preferences-dialog.glade.h:12
+#: ../plugins/launcher/launcher-dialog.glade.h:10
+msgid "General"
+msgstr "Orokorra"
+
+#: ../panel/panel-preferences-dialog.glade.h:13
+msgid "Horizontal"
+msgstr "Horizontala"
+
+#: ../panel/panel-preferences-dialog.glade.h:14
+msgid "Ite_ms"
+msgstr "Ele_mentuak"
+
+#: ../panel/panel-preferences-dialog.glade.h:16
 #, no-c-format
-msgid ""
-"Sets the GStreamer pipeline used to encode recordings. It follows the syntax "
-"used for gst-launch. The pipeline should have an unconnected sink pad where "
-"the recorded video is recorded. It will normally have a unconnected source "
-"pad; output from that pad will be written into the output file. However the "
-"pipeline can also take care of its own output - this might be used to send "
-"the output to an icecast server via shout2send or similar. When unset or set "
-"to an empty value, the default pipeline will be used. This is currently "
-"'vp8enc quality=8 speed=6 threads=%T ! queue ! webmmux' and records to WEBM "
-"using the VP8 codec. %T is used as a placeholder for a guess at the optimal "
-"thread count on the system."
-msgstr ""
-"Grabazioak kodetzeko erabiltzen den GStreamer hodia ezartzen du. gst-launch "
-"tresnarako erabiltzen den sintaxia jarraitzen du. Hodiak deskonektatutako "
-"sarrerako konektorea izan beharko luke bideoa grabatzen den tokian. "
-"Normalean konektatu gabeko iturburu-konektorea du; konektore horren irteera "
-"irteera-fitxategian idatziko da. Hala ere, bere irteeraren kargu egin "
-"daiteke hodia, adibidez irteera icecast zerbitzari batera bidaltzeko "
-"shout2send edo antzekoen bitartez. Ezarri gabe dagoenean edo balio hutsa "
-"duenean, hodi lehenetsia erabiliko da. Une honetan 'vp8enc quality=8 "
-"speed=6 threads=%T ! queue ! webmmux' da lehenetsia eta WEBM "
-"formatuan grabatzen du VP8 kodeka erabiliz. %T leku-marka gisa erabiltzen da "
-"sistemako hari kopuru optimoa asmatzeko."
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:16
-msgid "Show date in clock"
-msgstr "Erakutsi data erlojuan"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:17
-msgid "Show the week date in the calendar"
-msgstr "Erakutsi aste-data egutegian"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:18
-msgid "Show time with seconds"
-msgstr "Erakutsi ordua segundoekin"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:19
-msgid ""
-"The applications corresponding to these identifiers will be displayed in the "
-"favorites area."
-msgstr ""
-"Identifikadore horiei dagozkien aplikazioak bistaratuko dira gogokoen arean."
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:20
-msgid ""
-"The filename for recorded screencasts will be a unique filename based on the "
-"current date, and use this extension. It should be changed when recording to "
-"a different container format."
-msgstr ""
-"Pantailatik grabatutako bideoen fitxategi-izena bakarra izango da uneko "
-"datan oinarrituta eta luzapen hau erabiliko du. Aldatu egin beharko "
-"litzateke beste edukiontziko formatu batean grabatzean."
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:21
-msgid ""
-"The framerate of the resulting screencast recordered by GNOME Shell's "
-"screencast recorder in frames-per-second."
-msgstr ""
-"GNOME Shell-en pantailako bideoen grabatzaileak pantailatik grabatutako "
-"bideoen fotograma-emaria (fotograma segundoko)."
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:22
-msgid "The gstreamer pipeline used to encode the screencast"
-msgstr "Pantailako bideoak kodetzeko erabilitako gstreamer hodia"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:23
-msgid ""
-"The shell normally monitors active applications in order to present the most "
-"used ones (e.g. in launchers). While this data will be kept private, you may "
-"want to disable this for privacy reasons. Please note that doing so won't "
-"remove already saved data."
-msgstr ""
-"Shell-ak normalean aplikazio aktiboak monitorizatzen ditu gehien "
-"erabilitakoak aurkezteko (adib. abiarazleetan). Datu hauek pribatu "
-"mantenduko diren arren, agian hau desgaitu nahi duzu pribatutasun-"
-"arrazoiengatik. Kontuan izan hori eginez gero dagoeneko gordeta dauden "
-"datuak ez direla kenduko."
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:24
-msgid "The type of keyboard to use."
-msgstr "Erabili beharreko teklatu mota."
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:25
-msgid "Uuids of extensions to enable"
-msgstr "Gaitzeko hedapenen UUIDak"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:26
-msgid "Whether to collect stats about applications usage"
-msgstr "Aplikazioen erabilpenei buruzko estatistikak bilduko diren ala ez"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:27
-msgid "Which keyboard to use"
-msgstr "Erabili beharreko teklatua"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:28
-msgid "disabled OpenSearch providers"
-msgstr "desgaitutako OpenSearch hornitzaileak"
-
-#: ../js/extensionPrefs/main.js:125
-#, c-format
-msgid "There was an error loading the preferences dialog for %s:"
-msgstr ""
-"Errorea gertatu da '%s'(r)en hobespenen elkarrizketa-koadroa kargatzean:"
-
-#: ../js/extensionPrefs/main.js:165
-msgid "<b>Extension</b>"
-msgstr "<b>Gehigarria</b>"
-
-#: ../js/extensionPrefs/main.js:189
-msgid "Select an extension to configure using the combobox above."
-msgstr "Hautatu gehigarria gaineko konbinazio-koadroa erabiliz konfiguratzeko."
-
-#: ../js/gdm/loginDialog.js:624
-msgid "Session..."
-msgstr "Saioa..."
-
-#: ../js/gdm/loginDialog.js:786
-msgctxt "title"
-msgid "Sign In"
-msgstr "Hasi saioa"
-
-#. Translators: this message is shown below the password entry field
-#. to indicate the user can swipe their finger instead
-#: ../js/gdm/loginDialog.js:831
-msgid "(or swipe finger)"
-msgstr "(edo lerratu hatza)"
-
-#. translators: this message is shown below the user list on the
-#. login screen. It can be activated to reveal an entry for
-#. manually entering the username.
-#: ../js/gdm/loginDialog.js:852
-msgid "Not listed?"
-msgstr "Ez zaude zerrendan?"
-
-#: ../js/gdm/loginDialog.js:1020 ../js/ui/endSessionDialog.js:419
-#: ../js/ui/extensionSystem.js:399 ../js/ui/networkAgent.js:153
-#: ../js/ui/polkitAuthenticationAgent.js:175 ../js/ui/status/bluetooth.js:462
-msgid "Cancel"
-msgstr "Utzi"
-
-#: ../js/gdm/loginDialog.js:1025
-msgctxt "button"
-msgid "Sign In"
-msgstr "Hasi saioa"
-
-#: ../js/gdm/loginDialog.js:1377
-msgid "Login Window"
-msgstr "Saio-hasierako leihoa"
-
-#: ../js/gdm/powerMenu.js:152 ../js/ui/userMenu.js:591
-#: ../js/ui/userMenu.js:593 ../js/ui/userMenu.js:662
-msgid "Suspend"
-msgstr "Eseki"
-
-#: ../js/gdm/powerMenu.js:157
-msgid "Restart"
-msgstr "Berrabiarazi"
-
-#: ../js/gdm/powerMenu.js:162
-msgid "Power Off"
-msgstr "Itzali"
-
-#: ../js/misc/util.js:92
-msgid "Command not found"
-msgstr "Ez da komandoa aurkitu"
-
-#. Replace "Error invoking GLib.shell_parse_argv: " with
-#. something nicer
-#: ../js/misc/util.js:119
-msgid "Could not parse command:"
-msgstr "Ezin izan da komandoa analizatu:"
-
-#: ../js/misc/util.js:127
-#, c-format
-msgid "Execution of '%s' failed:"
-msgstr "Huts egin du '%s' exekutatzean:"
-
-#. Translators: Filter to display all applications
-#: ../js/ui/appDisplay.js:251
-msgid "All"
-msgstr "Denak"
-
-#: ../js/ui/appDisplay.js:310
-msgid "APPLICATIONS"
-msgstr "APLIKAZIOAK"
-
-#: ../js/ui/appDisplay.js:371
-msgid "SETTINGS"
-msgstr "EZARPENAK"
-
-#: ../js/ui/appDisplay.js:676
-msgid "New Window"
-msgstr "Leiho berria"
-
-#: ../js/ui/appDisplay.js:679
-msgid "Remove from Favorites"
-msgstr "Kendu gogokoetatik"
-
-#: ../js/ui/appDisplay.js:680
-msgid "Add to Favorites"
-msgstr "Gehitu gogokoei"
-
-#: ../js/ui/appFavorites.js:87
-#, c-format
-msgid "%s has been added to your favorites."
-msgstr "%s gogokoei gehitu zaie."
-
-#: ../js/ui/appFavorites.js:118
-#, c-format
-msgid "%s has been removed from your favorites."
-msgstr "%s gogokoetatik kendu da."
-
-#: ../js/ui/autorunManager.js:265
-msgid "Removable Devices"
-msgstr "Euskarri aldagarriak"
-
-#: ../js/ui/autorunManager.js:560
-#, c-format
-msgid "Open with %s"
-msgstr "Ireki honekin: %s"
-
-#: ../js/ui/autorunManager.js:586
-msgid "Eject"
-msgstr "Egotzi"
-
-#. Translators: Shown in calendar event list for all day events
-#. * Keep it short, best if you can use less then 10 characters
-#.
-#: ../js/ui/calendar.js:62
-msgctxt "event list time"
-msgid "All Day"
-msgstr "Egun osoa"
-
-#. Translators: Shown in calendar event list, if 24h format
-#: ../js/ui/calendar.js:67
-msgctxt "event list time"
-msgid "%H:%M"
-msgstr "%H:%M"
-
-#. Transators: Shown in calendar event list, if 12h format
-#: ../js/ui/calendar.js:74
-msgctxt "event list time"
-msgid "%l:%M %p"
-msgstr "%l:%M %p"
-
-#. Translators: Calendar grid abbreviation for Sunday.
-#. *
-#. * NOTE: These grid abbreviations are always shown together
-#. * and in order, e.g. "S M T W T F S".
-#.
-#: ../js/ui/calendar.js:114
-msgctxt "grid sunday"
-msgid "S"
-msgstr "I"
-
-#. Translators: Calendar grid abbreviation for Monday
-#: ../js/ui/calendar.js:116
-msgctxt "grid monday"
-msgid "M"
-msgstr "A"
-
-#. Translators: Calendar grid abbreviation for Tuesday
-#: ../js/ui/calendar.js:118
-msgctxt "grid tuesday"
-msgid "T"
-msgstr "A"
-
-#. Translators: Calendar grid abbreviation for Wednesday
-#: ../js/ui/calendar.js:120
-msgctxt "grid wednesday"
-msgid "W"
-msgstr "A"
-
-#. Translators: Calendar grid abbreviation for Thursday
-#: ../js/ui/calendar.js:122
-msgctxt "grid thursday"
-msgid "T"
-msgstr "O"
-
-#. Translators: Calendar grid abbreviation for Friday
-#: ../js/ui/calendar.js:124
-msgctxt "grid friday"
-msgid "F"
-msgstr "O"
-
-#. Translators: Calendar grid abbreviation for Saturday
-#: ../js/ui/calendar.js:126
-msgctxt "grid saturday"
-msgid "S"
-msgstr "L"
-
-#. Translators: Event list abbreviation for Sunday.
-#. *
-#. * NOTE: These list abbreviations are normally not shown together
-#. * so they need to be unique (e.g. Tuesday and Thursday cannot
-#. * both be 'T').
-#.
-#: ../js/ui/calendar.js:139
-msgctxt "list sunday"
-msgid "Su"
-msgstr "Ig"
-
-#. Translators: Event list abbreviation for Monday
-#: ../js/ui/calendar.js:141
-msgctxt "list monday"
-msgid "M"
-msgstr "Al"
-
-#. Translators: Event list abbreviation for Tuesday
-#: ../js/ui/calendar.js:143
-msgctxt "list tuesday"
-msgid "T"
-msgstr "Ar"
-
-#. Translators: Event list abbreviation for Wednesday
-#: ../js/ui/calendar.js:145
-msgctxt "list wednesday"
-msgid "W"
-msgstr "Az"
-
-#. Translators: Event list abbreviation for Thursday
-#: ../js/ui/calendar.js:147
-msgctxt "list thursday"
-msgid "Th"
-msgstr "Og"
-
-#. Translators: Event list abbreviation for Friday
-#: ../js/ui/calendar.js:149
-msgctxt "list friday"
-msgid "F"
-msgstr "Or"
-
-#. Translators: Event list abbreviation for Saturday
-#: ../js/ui/calendar.js:151
-msgctxt "list saturday"
-msgid "S"
-msgstr "Lr"
-
-#. Translators: Text to show if there are no events
-#: ../js/ui/calendar.js:681
-msgid "Nothing Scheduled"
-msgstr "Ezer ez antolatuta"
-
-#. Translators: Shown on calendar heading when selected day occurs on current year
-#: ../js/ui/calendar.js:697
-msgctxt "calendar heading"
-msgid "%A, %B %d"
-msgstr "%A, %B %d"
-
-#. Translators: Shown on calendar heading when selected day occurs on different year
-#: ../js/ui/calendar.js:700
-msgctxt "calendar heading"
-msgid "%A, %B %d, %Y"
-msgstr "%A, %Y(e)ko %Bren %da"
-
-#: ../js/ui/calendar.js:710
-msgid "Today"
-msgstr "Gaur"
-
-#: ../js/ui/calendar.js:714
-msgid "Tomorrow"
-msgstr "Bihar"
-
-#: ../js/ui/calendar.js:723
-msgid "This week"
-msgstr "Aste honetan"
-
-#: ../js/ui/calendar.js:731
-msgid "Next week"
-msgstr "Hurrengo astea"
-
-#: ../js/ui/contactDisplay.js:63 ../js/ui/notificationDaemon.js:486
-#: ../js/ui/status/power.js:215 ../src/shell-app.c:372
-msgid "Unknown"
-msgstr "Ezezaguna"
-
-#: ../js/ui/contactDisplay.js:84 ../js/ui/userMenu.js:127
-msgid "Available"
-msgstr "Erabilgarri"
-
-#: ../js/ui/contactDisplay.js:89 ../js/ui/userMenu.js:136
-msgid "Away"
-msgstr "Kanpoan"
-
-#: ../js/ui/contactDisplay.js:93 ../js/ui/userMenu.js:130
-msgid "Busy"
-msgstr "Lanpetuta"
-
-#: ../js/ui/contactDisplay.js:97
-msgid "Offline"
-msgstr "Lineaz kanpo"
-
-#: ../js/ui/contactDisplay.js:148
-msgid "CONTACTS"
-msgstr "KONTAKTUAK"
-
-#: ../js/ui/dash.js:229 ../js/ui/messageTray.js:1206
-msgid "Remove"
-msgstr "Kendu"
-
-#: ../js/ui/dateMenu.js:97
-msgid "Date and Time Settings"
-msgstr "Dataren eta orduaren ezarpenak"
-
-#: ../js/ui/dateMenu.js:123
-msgid "Open Calendar"
-msgstr "Ireki egutegia"
-
-#. Translators: This is the time format with date used
-#. in 24-hour mode.
-#: ../js/ui/dateMenu.js:181
-msgid "%a %b %e, %R:%S"
-msgstr "%a %b %e, %R:%S"
-
-#: ../js/ui/dateMenu.js:182
-msgid "%a %b %e, %R"
-msgstr "%a %b %e, %R"
-
-#. Translators: This is the time format without date used
-#. in 24-hour mode.
-#: ../js/ui/dateMenu.js:186
-msgid "%a %R:%S"
-msgstr "%a %R:%S"
-
-#: ../js/ui/dateMenu.js:187
-msgid "%a %R"
-msgstr "%a %R"
-
-#. Translators: This is a time format with date used
-#. for AM/PM.
-#: ../js/ui/dateMenu.js:194
-msgid "%a %b %e, %l:%M:%S %p"
-msgstr "%a %b %e, %l:%M:%S %p"
-
-#: ../js/ui/dateMenu.js:195
-msgid "%a %b %e, %l:%M %p"
-msgstr "%a %b %e, %l:%M %p"
-
-#. Translators: This is a time format without date used
-#. for AM/PM.
-#: ../js/ui/dateMenu.js:199
-msgid "%a %l:%M:%S %p"
-msgstr "%a %l:%M:%S %p"
-
-#: ../js/ui/dateMenu.js:200
-msgid "%a %l:%M %p"
-msgstr "%a %l:%M %p"
-
-#. Translators: This is the date format to use when the calendar popup is
-#. * shown - it is shown just below the time in the shell (e.g. "Tue 9:29 AM").
-#.
-#: ../js/ui/dateMenu.js:211
-msgid "%A %B %e, %Y"
-msgstr "%A, %Y(e)ko %Bren %e(a)"
-
-#: ../js/ui/endSessionDialog.js:61
-#, c-format
-msgctxt "title"
-msgid "Log Out %s"
-msgstr "Amaitu %s(r)en saioa"
-
-#: ../js/ui/endSessionDialog.js:62
-msgctxt "title"
-msgid "Log Out"
-msgstr "Amaitu saioa"
-
-#: ../js/ui/endSessionDialog.js:63
-msgid "Click Log Out to quit these applications and log out of the system."
-msgstr ""
-"Egin klik 'Amaitu saioa' botoian aplikazio hauetatik irten eta sistemako "
-"saioa amaitzeko."
-
-#: ../js/ui/endSessionDialog.js:65
-#, c-format
-msgid "%s will be logged out automatically in %d second."
-msgid_plural "%s will be logged out automatically in %d seconds."
-msgstr[0] "%s erabiltzailearen saioa automatikoki %d segundotan amaituko da."
-msgstr[1] "%s erabiltzailearen saioa automatikoki %d segundotan amaituko da."
-
-#: ../js/ui/endSessionDialog.js:70
-#, c-format
-msgid "You will be logged out automatically in %d second."
-msgid_plural "You will be logged out automatically in %d seconds."
-msgstr[0] "Zure saioa automatikoki %d segundotan amaituko da."
-msgstr[1] "Zure saioa automatikoki %d segundotan amaituko da."
-
-#: ../js/ui/endSessionDialog.js:74
-msgid "Logging out of the system."
-msgstr "Sistemako saioa amaitzen."
-
-#: ../js/ui/endSessionDialog.js:76
-msgctxt "button"
-msgid "Log Out"
-msgstr "Amaitu saioa"
-
-#: ../js/ui/endSessionDialog.js:81
-msgctxt "title"
-msgid "Power Off"
-msgstr "Itzali"
-
-#: ../js/ui/endSessionDialog.js:82
-msgid "Click Power Off to quit these applications and power off the system."
-msgstr ""
-"Egin klik 'Itzali' botoian aplikazio hauetatik irten eta sistema itzaltzeko."
-
-#: ../js/ui/endSessionDialog.js:84
-#, c-format
-msgid "The system will power off automatically in %d second."
-msgid_plural "The system will power off automatically in %d seconds."
-msgstr[0] "Sistema automatikoki %d segundotan itzaliko da."
-msgstr[1] "Sistema automatikoki %d segundotan itzaliko da."
-
-#: ../js/ui/endSessionDialog.js:88
-msgid "Powering off the system."
-msgstr "Sistema itzaltzen."
-
-#: ../js/ui/endSessionDialog.js:90 ../js/ui/endSessionDialog.js:107
-msgctxt "button"
-msgid "Restart"
-msgstr "Berrabiarazi"
-
-#: ../js/ui/endSessionDialog.js:92
-msgctxt "button"
-msgid "Power Off"
-msgstr "Itzali"
-
-#: ../js/ui/endSessionDialog.js:98
-msgctxt "title"
-msgid "Restart"
-msgstr "Berrabiarazi"
-
-#: ../js/ui/endSessionDialog.js:99
-msgid "Click Restart to quit these applications and restart the system."
-msgstr ""
-"Egin klik 'Berrabiarazi' botoian aplikazio hauetatik irten eta sistema "
-"berrabiarazteko."
-
-#: ../js/ui/endSessionDialog.js:101
-#, c-format
-msgid "The system will restart automatically in %d second."
-msgid_plural "The system will restart automatically in %d seconds."
-msgstr[0] "Sistema automatikoki %d segundotan berrabiaraziko da."
-msgstr[1] "Sistema automatikoki %d segundotan berrabiaraziko da."
-
-#: ../js/ui/endSessionDialog.js:105
-msgid "Restarting the system."
-msgstr "Sistema berrabiarazten."
-
-#: ../js/ui/extensionSystem.js:403
-msgid "Install"
-msgstr "Instalatu"
-
-#: ../js/ui/extensionSystem.js:407
-#, c-format
-msgid "Download and install '%s' from extensions.heartlenv.org?"
-msgstr "Deskargatu eta instalatu '%s' extensions.heartlenv.org gunetik?"
-
-#: ../js/ui/keyboard.js:322
-msgid "tray"
-msgstr "erretilua"
-
-#: ../js/ui/keyboard.js:539 ../js/ui/status/power.js:203
-msgid "Keyboard"
-msgstr "Teklatua"
-
-#: ../js/ui/keyringPrompt.js:85 ../js/ui/polkitAuthenticationAgent.js:272
-msgid "Password:"
-msgstr "Pasahitza:"
-
-#: ../js/ui/keyringPrompt.js:101
-msgid "Type again:"
-msgstr "Idatzi berriro:"
-
-#: ../js/ui/lookingGlass.js:725
-msgid "No extensions installed"
-msgstr "Hedapenik ez dago instalatuta"
-
-#. Translators: argument is an extension UUID.
-#: ../js/ui/lookingGlass.js:779
-#, c-format
-msgid "%s has not emitted any errors."
-msgstr "%s(e)k ez du inolako errorerik igorri."
-
-#: ../js/ui/lookingGlass.js:785
-msgid "Hide Errors"
-msgstr "Ezkutatu erroreak"
-
-#: ../js/ui/lookingGlass.js:789 ../js/ui/lookingGlass.js:840
-msgid "Show Errors"
-msgstr "Erakutsi erroreak"
-
-#: ../js/ui/lookingGlass.js:798
-msgid "Enabled"
-msgstr "Gaituta"
-
-#. translators:
-#. * The device has been disabled
-#: ../js/ui/lookingGlass.js:801 ../src/gvc/gvc-mixer-control.c:1093
+msgid "L_ength (%):"
+msgstr "Z_abalera (%):"
+
+#. I18N: name of the section (frame) in the panel preferences where the user
+#. can define the length and size of the panel
+#: ../panel/panel-preferences-dialog.glade.h:18
+msgid "Measurements"
+msgstr "Neurri-sistema"
+
+#: ../panel/panel-preferences-dialog.glade.h:19
+#: ../plugins/launcher/launcher-dialog.glade.h:13
+msgid "Move currently selected item down by one row"
+msgstr "Mugitu hautaturik dagoen elementua lerro bat behera"
+
+#: ../panel/panel-preferences-dialog.glade.h:20
+#: ../plugins/launcher/launcher-dialog.glade.h:14
+msgid "Move currently selected item up by one row"
+msgstr "Mugitu hautaturik dagoen elementua lerro bat gora"
+
+#: ../panel/panel-preferences-dialog.glade.h:21
+msgid "None (use system style)"
+msgstr "Batez (erabili sistema egoera)"
+
+#: ../panel/panel-preferences-dialog.glade.h:22
+msgid "O_utput:"
+msgstr "I_rteera:"
+
+#: ../panel/panel-preferences-dialog.glade.h:23
+msgid "Opacity"
+msgstr "Opakotasuna"
+
+#: ../panel/panel-preferences-dialog.glade.h:25
+msgid "Pick a Panel Color"
+msgstr "Klikatu panel kolore bat"
+
+#: ../panel/panel-preferences-dialog.glade.h:26
+msgid "Remove currently selected item"
+msgstr "Ezabatu hautaturik dagoen elementua"
+
+#: ../panel/panel-preferences-dialog.glade.h:27
+msgid "Remove the currently selected panel"
+msgstr "Ezabatu hautaturik dagoen panela"
+
+#: ../panel/panel-preferences-dialog.glade.h:28
+msgid "Select A Background Image"
+msgstr "Hautatu atzealdeko irudi bat"
+
+#: ../panel/panel-preferences-dialog.glade.h:29
+msgid "Select this option to automatically increase the length of the panel if the plugins request more space."
+msgstr "Aukera hau hautatu pluginak tamaina gehiago eskatzean panelaren luzera automatikoki hedatzeko"
+
+#: ../panel/panel-preferences-dialog.glade.h:30
+msgid "Select this option to extend the panel over multiple monitors."
+msgstr "Hautatu aukera hau panela monitore anitzetan hedatzeko"
+
+#: ../panel/panel-preferences-dialog.glade.h:31
+msgid "Select this option to hide the handles of the panel and lock its position."
+msgstr "Hautatu aukera hau panel kudeatzaileak ezkutatu eta bere kokalekua blokeatzeko"
+
+#: ../panel/panel-preferences-dialog.glade.h:32
+msgid "Select this option to hide the panel when the pointer is not above it. This only works when the panel is attached to a screen edge."
+msgstr "Hautatu aukera hau markatzailea gainean ez duenean panela ezkutatzeko. Honek panela pantaila ertzean dagoenean bakarrik funtzionatuko du."
+
+#: ../panel/panel-preferences-dialog.glade.h:33
+msgid "Show about information of the currently selected item"
+msgstr "Hautaturiko elementuaren argibideak bistarazi"
+
+#: ../panel/panel-preferences-dialog.glade.h:34
+msgid "Solid color"
+msgstr "Kolore solidoa"
+
+#: ../panel/panel-preferences-dialog.glade.h:35
+msgid "Span mo_nitors"
+msgstr "Zabor-posta monitoreak"
+
+#: ../panel/panel-preferences-dialog.glade.h:36
+msgid "Transparency when the pointer is hovering over the panel, with 0 being fully transparent and 100 fully opaque."
+msgstr "Gardentasuna markatzailea panel gainean dabilenean, 0 erabiliaz guztiz gardena izango da eta 100 erabiliaz guztiz opakoa."
+
+#: ../panel/panel-preferences-dialog.glade.h:37
+msgid "Transparency when the pointer is not hovering over the panel, with 0 being fully transparent and 100 fully opaque."
+msgstr "Gardentasuna markatzailea panel gainean dabilenean, 0 erabiliaz guztiz gardena izango da eta 100 erabiliaz guztiz opakoa."
+
+#: ../panel/panel-preferences-dialog.glade.h:38
+msgid "Vertical"
+msgstr "Bertikala"
+
+#: ../panel/panel-preferences-dialog.glade.h:39
+msgid "_Alpha:"
+msgstr "_Alpha:"
+
+#. I18N: label for the enter transparency slider
+#: ../panel/panel-preferences-dialog.glade.h:41
+msgid "_Enter:"
+msgstr "_Sartu:"
+
+#: ../panel/panel-preferences-dialog.glade.h:42
+msgid "_File:"
+msgstr "_Fixategia:"
+
+#. I18N: label for the leave transparency slider
+#: ../panel/panel-preferences-dialog.glade.h:44
+msgid "_Leave:"
+msgstr "_Utzi:"
+
+#: ../panel/panel-preferences-dialog.glade.h:45
+msgid "_Lock panel"
+msgstr "B_lokeatu panela"
+
+#: ../panel/panel-preferences-dialog.glade.h:46
+msgid "_Orientation:"
+msgstr "N_orabidea:"
+
+#: ../panel/panel-preferences-dialog.glade.h:47
+msgid "_Size (pixels):"
+msgstr "_Tamaina (pixel):"
+
+#: ../panel/panel-preferences-dialog.glade.h:48
+#: ../plugins/separator/separator-dialog.glade.h:8
+msgid "_Style:"
+msgstr "E_stiloa:"
+
+#: ../panel/panel-tic-tac-toe.c:123
+msgid "_New Game"
+msgstr "Joko _berria"
+
+#: ../panel/panel-tic-tac-toe.c:134
+msgid "_Level:"
+msgstr "Mai_la:"
+
+#: ../panel/panel-tic-tac-toe.c:140
+msgid "Novice"
+msgstr "Hasi-berria"
+
+#: ../panel/panel-tic-tac-toe.c:141
+msgid "Intermediate"
+msgstr "Ertaina"
+
+#: ../panel/panel-tic-tac-toe.c:142
+msgid "Experienced"
+msgstr "Esperientziaduna"
+
+#: ../panel/panel-tic-tac-toe.c:143
+msgid "Expert"
+msgstr "Espertoa"
+
+#: ../migrate/main.c:78
+msgid "Welcome to the first start of the panel"
+msgstr "Ongi etorria panelaren lehen abiaraztera"
+
+#: ../migrate/main.c:80
+msgid "Because the panel moved to a new system for storing the settings, it has to load a fresh initial configuration."
+msgstr "Paneleko ezarpenak gordetzeko sistema berri batera aldatu denez, instalazio berri bat kargatu du."
+
+#: ../migrate/main.c:83
+msgid "Choose below which setup you want for the first startup."
+msgstr "Hautatu behean zein konfigurazio nahi duzun lehenengo abiarazterako."
+
+#: ../migrate/main.c:89
+msgid "Migrate old config"
+msgstr "Migratu konfigurazio zaharra"
+
+#: ../migrate/main.c:90
+msgid "Migrate the old 4.6 configuration to Xfconf"
+msgstr "Migratu 4.6 konfigurazio zaharra Xfconf-era"
+
+#: ../migrate/main.c:95
+msgid "Use default config"
+msgstr "Erabili lehenetsitako konfigurazioa"
+
+#: ../migrate/main.c:96
+msgid "Load the default configuration"
+msgstr "Kargatu lehenetsitako konfigurazioa"
+
+#: ../migrate/main.c:102
+msgid "One empty panel"
+msgstr "Pane huts bat"
+
+#: ../migrate/main.c:103
+msgid "Start with one empty panel"
+msgstr "Panel huts batez abiarazi"
+
+#: ../migrate/main.c:115
+msgid "Failed to migrate the old panel configuration"
+msgstr "Huts panel zaharrek konfigurazioa migratzean"
+
+#: ../migrate/main.c:125
+msgid "Failed to load the default configuration"
+msgstr "Huts lehenetsiriko konfigurazioa gordetzean"
+
+#: ../plugins/actions/actions-dialog.glade.h:1
+#: ../plugins/actions/actions.desktop.in.h:1
+msgid "Action Buttons"
+msgstr "Ekintza botoiak"
+
+#: ../plugins/actions/actions-dialog.glade.h:2
+msgid "Button Actions"
+msgstr "Botoi ekintzak"
+
+#: ../plugins/actions/actions-dialog.glade.h:3
+msgid "_First button:"
+msgstr "_Lehen botoia:"
+
+#: ../plugins/actions/actions-dialog.glade.h:4
+msgid "_Second button:"
+msgstr "_Bigarren botoia"
+
+#: ../plugins/actions/actions.c:108
 msgid "Disabled"
-msgstr "Desgaituta"
+msgstr "Ezgaiturik"
 
-#: ../js/ui/lookingGlass.js:803
-msgid "Error"
-msgstr "Errorea"
+#: ../plugins/actions/actions.c:109
+msgid "Log Out Dialog"
+msgstr "Saio ixte leihoa"
 
-#: ../js/ui/lookingGlass.js:805
-msgid "Out of date"
-msgstr "Zaharkituta"
+#: ../plugins/actions/actions.c:110
+msgid "Log Out"
+msgstr "Saioa itxi"
 
-#: ../js/ui/lookingGlass.js:807
-msgid "Downloading"
-msgstr "Deskargatzen"
-
-#: ../js/ui/lookingGlass.js:828
-msgid "View Source"
-msgstr "Ikusi iturburua"
-
-#: ../js/ui/lookingGlass.js:834
-msgid "Web Page"
-msgstr "Web orria"
-
-#. Translators: this is a filename used for screencast recording
-#: ../js/ui/main.js:116
-#, no-c-format
-msgid "Screencast from %d %t"
-msgstr "Pantailaren bideoa %d %t"
-
-#: ../js/ui/messageTray.js:1199
-msgid "Open"
-msgstr "Ireki"
-
-#: ../js/ui/messageTray.js:1216
-msgid "Unmute"
-msgstr "Ez mututu"
-
-#: ../js/ui/messageTray.js:1216
-msgid "Mute"
-msgstr "Mututu"
-
-#: ../js/ui/messageTray.js:2449
-msgid "System Information"
-msgstr "Sistemaren informazioa"
-
-#: ../js/ui/networkAgent.js:148
-msgid "Connect"
-msgstr "Konektatu"
-
-#. Cisco LEAP
-#: ../js/ui/networkAgent.js:243 ../js/ui/networkAgent.js:255
-#: ../js/ui/networkAgent.js:282 ../js/ui/networkAgent.js:302
-#: ../js/ui/networkAgent.js:312
-msgid "Password: "
-msgstr "Pasahitza: "
-
-#. static WEP
-#: ../js/ui/networkAgent.js:248
-msgid "Key: "
-msgstr "Gakoa: "
-
-#. TTLS and PEAP are actually much more complicated, but this complication
-#. is not visible here since we only care about phase2 authentication
-#. (and don't even care of which one)
-#: ../js/ui/networkAgent.js:280 ../js/ui/networkAgent.js:298
-msgid "Username: "
-msgstr "Erabiltzaile-izena: "
-
-#: ../js/ui/networkAgent.js:286
-msgid "Identity: "
-msgstr "Identitatea: "
-
-#: ../js/ui/networkAgent.js:288
-msgid "Private key password: "
-msgstr "Gako pribatuaren pasahitza: "
-
-#: ../js/ui/networkAgent.js:300
-msgid "Service: "
-msgstr "Zerbitzua: "
-
-#: ../js/ui/networkAgent.js:329
-msgid "Authentication required by wireless network"
-msgstr "Haririk gabeko sareak autentifikazioa eskatzen du"
-
-#: ../js/ui/networkAgent.js:330
-#, c-format
-msgid ""
-"Passwords or encryption keys are required to access the wireless network "
-"'%s'."
-msgstr ""
-"Pasahitzak edo zifratze-gakoak behar dira haririk gabeko '%s' sarera "
-"sarbidetzeko."
-
-#: ../js/ui/networkAgent.js:334
-msgid "Wired 802.1X authentication"
-msgstr "Haridun 802.1X autentifikazioa"
-
-#: ../js/ui/networkAgent.js:336
-msgid "Network name: "
-msgstr "Sarearen izena: "
-
-#: ../js/ui/networkAgent.js:341
-msgid "DSL authentication"
-msgstr "DSL autentifikazioa"
-
-#: ../js/ui/networkAgent.js:348
-msgid "PIN code required"
-msgstr "PIN kodea behar da"
-
-#: ../js/ui/networkAgent.js:349
-msgid "PIN code is needed for the mobile broadband device"
-msgstr "PIN kodea behar da bandazabal mugikorreko gailuarentzako"
-
-#: ../js/ui/networkAgent.js:350
-msgid "PIN: "
-msgstr "PINa: "
-
-#: ../js/ui/networkAgent.js:356
-msgid "Mobile broadband network password"
-msgstr "Bandazabal mugikorreko sarearen pasahitza"
-
-#: ../js/ui/networkAgent.js:357
-#, c-format
-msgid "A password is required to connect to '%s'."
-msgstr "Pasahitza behar da '%s'(e)ra konektatzeko."
-
-#: ../js/ui/overview.js:90
-msgid "Undo"
-msgstr "Desegin"
-
-#: ../js/ui/overview.js:199
-msgid "Windows"
-msgstr "Leihoak"
-
-#: ../js/ui/overview.js:202
-msgid "Applications"
-msgstr "Aplikazioak"
-
-#. Translators: this is the name of the dock/favorites area on
-#. the left of the overview
-#: ../js/ui/overview.js:228
-msgid "Dash"
-msgstr "Atrakagarria"
-
-#: ../js/ui/panel.js:583
-msgid "Quit"
-msgstr "Irten"
-
-#. Translators: If there is no suitable word for "Activities"
-#. in your language, you can use the word for "Overview".
-#: ../js/ui/panel.js:614
-msgid "Activities"
-msgstr "Jarduerak"
-
-#: ../js/ui/panel.js:987
-msgid "Top Bar"
-msgstr "Goiko barra"
-
-#: ../js/ui/placeDisplay.js:115
-#, c-format
-msgid "Failed to unmount '%s'"
-msgstr "Huts egin du '%s' desmuntatzean"
-
-#: ../js/ui/placeDisplay.js:118
-msgid "Retry"
-msgstr "Saiatu berriro"
-
-#: ../js/ui/placeDisplay.js:156
-msgid "Connect to..."
-msgstr "Konektatu hona..."
-
-#: ../js/ui/placeDisplay.js:367
-msgid "PLACES & DEVICES"
-msgstr "LEKUAK ETA GAILUAK"
-
-#: ../js/ui/polkitAuthenticationAgent.js:71
-msgid "Authentication Required"
-msgstr "Autentifikazioa behar da"
-
-#: ../js/ui/polkitAuthenticationAgent.js:109
-msgid "Administrator"
-msgstr "Administratzailea"
-
-#: ../js/ui/polkitAuthenticationAgent.js:179
-msgid "Authenticate"
-msgstr "Autentifikatu"
-
-#. Translators: "that didn't work" refers to the fact that the
-#. * requested authentication was not gained; this can happen
-#. * because of an authentication error (like invalid password),
-#. * for instance.
-#: ../js/ui/polkitAuthenticationAgent.js:260
-msgid "Sorry, that didn't work. Please try again."
-msgstr "Huts egin du. Saiatu berriro."
-
-#. Translators: this MUST be either "toggle-switch-us"
-#. (for toggle switches containing the English words
-#. "ON" and "OFF") or "toggle-switch-intl" (for toggle
-#. switches containing "◯" and "|"). Other values will
-#. simply result in invisible toggle switches.
-#: ../js/ui/popupMenu.js:720
-msgid "toggle-switch-us"
-msgstr "toggle-switch-us"
-
-#: ../js/ui/runDialog.js:205
-msgid "Please enter a command:"
-msgstr "Idatzi komandoa:"
-
-#: ../js/ui/searchDisplay.js:349
-msgid "Searching..."
-msgstr "Bilatzen..."
-
-#: ../js/ui/searchDisplay.js:417
-msgid "No matching results."
-msgstr "Ez dago bat datorren emaitzarik."
-
-#: ../js/ui/shellEntry.js:26
-msgid "Copy"
-msgstr "Kopiatu"
-
-#: ../js/ui/shellEntry.js:31
-msgid "Paste"
-msgstr "Itsatsi"
-
-#: ../js/ui/shellEntry.js:77
-msgid "Show Text"
-msgstr "Erakutsi testua"
-
-#: ../js/ui/shellEntry.js:79
-msgid "Hide Text"
-msgstr "Ezkutatu testua"
-
-#: ../js/ui/shellMountOperation.js:271
-msgid "Wrong password, please try again"
-msgstr "Okerreko pasahitza, saiatu berriro"
-
-#: ../js/ui/status/accessibility.js:47
-msgid "Accessibility"
-msgstr "Erabilerraztasuna"
-
-#: ../js/ui/status/accessibility.js:52
-msgid "Zoom"
-msgstr "Zooma"
-
-#. let screenReader = this._buildItem(_("Screen Reader"), APPLICATIONS_SCHEMA,
-#. 'screen-reader-enabled');
-#. this.menu.addMenuItem(screenReader);
-#: ../js/ui/status/accessibility.js:63
-msgid "Screen Keyboard"
-msgstr "Pantailako teklatua"
-
-#: ../js/ui/status/accessibility.js:67
-msgid "Visual Alerts"
-msgstr "Abisu bisualak"
-
-#: ../js/ui/status/accessibility.js:70
-msgid "Sticky Keys"
-msgstr "Tekla itsaskorrak"
-
-#: ../js/ui/status/accessibility.js:73
-msgid "Slow Keys"
-msgstr "Tekla geldoak"
-
-#: ../js/ui/status/accessibility.js:76
-msgid "Bounce Keys"
-msgstr "Errebote-teklak"
-
-#: ../js/ui/status/accessibility.js:79
-msgid "Mouse Keys"
-msgstr "Sagu-teklak"
-
-#: ../js/ui/status/accessibility.js:83
-msgid "Universal Access Settings"
-msgstr "Sarbide unibertsalaren ezarpenak"
-
-#: ../js/ui/status/accessibility.js:117
-msgid "High Contrast"
-msgstr "Kontraste handia"
-
-#: ../js/ui/status/accessibility.js:154
-msgid "Large Text"
-msgstr "Testu handia"
-
-#: ../js/ui/status/bluetooth.js:31 ../js/ui/status/bluetooth.js:35
-#: ../js/ui/status/bluetooth.js:258 ../js/ui/status/bluetooth.js:341
-#: ../js/ui/status/bluetooth.js:371 ../js/ui/status/bluetooth.js:407
-#: ../js/ui/status/bluetooth.js:436 ../js/ui/status/network.js:893
-msgid "Bluetooth"
-msgstr "Bluetooth"
-
-#: ../js/ui/status/bluetooth.js:48
-msgid "Visibility"
-msgstr "Ikusgaitasuna"
-
-#: ../js/ui/status/bluetooth.js:62
-msgid "Send Files to Device..."
-msgstr "Bidali fitxategiak gailura..."
-
-#: ../js/ui/status/bluetooth.js:63
-msgid "Set up a New Device..."
-msgstr "Konfiguratu gailu berria..."
-
-#: ../js/ui/status/bluetooth.js:87
-msgid "Bluetooth Settings"
-msgstr "Bluetooth ezarpenak"
-
-#. TRANSLATORS: this means that bluetooth was disabled by hardware rfkill
-#: ../js/ui/status/bluetooth.js:107 ../js/ui/status/network.js:256
-msgid "hardware disabled"
-msgstr "hardwarea desgaituta"
-
-#: ../js/ui/status/bluetooth.js:203
-msgid "Connection"
-msgstr "Konexioa"
-
-#: ../js/ui/status/bluetooth.js:214 ../js/ui/status/network.js:491
-msgid "disconnecting..."
-msgstr "deskonektatzen..."
-
-#: ../js/ui/status/bluetooth.js:227 ../js/ui/status/network.js:497
-msgid "connecting..."
-msgstr "konektatzen..."
-
-#: ../js/ui/status/bluetooth.js:245
-msgid "Send Files..."
-msgstr "Bidali fitxategiak..."
-
-#: ../js/ui/status/bluetooth.js:250
-msgid "Browse Files..."
-msgstr "Arakatu fitxategiak..."
-
-#: ../js/ui/status/bluetooth.js:259
-msgid "Error browsing device"
-msgstr "Errorea gailua arakatzean"
-
-#: ../js/ui/status/bluetooth.js:260
-#, c-format
-msgid "The requested device cannot be browsed, error is '%s'"
-msgstr "Eskatutako gailua ezin da arakatu, errorea '%s' da"
-
-#: ../js/ui/status/bluetooth.js:268
-msgid "Keyboard Settings"
-msgstr "Teklatuaren ezarpenak"
-
-#: ../js/ui/status/bluetooth.js:271
-msgid "Mouse Settings"
-msgstr "Saguaren ezarpenak"
-
-#: ../js/ui/status/bluetooth.js:276 ../js/ui/status/volume.js:59
-msgid "Sound Settings"
-msgstr "Soinuaren ezarpenak"
-
-#: ../js/ui/status/bluetooth.js:372
-#, c-format
-msgid "Authorization request from %s"
-msgstr "Baimena eskatu da %s(e)tik"
-
-#: ../js/ui/status/bluetooth.js:378
-#, c-format
-msgid "Device %s wants access to the service '%s'"
-msgstr "%s gailuak '%s' zerbitzurako sarbidea nahi du"
-
-#: ../js/ui/status/bluetooth.js:380
-msgid "Always grant access"
-msgstr "Baimendu beti sarbidetza"
-
-#: ../js/ui/status/bluetooth.js:381
-msgid "Grant this time only"
-msgstr "Baimendu une honetan bakarrik"
-
-#: ../js/ui/status/bluetooth.js:382 ../js/ui/telepathyClient.js:1091
-msgid "Reject"
-msgstr "Ukatu"
-
-#: ../js/ui/status/bluetooth.js:408
-#, c-format
-msgid "Pairing confirmation for %s"
-msgstr "Parekatze-berrespena %s gailuarentzat"
-
-#: ../js/ui/status/bluetooth.js:414 ../js/ui/status/bluetooth.js:444
-#, c-format
-msgid "Device %s wants to pair with this computer"
-msgstr "%s gailuak ordenagailu honekin parekatu nahi du"
-
-#: ../js/ui/status/bluetooth.js:415
-#, c-format
-msgid "Please confirm whether the PIN '%s' matches the one on the device."
-msgstr "Berretsi '%s' PINa gailukoarekin bat datorrela."
-
-#: ../js/ui/status/bluetooth.js:417
-msgid "Matches"
-msgstr "Bat datozenak"
-
-#: ../js/ui/status/bluetooth.js:418
-msgid "Does not match"
-msgstr "Ez dator bat"
-
-#: ../js/ui/status/bluetooth.js:437
-#, c-format
-msgid "Pairing request for %s"
-msgstr "%s gailuaren parekatze-eskaera"
-
-#: ../js/ui/status/bluetooth.js:445
-msgid "Please enter the PIN mentioned on the device."
-msgstr "Sartu gailuan aipatutako PINa."
-
-#: ../js/ui/status/bluetooth.js:461
-msgid "OK"
-msgstr "Ados"
-
-#: ../js/ui/status/keyboard.js:68
-msgid "Show Keyboard Layout"
-msgstr "Erakutsi teklatuaren diseinua"
-
-#: ../js/ui/status/keyboard.js:73
-msgid "Region and Language Settings"
-msgstr "Eskualdearen eta hizkuntzaren ezarpenak"
-
-#: ../js/ui/status/network.js:96
-msgid "<unknown>"
-msgstr "<ezezaguna>"
-
-#. Translators: this indicates that wireless or wwan is disabled by hardware killswitch
-#: ../js/ui/status/network.js:278
-msgid "disabled"
-msgstr "desgaituta"
-
-#. Translators: this is for network devices that are physically present but are not
-#. under NetworkManager's control (and thus cannot be used in the menu)
-#: ../js/ui/status/network.js:489
-msgid "unmanaged"
-msgstr "kudeatu gabea"
-
-#. Translators: this is for network connections that require some kind of key or password
-#: ../js/ui/status/network.js:500
-msgid "authentication required"
-msgstr "autentifikazioa behar da"
-
-#. Translators: this is for devices that require some kind of firmware or kernel
-#. module, which is missing
-#: ../js/ui/status/network.js:510
-msgid "firmware missing"
-msgstr "firmwarea falta da"
-
-#. Translators: this is for wired network devices that are physically disconnected
-#: ../js/ui/status/network.js:517
-msgid "cable unplugged"
-msgstr "kablea deskonektatuta"
-
-#. Translators: this is for a network device that cannot be activated (for example it
-#. is disabled by rfkill, or it has no coverage
-#: ../js/ui/status/network.js:522
-msgid "unavailable"
-msgstr "ez dago erabilgarri"
-
-#: ../js/ui/status/network.js:524
-msgid "connection failed"
-msgstr "konexioak huts egin du"
-
-#: ../js/ui/status/network.js:585 ../js/ui/status/network.js:1505
-msgid "More..."
-msgstr "Gehiago..."
-
-#. TRANSLATORS: this is the indication that a connection for another logged in user is active,
-#. and we cannot access its settings (including the name)
-#: ../js/ui/status/network.js:621 ../js/ui/status/network.js:1440
-msgid "Connected (private)"
-msgstr "Konektatuta (pribatua)"
-
-#: ../js/ui/status/network.js:696
-msgid "Auto Ethernet"
-msgstr "Ethernet automatikoa"
-
-#: ../js/ui/status/network.js:757
-msgid "Auto broadband"
-msgstr "Banda zabalera automatikoa"
-
-#: ../js/ui/status/network.js:760
-msgid "Auto dial-up"
-msgstr "Modem automatikoa"
-
-#. TRANSLATORS: this the automatic wireless connection name (including the network name)
-#: ../js/ui/status/network.js:879 ../js/ui/status/network.js:1452
-#, c-format
-msgid "Auto %s"
-msgstr "%s automatikoa"
-
-#: ../js/ui/status/network.js:881
-msgid "Auto bluetooth"
-msgstr "Bluetooth automatikoa"
-
-#: ../js/ui/status/network.js:1454
-msgid "Auto wireless"
-msgstr "Haririk gabekoa automatikoa"
-
-#: ../js/ui/status/network.js:1541
-msgid "Network"
-msgstr "Sarea"
-
-#: ../js/ui/status/network.js:1548
-msgid "Enable networking"
-msgstr "Gaitu sarea"
-
-#: ../js/ui/status/network.js:1560
-msgid "Wired"
-msgstr "Hariduna"
-
-#: ../js/ui/status/network.js:1571
-msgid "Wireless"
-msgstr "Haririk gabekoa"
-
-#: ../js/ui/status/network.js:1581
-msgid "Mobile broadband"
-msgstr "Mugikorraren banda zabalera"
-
-#: ../js/ui/status/network.js:1591
-msgid "VPN Connections"
-msgstr "VPN konexioak"
-
-#: ../js/ui/status/network.js:1602
-msgid "Network Settings"
-msgstr "Sarearen ezarpenak"
-
-#: ../js/ui/status/network.js:1739
-msgid "Connection failed"
-msgstr "Konexioak huts egin du"
-
-#: ../js/ui/status/network.js:1740
-msgid "Activation of network connection failed"
-msgstr "Sareko konexioa aktibatzeak huts egin du"
-
-#: ../js/ui/status/network.js:1993
-msgid "Networking is disabled"
-msgstr "Sarea desgaituta dago"
-
-#: ../js/ui/status/network.js:2117
-msgid "Network Manager"
-msgstr "Sarearen kudeatzailea"
-
-#: ../js/ui/status/power.js:59
-msgid "Battery"
-msgstr "Bateria"
-
-#: ../js/ui/status/power.js:76
-msgid "Power Settings"
-msgstr "Energiaren ezarpenak"
-
-#. 0 is reported when UPower does not have enough data
-#. to estimate battery life
-#: ../js/ui/status/power.js:98
-msgid "Estimating..."
-msgstr "Kalkulatzen..."
-
-#: ../js/ui/status/power.js:105
-#, c-format
-msgid "%d hour remaining"
-msgid_plural "%d hours remaining"
-msgstr[0] "ordu %d geratzen da"
-msgstr[1] "%d ordu geratzen dira"
-
-#. TRANSLATORS: this is a time string, as in "%d hours %d minutes remaining"
-#: ../js/ui/status/power.js:108
-#, c-format
-msgid "%d %s %d %s remaining"
-msgstr "%d %s %d %s geratzen da"
-
-#: ../js/ui/status/power.js:110
-msgid "hour"
-msgid_plural "hours"
-msgstr[0] "ordu"
-msgstr[1] "ordu"
-
-#: ../js/ui/status/power.js:110
-msgid "minute"
-msgid_plural "minutes"
-msgstr[0] "minutu"
-msgstr[1] "minutu"
-
-#: ../js/ui/status/power.js:113
-#, c-format
-msgid "%d minute remaining"
-msgid_plural "%d minutes remaining"
-msgstr[0] "minutu %d geratzen da"
-msgstr[1] "%d minutu geratzen dira"
-
-#: ../js/ui/status/power.js:116 ../js/ui/status/power.js:186
-#, c-format
-msgctxt "percent of battery remaining"
-msgid "%d%%"
-msgstr "%%%d"
-
-#: ../js/ui/status/power.js:193
-msgid "AC adapter"
-msgstr "AC moldagailua"
-
-#: ../js/ui/status/power.js:195
-msgid "Laptop battery"
-msgstr "Eramangarriaren bateria"
-
-#: ../js/ui/status/power.js:197
-msgid "UPS"
-msgstr "UPS"
-
-#: ../js/ui/status/power.js:199
-msgid "Monitor"
-msgstr "Monitorea"
-
-#: ../js/ui/status/power.js:201
-msgid "Mouse"
-msgstr "Sagua"
-
-#: ../js/ui/status/power.js:205
-msgid "PDA"
-msgstr "PDA"
-
-#: ../js/ui/status/power.js:207
-msgid "Cell phone"
-msgstr "Telefono mugikorra"
-
-#: ../js/ui/status/power.js:209
-msgid "Media player"
-msgstr "Multimediaren erreproduzigailua"
-
-#: ../js/ui/status/power.js:211
-msgid "Tablet"
-msgstr "Taula"
-
-#: ../js/ui/status/power.js:213
-msgid "Computer"
-msgstr "Ordenagailua"
-
-#. Translators: This is the label for audio volume
-#: ../js/ui/status/volume.js:25 ../js/ui/status/volume.js:39
-msgid "Volume"
-msgstr "Bolumena"
-
-#: ../js/ui/status/volume.js:51
-msgid "Microphone"
-msgstr "Mikrofonoa"
-
-#. FIXME: We don't have a 'chat room' icon (bgo #653737) use
-#. system-users for now as Empathy does.
-#: ../js/ui/telepathyClient.js:220
-msgid "Invitation"
-msgstr "Gonbidapena"
-
-#. We got the TpContact
-#: ../js/ui/telepathyClient.js:271
-msgid "Call"
-msgstr "Deitu"
-
-#. We got the TpContact
-#: ../js/ui/telepathyClient.js:287
-msgid "File Transfer"
-msgstr "Fitxategi-transferentzia"
-
-#: ../js/ui/telepathyClient.js:369
-msgid "Subscription request"
-msgstr "Harpidetza eskaera"
-
-#: ../js/ui/telepathyClient.js:405
-msgid "Connection error"
-msgstr "Konexio-errorea"
-
-#: ../js/ui/telepathyClient.js:663
-#, c-format
-msgid "%s is online."
-msgstr "%s linean dago."
-
-#: ../js/ui/telepathyClient.js:667
-#, c-format
-msgid "%s is offline."
-msgstr "%s lineaz kanpo dago."
-
-#: ../js/ui/telepathyClient.js:671
-#, c-format
-msgid "%s is away."
-msgstr "%s kanpoan dago."
-
-#: ../js/ui/telepathyClient.js:674
-#, c-format
-msgid "%s is busy."
-msgstr "%s lanpetuta dago."
-
-#. Translators: this is a time format string followed by a date.
-#. If applicable, replace %X with a strftime format valid for your
-#. locale, without seconds.
-#: ../js/ui/telepathyClient.js:887
-#, no-c-format
-msgid "Sent at <b>%X</b> on <b>%A</b>"
-msgstr "<b>%A</b> <b>%X</b>(e)an bidalita"
-
-#. Translators: this is a time format in the style of "Wednesday, May 25",
-#. shown when you get a chat message in the same year.
-#: ../js/ui/telepathyClient.js:893
-#, no-c-format
-msgid "Sent on <b>%A</b>, <b>%B %d</b>"
-msgstr "<b>%A</b>, <b>%B %d</b>(e)an bidalita"
-
-#. Translators: this is a time format in the style of "Wednesday, May 25, 2012",
-#. shown when you get a chat message in a different year.
-#: ../js/ui/telepathyClient.js:898
-#, no-c-format
-msgid "Sent on <b>%A</b>, <b>%B %d</b>, %Y"
-msgstr "<b>%A</b>, %Y(e)ko <b>%B %d</b>(e)an bidalita"
-
-#. Translators: this is the other person changing their old IM name to their new
-#. IM name.
-#: ../js/ui/telepathyClient.js:940
-#, c-format
-msgid "%s is now known as %s"
-msgstr "%s orain %s gisa ezagutzen da"
-
-#. translators: argument is a room name like
-#. * room@jabber.org for example.
-#: ../js/ui/telepathyClient.js:1042
-#, c-format
-msgid "Invitation to %s"
-msgstr "%s gelarako gonbidapena"
-
-#. translators: first argument is the name of a contact and the second
-#. * one the name of a room. "Alice is inviting you to join room@jabber.org
-#. * for example.
-#: ../js/ui/telepathyClient.js:1050
-#, c-format
-msgid "%s is inviting you to join %s"
-msgstr "%s(e)k gonbidatzen zaitu '%s'(e)ra elkartzeko"
-
-#: ../js/ui/telepathyClient.js:1052 ../js/ui/telepathyClient.js:1131
-#: ../js/ui/telepathyClient.js:1229
-msgid "Decline"
-msgstr "Ukatu"
-
-#: ../js/ui/telepathyClient.js:1053 ../js/ui/telepathyClient.js:1132
-#: ../js/ui/telepathyClient.js:1230
-msgid "Accept"
-msgstr "Onartu"
-
-#. translators: argument is a contact name like Alice for example.
-#: ../js/ui/telepathyClient.js:1083
-#, c-format
-msgid "Video call from %s"
-msgstr "%s(r)en bideo-deia"
-
-#. translators: argument is a contact name like Alice for example.
-#: ../js/ui/telepathyClient.js:1086
-#, c-format
-msgid "Call from %s"
-msgstr "%s(r)en deia"
-
-#. translators: this is a button label (verb), not a noun
-#: ../js/ui/telepathyClient.js:1093
-msgid "Answer"
-msgstr "Erantzun"
-
-#. To translators: The first parameter is
-#. * the contact's alias and the second one is the
-#. * file name. The string will be something
-#. * like: "Alice is sending you test.ogg"
-#.
-#: ../js/ui/telepathyClient.js:1125
-#, c-format
-msgid "%s is sending you %s"
-msgstr "%s fitxategia ari zaizu bidaltzen: %s"
-
-#. To translators: The parameter is the contact's alias
-#: ../js/ui/telepathyClient.js:1194
-#, c-format
-msgid "%s would like permission to see when you are online"
-msgstr "%s(e)k baimena nahiko luke linean noiz zauden jakiteko"
-
-#: ../js/ui/telepathyClient.js:1287
-msgid "Network error"
-msgstr "Sareko errorea"
-
-#: ../js/ui/telepathyClient.js:1289
-msgid "Authentication failed"
-msgstr "Autentifikazioak huts egin du"
-
-#: ../js/ui/telepathyClient.js:1291
-msgid "Encryption error"
-msgstr "Zifratze-errorea"
-
-#: ../js/ui/telepathyClient.js:1293
-msgid "Certificate not provided"
-msgstr "Ez da ziurtagiririk eman"
-
-#: ../js/ui/telepathyClient.js:1295
-msgid "Certificate untrusted"
-msgstr "Ziurtagiria ez da fidagarria"
-
-#: ../js/ui/telepathyClient.js:1297
-msgid "Certificate expired"
-msgstr "Ziurtagiria iraungituta"
-
-#: ../js/ui/telepathyClient.js:1299
-msgid "Certificate not activated"
-msgstr "Ziurtagiria aktibatu gabe"
-
-#: ../js/ui/telepathyClient.js:1301
-msgid "Certificate hostname mismatch"
-msgstr "Ziurtagiriaren ostalari-izena ez dator bat"
-
-#: ../js/ui/telepathyClient.js:1303
-msgid "Certificate fingerprint mismatch"
-msgstr "Ziurtagiriaren hatz-marka ez dator bat"
-
-#: ../js/ui/telepathyClient.js:1305
-msgid "Certificate self-signed"
-msgstr "Ziurtagiria bere buruarekin sinatuta"
-
-#: ../js/ui/telepathyClient.js:1307
-msgid "Status is set to offline"
-msgstr "Egoera lineaz kanpo da"
-
-#: ../js/ui/telepathyClient.js:1309
-msgid "Encryption is not available"
-msgstr "Zifratzea ez dago eskuragarri"
-
-#: ../js/ui/telepathyClient.js:1311
-msgid "Certificate is invalid"
-msgstr "Ziurtagiria baliogabea da"
-
-#: ../js/ui/telepathyClient.js:1313
-msgid "Connection has been refused"
-msgstr "Konexioa ukatu egin da"
-
-#: ../js/ui/telepathyClient.js:1315
-msgid "Connection can't be established"
-msgstr "Konexioa ezin da burutu"
-
-#: ../js/ui/telepathyClient.js:1317
-msgid "Connection has been lost"
-msgstr "Konexioa galdu egin da"
-
-#: ../js/ui/telepathyClient.js:1319
-msgid "This account is already connected to the server"
-msgstr "Kontu hau jadanik zerbitzariarekin konektatuta dago"
-
-#: ../js/ui/telepathyClient.js:1321
-msgid ""
-"Connection has been replaced by a new connection using the same resource"
-msgstr ""
-"Konexioa ordezkatu egin da baliabide bera darabilen konexio berri batengatik"
-
-#: ../js/ui/telepathyClient.js:1323
-msgid "The account already exists on the server"
-msgstr "Kontua badago lehendik zerbitzarian"
-
-#: ../js/ui/telepathyClient.js:1325
-msgid "Server is currently too busy to handle the connection"
-msgstr "Zerbitzaria oso lanpetuta dago konexioa maneiatzeko"
-
-#: ../js/ui/telepathyClient.js:1327
-msgid "Certificate has been revoked"
-msgstr "Ziurtagiria errebokatu egin da"
-
-#: ../js/ui/telepathyClient.js:1329
-msgid ""
-"Certificate uses an insecure cipher algorithm or is cryptographically weak"
-msgstr ""
-"Ziurtagiriak zifratze-algoritmo ez-segurua darabil edo kriptografikoki ahula "
-"da"
-
-#: ../js/ui/telepathyClient.js:1331
-msgid ""
-"The length of the server certificate, or the depth of the server certificate "
-"chain, exceed the limits imposed by the cryptography library"
-msgstr ""
-"Zerbitzariaren ziurtagiriaren luzerak edo ziurtagiri-katearen sakonerak "
-"liburutegi kriptografikoak ezarritako mugak gainditzen ditu"
-
-#: ../js/ui/telepathyClient.js:1333
-msgid "Internal error"
-msgstr "Barneko errorea"
-
-#. translators: argument is the account name, like
-#. * name@jabber.org for example.
-#: ../js/ui/telepathyClient.js:1343
-#, c-format
-msgid "Connection to %s failed"
-msgstr "%s(e)rako konexioak huts egin du"
-
-#: ../js/ui/telepathyClient.js:1352
-msgid "Reconnect"
-msgstr "Berriz konektatu"
-
-#: ../js/ui/telepathyClient.js:1353
-msgid "Edit account"
-msgstr "Editatu kontua"
-
-#: ../js/ui/telepathyClient.js:1399
-msgid "Unknown reason"
-msgstr "Arrazoi ezezaguna"
-
-#: ../js/ui/userMenu.js:133
-msgid "Hidden"
-msgstr "Ezkutatua"
-
-#: ../js/ui/userMenu.js:139
-msgid "Idle"
-msgstr "Inaktiboa"
-
-#: ../js/ui/userMenu.js:142
-msgid "Unavailable"
-msgstr "Ez dago erabilgarri"
-
-#: ../js/ui/userMenu.js:589 ../js/ui/userMenu.js:593 ../js/ui/userMenu.js:663
-msgid "Power Off..."
-msgstr "Itzali..."
-
-#: ../js/ui/userMenu.js:625
-msgid "Notifications"
-msgstr "Jakinarazpenak"
-
-#: ../js/ui/userMenu.js:633
-msgid "Online Accounts"
-msgstr "Lineako kontuak"
-
-#: ../js/ui/userMenu.js:637
-msgid "System Settings"
-msgstr "Sistemaren ezarpenak"
-
-#: ../js/ui/userMenu.js:644
+#: ../plugins/actions/actions.c:111
 msgid "Lock Screen"
 msgstr "Blokeatu pantaila"
 
-#: ../js/ui/userMenu.js:649
-msgid "Switch User"
-msgstr "Aldatu erabiltzailea"
+#: ../plugins/actions/actions.c:112
+msgid "Shut Down"
+msgstr "Itzali"
 
-#: ../js/ui/userMenu.js:654
-msgid "Log Out..."
-msgstr "Amaitu saioa..."
+#: ../plugins/actions/actions.c:113
+msgid "Restart"
+msgstr "Berrabiarazi"
 
-#: ../js/ui/userMenu.js:682
-msgid "Your chat status will be set to busy"
-msgstr "Zure berriketaren egoera lanpetuta gisa ezar daiteke"
+#: ../plugins/actions/actions.c:114
+msgid "Suspend"
+msgstr "Eseki"
 
-#: ../js/ui/userMenu.js:683
-msgid ""
-"Notifications are now disabled, including chat messages. Your online status "
-"has been adjusted to let others know that you might not see their messages."
-msgstr ""
-"Jakinarazpenak desgaituta daude orain, berriketen mezuak barne. Zure lineako "
-"egoera doitu egin da besteek beraien mezurik ezin ditzakezula ikusi jakin "
-"dezaten. "
+#: ../plugins/actions/actions.c:115
+msgid "Hibernate"
+msgstr "Hibernatu"
 
-#. Translators: this is the text displayed
-#. in the search entry when no search is
-#. active; it should not exceed ~30
-#. characters.
-#: ../js/ui/viewSelector.js:113
-msgid "Type to search..."
-msgstr "Idatzi bilatzeko..."
+#: ../plugins/actions/actions.desktop.in.h:2
+msgid "Log out, lock or other system actions"
+msgstr "SAioa itxi, blokeatu beta beste zenbait sistema ekintza"
 
-#: ../js/ui/viewSelector.js:131 ../src/shell-util.c:252
-msgid "Search"
-msgstr "Bilatu"
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:1
+#: ../plugins/clock/clock-dialog.glade.h:3
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:1
+#: ../plugins/pager/pager-dialog.glade.h:1
+#: ../plugins/separator/separator-dialog.glade.h:1
+#: ../plugins/systray/systray-dialog.glade.h:1
+#: ../plugins/tasklist/tasklist-dialog.glade.h:2
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:1
+msgid "Appearance"
+msgstr "Itxura"
 
-#: ../js/ui/wanda.js:124
+#. I18N: default tooltip of the application menu
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:2
+#: ../plugins/applicationsmenu/applicationsmenu.c:38
+#: ../plugins/applicationsmenu/applicationsmenu.desktop.in.h:1
+msgid "Applications Menu"
+msgstr "Aplikazioa menua"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:3
+msgid "Button _title:"
+msgstr "Botoi _titulua:"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:4
+msgid "Ed_it Menu"
+msgstr "Ed_itatu menua"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:5
+msgid "Menu File"
+msgstr "Menu fitxategia"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:6
+msgid "Menu _file:"
+msgstr "Menu _fitxategia:"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:7
+msgid "Select A Menu File"
+msgstr "Hautatu menu fitxategi bat"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:8
+msgid "Select this option to show the generic application name in the menu, for example \"File Manager\" instead of \"Thunar\""
+msgstr "Aukera hau hautatu menuan aplikazioaren izen generikoa bistartzeko, adibidez \"Fitxategi kudeatzailea\" \"Thunar ordez\""
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:9
+msgid "Show application d_escription in tooltip"
+msgstr "Ikusi aplikazio d_eskribapena argibideetan"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:10
+msgid "Show generic application n_ames"
+msgstr "Ikusi aplikazio izen generikoak"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:11
+msgid "Show ic_ons in menu"
+msgstr "Ikusi ik_onoak menuan"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:12
+msgid "Use c_ustom menu file:"
+msgstr "Erabili _pertsonalizatutako menu fitxategia:"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:13
+msgid "Use the _default menu"
+msgstr "Erabili _lehenetsitako menu fitxategia"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:14
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:9
+msgid "_Icon:"
+msgstr "_Ikonoa:"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:15
+msgid "_Show button title"
+msgstr "_Ikusi botoi izenburua"
+
+#: ../plugins/applicationsmenu/applicationsmenu.c:475
+#: ../plugins/directorymenu/directorymenu.c:369
+msgid "Select An Icon"
+msgstr "Hautatu ikono bat"
+
+#: ../plugins/applicationsmenu/applicationsmenu.c:513
+#: ../plugins/applicationsmenu/applicationsmenu.c:754
+#: ../plugins/launcher/launcher.c:2289
 #, c-format
-msgid ""
-"Sorry, no wisdom for you today:\n"
-"%s"
-msgstr ""
-"Gaur zuretzako jakinduriarik ez:\n"
-"%s"
+msgid "Failed to execute command \"%s\"."
+msgstr "Ezin da \"%s\" komandoa exekutatu."
 
-#: ../js/ui/wanda.js:128
+#: ../plugins/applicationsmenu/applicationsmenu.c:1010
+msgid "No applications found"
+msgstr "Ez da aplikaziorik aurkitu"
+
+#: ../plugins/applicationsmenu/applicationsmenu.c:1033
+msgid "Failed to load the applications menu"
+msgstr "Huts aplikazio menua kargatzean"
+
+#: ../plugins/applicationsmenu/applicationsmenu.desktop.in.h:2
+msgid "Show a menu containing categories of installed applications"
+msgstr "Ikusi instalatutako aplikazio kategoriak dituen menua"
+
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:27
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:27
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:27
+msgid "Usage:"
+msgstr "Erabilera:"
+
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:28
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:28
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:28
+msgid "OPTION"
+msgstr "AUKERA"
+
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:30
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:30
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:30
+msgid "Options:"
+msgstr "Aukerak:"
+
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:31
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:31
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:31
+msgid "Popup menu at current mouse position"
+msgstr "Bistarazi menua saguaren uneko kokalekuan"
+
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:32
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:32
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:32
+msgid "Show help options"
+msgstr "Ikusi laguntza aukerak"
+
+#: ../plugins/clock/clock.c:146
+msgid "Week %V"
+msgstr "%V astea"
+
+#: ../plugins/clock/clock.c:407
+msgid "Failed to execute clock command"
+msgstr "Huts clock komandoa exekutatzean"
+
+#: ../plugins/clock/clock.c:719
+msgid "Custom Format"
+msgstr "Pertsonalizatuko formatua"
+
+#: ../plugins/clock/clock-dialog.glade.h:1
+msgid "24-_hour clock"
+msgstr "24 _orduko ordularia"
+
+#: ../plugins/clock/clock-dialog.glade.h:2
+msgid "Analog"
+msgstr "Analogikoa"
+
+#: ../plugins/clock/clock-dialog.glade.h:4
+msgid "Binary"
+msgstr "Bitarra"
+
+#: ../plugins/clock/clock-dialog.glade.h:5
+#: ../plugins/clock/clock.desktop.in.h:1
+msgid "Clock"
+msgstr "Ordularia"
+
+#: ../plugins/clock/clock-dialog.glade.h:6
+msgid "Clock Options"
+msgstr "Ordulari aukerak"
+
+#: ../plugins/clock/clock-dialog.glade.h:7
+msgid "Digital"
+msgstr "Digitala"
+
+#: ../plugins/clock/clock-dialog.glade.h:8
+msgid "Display _seconds"
+msgstr "Bistarazi _segunduak"
+
+#: ../plugins/clock/clock-dialog.glade.h:9
+msgid "F_ormat:"
+msgstr "F_ormatua:"
+
+#. I18N: the fuzziness the *precision* of the fuzzy clock. Time steps of 5, 15
+#. or parts of the day.
+#: ../plugins/clock/clock-dialog.glade.h:11
+msgid "F_uzziness:"
+msgstr "La_usotasuna:"
+
+#: ../plugins/clock/clock-dialog.glade.h:12
+msgid "Fl_ash time separators"
+msgstr "Fl_ash ordu bereizleak"
+
+#: ../plugins/clock/clock-dialog.glade.h:13
+msgid "Fuzzy"
+msgstr "Nahasia"
+
+#: ../plugins/clock/clock-dialog.glade.h:14
+msgid "LCD"
+msgstr "LCD"
+
+#: ../plugins/clock/clock-dialog.glade.h:15
+msgid "Sho_w AM/PM"
+msgstr "AM/_PM bistarazi"
+
+#: ../plugins/clock/clock-dialog.glade.h:16
+#: ../plugins/systray/systray-dialog.glade.h:5
+msgid "Show _frame"
+msgstr "Bistarazi _markoa"
+
+#: ../plugins/clock/clock-dialog.glade.h:17
+msgid "Show _inactive dots"
+msgstr "Ikusi puntu _inaktiboak"
+
+#: ../plugins/clock/clock-dialog.glade.h:18
+msgid "Show gri_d"
+msgstr "Ikusi _sareta"
+
+#: ../plugins/clock/clock-dialog.glade.h:20
+#, no-c-format
+msgid "The format describes the date and time parts to insert into the file name. For example, %Y will be substituted with the year, %m with the month and %d with the day. See the documentation of the date utility for additional information."
+msgstr "Formatuak fitxategi izenean txertatuko diren data eta ordu zatiak zehazten ditu. Adibidez, %Y urteaz ordeztuko da, %m hilabeteaz eta %d egunaz. Begiratu date tresnaren dokumentazioa argibide gehiagorentzat."
+
+#: ../plugins/clock/clock-dialog.glade.h:21
+msgid "True _binary clock"
+msgstr "Egiazko ordulari _bitarra"
+
+#: ../plugins/clock/clock-dialog.glade.h:22
+msgid "_Layout:"
+msgstr "_Ingurunea"
+
+#: ../plugins/clock/clock-dialog.glade.h:23
+msgid "_Tooltip format:"
+msgstr "A_holku formatua:"
+
+#: ../plugins/clock/clock-fuzzy.c:86
+msgid "Night"
+msgstr "Gaua"
+
+#: ../plugins/clock/clock-fuzzy.c:87
+msgid "Early morning"
+msgstr "Goizean goiz"
+
+#: ../plugins/clock/clock-fuzzy.c:88
+msgid "Morning"
+msgstr "Goiza"
+
+#: ../plugins/clock/clock-fuzzy.c:89
+msgid "Almost noon"
+msgstr "Eguerdia"
+
+#: ../plugins/clock/clock-fuzzy.c:90
+msgid "Noon"
+msgstr "Eguerdia"
+
+#: ../plugins/clock/clock-fuzzy.c:91
+msgid "Afternoon"
+msgstr "Arratsaldea"
+
+#: ../plugins/clock/clock-fuzzy.c:92
+msgid "Evening"
+msgstr "Ilunsentia"
+
+#: ../plugins/clock/clock-fuzzy.c:93
+msgid "Late evening"
+msgstr "Ilunsenti amaiera"
+
+#. I18N: %0 will be replaced with the preceding hour, %1 with
+#. * the comming hour
+#: ../plugins/clock/clock-fuzzy.c:100
+#, no-c-format
+msgid "%0 o'clock"
+msgstr "%0 puntuan"
+
+#: ../plugins/clock/clock-fuzzy.c:101
+#, no-c-format
+msgid "five past %0"
+msgstr "%0 eta bost"
+
+#: ../plugins/clock/clock-fuzzy.c:102
+#, no-c-format
+msgid "ten past %0"
+msgstr "%0 eta hamar"
+
+#: ../plugins/clock/clock-fuzzy.c:103
+#, no-c-format
+msgid "quarter past %0"
+msgstr "%0 eta laurden"
+
+#: ../plugins/clock/clock-fuzzy.c:104
+#, no-c-format
+msgid "twenty past %0"
+msgstr "%0 eta hogei"
+
+#: ../plugins/clock/clock-fuzzy.c:105
+#, no-c-format
+msgid "twenty five past %0"
+msgstr "%0 eta hogeitabost"
+
+#: ../plugins/clock/clock-fuzzy.c:106
+#, no-c-format
+msgid "half past %0"
+msgstr "%0 eta erdi"
+
+#: ../plugins/clock/clock-fuzzy.c:107
+#, no-c-format
+msgid "twenty five to %1"
+msgstr "%1 hogeitabost gutxi"
+
+#: ../plugins/clock/clock-fuzzy.c:108
+#, no-c-format
+msgid "twenty to %1"
+msgstr "%1 hogei gutxi"
+
+#: ../plugins/clock/clock-fuzzy.c:109
+#, no-c-format
+msgid "quarter to %1"
+msgstr "%1 laurden gutxi"
+
+#: ../plugins/clock/clock-fuzzy.c:110
+#, no-c-format
+msgid "ten to %1"
+msgstr "%1 hamar gutxi"
+
+#: ../plugins/clock/clock-fuzzy.c:111
+#, no-c-format
+msgid "five to %1"
+msgstr "%1 bost gutxi"
+
+#: ../plugins/clock/clock-fuzzy.c:112
+#, no-c-format
+msgid "%1 o'clock"
+msgstr "%1 puntuan"
+
+#. I18N: some languages have a singular form for the first hour,
+#. * other languages should just use the same strings as above
+#: ../plugins/clock/clock-fuzzy.c:119
+#, no-c-format
+msgctxt "one"
+msgid "%0 o'clock"
+msgstr "%0 puntuan"
+
+#: ../plugins/clock/clock-fuzzy.c:120
+#, no-c-format
+msgctxt "one"
+msgid "five past %0"
+msgstr "%0 eta bost"
+
+#: ../plugins/clock/clock-fuzzy.c:121
+#, no-c-format
+msgctxt "one"
+msgid "ten past %0"
+msgstr "%0 eta hamar"
+
+#: ../plugins/clock/clock-fuzzy.c:122
+#, no-c-format
+msgctxt "one"
+msgid "quarter past %0"
+msgstr "%0 eta laurden"
+
+#: ../plugins/clock/clock-fuzzy.c:123
+#, no-c-format
+msgctxt "one"
+msgid "twenty past %0"
+msgstr "%0 eta hogei"
+
+#: ../plugins/clock/clock-fuzzy.c:124
+#, no-c-format
+msgctxt "one"
+msgid "twenty five past %0"
+msgstr "%0 eta hogeitabost"
+
+#: ../plugins/clock/clock-fuzzy.c:125
+#, no-c-format
+msgctxt "one"
+msgid "half past %0"
+msgstr "%0 eta erdi"
+
+#: ../plugins/clock/clock-fuzzy.c:126
+#, no-c-format
+msgctxt "one"
+msgid "twenty five to %1"
+msgstr "%1 hogeitabost gutxi"
+
+#: ../plugins/clock/clock-fuzzy.c:127
+#, no-c-format
+msgctxt "one"
+msgid "twenty to %1"
+msgstr "%1 hogei gutxi"
+
+#: ../plugins/clock/clock-fuzzy.c:128
+#, no-c-format
+msgctxt "one"
+msgid "quarter to %1"
+msgstr "%1 laurden gutxi"
+
+#: ../plugins/clock/clock-fuzzy.c:129
+#, no-c-format
+msgctxt "one"
+msgid "ten to %1"
+msgstr "%1 hamar gutxi"
+
+#: ../plugins/clock/clock-fuzzy.c:130
+#, no-c-format
+msgctxt "one"
+msgid "five to %1"
+msgstr "%1 bost gutxi"
+
+#: ../plugins/clock/clock-fuzzy.c:131
+#, no-c-format
+msgctxt "one"
+msgid "%1 o'clock"
+msgstr "%1 puntuan"
+
+#: ../plugins/clock/clock-fuzzy.c:136
+msgid "one"
+msgstr "ordubatak"
+
+#: ../plugins/clock/clock-fuzzy.c:137
+msgid "two"
+msgstr "ordubiak"
+
+#: ../plugins/clock/clock-fuzzy.c:138
+msgid "three"
+msgstr "hirurak"
+
+#: ../plugins/clock/clock-fuzzy.c:139
+msgid "four"
+msgstr "laurak"
+
+#: ../plugins/clock/clock-fuzzy.c:140
+msgid "five"
+msgstr "bostak"
+
+#: ../plugins/clock/clock-fuzzy.c:141
+msgid "six"
+msgstr "seiak"
+
+#: ../plugins/clock/clock-fuzzy.c:142
+msgid "seven"
+msgstr "zazpiak"
+
+#: ../plugins/clock/clock-fuzzy.c:143
+msgid "eight"
+msgstr "zortziak"
+
+#: ../plugins/clock/clock-fuzzy.c:144
+msgid "nine"
+msgstr "bederatziak"
+
+#: ../plugins/clock/clock-fuzzy.c:145
+msgid "ten"
+msgstr "hamarrak"
+
+#: ../plugins/clock/clock-fuzzy.c:146
+msgid "eleven"
+msgstr "hamaikak"
+
+#: ../plugins/clock/clock-fuzzy.c:147
+msgid "twelve"
+msgstr "hamabiak"
+
+#: ../plugins/clock/clock.desktop.in.h:2
+msgid "What time is it?"
+msgstr "Zein ordu da?"
+
+#: ../plugins/directorymenu/directorymenu.c:243
+#: ../plugins/directorymenu/directorymenu.desktop.in.h:1
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:2
+msgid "Directory Menu"
+msgstr "Direktorio menua"
+
+#: ../plugins/directorymenu/directorymenu.c:550
 #, c-format
-msgid "%s the Oracle says"
-msgstr "Orakuluak dio: %s"
+msgid "Failed to launch application \"%s\""
+msgstr "Huts \"%s\" aplikazioa abiaraztean."
 
-#: ../js/ui/wanda.js:168
-msgid "Your favorite Easter Egg"
-msgstr "Zure pazko-arrautza gogokoena"
-
-#: ../js/ui/windowAttentionHandler.js:19
+#: ../plugins/directorymenu/directorymenu.c:581
 #, c-format
-msgid "'%s' is ready"
-msgstr "'%s' prest dago"
+msgid "Failed to query content type for \"%s\""
+msgstr "Huts \"%s\" eduki mota antzematean"
 
-#. translators:
-#. * The number of sound outputs on a particular device
-#: ../src/gvc/gvc-mixer-control.c:1100
+#: ../plugins/directorymenu/directorymenu.c:590
 #, c-format
-msgid "%u Output"
-msgid_plural "%u Outputs"
-msgstr[0] "Irteera %u"
-msgstr[1] "%u irteera"
+msgid "No default application found for \"%s\""
+msgstr "Ez da lehenetsitako aplikaziorik aurkitu \"%s\"-rentzat"
 
-#. translators:
-#. * The number of sound inputs on a particular device
-#: ../src/gvc/gvc-mixer-control.c:1110
+#: ../plugins/directorymenu/directorymenu.c:605
 #, c-format
-msgid "%u Input"
-msgid_plural "%u Inputs"
-msgstr[0] "Sarrera %u"
-msgstr[1] "%u sarrera"
+msgid "Failed to launch default application for \"%s\""
+msgstr "Huts \"%s\"-ren lehenetsitako aplikazioa abiaraztean."
 
-#: ../src/gvc/gvc-mixer-control.c:1408
-msgid "System Sounds"
-msgstr "Sistemako soinuak"
-
-#: ../src/main.c:253
-msgid "Print version"
-msgstr "Bistaratu bertsioa"
-
-#: ../src/main.c:259
-msgid "Mode used by GDM for login screen"
-msgstr "GDMk erabiltzen duen modua saio-hasierako pantailarako"
-
-#: ../src/shell-app.c:617
+#: ../plugins/directorymenu/directorymenu.c:697
 #, c-format
-msgid "Failed to launch '%s'"
-msgstr "Huts egin du '%s' abiaraztean"
+msgid "Failed to execute the preferred application for category \"%s\""
+msgstr "Huts \"%s\" kategoriaren lehenetsitako aplikazioa abiaraztean."
 
-#: ../src/shell-keyring-prompt.c:708
-msgid "Passwords do not match."
-msgstr "Pasahitzak ez datoz bat"
+#: ../plugins/directorymenu/directorymenu.c:770
+msgid "Open Folder"
+msgstr "Ireki karpeta"
 
-#: ../src/shell-keyring-prompt.c:716
-msgid "Password cannot be blank"
-msgstr "Pasahitza ezin da hutsa izan"
+#: ../plugins/directorymenu/directorymenu.c:781
+msgid "Open in Terminal"
+msgstr "Ireki terminalean"
 
-#: ../src/shell-mobile-providers.c:80
-msgid "United Kingdom"
-msgstr "Erresuma Batua"
+#: ../plugins/directorymenu/directorymenu.desktop.in.h:2
+msgid "Show a directory tree in a menu"
+msgstr "Ikusi direktorio zuhaitza menu batean"
 
-#: ../src/shell-mobile-providers.c:526
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:3
+msgid "Enter a list of patterns that will be used to determine which files are visible in a directory. If you specify more than one pattern here, the list items must be separated with semicolons (e.g. *.txt;*.doc)."
+msgstr "Idatzi direktorioan bistaraziko diren fitxategiak ezartzen dituen patroi zerrenda. Hemen patroi bat baino gehiago zehazten baduzu, zerrenda elementuak puntu eta gakoz bereizi behar dira (adib *.txt; *.doc)."
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:4
+#: ../plugins/tasklist/tasklist-dialog.glade.h:5
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:5
+msgid "Filtering"
+msgstr "Iragazten"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:5
+msgid "Select A Directory"
+msgstr "Hautatu A direktorioa"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:6
+msgid "Show _hidden files"
+msgstr "Ikusi _ezkutatutako fitxategiak"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:7
+msgid "_Base Directory:"
+msgstr "_Oinarri direktorioa:"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:8
+msgid "_File Pattern:"
+msgstr "_Fitxategi patroia:"
+
+#: ../plugins/launcher/launcher.c:405
+msgid "Open launcher menu"
+msgstr "Ireki abiarazle menua"
+
+#: ../plugins/launcher/launcher.c:1568
+msgid "Unnamed Item"
+msgstr "Elementu izengabea"
+
+#: ../plugins/launcher/launcher.c:1709
+msgid "No items"
+msgstr "Elementurik ez"
+
+#: ../plugins/launcher/launcher-dialog.c:744
+msgid "If you delete an item, it will be permanently removed"
+msgstr "Elementu bat ezabatzen baduzu betirako kenduko da"
+
+#: ../plugins/launcher/launcher-dialog.c:745
+#, c-format
+msgid "Are you sure you want to remove \"%s\"?"
+msgstr "Ziur al zaude \"%s\" ezabatu nahi duzula?"
+
+#: ../plugins/launcher/launcher-dialog.c:746
+msgid "Unnamed item"
+msgstr "Elementu izengabea"
+
+#: ../plugins/launcher/launcher-dialog.c:791
+msgid "Failed to open desktop item editor"
+msgstr "Huts mahaigain elementu editorea irekitzean"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:2
+msgid "Add a new empty item"
+msgstr "Gehitu elementu berri hutsa"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:3
+msgid "Add one or more existing items to the launcher"
+msgstr "Gehitu dauden elementu bat edo gehiago abiarazlera"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:4
+msgid "Advanced"
+msgstr "Aurreratua"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:5
 msgid "Default"
 msgstr "Lehenetsia"
 
-#: ../src/shell-polkit-authentication-agent.c:339
-msgid "Authentication dialog was dismissed by the user"
-msgstr "Erabiltzaileak autentifikatzeko elkarrizketa-koadroa itxi du"
+#: ../plugins/launcher/launcher-dialog.glade.h:6
+msgid "Delete the currently selected item"
+msgstr "Ezabatu hautaturik dagoen elementua"
 
-#. Translators: this is the same string as the one found in
-#. * nautilus
-#: ../src/shell-util.c:97
-msgid "Home"
-msgstr "Karpeta nagusia"
+#: ../plugins/launcher/launcher-dialog.glade.h:7
+msgid "Disable t_ooltips"
+msgstr "Desgaitu g_omendioak"
 
-#. Translators: this is the same string as the one found in
-#. * nautilus
-#: ../src/shell-util.c:106
-msgid "File System"
-msgstr "Fitxategi-sistema"
+#: ../plugins/launcher/launcher-dialog.glade.h:8
+msgid "East"
+msgstr "Ekialdea"
 
-#. Translators: the first string is the name of a gvfs
-#. * method, and the second string is a path. For
-#. * example, "Trash: some-directory". It means that the
-#. * directory called "some-directory" is in the trash.
-#.
-#: ../src/shell-util.c:302
+#: ../plugins/launcher/launcher-dialog.glade.h:11
+msgid "Inside Button"
+msgstr "Barne botoia"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:12
+#: ../plugins/launcher/launcher.desktop.in.h:1
+msgid "Launcher"
+msgstr "Abiarazlea"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:15
+msgid "North"
+msgstr "Iparra"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:16
+msgid "Select this option to disable the tooltips when moving over the panel button or menu items."
+msgstr "Hautatu aukera hau menu elementu edo panel botoien gainean mugitzean gomendioak desgaitzeko"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:17
+msgid "Select this option to move the clicked menu item to the panel."
+msgstr "Hautatu aukera hau klikatutako menu elementua panelera mugitzeko."
+
+#: ../plugins/launcher/launcher-dialog.glade.h:18
+msgid "Show _label instead of icon"
+msgstr "Ikusi e_tiketa ikonoaren ordez"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:19
+msgid "Show last _used item in panel"
+msgstr "Ikusi azken _erabilitako elementua panelean"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:20
+msgid "South"
+msgstr "Hegoa"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:21
+msgid "West"
+msgstr "Mendebaldea"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:22
+msgid "_Arrow button position:"
+msgstr "Ge_zi botoi kokalekua:"
+
+#: ../plugins/launcher/launcher.desktop.in.h:2
+msgid "Program launcher with optional menu"
+msgstr "Programa abiarazlea aukerako menu batez"
+
+#: ../plugins/pager/pager.c:353 ../plugins/pager/pager-dialog.glade.h:8
+msgid "Workspace _Settings..."
+msgstr "Lan-eremu _ezarpenak..."
+
+#: ../plugins/pager/pager.c:428
+msgid "Unable to open the workspace settings"
+msgstr "Ezin da lan-eremu ezarpenak ireki"
+
+#: ../plugins/pager/pager-buttons.c:561 ../plugins/windowmenu/windowmenu.c:854
 #, c-format
-msgid "%1$s: %2$s"
-msgstr "%1$s: %2$s"
+msgid "Workspace %d"
+msgstr "%d idazmahaia"
 
-#~ msgid "RECENT ITEMS"
-#~ msgstr "AZKEN ELEMENTUAK"
+#: ../plugins/pager/pager-dialog.glade.h:2
+#: ../plugins/tasklist/tasklist-dialog.glade.h:3
+msgid "Behaviour"
+msgstr "Portamoldea"
 
-#~ msgid "Show password"
-#~ msgstr "Erakutsi pasahitza"
+#: ../plugins/pager/pager-dialog.glade.h:3
+msgid "Number of _rows:"
+msgstr "Lerro _kopurua:"
 
-#~ msgid "%s has finished starting"
-#~ msgstr "%s(e)k abiaraztea amaitu du"
+#: ../plugins/pager/pager-dialog.glade.h:4
+msgid "Show a miniature view of the workspace with rectangles for the visible windows"
+msgstr "Lan-eremuaren ikuspegi txiki bat ikusi leiho ikusgarrien laukitxoekin"
 
-#~ msgid "Home Folder"
-#~ msgstr "Karpeta nagusia"
+#: ../plugins/pager/pager-dialog.glade.h:5
+msgid "Show mi_niature view"
+msgstr "Ikusi mi_niatura ikuspegia"
 
-#~| msgid "If true, display seconds in time."
-#~ msgid "If true, display onscreen keyboard."
-#~ msgstr "Ezarrita badago, pantailako teklatua bistaratzen du."
+#: ../plugins/pager/pager-dialog.glade.h:6
+msgid "Switch workspaces using the mouse _wheel"
+msgstr "Idazmahai birtualak sagu _gurpilaren bidez txandakatu"
 
-#~ msgid "Show the onscreen keyboard"
-#~ msgstr "Erakutsi pantailako teklatua"
+#: ../plugins/pager/pager-dialog.glade.h:7
+#: ../plugins/pager/pager.desktop.in.h:2
+msgid "Workspace Switcher"
+msgstr "Idazmahaia aldatzailea"
 
-#~ msgid "Localization Settings"
-#~ msgstr "Lokalizazioaren ezarpenak"
+#: ../plugins/pager/pager.desktop.in.h:1
+msgid "Switch between virtual desktops"
+msgstr "Idazmahai birtualen artean aldatu"
 
-#~ msgid "You're now connected to mobile broadband connection '%s'"
-#~ msgstr ""
-#~ "Orain mugikorraren banda zabalerako '%s' konexiora konektatuta zaude"
+#: ../plugins/separator/separator-dialog.glade.h:2
+msgid "Dots"
+msgstr "Puntuak"
 
-#~ msgid "You're now connected to wireless network '%s'"
-#~ msgstr "Orain '%s' haririk gabeko sarera konektatuta zaude"
+#: ../plugins/separator/separator-dialog.glade.h:3
+msgid "Handle"
+msgstr "Kudeatu"
 
-#~ msgid "You're now connected to wired network '%s'"
-#~ msgstr "Orain '%s' haridun sarera konektatuta zaude"
+#: ../plugins/separator/separator-dialog.glade.h:4
+msgid "New Line"
+msgstr "Lerro berria"
 
-#~ msgid "You're now connected to VPN network '%s'"
-#~ msgstr "Orain '%s' VPN sarera konektatuta zaude"
+#: ../plugins/separator/separator-dialog.glade.h:5
+#: ../plugins/separator/separator.desktop.in.h:2
+msgid "Separator"
+msgstr "Bereizlea"
 
-#~ msgid "Less than a minute ago"
-#~ msgstr "Minutu bat baino gutxiago"
+#: ../plugins/separator/separator-dialog.glade.h:6
+msgid "Transparent"
+msgstr "Gardena"
 
-#~ msgid "%d minute ago"
-#~ msgid_plural "%d minutes ago"
-#~ msgstr[0] "duela minutu %d"
-#~ msgstr[1] "duela %d minutu"
+#: ../plugins/separator/separator-dialog.glade.h:7
+msgid "_Expand"
+msgstr "_Zabaldu"
 
-#~ msgid "%d hour ago"
-#~ msgid_plural "%d hours ago"
-#~ msgstr[0] "duela ordu %d"
-#~ msgstr[1] "duela %d ordu"
+#: ../plugins/separator/separator.desktop.in.h:1
+msgid "Adds a separator or space between panel items"
+msgstr "Panel elementuen artean lekua edo bereizle bat gehitu"
 
-#~ msgid "%d day ago"
-#~ msgid_plural "%d days ago"
-#~ msgstr[0] "duela egun %d"
-#~ msgstr[1] "duela %d egun"
+#: ../plugins/showdesktop/showdesktop.c:194
+msgid "Restore the minimized windows"
+msgstr "Berrezarri minimizatutako leihoak"
 
-#~ msgid "%d week ago"
-#~ msgid_plural "%d weeks ago"
-#~ msgstr[0] "duela aste %d"
-#~ msgstr[1] "duela %d aste"
+#: ../plugins/showdesktop/showdesktop.c:196
+msgid "Minimize all open windows and show the desktop"
+msgstr "Minimizatu leiho guztiak eta mahaigaina bistarazi"
+
+#: ../plugins/showdesktop/showdesktop.c:199
+#: ../plugins/showdesktop/showdesktop.desktop.in.h:2
+msgid "Show Desktop"
+msgstr "Ikusi mahaigaina"
+
+#: ../plugins/showdesktop/showdesktop.desktop.in.h:1
+msgid "Hide all windows and show the desktop"
+msgstr "Ezkutatu leiho guztiak eta mahaigaina bistarazi"
+
+#: ../plugins/systray/systray.c:398
+msgid "Unable to start the notification area"
+msgstr "Ezin da larrialdi berri-ematea abiarazi"
+
+#. create fake error and show it
+#: ../plugins/systray/systray.c:868
+msgid "Most likely another widget took over the function of a notification area. This area will be unused."
+msgstr "Ziurrenik beste widget batek berri-emate eremuaren kargu artu du. Eremu hau ez da erabiliko."
+
+#: ../plugins/systray/systray.c:870
+msgid "The notification area lost selection"
+msgstr "Beri-emate eremuak hautapena galtzen du"
+
+#: ../plugins/systray/systray.c:1023
+msgid "Are you sure you want to clear the list of known applications?"
+msgstr "Ziur al zaude aplikazio ezagunen zerrenda ezabatu nahi duzula?"
+
+#: ../plugins/systray/systray-dialog.glade.h:2
+msgid "C_lear Known Applications"
+msgstr "Ga_rbitu aplikazio ezagunak"
+
+#: ../plugins/systray/systray-dialog.glade.h:3
+msgid "Known Applications"
+msgstr "Aplikazio ezagunak"
+
+#: ../plugins/systray/systray-dialog.glade.h:4
+#: ../plugins/systray/systray.desktop.in.h:2
+msgid "Notification Area"
+msgstr "Berri-emate eremua"
+
+#: ../plugins/systray/systray-dialog.glade.h:6
+msgid "_Maximum icon size (px):"
+msgstr "_Gehienezko ikono tamaina (px):"
+
+#: ../plugins/systray/systray-manager.c:404
+#, c-format
+msgid "Failed to acquire manager selection for screen %d"
+msgstr "Huts %d pantailaren kudeatzaile hautapena eskuratzerakoan"
+
+#: ../plugins/systray/systray.desktop.in.h:1
+msgid "Area where notification icons appear"
+msgstr "berrie-mate ikonoak egertzen diren eremua"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:1
+msgid "Always"
+msgstr "Beti"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:4
+msgid "D_raw window frame when hovering a button"
+msgstr "Ma_rraztu leiho markoa botoia nabarmentzean"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:6
+msgid "Group title and timestamp"
+msgstr "Taldekatu izenburu eta data-markaz"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:7
+msgid "Group title and window title"
+msgstr "Taldekatu izenburu eta leiho izenburuz"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:8
+msgid "Never"
+msgstr "Inoiz"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:9
+msgid "None, allow drag-and-drop"
+msgstr "Batez, onartu arrastatu eta askatu"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:10
+msgid "Restore minimized windows to current _workspace"
+msgstr "Berrezarri minimizaturiko leihoak uneko lan-eremuan"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:11
+msgid "Ro_tate buttons in vertical panel"
+msgstr "Bira_tu botoiak panel bertikalean"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:12
+msgid "Show _flat buttons"
+msgstr "Botoi _mugikorrak erabili"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:13
+msgid "Show _handle"
+msgstr "Ikusi _kudeatzailea"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:14
+msgid "Show button _labels"
+msgstr "Ikusi botoi e_tiketak"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:15
+msgid "Show only _minimized windows"
+msgstr "Ikusi bakarrik _minimizatutako leihoak"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:16
+msgid "Show windows from _all workspaces or viewports"
+msgstr "Ikusi lan-eremu edo ikuste-ataka guztietako leihoak"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:17
+msgid "Show windows from all mo_nitors"
+msgstr "Ikusi monitore guztietako leihoak"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:18
+msgid "Sorting _order:"
+msgstr "Sailkatze _ordena:"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:19
+msgid "Timestamp"
+msgstr "Data-marka"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:20
+msgid "When space is limited"
+msgstr "Lekua mugatua denean"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:21
+#: ../plugins/tasklist/tasklist.desktop.in.h:2
+msgid "Window Buttons"
+msgstr "Leiho botoiak"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:22
+msgid "Window _grouping:"
+msgstr "Leiho _taldekatzea:"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:23
+msgid "Window title"
+msgstr "Leiho izenburua"
+
+#: ../plugins/tasklist/tasklist-widget.c:3176
+msgid "Mi_nimize All"
+msgstr "Mi_nimizatu dena"
+
+#: ../plugins/tasklist/tasklist-widget.c:3185
+msgid "Un_minimize All"
+msgstr "De_sminimizatu dena"
+
+#: ../plugins/tasklist/tasklist-widget.c:3191
+msgid "Ma_ximize All"
+msgstr "Ma_ximizatu dena"
+
+#: ../plugins/tasklist/tasklist-widget.c:3200
+msgid "_Unmaximize All"
+msgstr "_Desmaximizatu dena"
+
+#: ../plugins/tasklist/tasklist-widget.c:3210
+msgid "_Close All"
+msgstr "_Itxi dena"
+
+#: ../plugins/tasklist/tasklist.desktop.in.h:1
+msgid "Switch between open windows using buttons"
+msgstr "Aldatu irekitako leihoen artean botoiak erabiliaz"
+
+#: ../plugins/windowmenu/windowmenu.c:652
+msgid "Desktop"
+msgstr "Mahaigaina"
+
+#: ../plugins/windowmenu/windowmenu.c:1243
+msgid "No Windows"
+msgstr "Leihorik ez"
+
+#: ../plugins/windowmenu/windowmenu.c:1258
+msgid "Urgent Windows"
+msgstr "Leiho larriak"
+
+#: ../plugins/windowmenu/windowmenu.c:1300
+msgid "Add Workspace"
+msgstr "Gehitu lan-eremua"
+
+#: ../plugins/windowmenu/windowmenu.c:1320
+#, c-format
+msgid "Remove Workspace \"%s\""
+msgstr "\"%s\" lan-eremua ezabatu"
+
+#: ../plugins/windowmenu/windowmenu.c:1322
+#, c-format
+msgid "Remove Workspace %d"
+msgstr "%d Idazmahaia ezabatu"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:2
+msgid "Arrow"
+msgstr "Gezia"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:3
+msgid "Button layout:"
+msgstr "Botoi diseinua"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:4
+msgid "Enable _urgency notification"
+msgstr "Gait_u larrialdiko berri-ematea"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:6
+msgid "Icon"
+msgstr "Ikonoa"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:7
+msgid "Show windows from _all workspaces"
+msgstr "Ikusi lan-eremu guztietako leihoak"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:8
+msgid "Show workspace _names"
+msgstr "Ikusi idazmahai ize_nak"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:9
+msgid "Show workspace a_ctions"
+msgstr "Ikusi idazmahai e_kintzak"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:10
+#: ../plugins/windowmenu/windowmenu.desktop.in.h:2
+msgid "Window Menu"
+msgstr "Leiho menua"
+
+#: ../plugins/windowmenu/windowmenu.desktop.in.h:1
+msgid "Switch between open windows using a menu"
+msgstr "Aldatu irekitako leihoen artean menua erabiliaz"
+
+#~ msgid "Failed to remove the desktop file from the config directory"
+#~ msgstr "Huts mahaigain fitxategia direktorio konfiguraziotik ezabatzean"
+
+#~ msgid "_Number of rows:"
+#~ msgstr "_Lerro kopurua:"
+
+#~ msgid "Create a new launcher on the Xfce Panel"
+#~ msgstr "Sortu abiarazle berri bat Xfce panelean"
+
+#~ msgid "Panel Preferences"
+#~ msgstr "Panel hobespenak"
+
+#~ msgid "_Xfce Panel"
+#~ msgstr "_Xfce panela"
+
+#~ msgid "Transparency"
+#~ msgstr "Gardentasuna"
+
+#~ msgid "Transparency when the pointer is not hovering the panel."
+#~ msgstr "Gardentasuna markatzailea panel gainean ez dabilenean"
+
+#~ msgid "Xfce Panel"
+#~ msgstr "Xfce panela"
+
+#~ msgid "Xfce Menu"
+#~ msgstr "Xfce menua"
+
+#~ msgid "_Restart"
+#~ msgstr "_Berrabiarazi"
+
+#~ msgid "C_ompositing"
+#~ msgstr "K_onposizioa"
+
+#~ msgid "Failed to open manual"
+#~ msgstr "Huts panataila irekitzean"
+
+#~ msgid "Action Button"
+#~ msgstr "Ekintza botoiak"

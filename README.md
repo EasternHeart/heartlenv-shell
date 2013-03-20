@@ -1,4 +1,4 @@
-heartlenv-shell
+heartlenv-panel
 ===============
 
-Heartl environment gnome-shell fork.
+XFPanel4 fork of heartlenv

@@ -1,1840 +1,1608 @@
-# German heartlenv-shell translation.
-# Copyright (C) 2009 Free Software Foundation, Inc.
-# This file is distributed under the same license as the heartlenv-shell package.
-#
-# workspace - Arbeitsfläche
-#
-# Hendrik Brandt <heb@heartlenv-de.org>, 2009.
-# Hendrik Richter <hendrikr@heartlenv.org>, 2009, 2010, 2011.
-# Mario Blättermann <mario.blaettermann@gmail.com>, 2009-2011.
-# Mario Klug <mario@klug.me>, 2010.
-# Jakob Kramer <jakob.kramer@gmx.de>, 2010.
-# Paul Seyfert <pseyfert@mathphys.fsk.uni-heidelberg.de>, 2010, 2011.
-# Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009, 2010, 2011, 2012.
-# Wolfgang Stöggl <c72578@yahoo.de>, 2012.
-#
+# German translations for heartlenv-panel package.
+# Copyright (C) 2002-2006 The Xfce development team.
+# This file is distributed under the same license as the heartlenv-panel package.
+# Moritz Heiber <moe@xfce.org>, 2003-2005.
+# Fabian Nowak <timystery@arcor.de>, 2005-2010.
+# Enrico Tröger <enrico@xfce.org>, 2008.
+# Simon Schneider <simon@schneiderimtal.de>, 2009
+# Paul Seyfert <pseyfert@mathphys.fsk.uni-heidelberg.de>, 2010.
+# 
 msgid ""
 msgstr ""
-"Project-Id-Version: heartlenv-shell master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.heartlenv.org/enter_bug.cgi?product=heartlenv-"
-"shell&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-04-13 19:40+0000\n"
-"PO-Revision-Date: 2012-04-14 16:04+0200\n"
-"Last-Translator: Wolfgang Stoeggl <c72578@yahoo.de>\n"
-"Language-Team: Deutsch <heartlenv-de@heartlenv.org>\n"
+"Project-Id-Version: heartlenv-panel 4.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-06-20 16:34+0000\n"
+"PO-Revision-Date: 2010-12-28 22:32+0100\n"
+"Last-Translator: Paul Seyfert <pseyfert@mathphys.fsk.uni-heidelberg.de>\n"
+"Language-Team: German <xfce-i18n-de@xfce.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-Language: German\n"
-"X-Poedit-Country: GERMANY\n"
+"Language: de\n"
 
-#: ../data/heartlenv-shell.desktop.in.in.h:1
-msgid "GNOME Shell"
-msgstr "GNOME-Shell"
+#: ../panel-desktop-handler.desktop.in.h:1
+msgid "Add a new launcher to the panel based on the information of this desktop file"
+msgstr "Einen neuen Starter zur Leiste hinzufügen anhand der Informationen in der Desktop-Datei"
 
-#: ../data/heartlenv-shell.desktop.in.in.h:2
-msgid "Window management and application launching"
-msgstr "Fenster verwalten und Anwendungen starten"
+#: ../panel-desktop-handler.desktop.in.h:2
+msgid "Create Launcher on the panel"
+msgstr "Starter zur Leiste hinzufügen"
 
-#: ../data/heartlenv-shell-extension-prefs.desktop.in.in.h:1
-#: ../js/extensionPrefs/main.js:153
-msgid "GNOME Shell Extension Preferences"
-msgstr "Einstellungen für Erweiterungen der GNOME-Shell"
+#: ../panel-preferences.desktop.in.h:1
+msgid "Customize the panel"
+msgstr "Leiste einrichten"
 
-#: ../data/heartlenv-shell-extension-prefs.desktop.in.in.h:2
-msgid "Configure GNOME Shell Extensions"
-msgstr "Erweiterungen der GNOME-Shell einrichten"
+#: ../panel-preferences.desktop.in.h:2
+#: ../panel/panel-preferences-dialog.glade.h:24 ../panel/panel-window.c:2263
+#: ../migrate/main.c:84
+msgid "Panel"
+msgstr "Leiste"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:1
-msgid "Enable internal tools useful for developers and testers from Alt-F2"
-msgstr "Interne Werkzeuge für Entwickler und Tester mit Alt+F2 aktivieren"
+#: ../common/panel-utils.c:157
+msgid "_Read Online"
+msgstr "Online _lesen"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:2
-msgid ""
-"Allows access to internal debugging and monitoring tools using the Alt-F2 "
-"dialog."
-msgstr "Erlaubt Zugriff auf interne Fehlerdiagnose- und Überwachungswerkzeuge"
+#: ../common/panel-utils.c:158
+msgid "You can read the user manual online. This manual may however not exactly match your panel version."
+msgstr "Sie können das Anwenderhandbuch online lesen. Dieses Handbuch entspricht allerdings nicht immer Ihrer Version."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:3
-msgid "Uuids of extensions to enable"
-msgstr "UUIDs der zu aktivierenden Erweiterungen"
+#: ../common/panel-utils.c:160
+msgid "The user manual is not installed on your computer"
+msgstr "Das Anwenderhandbuch ist auf Ihrem Rechner nicht installiert"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:4
-msgid ""
-"GNOME Shell extensions have a uuid property; this key lists extensions which "
-"should be loaded. Any extension that wants to be loaded needs to be in this "
-"list. You can also manipulate this list with the EnableExtension and "
-"DisableExtension DBus methods on org.heartlenv.Shell."
+#. display an error message to the user
+#: ../common/panel-utils.c:175
+msgid "Failed to open the documentation browser"
+msgstr "Konnte die Dokumentationsanzeige nicht öffnen"
+
+#. I18N: %s is the name of the plugin
+#: ../libheartlenvpanel/xfce-panel-plugin.c:889
+#: ../panel/panel-preferences-dialog.c:1048
+#, c-format
+msgid "Are you sure that you want to remove \"%s\"?"
+msgstr "Soll »%s« wirklich entfernt werden?"
+
+#: ../libheartlenvpanel/xfce-panel-plugin.c:894
+#: ../panel/panel-preferences-dialog.c:1051
+msgid "If you remove the item from the panel, it is permanently lost."
+msgstr "Wenn Sie dieses Element von der Leiste entfernen, ist es dauerhaft verloren."
+
+#. move item
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1054
+msgid "_Move"
+msgstr "_Verschieben"
+
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1088
+msgid "Pane_l"
+msgstr "_Leiste"
+
+#. add new items
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1096 ../panel/panel-window.c:2275
+msgid "Add _New Items..."
+msgstr "_Neue Elemente hinzufügen…"
+
+#. customize panel
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1107 ../panel/panel-window.c:2286
+msgid "Panel Pr_eferences..."
+msgstr "Leisten_einstellungen…"
+
+#. logout item
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1124 ../panel/panel-window.c:2302
+msgid "Log _Out"
+msgstr "_Abmelden"
+
+#: ../panel/main.c:78
+msgid "Show the 'Panel Preferences' dialog"
+msgstr "Dialog »Leiste einrichten« anzeigen"
+
+#: ../panel/main.c:78 ../panel/main.c:79
+msgid "PANEL-NUMBER"
+msgstr "LEISTENNUMMER"
+
+#: ../panel/main.c:79
+msgid "Show the 'Add New Items' dialog"
+msgstr "Dialog »Neue Objekte hinzufügen« zeigen"
+
+#: ../panel/main.c:80
+msgid "Save the panel configuration"
+msgstr "Leisteneinstellungen speichern"
+
+#: ../panel/main.c:81
+msgid "Add a new plugin to the panel"
+msgstr "Neues Plugin zur Leiste hinzufügen"
+
+#: ../panel/main.c:81
+msgid "PLUGIN-NAME"
+msgstr "PLUGIN-NAME"
+
+#: ../panel/main.c:82
+msgid "Restart the running panel instance"
+msgstr "Laufende Instanz der Leiste neustarten"
+
+#: ../panel/main.c:83
+msgid "Quit the running panel instance"
+msgstr "Laufende Instanz der Leiste beenden"
+
+#: ../panel/main.c:84
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:33
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:33
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:33
+msgid "Print version information and exit"
+msgstr "Versionsinformationen ausgeben und beenden"
+
+#. parse context options
+#: ../panel/main.c:248
+msgid "[ARGUMENTS...]"
+msgstr "[ARGUMENTE…]"
+
+#: ../panel/main.c:255
+#, c-format
+msgid "Type \"%s --help\" for usage."
+msgstr "Geben Sie »%s --help« für Informationen zur Nutzung an."
+
+#: ../panel/main.c:274
+msgid "The Xfce development team. All rights reserved."
+msgstr "Das Xfce-Entwicklungsteam. Alle Rechte vorbehalten."
+
+#: ../panel/main.c:275
+#, c-format
+msgid "Please report bugs to <%s>."
+msgstr "Bitte melden Sie Fehler an <%s>"
+
+#: ../panel/main.c:326
+msgid "There is already a running instance"
+msgstr "Es gibt bereits eine laufende Instanz"
+
+#. spawn ourselfs again
+#: ../panel/main.c:375
+msgid "Restarting..."
+msgstr "Neustart…"
+
+#: ../panel/main.c:390
+msgid "Failed to show the preferences dialog"
+msgstr "Konnte den Einstellungsdialog nicht öffnen"
+
+#: ../panel/main.c:392
+msgid "Failed to show the add new items dialog"
+msgstr "Dialog »Neue Elemente hinzufügen« konnte nicht angezeigt werden"
+
+#: ../panel/main.c:394
+msgid "Failed to save the panel configuration"
+msgstr "Leisteneinstellungen konnten nicht gespeichert werden"
+
+#: ../panel/main.c:396
+msgid "Failed to add a plugin to the panel"
+msgstr "Konnte Plugin nicht zur Leiste hinzufügen"
+
+#: ../panel/main.c:398
+msgid "Failed to restart the panel"
+msgstr "Konnte die Leiste nicht neustarten"
+
+#: ../panel/main.c:400
+msgid "Failed to quit the panel"
+msgstr "Konnte die Leiste nicht beenden"
+
+#: ../panel/main.c:402
+msgid "Failed to send D-Bus message"
+msgstr "Konnte keine D-Bus-Nachricht senden"
+
+#: ../panel/main.c:413
+msgid "Do you want to start the panel? If you do, make sure you save the session on logout, so the panel is automatically started the next time you login."
+msgstr "Möchten Sie die Leiste starten? Ist das der Fall, so stellen Sie sicher, dass Sie die Sitzung beim Abmelden speichern, damit die Leiste beim nächsten Mal automatisch geladen wird."
+
+#: ../panel/main.c:416 ../panel/main.c:430
+#, c-format
+msgid "No running instance of %s was found"
+msgstr "Keine laufende Instanz von %s gefunden"
+
+#: ../panel/panel-application.c:195
+msgid "Failed to launch the migration application"
+msgstr "Konnte die Anwendung zum Migrieren der Leisteneinstellungen nicht starten"
+
+#: ../panel/panel-application.c:1451 ../plugins/actions/actions.c:421
+msgid "You have started X without session manager. Clicking Quit will close the X server."
+msgstr "Sie haben X ohne Sitzungsverwaltung gestartet. Wenn Sie jetzt »Beenden« klicken, beendet dies den X-Server."
+
+#: ../panel/panel-application.c:1452 ../plugins/actions/actions.c:422
+msgid "Are you sure you want to quit the panel?"
+msgstr "Soll die Leiste wirklich beendet werden?"
+
+#: ../panel/panel-application.c:1460 ../plugins/actions/actions.c:430
+#, c-format
+msgid "Failed to execute command \"%s\""
+msgstr "Konnte Befehl »%s« nicht ausführen."
+
+#: ../panel/panel-dbus-client.c:208
+msgid "Invalid plugin event syntax specified. Use PLUGIN-NAME:NAME[:TYPE:VALUE]."
+msgstr "Ungültige Syntax für Plugin-Ereignisse angegeben. Verwenden Sie PLUGIN-NAME:NAME [:TYP:WERT]."
+
+#: ../panel/panel-dbus-client.c:241
+#, c-format
+msgid "Invalid hint type \"%s\". Valid types are bool, double, int, string and uint."
+msgstr "Ungültiger Hinweistyp »%s«. Erlaubte Typen sind 'bool', 'double', 'int', 'string' und 'uint'."
+
+#: ../panel/panel-dialogs.c:76
+msgid "The panel of the Xfce Desktop Environment"
+msgstr "Die Leiste der Arbeitsumgebung Xfce"
+
+#: ../panel/panel-dialogs.c:81
+msgid "translator-credits"
 msgstr ""
-"Die Erweiterungen der GNOME-Shell besitzen eine UUID-Eigenschaft. Dieser "
-"Schlüssel listet Erweiterungen auf, welche geladen werden sollen. Jede zu "
-"ladende Erweiterung muss in dieser Liste erscheinen. Sie können diese Liste "
-"auch mit den D-Bus-Methoden EnableExtension und DisableExtension in org."
-"heartlenv.Shell bearbeiten."
+"Moritz Heiber <moe@xfce.org>\n"
+"Fabian Nowak <timystery@arcor.de>\n"
+"Enrico Tröger <enrico@xfce.org>\n"
+"Simon Schneider <simon@schneiderimtal.de>\n"
+"Paul Seyfert <pseyfert@mathphys.fsk.uni-heidelberg.de>"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:5
-msgid "Whether to collect stats about applications usage"
-msgstr "Legt fest, ob Statistiken über Anwendungsnutzung erfasst werden sollen"
+#. setup the dialog
+#: ../panel/panel-dialogs.c:122 ../plugins/launcher/launcher-dialog.glade.h:1
+msgid "Add New Item"
+msgstr "Neue Elemente hinzufügen"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:6
+#: ../panel/panel-dialogs.c:136
+msgid "Please choose a panel for the new plugin:"
+msgstr "Bitte wählen Sie eine Leiste für das neue Element:"
+
+#. I18N: panel combo box in the preferences dialog
+#: ../panel/panel-dialogs.c:147 ../panel/panel-preferences-dialog.c:767
+#, c-format
+msgid "Panel %d"
+msgstr "Leiste %d"
+
+#: ../panel/panel-dialogs.c:183
+msgid "Because the panel is running in kiosk mode, you are not allowed to make changes to the panel configuration as a regular user"
+msgstr "Da sich die Leiste im »Kiosk«-Modus befindet, sind Änderungen an der Leisteneinstellung als normaler Nutzer nicht erlaubt."
+
+#: ../panel/panel-dialogs.c:185
+msgid "Modifying the panel is not allowed"
+msgstr "Modifizieren der Leiste ist nicht erlaubt"
+
+#: ../panel/panel-item-dialog.c:188
+msgid "Add New Items"
+msgstr "Neue Elemente hinzufügen"
+
+#: ../panel/panel-item-dialog.c:190
+msgid "Add new plugins to the panel"
+msgstr "Neue Plugins zur Leiste hinzufügen"
+
+#: ../panel/panel-item-dialog.c:213
+#: ../plugins/launcher/launcher-dialog.glade.h:23
+msgid "_Search:"
+msgstr "_Suche:"
+
+#: ../panel/panel-item-dialog.c:221
+msgid "Enter search phrase here"
+msgstr "Suchbegriff hier eingeben"
+
+#: ../panel/panel-plugin-external.c:426
+#, c-format
+msgid "Plugin \"%s\" unexpectedly left the panel, do you want to restart it?"
+msgstr "Element »%s« hat die Leiste unerwartet verlassen. Soll es neugestartet werden?"
+
+#: ../panel/panel-plugin-external.c:428
+#, c-format
+msgid "The plugin restarted more than once in the last %d seconds. If you press Execute the panel will try to restart the plugin otherwise it will be permanently removed from the panel."
+msgstr "Das Element wurde in den letzten %d Sekunden mehr als einmal neugestartet. Durch Drücken von »Ausführen« wird das Element noch einmal neugestartet. Andernfalls wird es endgültig von der Leiste entfernt."
+
+#: ../panel/panel-preferences-dialog.c:453
+msgid "Automatic"
+msgstr "Automatisch"
+
+#. I18N: screen name in the output selector
+#: ../panel/panel-preferences-dialog.c:472
+#, c-format
+msgid "Screen %d"
+msgstr "Bildschirm %d"
+
+#. I18N: monitor name in the output selector
+#: ../panel/panel-preferences-dialog.c:498
+#, c-format
+msgid "Monitor %d"
+msgstr "Monitor %d"
+
+#: ../panel/panel-preferences-dialog.c:828
+msgid "The panel and plugin configurations will be permanently removed"
+msgstr "Die Einstellungen der Leiste und der Plugins werden dauerhaft entfernt."
+
+#: ../panel/panel-preferences-dialog.c:829
+#, c-format
+msgid "Are you sure you want to remove panel %d?"
+msgstr "Soll die Leiste %d wirklich entfernt werden?"
+
+#. I18N: append (external) in the preferences dialog if the plugin
+#. * runs external
+#: ../panel/panel-preferences-dialog.c:912
+#, c-format
+msgid "%s <span color=\"grey\" size=\"small\">(external)</span>"
+msgstr "%s <span color=\"grey\" size=\"small\">(extern)</span>"
+
+#. I18N: tooltip in preferences dialog when hovering an item in the list
+#. * for external plugins
+#: ../panel/panel-preferences-dialog.c:917
+#, c-format
 msgid ""
-"The shell normally monitors active applications in order to present the most "
-"used ones (e.g. in launchers). While this data will be kept private, you may "
-"want to disable this for privacy reasons. Please note that doing so won't "
-"remove already saved data."
+"Internal name: %s-%d\n"
+"PID: %d"
 msgstr ""
-"Die Shell überwacht normalerweise aktive Anwendungen, wobei die "
-"meistgenutzten zuerst erfasst werden (z.B. in Anwendungsstartern). Zwar "
-"werden diese Daten privat gespeichert, doch möglicherweise wollen Sie dies "
-"deaktivieren, um Ihre Privatsphäre zu schützen. Bitte beachten Sie, dass "
-"bereits gespeicherte Daten hiervon nicht beeinflusst werden."
+"Interner Name: %s-%d\n"
+"PID: %d"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:7
-msgid "List of desktop file IDs for favorite applications"
-msgstr "Liste der Kennungen der Desktop-Dateien für bevorzugte Anwendungen"
+#. I18N: tooltip in preferences dialog when hovering an item in the list
+#. * for internal plugins
+#: ../panel/panel-preferences-dialog.c:929
+#, c-format
+msgid "Internal name: %s-%d"
+msgstr "Interner Name: %s-%d"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:8
-msgid ""
-"The applications corresponding to these identifiers will be displayed in the "
-"favorites area."
-msgstr ""
-"Programme, welche auf diese Bezeichner zutreffen, werden im Favoriten-"
-"Bereich angezeigt."
+#: ../panel/panel-preferences-dialog.glade.h:1
+msgid "A_utomatically increase the length"
+msgstr "_Länge automatisch erhöhen"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:9
-msgid "disabled OpenSearch providers"
-msgstr "deaktivierte OpenSearch-Provider"
+#: ../panel/panel-preferences-dialog.glade.h:2
+msgid "Add a new panel"
+msgstr "Neue Leiste hinzufügen"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:10
-msgid "History for command (Alt-F2) dialog"
-msgstr "Verlauf des Befehlsdialogs (Alt+F2)"
+#: ../panel/panel-preferences-dialog.glade.h:3
+msgid "Add new item to this panel"
+msgstr "Neues Objekt zur Leiste hinzufügen"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:11
-msgid "History for the looking glass dialog"
-msgstr "Chronik des Dialogs »looking glass«"
+#: ../panel/panel-preferences-dialog.glade.h:4
+msgid "Alpha value of the panel background, with 0 being fully transparent and 100 fully opaque."
+msgstr "Alpha-Wert des Leistenhintergrunds. Zwischen 0 (transparent) und 100 (undurchsichtig)."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:12
-msgid ""
-"Internally used to store the last IM presence explicitly set by the user. "
-"The value here is from the TpConnectionPresenceType enumeration."
-msgstr ""
-"Wird intern zur Speicherung des letzten Sofortnachrichtenstatus verwendet, "
-"der explizit vom Benutzer gesetzt wurde. Der hier verwendete Wert wird der "
-"TpConnectionPresenceType-Aufzählung entnommen."
+#: ../panel/panel-preferences-dialog.glade.h:5
+msgid "Appeara_nce"
+msgstr "_Erscheinungsbild"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:13
-msgid ""
-"Internally used to store the last session presence status for the user. The "
-"value here is from the GsmPresenceStatus enumeration."
-msgstr ""
-"Wird intern zur Speicherung des letzten Sofortnachrichtenstatus des "
-"Benutzers verwendet. Der hier verwendete Wert wird der GsmPresenceStatus-"
-"Aufzählung entnommen."
+#: ../panel/panel-preferences-dialog.glade.h:6
+msgid "Automatically show and _hide the panel"
+msgstr "Leiste _automatisch verbergen"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:14
-msgid "Show the week date in the calendar"
-msgstr "Wochentag im Kalender anzeigen"
+#: ../panel/panel-preferences-dialog.glade.h:7
+msgid "Background"
+msgstr "Hintergrund"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:15
-msgid "If true, display the ISO week date in the calendar."
-msgstr ""
-"Wenn dieser Wert gesetzt ist, wird der ISO-Wochentag im Kalender angezeigt."
+#: ../panel/panel-preferences-dialog.glade.h:8
+msgid "Background image"
+msgstr "Hintergrundbild"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:16
-msgid "Keybinding to open the application menu"
-msgstr "Tastenkombination zum Öffnen des Anwendungsmenüs"
+#: ../panel/panel-preferences-dialog.glade.h:9
+msgid "C_olor:"
+msgstr "_Farbe:"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:17
-msgid "Keybinding to open the application menu."
-msgstr "Tastenkombination zum Öffnen des Anwendungsmenüs."
+#: ../panel/panel-preferences-dialog.glade.h:10
+msgid "D_isplay"
+msgstr "A_nzeige"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:18
-msgid "Which keyboard to use"
-msgstr "Zu verwendende Tastatur"
+#: ../panel/panel-preferences-dialog.glade.h:11
+#: ../plugins/launcher/launcher-dialog.glade.h:9
+msgid "Edit the currently selected item"
+msgstr "Ausgewähltes Objekt bearbeiten"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:19
-msgid "The type of keyboard to use."
-msgstr "Der Typ der zu verwendenden Tastatur"
+#: ../panel/panel-preferences-dialog.glade.h:12
+#: ../plugins/launcher/launcher-dialog.glade.h:10
+msgid "General"
+msgstr "Allgemein"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:20
-msgid "Show time with seconds"
-msgstr "Zeit sekundengenau anzeigen"
+#: ../panel/panel-preferences-dialog.glade.h:13
+msgid "Horizontal"
+msgstr "Horizontal"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:21
-msgid "If true, display seconds in time."
-msgstr "Legt fest, ob in der Uhrzeit Sekunden angezeigt werden."
+#: ../panel/panel-preferences-dialog.glade.h:14
+msgid "Ite_ms"
+msgstr "_Objekte"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:22
-msgid "Show date in clock"
-msgstr "Datum in der Uhr anzeigen"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:23
-msgid "If true, display date in the clock, in addition to time."
-msgstr "Legt fest, ob das Datum zusätzlich zur Uhrzeit angezeigt wird."
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:24
-msgid "Framerate used for recording screencasts."
-msgstr "Bildwiederholungsrate zur Aufnahme von Screencasts"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:25
-msgid ""
-"The framerate of the resulting screencast recordered by GNOME Shell's "
-"screencast recorder in frames-per-second."
-msgstr ""
-"Die Bildwiederholrate des Screencasts, der durch den Screencast-Aufzeichner "
-"der GNOME-Shell aufgezeichnet werden soll, in Einzelbildern pro Sekunde."
-
-# hmm Enkodieren oder Kodieren?
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:26
-msgid "The gstreamer pipeline used to encode the screencast"
-msgstr "Die GStreamer-Weiterleitung zur Enkodierung des Screencasts"
-
-# Hier blicke ich überhaupt nicht durch.
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:28
+#: ../panel/panel-preferences-dialog.glade.h:16
 #, no-c-format
-msgid ""
-"Sets the GStreamer pipeline used to encode recordings. It follows the syntax "
-"used for gst-launch. The pipeline should have an unconnected sink pad where "
-"the recorded video is recorded. It will normally have a unconnected source "
-"pad; output from that pad will be written into the output file. However the "
-"pipeline can also take care of its own output - this might be used to send "
-"the output to an icecast server via shout2send or similar. When unset or set "
-"to an empty value, the default pipeline will be used. This is currently "
-"'vp8enc quality=8 speed=6 threads=%T ! queue ! webmmux' and records to WEBM "
-"using the VP8 codec. %T is used as a placeholder for a guess at the optimal "
-"thread count on the system."
-msgstr ""
-"Gibt die GStreamer-Weiterleitung zur Enkodierung von Aufzeichnungen an. Hier "
-"wird die Syntax von gst-launch verwendet. Die Weiterleitung sollte über eine "
-"nicht verbundene Ziel-Auffüllung verfügen, wo das aufgenommene Video "
-"aufgezeichnet wird. Normalerweise wird es eine nicht verbundene Quell-"
-"Auffüllung haben; die Ausgabe dieser Auffüllung wird in die Ausgabedatei "
-"geschrieben. Die Weiterleitung kann auch mit ihrer eigenen Ausgabe umgehen. "
-"Das kann zum Senden der Ausgabe über shout2send an einen Icecast-Server oder "
-"Ähnliches verwendet werden. Falls nicht (oder auf einen leeren Wert) "
-"gesetzt, so wird die vorgegebene Weiterleitung verwendet, welche derzeit "
-"»vp8enc quality=8 speed=6 threads=%T ! queue ! webmmux« lautet und nach WEBM "
-"mittels des VP8-Codecs aufzeichnet. %T wird als Platzhalter für die "
-"vermutete optimale Thread-Anzahl auf dem System verwendet."
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:29
-msgid "File extension used for storing the screencast"
-msgstr "Die Dateiendung zum Speichern des Screencast"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:30
-msgid ""
-"The filename for recorded screencasts will be a unique filename based on the "
-"current date, and use this extension. It should be changed when recording to "
-"a different container format."
-msgstr ""
-"Die aufgenommenen Screencasts erhalten einen eindeutigen Dateinamen mit "
-"dieser Dateiendung erhalten, basierend auf dem aktuellen Datum. Dieser "
-"Dateiname sollte geändert werden, wenn Sie in einem anderen Containerformat "
-"aufnehmen."
-
-#: ../js/extensionPrefs/main.js:125
-#, c-format
-msgid "There was an error loading the preferences dialog for %s:"
-msgstr "Beim Laden des Einstellungsdialogs für %s ist ein Fehler aufgetreten:"
-
-#: ../js/extensionPrefs/main.js:165
-msgid "<b>Extension</b>"
-msgstr "<b>Erweiterung</b>"
-
-#: ../js/extensionPrefs/main.js:189
-msgid "Select an extension to configure using the combobox above."
-msgstr "Wählen Sie oben eine Erweiterung aus, die Sie konfigurieren wollen."
-
-#: ../js/gdm/loginDialog.js:627
-msgid "Session..."
-msgstr "Sitzung …"
-
-#: ../js/gdm/loginDialog.js:789
-msgctxt "title"
-msgid "Sign In"
-msgstr "Anmelden"
-
-#. Translators: this message is shown below the password entry field
-#. to indicate the user can swipe their finger instead
-#: ../js/gdm/loginDialog.js:834
-msgid "(or swipe finger)"
-msgstr "(oder benutzen Sie den Fingerabdruckleser)"
-
-#. translators: this message is shown below the user list on the
-#. login screen. It can be activated to reveal an entry for
-#. manually entering the username.
-#: ../js/gdm/loginDialog.js:855
-msgid "Not listed?"
-msgstr "Nicht aufgeführt?"
-
-#: ../js/gdm/loginDialog.js:1023 ../js/ui/endSessionDialog.js:401
-#: ../js/ui/extensionSystem.js:400 ../js/ui/networkAgent.js:153
-#: ../js/ui/polkitAuthenticationAgent.js:175 ../js/ui/status/bluetooth.js:462
-msgid "Cancel"
-msgstr "Abbrechen"
-
-#: ../js/gdm/loginDialog.js:1028
-msgctxt "button"
-msgid "Sign In"
-msgstr "Anmelden"
-
-#: ../js/gdm/loginDialog.js:1380
-msgid "Login Window"
-msgstr "Anmeldefenster"
-
-#: ../js/gdm/powerMenu.js:155 ../js/ui/userMenu.js:597
-#: ../js/ui/userMenu.js:599 ../js/ui/userMenu.js:668
-msgid "Suspend"
-msgstr "Bereitschaft"
-
-#: ../js/gdm/powerMenu.js:160
-msgid "Restart"
-msgstr "Neu starten"
-
-#: ../js/gdm/powerMenu.js:165
-msgid "Power Off"
-msgstr "Ausschalten"
-
-#: ../js/misc/util.js:92
-msgid "Command not found"
-msgstr "Befehl nicht gefunden"
-
-#. Replace "Error invoking GLib.shell_parse_argv: " with
-#. something nicer
-#: ../js/misc/util.js:119
-msgid "Could not parse command:"
-msgstr "Befehl konnte nicht verarbeitet werden:"
-
-#: ../js/misc/util.js:127
-#, c-format
-msgid "Execution of '%s' failed:"
-msgstr "Ausführung von »%s« ist gescheitert:"
-
-#. Translators: Filter to display all applications
-#: ../js/ui/appDisplay.js:255
-msgid "All"
-msgstr "Alle"
-
-#: ../js/ui/appDisplay.js:314
-msgid "APPLICATIONS"
-msgstr "ANWENDUNGEN"
-
-#: ../js/ui/appDisplay.js:375
-msgid "SETTINGS"
-msgstr "EINSTELLUNGEN"
-
-#: ../js/ui/appDisplay.js:680
-msgid "New Window"
-msgstr "Neues Fenster"
-
-#: ../js/ui/appDisplay.js:683
-msgid "Remove from Favorites"
-msgstr "Aus Favoriten entfernen"
-
-#: ../js/ui/appDisplay.js:684
-msgid "Add to Favorites"
-msgstr "Zu Favoriten hinzufügen"
-
-#: ../js/ui/appFavorites.js:87
-#, c-format
-msgid "%s has been added to your favorites."
-msgstr "%s wurde zu Ihren Favoriten hinzugefügt"
-
-#: ../js/ui/appFavorites.js:118
-#, c-format
-msgid "%s has been removed from your favorites."
-msgstr "%s wurde aus Ihren Favoriten entfernt"
-
-#: ../js/ui/autorunManager.js:265
-msgid "Removable Devices"
-msgstr "Wechseldatenträger"
-
-#: ../js/ui/autorunManager.js:560
-#, c-format
-msgid "Open with %s"
-msgstr "Öffnen mit %s"
-
-#: ../js/ui/autorunManager.js:586
-msgid "Eject"
-msgstr "Auswerfen"
-
-#. Translators: Shown in calendar event list for all day events
-#. * Keep it short, best if you can use less then 10 characters
-#.
-#: ../js/ui/calendar.js:62
-msgctxt "event list time"
-msgid "All Day"
-msgstr "Ganztägig"
-
-#. Translators: Shown in calendar event list, if 24h format
-#: ../js/ui/calendar.js:67
-msgctxt "event list time"
-msgid "%H:%M"
-msgstr "%H:%M"
-
-#
-# Da wir keine AM/PM-Suffixe haben, die Zeit von Terminen aber eindeutig
-# angezeigt werden soll, wird im Kalender stets das 24h-Format verwendet.
-#
-#. Transators: Shown in calendar event list, if 12h format
-#: ../js/ui/calendar.js:74
-msgctxt "event list time"
-msgid "%l:%M %p"
-msgstr "%H:%M"
-
-#. Translators: Calendar grid abbreviation for Sunday.
-#. *
-#. * NOTE: These grid abbreviations are always shown together
-#. * and in order, e.g. "S M T W T F S".
-#.
-#: ../js/ui/calendar.js:114
-msgctxt "grid sunday"
-msgid "S"
-msgstr "S"
-
-#. Translators: Calendar grid abbreviation for Monday
-#: ../js/ui/calendar.js:116
-msgctxt "grid monday"
-msgid "M"
-msgstr "M"
-
-#. Translators: Calendar grid abbreviation for Tuesday
-#: ../js/ui/calendar.js:118
-msgctxt "grid tuesday"
-msgid "T"
-msgstr "D"
-
-#. Translators: Calendar grid abbreviation for Wednesday
-#: ../js/ui/calendar.js:120
-msgctxt "grid wednesday"
-msgid "W"
-msgstr "M"
-
-#. Translators: Calendar grid abbreviation for Thursday
-#: ../js/ui/calendar.js:122
-msgctxt "grid thursday"
-msgid "T"
-msgstr "D"
-
-#. Translators: Calendar grid abbreviation for Friday
-#: ../js/ui/calendar.js:124
-msgctxt "grid friday"
-msgid "F"
-msgstr "F"
-
-#. Translators: Calendar grid abbreviation for Saturday
-#: ../js/ui/calendar.js:126
-msgctxt "grid saturday"
-msgid "S"
-msgstr "S"
-
-#. Translators: Event list abbreviation for Sunday.
-#. *
-#. * NOTE: These list abbreviations are normally not shown together
-#. * so they need to be unique (e.g. Tuesday and Thursday cannot
-#. * both be 'T').
-#.
-#: ../js/ui/calendar.js:139
-msgctxt "list sunday"
-msgid "Su"
-msgstr "So"
-
-#. Translators: Event list abbreviation for Monday
-#: ../js/ui/calendar.js:141
-msgctxt "list monday"
-msgid "M"
-msgstr "Mo"
-
-#. Translators: Event list abbreviation for Tuesday
-#: ../js/ui/calendar.js:143
-msgctxt "list tuesday"
-msgid "T"
-msgstr "Di"
-
-#. Translators: Event list abbreviation for Wednesday
-#: ../js/ui/calendar.js:145
-msgctxt "list wednesday"
-msgid "W"
-msgstr "Mi"
-
-#. Translators: Event list abbreviation for Thursday
-#: ../js/ui/calendar.js:147
-msgctxt "list thursday"
-msgid "Th"
-msgstr "Do"
-
-#. Translators: Event list abbreviation for Friday
-#: ../js/ui/calendar.js:149
-msgctxt "list friday"
-msgid "F"
-msgstr "Fr"
-
-#. Translators: Event list abbreviation for Saturday
-#: ../js/ui/calendar.js:151
-msgctxt "list saturday"
-msgid "S"
-msgstr "Sa"
-
-#. Translators: Text to show if there are no events
-#: ../js/ui/calendar.js:681
-msgid "Nothing Scheduled"
-msgstr "Nichts geplant"
-
-#. Translators: Shown on calendar heading when selected day occurs on current year
-#: ../js/ui/calendar.js:697
-msgctxt "calendar heading"
-msgid "%A, %B %d"
-msgstr "%A, %d. %B"
-
-#. Translators: Shown on calendar heading when selected day occurs on different year
-#: ../js/ui/calendar.js:700
-msgctxt "calendar heading"
-msgid "%A, %B %d, %Y"
-msgstr "%a, %d. %B %Y"
-
-#: ../js/ui/calendar.js:710
-msgid "Today"
-msgstr "Heute"
-
-#: ../js/ui/calendar.js:714
-msgid "Tomorrow"
-msgstr "Morgen"
-
-#: ../js/ui/calendar.js:723
-msgid "This week"
-msgstr "Diese Woche"
-
-#: ../js/ui/calendar.js:731
-msgid "Next week"
-msgstr "Nächste Woche"
-
-#: ../js/ui/contactDisplay.js:66 ../js/ui/notificationDaemon.js:486
-#: ../js/ui/status/power.js:215 ../src/shell-app.c:374
-msgid "Unknown"
-msgstr "Unbekannt"
-
-#: ../js/ui/contactDisplay.js:89 ../js/ui/userMenu.js:129
-msgid "Available"
-msgstr "Verfügbar"
-
-#: ../js/ui/contactDisplay.js:94 ../js/ui/userMenu.js:138
-msgid "Away"
-msgstr "Abwesend"
-
-#: ../js/ui/contactDisplay.js:98 ../js/ui/userMenu.js:132
-msgid "Busy"
-msgstr "Beschäftigt"
-
-#: ../js/ui/contactDisplay.js:102
-msgid "Offline"
-msgstr "Abgemeldet"
-
-#: ../js/ui/contactDisplay.js:153
-msgid "CONTACTS"
-msgstr "KONTAKTE"
-
-#: ../js/ui/dash.js:229 ../js/ui/messageTray.js:1207
-msgid "Remove"
-msgstr "Entfernen"
-
-#: ../js/ui/dateMenu.js:103
-msgid "Date and Time Settings"
-msgstr "Einstellungen für Datum und Uhrzeit"
-
-#: ../js/ui/dateMenu.js:129
-msgid "Open Calendar"
-msgstr "Kalender öffnen"
-
-#. Translators: This is the time format with date used
-#. in 24-hour mode.
-#: ../js/ui/dateMenu.js:187
-msgid "%a %b %e, %R:%S"
-msgstr "%a, %e. %b, %R:%S"
-
-#: ../js/ui/dateMenu.js:188
-msgid "%a %b %e, %R"
-msgstr "%a, %e. %b, %R"
-
-#. Translators: This is the time format without date used
-#. in 24-hour mode.
-#: ../js/ui/dateMenu.js:192
-msgid "%a %R:%S"
-msgstr "%a %R:%S"
-
-#: ../js/ui/dateMenu.js:193
-msgid "%a %R"
-msgstr "%a %R"
-
-#. Translators: This is a time format with date used
-#. for AM/PM.
-#: ../js/ui/dateMenu.js:200
-msgid "%a %b %e, %l:%M:%S %p"
-msgstr "%a, %e. %b, %l:%M:%S"
-
-#: ../js/ui/dateMenu.js:201
-msgid "%a %b %e, %l:%M %p"
-msgstr "%a, %e. %b, %l:%M"
-
-#. Translators: This is a time format without date used
-#. for AM/PM.
-#: ../js/ui/dateMenu.js:205
-msgid "%a %l:%M:%S %p"
-msgstr "%a %l:%M:%S"
-
-#: ../js/ui/dateMenu.js:206
-msgid "%a %l:%M %p"
-msgstr "%a %l:%M"
-
-#. Translators: This is the date format to use when the calendar popup is
-#. * shown - it is shown just below the time in the shell (e.g. "Tue 9:29 AM").
-#.
-#: ../js/ui/dateMenu.js:217
-msgid "%A %B %e, %Y"
-msgstr "%A, %e. %B %Y"
-
-#: ../js/ui/endSessionDialog.js:61
-#, c-format
-msgctxt "title"
-msgid "Log Out %s"
-msgstr "%s abmelden"
-
-#: ../js/ui/endSessionDialog.js:62
-msgctxt "title"
-msgid "Log Out"
-msgstr "Abmelden"
-
-#: ../js/ui/endSessionDialog.js:63
-msgid "Click Log Out to quit these applications and log out of the system."
-msgstr ""
-"Klicken Sie auf »Abmelden«, um diese Anwendungen zu beenden und sich vom "
-"System abzumelden."
-
-#: ../js/ui/endSessionDialog.js:65
-#, c-format
-msgid "%s will be logged out automatically in %d second."
-msgid_plural "%s will be logged out automatically in %d seconds."
-msgstr[0] "%s wird automatisch in %d Sekunde abgemeldet."
-msgstr[1] "%s wird automatisch in %d Sekunden abgemeldet."
-
-#: ../js/ui/endSessionDialog.js:70
-#, c-format
-msgid "You will be logged out automatically in %d second."
-msgid_plural "You will be logged out automatically in %d seconds."
-msgstr[0] "Sie werden automatisch in %d Sekunde abgemeldet."
-msgstr[1] "Sie werden automatisch in %d Sekunden abgemeldet."
-
-#: ../js/ui/endSessionDialog.js:74
-msgid "Logging out of the system."
-msgstr "Abmeldung vom System."
-
-#: ../js/ui/endSessionDialog.js:76
-msgctxt "button"
-msgid "Log Out"
-msgstr "Abmelden"
-
-#: ../js/ui/endSessionDialog.js:81
-msgctxt "title"
-msgid "Power Off"
-msgstr "Ausschalten"
-
-#: ../js/ui/endSessionDialog.js:82
-msgid "Click Power Off to quit these applications and power off the system."
-msgstr ""
-"Klicken Sie auf »Ausschalten«, um diese Anwendungen zu beenden und das System "
-"auszuschalten."
-
-#: ../js/ui/endSessionDialog.js:84
-#, c-format
-msgid "The system will power off automatically in %d second."
-msgid_plural "The system will power off automatically in %d seconds."
-msgstr[0] "Das System wird automatisch in %d Sekunde ausgeschaltet."
-msgstr[1] "Das System wird automatisch in %d Sekunden ausgeschaltet."
-
-#: ../js/ui/endSessionDialog.js:88
-msgid "Powering off the system."
-msgstr "Das System wird ausgeschaltet."
-
-#: ../js/ui/endSessionDialog.js:90 ../js/ui/endSessionDialog.js:107
-msgctxt "button"
-msgid "Restart"
-msgstr "Neu starten"
-
-#: ../js/ui/endSessionDialog.js:92
-msgctxt "button"
-msgid "Power Off"
-msgstr "Ausschalten"
-
-#: ../js/ui/endSessionDialog.js:98
-msgctxt "title"
-msgid "Restart"
-msgstr "Neu starten"
-
-#: ../js/ui/endSessionDialog.js:99
-msgid "Click Restart to quit these applications and restart the system."
-msgstr ""
-"Klicken Sie auf »Neu starten«, um diese Anwendungen zu beenden und das System "
-"neu zu starten."
-
-#: ../js/ui/endSessionDialog.js:101
-#, c-format
-msgid "The system will restart automatically in %d second."
-msgid_plural "The system will restart automatically in %d seconds."
-msgstr[0] "Das System wird automatisch in %d Sekunde neu gestartet."
-msgstr[1] "Das System wird automatisch in %d Sekunden neu gestartet."
-
-#: ../js/ui/endSessionDialog.js:105
-msgid "Restarting the system."
-msgstr "Neustart des Systems."
-
-#: ../js/ui/extensionSystem.js:404
-msgid "Install"
-msgstr "Installieren"
-
-#: ../js/ui/extensionSystem.js:408
-#, c-format
-msgid "Download and install '%s' from extensions.heartlenv.org?"
-msgstr "»%s« von extensions.heartlenv.org herunterladen und installieren?"
-
-#: ../js/ui/keyboard.js:327
-msgid "tray"
-msgstr "Benachrichtigungsfeld"
-
-#: ../js/ui/keyboard.js:544 ../js/ui/status/keyboard.js:44
-#: ../js/ui/status/power.js:203
-msgid "Keyboard"
-msgstr "Tastatur"
-
-#: ../js/ui/keyringPrompt.js:85 ../js/ui/polkitAuthenticationAgent.js:272
-msgid "Password:"
-msgstr "Passwort:"
-
-#: ../js/ui/keyringPrompt.js:101
-msgid "Type again:"
-msgstr "Erneut eingeben:"
-
-#: ../js/ui/lookingGlass.js:732
-msgid "No extensions installed"
-msgstr "Keine Erweiterungen installiert"
-
-#. Translators: argument is an extension UUID.
-#: ../js/ui/lookingGlass.js:786
-#, c-format
-msgid "%s has not emitted any errors."
-msgstr "%s hat keine Fehler ausgegeben."
-
-#: ../js/ui/lookingGlass.js:792
-msgid "Hide Errors"
-msgstr "Fehler verbergen"
-
-#: ../js/ui/lookingGlass.js:796 ../js/ui/lookingGlass.js:847
-msgid "Show Errors"
-msgstr "Fehler anzeigen"
-
-#: ../js/ui/lookingGlass.js:805
-msgid "Enabled"
-msgstr "Aktiviert"
-
-#. translators:
-#. * The device has been disabled
-#: ../js/ui/lookingGlass.js:808 ../src/gvc/gvc-mixer-control.c:1082
+msgid "L_ength (%):"
+msgstr "_Länge (in %):"
+
+#. I18N: name of the section (frame) in the panel preferences where the user
+#. can define the length and size of the panel
+#: ../panel/panel-preferences-dialog.glade.h:18
+msgid "Measurements"
+msgstr "Abmessungen"
+
+#: ../panel/panel-preferences-dialog.glade.h:19
+#: ../plugins/launcher/launcher-dialog.glade.h:13
+msgid "Move currently selected item down by one row"
+msgstr "Ausgewähltes Objekt eine Zeile nach unten bewegen"
+
+#: ../panel/panel-preferences-dialog.glade.h:20
+#: ../plugins/launcher/launcher-dialog.glade.h:14
+msgid "Move currently selected item up by one row"
+msgstr "Ausgewähltes Objekt eine Zeile nach oben bewegen"
+
+#: ../panel/panel-preferences-dialog.glade.h:21
+msgid "None (use system style)"
+msgstr "Keines (Systemstil verwenden)"
+
+#: ../panel/panel-preferences-dialog.glade.h:22
+msgid "O_utput:"
+msgstr "_Ausgabe:"
+
+#: ../panel/panel-preferences-dialog.glade.h:23
+msgid "Opacity"
+msgstr "Deckkraft"
+
+#: ../panel/panel-preferences-dialog.glade.h:25
+msgid "Pick a Panel Color"
+msgstr "Farbe für die Leiste auswählen"
+
+#: ../panel/panel-preferences-dialog.glade.h:26
+msgid "Remove currently selected item"
+msgstr "Ausgewähltes Objekt entfernen"
+
+#: ../panel/panel-preferences-dialog.glade.h:27
+msgid "Remove the currently selected panel"
+msgstr "Die ausgewählte Leiste entfernen"
+
+#: ../panel/panel-preferences-dialog.glade.h:28
+msgid "Select A Background Image"
+msgstr "Hintergrundbild auswählen"
+
+#: ../panel/panel-preferences-dialog.glade.h:29
+msgid "Select this option to automatically increase the length of the panel if the plugins request more space."
+msgstr "Wählen Sie diese Option, wenn die Länge der Leiste automatisch vergrößert werden soll, wenn Plugins mehr Platz benötigen."
+
+#: ../panel/panel-preferences-dialog.glade.h:30
+msgid "Select this option to extend the panel over multiple monitors."
+msgstr "Wählen Sie diese Option, um die Leiste über mehrere Monitore zu verteilen."
+
+#: ../panel/panel-preferences-dialog.glade.h:31
+msgid "Select this option to hide the handles of the panel and lock its position."
+msgstr "Wählen Sie diese Option, um die Leistengriffe zu verbergen und die Position zu sperren."
+
+#: ../panel/panel-preferences-dialog.glade.h:32
+msgid "Select this option to hide the panel when the pointer is not above it. This only works when the panel is attached to a screen edge."
+msgstr "Wählen Sie diese Option, um die Leiste zu verbergen, wenn sich der Zeiger nicht über ihr befindet. Dies funktioniert nur, wenn sich die Leiste an einer Bildschirmkante befindet."
+
+#: ../panel/panel-preferences-dialog.glade.h:33
+msgid "Show about information of the currently selected item"
+msgstr "Informationen zum ausgewähltes Objekt anzeigen"
+
+#: ../panel/panel-preferences-dialog.glade.h:34
+msgid "Solid color"
+msgstr "Deckfarbe"
+
+#: ../panel/panel-preferences-dialog.glade.h:35
+msgid "Span mo_nitors"
+msgstr "_Auf mehrere Monitore ausdehnen"
+
+#: ../panel/panel-preferences-dialog.glade.h:36
+msgid "Transparency when the pointer is hovering over the panel, with 0 being fully transparent and 100 fully opaque."
+msgstr "Durchsichtigkeit, wenn der Mauszeiger über dieser Leiste ist. Zwischen 0 (transparent) und 100 (undurchsichtig)."
+
+#: ../panel/panel-preferences-dialog.glade.h:37
+msgid "Transparency when the pointer is not hovering over the panel, with 0 being fully transparent and 100 fully opaque."
+msgstr "Durchsichtigkeit, wenn der Mauszeiger nicht über dieser Leiste ist.Zwischen 0 (transparent) und 100 (undurchsichtig)."
+
+#: ../panel/panel-preferences-dialog.glade.h:38
+msgid "Vertical"
+msgstr "Vertikal"
+
+#: ../panel/panel-preferences-dialog.glade.h:39
+msgid "_Alpha:"
+msgstr "_Alpha:"
+
+#. I18N: label for the enter transparency slider
+#: ../panel/panel-preferences-dialog.glade.h:41
+msgid "_Enter:"
+msgstr "_Eingabe:"
+
+#: ../panel/panel-preferences-dialog.glade.h:42
+msgid "_File:"
+msgstr "_Datei:"
+
+#. I18N: label for the leave transparency slider
+#: ../panel/panel-preferences-dialog.glade.h:44
+msgid "_Leave:"
+msgstr "_Verlassen:"
+
+#: ../panel/panel-preferences-dialog.glade.h:45
+msgid "_Lock panel"
+msgstr "_Leiste sperren"
+
+#: ../panel/panel-preferences-dialog.glade.h:46
+msgid "_Orientation:"
+msgstr "_Ausrichtung:"
+
+#: ../panel/panel-preferences-dialog.glade.h:47
+msgid "_Size (pixels):"
+msgstr "_Größe (in Pixel):"
+
+#: ../panel/panel-preferences-dialog.glade.h:48
+#: ../plugins/separator/separator-dialog.glade.h:8
+msgid "_Style:"
+msgstr "_Stil:"
+
+#: ../panel/panel-tic-tac-toe.c:123
+msgid "_New Game"
+msgstr "_Neues Spiel"
+
+#: ../panel/panel-tic-tac-toe.c:134
+msgid "_Level:"
+msgstr "_Level:"
+
+#: ../panel/panel-tic-tac-toe.c:140
+msgid "Novice"
+msgstr "Anfänger"
+
+#: ../panel/panel-tic-tac-toe.c:141
+msgid "Intermediate"
+msgstr "Erfahren"
+
+#: ../panel/panel-tic-tac-toe.c:142
+msgid "Experienced"
+msgstr "Profi"
+
+#: ../panel/panel-tic-tac-toe.c:143
+msgid "Expert"
+msgstr "Experte"
+
+#: ../migrate/main.c:78
+msgid "Welcome to the first start of the panel"
+msgstr "Willkommen beim ersten Start der Xfce-Leiste"
+
+#: ../migrate/main.c:80
+msgid "Because the panel moved to a new system for storing the settings, it has to load a fresh initial configuration."
+msgstr "Da die Leiste auf neue Art ihre Einstellungen speichert, muss eine neue Konfiguration geladen werden."
+
+#: ../migrate/main.c:83
+msgid "Choose below which setup you want for the first startup."
+msgstr "Wählen Sie unten aus, welches Setup Sie für den ersten Start verwenden möchten"
+
+#: ../migrate/main.c:89
+msgid "Migrate old config"
+msgstr "Alte Einstellungen migrieren"
+
+#: ../migrate/main.c:90
+msgid "Migrate the old 4.6 configuration to Xfconf"
+msgstr "Alte Einstellungen der Version 4.6 zu Xfconf migrieren"
+
+#: ../migrate/main.c:95
+msgid "Use default config"
+msgstr "Standardeinstellung benutzen"
+
+#: ../migrate/main.c:96
+msgid "Load the default configuration"
+msgstr "Standardeinstellungen laden"
+
+#: ../migrate/main.c:102
+msgid "One empty panel"
+msgstr "Eine leere Leiste"
+
+#: ../migrate/main.c:103
+msgid "Start with one empty panel"
+msgstr "Mit einer leeren Leiste beginnen"
+
+#: ../migrate/main.c:115
+msgid "Failed to migrate the old panel configuration"
+msgstr "Alte Leisteneinstellungen konnten nicht migriert werden"
+
+#: ../migrate/main.c:125
+msgid "Failed to load the default configuration"
+msgstr "Standardeinstellungen konnten nicht geladen werden"
+
+#: ../plugins/actions/actions-dialog.glade.h:1
+#: ../plugins/actions/actions.desktop.in.h:1
+msgid "Action Buttons"
+msgstr "Aktionsknöpfe"
+
+#: ../plugins/actions/actions-dialog.glade.h:2
+msgid "Button Actions"
+msgstr "Tastenaktionen"
+
+#: ../plugins/actions/actions-dialog.glade.h:3
+msgid "_First button:"
+msgstr "_Erste Taste:"
+
+#: ../plugins/actions/actions-dialog.glade.h:4
+msgid "_Second button:"
+msgstr "_Zweite Taste:"
+
+#: ../plugins/actions/actions.c:108
 msgid "Disabled"
-msgstr "Deaktiviert"
+msgstr "Ausgeschaltet"
 
-#: ../js/ui/lookingGlass.js:810
-msgid "Error"
-msgstr "Fehler"
+#: ../plugins/actions/actions.c:109
+msgid "Log Out Dialog"
+msgstr "Abmeldedialog"
 
-#: ../js/ui/lookingGlass.js:812
-msgid "Out of date"
-msgstr "Veraltet"
+#: ../plugins/actions/actions.c:110
+msgid "Log Out"
+msgstr "Abmelden"
 
-#: ../js/ui/lookingGlass.js:814
-msgid "Downloading"
-msgstr "Herunterladen"
-
-#: ../js/ui/lookingGlass.js:835
-msgid "View Source"
-msgstr "Quelle zeigen"
-
-#: ../js/ui/lookingGlass.js:841
-msgid "Web Page"
-msgstr "Webseite"
-
-#. Translators: this is a filename used for screencast recording
-#: ../js/ui/main.js:118
-#, no-c-format
-msgid "Screencast from %d %t"
-msgstr "Bildschirmaufzeichnung von %d %t"
-
-#: ../js/ui/messageTray.js:1200
-msgid "Open"
-msgstr "Öffnen"
-
-#: ../js/ui/messageTray.js:1217
-msgid "Unmute"
-msgstr "Ton an"
-
-#: ../js/ui/messageTray.js:1217
-msgid "Mute"
-msgstr "Stumm"
-
-#: ../js/ui/messageTray.js:2490
-msgid "System Information"
-msgstr "Systeminformationen"
-
-#: ../js/ui/networkAgent.js:148
-msgid "Connect"
-msgstr "Verbinden"
-
-#. Cisco LEAP
-#: ../js/ui/networkAgent.js:243 ../js/ui/networkAgent.js:255
-#: ../js/ui/networkAgent.js:282 ../js/ui/networkAgent.js:302
-#: ../js/ui/networkAgent.js:312
-msgid "Password: "
-msgstr "Passwort:"
-
-#. static WEP
-#: ../js/ui/networkAgent.js:248
-msgid "Key: "
-msgstr "Schlüssel:"
-
-#. TTLS and PEAP are actually much more complicated, but this complication
-#. is not visible here since we only care about phase2 authentication
-#. (and don't even care of which one)
-#: ../js/ui/networkAgent.js:280 ../js/ui/networkAgent.js:298
-msgid "Username: "
-msgstr "Benutzername:"
-
-#: ../js/ui/networkAgent.js:286
-msgid "Identity: "
-msgstr "Identität:"
-
-#: ../js/ui/networkAgent.js:288
-msgid "Private key password: "
-msgstr "Passwort für geheimen Schlüssel:"
-
-#: ../js/ui/networkAgent.js:300
-msgid "Service: "
-msgstr "Dienst:"
-
-#: ../js/ui/networkAgent.js:329
-msgid "Authentication required by wireless network"
-msgstr "Legitimierung für Funknetzwerk wird benötigt"
-
-#: ../js/ui/networkAgent.js:330
-#, c-format
-msgid ""
-"Passwords or encryption keys are required to access the wireless network '%"
-"s'."
-msgstr ""
-"Passwörter oder Schlüssel sind erforderlich, um auf das Funknetzwerk »%s« "
-"zuzugreifen."
-
-#: ../js/ui/networkAgent.js:334
-msgid "Wired 802.1X authentication"
-msgstr "Kabelgebundene 802.1X-Legitimierung"
-
-#: ../js/ui/networkAgent.js:336
-msgid "Network name: "
-msgstr "Netzwerkname:"
-
-#: ../js/ui/networkAgent.js:341
-msgid "DSL authentication"
-msgstr "DSL-Legitimierung"
-
-#: ../js/ui/networkAgent.js:348
-msgid "PIN code required"
-msgstr "PIN-Code ist erforderlich"
-
-#: ../js/ui/networkAgent.js:349
-msgid "PIN code is needed for the mobile broadband device"
-msgstr "Für das mobile Breitbandgerät wird ein PIN-Code benötigt."
-
-#: ../js/ui/networkAgent.js:350
-msgid "PIN: "
-msgstr "PIN: "
-
-#: ../js/ui/networkAgent.js:356
-msgid "Mobile broadband network password"
-msgstr "Passwort der mobilen Breitbandverbindung"
-
-#: ../js/ui/networkAgent.js:357
-#, c-format
-msgid "A password is required to connect to '%s'."
-msgstr "Es wird ein Passwort benötigt, um sich mit »%s« zu verbinden."
-
-#: ../js/ui/overview.js:90
-msgid "Undo"
-msgstr "Rückgängig"
-
-#: ../js/ui/overview.js:132
-msgid "Overview"
-msgstr "Übersicht"
-
-#: ../js/ui/overview.js:202
-msgid "Windows"
-msgstr "Fenster"
-
-#: ../js/ui/overview.js:205
-msgid "Applications"
-msgstr "Anwendungen"
-
-# Würde ich so übernehmen, oder evtl. »Dock«.
-#. Translators: this is the name of the dock/favorites area on
-#. the left of the overview
-#: ../js/ui/overview.js:231
-msgid "Dash"
-msgstr "Dash"
-
-#: ../js/ui/panel.js:592
-msgid "Quit"
-msgstr "Beenden"
-
-#. Translators: If there is no suitable word for "Activities"
-#. in your language, you can use the word for "Overview".
-#: ../js/ui/panel.js:624
-msgid "Activities"
-msgstr "Aktivitäten"
-
-#: ../js/ui/panel.js:999
-msgid "Top Bar"
-msgstr "Obere Leiste"
-
-#: ../js/ui/placeDisplay.js:115
-#, c-format
-msgid "Failed to unmount '%s'"
-msgstr "»%s« konnte nicht ausgehängt werden"
-
-#: ../js/ui/placeDisplay.js:118
-msgid "Retry"
-msgstr "Erneut versuchen"
-
-#: ../js/ui/placeDisplay.js:156
-msgid "Connect to..."
-msgstr "Verbinden mit …"
-
-#: ../js/ui/placeDisplay.js:367
-msgid "PLACES & DEVICES"
-msgstr "ORTE UND GERÄTE"
-
-#: ../js/ui/polkitAuthenticationAgent.js:71
-msgid "Authentication Required"
-msgstr "Legitimierung erforderlich"
-
-#: ../js/ui/polkitAuthenticationAgent.js:109
-msgid "Administrator"
-msgstr "Systemverwalter"
-
-#: ../js/ui/polkitAuthenticationAgent.js:179
-msgid "Authenticate"
-msgstr "Legitimieren"
-
-#. Translators: "that didn't work" refers to the fact that the
-#. * requested authentication was not gained; this can happen
-#. * because of an authentication error (like invalid password),
-#. * for instance.
-#: ../js/ui/polkitAuthenticationAgent.js:260
-msgid "Sorry, that didn't work. Please try again."
-msgstr "Entschuldigung, das hat nicht geklappt. Bitte versuchen Sie es erneut."
-
-#. Translators: this MUST be either "toggle-switch-us"
-#. (for toggle switches containing the English words
-#. "ON" and "OFF") or "toggle-switch-intl" (for toggle
-#. switches containing "◯" and "|"). Other values will
-#. simply result in invisible toggle switches.
-#: ../js/ui/popupMenu.js:724
-msgid "toggle-switch-us"
-msgstr "toggle-switch-intl"
-
-#: ../js/ui/runDialog.js:205
-msgid "Please enter a command:"
-msgstr "Bitte geben Sie einen Befehl ein:"
-
-#: ../js/ui/searchDisplay.js:332
-msgid "Searching..."
-msgstr "Suche läuft …"
-
-#: ../js/ui/searchDisplay.js:415
-msgid "No matching results."
-msgstr "Keine passenden Ergebnisse."
-
-#: ../js/ui/shellEntry.js:26
-msgid "Copy"
-msgstr "Kopieren"
-
-#: ../js/ui/shellEntry.js:31
-msgid "Paste"
-msgstr "Einfügen"
-
-#: ../js/ui/shellEntry.js:77
-msgid "Show Text"
-msgstr "Text anzeigen"
-
-#: ../js/ui/shellEntry.js:79
-msgid "Hide Text"
-msgstr "Text verbergen"
-
-#: ../js/ui/shellMountOperation.js:271
-msgid "Wrong password, please try again"
-msgstr "Falsches Passwort, bitte versuchen Sie es erneut"
-
-#: ../js/ui/status/accessibility.js:47
-msgid "Accessibility"
-msgstr "Barrierefreiheit"
-
-#: ../js/ui/status/accessibility.js:52
-msgid "Zoom"
-msgstr "Vergrößern"
-
-#. let screenReader = this._buildItem(_("Screen Reader"), APPLICATIONS_SCHEMA,
-#. 'screen-reader-enabled');
-#. this.menu.addMenuItem(screenReader);
-#: ../js/ui/status/accessibility.js:63
-msgid "Screen Keyboard"
-msgstr "Bildschirmtastatur"
-
-#: ../js/ui/status/accessibility.js:67
-msgid "Visual Alerts"
-msgstr "Visuelle Warnungen"
-
-#: ../js/ui/status/accessibility.js:70
-msgid "Sticky Keys"
-msgstr "Klebrige Tasten"
-
-#: ../js/ui/status/accessibility.js:73
-msgid "Slow Keys"
-msgstr "Tastenverzögerung"
-
-#: ../js/ui/status/accessibility.js:76
-msgid "Bounce Keys"
-msgstr "Springende Tasten"
-
-#: ../js/ui/status/accessibility.js:79
-msgid "Mouse Keys"
-msgstr "Tastaturmaus"
-
-#: ../js/ui/status/accessibility.js:83
-msgid "Universal Access Settings"
-msgstr "Einstellungen zur Barrierefreiheit"
-
-#: ../js/ui/status/accessibility.js:117
-msgid "High Contrast"
-msgstr "Hoher Kontrast"
-
-#: ../js/ui/status/accessibility.js:154
-msgid "Large Text"
-msgstr "Große Schrift"
-
-#: ../js/ui/status/bluetooth.js:31 ../js/ui/status/bluetooth.js:35
-#: ../js/ui/status/bluetooth.js:258 ../js/ui/status/bluetooth.js:341
-#: ../js/ui/status/bluetooth.js:371 ../js/ui/status/bluetooth.js:407
-#: ../js/ui/status/bluetooth.js:436 ../js/ui/status/network.js:893
-msgid "Bluetooth"
-msgstr "Bluetooth"
-
-#: ../js/ui/status/bluetooth.js:48
-msgid "Visibility"
-msgstr "Sichtbarkeit"
-
-#: ../js/ui/status/bluetooth.js:62
-msgid "Send Files to Device..."
-msgstr "Dateien an Gerät senden …"
-
-#: ../js/ui/status/bluetooth.js:63
-msgid "Set up a New Device..."
-msgstr "Ein neues Gerät einrichten …"
-
-#: ../js/ui/status/bluetooth.js:87
-msgid "Bluetooth Settings"
-msgstr "Bluetooth-Einstellungen"
-
-#. TRANSLATORS: this means that bluetooth was disabled by hardware rfkill
-#: ../js/ui/status/bluetooth.js:107 ../js/ui/status/network.js:256
-msgid "hardware disabled"
-msgstr "Hardware deaktiviert"
-
-#: ../js/ui/status/bluetooth.js:203
-msgid "Connection"
-msgstr "Verbindung"
-
-#: ../js/ui/status/bluetooth.js:214 ../js/ui/status/network.js:491
-msgid "disconnecting..."
-msgstr "Verbindungsabbau …"
-
-#: ../js/ui/status/bluetooth.js:227 ../js/ui/status/network.js:497
-msgid "connecting..."
-msgstr "Verbindungsaufbau …"
-
-#: ../js/ui/status/bluetooth.js:245
-msgid "Send Files..."
-msgstr "Dateien senden …"
-
-#: ../js/ui/status/bluetooth.js:250
-msgid "Browse Files..."
-msgstr "Dateien durchsuchen …"
-
-#: ../js/ui/status/bluetooth.js:259
-msgid "Error browsing device"
-msgstr "Fehler beim Durchsuchen des Geräts"
-
-#: ../js/ui/status/bluetooth.js:260
-#, c-format
-msgid "The requested device cannot be browsed, error is '%s'"
-msgstr ""
-"Das angesprochene Gerät kann nicht durchsucht werden. Der Fehler lautet »%s«"
-
-#: ../js/ui/status/bluetooth.js:268
-msgid "Keyboard Settings"
-msgstr "Tastatureinstellungen"
-
-#: ../js/ui/status/bluetooth.js:271
-msgid "Mouse Settings"
-msgstr "Maus-Einstellungen"
-
-#: ../js/ui/status/bluetooth.js:276 ../js/ui/status/volume.js:59
-msgid "Sound Settings"
-msgstr "Klangeinstellungen"
-
-#: ../js/ui/status/bluetooth.js:372
-#, c-format
-msgid "Authorization request from %s"
-msgstr "Legitimierungsanfrage von %s"
-
-#: ../js/ui/status/bluetooth.js:378
-#, c-format
-msgid "Device %s wants access to the service '%s'"
-msgstr "Gerät »%s« bittet um Zugriff auf den Dienst »%s«"
-
-#: ../js/ui/status/bluetooth.js:380
-msgid "Always grant access"
-msgstr "Immer Zugriff gewähren"
-
-#: ../js/ui/status/bluetooth.js:381
-msgid "Grant this time only"
-msgstr "Nur dieses Mal gewähren"
-
-#: ../js/ui/status/bluetooth.js:382 ../js/ui/telepathyClient.js:1091
-msgid "Reject"
-msgstr "Abweisen"
-
-#: ../js/ui/status/bluetooth.js:408
-#, c-format
-msgid "Pairing confirmation for %s"
-msgstr "Koppelungsbestätigung für %s"
-
-#: ../js/ui/status/bluetooth.js:414 ../js/ui/status/bluetooth.js:444
-#, c-format
-msgid "Device %s wants to pair with this computer"
-msgstr "Gerät »%s« möchte mit diesem Rechner gekoppelt werden"
-
-#: ../js/ui/status/bluetooth.js:415
-#, c-format
-msgid "Please confirm whether the PIN '%s' matches the one on the device."
-msgstr ""
-"Bitte bestätigen Sie, ob die PIN »%s« mit der des Gerätes übereinstimmt."
-
-#: ../js/ui/status/bluetooth.js:417
-msgid "Matches"
-msgstr "Stimmt überein"
-
-#: ../js/ui/status/bluetooth.js:418
-msgid "Does not match"
-msgstr "Stimmt nicht überein"
-
-#: ../js/ui/status/bluetooth.js:437
-#, c-format
-msgid "Pairing request for %s"
-msgstr "Koppelungsanfrage für %s"
-
-#: ../js/ui/status/bluetooth.js:445
-msgid "Please enter the PIN mentioned on the device."
-msgstr "Bitte geben Sie die auf dem Gerät angezeigte PIN ein."
-
-#: ../js/ui/status/bluetooth.js:461
-msgid "OK"
-msgstr "OK"
-
-#: ../js/ui/status/keyboard.js:68
-msgid "Show Keyboard Layout"
-msgstr "Tastaturbelegung zeigen"
-
-#: ../js/ui/status/keyboard.js:73
-msgid "Region and Language Settings"
-msgstr "Einstellungen für Region und Sprache"
-
-#: ../js/ui/status/network.js:96
-msgid "<unknown>"
-msgstr "<Unbekannt>"
-
-#. Translators: this indicates that wireless or wwan is disabled by hardware killswitch
-#: ../js/ui/status/network.js:278
-msgid "disabled"
-msgstr "Deaktiviert"
-
-#. Translators: this is for network devices that are physically present but are not
-#. under NetworkManager's control (and thus cannot be used in the menu)
-#: ../js/ui/status/network.js:489
-msgid "unmanaged"
-msgstr "nicht verwaltet"
-
-#. Translators: this is for network connections that require some kind of key or password
-#: ../js/ui/status/network.js:500
-msgid "authentication required"
-msgstr "Legitimierung erforderlich"
-
-#. Translators: this is for devices that require some kind of firmware or kernel
-#. module, which is missing
-#: ../js/ui/status/network.js:510
-msgid "firmware missing"
-msgstr "Firmware fehlt"
-
-#. Translators: this is for wired network devices that are physically disconnected
-#: ../js/ui/status/network.js:517
-msgid "cable unplugged"
-msgstr "Kabel nicht angeschlossen"
-
-#. Translators: this is for a network device that cannot be activated (for example it
-#. is disabled by rfkill, or it has no coverage
-#: ../js/ui/status/network.js:522
-msgid "unavailable"
-msgstr "nicht verfügbar"
-
-#: ../js/ui/status/network.js:524
-msgid "connection failed"
-msgstr "Verbindung gescheitert"
-
-#: ../js/ui/status/network.js:585 ../js/ui/status/network.js:1505
-msgid "More..."
-msgstr "Mehr …"
-
-#. TRANSLATORS: this is the indication that a connection for another logged in user is active,
-#. and we cannot access its settings (including the name)
-#: ../js/ui/status/network.js:621 ../js/ui/status/network.js:1440
-msgid "Connected (private)"
-msgstr "Verbunden (privat)"
-
-#: ../js/ui/status/network.js:696
-msgid "Auto Ethernet"
-msgstr "Ethernet (automatisch)"
-
-#: ../js/ui/status/network.js:757
-msgid "Auto broadband"
-msgstr "Mobiles Breitband (automatisch)"
-
-#: ../js/ui/status/network.js:760
-msgid "Auto dial-up"
-msgstr "Einwählverbindung (automatisch)"
-
-#. TRANSLATORS: this the automatic wireless connection name (including the network name)
-#: ../js/ui/status/network.js:879 ../js/ui/status/network.js:1452
-#, c-format
-msgid "Auto %s"
-msgstr "%s (automatisch)"
-
-#: ../js/ui/status/network.js:881
-msgid "Auto bluetooth"
-msgstr "Bluetooth (automatisch)"
-
-#: ../js/ui/status/network.js:1454
-msgid "Auto wireless"
-msgstr "Drahtlos (automatisch)"
-
-#: ../js/ui/status/network.js:1541
-msgid "Network"
-msgstr "Netzwerk"
-
-#: ../js/ui/status/network.js:1548
-msgid "Enable networking"
-msgstr "Netzwerk aktivieren"
-
-#: ../js/ui/status/network.js:1560
-msgid "Wired"
-msgstr "Kabelgebunden"
-
-#: ../js/ui/status/network.js:1571
-msgid "Wireless"
-msgstr "Drahtlos"
-
-#: ../js/ui/status/network.js:1581
-msgid "Mobile broadband"
-msgstr "Mobiles Breitband"
-
-#: ../js/ui/status/network.js:1591
-msgid "VPN Connections"
-msgstr "VPN-Verbindungen"
-
-#: ../js/ui/status/network.js:1602
-msgid "Network Settings"
-msgstr "Netzwerkeinstellungen"
-
-#: ../js/ui/status/network.js:1739
-msgid "Connection failed"
-msgstr "Verbindung gescheitert"
-
-#: ../js/ui/status/network.js:1740
-msgid "Activation of network connection failed"
-msgstr "Aktivierung der Netzwerkverbindung ist gescheitert"
-
-#: ../js/ui/status/network.js:1993
-msgid "Networking is disabled"
-msgstr "Netzwerk ist deaktiviert"
-
-#: ../js/ui/status/network.js:2117
-msgid "Network Manager"
-msgstr "Netzwerk-Verwaltung"
-
-#: ../js/ui/status/power.js:59
-msgid "Battery"
-msgstr "Akku"
-
-#: ../js/ui/status/power.js:76
-msgid "Power Settings"
-msgstr "Energieeinstellungen"
-
-#. 0 is reported when UPower does not have enough data
-#. to estimate battery life
-#: ../js/ui/status/power.js:98
-msgid "Estimating..."
-msgstr "Schätzung …"
-
-#: ../js/ui/status/power.js:105
-#, c-format
-msgid "%d hour remaining"
-msgid_plural "%d hours remaining"
-msgstr[0] "%d Stunde verbleibend"
-msgstr[1] "%d Stunden verbleibend"
-
-#. TRANSLATORS: this is a time string, as in "%d hours %d minutes remaining"
-#: ../js/ui/status/power.js:108
-#, c-format
-msgid "%d %s %d %s remaining"
-msgstr "%d %s %d %s verbleibend"
-
-#: ../js/ui/status/power.js:110
-msgid "hour"
-msgid_plural "hours"
-msgstr[0] "Stunde"
-msgstr[1] "Stunden"
-
-#: ../js/ui/status/power.js:110
-msgid "minute"
-msgid_plural "minutes"
-msgstr[0] "Minute"
-msgstr[1] "Minuten"
-
-#: ../js/ui/status/power.js:113
-#, c-format
-msgid "%d minute remaining"
-msgid_plural "%d minutes remaining"
-msgstr[0] "%d Minute verbleibend"
-msgstr[1] "%d Minuten verbleibend"
-
-#: ../js/ui/status/power.js:116 ../js/ui/status/power.js:186
-#, c-format
-msgctxt "percent of battery remaining"
-msgid "%d%%"
-msgstr "%d%%"
-
-#: ../js/ui/status/power.js:193
-msgid "AC adapter"
-msgstr "Netzteil"
-
-#: ../js/ui/status/power.js:195
-msgid "Laptop battery"
-msgstr "Laptop-Akku"
-
-#: ../js/ui/status/power.js:197
-msgid "UPS"
-msgstr "Notstromversorgung"
-
-#: ../js/ui/status/power.js:199
-msgid "Monitor"
-msgstr "Bildschirm"
-
-#: ../js/ui/status/power.js:201
-msgid "Mouse"
-msgstr "Maus"
-
-#: ../js/ui/status/power.js:205
-msgid "PDA"
-msgstr "PDA"
-
-#: ../js/ui/status/power.js:207
-msgid "Cell phone"
-msgstr "Mobiltelefon"
-
-#: ../js/ui/status/power.js:209
-msgid "Media player"
-msgstr "Medienwiedergabegerät"
-
-#: ../js/ui/status/power.js:211
-msgid "Tablet"
-msgstr "Tablet"
-
-#: ../js/ui/status/power.js:213
-msgid "Computer"
-msgstr "Rechner"
-
-#. Translators: This is the label for audio volume
-#: ../js/ui/status/volume.js:25 ../js/ui/status/volume.js:39
-msgid "Volume"
-msgstr "Lautstärke"
-
-#: ../js/ui/status/volume.js:51
-msgid "Microphone"
-msgstr "Mikrofon"
-
-#. FIXME: We don't have a 'chat room' icon (bgo #653737) use
-#. system-users for now as Empathy does.
-#: ../js/ui/telepathyClient.js:220
-msgid "Invitation"
-msgstr "Einladung"
-
-#. We got the TpContact
-#: ../js/ui/telepathyClient.js:271
-msgid "Call"
-msgstr "Anruf"
-
-#. We got the TpContact
-#: ../js/ui/telepathyClient.js:287
-msgid "File Transfer"
-msgstr "Dateiübertragung"
-
-#: ../js/ui/telepathyClient.js:369
-msgid "Subscription request"
-msgstr "Abonnementanfrage"
-
-#: ../js/ui/telepathyClient.js:405
-msgid "Connection error"
-msgstr "Verbindungsfehler"
-
-#: ../js/ui/telepathyClient.js:663
-#, c-format
-msgid "%s is online."
-msgstr "%s ist angemeldet."
-
-#: ../js/ui/telepathyClient.js:667
-#, c-format
-msgid "%s is offline."
-msgstr "%s ist abgemeldet."
-
-#: ../js/ui/telepathyClient.js:671
-#, c-format
-msgid "%s is away."
-msgstr "»%s« ist abwesend."
-
-#: ../js/ui/telepathyClient.js:674
-#, c-format
-msgid "%s is busy."
-msgstr "%s ist beschäftigt."
-
-#. Translators: this is a time format string followed by a date.
-#. If applicable, replace %X with a strftime format valid for your
-#. locale, without seconds.
-#: ../js/ui/telepathyClient.js:887
-#, no-c-format
-msgid "Sent at <b>%X</b> on <b>%A</b>"
-msgstr "Gesendet am <b>%A</b> um <b>%X</b> "
-
-#. Translators: this is a time format in the style of "Wednesday, May 25",
-#. shown when you get a chat message in the same year.
-#: ../js/ui/telepathyClient.js:893
-#, no-c-format
-msgid "Sent on <b>%A</b>, <b>%B %d</b>"
-msgstr "Gesendet am <b>%A</b>, <b>%d. %B</b>"
-
-#. Translators: this is a time format in the style of "Wednesday, May 25, 2012",
-#. shown when you get a chat message in a different year.
-#: ../js/ui/telepathyClient.js:898
-#, no-c-format
-msgid "Sent on <b>%A</b>, <b>%B %d</b>, %Y"
-msgstr "Gesendet am <b>%A</b>, <b>%d. %B</b> %Y"
-
-#. Translators: this is the other person changing their old IM name to their new
-#. IM name.
-#: ../js/ui/telepathyClient.js:940
-#, c-format
-msgid "%s is now known as %s"
-msgstr "%s heißt jetzt %s"
-
-#. translators: argument is a room name like
-#. * room@jabber.org for example.
-#: ../js/ui/telepathyClient.js:1042
-#, c-format
-msgid "Invitation to %s"
-msgstr "Einladung zum Betreten von %s"
-
-#. translators: first argument is the name of a contact and the second
-#. * one the name of a room. "Alice is inviting you to join room@jabber.org
-#. * for example.
-#: ../js/ui/telepathyClient.js:1050
-#, c-format
-msgid "%s is inviting you to join %s"
-msgstr "%s lädt Sie ein, %s beizutreten"
-
-#: ../js/ui/telepathyClient.js:1052 ../js/ui/telepathyClient.js:1131
-#: ../js/ui/telepathyClient.js:1229
-msgid "Decline"
-msgstr "Ablehnen"
-
-#: ../js/ui/telepathyClient.js:1053 ../js/ui/telepathyClient.js:1132
-#: ../js/ui/telepathyClient.js:1230
-msgid "Accept"
-msgstr "Annehmen"
-
-#. translators: argument is a contact name like Alice for example.
-#: ../js/ui/telepathyClient.js:1083
-#, c-format
-msgid "Video call from %s"
-msgstr "Video-Anruf von %s"
-
-#. translators: argument is a contact name like Alice for example.
-#: ../js/ui/telepathyClient.js:1086
-#, c-format
-msgid "Call from %s"
-msgstr "Anruf von %s"
-
-#. translators: this is a button label (verb), not a noun
-#: ../js/ui/telepathyClient.js:1093
-msgid "Answer"
-msgstr "Antworten"
-
-#. To translators: The first parameter is
-#. * the contact's alias and the second one is the
-#. * file name. The string will be something
-#. * like: "Alice is sending you test.ogg"
-#.
-#: ../js/ui/telepathyClient.js:1125
-#, c-format
-msgid "%s is sending you %s"
-msgstr "%s sendet Ihnen %s"
-
-#. To translators: The parameter is the contact's alias
-#: ../js/ui/telepathyClient.js:1194
-#, c-format
-msgid "%s would like permission to see when you are online"
-msgstr "%s bittet um das Recht, Ihre Online-Verfügbarkeit sehen zu dürfen"
-
-#: ../js/ui/telepathyClient.js:1287
-msgid "Network error"
-msgstr "Netzwerkfehler"
-
-#: ../js/ui/telepathyClient.js:1289
-msgid "Authentication failed"
-msgstr "Legitimierung fehlgeschlagen"
-
-#: ../js/ui/telepathyClient.js:1291
-msgid "Encryption error"
-msgstr "Verschlüsselungsfehler"
-
-#: ../js/ui/telepathyClient.js:1293
-msgid "Certificate not provided"
-msgstr "Zertifikat wurde nicht bereitgestellt"
-
-#: ../js/ui/telepathyClient.js:1295
-msgid "Certificate untrusted"
-msgstr "Zertifikat nicht vertrauenswürdig"
-
-#: ../js/ui/telepathyClient.js:1297
-msgid "Certificate expired"
-msgstr "Zertifikat abgelaufen"
-
-#: ../js/ui/telepathyClient.js:1299
-msgid "Certificate not activated"
-msgstr "Zertifikat nicht aktiviert"
-
-#: ../js/ui/telepathyClient.js:1301
-msgid "Certificate hostname mismatch"
-msgstr "Rechnername des Zertifikats stimmt nicht überein"
-
-#: ../js/ui/telepathyClient.js:1303
-msgid "Certificate fingerprint mismatch"
-msgstr "Fingerabdruck des Zertifikats stimmt nicht überein"
-
-#: ../js/ui/telepathyClient.js:1305
-msgid "Certificate self-signed"
-msgstr "Selbstsigniertes Zertifikat"
-
-#: ../js/ui/telepathyClient.js:1307
-msgid "Status is set to offline"
-msgstr "Der Status ist auf »Abgemeldet« gesetzt"
-
-#: ../js/ui/telepathyClient.js:1309
-msgid "Encryption is not available"
-msgstr "Verschlüsselung ist nicht verfügbar"
-
-#: ../js/ui/telepathyClient.js:1311
-msgid "Certificate is invalid"
-msgstr "Zertifikat ist ungültig"
-
-#: ../js/ui/telepathyClient.js:1313
-msgid "Connection has been refused"
-msgstr "Verbindungsaufbau wurde verweigert"
-
-#: ../js/ui/telepathyClient.js:1315
-msgid "Connection can't be established"
-msgstr "Verbindung kann nicht hergestellt werden"
-
-#: ../js/ui/telepathyClient.js:1317
-msgid "Connection has been lost"
-msgstr "Verbindung wurde unterbrochen"
-
-#: ../js/ui/telepathyClient.js:1319
-msgid "This account is already connected to the server"
-msgstr "Dieses Konto ist bereits mit dem Server verbunden"
-
-#: ../js/ui/telepathyClient.js:1321
-msgid ""
-"Connection has been replaced by a new connection using the same resource"
-msgstr ""
-"Die Verbindung wurde durch eine neue Verbindung mit der gleichen Ressource "
-"ersetzt"
-
-#: ../js/ui/telepathyClient.js:1323
-msgid "The account already exists on the server"
-msgstr "Dieses Konto ist bereits auf dem Server vorhanden"
-
-#: ../js/ui/telepathyClient.js:1325
-msgid "Server is currently too busy to handle the connection"
-msgstr ""
-"Der Server ist derzeit überlastet und kann die Verbindung nicht annehmen"
-
-#: ../js/ui/telepathyClient.js:1327
-msgid "Certificate has been revoked"
-msgstr "Zertifikat wurde zurückgezogen"
-
-#: ../js/ui/telepathyClient.js:1329
-msgid ""
-"Certificate uses an insecure cipher algorithm or is cryptographically weak"
-msgstr ""
-"Das Zertifikat verwendet einen unsicheren Chiffrier-Algorithmus oder ist "
-"kryptografisch schwach"
-
-#: ../js/ui/telepathyClient.js:1331
-msgid ""
-"The length of the server certificate, or the depth of the server certificate "
-"chain, exceed the limits imposed by the cryptography library"
-msgstr ""
-"Die Länge des Server-Zertifikats oder die Tiefe der Server-Zertifikatskette "
-"überschreiten die durch die kryptografische Bibliothek gegebenen "
-"Beschränkungen"
-
-#: ../js/ui/telepathyClient.js:1333
-msgid "Internal error"
-msgstr "Interner Fehler"
-
-#. translators: argument is the account name, like
-#. * name@jabber.org for example.
-#: ../js/ui/telepathyClient.js:1343
-#, c-format
-msgid "Connection to %s failed"
-msgstr "Verbindung zu %s ist fehlgeschlagen"
-
-#: ../js/ui/telepathyClient.js:1352
-msgid "Reconnect"
-msgstr "Erneut verbinden"
-
-#: ../js/ui/telepathyClient.js:1353
-msgid "Edit account"
-msgstr "Konto bearbeiten"
-
-#: ../js/ui/telepathyClient.js:1399
-msgid "Unknown reason"
-msgstr "Unbekannter Grund"
-
-#: ../js/ui/userMenu.js:135
-msgid "Hidden"
-msgstr "Verborgen"
-
-#: ../js/ui/userMenu.js:141
-msgid "Idle"
-msgstr "Untätig"
-
-#: ../js/ui/userMenu.js:144
-msgid "Unavailable"
-msgstr "Nicht verfügbar"
-
-#: ../js/ui/userMenu.js:595 ../js/ui/userMenu.js:599 ../js/ui/userMenu.js:669
-msgid "Power Off..."
-msgstr "Ausschalten …"
-
-#: ../js/ui/userMenu.js:631
-msgid "Notifications"
-msgstr "Benachrichtigungen"
-
-#: ../js/ui/userMenu.js:639
-msgid "Online Accounts"
-msgstr "Online-Konten"
-
-#: ../js/ui/userMenu.js:643
-msgid "System Settings"
-msgstr "Systemeinstellungen"
-
-#: ../js/ui/userMenu.js:650
+#: ../plugins/actions/actions.c:111
 msgid "Lock Screen"
 msgstr "Bildschirm sperren"
 
-#: ../js/ui/userMenu.js:655
-msgid "Switch User"
-msgstr "Benutzer wechseln"
+#: ../plugins/actions/actions.c:112
+msgid "Shut Down"
+msgstr "Herunterfahren"
 
-#: ../js/ui/userMenu.js:660
-msgid "Log Out..."
-msgstr "Abmelden …"
+#: ../plugins/actions/actions.c:113
+msgid "Restart"
+msgstr "Neustarten"
 
-#: ../js/ui/userMenu.js:688
-msgid "Your chat status will be set to busy"
-msgstr "Ihr Anwesenheitsstatus wird auf »Beschäftigt« gesetzt"
+#: ../plugins/actions/actions.c:114
+msgid "Suspend"
+msgstr "Standby"
 
-#: ../js/ui/userMenu.js:689
-msgid ""
-"Notifications are now disabled, including chat messages. Your online status "
-"has been adjusted to let others know that you might not see their messages."
+#: ../plugins/actions/actions.c:115
+msgid "Hibernate"
+msgstr "Ruhezustand"
+
+#: ../plugins/actions/actions.desktop.in.h:2
+msgid "Log out, lock or other system actions"
+msgstr "Abmelden, sperren oder andere Systemaktionen"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:1
+#: ../plugins/clock/clock-dialog.glade.h:3
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:1
+#: ../plugins/pager/pager-dialog.glade.h:1
+#: ../plugins/separator/separator-dialog.glade.h:1
+#: ../plugins/systray/systray-dialog.glade.h:1
+#: ../plugins/tasklist/tasklist-dialog.glade.h:2
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:1
+msgid "Appearance"
+msgstr "Aussehen"
+
+#. I18N: default tooltip of the application menu
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:2
+#: ../plugins/applicationsmenu/applicationsmenu.c:38
+#: ../plugins/applicationsmenu/applicationsmenu.desktop.in.h:1
+msgid "Applications Menu"
+msgstr "Anwendungsmenü"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:3
+msgid "Button _title:"
+msgstr "_Knopftitel:"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:4
+msgid "Ed_it Menu"
+msgstr "_Menü bearbeiten"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:5
+msgid "Menu File"
+msgstr "Menüdatei"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:6
+msgid "Menu _file:"
+msgstr "_Menüdatei:"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:7
+msgid "Select A Menu File"
+msgstr "Wählen Sie eine Menüdatei"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:8
+msgid "Select this option to show the generic application name in the menu, for example \"File Manager\" instead of \"Thunar\""
 msgstr ""
-"Benachrichtigungen sind nun deaktiviert, einschließlich Sofortnachrichten. "
-"Ihr Anwesenheitsstatus wurde nun dahingehend geändert, dass andere darüber "
-"informiert werden, dass Sie deren Nachrichten nicht sehen könnten."
+"Diese Option zum Auswählen eines typischen Namen für diese Anwendung im Menü auswählen.\n"
+"Beispielsweise: »Dateimanager« anstelle von »Thunar«"
 
-#. Translators: this is the text displayed
-#. in the search entry when no search is
-#. active; it should not exceed ~30
-#. characters.
-#: ../js/ui/viewSelector.js:113
-msgid "Type to search..."
-msgstr "Suchbegriff eingeben …"
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:9
+msgid "Show application d_escription in tooltip"
+msgstr "A_nwendungsbeschreibung in Kurzhilfe zeigen"
 
-#: ../js/ui/viewSelector.js:131 ../src/shell-util.c:252
-msgid "Search"
-msgstr "Suchen"
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:10
+msgid "Show generic application n_ames"
+msgstr "_Allgemeine Anwendungsnamen zeigen"
 
-#: ../js/ui/wanda.js:124
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:11
+msgid "Show ic_ons in menu"
+msgstr "_Symbole im Menü anzeigen"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:12
+msgid "Use c_ustom menu file:"
+msgstr "_Angepasste Menüdatei verwenden:"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:13
+msgid "Use the _default menu"
+msgstr "Stan_dardmenü verwenden"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:14
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:9
+msgid "_Icon:"
+msgstr "S_ymbol:"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:15
+msgid "_Show button title"
+msgstr "_Titel im Knopf anzeigen"
+
+#: ../plugins/applicationsmenu/applicationsmenu.c:475
+#: ../plugins/directorymenu/directorymenu.c:369
+msgid "Select An Icon"
+msgstr "Symbol auswählen"
+
+#: ../plugins/applicationsmenu/applicationsmenu.c:513
+#: ../plugins/applicationsmenu/applicationsmenu.c:754
+#: ../plugins/launcher/launcher.c:2277
 #, c-format
-msgid ""
-"Sorry, no wisdom for you today:\n"
-"%s"
+msgid "Failed to execute command \"%s\"."
+msgstr "Konnte Befehl »%s« nicht ausführen."
+
+#: ../plugins/applicationsmenu/applicationsmenu.c:1010
+msgid "No applications found"
+msgstr "Keine Standardanwendung für »%s« gefunden"
+
+#: ../plugins/applicationsmenu/applicationsmenu.c:1033
+msgid "Failed to load the applications menu"
+msgstr "Konnte Anwendungsmenü nicht laden"
+
+#: ../plugins/applicationsmenu/applicationsmenu.desktop.in.h:2
+msgid "Show a menu containing categories of installed applications"
+msgstr "Menü mit Kategorien der installierten Anwendungen anzeigen"
+
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:27
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:27
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:27
+msgid "Usage:"
+msgstr "Verwendung:"
+
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:28
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:28
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:28
+msgid "OPTION"
+msgstr "OPTION"
+
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:30
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:30
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:30
+msgid "Options:"
+msgstr "Optionen:"
+
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:31
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:31
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:31
+msgid "Popup menu at current mouse position"
+msgstr "Menü an aktueller Position des Mauszeigers hervorbringen"
+
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:32
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:32
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:32
+msgid "Show help options"
+msgstr "Hilfeoptionen zeigen"
+
+#: ../plugins/clock/clock.c:146
+msgid "Week %V"
+msgstr "Woche %V"
+
+#: ../plugins/clock/clock.c:407
+msgid "Failed to execute clock command"
+msgstr "Ausführen des Uhrzeitbefehls fehlgeschlagen"
+
+#: ../plugins/clock/clock.c:719
+msgid "Custom Format"
+msgstr "Benutzerdefiniertes Format"
+
+#: ../plugins/clock/clock-dialog.glade.h:1
+msgid "24-_hour clock"
+msgstr "24-S_tunden Uhr verwenden"
+
+#: ../plugins/clock/clock-dialog.glade.h:2
+msgid "Analog"
+msgstr "Analog"
+
+#: ../plugins/clock/clock-dialog.glade.h:4
+msgid "Binary"
+msgstr "Binär"
+
+#: ../plugins/clock/clock-dialog.glade.h:5
+#: ../plugins/clock/clock.desktop.in.h:1
+msgid "Clock"
+msgstr "Uhr"
+
+#: ../plugins/clock/clock-dialog.glade.h:6
+msgid "Clock Options"
+msgstr "Einstellungen für die Uhr"
+
+#: ../plugins/clock/clock-dialog.glade.h:7
+msgid "Digital"
+msgstr "Digital"
+
+#: ../plugins/clock/clock-dialog.glade.h:8
+msgid "Display _seconds"
+msgstr "_Sekunden anzeigen"
+
+#: ../plugins/clock/clock-dialog.glade.h:9
+msgid "F_ormat:"
+msgstr "Anzeige_format:"
+
+#. I18N: the fuzziness the *precision* of the fuzzy clock. Time steps of 5, 15
+#. or parts of the day.
+#: ../plugins/clock/clock-dialog.glade.h:11
+msgid "F_uzziness:"
+msgstr "_Ungenauigkeit der Formulierung:"
+
+#: ../plugins/clock/clock-dialog.glade.h:12
+msgid "Fl_ash time separators"
+msgstr "_Blinkende Zeit-Trennzeichen"
+
+#: ../plugins/clock/clock-dialog.glade.h:13
+msgid "Fuzzy"
+msgstr "in Worten"
+
+#: ../plugins/clock/clock-dialog.glade.h:14
+msgid "LCD"
+msgstr "LCD"
+
+#: ../plugins/clock/clock-dialog.glade.h:15
+msgid "Sho_w AM/PM"
+msgstr "AM/PM _zeigen"
+
+#: ../plugins/clock/clock-dialog.glade.h:16
+#: ../plugins/systray/systray-dialog.glade.h:5
+msgid "Show _frame"
+msgstr "Ra_hmen zeigen"
+
+#: ../plugins/clock/clock-dialog.glade.h:17
+msgid "Show _inactive dots"
+msgstr "_Inaktive Punkte zeigen"
+
+#: ../plugins/clock/clock-dialog.glade.h:18
+msgid "Show gri_d"
+msgstr "_Netz zeigen"
+
+#: ../plugins/clock/clock-dialog.glade.h:20
+#, no-c-format
+msgid "The format describes the date and time parts to insert into the file name. For example, %Y will be substituted with the year, %m with the month and %d with the day. See the documentation of the date utility for additional information."
 msgstr ""
-"Leider steht für heute keine Weisheit zur Verfügung:\n"
-"%s"
+"Das Anzeigeformat definiert, welche Teile von Datum und Uhrzeit in den Dateinamen eingefügt werden.\n"
+"Beispielsweise wird %Y durch das Jahr, %m durch den Monat und %d durch den Tag ersetzt. Ziehen Sie die\n"
+"Dokumentation des Datumswerkzeugs für weitere Informationen heran."
 
-#: ../js/ui/wanda.js:128
+#: ../plugins/clock/clock-dialog.glade.h:21
+msgid "True _binary clock"
+msgstr "_Richtige Binäruhr"
+
+#: ../plugins/clock/clock-dialog.glade.h:22
+msgid "_Layout:"
+msgstr "_Anordnung:"
+
+#: ../plugins/clock/clock-dialog.glade.h:23
+msgid "_Tooltip format:"
+msgstr "_Format der Kurzhilfen:"
+
+#: ../plugins/clock/clock-fuzzy.c:86
+msgid "Night"
+msgstr "Nacht"
+
+#: ../plugins/clock/clock-fuzzy.c:87
+msgid "Early morning"
+msgstr "Früher Morgen"
+
+#: ../plugins/clock/clock-fuzzy.c:88
+msgid "Morning"
+msgstr "Morgen"
+
+#: ../plugins/clock/clock-fuzzy.c:89
+msgid "Almost noon"
+msgstr "Kurz vor Mittag"
+
+#: ../plugins/clock/clock-fuzzy.c:90
+msgid "Noon"
+msgstr "Mittag"
+
+#: ../plugins/clock/clock-fuzzy.c:91
+msgid "Afternoon"
+msgstr "Nachmittag"
+
+#: ../plugins/clock/clock-fuzzy.c:92
+msgid "Evening"
+msgstr "Abend"
+
+#: ../plugins/clock/clock-fuzzy.c:93
+msgid "Late evening"
+msgstr "Später Abend"
+
+#. I18N: %0 will be replaced with the preceding hour, %1 with
+#. * the comming hour
+#: ../plugins/clock/clock-fuzzy.c:100
+#, no-c-format
+msgid "%0 o'clock"
+msgstr "%0 Uhr"
+
+#: ../plugins/clock/clock-fuzzy.c:101
+#, no-c-format
+msgid "five past %0"
+msgstr "Fünf nach %0"
+
+#: ../plugins/clock/clock-fuzzy.c:102
+#, no-c-format
+msgid "ten past %0"
+msgstr "Zehn nach %0"
+
+#: ../plugins/clock/clock-fuzzy.c:103
+#, no-c-format
+msgid "quarter past %0"
+msgstr "Viertel nach %0"
+
+#: ../plugins/clock/clock-fuzzy.c:104
+#, no-c-format
+msgid "twenty past %0"
+msgstr "Zwanzig nach %0"
+
+#: ../plugins/clock/clock-fuzzy.c:105
+#, no-c-format
+msgid "twenty five past %0"
+msgstr "Fünf vor halb %1"
+
+#: ../plugins/clock/clock-fuzzy.c:106
+#, no-c-format
+msgid "half past %0"
+msgstr "Halb %1"
+
+#: ../plugins/clock/clock-fuzzy.c:107
+#, no-c-format
+msgid "twenty five to %1"
+msgstr "Fünf nach halb %1"
+
+#: ../plugins/clock/clock-fuzzy.c:108
+#, no-c-format
+msgid "twenty to %1"
+msgstr "Zwanzig vor %1"
+
+#: ../plugins/clock/clock-fuzzy.c:109
+#, no-c-format
+msgid "quarter to %1"
+msgstr "Viertel vor %1"
+
+#: ../plugins/clock/clock-fuzzy.c:110
+#, no-c-format
+msgid "ten to %1"
+msgstr "Zehn vor %1"
+
+#: ../plugins/clock/clock-fuzzy.c:111
+#, no-c-format
+msgid "five to %1"
+msgstr "Fünf vor %1"
+
+#: ../plugins/clock/clock-fuzzy.c:112
+#, no-c-format
+msgid "%1 o'clock"
+msgstr "%1 Uhr"
+
+#. I18N: some languages have a singular form for the first hour,
+#. * other languages should just use the same strings as above
+#: ../plugins/clock/clock-fuzzy.c:119
+#, no-c-format
+msgctxt "one"
+msgid "%0 o'clock"
+msgstr "%0 Uhr"
+
+#: ../plugins/clock/clock-fuzzy.c:120
+#, no-c-format
+msgctxt "one"
+msgid "five past %0"
+msgstr "Fünf nach %0"
+
+#: ../plugins/clock/clock-fuzzy.c:121
+#, no-c-format
+msgctxt "one"
+msgid "ten past %0"
+msgstr "Zehn nach %0"
+
+#: ../plugins/clock/clock-fuzzy.c:122
+#, no-c-format
+msgctxt "one"
+msgid "quarter past %0"
+msgstr "Viertel nach %0"
+
+#: ../plugins/clock/clock-fuzzy.c:123
+#, no-c-format
+msgctxt "one"
+msgid "twenty past %0"
+msgstr "Zwanzig nach %0"
+
+#: ../plugins/clock/clock-fuzzy.c:124
+#, no-c-format
+msgctxt "one"
+msgid "twenty five past %0"
+msgstr "Fünf vor halb %1"
+
+#: ../plugins/clock/clock-fuzzy.c:125
+#, no-c-format
+msgctxt "one"
+msgid "half past %0"
+msgstr "Halb %1"
+
+#: ../plugins/clock/clock-fuzzy.c:126
+#, no-c-format
+msgctxt "one"
+msgid "twenty five to %1"
+msgstr "Fünf nach halb %1"
+
+#: ../plugins/clock/clock-fuzzy.c:127
+#, no-c-format
+msgctxt "one"
+msgid "twenty to %1"
+msgstr "Zwanzig vor %1"
+
+#: ../plugins/clock/clock-fuzzy.c:128
+#, no-c-format
+msgctxt "one"
+msgid "quarter to %1"
+msgstr "Viertel vor %1"
+
+#: ../plugins/clock/clock-fuzzy.c:129
+#, no-c-format
+msgctxt "one"
+msgid "ten to %1"
+msgstr "Zehn vor %1"
+
+#: ../plugins/clock/clock-fuzzy.c:130
+#, no-c-format
+msgctxt "one"
+msgid "five to %1"
+msgstr "Fünf vor %1"
+
+#: ../plugins/clock/clock-fuzzy.c:131
+#, no-c-format
+msgctxt "one"
+msgid "%1 o'clock"
+msgstr "%1 Uhr"
+
+#: ../plugins/clock/clock-fuzzy.c:136
+msgid "one"
+msgstr "eins"
+
+#: ../plugins/clock/clock-fuzzy.c:137
+msgid "two"
+msgstr "zwei"
+
+#: ../plugins/clock/clock-fuzzy.c:138
+msgid "three"
+msgstr "drei"
+
+#: ../plugins/clock/clock-fuzzy.c:139
+msgid "four"
+msgstr "vier"
+
+#: ../plugins/clock/clock-fuzzy.c:140
+msgid "five"
+msgstr "fünf"
+
+#: ../plugins/clock/clock-fuzzy.c:141
+msgid "six"
+msgstr "sechs"
+
+#: ../plugins/clock/clock-fuzzy.c:142
+msgid "seven"
+msgstr "sieben"
+
+#: ../plugins/clock/clock-fuzzy.c:143
+msgid "eight"
+msgstr "acht"
+
+#: ../plugins/clock/clock-fuzzy.c:144
+msgid "nine"
+msgstr "neun"
+
+#: ../plugins/clock/clock-fuzzy.c:145
+msgid "ten"
+msgstr "zehn"
+
+#: ../plugins/clock/clock-fuzzy.c:146
+msgid "eleven"
+msgstr "elf"
+
+#: ../plugins/clock/clock-fuzzy.c:147
+msgid "twelve"
+msgstr "zwölf"
+
+#: ../plugins/clock/clock.desktop.in.h:2
+msgid "What time is it?"
+msgstr "Wieviel Uhr ist es?"
+
+#: ../plugins/directorymenu/directorymenu.c:243
+#: ../plugins/directorymenu/directorymenu.desktop.in.h:1
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:2
+msgid "Directory Menu"
+msgstr "Verzeichnismenü"
+
+#: ../plugins/directorymenu/directorymenu.c:550
 #, c-format
-msgid "%s the Oracle says"
-msgstr "%s, das Orakel, sagt"
+msgid "Failed to launch application \"%s\""
+msgstr "Konnte Anwendung »%s« nicht starten."
 
-#: ../js/ui/wanda.js:168
-msgid "Your favorite Easter Egg"
-msgstr "Ihr Lieblings-Osterei"
-
-#: ../js/ui/windowAttentionHandler.js:19
+#: ../plugins/directorymenu/directorymenu.c:581
 #, c-format
-msgid "'%s' is ready"
-msgstr "»%s« ist bereit"
+msgid "Failed to query content type for \"%s\""
+msgstr "Konnte Inhaltstyp für »%s« nicht erfragen"
 
-#. translators:
-#. * The number of sound outputs on a particular device
-#: ../src/gvc/gvc-mixer-control.c:1089
+#: ../plugins/directorymenu/directorymenu.c:590
 #, c-format
-msgid "%u Output"
-msgid_plural "%u Outputs"
-msgstr[0] "%u Ausgang"
-msgstr[1] "%u Ausgänge"
+msgid "No default application found for \"%s\""
+msgstr "Keine Standardanwendung für »%s« gefunden"
 
-#. translators:
-#. * The number of sound inputs on a particular device
-#: ../src/gvc/gvc-mixer-control.c:1099
+#: ../plugins/directorymenu/directorymenu.c:605
 #, c-format
-msgid "%u Input"
-msgid_plural "%u Inputs"
-msgstr[0] "%u Eingang"
-msgstr[1] "%u Eingänge"
+msgid "Failed to launch default application for \"%s\""
+msgstr "Konnte Anwendung für »%s« nicht ausführen."
 
-#: ../src/gvc/gvc-mixer-control.c:1397
-msgid "System Sounds"
-msgstr "Systemklänge"
-
-#: ../src/main.c:255
-msgid "Print version"
-msgstr "Version ausgeben"
-
-#: ../src/main.c:261
-msgid "Mode used by GDM for login screen"
-msgstr "Der durch GDM im Anmeldefenster verwendete Modus"
-
-#: ../src/shell-app.c:619
+#: ../plugins/directorymenu/directorymenu.c:696
 #, c-format
-msgid "Failed to launch '%s'"
-msgstr "»%s« konnte nicht gestartet werden"
+msgid "Failed to execute the preferred application for category \"%s\""
+msgstr "Konnte Standardanwendung der Kategorie »%s« nicht ausführen"
 
-#: ../src/shell-keyring-prompt.c:708
-msgid "Passwords do not match."
-msgstr "Passwörter stimmen nicht überein."
+#: ../plugins/directorymenu/directorymenu.c:769
+msgid "Open Folder"
+msgstr "Ordner öffnen"
 
-#: ../src/shell-keyring-prompt.c:716
-msgid "Password cannot be blank"
-msgstr "Das Passwort darf nicht leer sein"
+#: ../plugins/directorymenu/directorymenu.c:780
+msgid "Open in Terminal"
+msgstr "In Terminal ausführen"
 
-#: ../src/shell-mobile-providers.c:80
-msgid "United Kingdom"
-msgstr "Großbritannien"
+#: ../plugins/directorymenu/directorymenu.desktop.in.h:2
+msgid "Show a directory tree in a menu"
+msgstr "Verzeichnisbaum im Menü anzeigen"
 
-#: ../src/shell-mobile-providers.c:526
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:3
+msgid "Enter a list of patterns that will be used to determine which files are visible in a directory. If you specify more than one pattern here, the list items must be separated with semicolons (e.g. *.txt;*.doc)."
+msgstr ""
+"Liste mit Mustern eingeben, um festzulegen, welche Dateien in einem Verzeichnis sichtbar sein sollen. Bei der Angabe mehrerer Muster\n"
+"müssen diese durch Semikolons getrennt werden (z.B. *.txt; *.doc)."
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:4
+#: ../plugins/tasklist/tasklist-dialog.glade.h:5
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:5
+msgid "Filtering"
+msgstr "Filtern"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:5
+msgid "Select A Directory"
+msgstr "Verzeichnis auswählen"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:6
+msgid "Show _hidden files"
+msgstr "_Versteckte Dateien zeigen"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:7
+msgid "_Base Directory:"
+msgstr "_Basisverzeichnis:"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:8
+msgid "_File Pattern:"
+msgstr "_Dateimuster:"
+
+#: ../plugins/launcher/launcher.c:405
+msgid "Open launcher menu"
+msgstr "Startermenü öffnen"
+
+#: ../plugins/launcher/launcher.c:1556
+msgid "Unnamed Item"
+msgstr "Unbenanntes Objekt"
+
+#: ../plugins/launcher/launcher.c:1697
+msgid "No items"
+msgstr "Keine Objekte"
+
+#: ../plugins/launcher/launcher-dialog.c:744
+msgid "If you delete an item, it will be permanently removed"
+msgstr "Durch Löschen eines Objekts wird dieses dauerhaft entfernt"
+
+#: ../plugins/launcher/launcher-dialog.c:745
+#, c-format
+msgid "Are you sure you want to remove \"%s\"?"
+msgstr "Soll »%s« wirklich entfernt werden?"
+
+#: ../plugins/launcher/launcher-dialog.c:746
+msgid "Unnamed item"
+msgstr "Unbenanntes Objekt"
+
+#: ../plugins/launcher/launcher-dialog.c:791
+msgid "Failed to open desktop item editor"
+msgstr "Konnte den Editor für Desktop-Objekte nicht öffnen"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:2
+msgid "Add a new empty item"
+msgstr "Neues Objekt hinzufügen"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:3
+msgid "Add one or more existing items to the launcher"
+msgstr "Ein oder mehrere vorhandene Objekte zum Starter hinzufügen"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:4
+msgid "Advanced"
+msgstr "Erweitert"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:5
 msgid "Default"
-msgstr "Vorgabe"
+msgstr "Standard"
 
-#: ../src/shell-polkit-authentication-agent.c:339
-msgid "Authentication dialog was dismissed by the user"
-msgstr "Der Dialog zur Legitimierung wurde vom Benutzer geschlossen"
+#: ../plugins/launcher/launcher-dialog.glade.h:6
+msgid "Delete the currently selected item"
+msgstr "Ausgewähltes Objekt entfernen"
 
-#. Translators: this is the same string as the one found in
-#. * nautilus
-#: ../src/shell-util.c:97
-msgid "Home"
-msgstr "Persönlicher Ordner"
+#: ../plugins/launcher/launcher-dialog.glade.h:7
+msgid "Disable t_ooltips"
+msgstr "_Kurzhilfen deaktivieren"
 
-#. Translators: this is the same string as the one found in
-#. * nautilus
-#: ../src/shell-util.c:106
-msgid "File System"
-msgstr "Dateisystem"
+#: ../plugins/launcher/launcher-dialog.glade.h:8
+msgid "East"
+msgstr "Osten"
 
-#. Translators: the first string is the name of a gvfs
-#. * method, and the second string is a path. For
-#. * example, "Trash: some-directory". It means that the
-#. * directory called "some-directory" is in the trash.
-#.
-#: ../src/shell-util.c:302
+#: ../plugins/launcher/launcher-dialog.glade.h:11
+msgid "Inside Button"
+msgstr "Im Knopf"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:12
+#: ../plugins/launcher/launcher.desktop.in.h:1
+msgid "Launcher"
+msgstr "Starter"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:15
+msgid "North"
+msgstr "Norden"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:16
+msgid "Select this option to disable the tooltips when moving over the panel button or menu items."
+msgstr "Diese Option auswählen, um Kurzhilfen beim Bewegen über Schaltflächen und Menüeinträge zu deaktivieren."
+
+#: ../plugins/launcher/launcher-dialog.glade.h:17
+msgid "Select this option to move the clicked menu item to the panel."
+msgstr "Wählen Sie diese Option, um den angewählten Menüeintrag zur Leiste hinzuzufügen."
+
+#: ../plugins/launcher/launcher-dialog.glade.h:18
+msgid "Show _label instead of icon"
+msgstr "_Text anstatt Symbol anzeigen"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:19
+msgid "Show last _used item in panel"
+msgstr "_Zuletzt benutztes Element in der Leiste anzeigen"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:20
+msgid "South"
+msgstr "Süden"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:21
+msgid "West"
+msgstr "Westen"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:22
+msgid "_Arrow button position:"
+msgstr "_Position des Pfeilknopfs:"
+
+#: ../plugins/launcher/launcher.desktop.in.h:2
+msgid "Program launcher with optional menu"
+msgstr "Programmstarter mit optionalem Menü"
+
+#: ../plugins/pager/pager.c:353 ../plugins/pager/pager-dialog.glade.h:8
+msgid "Workspace _Settings..."
+msgstr "_Arbeitsflächeneinstellungen..."
+
+#: ../plugins/pager/pager.c:428
+msgid "Unable to open the workspace settings"
+msgstr "Arbeitsflächeneinstellungen konnten nicht geöffnet werden"
+
+#: ../plugins/pager/pager-buttons.c:561 ../plugins/windowmenu/windowmenu.c:854
 #, c-format
-msgid "%1$s: %2$s"
-msgstr "%1$s: %2$s"
+msgid "Workspace %d"
+msgstr "Arbeitsfläche %d"
 
-#~ msgid "RECENT ITEMS"
-#~ msgstr "ZULETZT GEÖFFNETE DOKUMENTE"
+#: ../plugins/pager/pager-dialog.glade.h:2
+#: ../plugins/tasklist/tasklist-dialog.glade.h:3
+msgid "Behaviour"
+msgstr "Verhalten"
 
-#~ msgid "Home Folder"
-#~ msgstr "Persönlicher Ordner"
+#: ../plugins/pager/pager-dialog.glade.h:3
+msgid "Number of _rows:"
+msgstr "Anzahl der _Zeilen:"
 
-#~ msgid "Show password"
-#~ msgstr "Passwort anzeigen"
+#: ../plugins/pager/pager-dialog.glade.h:4
+msgid "Show a miniature view of the workspace with rectangles for the visible windows"
+msgstr "Miniaturansicht der Arbeitsfläche mitsamt Rechtecken für die sichtbaren Fenster zeigen"
 
-#~ msgid "%s has finished starting"
-#~ msgstr "Start von %s ist abgeschlossen"
+#: ../plugins/pager/pager-dialog.glade.h:5
+msgid "Show mi_niature view"
+msgstr "_Miniaturansicht"
 
-#~ msgid "If true, display onscreen keyboard."
-#~ msgstr "Legt fest, ob eine Bildschirmtastatur angezeigt wird."
+#: ../plugins/pager/pager-dialog.glade.h:6
+msgid "Switch workspaces using the mouse _wheel"
+msgstr "Arbeitsflächen mit dem Maus_rad wechseln"
 
-#~ msgid "Show the onscreen keyboard"
-#~ msgstr "Die Bildschirmtastatur anzeigen"
+#: ../plugins/pager/pager-dialog.glade.h:7
+#: ../plugins/pager/pager.desktop.in.h:2
+msgid "Workspace Switcher"
+msgstr "Arbeitsflächenumschalter"
 
-#~ msgid "Connectivity lost"
-#~ msgstr "Verbindung getrennt"
+#: ../plugins/pager/pager.desktop.in.h:1
+msgid "Switch between virtual desktops"
+msgstr "Zwischen virtuellen Arbeitsflächen umschalten"
 
-#~ msgid "You're no longer connected to the network"
-#~ msgstr "Sie sind nicht mehr mit dem Netzwerk verbunden"
+#: ../plugins/separator/separator-dialog.glade.h:2
+msgid "Dots"
+msgstr "Punkte"
 
-#~ msgid "Do Not Disturb"
-#~ msgstr "Nicht stören"
+#: ../plugins/separator/separator-dialog.glade.h:3
+msgid "Handle"
+msgstr "Griff"
 
-#~ msgid "calendar:week_start:0"
-#~ msgstr "calendar:week_start:0"
+#: ../plugins/separator/separator-dialog.glade.h:4
+msgid "New Line"
+msgstr "Neue Zeile"
+
+#: ../plugins/separator/separator-dialog.glade.h:5
+#: ../plugins/separator/separator.desktop.in.h:2
+msgid "Separator"
+msgstr "Trennelement"
+
+#: ../plugins/separator/separator-dialog.glade.h:6
+msgid "Transparent"
+msgstr "Durchsichtig"
+
+#: ../plugins/separator/separator-dialog.glade.h:7
+msgid "_Expand"
+msgstr "_Ausdehnen"
+
+#: ../plugins/separator/separator.desktop.in.h:1
+msgid "Adds a separator or space between panel items"
+msgstr "Fügt ein Trennelement oder Platz zwischen Leistenelementen ein"
+
+#: ../plugins/showdesktop/showdesktop.c:194
+msgid "Restore the minimized windows"
+msgstr "Versteckte Fenster wiederherstellen"
+
+#: ../plugins/showdesktop/showdesktop.c:196
+msgid "Minimize all open windows and show the desktop"
+msgstr "Geöffnete Fenster verstecken und Schreibtisch zeigen"
+
+#: ../plugins/showdesktop/showdesktop.c:199
+#: ../plugins/showdesktop/showdesktop.desktop.in.h:2
+msgid "Show Desktop"
+msgstr "Schreibtisch zeigen"
+
+#: ../plugins/showdesktop/showdesktop.desktop.in.h:1
+msgid "Hide all windows and show the desktop"
+msgstr "Fenster verstecken und Schreibtisch zeigen"
+
+#: ../plugins/systray/systray.c:384
+msgid "Unable to start the notification area"
+msgstr "Kann Benachrichtigungsfläche nicht starten"
+
+#. create fake error and show it
+#: ../plugins/systray/systray.c:854
+msgid "Most likely another widget took over the function of a notification area. This area will be unused."
+msgstr "Wahrscheinlich hat ein anderes Programm die Funktion der Benachrichtigungsfläche übernommen. Diese Fläche wird nicht verwendet."
+
+#: ../plugins/systray/systray.c:856
+msgid "The notification area lost selection"
+msgstr "Die Benachrichtigungsfläche hat die Auswahl verloren"
+
+#: ../plugins/systray/systray.c:1009
+msgid "Are you sure you want to clear the list of known applications?"
+msgstr "Sind Sie sicher, dass Sie die Liste der bekannten Anwendungen löschen wollen?"
+
+#: ../plugins/systray/systray-dialog.glade.h:2
+msgid "C_lear Known Applications"
+msgstr "_Liste bekannter Anwendungen leeren"
+
+#: ../plugins/systray/systray-dialog.glade.h:3
+msgid "Known Applications"
+msgstr "Bekannte Anwendungen"
+
+#: ../plugins/systray/systray-dialog.glade.h:4
+#: ../plugins/systray/systray.desktop.in.h:2
+msgid "Notification Area"
+msgstr "Benachrichtigungsfläche"
+
+#: ../plugins/systray/systray-dialog.glade.h:6
+msgid "_Maximum icon size (px):"
+msgstr "_Maximale Symbolgröße (px):"
+
+#: ../plugins/systray/systray-manager.c:404
+#, c-format
+msgid "Failed to acquire manager selection for screen %d"
+msgstr "Konnte Manager-Auswahl für Bildschirm %d nicht erhalten."
+
+#: ../plugins/systray/systray.desktop.in.h:1
+msgid "Area where notification icons appear"
+msgstr "Fläche, in der Symbole für Benachrichtigungen erscheinen"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:1
+msgid "Always"
+msgstr "Immer"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:4
+msgid "D_raw window frame when hovering a button"
+msgstr "Fenster_rahmen zeichnen, wenn ein Knopf mit der Maus überfahren wird"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:6
+msgid "Group title and timestamp"
+msgstr "Titel und Zeitstempel gruppieren"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:7
+msgid "Group title and window title"
+msgstr "Titel und Fenstertitel gruppieren"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:8
+msgid "Never"
+msgstr "Nie"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:9
+msgid "None, allow drag-and-drop"
+msgstr "Keine, drag & drop ermöglichen"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:10
+msgid "Restore minimized windows to current _workspace"
+msgstr "_Minimierte Fenster in aktueller Arbeitsfläche wiederherstellen"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:11
+msgid "Ro_tate buttons in vertical panel"
+msgstr "_Knöpfe in vertikalen Leisten drehen"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:12
+msgid "Show _flat buttons"
+msgstr "_Flache Knöpfe"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:13
+msgid "Show _handle"
+msgstr "_Griff anzeigen"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:14
+msgid "Show button _labels"
+msgstr "_Namen der Anwendungen zeigen"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:15
+msgid "Show only _minimized windows"
+msgstr "N_ur minimierte Fenster anzeigen"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:16
+msgid "Show windows from _all workspaces or viewports"
+msgstr "Fenster _aller Arbeitsflächen oder Anzeigebereiche anzeigen"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:17
+msgid "Show windows from all mo_nitors"
+msgstr "_Fenster aller Monitore anzeigen"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:18
+msgid "Sorting _order:"
+msgstr "_Sortierreihenfolge:"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:19
+msgid "Timestamp"
+msgstr "Zeitstempel"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:20
+msgid "When space is limited"
+msgstr "Bei begrenztem Platz"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:21
+#: ../plugins/tasklist/tasklist.desktop.in.h:2
+msgid "Window Buttons"
+msgstr "Taskleiste"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:22
+msgid "Window _grouping:"
+msgstr "F_enstergruppierung:"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:23
+msgid "Window title"
+msgstr "Fenstertitel"
+
+#: ../plugins/tasklist/tasklist-widget.c:3167
+msgid "Mi_nimize All"
+msgstr "_Alle minimieren"
+
+#: ../plugins/tasklist/tasklist-widget.c:3176
+msgid "Un_minimize All"
+msgstr "_Minimieren rückgängig"
+
+#: ../plugins/tasklist/tasklist-widget.c:3182
+msgid "Ma_ximize All"
+msgstr "_Alle maximieren"
+
+#: ../plugins/tasklist/tasklist-widget.c:3191
+msgid "_Unmaximize All"
+msgstr "_Maximieren rückgängig"
+
+#: ../plugins/tasklist/tasklist-widget.c:3201
+msgid "_Close All"
+msgstr "_Alle schließen"
+
+#: ../plugins/tasklist/tasklist.desktop.in.h:1
+msgid "Switch between open windows using buttons"
+msgstr "Mit Schaltflächen zwischen offenen Fenstern umschalten"
+
+#: ../plugins/windowmenu/windowmenu.c:652
+msgid "Desktop"
+msgstr "Schreibtisch"
+
+#: ../plugins/windowmenu/windowmenu.c:1243
+msgid "No Windows"
+msgstr "Keine Fenster"
+
+#: ../plugins/windowmenu/windowmenu.c:1258
+msgid "Urgent Windows"
+msgstr "Wichtige Fenster"
+
+#: ../plugins/windowmenu/windowmenu.c:1300
+msgid "Add Workspace"
+msgstr "Arbeitsfläche hinzufügen"
+
+#: ../plugins/windowmenu/windowmenu.c:1320
+#, c-format
+msgid "Remove Workspace \"%s\""
+msgstr "Arbeitsfläche »%s« entfernen"
+
+#: ../plugins/windowmenu/windowmenu.c:1322
+#, c-format
+msgid "Remove Workspace %d"
+msgstr "Arbeitsfläche %d entfernen"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:2
+msgid "Arrow"
+msgstr "Pfeil"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:3
+msgid "Button layout:"
+msgstr "Anordnung innerhalb der Schaltflächen:"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:4
+msgid "Enable _urgency notification"
+msgstr "_Dringlichkeitsbenachrichtigung aktivieren"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:6
+msgid "Icon"
+msgstr "Symbol"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:7
+msgid "Show windows from _all workspaces"
+msgstr "_Fenster aller Arbeitsflächen anzeigen"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:8
+msgid "Show workspace _names"
+msgstr "Zeige _Namen der Arbeitsflächen"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:9
+msgid "Show workspace a_ctions"
+msgstr "A_ktionen für die Arbeitsfläche zeigen"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:10
+#: ../plugins/windowmenu/windowmenu.desktop.in.h:2
+msgid "Window Menu"
+msgstr "Fenstermenü"
+
+#: ../plugins/windowmenu/windowmenu.desktop.in.h:1
+msgid "Switch between open windows using a menu"
+msgstr "Mit einem Menü zwischen offenen Fenstern umschalten"
+
+#~ msgid "Failed to remove the desktop file from the config directory"
+#~ msgstr "Konnte Sesktop-Datei nicht aus dem Konfigurationsverzeichnis entfernen"
+
+#~ msgid "_Number of rows:"
+#~ msgstr "_Anzahl der Zeilen:"
+
+#~ msgid "Create a new launcher on the Xfce Panel"
+#~ msgstr "Neuen Starter zur Leiste hinzufügen"
+
+#~ msgid "Panel Preferences"
+#~ msgstr "Leisteneinstellungen"
+
+#~ msgid "_Xfce Panel"
+#~ msgstr "_Xfce-Leiste"
+
+#~ msgid "Transparency"
+#~ msgstr "Durchsichtigkeit"
+
+#~ msgid "Transparency when the pointer is not hovering the panel."
+#~ msgstr "Durchsichtigkeit, wenn der Mauszeiger nicht über dieser Leiste ist."
+
+#~ msgid "Xfce Panel"
+#~ msgstr "Leiste"
+
+#~ msgid "Xfce Menu"
+#~ msgstr "Xfce-Menü"
+
+#~ msgid "_Restart"
+#~ msgstr "Neustarten"
+
+#~ msgid "C_ompositing"
+#~ msgstr "Position"
+
+#~ msgid "Failed to open manual"
+#~ msgstr "Konnte Anleitung nicht öffnen"
+
+#~ msgid "Action Button"
+#~ msgstr "Aktionsknöpfe"

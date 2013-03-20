@@ -1,1408 +1,1656 @@
-# Uyghur translation for heartlenv-shell.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# Gheyret Kenji<gheyret@yahoo.com>,2010.
-# Sahran <sahran.ug@gmail.com>, 2010.
-# Zeper <zeper@msn.com>, 2010.
-# Bakhtiyar<bakhtiyar108@gmail.com>, 2011
-# Oghlan Temkin <temkin119@gmail.com>,2011
+# $Id$
+# 
+# Uyghur translations for heartlenv-panel package.
+# Copyright (C) 2002-2007 The Xfce development team.
+# This file is distributed under the same license as the heartlenv-panel package.
+# Gheyret T.Kenji <gheyret@gmail.com>, 2010.
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: heartlenv-shell\n"
-"Report-Msgid-Bugs-To: http://bugzilla.heartlenv.org/enter_bug.cgi?product=heartlenv-"
-"shell&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-05-02 05:27+0000\n"
-"PO-Revision-Date: 2011-04-27 11:38+0600\n"
-"Last-Translator: Sahran <sahran.ug@gmail.com>\n"
-"Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
+"Project-Id-Version: heartlenv-panel 4.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-16 17:01+0100\n"
+"PO-Revision-Date: 2010-02-19 19:02+0900\n"
+"Last-Translator: Gheyret T.Kenji <gheyret@gmail.com>\n"
+"Language-Team:Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../data/heartlenv-shell.desktop.in.in.h:1
-msgid "GNOME Shell"
-msgstr "GNOME Shell"
-
-#: ../data/heartlenv-shell.desktop.in.in.h:2
-msgid "Window management and application launching"
-msgstr "كۆزنەك باشقۇرۇش ۋە پروگرامما ئىجرا قىلىش"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:1
+#: ../panel-desktop-handler.desktop.in.h:1
 msgid ""
-"Allows access to internal debugging and monitoring tools using the Alt-F2 "
-"dialog."
+"Add a new launcher to the panel based on the information of this desktop file"
 msgstr ""
-"ئىچكى سازلاش ۋە كۆزىتىش قورالىنى زىيارەت قىلىشتا  Alt-F2 ئىشلىتىشكە ئىجازەت."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:2
-msgid "Enable internal tools useful for developers and testers from Alt-F2"
-msgstr ""
-"ئىچكى قورال قوزغىتىلسا ئىجادكارلار ۋە سىنىغۇچىلارنىڭ Alt-F2 ئارقىلىق "
-"كىرىشىگە قۇلايلىق"
+#: ../panel-desktop-handler.desktop.in.h:2
+#, fuzzy
+msgid "Create Launcher on the panel"
+msgstr "Xfce Panel نىڭ ئۈستىگە ئىجراچى ياساش"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:3
-msgid "File extension used for storing the screencast"
-msgstr ""
-"ئېكران كەسمىسى (screencasts) ساقلاشتا ئىشلىتىلىدىغان ھۆججەتنىڭ كېڭەيتىلگەن "
-"ئاتى"
+#: ../panel-preferences.desktop.in.h:1
+#, fuzzy
+msgid "Customize the panel"
+msgstr "Xfce Panel نى Customize قىلىش"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:4
-msgid "Framerate used for recording screencasts."
-msgstr ""
-"ئېكران كەسمىسى (screencasts) خاتىرىلەشتە ئىشلىتىلىدىغان كاندۇك تېزلىكى."
+#: ../panel-preferences.desktop.in.h:2
+#: ../panel/panel-preferences-dialog.glade.h:24 ../panel/panel-window.c:2222
+#: ../migrate/main.c:84
+#, fuzzy
+msgid "Panel"
+msgstr "panel %d"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:5
+#: ../common/panel-utils.c:155
+msgid "_Read Online"
+msgstr "توردا ئوقۇ(_R)"
+
+#: ../common/panel-utils.c:156
 msgid ""
-"GNOME Shell extensions have a uuid property; this key lists extensions which "
-"should not be loaded."
+"You can read the user manual online. This manual may however not exactly "
+"match your panel version."
 msgstr ""
-"GNOME Shell كېڭەيتىلمىسىنىڭ uuid خاسلىقى بار؛ بۇ كۇنۇپكا يۈكلەنمەيدىغان "
-"كېڭەيتىلمىلەر تىزىمىنى كۆرسىتىدۇ."
+"قوللانمىنى توردا ئوقۇغىلى بولىدۇ. بۇ قوللانما بىلەن ھازىرقى panel نىڭ نەشرى "
+"ماسلاشماسلىقى مۇمكىن."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:6
-msgid "History for command (Alt-F2) dialog"
-msgstr "بۇيرۇق (Alt-F2) سۆزلەشكۈنىڭ تارىخى"
+#: ../common/panel-utils.c:158
+#, fuzzy
+msgid "The user manual is not installed on your computer"
+msgstr "Xfce Panel قوللانمىسى تېخى كومپيۇتېرغا ئورنىتىلماپتۇ"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:7
-msgid "History for the looking glass dialog"
-msgstr "looking glass سۆزلەشكۈنىڭ تارىخى"
+#. display an error message to the user
+#: ../common/panel-utils.c:171
+msgid "Failed to open the documentation browser"
+msgstr "پۈتۈك كۆرگۈنى ئېچىش مەغلۇپ بولدى"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:8
-msgid "If true, display date in the clock, in addition to time."
-msgstr "true بولسا سائەتتە ۋاقىت كۆرسەتكەندىن تاشقىرى چېسلا كۆرسىتىدۇ."
+#. I18N: %s is the name of the plugin
+#: ../libheartlenvpanel/xfce-panel-plugin.c:889
+#: ../panel/panel-preferences-dialog.c:1048
+#, c-format
+msgid "Are you sure that you want to remove \"%s\"?"
+msgstr "\"%s\" راستلا ئۆچۈرەمسىز؟"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:9
-msgid "If true, display seconds in time."
-msgstr "true بولسا ۋاقىتتا سېكۇنتمۇ كۆرۈنىدۇ."
+#: ../libheartlenvpanel/xfce-panel-plugin.c:894
+#: ../panel/panel-preferences-dialog.c:1051
+msgid "If you remove the item from the panel, it is permanently lost."
+msgstr "Panel دىكى تۈرنى ئۆچۈرسىڭىز، ئۇ مەڭگۈلۈككە يوقىلىدۇ."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:10
-msgid "If true, display the ISO week date in the calendar."
-msgstr "ئەگەر راست(true) بولسا يىلنامىدىكى ISO ھەپتە چېسلانى كۆرسىتىدۇ."
+#. move item
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1054
+msgid "_Move"
+msgstr "يۆتكە(_M)"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:11
-msgid "List of desktop file IDs for favorite applications"
-msgstr "ئامراق پروگراممىلارنىڭ ئۈستەلئۈستى ھۆججەت ID تىزىمى"
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1088
+#, fuzzy
+msgid "Pane_l"
+msgstr "panel %d"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:13
+#. add new items
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1096 ../panel/panel-window.c:2234
+msgid "Add _New Items..."
+msgstr "يېڭى تۇر قوش(_N)..."
+
+#. customize panel
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1107 ../panel/panel-window.c:2245
+msgid "Panel Pr_eferences..."
+msgstr "Panel تەڭشىكى (_E)"
+
+#. logout item
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1124 ../panel/panel-window.c:2261
+#, fuzzy
+msgid "Log _Out"
+msgstr "چىقىش"
+
+# CLI --help
+#: ../panel/main.c:78
+msgid "Show the 'Panel Preferences' dialog"
+msgstr "'Panel تەڭشىكى' دىئالوگ كۆزنىكىنى كۆرسىتىدۇ"
+
+# CLI --help: --preferences=PANEL-NUMBER
+#: ../panel/main.c:78 ../panel/main.c:79
+msgid "PANEL-NUMBER"
+msgstr "PANEL-NUMBER"
+
+# CLI --help
+#: ../panel/main.c:79
+msgid "Show the 'Add New Items' dialog"
+msgstr "'يېڭى تۇر قوش' كۆزنىكىنى كۆرسىتىدۇ"
+
+# CLI --help
+#: ../panel/main.c:80
+msgid "Save the panel configuration"
+msgstr "Panel تەڭشىكىنى ساقلا"
+
+# CLI --help
+#: ../panel/main.c:81
+msgid "Add a new plugin to the panel"
+msgstr "panel غا يېڭى قىستۇرما قوشۇش"
+
+# CLI --help: -add=PLUGIN-NAME
+#: ../panel/main.c:81
+msgid "PLUGIN-NAME"
+msgstr "PLUGIN-NAME"
+
+# CLI --help
+#: ../panel/main.c:82
+msgid "Restart the running panel instance"
+msgstr "ئىجرا بولۇۋاتقان panel instance نى قايتا قوزغىتىش"
+
+# CLI --help
+#: ../panel/main.c:83
+msgid "Quit the running panel instance"
+msgstr "ئىجرا بولۇۋاتقان panel instance نى توختىتىش"
+
+# CLI --help
+#: ../panel/main.c:84
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:33
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:33
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:33
+msgid "Print version information and exit"
+msgstr "نەشر ئۇچۇرىنى كۆرسىتىپ ئاخىرلاشتۇرۇش"
+
+#. parse context options
+#: ../panel/main.c:240
+msgid "[ARGUMENTS...]"
+msgstr "[ARGUMENTS...]"
+
+#: ../panel/main.c:247
+#, c-format
+msgid "Type \"%s --help\" for usage."
+msgstr "\"%s --help\" نى كىرگۈزسىڭىز ئىشلىتىش ئۇسۇلى كۆرۈنىدۇ"
+
+#: ../panel/main.c:266
+msgid "The Xfce development team. All rights reserved."
+msgstr "Xfce ئىجادىيەت گۇرۇپپىسى. All rights reserved."
+
+#: ../panel/main.c:267
+#, c-format
+msgid "Please report bugs to <%s>."
+msgstr "كەمتۈكنى <%s> غا دوكلات قىلىڭ."
+
+#: ../panel/main.c:318
+msgid "There is already a running instance"
+msgstr "ئىجرا بولۇۋاتقان instance مەۋجۇت"
+
+#. spawn ourselfs again
+#: ../panel/main.c:367
+msgid "Restarting..."
+msgstr "قايتا قوزغىلىۋاتىدۇ..."
+
+#: ../panel/main.c:382
+msgid "Failed to show the preferences dialog"
+msgstr "تەڭشەك كۆزنىكىنى كۆرسىتىش مەغلۇپ بولدى"
+
+#: ../panel/main.c:384
+msgid "Failed to show the add new items dialog"
+msgstr "يېڭى تۈر قوشۇش كۆزنىكىنى كۆرسىتىش مەغلۇپ بولدى"
+
+#: ../panel/main.c:386
+msgid "Failed to save the panel configuration"
+msgstr "panel تەڭشىكىنى ساقلاش مەغلۇپ بولدى"
+
+#: ../panel/main.c:388
+msgid "Failed to add a plugin to the panel"
+msgstr "panel غا قىستۇرما قوشۇش مەغلۇپ بولدى"
+
+#: ../panel/main.c:390
+msgid "Failed to restart the panel"
+msgstr "panel نى قايتا قوزغىتىش مەغلۇپ بولدى"
+
+#: ../panel/main.c:392
+msgid "Failed to quit the panel"
+msgstr "panel نى توختىتىش مەغلۇپ بولدى"
+
+#: ../panel/main.c:394
+msgid "Failed to send D-Bus message"
+msgstr "D-Bus ئۇچۇرىنى ئەۋەتىش مەغلۇپ بولدى"
+
+#: ../panel/main.c:405
+msgid ""
+"Do you want to start the panel? If you do, make sure you save the session on "
+"logout, so the panel is automatically started the next time you login."
+msgstr ""
+
+#: ../panel/main.c:408 ../panel/main.c:422
+#, c-format
+msgid "No running instance of %s was found"
+msgstr "%s نىڭ ئىجرا بولۇۋاتقان instance ئى تېپىلمىدى"
+
+#: ../panel/panel-application.c:196
+msgid "Failed to launch the migration application"
+msgstr "migration پروگراممىسىنى ئىجرا قىلىش مەغلۇپ بولدى"
+
+#: ../panel/panel-application.c:1446 ../plugins/actions/actions.c:413
+msgid ""
+"You have started X without session manager. Clicking Quit will close the X "
+"server."
+msgstr ""
+
+#: ../panel/panel-application.c:1447 ../plugins/actions/actions.c:414
+#, fuzzy
+msgid "Are you sure you want to quit the panel?"
+msgstr "panel %d نى راستلا ئۆچۈرەمسىز؟"
+
+#: ../panel/panel-application.c:1455 ../plugins/actions/actions.c:422
+#, c-format
+msgid "Failed to execute command \"%s\""
+msgstr "\"%s\" نى ئىجرا قىلىش مەغلۇپ بولدى."
+
+#: ../panel/panel-dbus-client.c:209
+msgid ""
+"Invalid plugin event syntax specified. Use PLUGIN-NAME:NAME[:TYPE:VALUE]."
+msgstr ""
+"قىستۇرما event نىڭ يېزىلىشى توغرا ئەمەس. PLUGIN-NAME:NAME[:TYPE:VALUE] دەك "
+"ئىشلىتىڭ."
+
+#: ../panel/panel-dbus-client.c:242
+#, c-format
+msgid ""
+"Invalid hint type \"%s\". Valid types are bool, double, int, string and uint."
+msgstr ""
+
+#: ../panel/panel-dialogs.c:76
+msgid "The panel of the Xfce Desktop Environment"
+msgstr "Xfce ئىجادىيەت مۇھىتى panel ئى"
+
+#: ../panel/panel-dialogs.c:81
+msgid "translator-credits"
+msgstr "Gheyret T.Kenji <gheyret@gmail.com> 2010"
+
+#. setup the dialog
+#: ../panel/panel-dialogs.c:122 ../plugins/launcher/launcher-dialog.glade.h:1
+msgid "Add New Item"
+msgstr "يېڭى تۈر قوشۇش"
+
+#: ../panel/panel-dialogs.c:136
+msgid "Please choose a panel for the new plugin:"
+msgstr "يېڭى قىستۇرمىنىڭ panel نى تاللاڭ"
+
+#. I18N: panel combo box in the preferences dialog
+#: ../panel/panel-dialogs.c:147 ../panel/panel-preferences-dialog.c:767
+#, c-format
+msgid "Panel %d"
+msgstr "panel %d"
+
+#: ../panel/panel-dialogs.c:183
+msgid ""
+"Because the panel is running in kiosk mode, you are not allowed to make "
+"changes to the panel configuration as a regular user"
+msgstr ""
+
+#: ../panel/panel-dialogs.c:185
+msgid "Modifying the panel is not allowed"
+msgstr "panel نى تۈزىتىشكە بولمايدۇ"
+
+#: ../panel/panel-item-dialog.c:188
+msgid "Add New Items"
+msgstr "يېڭى تۈر قوش قوشۇش"
+
+#: ../panel/panel-item-dialog.c:190
+msgid "Add new plugins to the panel"
+msgstr "panel غا يېڭى قىستۇرمىلارنى قوشىدۇ"
+
+#: ../panel/panel-item-dialog.c:213
+#: ../plugins/launcher/launcher-dialog.glade.h:23
+msgid "_Search:"
+msgstr "ئىزدە(_S):"
+
+#: ../panel/panel-item-dialog.c:221
+msgid "Enter search phrase here"
+msgstr "ئىزدەيدىغاننى بۇ يەرگە كىرگۈزۈڭ"
+
+#: ../panel/panel-plugin-external.c:420
+#, c-format
+msgid "Plugin \"%s\" unexpectedly left the panel, do you want to restart it?"
+msgstr "قىستۇرما \"%s\" تېخىغىچە panel دا بار، قايتا قوزغىتامسىز؟"
+
+#: ../panel/panel-plugin-external.c:422
+#, c-format
+msgid ""
+"The plugin restarted more than once in the last %d seconds. If you press "
+"Execute the panel will try to restart the plugin otherwise it will be "
+"permanently removed from the panel."
+msgstr ""
+
+#: ../panel/panel-preferences-dialog.c:453
+msgid "Automatic"
+msgstr "ئاپتوماتىك"
+
+#. I18N: screen name in the output selector
+#: ../panel/panel-preferences-dialog.c:472
+#, c-format
+msgid "Screen %d"
+msgstr "ئېكران %d"
+
+#. I18N: monitor name in the output selector
+#: ../panel/panel-preferences-dialog.c:498
+#, c-format
+msgid "Monitor %d"
+msgstr "Monitor %d"
+
+#: ../panel/panel-preferences-dialog.c:828
+msgid "The panel and plugin configurations will be permanently removed"
+msgstr "panel ۋە قىستۇرما سەپلىمىلىرى مەڭگۈلۈككە ئۆچۈرۈلىدۇ"
+
+#: ../panel/panel-preferences-dialog.c:829
+#, c-format
+msgid "Are you sure you want to remove panel %d?"
+msgstr "panel %d نى راستلا ئۆچۈرەمسىز؟"
+
+#. I18N: append (external) in the preferences dialog if the plugin
+#. * runs external
+#: ../panel/panel-preferences-dialog.c:912
+#, c-format
+msgid "%s <span color=\"grey\" size=\"small\">(external)</span>"
+msgstr ""
+
+#. I18N: tooltip in preferences dialog when hovering an item in the list
+#. * for external plugins
+#: ../panel/panel-preferences-dialog.c:917
+#, fuzzy, c-format
+msgid ""
+"Internal name: %s-%d\n"
+"PID: %d"
+msgstr "ئىچ ئاتى: %s-%d"
+
+#. I18N: tooltip in preferences dialog when hovering an item in the list
+#. * for internal plugins
+#: ../panel/panel-preferences-dialog.c:929
+#, c-format
+msgid "Internal name: %s-%d"
+msgstr "ئىچ ئاتى: %s-%d"
+
+#: ../panel/panel-preferences-dialog.glade.h:1
+msgid "A_utomatically increase the length"
+msgstr "ئۇزۇنلۇقىنى ئاپتوماتىك چوڭايت(_U)"
+
+# Tooltip
+#: ../panel/panel-preferences-dialog.glade.h:2
+msgid "Add a new panel"
+msgstr "يېڭى panel قوش"
+
+# Tooltip
+#: ../panel/panel-preferences-dialog.glade.h:3
+msgid "Add new item to this panel"
+msgstr "بۇ panel غا يېڭى تۈر قوش"
+
+#: ../panel/panel-preferences-dialog.glade.h:4
+msgid ""
+"Alpha value of the panel background, with 0 being fully transparent and 100 "
+"fully opaque."
+msgstr ""
+
+#: ../panel/panel-preferences-dialog.glade.h:5
+msgid "Appeara_nce"
+msgstr "كۆرۈنۈشى(_N)"
+
+#: ../panel/panel-preferences-dialog.glade.h:6
+msgid "Automatically show and _hide the panel"
+msgstr "panel نى ئاپتوماتىك كۆرسەت ۋە يوشۇر"
+
+#: ../panel/panel-preferences-dialog.glade.h:7
+msgid "Background"
+msgstr ""
+
+#: ../panel/panel-preferences-dialog.glade.h:8
+msgid "Background image"
+msgstr ""
+
+#: ../panel/panel-preferences-dialog.glade.h:9
+msgid "C_olor:"
+msgstr "رەڭ(_o):"
+
+#: ../panel/panel-preferences-dialog.glade.h:10
+msgid "D_isplay"
+msgstr ""
+
+# Tooltip
+#: ../panel/panel-preferences-dialog.glade.h:11
+#: ../plugins/launcher/launcher-dialog.glade.h:9
+msgid "Edit the currently selected item"
+msgstr "ھازىرقى تاللانغان تۈرنى تەھرىرلەيدۇ"
+
+#: ../panel/panel-preferences-dialog.glade.h:12
+#: ../plugins/launcher/launcher-dialog.glade.h:10
+msgid "General"
+msgstr "ئادەتتىكى"
+
+#: ../panel/panel-preferences-dialog.glade.h:13
+msgid "Horizontal"
+msgstr "گورىزونتال"
+
+#: ../panel/panel-preferences-dialog.glade.h:14
+msgid "Ite_ms"
+msgstr "تۈرلەر(_M)"
+
+#: ../panel/panel-preferences-dialog.glade.h:16
 #, no-c-format
+msgid "L_ength (%):"
+msgstr "ئۇزۇنلۇقى(_E)(%):"
+
+#. I18N: name of the section (frame) in the panel preferences where the user can define the length and size of the panel
+#: ../panel/panel-preferences-dialog.glade.h:18
+msgid "Measurements"
+msgstr ""
+
+# Tooltip
+#: ../panel/panel-preferences-dialog.glade.h:19
+#: ../plugins/launcher/launcher-dialog.glade.h:13
+msgid "Move currently selected item down by one row"
+msgstr "ھازىرقى تاللانغان تۈرنى بىر قۇر ئاستىغا چۈشۈرىدۇ"
+
+# Tooltip
+#: ../panel/panel-preferences-dialog.glade.h:20
+#: ../plugins/launcher/launcher-dialog.glade.h:14
+msgid "Move currently selected item up by one row"
+msgstr "ھازىرقى تاللانغان تۈرنى بىر قۇر ئۈستىگە چىقىرىدۇ"
+
+#: ../panel/panel-preferences-dialog.glade.h:21
+msgid "None (use system style)"
+msgstr "يوق(سىستېما ئۇسلۇبىنى ئىشلىتىدۇ)"
+
+#: ../panel/panel-preferences-dialog.glade.h:22
+msgid "O_utput:"
+msgstr "چىقىرىش(_U)"
+
+#: ../panel/panel-preferences-dialog.glade.h:23
+msgid "Opacity"
+msgstr ""
+
+#: ../panel/panel-preferences-dialog.glade.h:25
+msgid "Pick a Panel Color"
+msgstr ""
+
+# Tooltip
+#: ../panel/panel-preferences-dialog.glade.h:26
+msgid "Remove currently selected item"
+msgstr "ھازىرقى تاللانغان تۇرنى ئۆچۈرىدۇ"
+
+# Tooltip
+#: ../panel/panel-preferences-dialog.glade.h:27
+msgid "Remove the currently selected panel"
+msgstr "ھازىرقى panel نى ئۆچۈر"
+
+#: ../panel/panel-preferences-dialog.glade.h:28
+msgid "Select A Background Image"
+msgstr ""
+
+#: ../panel/panel-preferences-dialog.glade.h:29
 msgid ""
-"Sets the GStreamer pipeline used to encode recordings. It follows the syntax "
-"used for gst-launch. The pipeline should have an unconnected sink pad where "
-"the recorded video is recorded. It will normally have a unconnected source "
-"pad; output from that pad will be written into the output file. However the "
-"pipeline can also take care of its own output - this might be used to send "
-"the output to an icecast server via shout2send or similar. When unset or set "
-"to an empty value, the default pipeline will be used. This is currently "
-"'videorate ! vp8enc quality=10 speed=2 threads=%T ! queue ! webmmux' and "
-"records to WEBM using the VP8 codec. %T is used as a placeholder for a guess "
-"at the optimal thread count on the system."
+"Select this option to automatically increase the length of the panel if the "
+"plugins request more space."
 msgstr ""
-"ئۈن ئېلىشنى كودلاشتا ئىشلىتىلىدىغان GStreamer ئاقما لىنىيىنى تەڭشەيدۇ. ‫ئۇ "
-"gst-launch گرامماتىكىسىغا بوي سۇنىدۇ. ‫بۇ ئاقما لىنىيىدە ئۇلانمىغان sink pad "
-"بولۇشى لازىم، خاتىرىلىنىدىغان سىن مۇشۇ جايدا خاتىرىلىنىدۇ. ‫بۇ لىنىيىدە "
-"ئادەتتە يەنە بىر ئۇلانمىغان مەنبە pad بولىدۇ؛ بۇ pad چىقارغان ئۇچۇرلار "
-"ھۆججەتكە يېزىلىدۇ. ‫ئەمما ئاقما لىنىيە ئۆزىنىڭ چىقىرىشىنى بىر تەرەپ "
-"قىلالايدۇ، بۇنداق بولغاندا shout2send ئارقىلىق ياكى شۇنىڭغا ئوخشاش ئۇسۇلدا "
-"چىقىرىشنى icecast مۇلازىمېتىرىغا يوللايدۇ. ‫ئاقما لىنىيە تەڭشەلمىگەن ياكى بوش "
-"قىممەتكە تەڭشەلگەندە كۆڭۈلدىكى ئاقما لىنىيە قوزغىتىلىدۇ. ‫ئۇنىڭ نۆۋەتتىكى "
-"قىممىتى 'videorate ! vp8enc سۈپەت=10 سۈرەت=2 سىزىقلار=%T ! قاتار! webmmux' "
-"ۋە WEBM گە خاتىرىلەنگەنلەر VP8 كودىنى ئىشلىتىدۇ. T% بولسا سىستېمىنىڭ ئەڭ "
-"ياخشى سىزىق ئېلىپبەسىنى ھېسابلايدىغان ئورۇن بەلگىسى"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:14
-msgid "Show date in clock"
-msgstr "سائەت ئىچىدە چېسلا كۆرسەت"
+#: ../panel/panel-preferences-dialog.glade.h:30
+msgid "Select this option to extend the panel over multiple monitors."
+msgstr ""
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:15
-msgid "Show the week date in the calendar"
-msgstr "يىلنامىدە ھەپتىنى كۆرسىتىدۇ"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:16
-msgid "Show time with seconds"
-msgstr "ۋاقىت ئىچىدە سېكۇنتنى بىللە كۆرسەت"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:17
+#: ../panel/panel-preferences-dialog.glade.h:31
 msgid ""
-"The applications corresponding to these identifiers will be displayed in the "
-"favorites area."
-msgstr "مۇناسىپ پروگرامما بەلگىسى يىغقۇچ رايونىدا كۆرسىتىلىدۇ."
+"Select this option to hide the handles of the panel and lock its position."
+msgstr ""
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:18
+#: ../panel/panel-preferences-dialog.glade.h:32
 msgid ""
-"The filename for recorded screencasts will be a unique filename based on the "
-"current date, and use this extension. It should be changed when recording to "
-"a different container format."
+"Select this option to hide the panel when the pointer is not above it. This "
+"only works when the panel is attached to a screen edge."
 msgstr ""
-"خاتىرىلەنگەن ئېكراننىڭ ھۆججەت ئاتى نۆۋەتتىكى چېسلا ئاساسىدا بىردىنبىر بولۇپ "
-"بۇ كېڭەيتىلگەن ئاتىنى ئىشلىتىدۇ. ئۇ ئۆزگەرسە ئوخشاش بولمىغان قاچا فورماتىدا "
-"خاتىرىلەيدۇ."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:19
+# Tooltip
+#: ../panel/panel-preferences-dialog.glade.h:33
+msgid "Show about information of the currently selected item"
+msgstr "ھازىرقى تاللانغان تۈر ھەققىدىكى ئۇچۇرلارنى كۆرسىتىدۇ"
+
+#: ../panel/panel-preferences-dialog.glade.h:34
+msgid "Solid color"
+msgstr ""
+
+#: ../panel/panel-preferences-dialog.glade.h:35
+msgid "Span mo_nitors"
+msgstr ""
+
+#: ../panel/panel-preferences-dialog.glade.h:36
 msgid ""
-"The framerate of the resulting screencast recordered by GNOME Shell's "
-"screencast recorder in frames-per-second."
+"Transparency when the pointer is hovering over the panel, with 0 being fully "
+"transparent and 100 fully opaque."
 msgstr ""
-"GNOME Shell ئېكران خاتىرىلىگۈچ ھەر سېكۇنتتا خاتىرىلەيدىغان ئېكران كەسمىسى "
-"كاندۇك سۈرىتى(ھەر سېكۇنتتىكى كاندۇك سانى)."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:20
-msgid "The gstreamer pipeline used to encode the screencast"
-msgstr "ئېكران كەسمىسىنى كودلاشتا ئىشلىتىلىدىغان gstreamer ئاقما لىنىيىسى"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:21
+#: ../panel/panel-preferences-dialog.glade.h:37
 msgid ""
-"The shell normally monitors active applications in order to present the most "
-"used ones (e.g. in launchers). While this data will be kept private, you may "
-"want to disable this for privacy reasons. Please note that doing so won't "
-"remove already saved data."
+"Transparency when the pointer is not hovering over the panel, with 0 being "
+"fully transparent and 100 fully opaque."
 msgstr ""
-"چاپان (shell) ئادەتتىكى ئەھۋالدا كۆپ ئىشلىتىلىدىغان ئاكتىپ پروگراممىلار"
-"(مەسىلەن، ئىجرا قىلىنىۋاتقان)نى كۆزىتىدۇ. گەرچە بۇ سانلىق مەلۇماتلار مەخپىي "
-"ساقلانسىمۇ، شەخسىي سىر سەۋەبىدىن بۇنى چەكلىشىڭىز مۇمكىن. دىققەت بۇنداق "
-"قىلغاندا ئاللىبۇرۇن ساقلانغان سانلىق مەلۇماتلار چىقىرىۋېتىلمەيدۇ."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:22
-msgid "Uuids of extensions to disable"
-msgstr "چەكلىنىدىغان كېڭەيتىلمىنىڭ Uuid سى"
+#: ../panel/panel-preferences-dialog.glade.h:38
+msgid "Vertical"
+msgstr "ۋېرتىكال"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:23
-msgid "Whether to collect stats about applications usage"
-msgstr "پروگراممىنىڭ ئىشلىتىلىشى ھەققىدىكى ستاتىستىكىنى توپلامدۇ يوق"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:24
-msgid "disabled OpenSearch providers"
-msgstr "OpenSearch نىڭ تەمىنلىگۈچىلىرى چەكلەنگەن"
-
-#: ../js/misc/util.js:71
-msgid "Command not found"
-msgstr "بۇيرۇق تېپىلمىدى"
-
-#. Replace "Error invoking GLib.shell_parse_argv: " with
-#. something nicer
-#: ../js/misc/util.js:98
-msgid "Could not parse command:"
-msgstr "بۇيرۇقنى تەھلىل قىلالمىدى:"
-
-#: ../js/misc/util.js:106
-#, c-format
-msgid "Execution of '%s' failed:"
-msgstr "«%s» ئىجرا قىلىش مەغلۇپ بولدى:"
-
-#. Translators: Filter to display all applications
-#: ../js/ui/appDisplay.js:260
-msgid "All"
-msgstr "ھەممىسى"
-
-#: ../js/ui/appDisplay.js:359
-msgid "APPLICATIONS"
-msgstr "پروگراممىلار"
-
-#: ../js/ui/appDisplay.js:385
-msgid "SETTINGS"
-msgstr "تەڭشەكلەر"
-
-#: ../js/ui/appDisplay.js:656
-msgid "New Window"
-msgstr "يېڭى كۆزنەك"
-
-#: ../js/ui/appDisplay.js:659
-msgid "Remove from Favorites"
-msgstr "يىغقۇچتىن چىقىرىۋەت"
-
-#: ../js/ui/appDisplay.js:660
-msgid "Add to Favorites"
-msgstr "يىغقۇچقا قوش"
-
-#: ../js/ui/appFavorites.js:91
-#, c-format
-msgid "%s has been added to your favorites."
-msgstr "%s يىغقۇچىڭىزغا قوشۇلدى."
-
-#: ../js/ui/appFavorites.js:122
-#, c-format
-msgid "%s has been removed from your favorites."
-msgstr "%s يىغقۇچىڭىزدىن چىقىرىۋېتىلىدۇ."
-
-#. Translators: Shown in calendar event list for all day events
-#. * Keep it short, best if you can use less then 10 characters
-#.
-#: ../js/ui/calendar.js:66
-msgctxt "event list time"
-msgid "All Day"
-msgstr "كۈن بويى"
-
-#. Translators: Shown in calendar event list, if 24h format
-#: ../js/ui/calendar.js:71
-msgctxt "event list time"
-msgid "%H:%M"
-msgstr "%H:%M"
-
-#. Transators: Shown in calendar event list, if 12h format
-#: ../js/ui/calendar.js:78
-msgctxt "event list time"
-msgid "%l:%M %p"
-msgstr "%l:%M %p"
-
-#. Translators: Calendar grid abbreviation for Sunday.
-#. *
-#. * NOTE: These grid abbreviations are always shown together
-#. * and in order, e.g. "S M T W T F S".
-#.
-#: ../js/ui/calendar.js:118
-msgctxt "grid sunday"
-msgid "S"
-msgstr "ش"
-
-#. Translators: Calendar grid abbreviation for Monday
-#: ../js/ui/calendar.js:120
-msgctxt "grid monday"
-msgid "M"
-msgstr "د"
-
-#. Translators: Calendar grid abbreviation for Tuesday
-#: ../js/ui/calendar.js:122
-msgctxt "grid tuesday"
-msgid "T"
-msgstr "س"
-
-#. Translators: Calendar grid abbreviation for Wednesday
-#: ../js/ui/calendar.js:124
-msgctxt "grid wednesday"
-msgid "W"
-msgstr "چ"
-
-#. Translators: Calendar grid abbreviation for Thursday
-#: ../js/ui/calendar.js:126
-msgctxt "grid thursday"
-msgid "T"
-msgstr "س"
-
-#. Translators: Calendar grid abbreviation for Friday
-#: ../js/ui/calendar.js:128
-msgctxt "grid friday"
-msgid "F"
-msgstr "ج"
-
-#. Translators: Calendar grid abbreviation for Saturday
-#: ../js/ui/calendar.js:130
-msgctxt "grid saturday"
-msgid "S"
-msgstr "ش"
-
-#. Translators: Event list abbreviation for Sunday.
-#. *
-#. * NOTE: These list abbreviations are normally not shown together
-#. * so they need to be unique (e.g. Tuesday and Thursday cannot
-#. * both be 'T').
-#.
-#: ../js/ui/calendar.js:143
-msgctxt "list sunday"
-msgid "Su"
-msgstr "ي"
-
-#. Translators: Event list abbreviation for Monday
-#: ../js/ui/calendar.js:145
-msgctxt "list monday"
-msgid "M"
-msgstr "د"
-
-#. Translators: Event list abbreviation for Tuesday
-#: ../js/ui/calendar.js:147
-msgctxt "list tuesday"
-msgid "T"
-msgstr "س"
-
-#. Translators: Event list abbreviation for Wednesday
-#: ../js/ui/calendar.js:149
-msgctxt "list wednesday"
-msgid "W"
-msgstr "چ"
-
-#. Translators: Event list abbreviation for Thursday
-#: ../js/ui/calendar.js:151
-msgctxt "list thursday"
-msgid "Th"
-msgstr "پ"
-
-#. Translators: Event list abbreviation for Friday
-#: ../js/ui/calendar.js:153
-msgctxt "list friday"
-msgid "F"
-msgstr "ج"
-
-#. Translators: Event list abbreviation for Saturday
-#: ../js/ui/calendar.js:155
-msgctxt "list saturday"
-msgid "S"
-msgstr "ش"
-
-#. Translators: Text to show if there are no events
-#: ../js/ui/calendar.js:704
-msgid "Nothing Scheduled"
-msgstr "ھېچنېمە پىلانلانمىدى"
-
-#. Translators: Shown on calendar heading when selected day occurs on current year
-#: ../js/ui/calendar.js:720 ../js/ui/telepathyClient.js:492
-msgctxt "calendar heading"
-msgid "%A, %B %d"
-msgstr "%A، %B %d"
-
-#. Translators: Shown on calendar heading when selected day occurs on different year
-#: ../js/ui/calendar.js:723 ../js/ui/telepathyClient.js:495
-msgctxt "calendar heading"
-msgid "%A, %B %d, %Y"
-msgstr "%A، %B %d، %Y"
-
-#: ../js/ui/calendar.js:733
-msgid "Today"
-msgstr "بۈگۈن"
-
-#: ../js/ui/calendar.js:737
-msgid "Tomorrow"
-msgstr "ئەتە"
-
-#: ../js/ui/calendar.js:746
-msgid "This week"
-msgstr "بۇ ھەپتە"
-
-#: ../js/ui/calendar.js:754
-msgid "Next week"
-msgstr "كېيىنكى ھەپتە"
-
-#: ../js/ui/dash.js:174 ../js/ui/messageTray.js:1037
-msgid "Remove"
-msgstr "چىقىرىۋەت"
-
-#: ../js/ui/dateMenu.js:91
-msgid "Date and Time Settings"
-msgstr "چېسلا ۋە ۋاقىت تەڭشىكى"
-
-#: ../js/ui/dateMenu.js:111
-msgid "Open Calendar"
-msgstr "ئوچۇق يىلنامە"
-
-#. Translators: This is the time format with date used
-#. in 24-hour mode.
-#: ../js/ui/dateMenu.js:164
-msgid "%a %b %e, %R:%S"
-msgstr "%a %b %e، %R:%S"
-
-#: ../js/ui/dateMenu.js:165
-msgid "%a %b %e, %R"
-msgstr "%a %b %e، %R"
-
-#. Translators: This is the time format without date used
-#. in 24-hour mode.
-#: ../js/ui/dateMenu.js:169
-msgid "%a %R:%S"
-msgstr "%a %R:%S"
-
-#: ../js/ui/dateMenu.js:170
-msgid "%a %R"
-msgstr "%a %R"
-
-#. Translators: This is a time format with date used
-#. for AM/PM.
-#: ../js/ui/dateMenu.js:177
-msgid "%a %b %e, %l:%M:%S %p"
-msgstr "%a %b %e، %l:%M:%S %p"
-
-#: ../js/ui/dateMenu.js:178
-msgid "%a %b %e, %l:%M %p"
-msgstr "%a %b %e، %l:%M %p"
-
-#. Translators: This is a time format without date used
-#. for AM/PM.
-#: ../js/ui/dateMenu.js:182
-msgid "%a %l:%M:%S %p"
-msgstr "%a %l:%M:%S %p"
-
-#: ../js/ui/dateMenu.js:183
-msgid "%a %l:%M %p"
-msgstr "%a %l:%M"
-
-#. Translators: This is the date format to use when the calendar popup is
-#. * shown - it is shown just below the time in the shell (e.g. "Tue 9:29 AM").
-#.
-#: ../js/ui/dateMenu.js:194
-msgid "%A %B %e, %Y"
-msgstr "%A %B %e، %Y"
-
-#: ../js/ui/docDisplay.js:19
-msgid "RECENT ITEMS"
-msgstr "يېقىنقى تۈرلەر"
-
-#: ../js/ui/endSessionDialog.js:63
-#, c-format
-msgid "Log Out %s"
-msgstr "%s تىزىمدىن چىقىش"
-
-#: ../js/ui/endSessionDialog.js:64 ../js/ui/endSessionDialog.js:70
-msgid "Log Out"
-msgstr "تىزىمدىن چىق"
-
-#: ../js/ui/endSessionDialog.js:65
-msgid "Click Log Out to quit these applications and log out of the system."
+#: ../panel/panel-preferences-dialog.glade.h:39
+msgid "_Alpha:"
 msgstr ""
-"تىزىمدىن چىقىش (Log Out) نى بېسىپ پروگراممىدىن چېكىنىش ۋە سىستېما تىزىمىدىن "
-"چىقىش."
 
-#: ../js/ui/endSessionDialog.js:66
-#, c-format
-msgid "%s will be logged out automatically in %d seconds."
-msgstr "%s تىزىمدىن %d سېكۇنتتىن كېيىن ئۆزلۈكىدىن چىقىسىز."
-
-#: ../js/ui/endSessionDialog.js:67
-#, c-format
-msgid "You will be logged out automatically in %d seconds."
-msgstr "%d سېكۇنتتىن كېيىن ئۆزلۈكىدىن تىزىمدىن چىقىسىز."
-
-#: ../js/ui/endSessionDialog.js:68
-msgid "Logging out of the system."
-msgstr "سىستېما تىزىمدىن چىقىۋاتىدۇ"
-
-#: ../js/ui/endSessionDialog.js:75 ../js/ui/endSessionDialog.js:82
-msgid "Power Off"
-msgstr "توكنى ئۈز"
-
-#: ../js/ui/endSessionDialog.js:76
-msgid "Click Power Off to quit these applications and power off the system."
+#. I18N: label for the enter transparency slider
+#: ../panel/panel-preferences-dialog.glade.h:41
+msgid "_Enter:"
 msgstr ""
-"تۈكنى ئۈز چېكىلسە قوللىنىشچان پروگراممىلاردىن چېكىنىپ سىستېمىنى تاقايدۇ."
 
-#: ../js/ui/endSessionDialog.js:77
-#, c-format
-msgid "The system will power off automatically in %d seconds."
-msgstr "بۇ سىستېما %d سېكۇنتتىن كېيىن ئۆزلۈكىدىن تاقىلىدۇ."
+#: ../panel/panel-preferences-dialog.glade.h:42
+msgid "_File:"
+msgstr "ھۆججەت(_F)"
 
-#: ../js/ui/endSessionDialog.js:78
-msgid "Powering off the system."
-msgstr "سىستېمىنى تاقاۋاتىدۇ."
-
-#: ../js/ui/endSessionDialog.js:80 ../js/ui/endSessionDialog.js:88
-#: ../js/ui/endSessionDialog.js:93
-msgid "Restart"
-msgstr "قايتا قوزغات"
-
-#: ../js/ui/endSessionDialog.js:89
-msgid "Click Restart to quit these applications and restart the system."
+#. I18N: label for the leave transparency slider
+#: ../panel/panel-preferences-dialog.glade.h:44
+msgid "_Leave:"
 msgstr ""
-"قايتا قوزغات (restart) چېكىلسە پروگراممىدىن چېكىنىپ ۋە سىستېمىنى قايتا "
-"قوزغىتىدۇ."
 
-#: ../js/ui/endSessionDialog.js:90
-#, c-format
-msgid "The system will restart automatically in %d seconds."
-msgstr "بۇ سىستېما %d سېكۇنتتىن كېيىن ئۆزلۈكىدىن قايتا قوزغىلىدۇ."
+#: ../panel/panel-preferences-dialog.glade.h:45
+msgid "_Lock panel"
+msgstr "panel نى قۇلۇپلا(_L)"
 
-#: ../js/ui/endSessionDialog.js:91
-msgid "Restarting the system."
-msgstr "سىستېما قايتا قوزغىلىۋاتىدۇ."
+#: ../panel/panel-preferences-dialog.glade.h:46
+msgid "_Orientation:"
+msgstr "يۆنىلىشى(_O):"
 
-#: ../js/ui/endSessionDialog.js:413 ../js/ui/polkitAuthenticationAgent.js:172
-#: ../js/ui/status/bluetooth.js:466
-msgid "Cancel"
-msgstr "ۋاز كەچ"
+#: ../panel/panel-preferences-dialog.glade.h:47
+msgid "_Size (pixels):"
+msgstr "چوڭلۇقى(_S) (پىكسېل):"
 
-#: ../js/ui/lookingGlass.js:588
-msgid "No extensions installed"
-msgstr "ھېچقانداق كېڭەيتىلمە ئورنىتىلمىغان"
+#: ../panel/panel-preferences-dialog.glade.h:48
+#: ../plugins/separator/separator-dialog.glade.h:8
+msgid "_Style:"
+msgstr "ئۇسلۇب(_S)"
 
-#: ../js/ui/lookingGlass.js:625
-msgid "Enabled"
-msgstr "قوزغىتىلغان"
+#: ../panel/panel-tic-tac-toe.c:123
+msgid "_New Game"
+msgstr "يېڭى ئويۇن(_N)"
 
-#. translators:
-#. * The device has been disabled
-#: ../js/ui/lookingGlass.js:627 ../src/gvc/gvc-mixer-control.c:1091
+#: ../panel/panel-tic-tac-toe.c:134
+msgid "_Level:"
+msgstr "دەرىجە(_L)"
+
+#: ../panel/panel-tic-tac-toe.c:140
+msgid "Novice"
+msgstr "يېڭى باشلىغۇچى"
+
+#: ../panel/panel-tic-tac-toe.c:141
+msgid "Intermediate"
+msgstr "ئوتتۇرا سەۋىيىلىك"
+
+#: ../panel/panel-tic-tac-toe.c:142
+msgid "Experienced"
+msgstr "تەجرىبىلىك"
+
+#: ../panel/panel-tic-tac-toe.c:143
+msgid "Expert"
+msgstr "مۇتەخەسسىس"
+
+#: ../migrate/main.c:78
+#, fuzzy
+msgid "Welcome to the first start of the panel"
+msgstr "Xfce Panel نىڭ تۇنجى ئىجراسىغا مەرھەمەت"
+
+#: ../migrate/main.c:80
+msgid ""
+"Because the panel moved to a new system for storing the settings, it has to "
+"load a fresh initial configuration."
+msgstr ""
+
+#: ../migrate/main.c:83
+msgid "Choose below which setup you want for the first startup."
+msgstr ""
+
+#: ../migrate/main.c:89
+msgid "Migrate old config"
+msgstr "كونا تەڭشەكلەرنى كۆچۈرۈپ كەل"
+
+# CLI --help
+#: ../migrate/main.c:90
+msgid "Migrate the old 4.6 configuration to Xfconf"
+msgstr "كونا 4.6 نىڭ تەڭشىكىنى Xfconf غا كۆچۈرۈپ كېلىدۇ"
+
+#: ../migrate/main.c:95
+msgid "Use default config"
+msgstr "كۆڭۈلدىكى تەڭشەكنى ئىشلەت"
+
+# CLI --help
+#: ../migrate/main.c:96
+msgid "Load the default configuration"
+msgstr "كۆڭۈلدىكى تەڭشەكنى ئوقۇ"
+
+#: ../migrate/main.c:102
+msgid "One empty panel"
+msgstr "بىر قۇرۇق panel"
+
+#: ../migrate/main.c:103
+msgid "Start with one empty panel"
+msgstr ""
+
+#: ../migrate/main.c:115
+msgid "Failed to migrate the old panel configuration"
+msgstr "كونا panel تەڭشىكى يۆتكەپ كېلىش مەغلۇپ بولدى"
+
+#: ../migrate/main.c:125
+msgid "Failed to load the default configuration"
+msgstr "كۆڭۈلدىكى تەڭشەكنى ئوقۇش مەغلۇپ بولدى"
+
+#: ../plugins/actions/actions-dialog.glade.h:1
+#: ../plugins/actions/actions.desktop.in.h:1
+msgid "Action Buttons"
+msgstr "Action توپچىلىرى"
+
+#: ../plugins/actions/actions-dialog.glade.h:2
+msgid "Button Actions"
+msgstr "توپچا Action لىرى"
+
+#: ../plugins/actions/actions-dialog.glade.h:3
+msgid "_First button:"
+msgstr "تۇنجى توپچا(_F):"
+
+#: ../plugins/actions/actions-dialog.glade.h:4
+msgid "_Second button:"
+msgstr "ئىككىنچى توپچا(_S):"
+
+#: ../plugins/actions/actions.c:108
 msgid "Disabled"
 msgstr "چەكلەنگەن"
 
-#: ../js/ui/lookingGlass.js:629
-msgid "Error"
-msgstr "خاتالىق"
+#: ../plugins/actions/actions.c:109
+msgid "Log Out Dialog"
+msgstr "دىئالوگدىن چىقىش"
 
-#: ../js/ui/lookingGlass.js:631
-msgid "Out of date"
-msgstr "ۋاقتى ئۆتۈپ كەتكەن"
+#: ../plugins/actions/actions.c:110
+msgid "Log Out"
+msgstr "چىقىش"
 
-#: ../js/ui/lookingGlass.js:656
-msgid "View Source"
-msgstr "مەنبەنى كۆرسەت"
-
-#: ../js/ui/lookingGlass.js:662
-msgid "Web Page"
-msgstr "توربەت"
-
-#: ../js/ui/messageTray.js:1030
-msgid "Open"
-msgstr "ئاچ"
-
-#: ../js/ui/messageTray.js:2194
-msgid "System Information"
-msgstr "سىستېما ئۇچۇرى"
-
-#: ../js/ui/overview.js:91
-msgid "Undo"
-msgstr "يېنىۋال"
-
-#: ../js/ui/overview.js:186
-msgid "Windows"
-msgstr "كۆزنەكلەر"
-
-#: ../js/ui/overview.js:189
-msgid "Applications"
-msgstr "پروگراممىلار"
-
-#. Translators: this is the name of the dock/favorites area on
-#. the left of the overview
-#: ../js/ui/overview.js:205
-msgid "Dash"
-msgstr "سىزىقچە"
-
-#. TODO - _quit() doesn't really work on apps in state STARTING yet
-#: ../js/ui/panel.js:533
-#, c-format
-msgid "Quit %s"
-msgstr "%s چېكىن"
-
-#. Button on the left side of the panel.
-#. Translators: If there is no suitable word for "Activities" in your language, you can use the word for "Overview".
-#: ../js/ui/panel.js:911
-msgid "Activities"
-msgstr "پائالىيەتلەر"
-
-#: ../js/ui/panel.js:1012
-msgid "Top Bar"
-msgstr "ئۈستى بالداق"
-
-#: ../js/ui/placeDisplay.js:122
-#, c-format
-msgid "Failed to unmount '%s'"
-msgstr "«%s» نى ئېگەرسىزلەش مەغلۇپ بولدى"
-
-#: ../js/ui/placeDisplay.js:125
-msgid "Retry"
-msgstr "قايتا سىنا"
-
-#: ../js/ui/placeDisplay.js:165
-msgid "Connect to..."
-msgstr "باغلىنىش…"
-
-#: ../js/ui/placeDisplay.js:380
-msgid "PLACES & DEVICES"
-msgstr "ئورۇن ۋە ئۈسكۈنىلەر"
-
-#: ../js/ui/polkitAuthenticationAgent.js:74
-msgid "Authentication Required"
-msgstr "سالاھىيەت دەلىللەش"
-
-#: ../js/ui/polkitAuthenticationAgent.js:108
-msgid "Administrator"
-msgstr "باشقۇرغۇچى"
-
-#: ../js/ui/polkitAuthenticationAgent.js:176
-msgid "Authenticate"
-msgstr "سالاھىيەت دەلىللەش"
-
-#. Translators: "that didn't work" refers to the fact that the
-#. * requested authentication was not gained; this can happen
-#. * because of an authentication error (like invalid password),
-#. * for instance.
-#: ../js/ui/polkitAuthenticationAgent.js:264
-msgid "Sorry, that didn't work. Please try again."
-msgstr "كەچۈرۈڭ، خىزمەت قىلالمايدۇ. قايتا سىناڭ."
-
-#: ../js/ui/polkitAuthenticationAgent.js:276
-msgid "Password:"
-msgstr "ئىم:"
-
-#. Translators: this MUST be either "toggle-switch-us"
-#. (for toggle switches containing the English words
-#. "ON" and "OFF") or "toggle-switch-intl" (for toggle
-#. switches containing "◯" and "|"). Other values will
-#. simply result in invisible toggle switches.
-#: ../js/ui/popupMenu.js:679
-msgid "toggle-switch-us"
-msgstr "toggle-switch-us"
-
-#: ../js/ui/runDialog.js:205
-msgid "Please enter a command:"
-msgstr "بۇيرۇق كىرگۈزۈڭ:"
-
-#: ../js/ui/searchDisplay.js:311
-msgid "Searching..."
-msgstr "ئىزدەۋاتىدۇ…"
-
-#: ../js/ui/searchDisplay.js:325
-msgid "No matching results."
-msgstr "ماس كېلىدىغان نەتىجە يوق."
-
-#: ../js/ui/statusMenu.js:161 ../js/ui/statusMenu.js:163
-#: ../js/ui/statusMenu.js:228
-msgid "Power Off..."
-msgstr "توكنى ئۈز…"
-
-#: ../js/ui/statusMenu.js:163 ../js/ui/statusMenu.js:227
-msgid "Suspend"
-msgstr "توڭلات"
-
-#: ../js/ui/statusMenu.js:184
-msgid "Available"
-msgstr "ئىشلىتىلىشچان"
-
-#: ../js/ui/statusMenu.js:189
-msgid "Busy"
-msgstr "ئالدىراش"
-
-#: ../js/ui/statusMenu.js:197
-msgid "My Account"
-msgstr "ھېساباتىم"
-
-#: ../js/ui/statusMenu.js:201
-msgid "System Settings"
-msgstr "سىستېما تەڭشىكى"
-
-#: ../js/ui/statusMenu.js:208
+#: ../plugins/actions/actions.c:111
 msgid "Lock Screen"
-msgstr "ئېكراننى قۇلۇپلاش"
+msgstr "ئېكران قۇلۇپلا"
 
-#: ../js/ui/statusMenu.js:213
-msgid "Switch User"
-msgstr "ئىشلەتكۈچى ئالماشتۇرۇش"
+#: ../plugins/actions/actions.c:112
+msgid "Shut Down"
+msgstr "توكنى ئۇز"
 
-#: ../js/ui/statusMenu.js:218
-msgid "Log Out..."
-msgstr "تىزىمدىن چىقىش…"
+#: ../plugins/actions/actions.c:113
+msgid "Restart"
+msgstr "قايتا قوزغات"
 
-#: ../js/ui/status/accessibility.js:62
-msgid "Zoom"
-msgstr "كېڭەيت تارايت"
-
-#. let screenReader = this._buildItem(_("Screen Reader"), APPLICATIONS_SCHEMA,
-#. 'screen-reader-enabled');
-#. this.menu.addMenuItem(screenReader);
-#. let screenKeyboard = this._buildItem(_("Screen Keyboard"), APPLICATIONS_SCHEMA,
-#. 'screen-keyboard-enabled');
-#. this.menu.addMenuItem(screenKeyboard);
-#: ../js/ui/status/accessibility.js:77
-msgid "Visual Alerts"
-msgstr "كۆرۈنمە ئاگاھلاندۇرۇش"
-
-#: ../js/ui/status/accessibility.js:80
-msgid "Sticky Keys"
-msgstr "چاپلاش كۇنۇپكىسى"
-
-#: ../js/ui/status/accessibility.js:83
-msgid "Slow Keys"
-msgstr "Slow Keys"
-
-#: ../js/ui/status/accessibility.js:86
-msgid "Bounce Keys"
-msgstr "قاڭقىش كۇنۇپكىسى"
-
-#: ../js/ui/status/accessibility.js:89
-msgid "Mouse Keys"
-msgstr "چاشقىنەك كۇنۇپكا"
-
-#: ../js/ui/status/accessibility.js:93
-msgid "Universal Access Settings"
-msgstr "ئۇنىۋېرسال زىيارەت تەڭشىكى"
-
-#: ../js/ui/status/accessibility.js:146
-msgid "High Contrast"
-msgstr "يۇقىرى ئاق-قارىلىقى"
-
-#: ../js/ui/status/accessibility.js:183
-msgid "Large Text"
-msgstr "چوڭ تېكىست"
-
-#: ../js/ui/status/bluetooth.js:42 ../js/ui/status/bluetooth.js:237
-#: ../js/ui/status/bluetooth.js:333 ../js/ui/status/bluetooth.js:367
-#: ../js/ui/status/bluetooth.js:407 ../js/ui/status/bluetooth.js:440
-msgid "Bluetooth"
-msgstr "كۆكچىش"
-
-#: ../js/ui/status/bluetooth.js:55
-msgid "Visibility"
-msgstr "كۆرۈشچانلىقى"
-
-#: ../js/ui/status/bluetooth.js:69
-msgid "Send Files to Device..."
-msgstr "ئۈسكىنىگە ھۆججەت يوللاش..."
-
-#: ../js/ui/status/bluetooth.js:70
-msgid "Setup a New Device..."
-msgstr "يېڭى ئۈسكىنىنى تەڭشەيدۇ..."
-
-#: ../js/ui/status/bluetooth.js:95
-msgid "Bluetooth Settings"
-msgstr "كۆكچىش تەڭشىكى"
-
-#: ../js/ui/status/bluetooth.js:188
-msgid "Connection"
-msgstr "باغلىنىش"
-
-#: ../js/ui/status/bluetooth.js:224
-msgid "Send Files..."
-msgstr "ھۆججەت يوللاۋاتىدۇ..."
-
-#: ../js/ui/status/bluetooth.js:229
-msgid "Browse Files..."
-msgstr "ھۆججەتكە كۆز يۈگۈرت..."
-
-#: ../js/ui/status/bluetooth.js:238
-msgid "Error browsing device"
-msgstr "ئۈسكىنىگە كۆز يۈگۈرتكەندە خاتالىق كۆرۈلدى"
-
-#: ../js/ui/status/bluetooth.js:239
-#, c-format
-msgid "The requested device cannot be browsed, error is '%s'"
-msgstr "ئىلتىماس قىلغان ئۈسكىنىگە كۆز يۈگۈرتەلمىدى، خاتالىق '%s'"
-
-#: ../js/ui/status/bluetooth.js:247
-msgid "Keyboard Settings"
-msgstr "ھەرپتاختا تەڭشىكى"
-
-#: ../js/ui/status/bluetooth.js:252
-msgid "Mouse Settings"
-msgstr "چاشقىنەك تەڭشىكى"
-
-#: ../js/ui/status/bluetooth.js:259 ../js/ui/status/volume.js:66
-msgid "Sound Settings"
-msgstr "ئاۋاز تەڭشىكى"
-
-#: ../js/ui/status/bluetooth.js:368
-#, c-format
-msgid "Authorization request from %s"
-msgstr "'%s' تىن كەلگەن دەلىللەش ئىلتىماسى"
-
-#: ../js/ui/status/bluetooth.js:374
-#, c-format
-msgid "Device %s wants access to the service '%s'"
-msgstr "ئۈسكۈنە %s مۇلازىمەت %s نى زىيارەت قىلماقچى"
-
-#: ../js/ui/status/bluetooth.js:376
-msgid "Always grant access"
-msgstr "ھەمىشە زىيارەتكە رۇخسەت"
-
-#: ../js/ui/status/bluetooth.js:377
-msgid "Grant this time only"
-msgstr "بۇ قېتىمغىلا رۇخسەت"
-
-#: ../js/ui/status/bluetooth.js:378
-msgid "Reject"
-msgstr "رەت قىل"
-
-#: ../js/ui/status/bluetooth.js:408
-#, c-format
-msgid "Pairing confirmation for %s"
-msgstr "%s نىڭ جەزملىشىنى جۈپلەشتۈرۈۋاتىدۇ"
-
-#: ../js/ui/status/bluetooth.js:414 ../js/ui/status/bluetooth.js:448
-#, c-format
-msgid "Device %s wants to pair with this computer"
-msgstr "ئۈسكۈنە'%s' كومپيۇتېر بىلەن جۈپلەنمەكچى"
-
-#: ../js/ui/status/bluetooth.js:415
-#, c-format
-msgid "Please confirm whether the PIN '%s' matches the one on the device."
+#: ../plugins/actions/actions.c:114
+msgid "Suspend"
 msgstr ""
-"سىز كىرگۈزگەن PIN '%s'  نومۇرى ئۈسكىنىدىكىگە ئوخشايدىغانلىقىنى جەزملەڭ."
 
-#: ../js/ui/status/bluetooth.js:417
-msgid "Matches"
-msgstr "تېپىلغانلىرى"
+#: ../plugins/actions/actions.c:115
+msgid "Hibernate"
+msgstr ""
 
-#: ../js/ui/status/bluetooth.js:418
-msgid "Does not match"
-msgstr "ماسلاشمىدى"
+#: ../plugins/actions/actions.desktop.in.h:2
+msgid "Log out, lock or other system actions"
+msgstr "چىقىش، قۇلۇپلاش ياكى سىستېما action لىرى"
 
-#: ../js/ui/status/bluetooth.js:441
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:1
+#: ../plugins/clock/clock-dialog.glade.h:3
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:1
+#: ../plugins/pager/pager-dialog.glade.h:1
+#: ../plugins/separator/separator-dialog.glade.h:1
+#: ../plugins/systray/systray-dialog.glade.h:1
+#: ../plugins/tasklist/tasklist-dialog.glade.h:2
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:1
+msgid "Appearance"
+msgstr "كۆرۈنۈشى"
+
+#. I18N: default tooltip of the application menu
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:2
+#: ../plugins/applicationsmenu/applicationsmenu.c:38
+#: ../plugins/applicationsmenu/applicationsmenu.desktop.in.h:1
+msgid "Applications Menu"
+msgstr "پروگرامما Menu سى"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:3
+msgid "Button _title:"
+msgstr "توپچا ماۋزۇسى(_T):"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:4
+msgid "Ed_it Menu"
+msgstr ""
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:5
+msgid "Menu File"
+msgstr "Menu ھۆججىتى"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:6
+msgid "Menu _file:"
+msgstr "Menu ھۆججىتى(_F):"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:7
+msgid "Select A Menu File"
+msgstr "Menu ھۆججىتى تاللا"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:8
+msgid ""
+"Select this option to show the generic application name in the menu, for "
+"example \"File Manager\" instead of \"Thunar\""
+msgstr ""
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:9
+msgid "Show application d_escription in tooltip"
+msgstr ""
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:10
+msgid "Show generic application n_ames"
+msgstr "ئادەتتىكى پروگرامما ناملىرىنى كۆرسەت(_A)"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:11
+msgid "Show ic_ons in menu"
+msgstr "menu نىڭ ئىچىدە سىنبەلگە كۆرسەت(_O)"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:12
+#, fuzzy
+msgid "Use c_ustom menu file:"
+msgstr "كۆرسىتىلگەن menu ھۆججىتىنى ئىشلەت(_D)"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:13
+#, fuzzy
+msgid "Use the _default menu"
+msgstr "كۆڭۈلدىكى menu ھۆججىتىنى ئىشلەت(_D)"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:14
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:9
+msgid "_Icon:"
+msgstr "سىنبەلگە(_I):"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:15
+msgid "_Show button title"
+msgstr "توپچا ماۋزۇسىنى كۆرسەت(_S)"
+
+#: ../plugins/applicationsmenu/applicationsmenu.c:475
+#: ../plugins/directorymenu/directorymenu.c:369
+msgid "Select An Icon"
+msgstr "سىنبەلگە تاللاش"
+
+#: ../plugins/applicationsmenu/applicationsmenu.c:513
+#: ../plugins/applicationsmenu/applicationsmenu.c:754
+#: ../plugins/launcher/launcher.c:2264
 #, c-format
-msgid "Pairing request for %s"
-msgstr "%s دىن كەلگەن جۈپلەش ئىلتىماسى"
+msgid "Failed to execute command \"%s\"."
+msgstr "بۇيرۇق \"%s\"نى ئىجرا قىلىش مەغلۇپ بولدى."
 
-#: ../js/ui/status/bluetooth.js:449
-msgid "Please enter the PIN mentioned on the device."
-msgstr "ئۈسكۈنىسىدە يوللىغان PIN نومۇرىنى كىرگۈزۈڭ."
+#: ../plugins/applicationsmenu/applicationsmenu.c:1010
+msgid "No applications found"
+msgstr "پروگرامما تېپىلمىدى"
 
-#: ../js/ui/status/bluetooth.js:465
-msgid "OK"
-msgstr "جەزملە"
+#: ../plugins/applicationsmenu/applicationsmenu.c:1033
+msgid "Failed to load the applications menu"
+msgstr "پروگرامما menu سېنى ئوقۇش مەغلۇپ بولدى"
 
-#: ../js/ui/status/keyboard.js:73
-msgid "Show Keyboard Layout..."
-msgstr "كۇنۇپكا تاختا ئورۇنلاشتۇرۇلۇشىنى كۆرسەت…"
+#: ../plugins/applicationsmenu/applicationsmenu.desktop.in.h:2
+msgid "Show a menu containing categories of installed applications"
+msgstr ""
 
-#: ../js/ui/status/keyboard.js:76
-msgid "Localization Settings"
-msgstr "يەرلىكلەشتۈرۈش تەڭشىكى"
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:27
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:27
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:27
+msgid "Usage:"
+msgstr "ئىشلىتىش ئۇسۇلى:"
 
-#: ../js/ui/status/network.js:109 ../js/ui/status/network.js:1501
-msgid "<unknown>"
-msgstr "<يوچۇن>"
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:28
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:28
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:28
+msgid "OPTION"
+msgstr "OPTION"
 
-#. Translators: this indicates that wireless or wwan is disabled by hardware killswitch
-#: ../js/ui/status/network.js:326
-msgid "disabled"
-msgstr "چەكلەنگەن"
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:30
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:30
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:30
+msgid "Options:"
+msgstr "تاللانمىلار:"
 
-#: ../js/ui/status/network.js:524
-msgid "connecting..."
-msgstr "باغلىنىۋاتىدۇ…"
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:31
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:31
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:31
+msgid "Popup menu at current mouse position"
+msgstr "چاشقىنەكنىڭ ھازىرقى ئورنىدا menu نى كۆرسىتىدۇ"
 
-#. Translators: this is for network connections that require some kind of key or password
-#: ../js/ui/status/network.js:527
-msgid "authentication required"
-msgstr "سالاھىيەت دەلىللەش زۆرۈر"
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:32
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:32
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:32
+msgid "Show help options"
+msgstr "ياردەم تاللانمىلىرىنى كۆرسىتىدۇ"
 
-#. Translators: this is for devices that require some kind of firmware or kernel
-#. module, which is missing
-#: ../js/ui/status/network.js:537
-msgid "firmware missing"
-msgstr "مۇقىم دېتال كەم"
+#: ../plugins/clock/clock.c:146
+msgid "Week %V"
+msgstr "ھەپتە %V"
 
-#. Translators: this is for wired network devices that are physically disconnected
-#: ../js/ui/status/network.js:544
-msgid "cable unplugged"
-msgstr "كابېل چېتىلمىدى"
+#: ../plugins/clock/clock.c:407
+msgid "Failed to execute clock command"
+msgstr "clock بۇيرۇقىنى ئىجرا قىلىش مەغلۇپ بولدى"
 
-#. Translators: this is for a network device that cannot be activated (for example it
-#. is disabled by rfkill, or it has no coverage
-#: ../js/ui/status/network.js:549
-msgid "unavailable"
-msgstr "ئىشلەتكىلى بولمايدۇ"
+#: ../plugins/clock/clock.c:719
+msgid "Custom Format"
+msgstr ""
 
-#: ../js/ui/status/network.js:551
-msgid "connection failed"
-msgstr "باغلىنىش مەغلۇپ بولدى"
+#: ../plugins/clock/clock-dialog.glade.h:1
+msgid "24-_hour clock"
+msgstr "24-سائەت (_H)"
 
-#. TRANSLATORS: this is the indication that a connection for another logged in user is active,
-#. and we cannot access its settings (including the name)
-#: ../js/ui/status/network.js:631 ../js/ui/status/network.js:1449
-msgid "Connected (private)"
-msgstr "باغلاندى (شەخسىي)"
+#: ../plugins/clock/clock-dialog.glade.h:2
+msgid "Analog"
+msgstr ""
 
-#: ../js/ui/status/network.js:716
-msgid "Auto Ethernet"
-msgstr "ئاپتوماتىك Ethernet"
+#: ../plugins/clock/clock-dialog.glade.h:4
+msgid "Binary"
+msgstr "ئىككىلىك"
 
-#: ../js/ui/status/network.js:791
-msgid "Auto broadband"
-msgstr "ئاپتوماتىك كۆچمە كەڭ بەلۋاغ"
+#: ../plugins/clock/clock-dialog.glade.h:5
+#: ../plugins/clock/clock.desktop.in.h:1
+msgid "Clock"
+msgstr "سائەت"
 
-#: ../js/ui/status/network.js:794
-msgid "Auto dial-up"
-msgstr "ئاپتوماتىك نومۇر بۇرا"
+#: ../plugins/clock/clock-dialog.glade.h:6
+msgid "Clock Options"
+msgstr "سائەت تاللانمىلىرى"
 
-#. TRANSLATORS: this the automatic wireless connection name (including the network name)
-#: ../js/ui/status/network.js:940 ../js/ui/status/network.js:1461
-#, c-format
-msgid "Auto %s"
-msgstr "ئاپتوماتىك %s"
+#: ../plugins/clock/clock-dialog.glade.h:7
+msgid "Digital"
+msgstr "رەقەملىك"
 
-#: ../js/ui/status/network.js:942
-msgid "Auto bluetooth"
-msgstr "ئاپتوماتىك كۆكچىش"
+#: ../plugins/clock/clock-dialog.glade.h:8
+msgid "Display _seconds"
+msgstr "سېكۇنت نى كۆرسەتسۇن(_S)"
 
-#: ../js/ui/status/network.js:1463
-msgid "Auto wireless"
-msgstr "ئاپتوماتىك سىمسىز تور"
+#: ../plugins/clock/clock-dialog.glade.h:9
+msgid "F_ormat:"
+msgstr "فورماتى(_O)"
 
-#: ../js/ui/status/network.js:1521
-msgid "More..."
-msgstr "تېخىمۇ كۆپ…"
+#. I18N: the fuzziness the *precision* of the fuzzy clock. Time steps of 5, 15 or parts of the day.
+#: ../plugins/clock/clock-dialog.glade.h:11
+msgid "F_uzziness:"
+msgstr ""
 
-#: ../js/ui/status/network.js:1544
-msgid "Enable networking"
-msgstr "تور ئۇلاشنى قوزغات"
+#: ../plugins/clock/clock-dialog.glade.h:12
+msgid "Fl_ash time separators"
+msgstr "ۋاقىت ئايرىغۇچ چاقنىسۇن(_A)"
 
-#: ../js/ui/status/network.js:1556
-msgid "Wired"
-msgstr "سىملىق"
+#: ../plugins/clock/clock-dialog.glade.h:13
+msgid "Fuzzy"
+msgstr "مۈجمەل"
 
-#: ../js/ui/status/network.js:1567
-msgid "Wireless"
-msgstr "سىمسىز"
+#: ../plugins/clock/clock-dialog.glade.h:14
+msgid "LCD"
+msgstr "LCD"
 
-#: ../js/ui/status/network.js:1577
-msgid "Mobile broadband"
-msgstr "كۆچمە كەڭ بەلۋاغ"
+#: ../plugins/clock/clock-dialog.glade.h:15
+msgid "Sho_w AM/PM"
+msgstr "AM/PM نى كۆرسەتسۇن(_W)"
 
-#: ../js/ui/status/network.js:1587
-msgid "VPN Connections"
-msgstr "VPN باغلىنىشلىرى"
+#: ../plugins/clock/clock-dialog.glade.h:16
+#: ../plugins/systray/systray-dialog.glade.h:5
+msgid "Show _frame"
+msgstr "frame نى كۆرسەت(_F)"
 
-#: ../js/ui/status/network.js:1599
-msgid "Network Settings"
-msgstr "تور تەڭشەكلىرى"
+#: ../plugins/clock/clock-dialog.glade.h:17
+msgid "Show _inactive dots"
+msgstr "ئاكتىپ بولمىغان چېكىتلەرنى كۆرسەت(_I)"
 
-#: ../js/ui/status/network.js:1893
-#, c-format
-msgid "You're now connected to mobile broadband connection '%s'"
-msgstr "ھازىر كۆچمە كەڭ بەلۋاغ '%s' غا باغلاندىڭىز"
+#: ../plugins/clock/clock-dialog.glade.h:18
+msgid "Show gri_d"
+msgstr ""
 
-#: ../js/ui/status/network.js:1897
-#, c-format
-msgid "You're now connected to wireless network '%s'"
-msgstr "ھازىر سىمسىز تور '%s' غا باغلاندىڭىز"
-
-#: ../js/ui/status/network.js:1901
-#, c-format
-msgid "You're now connected to wired network '%s'"
-msgstr "ھازىر سىملىق تور '%s' غا باغلاندىڭىز"
-
-#: ../js/ui/status/network.js:1905
-#, c-format
-msgid "You're now connected to VPN network '%s'"
-msgstr "ھازىر VPN تور '%s' غا باغلاندىڭىز"
-
-#: ../js/ui/status/network.js:1910
-#, c-format
-msgid "You're now connected to '%s'"
-msgstr "ھازىر '%s' غا باغلاندىڭىز"
-
-#: ../js/ui/status/network.js:1918
-msgid "Connection established"
-msgstr "باغلىنىش تۇرغۇزۇلدى"
-
-#: ../js/ui/status/network.js:2044
-msgid "Networking is disabled"
-msgstr "تورغا باغلىنىش چەكلەنگەن"
-
-#: ../js/ui/status/network.js:2169
-msgid "Network Manager"
-msgstr "تور باشقۇرغۇچ"
-
-#: ../js/ui/status/power.js:85
-msgid "Power Settings"
-msgstr "توك مەنبە تەڭشىكى"
-
-#. 0 is reported when UPower does not have enough data
-#. to estimate battery life
-#: ../js/ui/status/power.js:111
-msgid "Estimating..."
-msgstr "مۆلچەرلەۋاتىدۇ…"
-
-#: ../js/ui/status/power.js:118
-#, c-format
-msgid "%d hour remaining"
-msgid_plural "%d hours remaining"
-msgstr[0] "%d سائەت قالدى"
-
-#. TRANSLATORS: this is a time string, as in "%d hours %d minutes remaining"
-#: ../js/ui/status/power.js:121
-#, c-format
-msgid "%d %s %d %s remaining"
-msgstr "%d %s %d %s  قالدى"
-
-#: ../js/ui/status/power.js:123
-msgid "hour"
-msgid_plural "hours"
-msgstr[0] "سائەت"
-
-#: ../js/ui/status/power.js:123
-msgid "minute"
-msgid_plural "minutes"
-msgstr[0] "مىنۇت"
-
-#: ../js/ui/status/power.js:126
-#, c-format
-msgid "%d minute remaining"
-msgid_plural "%d minutes remaining"
-msgstr[0] "%d مىنۇت قالدى"
-
-#: ../js/ui/status/power.js:228
-msgid "AC adapter"
-msgstr "ئۆزگىرىشچان توك ماسلاشتۇرغۇچ"
-
-#: ../js/ui/status/power.js:230
-msgid "Laptop battery"
-msgstr "يان كومپيۇتېر توكدانى"
-
-#: ../js/ui/status/power.js:232
-msgid "UPS"
-msgstr "UPS"
-
-#: ../js/ui/status/power.js:234
-msgid "Monitor"
-msgstr "ئېكران"
-
-#: ../js/ui/status/power.js:236
-msgid "Mouse"
-msgstr "چاشقىنەك"
-
-#: ../js/ui/status/power.js:238
-msgid "Keyboard"
-msgstr "ھەرپتاختا"
-
-#: ../js/ui/status/power.js:240
-msgid "PDA"
-msgstr "PDA"
-
-#: ../js/ui/status/power.js:242
-msgid "Cell phone"
-msgstr "يانفون"
-
-#: ../js/ui/status/power.js:244
-msgid "Media player"
-msgstr "ۋاسىتە چالغۇ"
-
-#: ../js/ui/status/power.js:246
-msgid "Tablet"
-msgstr "سەزگۈر تاختا"
-
-#: ../js/ui/status/power.js:248
-msgid "Computer"
-msgstr "كومپيۇتېر"
-
-#: ../js/ui/status/power.js:250 ../src/shell-app-system.c:1088
-msgid "Unknown"
-msgstr "نامەلۇم"
-
-#: ../js/ui/status/volume.js:45
-msgid "Volume"
-msgstr "دىسكا"
-
-#: ../js/ui/status/volume.js:58
-msgid "Microphone"
-msgstr "مىكروفون"
-
-#: ../js/ui/telepathyClient.js:335
-#, c-format
-msgid "%s is online."
-msgstr "%s توردا."
-
-#: ../js/ui/telepathyClient.js:340
-#, c-format
-msgid "%s is offline."
-msgstr "%s توردا يوق."
-
-#: ../js/ui/telepathyClient.js:343
-#, c-format
-msgid "%s is away."
-msgstr "%s يوق."
-
-#: ../js/ui/telepathyClient.js:346
-#, c-format
-msgid "%s is busy."
-msgstr "%s ئالدىراش."
-
-#. Translators: this is a time format string followed by a date.
-#. If applicable, replace %X with a strftime format valid for your
-#. locale, without seconds.
-#: ../js/ui/telepathyClient.js:484
+#: ../plugins/clock/clock-dialog.glade.h:20
 #, no-c-format
-msgid "Sent at %X on %A"
-msgstr "سائەت %X %A غا ئەۋەتتى"
+msgid ""
+"The format describes the date and time parts to insert into the file name. "
+"For example, %Y will be substituted with the year, %m with the month and %d "
+"with the day. See the documentation of the date utility for additional "
+"information."
+msgstr ""
 
-#. Translators: this is the text displayed
-#. in the search entry when no search is
-#. active; it should not exceed ~30
-#. characters.
-#: ../js/ui/viewSelector.js:122
-msgid "Type to search..."
-msgstr "كىرگۈزسە ئىزدە…"
+#: ../plugins/clock/clock-dialog.glade.h:21
+msgid "True _binary clock"
+msgstr "ھەقىقىي رەقەملىك سائەت(_B)"
 
-#: ../js/ui/viewSelector.js:142 ../src/shell-util.c:250
-msgid "Search"
-msgstr "ئىزدە"
+#: ../plugins/clock/clock-dialog.glade.h:22
+msgid "_Layout:"
+msgstr "ئورۇنلاشتۇرۇلۇشى(_L)"
 
-#: ../js/ui/windowAttentionHandler.js:42
+#: ../plugins/clock/clock-dialog.glade.h:23
+msgid "_Tooltip format:"
+msgstr ""
+
+# 0 =< o'clock < 3
+#: ../plugins/clock/clock-fuzzy.c:86
+msgid "Night"
+msgstr "كېچە"
+
+# 3 =< o'clock < 6
+#: ../plugins/clock/clock-fuzzy.c:87
+msgid "Early morning"
+msgstr "تاڭ سەھەر"
+
+# 6 =< o'clock < 9
+#: ../plugins/clock/clock-fuzzy.c:88
+msgid "Morning"
+msgstr "ئەتىگەن"
+
+# 9 =< o'clock < 12
+#: ../plugins/clock/clock-fuzzy.c:89
+msgid "Almost noon"
+msgstr "چۈشكە يېقىن"
+
+# 12 =< o'clock < 15
+#: ../plugins/clock/clock-fuzzy.c:90
+msgid "Noon"
+msgstr "چۈش"
+
+# 15 =< o'clock < 18
+#: ../plugins/clock/clock-fuzzy.c:91
+msgid "Afternoon"
+msgstr "چۈشتىن كېيىن"
+
+# 18 =< o'clock < 21
+#: ../plugins/clock/clock-fuzzy.c:92
+msgid "Evening"
+msgstr "كەچ"
+
+# 21 =< o'clock < 24
+#: ../plugins/clock/clock-fuzzy.c:93
+msgid "Late evening"
+msgstr ""
+
+#. I18N: %0 will be replaced with the preceding hour, %1 with
+#. * the comming hour
+#: ../plugins/clock/clock-fuzzy.c:100
+#, no-c-format
+msgid "%0 o'clock"
+msgstr "دەل %0 بولدى"
+
+#: ../plugins/clock/clock-fuzzy.c:101
+#, no-c-format
+msgid "five past %0"
+msgstr "%0 دىن بەش مىنۇت ئۆتتى"
+
+#: ../plugins/clock/clock-fuzzy.c:102
+#, no-c-format
+msgid "ten past %0"
+msgstr "%0 دىن ئون مىنۇت ئۆتتى"
+
+#: ../plugins/clock/clock-fuzzy.c:103
+#, no-c-format
+msgid "quarter past %0"
+msgstr "%0 دىن چارەك ئۆتتى"
+
+#: ../plugins/clock/clock-fuzzy.c:104
+#, no-c-format
+msgid "twenty past %0"
+msgstr "%0 دىن يىگىرمە مىنۇت ئۆتتى"
+
+#: ../plugins/clock/clock-fuzzy.c:105
+#, no-c-format
+msgid "twenty five past %0"
+msgstr "%0 دىن يىگىرمە بەش مىنۇت ئۆتتى"
+
+#: ../plugins/clock/clock-fuzzy.c:106
+#, no-c-format
+msgid "half past %0"
+msgstr "%0 دىن ئوتتۇز مىنۇت ئۆتتى"
+
+#: ../plugins/clock/clock-fuzzy.c:107
+#, no-c-format
+msgid "twenty five to %1"
+msgstr "%1 غا يىگىرمە بەش مىنۇت قالدى"
+
+#: ../plugins/clock/clock-fuzzy.c:108
+#, no-c-format
+msgid "twenty to %1"
+msgstr "%1 غا يىگىرمە مىنۇت قالدى"
+
+#: ../plugins/clock/clock-fuzzy.c:109
+#, no-c-format
+msgid "quarter to %1"
+msgstr "%1 غا چارەك مىنۇت قالدى"
+
+#: ../plugins/clock/clock-fuzzy.c:110
+#, no-c-format
+msgid "ten to %1"
+msgstr "%1 غا ئون مىنۇت قالدى"
+
+#: ../plugins/clock/clock-fuzzy.c:111
+#, no-c-format
+msgid "five to %1"
+msgstr "%1 غا بەش مىنۇت قالدى"
+
+#: ../plugins/clock/clock-fuzzy.c:112
+#, no-c-format
+msgid "%1 o'clock"
+msgstr "دەل %1 بولدى"
+
+#. I18N: some languages have a singular form for the first hour,
+#. * other languages should just use the same strings as above
+#: ../plugins/clock/clock-fuzzy.c:119
+#, no-c-format
+msgctxt "one"
+msgid "%0 o'clock"
+msgstr "دەل %0 بولدى"
+
+#: ../plugins/clock/clock-fuzzy.c:120
+#, no-c-format
+msgctxt "one"
+msgid "five past %0"
+msgstr "%0 دىن بەش مىنۇت ئۆتتى"
+
+#: ../plugins/clock/clock-fuzzy.c:121
+#, no-c-format
+msgctxt "one"
+msgid "ten past %0"
+msgstr "%0 دىن ئون مىنۇت ئۆتتى"
+
+#: ../plugins/clock/clock-fuzzy.c:122
+#, no-c-format
+msgctxt "one"
+msgid "quarter past %0"
+msgstr "%0 دىن چارەك مىنۇت ئۆتتى"
+
+#: ../plugins/clock/clock-fuzzy.c:123
+#, no-c-format
+msgctxt "one"
+msgid "twenty past %0"
+msgstr "%0 دىن يىگىرمە مىنۇت ئۆتتى"
+
+#: ../plugins/clock/clock-fuzzy.c:124
+#, no-c-format
+msgctxt "one"
+msgid "twenty five past %0"
+msgstr "%0 دىن يىگىرمە بەش مىنۇت ئۆتتى"
+
+#: ../plugins/clock/clock-fuzzy.c:125
+#, no-c-format
+msgctxt "one"
+msgid "half past %0"
+msgstr "%0 دىن ئوتتۇز مىنۇت ئۆتتى"
+
+#: ../plugins/clock/clock-fuzzy.c:126
+#, no-c-format
+msgctxt "one"
+msgid "twenty five to %1"
+msgstr "%1 غا يىگىرمە بەش مىنۇت قالدى"
+
+#: ../plugins/clock/clock-fuzzy.c:127
+#, no-c-format
+msgctxt "one"
+msgid "twenty to %1"
+msgstr "%1 غا يىگىرمە مىنۇت قالدى"
+
+#: ../plugins/clock/clock-fuzzy.c:128
+#, no-c-format
+msgctxt "one"
+msgid "quarter to %1"
+msgstr "%1 غا چارەك مىنۇت قالدى"
+
+#: ../plugins/clock/clock-fuzzy.c:129
+#, no-c-format
+msgctxt "one"
+msgid "ten to %1"
+msgstr "%1 غا ئون مىنۇت قالدى"
+
+#: ../plugins/clock/clock-fuzzy.c:130
+#, no-c-format
+msgctxt "one"
+msgid "five to %1"
+msgstr "%1 غا بەش مىنۇت قالدى"
+
+#: ../plugins/clock/clock-fuzzy.c:131
+#, no-c-format
+msgctxt "one"
+msgid "%1 o'clock"
+msgstr "دەل %1 بولدى"
+
+#: ../plugins/clock/clock-fuzzy.c:136
+msgid "one"
+msgstr "بىر"
+
+#: ../plugins/clock/clock-fuzzy.c:137
+msgid "two"
+msgstr "ئىككى"
+
+#: ../plugins/clock/clock-fuzzy.c:138
+msgid "three"
+msgstr "ئۈچ"
+
+#: ../plugins/clock/clock-fuzzy.c:139
+msgid "four"
+msgstr "تۆت"
+
+#: ../plugins/clock/clock-fuzzy.c:140
+msgid "five"
+msgstr "بەش"
+
+#: ../plugins/clock/clock-fuzzy.c:141
+msgid "six"
+msgstr "ئالتە"
+
+#: ../plugins/clock/clock-fuzzy.c:142
+msgid "seven"
+msgstr "يەتتە"
+
+#: ../plugins/clock/clock-fuzzy.c:143
+msgid "eight"
+msgstr "سەككىز"
+
+#: ../plugins/clock/clock-fuzzy.c:144
+msgid "nine"
+msgstr "توققۇز"
+
+#: ../plugins/clock/clock-fuzzy.c:145
+msgid "ten"
+msgstr "ئون"
+
+#: ../plugins/clock/clock-fuzzy.c:146
+msgid "eleven"
+msgstr "ئون بىر"
+
+#: ../plugins/clock/clock-fuzzy.c:147
+msgid "twelve"
+msgstr "ئون ئىككى"
+
+#: ../plugins/clock/clock.desktop.in.h:2
+msgid "What time is it?"
+msgstr "سائەت قانچە بولدى؟"
+
+#: ../plugins/directorymenu/directorymenu.c:550
 #, c-format
-msgid "%s has finished starting"
-msgstr "%s باشلاشنى تاماملىدى"
+msgid "Failed to launch application \"%s\""
+msgstr "پروگرامما \"%s\" نى ئىجرا قىلغىلى بولمىدى"
 
-#: ../js/ui/windowAttentionHandler.js:44
+#: ../plugins/directorymenu/directorymenu.c:581
 #, c-format
-msgid "'%s' is ready"
-msgstr "«%s» تەييار"
+msgid "Failed to query content type for \"%s\""
+msgstr ""
 
-#. translators:
-#. * The number of sound outputs on a particular device
-#: ../src/gvc/gvc-mixer-control.c:1098
+#: ../plugins/directorymenu/directorymenu.c:590
 #, c-format
-msgid "%u Output"
-msgid_plural "%u Outputs"
-msgstr[0] "%u چىقىرىلما"
+msgid "No default application found for \"%s\""
+msgstr ""
 
-#. translators:
-#. * The number of sound inputs on a particular device
-#: ../src/gvc/gvc-mixer-control.c:1108
+#: ../plugins/directorymenu/directorymenu.c:605
 #, c-format
-msgid "%u Input"
-msgid_plural "%u Inputs"
-msgstr[0] "%u كىرگۈزۈلمە"
+msgid "Failed to launch default application for \"%s\""
+msgstr ""
 
-#: ../src/gvc/gvc-mixer-control.c:1406
-msgid "System Sounds"
-msgstr "سىستېما ئاۋازى"
-
-#: ../src/main.c:445
-msgid "Print version"
-msgstr "نەشرىنى باس"
-
-#: ../src/shell-app.c:454
+#: ../plugins/directorymenu/directorymenu.c:696
 #, c-format
-msgid "Failed to launch '%s'"
-msgstr "'%s' نى قوزغىتالمىدى"
+msgid "Failed to execute the preferred application for category \"%s\""
+msgstr ""
 
-#: ../src/shell-global.c:1395
-msgid "Less than a minute ago"
-msgstr "بىر مىنۇتتىنمۇ ئىلگىرى"
+#: ../plugins/directorymenu/directorymenu.c:769
+msgid "Open Folder"
+msgstr "مۇندەرىجە ئاچ"
 
-#: ../src/shell-global.c:1399
+#: ../plugins/directorymenu/directorymenu.c:780
+msgid "Open in Terminal"
+msgstr "تېرمىنالدا ئېچىش"
+
+#: ../plugins/directorymenu/directorymenu.desktop.in.h:1
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:2
+msgid "Directory Menu"
+msgstr "مۇندەرىجە Menu سى"
+
+#: ../plugins/directorymenu/directorymenu.desktop.in.h:2
+msgid "Show a directory tree in a menu"
+msgstr ""
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:3
+msgid ""
+"Enter a list of patterns that will be used to determine which files are "
+"visible in a directory. If you specify more than one pattern here, the list "
+"items must be separated with semicolons (e.g. *.txt;*.doc)."
+msgstr ""
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:4
+#: ../plugins/tasklist/tasklist-dialog.glade.h:5
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:5
+msgid "Filtering"
+msgstr "فىلتىرلاۋاتىدۇ"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:5
+msgid "Select A Directory"
+msgstr "مۇندەرىجە تاللا"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:6
+msgid "Show _hidden files"
+msgstr "يوشۇرۇن ھۆججەتلەرنى كۆرسەت(_H)"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:7
+msgid "_Base Directory:"
+msgstr "ئاساس مۇندەرىجە"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:8
+msgid "_File Pattern:"
+msgstr "ھۆججەت Pattern(_F):"
+
+#: ../plugins/launcher/launcher.c:1555
+msgid "Unnamed Item"
+msgstr "نامىزى تۈر"
+
+#: ../plugins/launcher/launcher.c:1696
+msgid "No items"
+msgstr "تۈر يوق"
+
+#: ../plugins/launcher/launcher-dialog.c:740
+msgid "If you delete an item, it will be permanently removed"
+msgstr "بىرەر تۈرنى ئۆچۈرسىڭىز، ئۇ مەڭگۈلۈككە يوقىلىدۇ"
+
+#: ../plugins/launcher/launcher-dialog.c:741
 #, c-format
-msgid "%d minute ago"
-msgid_plural "%d minutes ago"
-msgstr[0] "%d مىنۇت ئىلگىرى"
+msgid "Are you sure you want to remove \"%s\"?"
+msgstr "\"%s\" نى راستلا ئۆچۈرەمسىز؟"
 
-#: ../src/shell-global.c:1404
-#, c-format
-msgid "%d hour ago"
-msgid_plural "%d hours ago"
-msgstr[0] "%d سائەت ئىلگىرى"
+#: ../plugins/launcher/launcher-dialog.c:742
+msgid "Unnamed item"
+msgstr "نامسىز تۈر"
 
-#: ../src/shell-global.c:1409
-#, c-format
-msgid "%d day ago"
-msgid_plural "%d days ago"
-msgstr[0] "%d كۈن ئىلگىرى"
+#: ../plugins/launcher/launcher-dialog.c:787
+msgid "Failed to open desktop item editor"
+msgstr "ئۇستەليۈزى تۈرى تەھرىرلىگۈچىنى ئېچىش مەغلۇپ بولدى"
 
-#: ../src/shell-global.c:1414
-#, c-format
-msgid "%d week ago"
-msgid_plural "%d weeks ago"
-msgstr[0] "%d ھەپتە ئىلگىرى"
+# Tooltip
+#: ../plugins/launcher/launcher-dialog.glade.h:2
+msgid "Add a new empty item"
+msgstr "يېڭى قۇرۇق تۈر قوش"
 
-#: ../src/shell-mobile-providers.c:80
-msgid "United Kingdom"
-msgstr "ئەنگلىيە پادىشاھلىقى"
+# Tooltip
+#: ../plugins/launcher/launcher-dialog.glade.h:3
+msgid "Add one or more existing items to the launcher"
+msgstr "ئىجراچىغا بىر ياكى ئۇنىڭدىن جىق تۈرلەرنى(بار بولغان) قوش"
 
-#: ../src/shell-mobile-providers.c:526
+#: ../plugins/launcher/launcher-dialog.glade.h:4
+msgid "Advanced"
+msgstr "ئالىي"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:5
 msgid "Default"
 msgstr "كۆڭۈلدىكى"
 
-#: ../src/shell-polkit-authentication-agent.c:334
-msgid "Authentication dialog was dismissed by the user"
-msgstr "سالاھىيەت دەلىللەش سۆزلەشكۈنى ئىشلەتكۈچى رەت قىلدى"
+# Tooltip
+#: ../plugins/launcher/launcher-dialog.glade.h:6
+msgid "Delete the currently selected item"
+msgstr "تاللانغان تۈرنى ئۆچۈر"
 
-#: ../src/shell-util.c:89
-msgid "Home Folder"
-msgstr "ماكان مۇندەرىجە"
+#: ../plugins/launcher/launcher-dialog.glade.h:7
+msgid "Disable t_ooltips"
+msgstr "tooltip لارنى چەكلە"
 
-#. Translators: this is the same string as the one found in
-#. * nautilus
-#: ../src/shell-util.c:104
-msgid "File System"
-msgstr "ھۆججەت سىستېمىسى"
+#: ../plugins/launcher/launcher-dialog.glade.h:8
+msgid "East"
+msgstr "شەرق"
 
-#. Translators: the first string is the name of a gvfs
-#. * method, and the second string is a path. For
-#. * example, "Trash: some-directory". It means that the
-#. * directory called "some-directory" is in the trash.
-#.
-#: ../src/shell-util.c:300
+#: ../plugins/launcher/launcher-dialog.glade.h:11
+msgid "Inside Button"
+msgstr "Inside توپچىسى"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:12
+#: ../plugins/launcher/launcher.desktop.in.h:1
+msgid "Launcher"
+msgstr "ئىجراچى"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:15
+msgid "North"
+msgstr "شىمال"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:16
+msgid ""
+"Select this option to disable the tooltips when moving over the panel button "
+"or menu items."
+msgstr ""
+
+#: ../plugins/launcher/launcher-dialog.glade.h:17
+msgid "Select this option to move the clicked menu item to the panel."
+msgstr ""
+
+#: ../plugins/launcher/launcher-dialog.glade.h:18
+msgid "Show _label instead of icon"
+msgstr ""
+
+#: ../plugins/launcher/launcher-dialog.glade.h:19
+msgid "Show last _used item in panel"
+msgstr "ئەڭ ئاخىرىدا ئىشلىتىلگەن تۈرنى panel دا كۆرسەت(_U)"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:20
+msgid "South"
+msgstr "جەنۇب"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:21
+msgid "West"
+msgstr "غەرب"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:22
+msgid "_Arrow button position:"
+msgstr ""
+
+#: ../plugins/launcher/launcher.desktop.in.h:2
+msgid "Program launcher with optional menu"
+msgstr ""
+
+#: ../plugins/pager/pager.c:354 ../plugins/pager/pager-dialog.glade.h:8
+msgid "Workspace _Settings..."
+msgstr "Workspace تەڭشەكلىرى..."
+
+#: ../plugins/pager/pager.c:429
+#, fuzzy
+msgid "Unable to open the workspace settings"
+msgstr "Xfce workspace نىڭ تەڭشىكىنى ئاچالمىدى"
+
+#: ../plugins/pager/pager-buttons.c:555 ../plugins/windowmenu/windowmenu.c:854
 #, c-format
-msgid "%1$s: %2$s"
-msgstr "%1$s: %2$s"
+msgid "Workspace %d"
+msgstr "Workspace %d"
 
-#~ msgid "No such application"
-#~ msgstr "بۇنداق پروگرامما يوق"
+#: ../plugins/pager/pager-dialog.glade.h:2
+#: ../plugins/tasklist/tasklist-dialog.glade.h:3
+msgid "Behaviour"
+msgstr "قىلمىش"
 
-#~ msgid "PREFERENCES"
-#~ msgstr "مايىللىق"
+#: ../plugins/pager/pager-dialog.glade.h:3
+msgid "Number of _rows:"
+msgstr "قۇر نومۇرى(_R):"
 
-#~ msgid "Shut Down"
-#~ msgstr "تاقا"
+#: ../plugins/pager/pager-dialog.glade.h:4
+msgid ""
+"Show a miniature view of the workspace with rectangles for the visible "
+"windows"
+msgstr ""
 
-#~ msgid "Click Shut Down to quit these applications and shut down the system."
-#~ msgstr "تاقاش (Shut Down) نى بېسىپ پروگراممىدىن چېكىنىش ۋە سىستېمىنى تاقاش."
+#: ../plugins/pager/pager-dialog.glade.h:5
+msgid "Show mi_niature view"
+msgstr ""
 
-#~ msgid "The system will shut down automatically in %d seconds."
-#~ msgstr "بۇ سىستېما %d سېكۇنتتىن كېيىن ئۆزلۈكىدىن تاقىلىدۇ."
+#: ../plugins/pager/pager-dialog.glade.h:6
+msgid "Switch workspaces using the mouse _wheel"
+msgstr "چاشقىنەك چاقىنى ئىشلىتىپ workspaces نى ئالماشتۇرسۇن(_W)"
 
-#~ msgid "Shutting down the system."
-#~ msgstr "سىستېما  تاقىلىۋاتىدۇ."
+#: ../plugins/pager/pager-dialog.glade.h:7
+#: ../plugins/pager/pager.desktop.in.h:2
+msgid "Workspace Switcher"
+msgstr "Workspace ئالماشتۇرغۇ"
 
-#~ msgid "Confirm"
-#~ msgstr "جەزملە"
+#: ../plugins/pager/pager.desktop.in.h:1
+msgid "Switch between virtual desktops"
+msgstr "مەۋھۇم ئۈستەل يۈزلىرىنى ئۆزئارا ئالماشتۇرسۇن"
 
-#~ msgid "Shut Down..."
-#~ msgstr "تاقا…"
+#: ../plugins/separator/separator-dialog.glade.h:2
+msgid "Dots"
+msgstr "چېكىتلەر"
 
-#~ msgid "Screen Reader"
-#~ msgstr "ئېكران ئوقۇغۇچ"
+#: ../plugins/separator/separator-dialog.glade.h:3
+msgid "Handle"
+msgstr ""
 
-#~ msgid "Screen Keyboard"
-#~ msgstr "ئېكران ھەرپتاختىسى"
+#: ../plugins/separator/separator-dialog.glade.h:4
+msgid "New Line"
+msgstr "يېڭى قۇر"
 
-#~ msgid "Search your computer"
-#~ msgstr "كومپيۇتېر ئىزدەش"
+#: ../plugins/separator/separator-dialog.glade.h:5
+#: ../plugins/separator/separator.desktop.in.h:2
+msgid "Separator"
+msgstr "ئايرىغۇچ"
 
-#~ msgid "Clock"
-#~ msgstr "سائەت"
+#: ../plugins/separator/separator-dialog.glade.h:6
+msgid "Transparent"
+msgstr ""
 
-#~ msgid "Customize the panel clock"
-#~ msgstr "تاختا سائەتنى ئۆزلەشتۈرىدۇ"
+#: ../plugins/separator/separator-dialog.glade.h:7
+msgid "_Expand"
+msgstr ""
 
-#~ msgid "Custom format of the clock"
-#~ msgstr "سائەتنىڭ ئىختىيارىي فورماتى"
+#: ../plugins/separator/separator.desktop.in.h:1
+msgid "Adds a separator or space between panel items"
+msgstr "panel دىكى تۈرلەر ئارىسىغا ئايرىغۇ ياكى بوشلۇق قوش"
 
-#~ msgid "Hour format"
-#~ msgstr "سائەت فورماتى"
+# Tooltip
+#: ../plugins/showdesktop/showdesktop.c:193
+msgid "Restore the minimized windows"
+msgstr ""
 
-#~ msgid ""
-#~ "If true and format is either \"12-hour\" or \"24-hour\", display seconds "
-#~ "in time."
-#~ msgstr ""
-#~ "ئەگەر راست (true) بولسا سائەتتە ۋاقىت فورماتىنى «12 سائەت» ياكى «24 سائەت» "
-#~ "كۆرسەتكەندىن سىرت سېكۇنتنىمۇ كۆرسىتىدۇ."
+# Tooltip
+#: ../plugins/showdesktop/showdesktop.c:194
+msgid "Minimize all open windows and show the desktop"
+msgstr "بارلىق ئېچىلغان كۆزنەكلەرنى كىچىكلىتىپ ئۇستەليۈزى كۆرسەت"
 
-#~ msgid ""
-#~ "This key specifies the format used by the panel clock when the format key "
-#~ "is set to \"custom\". You can use conversion specifiers understood by "
-#~ "strftime() to obtain a specific format. See the strftime() manual for "
-#~ "more information."
-#~ msgstr ""
-#~ "format (فورمات) كۇنۇپكىسى \"custom\" (ئىختىيارى) قىلىپ تەڭشەلسە بۇ "
-#~ "كۇنۇپكا تاختا سائەت ئىشلىتىدىغان فورماتنى بەلگىلەيدۇ. سىز strftime()نىڭ "
-#~ "فورمات بەلگىسىنى ئىشلىتىپ بەلگىلەنگەن فورماتقا ئېرىشەلەيسىز. تەپسىلاتىنى "
-#~ "strftime() نىڭ قوللانمىسىدىن كۆرۈڭ."
+# Tip help
+#: ../plugins/showdesktop/showdesktop.desktop.in.h:1
+msgid "Hide all windows and show the desktop"
+msgstr "ھەممە كۆزنەكلەرنى يوشۇرۇپ ئۈستەل يۈزىنى كۆرسەتسۇن"
 
-#~ msgid ""
-#~ "This key specifies the hour format used by the panel clock. Possible "
-#~ "values are \"12-hour\", \"24-hour\", \"unix\" and \"custom\". If set to "
-#~ "\"unix\", the clock will display time in seconds since Epoch, i.e. 1970-"
-#~ "01-01. If set to \"custom\", the clock will display time according to the "
-#~ "format specified in the custom_format key. Note that if set to either "
-#~ "\"unix\" or \"custom\", the show_date and show_seconds keys are ignored."
-#~ msgstr ""
-#~ "بۇ كۇنۇپكا تاختا سائەت ئىشلەتكەن سائەت فورماتىنى بەلگىلىگەن. ئىشلەتكىلى "
-#~ "بولىدىغان قىممىتى \"12-hour\" يەنى (12 سائەت)، \"24-hour\" يەنى (24 سائەت)"
-#~ "،  \"unix\" ۋە \"custom\" (ئىختىيارى). ئەگەر \"unix\" قىلىپ تەڭشەلسە "
-#~ "سائەت ئۆزلۈكىدىن يېڭى ئېرا (يەنى، 1970-01-01) دىن ئۆتكەن سېكۇنتنى ئاساس "
-#~ "قىلىدۇ. ئەگەر \"custom\" قىلىپ تەڭشەلسە سائەت custom_format كۇنۇپكا "
-#~ "قىممىتىگە ئاساسەن ۋاقىتنى كۆرسىتىدۇ. ئەگەر  \"unix\" ياكى \"custom\" "
-#~ "قىلىپ تەڭشەلسە show_date ۋە show_seconds قىممىتىگە پەرۋا قىلمايدۇ"
+#: ../plugins/showdesktop/showdesktop.desktop.in.h:2
+msgid "Show Desktop"
+msgstr "ئۈستەل يۈزىنى كۆرسەت"
 
-#~ msgid "Clip the crosshairs at the center"
-#~ msgstr "نىشانلىغۇچنى ئوتتۇرىغا توغرىلا"
+#: ../plugins/systray/systray.c:382
+#, fuzzy
+msgid "Unable to start the notification area"
+msgstr "panel نى قايتا قوزغىتىش مەغلۇپ بولدى"
 
-#~ msgid "Color of the crosshairs"
-#~ msgstr "نىشانلىغۇچنىڭ رەڭگى"
+#. create fake error and show it
+#: ../plugins/systray/systray.c:850
+msgid ""
+"Most likely another widget took over the function of a notification area. "
+"This area will be unused."
+msgstr ""
 
-#~ msgid ""
-#~ "Determines the length of the vertical and horizontal lines that make up "
-#~ "the crosshairs."
-#~ msgstr ""
-#~ "نىشانلىغۇچنى ھاسىل قىلىدىغان توغرا ۋە بوي سىزىقنىڭ ئۇزۇنلۇقى بەلگىلىنىدۇ."
+#: ../plugins/systray/systray.c:852
+msgid "The notification area lost selection"
+msgstr ""
 
-#~ msgid ""
-#~ "Determines the transparency of the crosshairs, from fully opaque to fully "
-#~ "transparent."
-#~ msgstr "نىشانلىغۇچنىڭ سۈزۈكلۈكى تولۇق سۈزۈكتىن تولۇق تۇتۇققىچە بەلگىلىنىدۇ."
+#: ../plugins/systray/systray.c:1005
+msgid "Are you sure you want to clear the list of known applications?"
+msgstr "بىلىدىغان پروگراممىلارنى تىزىملىكتىن تازىلىسۇنمۇ؟"
 
-#~ msgid "Enable lens mode"
-#~ msgstr "لېنزا ھالىتىنى قوزغات"
+#: ../plugins/systray/systray-dialog.glade.h:2
+msgid "C_lear Known Applications"
+msgstr ""
 
-#~ msgid "Length of the crosshairs"
-#~ msgstr "نىشانلىغۇچنىڭ ئېگىزلىكى"
+#: ../plugins/systray/systray-dialog.glade.h:3
+msgid "Known Applications"
+msgstr ""
 
-#~ msgid "Magnification factor"
-#~ msgstr "چوڭايتىش-كىچىكلىتىش نىسبىتى"
+# former name 'System tray'
+#: ../plugins/systray/systray-dialog.glade.h:4
+#: ../plugins/systray/systray.desktop.in.h:2
+msgid "Notification Area"
+msgstr "ئۇقتۇرۇش رايونى"
 
-#~ msgid "Mouse Tracking Mode"
-#~ msgstr "چاشقىنەك ئىزلاش ھالىتى"
+#: ../plugins/systray/systray-dialog.glade.h:6
+msgid "_Maximum icon size (px):"
+msgstr ""
 
-#~ msgid "Opacity of the crosshairs"
-#~ msgstr "نىشانلىغۇچنىڭ سۈزۈكلۈكى"
+#: ../plugins/systray/systray-manager.c:406
+#, c-format
+msgid "Failed to acquire manager selection for screen %d"
+msgstr "ئېكران %d manager selection نى ئېلىش مەغلۇپ بولدى"
 
-#~ msgid "Screen position"
-#~ msgstr "ئېكران ئورنى"
+#: ../plugins/systray/systray.desktop.in.h:1
+msgid "Area where notification icons appear"
+msgstr "ئۇقتۇرۇش سىنبەلگىسى كۆرۈنىدىغان رايون"
 
-#~ msgid "Scroll magnified contents beyond the edges of the desktop"
-#~ msgstr "دومىلىما چوڭايتقۇچ ئۈستەل ئۈستى گىرۋەك مەزمۇنىدىن ھالقىپ كەتتى"
+#: ../plugins/tasklist/tasklist-dialog.glade.h:1
+msgid "Always"
+msgstr "ھەمىشە"
 
-#~ msgid "Show or hide crosshairs"
-#~ msgstr "نىشانلىغۇچنى كۆرسەت ياكى يوشۇر"
+#: ../plugins/tasklist/tasklist-dialog.glade.h:4
+msgid "D_raw window frame when hovering a button"
+msgstr ""
 
-#~ msgid "Show or hide the magnifier"
-#~ msgstr "لوپا ئەينەكنى كۆرسەت ياكى يوشۇر"
+#: ../plugins/tasklist/tasklist-dialog.glade.h:6
+msgid "Group title and timestamp"
+msgstr ""
 
-#~ msgid "Show or hide the magnifier and all of its zoom regions."
-#~ msgstr ""
-#~ "لوپا ئەينەك ۋە ئۇنىڭ ھەممە چوڭايتىش دائىرىسىنى كۆرسەت ياكى يوشۇرىدۇ."
+#: ../plugins/tasklist/tasklist-dialog.glade.h:7
+msgid "Group title and window title"
+msgstr ""
 
-#~ msgid ""
-#~ "The color of the the vertical and horizontal lines that make up the "
-#~ "crosshairs."
-#~ msgstr "نىشانلىغۇچنى ھاسىل قىلىدىغان توغرا ۋە بوي سىزىقنىڭ رەڭگى."
+#: ../plugins/tasklist/tasklist-dialog.glade.h:8
+msgid "Never"
+msgstr "زادىلا"
 
-#~ msgid ""
-#~ "The power of the magnification. A value of 1.0 means no magnification. A "
-#~ "value of 2.0 doubles the size."
-#~ msgstr ""
-#~ "چوڭايتىش كۈچى. 1.0 چوڭايتمايدۇ، 2.0 چوڭلۇقىنى ھەسسىلەيدۇ دېگەن مەنىدە."
+#: ../plugins/tasklist/tasklist-dialog.glade.h:9
+msgid "Restore minimized windows to current _workspace"
+msgstr "ھازىرقى _workspace(_W) دىكى كىچىكلىتىلگەن كۆزنەكلەرنى ئەسلىگە كەلتۈر"
 
-#~ msgid "Thickness of the crosshairs"
-#~ msgstr "نىشانلىغۇچنىڭ قېلىنلىقى"
+#: ../plugins/tasklist/tasklist-dialog.glade.h:10
+msgid "Ro_tate buttons in vertical panel"
+msgstr ""
 
-#~ msgid ""
-#~ "Width of the vertical and horizontal lines that make up the crosshairs."
-#~ msgstr "نىشانلىغۇچنى ھاسىل قىلىدىغان توغرا ۋە بوي سىزىقنىڭ كەڭلىكى."
+#: ../plugins/tasklist/tasklist-dialog.glade.h:11
+msgid "Show _flat buttons"
+msgstr "سىدام توپچا كۆرسەت(_F)"
 
-#~ msgid "Clock Format"
-#~ msgstr "سائەت فورماتى"
+#: ../plugins/tasklist/tasklist-dialog.glade.h:12
+msgid "Show _handle"
+msgstr "handle كۆرسەتسۇن(_H)"
 
-#~ msgid "Clock Preferences"
-#~ msgstr "سائەت مايىللىقى"
+#: ../plugins/tasklist/tasklist-dialog.glade.h:13
+msgid "Show button _labels"
+msgstr ""
 
-#~ msgid "Panel Display"
-#~ msgstr "تاختا كۆرسىتىش"
+#: ../plugins/tasklist/tasklist-dialog.glade.h:14
+msgid "Show only _minimized windows"
+msgstr "كىچىكلىتىلگەن كۆزنەكلەرنىلا كۆرسەت"
 
-#~ msgid "Show seco_nds"
-#~ msgstr "سېكۇنتنى كۆرسەت(_N)"
+#: ../plugins/tasklist/tasklist-dialog.glade.h:15
+#, fuzzy
+msgid "Show windows from _all workspaces or viewports"
+msgstr "ھەممە workspace لاردىكى كۆزنەكلەرنى كۆرسەت"
 
-#~ msgid "Show the _date"
-#~ msgstr "چېسلانى كۆرسەت(_D)"
+#: ../plugins/tasklist/tasklist-dialog.glade.h:16
+#, fuzzy
+msgid "Show windows from all mo_nitors"
+msgstr "ھەممە workspace لاردىكى كۆزنەكلەرنى كۆرسەت"
 
-#~ msgid "_12 hour format"
-#~ msgstr "_12 سائەت فورماتى"
+#: ../plugins/tasklist/tasklist-dialog.glade.h:17
+msgid "Sorting _order:"
+msgstr "تەرتىپلەش ئۇسۇلى(_O):"
 
-#~ msgid "_24 hour format"
-#~ msgstr "_24 سائەت فورماتى"
+#: ../plugins/tasklist/tasklist-dialog.glade.h:18
+msgid "Timestamp"
+msgstr "Timestamp"
 
-#~ msgid "Preferences"
-#~ msgstr "مايىللىق"
+#: ../plugins/tasklist/tasklist-dialog.glade.h:19
+msgid "When space is limited"
+msgstr ""
 
-#~ msgid ""
-#~ "Can't add a new workspace because maximum workspaces limit has been "
-#~ "reached."
-#~ msgstr ""
-#~ "يېڭى خىزمەت رايونى قوشالمايدۇ چۈنكى ئەڭ كۆپ خىزمەت رايون چېكىگە يەتتى."
+#: ../plugins/tasklist/tasklist-dialog.glade.h:20
+#: ../plugins/tasklist/tasklist.desktop.in.h:2
+msgid "Window Buttons"
+msgstr "كۆزنەك توپچىلىرى"
 
-#~ msgid "Can't remove the first workspace."
-#~ msgstr "بىرىنچى خىزمەت رايونىنى چىقىرىۋەتكىلى بولمايدۇ."
+#: ../plugins/tasklist/tasklist-dialog.glade.h:21
+msgid "Window _grouping:"
+msgstr ""
 
-#~ msgid "Overview workspace view mode"
-#~ msgstr "خىزمەت رايون كۆرۈنۈش ھالىتى ھەققىدە قىسقىچە بايان"
+#: ../plugins/tasklist/tasklist-dialog.glade.h:22
+msgid "Window title"
+msgstr "كۆزنەك ماۋزۇسى"
 
-#~ msgid ""
-#~ "The selected workspace view mode in the overview. Supported values are "
-#~ "\"single\" and \"grid\"."
-#~ msgstr ""
-#~ "قىسقىچە باياندىكى تاللانغان خىزمەت رايونىنىڭ كۆرۈنۈش ھالىتى. ئىشلىتىشكە "
-#~ "بولىدىغان قىممەتلەر «يەككە» ۋە «سېتكا»"
+#: ../plugins/tasklist/tasklist-widget.c:3012
+msgid "Mi_nimize All"
+msgstr "ھەممىنى كىچىكلەت(_N)"
 
-#~ msgid "Drag here to add favorites"
-#~ msgstr "بۇ جايغا سۆرەپ يىغقۇچقا قوش"
+#: ../plugins/tasklist/tasklist-widget.c:3021
+msgid "Un_minimize All"
+msgstr ""
 
-#~ msgid "Find"
-#~ msgstr "ئىزدە"
+#: ../plugins/tasklist/tasklist-widget.c:3027
+msgid "Ma_ximize All"
+msgstr "ھەممىنى چوڭايت(_X)"
 
-#~ msgid "Invisible"
-#~ msgstr "يوشۇرۇن"
+#: ../plugins/tasklist/tasklist-widget.c:3036
+msgid "_Unmaximize All"
+msgstr ""
+
+#: ../plugins/tasklist/tasklist-widget.c:3046
+msgid "_Close All"
+msgstr "ھەممىنى تاقا(_C)"
+
+#: ../plugins/tasklist/tasklist.desktop.in.h:1
+msgid "Switch between open windows using buttons"
+msgstr "توپچىلارنى ئىشلىتىپ ئوچۇق كۆزنەكلەرنى ئۆزئارا ئالماشتۇرسۇن"
+
+#: ../plugins/windowmenu/windowmenu.c:652
+msgid "Desktop"
+msgstr "ئۈستەليۈزى"
+
+#: ../plugins/windowmenu/windowmenu.c:1243
+msgid "No Windows"
+msgstr "كۆزنەك يوق"
+
+#: ../plugins/windowmenu/windowmenu.c:1258
+msgid "Urgent Windows"
+msgstr ""
+
+#: ../plugins/windowmenu/windowmenu.c:1300
+msgid "Add Workspace"
+msgstr "Workspace قوش"
+
+#: ../plugins/windowmenu/windowmenu.c:1320
+#, c-format
+msgid "Remove Workspace \"%s\""
+msgstr "Workspace \"%s\" نى ئۆچۈر"
+
+#: ../plugins/windowmenu/windowmenu.c:1322
+#, c-format
+msgid "Remove Workspace %d"
+msgstr "Workspace %d نى ئۆچۈر"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:2
+msgid "Arrow"
+msgstr ""
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:3
+msgid "Button layout:"
+msgstr ""
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:4
+msgid "Enable _urgency notification"
+msgstr ""
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:6
+msgid "Icon"
+msgstr "سىنبەلگە"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:7
+msgid "Show windows from _all workspaces"
+msgstr "ھەممە workspace لاردىكى كۆزنەكلەرنى كۆرسەت"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:8
+msgid "Show workspace _names"
+msgstr "workspaces ئاتىنى كۆرسەتسۇن(_N)"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:9
+msgid "Show workspace a_ctions"
+msgstr ""
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:10
+#: ../plugins/windowmenu/windowmenu.desktop.in.h:2
+msgid "Window Menu"
+msgstr "كۆزنەك Menu سى"
+
+#: ../plugins/windowmenu/windowmenu.desktop.in.h:1
+msgid "Switch between open windows using a menu"
+msgstr "menu نى ئىشلىتىپ ئوچۇق كۆزنەكلەرنى ئۆزئارا ئالماشتۇرسۇن"
+
+#~ msgid "Create a new launcher on the Xfce Panel"
+#~ msgstr "Xfce Panel نىڭ ئۈستىگە يېڭى ئىجراچى ياساش"
+
+#~ msgid "Panel Preferences"
+#~ msgstr "Panel تەڭشىكى"
+
+#~ msgid "Xfce Panel"
+#~ msgstr "Xfce Panel"
+
+#~ msgid "Xfce Menu"
+#~ msgstr "Xfce Menu"
+
+#~ msgid "Failed to remove the desktop file from the config directory"
+#~ msgstr "سەپلىمە مۇندەرىجىدىكى ئۇستەليۈزى ھۆججىتىنى ئۆچۈرۈش مەغلۇپ بولدى"
+
+#~ msgid "_Number of rows:"
+#~ msgstr "قۇر سانى(_N):"
+
+#~ msgid "_Restart"
+#~ msgstr "قايتا قوزغات(_R)"

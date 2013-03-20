@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Exec=heartlenv-panel -p
+Icon=heartlenv-panel
+Type=Application
+Categories=X-XFCE;Settings;DesktopSettings;
+OnlyShowIn=XFCE;
+Terminal=false
+StartupNotify=true
+_Name=Panel
+_Comment=Customize the panel

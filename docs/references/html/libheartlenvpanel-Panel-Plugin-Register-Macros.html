@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Panel Plugin Register Macros</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<link rel="home" href="index.html" title="Libheartlenvpanel Reference Manual">
+<link rel="up" href="libheartlenvpanel-plugins.html" title="Part II. Panel Plugins">
+<link rel="prev" href="XfcePanelPlugin.html" title="XfcePanelPlugin">
+<link rel="next" href="libheartlenvpanel-Panel-Plugin-Register-Macros-(4.6-Style).html" title="Panel Plugin Register Macros (4.6 Style)">
+<meta name="generator" content="GTK-Doc V1.17 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="XfcePanelPlugin.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="libheartlenvpanel-plugins.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">Libheartlenvpanel Reference Manual</th>
+<td><a accesskey="n" href="libheartlenvpanel-Panel-Plugin-Register-Macros-(4.6-Style).html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#libheartlenvpanel-Panel-Plugin-Register-Macros.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#libheartlenvpanel-Panel-Plugin-Register-Macros.description" class="shortcut">Description</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="libheartlenvpanel-Panel-Plugin-Register-Macros"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libheartlenvpanel-Panel-Plugin-Register-Macros.top_of_page"></a>Panel Plugin Register Macros</span></h2>
+<p>Panel Plugin Register Macros — Register panel plugins that are compiled as modules.</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="libheartlenvpanel-Panel-Plugin-Register-Macros.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">
+#include &lt;libheartlenvpanel/libheartlenvpanel.h&gt;
+
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            (<a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XfcePanelPluginCheck" title="XfcePanelPluginCheck ()">*XfcePanelPluginCheck</a>)             (<em class="parameter"><code><span class="type">GdkScreen</span> *screen</code></em>);
+<span class="returnvalue">void</span>                (<a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XfcePanelPluginFunc" title="XfcePanelPluginFunc ()">*XfcePanelPluginFunc</a>)              (<em class="parameter"><code><a class="link" href="XfcePanelPlugin.html" title="XfcePanelPlugin"><span class="type">XfcePanelPlugin</span></a> *plugin</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            (<a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XfcePanelPluginPreInit" title="XfcePanelPluginPreInit ()">*XfcePanelPluginPreInit</a>)           (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> argc</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **argv</code></em>);
+#define             <a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XFCE-PANEL-PLUGIN-REGISTER:CAPS" title="XFCE_PANEL_PLUGIN_REGISTER()">XFCE_PANEL_PLUGIN_REGISTER</a>          (construct_func)
+#define             <a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XFCE-PANEL-PLUGIN-REGISTER-WITH-CHECK:CAPS" title="XFCE_PANEL_PLUGIN_REGISTER_WITH_CHECK()">XFCE_PANEL_PLUGIN_REGISTER_WITH_CHECK</a>(construct_func,
+                                                         check_func)
+#define             <a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XFCE-PANEL-PLUGIN-REGISTER-FULL:CAPS" title="XFCE_PANEL_PLUGIN_REGISTER_FULL()">XFCE_PANEL_PLUGIN_REGISTER_FULL</a>     (construct_func,
+                                                         preinit_func,
+                                                         check_func)
+</pre>
+</div>
+<div class="refsect1">
+<a name="libheartlenvpanel-Panel-Plugin-Register-Macros.description"></a><h2>Description</h2>
+<p>
+Macros to register panel plugins that are compiled as modules. Internal or
+external is defined by the boolean key <code class="varname">X-XFCE-Internal</code>
+in the plugin's .desktop file.
+</p>
+</div>
+<div class="refsect1">
+<a name="libheartlenvpanel-Panel-Plugin-Register-Macros.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="XfcePanelPluginCheck"></a><h3>XfcePanelPluginCheck ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            (*XfcePanelPluginCheck)             (<em class="parameter"><code><span class="type">GdkScreen</span> *screen</code></em>);</pre>
+<p>
+Callback function that is run before creating a plugin. It should return
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if the plugin is not available for whatever reason. The function
+can be given as argument to one of the registration macros.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>screen</code></em> :</span></p></td>
+<td>the <span class="type">GdkScreen</span> the panel is running on</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the plugin can be started, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="XfcePanelPluginFunc"></a><h3>XfcePanelPluginFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                (*XfcePanelPluginFunc)              (<em class="parameter"><code><a class="link" href="XfcePanelPlugin.html" title="XfcePanelPlugin"><span class="type">XfcePanelPlugin</span></a> *plugin</code></em>);</pre>
+<p>
+Callback function to create the plugin contents. It should be given as
+the argument to the registration macros.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>plugin</code></em> :</span></p></td>
+<td>an <a class="link" href="XfcePanelPlugin.html" title="XfcePanelPlugin"><span class="type">XfcePanelPlugin</span></a>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="XfcePanelPluginPreInit"></a><h3>XfcePanelPluginPreInit ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            (*XfcePanelPluginPreInit)           (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> argc</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **argv</code></em>);</pre>
+<p>
+Callback function that is run in an external plugin before <code class="function">gtk_init()</code>. It
+should return <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if the plugin is not available for whatever reason.
+The function can be given as argument to one of the registration macros.
+</p>
+<p>
+The main purpose of this callback is to allow multithreaded plugins to call
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Threads.html#g-thread-init"><code class="function">g_thread_init()</code></a>.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>argc</code></em> :</span></p></td>
+<td>number of arguments to the plugin</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>argv</code></em> :</span></p></td>
+<td>argument array</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> on success, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since 4.6</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="XFCE-PANEL-PLUGIN-REGISTER:CAPS"></a><h3>XFCE_PANEL_PLUGIN_REGISTER()</h3>
+<pre class="programlisting">#define             XFCE_PANEL_PLUGIN_REGISTER(construct_func)</pre>
+<p>
+Register a panel plugin using a construct function. This is the
+simplest way to register a panel plugin.
+The <em class="parameter"><code>construct_func</code></em> is called everytime a plugin is created.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>construct_func</code></em> :</span></p></td>
+<td>name of the function that points to an
+<a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XfcePanelPluginFunc" title="XfcePanelPluginFunc ()"><span class="type">XfcePanelPluginFunc</span></a> function.</td>
+</tr></tbody>
+</table></div>
+<p class="since">Since 4.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="XFCE-PANEL-PLUGIN-REGISTER-WITH-CHECK:CAPS"></a><h3>XFCE_PANEL_PLUGIN_REGISTER_WITH_CHECK()</h3>
+<pre class="programlisting">#define             XFCE_PANEL_PLUGIN_REGISTER_WITH_CHECK(construct_func, check_func)</pre>
+<p>
+Register a panel plugin using a construct function. The <em class="parameter"><code>check_func</code></em>
+will be called before the plugin is created. If this function returns
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>, the plugin won't be added to the panel. For proper feedback,
+you are responsible for showing a dialog why the plugin is not added
+to the panel.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>construct_func</code></em> :</span></p></td>
+<td>name of the function that points to an
+<a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XfcePanelPluginFunc" title="XfcePanelPluginFunc ()"><span class="type">XfcePanelPluginFunc</span></a> function.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>check_func</code></em> :</span></p></td>
+<td>name of the function that points to an
+<a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XfcePanelPluginCheck" title="XfcePanelPluginCheck ()"><span class="type">XfcePanelPluginCheck</span></a> function.</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since 4.8</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="XFCE-PANEL-PLUGIN-REGISTER-FULL:CAPS"></a><h3>XFCE_PANEL_PLUGIN_REGISTER_FULL()</h3>
+<pre class="programlisting">#define             XFCE_PANEL_PLUGIN_REGISTER_FULL(construct_func, preinit_func, check_func)</pre>
+<p>
+Same as calling <a class="link" href="libheartlenvpanel-GObject-Oriented-Panel-Plugin-Registers-Macros.html#XFCE-PANEL-DEFINE-PREINIT-FUNC:CAPS" title="XFCE_PANEL_DEFINE_PREINIT_FUNC()"><span class="type">XFCE_PANEL_DEFINE_PREINIT_FUNC</span></a> and
+<a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XFCE-PANEL-PLUGIN-REGISTER-WITH-CHECK:CAPS" title="XFCE_PANEL_PLUGIN_REGISTER_WITH_CHECK()"><span class="type">XFCE_PANEL_PLUGIN_REGISTER_WITH_CHECK</span></a>. See those macros
+for more information.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>construct_func</code></em> :</span></p></td>
+<td>name of the function that points to an
+<a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XfcePanelPluginFunc" title="XfcePanelPluginFunc ()"><span class="type">XfcePanelPluginFunc</span></a> function.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>preinit_func</code></em> :</span></p></td>
+<td>name of the function that points to an
+<a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XfcePanelPluginPreInit" title="XfcePanelPluginPreInit ()"><span class="type">XfcePanelPluginPreInit</span></a> function.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>check_func</code></em> :</span></p></td>
+<td>name of the function that points to an
+<a class="link" href="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XfcePanelPluginCheck" title="XfcePanelPluginCheck ()"><span class="type">XfcePanelPluginCheck</span></a> function.</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since 4.8</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.17</div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      xmlns:e="http://projectmallard.org/experimental/"
+      type="topic"
+      id="getting-started">
+
+  <info>
+    <link type="guide" xref="index#panel"/>
+    <desc>Starting the <app>Xfce Panel</app> for the first time</desc>
+    <credit type="author">
+      <name>Nick Schermer</name>
+      <email>nick@xfce.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+  <title>Getting Started</title>
+
+  <section>
+    <title>Launching the <app>Xfce Panel</app></title>
+    <p>
+      The panel will useally be started as part of your Xfce session
+      when you start the Xfce desktop enviroment by using the
+      <cmd>startheartlenv</cmd> script or a login manager. If you want to start
+      the panel by hand, you can run the <cmd>heartlenv-panel</cmd> command.
+    </p>
+  </section>
+
+  <section id="migrate">
+    <title>Migration dialog</title>
+
+    <figure>
+      <title>Migration dialog</title>
+      <media type="image" src="figures/migrate.png" mime="image/png" style="right"/>
+    </figure>
+
+    <p>
+      When the panel is started for the first time it will give you the
+      following three options:
+    </p>
+
+    <terms>
+      <item>
+        <title><gui>Migrate old config</gui></title>
+        <p>
+          This option will only be available when an old 4.6 panel
+          configuration is found on your system. It will try to migrate
+          the old panel layout to the new panel configuration in 
+          <app>Xfconf</app>.
+        </p>
+      </item>
+      <item>
+        <title><gui>Use default layout</gui></title>
+        <p>
+          This will import the default panel configuration with most of
+          the default panel plugins. If you use the <app>Xfce Panel</app>
+          for the  first time, this will be a good base to create your own
+          panel configuration.
+        </p>
+      <figure>
+          <title><gui>Default panel layout</gui></title>
+          <media type="image" src="figures/default.png" mime="image/png" style="right"/>
+      </figure>
+      </item>
+      <item>
+        <title><gui>One empty panel</gui></title>
+        <p>
+          This will give you one empty panel window. Might be what you
+          want if you have already used <app>Xfce Panel</app> before and
+          you know what you want.
+        </p>
+      </item>
+    </terms>
+
+    <p>
+      Once you have selected an option, your panel will appear.
+      Read more about changing the <link xref="preferences">configuration of the panel</link>
+      and the various plugins in the other sections of this manual.
+    </p>
+
+  </section>
+</page>

@@ -1,1202 +1,1679 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Israt Jahan <israt@ankur.org.bd>, 2010.
+# Sadia Afroz <sadia@ankur.org.bd>, 2010.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: bn\n"
-"Report-Msgid-Bugs-To: http://bugzilla.heartlenv.org/enter_bug.cgi?product=heartlenv-"
-"shell&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-04-04 02:20+0000\n"
-"PO-Revision-Date: 2011-04-04 11:04+0600\n"
-"Last-Translator: Israt Jahan <israt@ankur.org.bd>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-16 17:01+0100\n"
+"PO-Revision-Date: 2010-03-31 15:34+0600\n"
+"Last-Translator: Sadia Afroz <sadia@ankur.org.bd>\n"
 "Language-Team: Bengali <ankur-bd-l10n@googlegroups.com>\n"
+"Language: bn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.8.0\n"
-"X-Language: bn_BD\n"
-"X-DamnedLies-Scope: partial\n"
 
-#: ../data/heartlenv-shell.desktop.in.in.h:1
-msgid "GNOME Shell"
-msgstr "জিনোম সেল"
-
-#: ../data/heartlenv-shell.desktop.in.in.h:2
-msgid "Window management and application launching"
-msgstr "উইন্ডো ব্যবস্থাপনা এবং অ্যাপ্লিকেশন চালু"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:1
+#: ../panel-desktop-handler.desktop.in.h:1
 msgid ""
-"Allows access to internal debugging and monitoring tools using the Alt-F2 "
-"dialog."
+"Add a new launcher to the panel based on the information of this desktop file"
 msgstr ""
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:2
-msgid "Enable internal tools useful for developers and testers from Alt-F2"
-msgstr ""
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:3
-msgid "File extension used for storing the screencast"
-msgstr ""
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:4
-msgid "Framerate used for recording screencasts."
-msgstr ""
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:5
-msgid ""
-"GNOME Shell extensions have a uuid property; this key lists extensions which "
-"should not be loaded."
-msgstr ""
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:6
-msgid "History for command (Alt-F2) dialog"
-msgstr ""
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:7
-msgid "History for the looking glass dialog"
-msgstr ""
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:8
-msgid "If true, display date in the clock, in addition to time."
-msgstr ""
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:9
-msgid "If true, display seconds in time."
-msgstr ""
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:10
-msgid "If true, display the ISO week date in the calendar."
-msgstr ""
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:11
-msgid "List of desktop file IDs for favorite applications"
-msgstr ""
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:13
-#, no-c-format
-msgid ""
-"Sets the GStreamer pipeline used to encode recordings. It follows the syntax "
-"used for gst-launch. The pipeline should have an unconnected sink pad where "
-"the recorded video is recorded. It will normally have a unconnected source "
-"pad; output from that pad will be written into the output file. However the "
-"pipeline can also take care of its own output - this might be used to send "
-"the output to an icecast server via shout2send or similar. When unset or set "
-"to an empty value, the default pipeline will be used. This is currently "
-"'videorate ! vp8enc quality=10 speed=2 threads=%T ! queue ! webmmux' and "
-"records to WEBM using the VP8 codec. %T is used as a placeholder for a guess "
-"at the optimal thread count on the system."
-msgstr ""
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:14
-msgid "Show date in clock"
-msgstr ""
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:15
-msgid "Show the week date in the calendar"
-msgstr ""
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:16
-msgid "Show time with seconds"
-msgstr ""
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:17
-msgid ""
-"The applications corresponding to these identifiers will be displayed in the "
-"favorites area."
-msgstr ""
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:18
-msgid ""
-"The filename for recorded screencasts will be a unique filename based on the "
-"current date, and use this extension. It should be changed when recording to "
-"a different container format."
-msgstr ""
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:19
-msgid ""
-"The framerate of the resulting screencast recordered by GNOME Shell's "
-"screencast recorder in frames-per-second."
-msgstr ""
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:20
-msgid "The gstreamer pipeline used to encode the screencast"
-msgstr ""
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:21
-msgid ""
-"The shell normally monitors active applications in order to present the most "
-"used ones (e.g. in launchers). While this data will be kept private, you may "
-"want to disable this for privacy reasons. Please note that doing so won't "
-"remove already saved data."
-msgstr ""
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:22
+#: ../panel-desktop-handler.desktop.in.h:2
 #, fuzzy
-msgid "Uuids of extensions to disable"
-msgstr "কোনো এক্সটেনশন ইনস্টল করা হয়নি"
+msgid "Create Launcher on the panel"
+msgstr "Xfce প্যানেলে লঞ্চার তৈরি করা হবে"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:23
-msgid "Whether to collect stats about applications usage"
+#: ../panel-preferences.desktop.in.h:1
+#, fuzzy
+msgid "Customize the panel"
+msgstr "Xfce প্যানেল স্বনির্ধারণ করা হবে"
+
+#: ../panel-preferences.desktop.in.h:2
+#: ../panel/panel-preferences-dialog.glade.h:24 ../panel/panel-window.c:2222
+#: ../migrate/main.c:84
+#, fuzzy
+msgid "Panel"
+msgstr "প্যানেল %d"
+
+#: ../common/panel-utils.c:155
+msgid "_Read Online"
+msgstr "অনলাইনে পড়া হবে (_R)"
+
+#: ../common/panel-utils.c:156
+msgid ""
+"You can read the user manual online. This manual may however not exactly "
+"match your panel version."
+msgstr ""
+"আপনি ব্যবহারকারী ম্যানুয়াল অনলাইনে পড়তে পারেন। এই ম্যানুয়ালটি আপনার প্যানেল "
+"সংস্করণের সাথে নাও মিলতে পারে।"
+
+#: ../common/panel-utils.c:158
+#, fuzzy
+msgid "The user manual is not installed on your computer"
+msgstr "আপনার কম্পিউটারে Xfce প্যানেলের ব্যবহারকারী ম্যানুয়াল ইনস্টল করা নেই"
+
+#. display an error message to the user
+#: ../common/panel-utils.c:171
+msgid "Failed to open the documentation browser"
+msgstr "ডকুমেন্টেশন ব্রাউজার খুলতে ব্যর্থ"
+
+#. I18N: %s is the name of the plugin
+#: ../libheartlenvpanel/xfce-panel-plugin.c:889
+#: ../panel/panel-preferences-dialog.c:1048
+#, c-format
+msgid "Are you sure that you want to remove \"%s\"?"
+msgstr "আপনি কি নিশ্চিতভাবে \"%s\" অপসারণ করতে চান?"
+
+#: ../libheartlenvpanel/xfce-panel-plugin.c:894
+#: ../panel/panel-preferences-dialog.c:1051
+msgid "If you remove the item from the panel, it is permanently lost."
+msgstr ""
+"আপনি যদি প্যানেল থেকে আইটেমটি অপসারণ করতে চান, তাহলে এটি স্থায়ীভাবে হারিয়ে "
+"যাবে। "
+
+#. move item
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1054
+msgid "_Move"
+msgstr "সরানো হবে (_M)"
+
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1088
+#, fuzzy
+msgid "Pane_l"
+msgstr "প্যানেল %d"
+
+#. add new items
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1096 ../panel/panel-window.c:2234
+msgid "Add _New Items..."
+msgstr "নতুন আইটেম যোগ করা হবে... (_N)"
+
+#. customize panel
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1107 ../panel/panel-window.c:2245
+msgid "Panel Pr_eferences..."
+msgstr "প্যানেলের পছন্দসমূহ... (_e)"
+
+#. logout item
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1124 ../panel/panel-window.c:2261
+#, fuzzy
+msgid "Log _Out"
+msgstr "লগআউট"
+
+#: ../panel/main.c:78
+msgid "Show the 'Panel Preferences' dialog"
+msgstr "\"প্যানেল পছন্দসমূহ\" ডায়ালগ প্রদর্শন"
+
+#: ../panel/main.c:78 ../panel/main.c:79
+msgid "PANEL-NUMBER"
+msgstr "PANEL-NUMBER"
+
+#: ../panel/main.c:79
+msgid "Show the 'Add New Items' dialog"
+msgstr "\"নতুন আইটেম যোগ\" ডায়ালগ প্রদর্শন"
+
+#: ../panel/main.c:80
+msgid "Save the panel configuration"
+msgstr "প্যানেল কনফিগারেশন সংরক্ষণ করুন"
+
+#: ../panel/main.c:81
+msgid "Add a new plugin to the panel"
+msgstr "প্যানেলে নতুন প্লাগইন যোগ করুন"
+
+#: ../panel/main.c:81
+msgid "PLUGIN-NAME"
+msgstr "PLUGIN-NAME"
+
+#: ../panel/main.c:82
+msgid "Restart the running panel instance"
+msgstr "চলমান প্যানেল ইন্সট্যান্স পুনরায় শুরু করুন"
+
+#: ../panel/main.c:83
+msgid "Quit the running panel instance"
+msgstr "চলমান প্যানেল ইন্সট্যান্স ত্যাগ করুন"
+
+#: ../panel/main.c:84
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:33
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:33
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:33
+msgid "Print version information and exit"
+msgstr "সংস্করণ তথ্য মুদ্রণ করুন এবং প্রস্থান করুন"
+
+#. parse context options
+#: ../panel/main.c:240
+msgid "[ARGUMENTS...]"
+msgstr "[ARGUMENTS...]"
+
+#: ../panel/main.c:247
+#, c-format
+msgid "Type \"%s --help\" for usage."
+msgstr "ব্যবহারের জন্য \"%s --সহায়তা\" টাইপ করুন।"
+
+#: ../panel/main.c:266
+msgid "The Xfce development team. All rights reserved."
+msgstr "Xfce ডেভেলপমেন্ট টিম। সকল অধিকার সংরক্ষিত।"
+
+#: ../panel/main.c:267
+#, c-format
+msgid "Please report bugs to <%s>."
+msgstr "অনুগ্রহ করে <%s> তে বাগ রিপোর্ট পাঠান।"
+
+#: ../panel/main.c:318
+msgid "There is already a running instance"
+msgstr "ইতোমধ্যে এখানে একটি চলমান ইন্সট্যান্স আছে"
+
+#. spawn ourselfs again
+#: ../panel/main.c:367
+msgid "Restarting..."
+msgstr "পুনরায় আরম্ভ করা হচ্ছে..."
+
+#: ../panel/main.c:382
+msgid "Failed to show the preferences dialog"
+msgstr "পছন্দসমূহের ডায়ালগ দেখাতে ব্যর্থ"
+
+#: ../panel/main.c:384
+msgid "Failed to show the add new items dialog"
+msgstr "নতুন আইটেম যোগ করার ডায়ালগ দেখাতে ব্যর্থ"
+
+#: ../panel/main.c:386
+msgid "Failed to save the panel configuration"
+msgstr "প্যানেল কনফিগারেশন সংরক্ষণ করতে ব্যর্থ"
+
+#: ../panel/main.c:388
+msgid "Failed to add a plugin to the panel"
+msgstr "প্যানেলে একটি প্লাগইন যোগ করতে ব্যর্থ"
+
+#: ../panel/main.c:390
+msgid "Failed to restart the panel"
+msgstr "প্যানেল পুনরায় শুরু করতে ব্যর্থ"
+
+#: ../panel/main.c:392
+msgid "Failed to quit the panel"
+msgstr "প্যানেল ত্যাগ করতে ব্যর্থ"
+
+#: ../panel/main.c:394
+msgid "Failed to send D-Bus message"
+msgstr "D-Bus বার্তা পাঠাতে ব্যর্থ"
+
+#: ../panel/main.c:405
+msgid ""
+"Do you want to start the panel? If you do, make sure you save the session on "
+"logout, so the panel is automatically started the next time you login."
 msgstr ""
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:24
-msgid "disabled OpenSearch providers"
+#: ../panel/main.c:408 ../panel/main.c:422
+#, c-format
+msgid "No running instance of %s was found"
+msgstr "%s এর কোনো চলমান ইন্সট্যান্স পাওয়া যায়নি"
+
+#: ../panel/panel-application.c:196
+msgid "Failed to launch the migration application"
+msgstr "মাইগ্রেশন অ্যাপ্লিকেশন চালু করতে ব্যর্থ"
+
+#: ../panel/panel-application.c:1446 ../plugins/actions/actions.c:413
+msgid ""
+"You have started X without session manager. Clicking Quit will close the X "
+"server."
 msgstr ""
 
-#: ../js/misc/util.js:71
-msgid "Command not found"
-msgstr "কমান্ড পাওয়া যায়নি"
+#: ../panel/panel-application.c:1447 ../plugins/actions/actions.c:414
+#, fuzzy
+msgid "Are you sure you want to quit the panel?"
+msgstr "আপনি কি নিশ্চিত ভাবে %d মুছে ফেলতে চান?"
 
-#. Replace "Error invoking GLib.shell_parse_argv: " with
-#. something nicer
-#: ../js/misc/util.js:98
-msgid "Could not parse command:"
-msgstr "কমান্ড পার্স করা যায়নি:"
-
-#: ../js/misc/util.js:106
+#: ../panel/panel-application.c:1455 ../plugins/actions/actions.c:422
 #, c-format
-msgid "Execution of '%s' failed:"
-msgstr "'%s' কার্যকর করা ব্যর্থ:"
+msgid "Failed to execute command \"%s\""
+msgstr "\"%s\" কমান্ডটি এক্সিকিউট করতে ব্যর্থ"
 
-#. Translators: Filter to display all applications
-#: ../js/ui/appDisplay.js:230
-msgid "All"
-msgstr "সব"
+#: ../panel/panel-dbus-client.c:209
+msgid ""
+"Invalid plugin event syntax specified. Use PLUGIN-NAME:NAME[:TYPE:VALUE]."
+msgstr ""
+"অকার্যকর প্লাগইন ইভেন্ট সিনট্যাক্স উল্লেখ করা হয়েছে। PLUGIN-NAME:NAME[:TYPE:VALUE] "
+"ব্যবহার করুন।"
 
-#: ../js/ui/appDisplay.js:328
-msgid "APPLICATIONS"
-msgstr "অ্যাপ্লিকেশন"
-
-#: ../js/ui/appDisplay.js:354
-msgid "SETTINGS"
-msgstr "সেটিংস"
-
-#: ../js/ui/appDisplay.js:625
-msgid "New Window"
-msgstr "নতুন উইন্ডো"
-
-#: ../js/ui/appDisplay.js:628
-msgid "Remove from Favorites"
-msgstr "পছন্দ থেকে অপসারণ"
-
-#: ../js/ui/appDisplay.js:629
-msgid "Add to Favorites"
-msgstr "পছন্দে যোগ"
-
-#: ../js/ui/appFavorites.js:91
+#: ../panel/panel-dbus-client.c:242
 #, c-format
-msgid "%s has been added to your favorites."
-msgstr "আপনার পছন্দে %s যোগ করা হয়েছে।"
+msgid ""
+"Invalid hint type \"%s\". Valid types are bool, double, int, string and uint."
+msgstr ""
+"ইঙ্গিতের ধরন \"%s\" অকার্যকর। কার্যকর ধরনগুলো হল bool, double, int, string এবং "
+"uint।"
 
-#: ../js/ui/appFavorites.js:122
+#: ../panel/panel-dialogs.c:76
+msgid "The panel of the Xfce Desktop Environment"
+msgstr "Xfce ডেস্কটপ এনভায়রনমেন্টের প্যানেল"
+
+#: ../panel/panel-dialogs.c:81
+msgid "translator-credits"
+msgstr ""
+"অঙ্কুর প্রকল্পের পক্ষে লোবা ইয়াসমীন <loba@ankur.org.bd>\n"
+"সাদিয়া আফরোজ <sadia@ankur.org.bd>"
+
+#. setup the dialog
+#: ../panel/panel-dialogs.c:122 ../plugins/launcher/launcher-dialog.glade.h:1
+msgid "Add New Item"
+msgstr "নতুন আইটেম যোগ করা হবে"
+
+#: ../panel/panel-dialogs.c:136
+msgid "Please choose a panel for the new plugin:"
+msgstr "নতুন প্লাগইনের জন্য অনুগ্রহ করে একটি প্যানেল বেছে নিন:"
+
+#. I18N: panel combo box in the preferences dialog
+#: ../panel/panel-dialogs.c:147 ../panel/panel-preferences-dialog.c:767
 #, c-format
-msgid "%s has been removed from your favorites."
-msgstr "আপনার পছন্দ থেকে  %s বাদ হয়েছে।"
+msgid "Panel %d"
+msgstr "প্যানেল %d"
 
-#. Translators: Shown in calendar event list for all day events
-#. * Keep it short, best if you can use less then 10 characters
-#.
-#: ../js/ui/calendar.js:66
-msgctxt "event list time"
-msgid "All Day"
-msgstr "পুরো দিন"
+#: ../panel/panel-dialogs.c:183
+msgid ""
+"Because the panel is running in kiosk mode, you are not allowed to make "
+"changes to the panel configuration as a regular user"
+msgstr ""
+"যেহেতু প্যানেলটি kiosk মোডে চলছে, স্বাভাবিক ব্যবহারকারী হিসেবে আপনি প্যানেলের "
+"কনফিগারেশনে পরিবর্তন করার জন্য অনুমোদিত নন "
 
-#. Translators: Shown in calendar event list, if 24h format
-#: ../js/ui/calendar.js:71
-msgctxt "event list time"
-msgid "%H:%M"
-msgstr "%H:%M"
+#: ../panel/panel-dialogs.c:185
+msgid "Modifying the panel is not allowed"
+msgstr "প্যানেলের পরিবর্ধন অনুমোদিত নয়"
 
-#. Transators: Shown in calendar event list, if 12h format
-#: ../js/ui/calendar.js:78
-msgctxt "event list time"
-msgid "%l:%M %p"
-msgstr "%l:%M %p"
+#: ../panel/panel-item-dialog.c:188
+msgid "Add New Items"
+msgstr "নতুন আইটেম যোগ করা হবে"
 
-#. Translators: Calendar grid abbreviation for Sunday.
-#. *
-#. * NOTE: These grid abbreviations are always shown together
-#. * and in order, e.g. "S M T W T F S".
-#.
-#: ../js/ui/calendar.js:118
-msgctxt "grid sunday"
-msgid "S"
-msgstr "S"
+#: ../panel/panel-item-dialog.c:190
+msgid "Add new plugins to the panel"
+msgstr "প্যানেলে নতুন প্লাগইন যোগ করা হবে"
 
-#. Translators: Calendar grid abbreviation for Monday
-#: ../js/ui/calendar.js:120
-msgctxt "grid monday"
-msgid "M"
-msgstr "M"
+#: ../panel/panel-item-dialog.c:213
+#: ../plugins/launcher/launcher-dialog.glade.h:23
+msgid "_Search:"
+msgstr "অনুসন্ধান: (_S)"
 
-#. Translators: Calendar grid abbreviation for Tuesday
-#: ../js/ui/calendar.js:122
-msgctxt "grid tuesday"
-msgid "T"
-msgstr "T"
+#: ../panel/panel-item-dialog.c:221
+msgid "Enter search phrase here"
+msgstr "এখানে অনুসন্ধান শব্দসমষ্টি প্রবেশ করানো হবে"
 
-#. Translators: Calendar grid abbreviation for Wednesday
-#: ../js/ui/calendar.js:124
-msgctxt "grid wednesday"
-msgid "W"
-msgstr "W"
-
-#. Translators: Calendar grid abbreviation for Thursday
-#: ../js/ui/calendar.js:126
-msgctxt "grid thursday"
-msgid "T"
-msgstr "T"
-
-#. Translators: Calendar grid abbreviation for Friday
-#: ../js/ui/calendar.js:128
-msgctxt "grid friday"
-msgid "F"
-msgstr "F"
-
-#. Translators: Calendar grid abbreviation for Saturday
-#: ../js/ui/calendar.js:130
-msgctxt "grid saturday"
-msgid "S"
-msgstr "S"
-
-#. Translators: Event list abbreviation for Sunday.
-#. *
-#. * NOTE: These list abbreviations are normally not shown together
-#. * so they need to be unique (e.g. Tuesday and Thursday cannot
-#. * both be 'T').
-#.
-#: ../js/ui/calendar.js:143
-msgctxt "list sunday"
-msgid "Su"
-msgstr "Su"
-
-#. Translators: Event list abbreviation for Monday
-#: ../js/ui/calendar.js:145
-msgctxt "list monday"
-msgid "M"
-msgstr "M"
-
-#. Translators: Event list abbreviation for Tuesday
-#: ../js/ui/calendar.js:147
-msgctxt "list tuesday"
-msgid "T"
-msgstr "T"
-
-#. Translators: Event list abbreviation for Wednesday
-#: ../js/ui/calendar.js:149
-msgctxt "list wednesday"
-msgid "W"
-msgstr "W"
-
-#. Translators: Event list abbreviation for Thursday
-#: ../js/ui/calendar.js:151
-msgctxt "list thursday"
-msgid "Th"
-msgstr "Th"
-
-#. Translators: Event list abbreviation for Friday
-#: ../js/ui/calendar.js:153
-msgctxt "list friday"
-msgid "F"
-msgstr "F"
-
-#. Translators: Event list abbreviation for Saturday
-#: ../js/ui/calendar.js:155
-msgctxt "list saturday"
-msgid "S"
-msgstr "S"
-
-#. Translators: Text to show if there are no events
-#: ../js/ui/calendar.js:704
-msgid "Nothing Scheduled"
-msgstr "কোনো কিছুর সময় ঠিক করা হয়নি"
-
-#. Translators: Shown on calendar heading when selected day occurs on current year
-#: ../js/ui/calendar.js:720 ../js/ui/telepathyClient.js:490
-msgctxt "calendar heading"
-msgid "%A, %B %d"
-msgstr "%A, %B %d"
-
-#. Translators: Shown on calendar heading when selected day occurs on different year
-#: ../js/ui/calendar.js:723 ../js/ui/telepathyClient.js:493
-msgctxt "calendar heading"
-msgid "%A, %B %d, %Y"
-msgstr "%A, %B %d, %Y"
-
-#: ../js/ui/calendar.js:733
-msgid "Today"
-msgstr "আজ"
-
-#: ../js/ui/calendar.js:737
-msgid "Tomorrow"
-msgstr "আগামীকাল"
-
-#: ../js/ui/calendar.js:746
-msgid "This week"
-msgstr "এ সপ্তাহ"
-
-#: ../js/ui/calendar.js:754
-msgid "Next week"
-msgstr "পরবর্তী সপ্তাহ"
-
-#: ../js/ui/dash.js:174 ../js/ui/messageTray.js:1007
-msgid "Remove"
-msgstr "অপসারণ"
-
-#: ../js/ui/dateMenu.js:91
-msgid "Date and Time Settings"
-msgstr "তারিখ ও সময় এর সেটিং"
-
-#: ../js/ui/dateMenu.js:111
-msgid "Open Calendar"
-msgstr "ক্যালেন্ডার খুলুন"
-
-#. Translators: This is the time format with date used
-#. in 24-hour mode.
-#: ../js/ui/dateMenu.js:164
-msgid "%a %b %e, %R:%S"
-msgstr "%a %b %e, %R:%S"
-
-#: ../js/ui/dateMenu.js:165
-msgid "%a %b %e, %R"
-msgstr "%a %b %e, %R"
-
-#. Translators: This is the time format without date used
-#. in 24-hour mode.
-#: ../js/ui/dateMenu.js:169
-msgid "%a %R:%S"
-msgstr "%a %R:%S"
-
-#: ../js/ui/dateMenu.js:170
-msgid "%a %R"
-msgstr "%a %R"
-
-#. Translators: This is a time format with date used
-#. for AM/PM.
-#: ../js/ui/dateMenu.js:177
-msgid "%a %b %e, %l:%M:%S %p"
-msgstr "%a %b %e, %l:%M:%S %p"
-
-#: ../js/ui/dateMenu.js:178
-msgid "%a %b %e, %l:%M %p"
-msgstr "%a %b %e, %l:%M %p"
-
-#. Translators: This is a time format without date used
-#. for AM/PM.
-#: ../js/ui/dateMenu.js:182
-msgid "%a %l:%M:%S %p"
-msgstr "%a %l:%M:%S %p"
-
-#: ../js/ui/dateMenu.js:183
-msgid "%a %l:%M %p"
-msgstr "%a %l:%M %p"
-
-#. Translators: This is the date format to use when the calendar popup is
-#. * shown - it is shown just below the time in the shell (e.g. "Tue 9:29 AM").
-#.
-#: ../js/ui/dateMenu.js:194
-msgid "%A %B %e, %Y"
-msgstr "%A %B %e, %Y"
-
-#: ../js/ui/docDisplay.js:19
-msgid "RECENT ITEMS"
-msgstr "সাম্প্রতিক আইটেম"
-
-#: ../js/ui/endSessionDialog.js:63
+#: ../panel/panel-plugin-external.c:420
 #, c-format
-msgid "Log Out %s"
-msgstr "লগআউট %s"
+msgid "Plugin \"%s\" unexpectedly left the panel, do you want to restart it?"
+msgstr "\"%s\" প্লাগইন প্যানেলে নেই, আপনি কি এটি পুনরায় শুরু করতে চান?"
 
-#: ../js/ui/endSessionDialog.js:64 ../js/ui/endSessionDialog.js:70
+#: ../panel/panel-plugin-external.c:422
+#, c-format
+msgid ""
+"The plugin restarted more than once in the last %d seconds. If you press "
+"Execute the panel will try to restart the plugin otherwise it will be "
+"permanently removed from the panel."
+msgstr ""
+"গত %d সেকেন্ডে প্লাগইনটি একাধিকবার পুনরায় আরম্ভ হয়েছে। আপনি 'কার্যকর' চাপলে "
+"প্যানেল প্লাগইনটি পুনরায় আরম্ভ করার চেষ্টা করবে নতুবা এটি প্যানেল থেকে চিরতরে "
+"অপসারণ করা হবে।"
+
+#: ../panel/panel-preferences-dialog.c:453
+msgid "Automatic"
+msgstr "স্বয়ংক্রিয়"
+
+#. I18N: screen name in the output selector
+#: ../panel/panel-preferences-dialog.c:472
+#, c-format
+msgid "Screen %d"
+msgstr "পর্দা %d"
+
+#. I18N: monitor name in the output selector
+#: ../panel/panel-preferences-dialog.c:498
+#, c-format
+msgid "Monitor %d"
+msgstr "মনিটর %d"
+
+#: ../panel/panel-preferences-dialog.c:828
+msgid "The panel and plugin configurations will be permanently removed"
+msgstr "প্যানেল এবং প্যানেল কনফিগারেশন স্থায়ীভাবে মুছে যাবে"
+
+#: ../panel/panel-preferences-dialog.c:829
+#, c-format
+msgid "Are you sure you want to remove panel %d?"
+msgstr "আপনি কি নিশ্চিত ভাবে %d মুছে ফেলতে চান?"
+
+#. I18N: append (external) in the preferences dialog if the plugin
+#. * runs external
+#: ../panel/panel-preferences-dialog.c:912
+#, c-format
+msgid "%s <span color=\"grey\" size=\"small\">(external)</span>"
+msgstr ""
+
+#. I18N: tooltip in preferences dialog when hovering an item in the list
+#. * for external plugins
+#: ../panel/panel-preferences-dialog.c:917
+#, fuzzy, c-format
+msgid ""
+"Internal name: %s-%d\n"
+"PID: %d"
+msgstr "মধ্যবর্তী নাম: %s-%d"
+
+#. I18N: tooltip in preferences dialog when hovering an item in the list
+#. * for internal plugins
+#: ../panel/panel-preferences-dialog.c:929
+#, c-format
+msgid "Internal name: %s-%d"
+msgstr "মধ্যবর্তী নাম: %s-%d"
+
+#: ../panel/panel-preferences-dialog.glade.h:1
+#, fuzzy
+msgid "A_utomatically increase the length"
+msgstr "স্বয়ংক্রিয়ভাবে দৈর্ঘ্য বৃদ্ধি করা হবে"
+
+#: ../panel/panel-preferences-dialog.glade.h:2
+msgid "Add a new panel"
+msgstr "একটি নতুন প্যানেল যোগ করা হবে"
+
+#: ../panel/panel-preferences-dialog.glade.h:3
+msgid "Add new item to this panel"
+msgstr "এই প্যানেলে একটি নতুন আইটেম যোগ করা হবে"
+
+#: ../panel/panel-preferences-dialog.glade.h:4
+#, fuzzy
+msgid ""
+"Alpha value of the panel background, with 0 being fully transparent and 100 "
+"fully opaque."
+msgstr "প্যানেল পটভূমির আলফা ভ্যালু, 0 (স্বচ্ছ) এবং 100 (অনচ্ছ) এর মধ্যে।"
+
+#: ../panel/panel-preferences-dialog.glade.h:5
+#, fuzzy
+msgid "Appeara_nce"
+msgstr "অবয়ব"
+
+#: ../panel/panel-preferences-dialog.glade.h:6
+msgid "Automatically show and _hide the panel"
+msgstr "স্বয়ংক্রিয়ভাবে প্যানেল প্রদর্শন এবং আড়াল করা হবে (_h)"
+
+#: ../panel/panel-preferences-dialog.glade.h:7
+msgid "Background"
+msgstr "পটভূমি"
+
+#: ../panel/panel-preferences-dialog.glade.h:8
+#, fuzzy
+msgid "Background image"
+msgstr "পটভূমি"
+
+#: ../panel/panel-preferences-dialog.glade.h:9
+msgid "C_olor:"
+msgstr ""
+
+#: ../panel/panel-preferences-dialog.glade.h:10
+msgid "D_isplay"
+msgstr "প্রদর্শন (_i)"
+
+#: ../panel/panel-preferences-dialog.glade.h:11
+#: ../plugins/launcher/launcher-dialog.glade.h:9
+msgid "Edit the currently selected item"
+msgstr "বর্তমানে নির্বাচিত আইটেমটি সম্পাদনা করা হবে"
+
+#: ../panel/panel-preferences-dialog.glade.h:12
+#: ../plugins/launcher/launcher-dialog.glade.h:10
+msgid "General"
+msgstr "সাধারণ"
+
+#: ../panel/panel-preferences-dialog.glade.h:13
+msgid "Horizontal"
+msgstr "আনুভূমিক"
+
+#: ../panel/panel-preferences-dialog.glade.h:14
+msgid "Ite_ms"
+msgstr "আইটেম (_m)"
+
+#: ../panel/panel-preferences-dialog.glade.h:16
+#, no-c-format
+msgid "L_ength (%):"
+msgstr "দৈর্ঘ্য (%): (_e)"
+
+#. I18N: name of the section (frame) in the panel preferences where the user can define the length and size of the panel
+#: ../panel/panel-preferences-dialog.glade.h:18
+msgid "Measurements"
+msgstr "পরিমাপ"
+
+#: ../panel/panel-preferences-dialog.glade.h:19
+#: ../plugins/launcher/launcher-dialog.glade.h:13
+msgid "Move currently selected item down by one row"
+msgstr "বর্তমানে নির্বাচিত আইটেম এক সারি নীচে নামানো হবে"
+
+#: ../panel/panel-preferences-dialog.glade.h:20
+#: ../plugins/launcher/launcher-dialog.glade.h:14
+msgid "Move currently selected item up by one row"
+msgstr "বর্তমানে নির্বাচিত আইটেম এক সারি উপরে উঠানো হবে"
+
+#: ../panel/panel-preferences-dialog.glade.h:21
+msgid "None (use system style)"
+msgstr ""
+
+#: ../panel/panel-preferences-dialog.glade.h:22
+msgid "O_utput:"
+msgstr "আউটপুট: (_u)"
+
+#: ../panel/panel-preferences-dialog.glade.h:23
+msgid "Opacity"
+msgstr ""
+
+#: ../panel/panel-preferences-dialog.glade.h:25
+msgid "Pick a Panel Color"
+msgstr ""
+
+#: ../panel/panel-preferences-dialog.glade.h:26
+msgid "Remove currently selected item"
+msgstr "বর্তমানে নির্বাচিত আইটেম অপসারণ করা হবে"
+
+#: ../panel/panel-preferences-dialog.glade.h:27
+msgid "Remove the currently selected panel"
+msgstr "বর্তমানে নির্বাচিত প্যানেল অপসারণ করা হবে"
+
+#: ../panel/panel-preferences-dialog.glade.h:28
+#, fuzzy
+msgid "Select A Background Image"
+msgstr "একটি আইকন নির্বাচন করা হবে"
+
+#: ../panel/panel-preferences-dialog.glade.h:29
+msgid ""
+"Select this option to automatically increase the length of the panel if the "
+"plugins request more space."
+msgstr ""
+"প্লাগইন যদি আরও ফাঁকাস্থানের জন্য অনুরোধ করে তবে স্বয়ংক্রিয়ভাবে প্যানেলের দৈর্ঘ্য বৃদ্ধি "
+"করতে এই অপশনটি নির্বাচন করুন।"
+
+#: ../panel/panel-preferences-dialog.glade.h:30
+msgid "Select this option to extend the panel over multiple monitors."
+msgstr "একাধিক মনিটরে প্যানেল সম্প্রসারণ করতে এই অপশনটি নির্বাচন করুন।"
+
+#: ../panel/panel-preferences-dialog.glade.h:31
+msgid ""
+"Select this option to hide the handles of the panel and lock its position."
+msgstr "প্যানেলের হ্যান্ডেল আড়াল এবং এর অবস্থান আবদ্ধ করতে এই অপশনটি নির্বাচন করুন।"
+
+#: ../panel/panel-preferences-dialog.glade.h:32
+msgid ""
+"Select this option to hide the panel when the pointer is not above it. This "
+"only works when the panel is attached to a screen edge."
+msgstr ""
+"প্যানেলের উপর পয়েন্টার না থাকলে প্যানেল আড়াল করতে এই অপশনটি নির্বাচন করুন। এটি "
+"শুধুমাত্র তখনই কাজ করে যখন এটি কোনো পর্দার প্রান্তে সংযুক্ত করা হয়।"
+
+#: ../panel/panel-preferences-dialog.glade.h:33
+msgid "Show about information of the currently selected item"
+msgstr "বর্তমানে নির্বাচিত আইটেম সম্পর্কিত তথ্যাবলী প্রদর্শন"
+
+#: ../panel/panel-preferences-dialog.glade.h:34
+msgid "Solid color"
+msgstr ""
+
+#: ../panel/panel-preferences-dialog.glade.h:35
+msgid "Span mo_nitors"
+msgstr "স্প্যান মনিটর (_n)"
+
+#: ../panel/panel-preferences-dialog.glade.h:36
+#, fuzzy
+msgid ""
+"Transparency when the pointer is hovering over the panel, with 0 being fully "
+"transparent and 100 fully opaque."
+msgstr "পয়েন্টার প্যানেলের উপর আবর্তন করার সময় স্বচ্ছতা।"
+
+#: ../panel/panel-preferences-dialog.glade.h:37
+#, fuzzy
+msgid ""
+"Transparency when the pointer is not hovering over the panel, with 0 being "
+"fully transparent and 100 fully opaque."
+msgstr "পয়েন্টার প্যানেলের উপর আবর্তন করার সময় স্বচ্ছতা।"
+
+#: ../panel/panel-preferences-dialog.glade.h:38
+msgid "Vertical"
+msgstr "উল্লম্ব"
+
+#: ../panel/panel-preferences-dialog.glade.h:39
+msgid "_Alpha:"
+msgstr "আলফা: (_A)"
+
+#. I18N: label for the enter transparency slider
+#: ../panel/panel-preferences-dialog.glade.h:41
+msgid "_Enter:"
+msgstr "প্রবেশ: (_E)"
+
+#: ../panel/panel-preferences-dialog.glade.h:42
+#, fuzzy
+msgid "_File:"
+msgstr "শৈলী: (_S)"
+
+#. I18N: label for the leave transparency slider
+#: ../panel/panel-preferences-dialog.glade.h:44
+msgid "_Leave:"
+msgstr "প্রস্থান: (_L)"
+
+#: ../panel/panel-preferences-dialog.glade.h:45
+msgid "_Lock panel"
+msgstr "প্যানেল লক করা হবে (_L)"
+
+#: ../panel/panel-preferences-dialog.glade.h:46
+msgid "_Orientation:"
+msgstr "দিকবিন্যাস: (_O)"
+
+#: ../panel/panel-preferences-dialog.glade.h:47
+msgid "_Size (pixels):"
+msgstr "আকার (পিক্সেল): (_S)"
+
+#: ../panel/panel-preferences-dialog.glade.h:48
+#: ../plugins/separator/separator-dialog.glade.h:8
+msgid "_Style:"
+msgstr "শৈলী: (_S)"
+
+#: ../panel/panel-tic-tac-toe.c:123
+msgid "_New Game"
+msgstr "নতুন খেলা (_N)"
+
+#: ../panel/panel-tic-tac-toe.c:134
+msgid "_Level:"
+msgstr "লেভেল: (_L)"
+
+#: ../panel/panel-tic-tac-toe.c:140
+msgid "Novice"
+msgstr "শিক্ষানবীশ"
+
+#: ../panel/panel-tic-tac-toe.c:141
+#, fuzzy
+msgid "Intermediate"
+msgstr "মধ্যম"
+
+#: ../panel/panel-tic-tac-toe.c:142
+msgid "Experienced"
+msgstr "অভিজ্ঞ"
+
+#: ../panel/panel-tic-tac-toe.c:143
+msgid "Expert"
+msgstr "দক্ষ"
+
+#: ../migrate/main.c:78
+#, fuzzy
+msgid "Welcome to the first start of the panel"
+msgstr "Xfce প্যানেলের প্রথম আরম্ভতে স্বাগতম"
+
+#: ../migrate/main.c:80
+#, fuzzy
+msgid ""
+"Because the panel moved to a new system for storing the settings, it has to "
+"load a fresh initial configuration."
+msgstr ""
+"প্যানেলটি যেহেতু সেটিংসমূহ সংরক্ষণের জন্য নতুন একটি সিস্টেমে সরানো হয়েছে, এতে নতুন "
+"প্রারম্ভিক কনফিগারেশন লোড করতে হবে।"
+
+#: ../migrate/main.c:83
+msgid "Choose below which setup you want for the first startup."
+msgstr ""
+"নিম্নে উল্লিখিত সেটআপ থেকে প্রথম আরম্ভের জন্য আপনার পছন্দের সেটআপটি বেছে নিন।"
+
+#: ../migrate/main.c:89
+msgid "Migrate old config"
+msgstr "পুরোনো কনফিগারেশনে মাইগ্রেট করুন"
+
+#: ../migrate/main.c:90
+msgid "Migrate the old 4.6 configuration to Xfconf"
+msgstr "Xfconf-এ পুরোনো ৪.৬ কনফিগারেশনে মাইগ্রেট করা হবে"
+
+#: ../migrate/main.c:95
+msgid "Use default config"
+msgstr "পূর্বনির্ধারিত কনফিগারেশন ব্যবহার"
+
+#: ../migrate/main.c:96
+msgid "Load the default configuration"
+msgstr "পূর্বনির্ধারিত কনফিগারেশন লোড"
+
+#: ../migrate/main.c:102
+msgid "One empty panel"
+msgstr "একটি ফাঁকা প্যানেল"
+
+#: ../migrate/main.c:103
+msgid "Start with one empty panel"
+msgstr "একটি ফাঁকা প্যানেল দিয়ে শুরু করুন"
+
+#: ../migrate/main.c:115
+msgid "Failed to migrate the old panel configuration"
+msgstr "পুরোনো প্যানেল কনফিগারেশনে মাইগ্রেট করতে ব্যর্থ"
+
+#: ../migrate/main.c:125
+msgid "Failed to load the default configuration"
+msgstr "পূর্বনির্ধারিত কনফিগারেশন লোড করতে ব্যর্থ"
+
+#: ../plugins/actions/actions-dialog.glade.h:1
+#: ../plugins/actions/actions.desktop.in.h:1
+msgid "Action Buttons"
+msgstr "কাজের বোতাম"
+
+#: ../plugins/actions/actions-dialog.glade.h:2
+msgid "Button Actions"
+msgstr "বোতামের ক্রিয়া"
+
+#: ../plugins/actions/actions-dialog.glade.h:3
+msgid "_First button:"
+msgstr "প্রথম বোতাম: (_F)"
+
+#: ../plugins/actions/actions-dialog.glade.h:4
+msgid "_Second button:"
+msgstr "দ্বিতীয় বোতাম: (_S)"
+
+#: ../plugins/actions/actions.c:108
+msgid "Disabled"
+msgstr "নিষ্ক্রিয়"
+
+#: ../plugins/actions/actions.c:109
+msgid "Log Out Dialog"
+msgstr "লগআউট ডায়ালগ"
+
+#: ../plugins/actions/actions.c:110
 msgid "Log Out"
 msgstr "লগআউট"
 
-#: ../js/ui/endSessionDialog.js:65
-msgid "Click Log Out to quit these applications and log out of the system."
-msgstr "লগআউট ক্লিক করে অ্যাপ্লিকেশন বন্ধ এবং সিস্টেম থেকে লগআউট।"
-
-#: ../js/ui/endSessionDialog.js:66
-#, c-format
-msgid "%s will be logged out automatically in %d seconds."
-msgstr "%s থেকে স্বয়ংক্রিয়ভাবে %d সেকেন্ডের মধ্যে লগআউট।"
-
-#: ../js/ui/endSessionDialog.js:67
-#, c-format
-msgid "You will be logged out automatically in %d seconds."
-msgstr "আপনি স্বয়ংক্রিয়ভাবে %d সেকেন্ডের মধ্যে লগআউট হবেন।"
-
-#: ../js/ui/endSessionDialog.js:68
-msgid "Logging out of the system."
-msgstr "সিস্টেম থেকে লগ আউট।"
-
-#: ../js/ui/endSessionDialog.js:75 ../js/ui/endSessionDialog.js:82
-#, fuzzy
-msgid "Power Off"
-msgstr "পাওয়ার বন্ধ..."
-
-#: ../js/ui/endSessionDialog.js:76
-#, fuzzy
-msgid "Click Power Off to quit these applications and power off the system."
-msgstr "লগআউট ক্লিক করে অ্যাপ্লিকেশন বন্ধ এবং সিস্টেম থেকে লগআউট।"
-
-#: ../js/ui/endSessionDialog.js:77
-#, fuzzy, c-format
-msgid "The system will power off automatically in %d seconds."
-msgstr "সিস্টেম %d সেকেন্ডে স্বয়ংক্রিয়ভাবে রিস্টার্ট হবে।"
-
-#: ../js/ui/endSessionDialog.js:78
-#, fuzzy
-msgid "Powering off the system."
-msgstr "সিস্টেম থেকে লগ আউট।"
-
-#: ../js/ui/endSessionDialog.js:80 ../js/ui/endSessionDialog.js:88
-#: ../js/ui/endSessionDialog.js:93
-msgid "Restart"
-msgstr "রিস্টার্ট"
-
-#: ../js/ui/endSessionDialog.js:89
-msgid "Click Restart to quit these applications and restart the system."
-msgstr "এ অ্যাপ্লিকেশন বন্ধ করার জন্য রিস্টার্ট ক্লিক করে সিস্টেম রিস্টার্ট।"
-
-#: ../js/ui/endSessionDialog.js:90
-#, c-format
-msgid "The system will restart automatically in %d seconds."
-msgstr "সিস্টেম %d সেকেন্ডে স্বয়ংক্রিয়ভাবে রিস্টার্ট হবে।"
-
-#: ../js/ui/endSessionDialog.js:91
-msgid "Restarting the system."
-msgstr "সিস্টেম রিস্টার্ট করা হচ্ছে।"
-
-#: ../js/ui/endSessionDialog.js:417 ../js/ui/polkitAuthenticationAgent.js:172
-#: ../js/ui/status/bluetooth.js:466
-msgid "Cancel"
-msgstr "বাতিল"
-
-#: ../js/ui/lookingGlass.js:588
-msgid "No extensions installed"
-msgstr "কোনো এক্সটেনশন ইনস্টল করা হয়নি"
-
-#: ../js/ui/lookingGlass.js:625
-msgid "Enabled"
-msgstr "সক্রিয়"
-
-#. translators:
-#. * The device has been disabled
-#: ../js/ui/lookingGlass.js:627 ../src/gvc/gvc-mixer-control.c:1091
-msgid "Disabled"
-msgstr "নিস্ক্রিয়"
-
-#: ../js/ui/lookingGlass.js:629
-msgid "Error"
-msgstr "ত্রুটি"
-
-#: ../js/ui/lookingGlass.js:631
-msgid "Out of date"
-msgstr "সময় শেষ"
-
-#: ../js/ui/lookingGlass.js:656
-msgid "View Source"
-msgstr "সোর্স দেখুন"
-
-#: ../js/ui/lookingGlass.js:662
-msgid "Web Page"
-msgstr "ওয়েব পেজ"
-
-#: ../js/ui/messageTray.js:1000
-msgid "Open"
-msgstr "খুলুন"
-
-#: ../js/ui/messageTray.js:2164
-msgid "System Information"
-msgstr "সিস্টেম তথ্য"
-
-#: ../js/ui/overview.js:91
-msgid "Undo"
-msgstr "পূর্বাবস্থায় ফিরিয়ে নেয়া"
-
-#: ../js/ui/overview.js:186
-msgid "Windows"
-msgstr "উইন্ডো"
-
-#: ../js/ui/overview.js:189
-msgid "Applications"
-msgstr "অ্যাপ্লিকেশন"
-
-#. Translators: this is the name of the dock/favorites area on
-#. the left of the overview
-#: ../js/ui/overview.js:205
-msgid "Dash"
-msgstr "ড্যাশ"
-
-#. TODO - _quit() doesn't really work on apps in state STARTING yet
-#: ../js/ui/panel.js:524
-#, c-format
-msgid "Quit %s"
-msgstr "%s বন্ধ"
-
-#. Button on the left side of the panel.
-#. Translators: If there is no suitable word for "Activities" in your language, you can use the word for "Overview".
-#: ../js/ui/panel.js:902
-msgid "Activities"
-msgstr "অ্যাক্টিভিটিজ"
-
-#: ../js/ui/panel.js:1003
-msgid "Top Bar"
-msgstr "শীর্ষ বার"
-
-#: ../js/ui/placeDisplay.js:122
-#, c-format
-msgid "Failed to unmount '%s'"
-msgstr "'%s' আনমাউন্ট করতে ব্যর্থ"
-
-#: ../js/ui/placeDisplay.js:125
-msgid "Retry"
-msgstr "পুনরায় চেষ্টা"
-
-#: ../js/ui/placeDisplay.js:165
-msgid "Connect to..."
-msgstr "সংযুক্ত..."
-
-#: ../js/ui/placeDisplay.js:380
-msgid "PLACES & DEVICES"
-msgstr "স্থান এবং ডিভাইস"
-
-#: ../js/ui/polkitAuthenticationAgent.js:74
-#, fuzzy
-msgid "Authentication Required"
-msgstr "প্রমাণীকরণ আবশ্যক"
-
-#: ../js/ui/polkitAuthenticationAgent.js:108
-msgid "Administrator"
-msgstr ""
-
-#: ../js/ui/polkitAuthenticationAgent.js:176
-#, fuzzy
-msgid "Authenticate"
-msgstr "প্রমাণীকরণ আবশ্যক"
-
-#. Translators: "that didn't work" refers to the fact that the
-#. * requested authentication was not gained; this can happen
-#. * because of an authentication error (like invalid password),
-#. * for instance.
-#: ../js/ui/polkitAuthenticationAgent.js:264
-msgid "Sorry, that didn't work. Please try again."
-msgstr ""
-
-#: ../js/ui/polkitAuthenticationAgent.js:276
-msgid "Password:"
-msgstr ""
-
-#. Translators: this MUST be either "toggle-switch-us"
-#. (for toggle switches containing the English words
-#. "ON" and "OFF") or "toggle-switch-intl" (for toggle
-#. switches containing "◯" and "|"). Other values will
-#. simply result in invisible toggle switches.
-#: ../js/ui/popupMenu.js:679
-msgid "toggle-switch-us"
-msgstr "টগল-পরিবর্তন-আমাদের"
-
-#: ../js/ui/runDialog.js:205
-msgid "Please enter a command:"
-msgstr "অনুগ্রহ করে একটি কমান্ড দিন:"
-
-#: ../js/ui/searchDisplay.js:311
-msgid "Searching..."
-msgstr "অনুসন্ধান..."
-
-#: ../js/ui/searchDisplay.js:325
-msgid "No matching results."
-msgstr "মিলযুক্ত কোনো ফলাফল নেই।"
-
-#: ../js/ui/statusMenu.js:161 ../js/ui/statusMenu.js:163
-#: ../js/ui/statusMenu.js:228
-msgid "Power Off..."
-msgstr "পাওয়ার বন্ধ..."
-
-#: ../js/ui/statusMenu.js:163 ../js/ui/statusMenu.js:227
-msgid "Suspend"
-msgstr "বাতিল"
-
-#: ../js/ui/statusMenu.js:184
-msgid "Available"
-msgstr "বিদ্যমান"
-
-#: ../js/ui/statusMenu.js:189
-msgid "Busy"
-msgstr "ব্যস্ত"
-
-#: ../js/ui/statusMenu.js:197
-msgid "My Account"
-msgstr "আমার অ্যাকাউন্ট"
-
-#: ../js/ui/statusMenu.js:201
-msgid "System Settings"
-msgstr "সিস্টেম সেটিং"
-
-#: ../js/ui/statusMenu.js:208
+#: ../plugins/actions/actions.c:111
 msgid "Lock Screen"
-msgstr "লক স্ক্রিন"
+msgstr "পর্দা লক করা হবে"
 
-#: ../js/ui/statusMenu.js:213
-msgid "Switch User"
-msgstr "ব্যবহারকারী পরিবর্তন"
+#: ../plugins/actions/actions.c:112
+msgid "Shut Down"
+msgstr "বন্ধ করা হবে"
 
-#: ../js/ui/statusMenu.js:218
-msgid "Log Out..."
-msgstr "লগআউট..."
+#: ../plugins/actions/actions.c:113
+msgid "Restart"
+msgstr "পুনরায় আরম্ভ"
 
-#: ../js/ui/status/accessibility.js:62
-msgid "Zoom"
-msgstr "বড় আকারে প্রদর্শন"
+#: ../plugins/actions/actions.c:114
+msgid "Suspend"
+msgstr "স্থগিত করা হবে"
 
-#. let screenReader = this._buildItem(_("Screen Reader"), APPLICATIONS_SCHEMA,
-#. 'screen-reader-enabled');
-#. this.menu.addMenuItem(screenReader);
-#. let screenKeyboard = this._buildItem(_("Screen Keyboard"), APPLICATIONS_SCHEMA,
-#. 'screen-keyboard-enabled');
-#. this.menu.addMenuItem(screenKeyboard);
-#: ../js/ui/status/accessibility.js:77
-msgid "Visual Alerts"
-msgstr "দৃষ্টিনির্ভর সতর্কবানী"
+#: ../plugins/actions/actions.c:115
+msgid "Hibernate"
+msgstr "নিদ্রিত করা হবে"
 
-#: ../js/ui/status/accessibility.js:80
-msgid "Sticky Keys"
-msgstr "স্টিকি কী"
+#: ../plugins/actions/actions.desktop.in.h:2
+msgid "Log out, lock or other system actions"
+msgstr "লগআউট, আবদ্ধ বা অন্যান্য সিস্টেম সম্পর্কিত কাজ"
 
-#: ../js/ui/status/accessibility.js:83
-msgid "Slow Keys"
-msgstr "ধীর গতির কী"
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:1
+#: ../plugins/clock/clock-dialog.glade.h:3
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:1
+#: ../plugins/pager/pager-dialog.glade.h:1
+#: ../plugins/separator/separator-dialog.glade.h:1
+#: ../plugins/systray/systray-dialog.glade.h:1
+#: ../plugins/tasklist/tasklist-dialog.glade.h:2
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:1
+msgid "Appearance"
+msgstr "অবয়ব"
 
-#: ../js/ui/status/accessibility.js:86
-msgid "Bounce Keys"
-msgstr "বাউন্স কী"
+#. I18N: default tooltip of the application menu
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:2
+#: ../plugins/applicationsmenu/applicationsmenu.c:38
+#: ../plugins/applicationsmenu/applicationsmenu.desktop.in.h:1
+msgid "Applications Menu"
+msgstr "অ্যাপ্লিকেশন মেনু"
 
-#: ../js/ui/status/accessibility.js:89
-msgid "Mouse Keys"
-msgstr "মাউস কী"
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:3
+msgid "Button _title:"
+msgstr "বোতামের শিরোনাম: (_t)"
 
-#: ../js/ui/status/accessibility.js:93
-msgid "Universal Access Settings"
-msgstr "সার্বজনীন ব্যবহার করার সেটিং"
-
-#: ../js/ui/status/accessibility.js:146
-msgid "High Contrast"
-msgstr "উচ্চ বৈশাদৃশ্য"
-
-#: ../js/ui/status/accessibility.js:183
-msgid "Large Text"
-msgstr "বড় টেক্সট"
-
-#: ../js/ui/status/bluetooth.js:42 ../js/ui/status/bluetooth.js:237
-#: ../js/ui/status/bluetooth.js:333 ../js/ui/status/bluetooth.js:367
-#: ../js/ui/status/bluetooth.js:407 ../js/ui/status/bluetooth.js:440
-msgid "Bluetooth"
-msgstr "ব্লুটুথ"
-
-#: ../js/ui/status/bluetooth.js:55
-msgid "Visibility"
-msgstr "দৃশ্যমানতা"
-
-#: ../js/ui/status/bluetooth.js:69
-msgid "Send Files to Device..."
-msgstr "ডিভাইসে ফাইল প্রেরণ..."
-
-#: ../js/ui/status/bluetooth.js:70
-msgid "Setup a New Device..."
-msgstr "নতুন ডিভাইস সেটআপ..."
-
-#: ../js/ui/status/bluetooth.js:95
-msgid "Bluetooth Settings"
-msgstr "ব্লুটুথ সেটিং"
-
-#: ../js/ui/status/bluetooth.js:188
-msgid "Connection"
-msgstr "সংযোগ"
-
-#: ../js/ui/status/bluetooth.js:224
-msgid "Send Files..."
-msgstr "ফাইল প্রেরণ..."
-
-#: ../js/ui/status/bluetooth.js:229
-msgid "Browse Files..."
-msgstr "ফাইল ব্রাউজ..."
-
-#: ../js/ui/status/bluetooth.js:238
-msgid "Error browsing device"
-msgstr "ডিভাইস ব্রাউজিং ত্রুটি"
-
-#: ../js/ui/status/bluetooth.js:239
-#, c-format
-msgid "The requested device cannot be browsed, error is '%s'"
-msgstr "অনুরোধকৃত ডিভাইস ব্রাউজ করা যায়না, ত্রুটি '%s'"
-
-#: ../js/ui/status/bluetooth.js:247
-msgid "Keyboard Settings"
-msgstr "কীবোর্ড সেটিং"
-
-#: ../js/ui/status/bluetooth.js:252
-msgid "Mouse Settings"
-msgstr "মাউস সেটিং"
-
-#: ../js/ui/status/bluetooth.js:259 ../js/ui/status/volume.js:66
-msgid "Sound Settings"
-msgstr "শব্দ সেটিং"
-
-#: ../js/ui/status/bluetooth.js:368
-#, c-format
-msgid "Authorization request from %s"
-msgstr "%s হতে প্রমানীকরণের জন্য অনুরোধ"
-
-#: ../js/ui/status/bluetooth.js:374
-#, c-format
-msgid "Device %s wants access to the service '%s'"
-msgstr "সার্ভিস '%s'  ডিভাইস %s ব্যবহার করতে চায়"
-
-#: ../js/ui/status/bluetooth.js:376
-msgid "Always grant access"
-msgstr "সর্বদা ব্যবহারের অনুমোদন"
-
-#: ../js/ui/status/bluetooth.js:377
-msgid "Grant this time only"
-msgstr "কেবল এইবার অনুমোদন"
-
-#: ../js/ui/status/bluetooth.js:378
-msgid "Reject"
-msgstr "বাতিল"
-
-#: ../js/ui/status/bluetooth.js:408
-#, c-format
-msgid "Pairing confirmation for %s"
-msgstr "%s এ র জন্য নিশ্চিতকরণ মিলানো হচ্ছে"
-
-#: ../js/ui/status/bluetooth.js:414 ../js/ui/status/bluetooth.js:448
-#, c-format
-msgid "Device %s wants to pair with this computer"
-msgstr "ডিভাইস %s কম্পিউটারের এর সাথে পেয়ার করতে চায়"
-
-#: ../js/ui/status/bluetooth.js:415
-#, c-format
-msgid "Please confirm whether the PIN '%s' matches the one on the device."
-msgstr "অনুগ্রহ করে নিশ্চিত হোন যে পিন '%s' ডিভাইসের পিনের সাথে মিলে কিনা।"
-
-#: ../js/ui/status/bluetooth.js:417
-msgid "Matches"
-msgstr "মিল"
-
-#: ../js/ui/status/bluetooth.js:418
-msgid "Does not match"
-msgstr "মিলে না"
-
-#: ../js/ui/status/bluetooth.js:441
-#, c-format
-msgid "Pairing request for %s"
-msgstr "%s এর সাথে পেয়ার করার অনুরোধ"
-
-#: ../js/ui/status/bluetooth.js:449
-msgid "Please enter the PIN mentioned on the device."
-msgstr "ডিভাইসে উল্লেখিত পিন দিন।"
-
-#: ../js/ui/status/bluetooth.js:465
-msgid "OK"
-msgstr "ঠিক আছে"
-
-#: ../js/ui/status/keyboard.js:73
-msgid "Show Keyboard Layout..."
-msgstr "কীবোর্ডের লেআউট প্রদর্শন..."
-
-#: ../js/ui/status/keyboard.js:76
-msgid "Localization Settings"
-msgstr "স্থানীয়করণ সেটিং"
-
-#: ../js/ui/status/network.js:105 ../js/ui/status/network.js:1467
-msgid "<unknown>"
-msgstr "<unknown>"
-
-#. Translators: this indicates that wireless or wwan is disabled by hardware killswitch
-#: ../js/ui/status/network.js:319
-msgid "disabled"
-msgstr "নিস্ক্রিয়"
-
-#: ../js/ui/status/network.js:502
-msgid "connecting..."
-msgstr "সংযুক্ত করা হচ্ছে..."
-
-#. Translators: this is for network connections that require some kind of key or password
-#: ../js/ui/status/network.js:505
-msgid "authentication required"
-msgstr "প্রমাণীকরণ আবশ্যক"
-
-#. Translators: this is for devices that require some kind of firmware or kernel
-#. module, which is missing
-#: ../js/ui/status/network.js:515
-msgid "firmware missing"
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:4
+msgid "Ed_it Menu"
 msgstr ""
 
-#. Translators: this is for wired network devices that are physically disconnected
-#: ../js/ui/status/network.js:522
-msgid "cable unplugged"
-msgstr "ক্যাবল আনপ্লাগকৃত"
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:5
+msgid "Menu File"
+msgstr "মেনু ফাইল"
 
-#. Translators: this is for a network device that cannot be activated (for example it
-#. is disabled by rfkill, or it has no coverage
-#: ../js/ui/status/network.js:527
-msgid "unavailable"
-msgstr "বিদ্যমান নয়"
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:6
+msgid "Menu _file:"
+msgstr "মেনু ফাইল: (_f)"
 
-#: ../js/ui/status/network.js:529
-msgid "connection failed"
-msgstr "সংযোগ ব্যর্থ"
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:7
+msgid "Select A Menu File"
+msgstr "একটি মেনু ফাইল নির্বাচন করা হবে"
 
-#. TRANSLATORS: this is the indication that a connection for another logged in user is active,
-#. and we cannot access its settings (including the name)
-#: ../js/ui/status/network.js:609 ../js/ui/status/network.js:1415
-msgid "Connected (private)"
-msgstr "সংযুক্ত (ব্যক্তিগত)"
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:8
+msgid ""
+"Select this option to show the generic application name in the menu, for "
+"example \"File Manager\" instead of \"Thunar\""
+msgstr ""
+"মেনুতে সাধারণ অ্যাপ্লিকেশনের নাম প্রদর্শন করতে এই অপশনটি নির্বাচন করুন, উদাহরণস্বরূপ "
+"\"Thunar\"-এর পরিবর্তে \"ফাইল ব্যবস্থাপক\""
 
-#: ../js/ui/status/network.js:690
-msgid "Auto Ethernet"
-msgstr "স্বয়ংক্রিয় ইথারনেট"
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:9
+#, fuzzy
+msgid "Show application d_escription in tooltip"
+msgstr "টুলটিপে অ্যাপ্লিকেশনের বিবরণ প্রদর্শন (_o)"
 
-#: ../js/ui/status/network.js:765
-msgid "Auto broadband"
-msgstr "স্বয়ংক্রিয় ব্রডব্যান্ড"
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:10
+msgid "Show generic application n_ames"
+msgstr "সাধারণ অ্যাপ্লিকেশনের নাম প্রদর্শন (_a)"
 
-#: ../js/ui/status/network.js:768
-msgid "Auto dial-up"
-msgstr "স্বয়ংক্রিয় ডায়াল-আপ"
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:11
+msgid "Show ic_ons in menu"
+msgstr "মেনুতে আইকন প্রদর্শন করা হবে (_o)"
 
-#. TRANSLATORS: this the automatic wireless connection name (including the network name)
-#: ../js/ui/status/network.js:911 ../js/ui/status/network.js:1427
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:12
+#, fuzzy
+msgid "Use c_ustom menu file:"
+msgstr "পছন্দসই মেনু ফাইল ব্যবহার করা হবে (_u)"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:13
+#, fuzzy
+msgid "Use the _default menu"
+msgstr "ডিফল্ট মেনু ফাইল ব্যবহার করা হবে (_d)"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:14
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:9
+msgid "_Icon:"
+msgstr "আইকন: (_I)"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:15
+msgid "_Show button title"
+msgstr "বোতামের শিরোনাম প্রদর্শন করা হবে (_S)"
+
+#: ../plugins/applicationsmenu/applicationsmenu.c:475
+#: ../plugins/directorymenu/directorymenu.c:369
+msgid "Select An Icon"
+msgstr "একটি আইকন নির্বাচন করা হবে"
+
+#: ../plugins/applicationsmenu/applicationsmenu.c:513
+#: ../plugins/applicationsmenu/applicationsmenu.c:754
+#: ../plugins/launcher/launcher.c:2264
 #, c-format
-msgid "Auto %s"
-msgstr "স্বয়ংক্রিয় %s"
+msgid "Failed to execute command \"%s\"."
+msgstr "\"%s\" কমান্ডটি এক্সিকিউট করতে ব্যর্থ।"
 
-#: ../js/ui/status/network.js:913
-msgid "Auto bluetooth"
-msgstr "স্বয়ংক্রিয় ব্লুটুথ"
+#: ../plugins/applicationsmenu/applicationsmenu.c:1010
+msgid "No applications found"
+msgstr "কোন অ্যাপ্লিকেশন পাওয়া যায়নি"
 
-#: ../js/ui/status/network.js:1429
-msgid "Auto wireless"
-msgstr "স্বয়ংক্রিয় ওয়ারলেস"
+#: ../plugins/applicationsmenu/applicationsmenu.c:1033
+msgid "Failed to load the applications menu"
+msgstr "অ্যপ্লিকেশন মেনু লোড করতে ব্যর্থ"
 
-#: ../js/ui/status/network.js:1487
-msgid "More..."
-msgstr "আরও..."
+#: ../plugins/applicationsmenu/applicationsmenu.desktop.in.h:2
+msgid "Show a menu containing categories of installed applications"
+msgstr "ইনস্টলকৃত অ্যাপ্লিকেশনসমূহের শ্রেণীবিভাগ ধারণকারী মেনু প্রদর্শন"
 
-#: ../js/ui/status/network.js:1510
-msgid "Enable networking"
-msgstr "নেটওয়ার্কিং সক্রিয়"
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:27
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:27
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:27
+msgid "Usage:"
+msgstr "ব্যবহার:"
 
-#: ../js/ui/status/network.js:1522
-msgid "Wired"
-msgstr "সংযুক্ত"
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:28
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:28
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:28
+msgid "OPTION"
+msgstr "OPTION"
 
-#: ../js/ui/status/network.js:1533
-msgid "Wireless"
-msgstr "ওয়ারলেস"
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:30
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:30
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:30
+msgid "Options:"
+msgstr "অপশন:"
 
-#: ../js/ui/status/network.js:1543
-msgid "Mobile broadband"
-msgstr "মোবাইল ব্রডব্যান্ড"
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:31
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:31
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:31
+msgid "Popup menu at current mouse position"
+msgstr "বর্তমান মাউস অবস্থানে পপআপ মেনু"
 
-#: ../js/ui/status/network.js:1553
-msgid "VPN Connections"
-msgstr "VPN সংযোগ"
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:32
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:32
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:32
+msgid "Show help options"
+msgstr "সহায়তা অপশন প্রদর্শন"
 
-#: ../js/ui/status/network.js:1565
-msgid "Network Settings"
-msgstr "নেটওয়ার্ক সেটিং"
+#: ../plugins/clock/clock.c:146
+msgid "Week %V"
+msgstr "সপ্তাহ %V"
 
-#: ../js/ui/status/network.js:1855
-#, c-format
-msgid "You're now connected to mobile broadband connection '%s'"
-msgstr "আপনি এখন মোবাইল ব্রডব্যান্ড সংযোগ '%s' এ সংযুক্ত"
+#: ../plugins/clock/clock.c:407
+msgid "Failed to execute clock command"
+msgstr "ঘড়ির কমান্ড চালাতে ব্যর্থ"
 
-#: ../js/ui/status/network.js:1859
-#, c-format
-msgid "You're now connected to wireless network '%s'"
-msgstr "আপনি এখন ওয়ারলেস নেটওয়ার্ক সংযোগে '%s' এ সংযুক্ত"
+#: ../plugins/clock/clock.c:719
+msgid "Custom Format"
+msgstr "স্বনির্বাচিত বিন্যাস"
 
-#: ../js/ui/status/network.js:1863
-#, c-format
-msgid "You're now connected to wired network '%s'"
-msgstr "আপনি এখন তারযুক্ত সংযোগে '%s' এ সংযুক্ত"
+#: ../plugins/clock/clock-dialog.glade.h:1
+msgid "24-_hour clock"
+msgstr "২৪ ঘন্টার ঘড়ি (_h)"
 
-#: ../js/ui/status/network.js:1867
-#, c-format
-msgid "You're now connected to VPN network '%s'"
-msgstr "আপনি এখন VPN নেটওয়ার্ক সংযোগ '%s' এ সংযুক্ত"
+#: ../plugins/clock/clock-dialog.glade.h:2
+msgid "Analog"
+msgstr "অ্যানালগ"
 
-#: ../js/ui/status/network.js:1872
-#, c-format
-msgid "You're now connected to '%s'"
-msgstr "আপনি এখন '%s' এ সংযুক্ত"
+#: ../plugins/clock/clock-dialog.glade.h:4
+msgid "Binary"
+msgstr "বাইনারি"
 
-#: ../js/ui/status/network.js:1880
-msgid "Connection established"
-msgstr "সংযোগ প্রতিষ্ঠিত"
+#: ../plugins/clock/clock-dialog.glade.h:5
+#: ../plugins/clock/clock.desktop.in.h:1
+msgid "Clock"
+msgstr "ঘড়ি"
 
-#: ../js/ui/status/network.js:2006
-msgid "Networking is disabled"
-msgstr "নেটওয়ার্কিং বিচ্ছিন্ন"
+#: ../plugins/clock/clock-dialog.glade.h:6
+msgid "Clock Options"
+msgstr "ঘড়ির অপশন"
 
-#: ../js/ui/status/network.js:2131
-msgid "Network Manager"
-msgstr "নেটওয়ার্ক ব্যবস্থাপক"
+#: ../plugins/clock/clock-dialog.glade.h:7
+msgid "Digital"
+msgstr "ডিজিটাল"
 
-#: ../js/ui/status/power.js:85
-msgid "Power Settings"
-msgstr "পাওয়ার সেটিং"
+#: ../plugins/clock/clock-dialog.glade.h:8
+msgid "Display _seconds"
+msgstr "সেকেন্ড প্রদর্শন করা হবে (_s)"
 
-#. 0 is reported when UPower does not have enough data
-#. to estimate battery life
-#: ../js/ui/status/power.js:111
-msgid "Estimating..."
-msgstr "গণনা করা হচ্ছে..."
+#: ../plugins/clock/clock-dialog.glade.h:9
+msgid "F_ormat:"
+msgstr "বিন্যাস: (_o)"
 
-#: ../js/ui/status/power.js:118
-#, c-format
-msgid "%d hour remaining"
-msgid_plural "%d hours remaining"
-msgstr[0] "%d  ঘন্টা বাকি"
-msgstr[1] "%d  ঘন্টা বাকি"
+#. I18N: the fuzziness the *precision* of the fuzzy clock. Time steps of 5, 15 or parts of the day.
+#: ../plugins/clock/clock-dialog.glade.h:11
+msgid "F_uzziness:"
+msgstr "ফাজিনেস‌: (_u)"
 
-#. TRANSLATORS: this is a time string, as in "%d hours %d minutes remaining"
-#: ../js/ui/status/power.js:121
-#, c-format
-msgid "%d %s %d %s remaining"
-msgstr "%d %s %d %s বাকি"
+#: ../plugins/clock/clock-dialog.glade.h:12
+#, fuzzy
+msgid "Fl_ash time separators"
+msgstr "ফ্যাশ টাইম সেপারেটর (_a)"
 
-#: ../js/ui/status/power.js:123
-msgid "hour"
-msgid_plural "hours"
-msgstr[0] "ঘন্টা"
-msgstr[1] "ঘন্টা"
+#: ../plugins/clock/clock-dialog.glade.h:13
+msgid "Fuzzy"
+msgstr "ফাজি"
 
-#: ../js/ui/status/power.js:123
-msgid "minute"
-msgid_plural "minutes"
-msgstr[0] "মিনিট"
-msgstr[1] "মিনিট"
+#: ../plugins/clock/clock-dialog.glade.h:14
+msgid "LCD"
+msgstr "LCD"
 
-#: ../js/ui/status/power.js:126
-#, c-format
-msgid "%d minute remaining"
-msgid_plural "%d minutes remaining"
-msgstr[0] "%d মিনিট বাকি"
-msgstr[1] "%d মিনিট বাকি"
+#: ../plugins/clock/clock-dialog.glade.h:15
+msgid "Sho_w AM/PM"
+msgstr "AM/PM প্রদর্শন করা হবে (_w)"
 
-#: ../js/ui/status/power.js:228
-msgid "AC adapter"
-msgstr "AC অ্যাডাপ্টার"
+#: ../plugins/clock/clock-dialog.glade.h:16
+#: ../plugins/systray/systray-dialog.glade.h:5
+msgid "Show _frame"
+msgstr "ফ্রেম প্রদর্শন করা হবে (_f)"
 
-#: ../js/ui/status/power.js:230
-msgid "Laptop battery"
-msgstr "ল্যাপটপ ব্যাটারি"
+#: ../plugins/clock/clock-dialog.glade.h:17
+msgid "Show _inactive dots"
+msgstr "নিষ্ক্রিয় ডট প্রদর্শন করা হবে (_i) "
 
-#: ../js/ui/status/power.js:232
-msgid "UPS"
-msgstr "UPS"
+#: ../plugins/clock/clock-dialog.glade.h:18
+msgid "Show gri_d"
+msgstr "গ্রিড প্রদর্শন করা হবে (_d)"
 
-#: ../js/ui/status/power.js:234
-msgid "Monitor"
-msgstr "মনিটর"
-
-#: ../js/ui/status/power.js:236
-msgid "Mouse"
-msgstr "মাউস"
-
-#: ../js/ui/status/power.js:238
-msgid "Keyboard"
-msgstr "কীবোর্ড"
-
-#: ../js/ui/status/power.js:240
-msgid "PDA"
-msgstr "PDA"
-
-#: ../js/ui/status/power.js:242
-msgid "Cell phone"
-msgstr "সেল ফোন"
-
-#: ../js/ui/status/power.js:244
-msgid "Media player"
-msgstr "মিডিয়া প্লেয়ার"
-
-#: ../js/ui/status/power.js:246
-msgid "Tablet"
-msgstr "ট্যাবলেট"
-
-#: ../js/ui/status/power.js:248
-msgid "Computer"
-msgstr "কম্পিউটার"
-
-#: ../js/ui/status/power.js:250 ../src/shell-app-system.c:1088
-msgid "Unknown"
-msgstr "অজানা"
-
-#: ../js/ui/status/volume.js:45
-msgid "Volume"
-msgstr "ভলিউম"
-
-#: ../js/ui/status/volume.js:58
-msgid "Microphone"
-msgstr "মাইক্রোফোন"
-
-#: ../js/ui/telepathyClient.js:335
-#, c-format
-msgid "%s is online."
-msgstr "%s অনলাইনে।"
-
-#: ../js/ui/telepathyClient.js:340
-#, c-format
-msgid "%s is offline."
-msgstr "%s অফলাইনে।"
-
-#: ../js/ui/telepathyClient.js:343
-#, c-format
-msgid "%s is away."
-msgstr "%s কাছে নেই।"
-
-#: ../js/ui/telepathyClient.js:346
-#, c-format
-msgid "%s is busy."
-msgstr "%s ব্যস্ত।"
-
-#. Translators: this is a time format string followed by a date.
-#. If applicable, replace %X with a strftime format valid for your
-#. locale, without seconds.
-#: ../js/ui/telepathyClient.js:482
+#: ../plugins/clock/clock-dialog.glade.h:20
 #, no-c-format
-msgid "Sent at %X on %A"
-msgstr "%A এ %X প্রেরণ"
+msgid ""
+"The format describes the date and time parts to insert into the file name. "
+"For example, %Y will be substituted with the year, %m with the month and %d "
+"with the day. See the documentation of the date utility for additional "
+"information."
+msgstr ""
+"ফাইলের নামে যে তারিখ ও সময়ের অংশ সংযোজন করতে হবে তার বিন্যাস নির্ধারণ করে। "
+"উদাহরণস্বরূপ, %Y বছরের বিকল্প হিসেবে প্রতিস্থাপিত হবে, %m মাসের বিকল্প হিসেবে এবং "
+"%d দিনের বিকল্প হিসেবে। আরও বিস্তারিত তথ্যের জন্য তারিখ উপযোগিতার নথি দেখুন।"
 
-#. Translators: this is the text displayed
-#. in the search entry when no search is
-#. active; it should not exceed ~30
-#. characters.
-#: ../js/ui/viewSelector.js:122
-msgid "Type to search..."
-msgstr "অনুসন্ধান করতে লিখুন..."
+#: ../plugins/clock/clock-dialog.glade.h:21
+msgid "True _binary clock"
+msgstr "ট্রু বাইনারি ঘড়ি (_b)"
 
-#: ../js/ui/viewSelector.js:142 ../src/shell-util.c:250
-msgid "Search"
-msgstr "অনুসন্ধান"
+#: ../plugins/clock/clock-dialog.glade.h:22
+msgid "_Layout:"
+msgstr "বহির্বিন্যাস: (_L)"
 
-#: ../js/ui/windowAttentionHandler.js:42
+#: ../plugins/clock/clock-dialog.glade.h:23
+msgid "_Tooltip format:"
+msgstr "টুলটিপ বিন্যাস: (_T)"
+
+#: ../plugins/clock/clock-fuzzy.c:86
+msgid "Night"
+msgstr "রাত"
+
+#: ../plugins/clock/clock-fuzzy.c:87
+msgid "Early morning"
+msgstr "খুব সকাল"
+
+#: ../plugins/clock/clock-fuzzy.c:88
+msgid "Morning"
+msgstr "সকাল"
+
+#: ../plugins/clock/clock-fuzzy.c:89
+msgid "Almost noon"
+msgstr "প্রায় মধ্যাহ্ন"
+
+#: ../plugins/clock/clock-fuzzy.c:90
+msgid "Noon"
+msgstr "মধ্যাহ্ন"
+
+#: ../plugins/clock/clock-fuzzy.c:91
+msgid "Afternoon"
+msgstr "অপরাহ্ন"
+
+#: ../plugins/clock/clock-fuzzy.c:92
+msgid "Evening"
+msgstr "সন্ধ্যা"
+
+#: ../plugins/clock/clock-fuzzy.c:93
+msgid "Late evening"
+msgstr "সন্ধ্যার পরে"
+
+#. I18N: %0 will be replaced with the preceding hour, %1 with
+#. * the comming hour
+#: ../plugins/clock/clock-fuzzy.c:100
+#, no-c-format
+msgid "%0 o'clock"
+msgstr "%0 ঘটিকায়"
+
+#: ../plugins/clock/clock-fuzzy.c:101
+#, no-c-format
+msgid "five past %0"
+msgstr "%0 এর পাঁচ মিনিট পরে"
+
+#: ../plugins/clock/clock-fuzzy.c:102
+#, no-c-format
+msgid "ten past %0"
+msgstr "%0 এর দশ মিনিট পরে"
+
+#: ../plugins/clock/clock-fuzzy.c:103
+#, no-c-format
+msgid "quarter past %0"
+msgstr "%0 এর পনের মিনিট পরে"
+
+#: ../plugins/clock/clock-fuzzy.c:104
+#, no-c-format
+msgid "twenty past %0"
+msgstr "%0 এর বিশ মিনিট পরে"
+
+#: ../plugins/clock/clock-fuzzy.c:105
+#, no-c-format
+msgid "twenty five past %0"
+msgstr "%0 এর পঁচিশ মিনিট পরে"
+
+#: ../plugins/clock/clock-fuzzy.c:106
+#, no-c-format
+msgid "half past %0"
+msgstr "%0 এর আধা ঘন্টা পরে"
+
+#: ../plugins/clock/clock-fuzzy.c:107
+#, no-c-format
+msgid "twenty five to %1"
+msgstr "%1 বাজতে পঁচিশ মিনিট বাকি"
+
+#: ../plugins/clock/clock-fuzzy.c:108
+#, no-c-format
+msgid "twenty to %1"
+msgstr "%1 বাজতে বিশ মিনিট বাকি"
+
+#: ../plugins/clock/clock-fuzzy.c:109
+#, no-c-format
+msgid "quarter to %1"
+msgstr "%1 বাজতে পনের মিনিট বাকি"
+
+#: ../plugins/clock/clock-fuzzy.c:110
+#, no-c-format
+msgid "ten to %1"
+msgstr "%1 বাজতে দশ মিনিট বাকি"
+
+#: ../plugins/clock/clock-fuzzy.c:111
+#, no-c-format
+msgid "five to %1"
+msgstr "%1 বাজতে পাঁচ মিনিট বাকি"
+
+#: ../plugins/clock/clock-fuzzy.c:112
+#, no-c-format
+msgid "%1 o'clock"
+msgstr "%1 ঘটিকা"
+
+#. I18N: some languages have a singular form for the first hour,
+#. * other languages should just use the same strings as above
+#: ../plugins/clock/clock-fuzzy.c:119
+#, no-c-format
+msgctxt "one"
+msgid "%0 o'clock"
+msgstr "%0 ঘটিকা"
+
+#: ../plugins/clock/clock-fuzzy.c:120
+#, no-c-format
+msgctxt "one"
+msgid "five past %0"
+msgstr "%0 এর পাঁচ মিনিট পরে"
+
+#: ../plugins/clock/clock-fuzzy.c:121
+#, no-c-format
+msgctxt "one"
+msgid "ten past %0"
+msgstr "%0 এর দশ মিনিট পরে"
+
+#: ../plugins/clock/clock-fuzzy.c:122
+#, no-c-format
+msgctxt "one"
+msgid "quarter past %0"
+msgstr "%0 এর পনের মিনিট পরে"
+
+#: ../plugins/clock/clock-fuzzy.c:123
+#, no-c-format
+msgctxt "one"
+msgid "twenty past %0"
+msgstr "%0 এর বিশ মিনিট পরে"
+
+#: ../plugins/clock/clock-fuzzy.c:124
+#, no-c-format
+msgctxt "one"
+msgid "twenty five past %0"
+msgstr "%0 এর পঁচিশ মিনিট পরে"
+
+#: ../plugins/clock/clock-fuzzy.c:125
+#, no-c-format
+msgctxt "one"
+msgid "half past %0"
+msgstr "%0 এর আধা ঘন্টা পরে"
+
+#: ../plugins/clock/clock-fuzzy.c:126
+#, no-c-format
+msgctxt "one"
+msgid "twenty five to %1"
+msgstr "%1 বাজতে পঁচিশ মিনিট বাকি"
+
+#: ../plugins/clock/clock-fuzzy.c:127
+#, no-c-format
+msgctxt "one"
+msgid "twenty to %1"
+msgstr "%1 বাজতে বিশ মিনিট বাকি"
+
+#: ../plugins/clock/clock-fuzzy.c:128
+#, no-c-format
+msgctxt "one"
+msgid "quarter to %1"
+msgstr "%1 বাজতে পনের মিনিট বাকি"
+
+#: ../plugins/clock/clock-fuzzy.c:129
+#, no-c-format
+msgctxt "one"
+msgid "ten to %1"
+msgstr "%1 বাজতে দশ মিনিট বাকি"
+
+#: ../plugins/clock/clock-fuzzy.c:130
+#, no-c-format
+msgctxt "one"
+msgid "five to %1"
+msgstr "%1 বাজতে পাঁচ মিনিট বাকি"
+
+#: ../plugins/clock/clock-fuzzy.c:131
+#, no-c-format
+msgctxt "one"
+msgid "%1 o'clock"
+msgstr "%1 ঘটিকা"
+
+#: ../plugins/clock/clock-fuzzy.c:136
+msgid "one"
+msgstr "এক"
+
+#: ../plugins/clock/clock-fuzzy.c:137
+msgid "two"
+msgstr "দুই"
+
+#: ../plugins/clock/clock-fuzzy.c:138
+msgid "three"
+msgstr "তিন"
+
+#: ../plugins/clock/clock-fuzzy.c:139
+msgid "four"
+msgstr "চার"
+
+#: ../plugins/clock/clock-fuzzy.c:140
+msgid "five"
+msgstr "পাঁচ"
+
+#: ../plugins/clock/clock-fuzzy.c:141
+msgid "six"
+msgstr "ছয়"
+
+#: ../plugins/clock/clock-fuzzy.c:142
+msgid "seven"
+msgstr "সাত"
+
+#: ../plugins/clock/clock-fuzzy.c:143
+msgid "eight"
+msgstr "আট"
+
+#: ../plugins/clock/clock-fuzzy.c:144
+msgid "nine"
+msgstr "নয়"
+
+#: ../plugins/clock/clock-fuzzy.c:145
+msgid "ten"
+msgstr "দশ"
+
+#: ../plugins/clock/clock-fuzzy.c:146
+msgid "eleven"
+msgstr "এগার"
+
+#: ../plugins/clock/clock-fuzzy.c:147
+msgid "twelve"
+msgstr "বার"
+
+#: ../plugins/clock/clock.desktop.in.h:2
+msgid "What time is it?"
+msgstr "কয়টা বাজে?"
+
+#: ../plugins/directorymenu/directorymenu.c:550
 #, c-format
-msgid "%s has finished starting"
-msgstr "%s শুরু করা শেষ"
+msgid "Failed to launch application \"%s\""
+msgstr "\"%s\" অ্যাপ্লিকেশন চালু করতে ব্যর্থ"
 
-#: ../js/ui/windowAttentionHandler.js:44
+#: ../plugins/directorymenu/directorymenu.c:581
 #, c-format
-msgid "'%s' is ready"
-msgstr "'%s' প্রস্তুত"
+msgid "Failed to query content type for \"%s\""
+msgstr "\"%s\" এর জন্য কোয়েরির বিষয়বস্তু টাইপ করতে ব্যর্থ"
 
-#. translators:
-#. * The number of sound outputs on a particular device
-#: ../src/gvc/gvc-mixer-control.c:1098
+#: ../plugins/directorymenu/directorymenu.c:590
 #, c-format
-msgid "%u Output"
-msgid_plural "%u Outputs"
-msgstr[0] "%u আউটপুট"
-msgstr[1] "%u আউটপুট"
+msgid "No default application found for \"%s\""
+msgstr "\"%s\" এর জন্য কোনো ডিফল্ট অ্যাপ্লিকেশন পাওয়া যায়নি"
 
-#. translators:
-#. * The number of sound inputs on a particular device
-#: ../src/gvc/gvc-mixer-control.c:1108
+#: ../plugins/directorymenu/directorymenu.c:605
 #, c-format
-msgid "%u Input"
-msgid_plural "%u Inputs"
-msgstr[0] "%u ইনপুট"
-msgstr[1] "%u ইনপুট"
+msgid "Failed to launch default application for \"%s\""
+msgstr "\"%s\" এর জন্য ডিফল্ট অ্যাপ্লিকেশন চালু করতে ব্যর্থ"
 
-#: ../src/gvc/gvc-mixer-control.c:1406
-msgid "System Sounds"
-msgstr "সিস্টেমের শব্দ"
-
-#: ../src/main.c:446
-msgid "Print version"
-msgstr "মুদ্রণ সংস্করণ"
-
-#: ../src/shell-app.c:454
+#: ../plugins/directorymenu/directorymenu.c:696
 #, c-format
-msgid "Failed to launch '%s'"
-msgstr "'%s' চালু করতে ব্যর্থ"
+msgid "Failed to execute the preferred application for category \"%s\""
+msgstr "\"%s\" এই ক্যাটাগরির জন্য পছন্দসই অ্যাপ্লিকেশন চালাতে ব্যর্থ"
 
-#: ../src/shell-global.c:1395
-msgid "Less than a minute ago"
-msgstr "এক মিনিটেরও কম সময় আগে"
+#: ../plugins/directorymenu/directorymenu.c:769
+msgid "Open Folder"
+msgstr "ফোল্ডার খুলুন"
 
-#: ../src/shell-global.c:1399
+#: ../plugins/directorymenu/directorymenu.c:780
+msgid "Open in Terminal"
+msgstr "টার্মিনালে খুলুন"
+
+#: ../plugins/directorymenu/directorymenu.desktop.in.h:1
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:2
+msgid "Directory Menu"
+msgstr "ডিরেক্টরি মেনু"
+
+#: ../plugins/directorymenu/directorymenu.desktop.in.h:2
+msgid "Show a directory tree in a menu"
+msgstr "মেনুতে একটি ডিরেক্টরি ট্রি প্রদর্শন"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:3
+msgid ""
+"Enter a list of patterns that will be used to determine which files are "
+"visible in a directory. If you specify more than one pattern here, the list "
+"items must be separated with semicolons (e.g. *.txt;*.doc)."
+msgstr ""
+"ডিরেক্টরিতে কোন কোন ফাইল দৃশ্যমান হবে তা নির্ধারণ করার জন্য প্যাটার্নের তালিকা দিন। "
+"আপনি যদি এখানে একটির বেশী প্যাটার্ন উল্লেখ করতে চান, তালিকার আইটেমগুলো অবশ্যই "
+"সেমিকোলন দ্বারা বিভাজিত হতে হবে (যেমন: *.txt;*.doc)।"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:4
+#: ../plugins/tasklist/tasklist-dialog.glade.h:5
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:5
+msgid "Filtering"
+msgstr "পরিশোধন করা হচ্ছে"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:5
+msgid "Select A Directory"
+msgstr "একটি ডিরেক্টরি নির্বাচন করা হবে"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:6
+msgid "Show _hidden files"
+msgstr "গোপন ফাইল প্রদর্শন করা হবে (_h)"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:7
+msgid "_Base Directory:"
+msgstr "ভিত্তি ডিরেক্টরি: (_B)"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:8
+msgid "_File Pattern:"
+msgstr "ফাইলের প্যাটার্ন: (_F)"
+
+#: ../plugins/launcher/launcher.c:1555
+msgid "Unnamed Item"
+msgstr "নামবিহীন আইটেম"
+
+#: ../plugins/launcher/launcher.c:1696
+msgid "No items"
+msgstr "কোন আইটেম নেই"
+
+#: ../plugins/launcher/launcher-dialog.c:740
+msgid "If you delete an item, it will be permanently removed"
+msgstr "আপনি কোনো আইটেম মুছে ফেললে, এটি স্থায়ীভাবে অপসারিত হবে"
+
+#: ../plugins/launcher/launcher-dialog.c:741
 #, c-format
-msgid "%d minute ago"
-msgid_plural "%d minutes ago"
-msgstr[0] "%d মিনিট আগে"
-msgstr[1] "%d মিনিট আগে"
+msgid "Are you sure you want to remove \"%s\"?"
+msgstr "আপনি \"%s\" মুছে ফেলতে চান?"
 
-#: ../src/shell-global.c:1404
-#, c-format
-msgid "%d hour ago"
-msgid_plural "%d hours ago"
-msgstr[0] "%d ঘন্টা আগে"
-msgstr[1] "%d ঘন্টা আগে"
+#: ../plugins/launcher/launcher-dialog.c:742
+msgid "Unnamed item"
+msgstr "নামবিহীন উপাদান"
 
-#: ../src/shell-global.c:1409
-#, c-format
-msgid "%d day ago"
-msgid_plural "%d days ago"
-msgstr[0] "%d দিন আগে"
-msgstr[1] "%d দিন আগে"
+#: ../plugins/launcher/launcher-dialog.c:787
+msgid "Failed to open desktop item editor"
+msgstr "ডেস্কটপ আইটেম সম্পাদক খুলতে ব্যর্থ"
 
-#: ../src/shell-global.c:1414
-#, c-format
-msgid "%d week ago"
-msgid_plural "%d weeks ago"
-msgstr[0] "%d সপ্তাহ আগে"
-msgstr[1] "%d সপ্তাহ আগে"
+#: ../plugins/launcher/launcher-dialog.glade.h:2
+msgid "Add a new empty item"
+msgstr "একটি নতুন ফাঁকা উপাদান যোগ করা হবে"
 
-#: ../src/shell-mobile-providers.c:80
-msgid "United Kingdom"
-msgstr "যুক্তরাজ্য"
+#: ../plugins/launcher/launcher-dialog.glade.h:3
+msgid "Add one or more existing items to the launcher"
+msgstr "আরম্ভকারীতে এক বা একাধিক বিদ্যমান আইটেম যোগ"
 
-#: ../src/shell-mobile-providers.c:526
+#: ../plugins/launcher/launcher-dialog.glade.h:4
+msgid "Advanced"
+msgstr "উচ্চ পর্যায়ের"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:5
 msgid "Default"
-msgstr "পূর্বনির্ধারিত"
+msgstr "ডিফল্ট"
 
-#: ../src/shell-polkit-authentication-agent.c:334
-msgid "Authentication dialog was dismissed by the user"
-msgstr "ব্যবহারকারী কর্তৃক প্রমাণীকরণ ডায়ালগ বাতিল"
+#: ../plugins/launcher/launcher-dialog.glade.h:6
+msgid "Delete the currently selected item"
+msgstr "বর্তমানে নির্বাচিত আইটেমটি মুছে ফেলা হবে"
 
-#: ../src/shell-util.c:89
-msgid "Home Folder"
-msgstr "হোম ফোল্ডার"
+#: ../plugins/launcher/launcher-dialog.glade.h:7
+msgid "Disable t_ooltips"
+msgstr "টুলটিপ নিষ্ক্রিয় করা হবে (_o)"
 
-#. Translators: this is the same string as the one found in
-#. * nautilus
-#: ../src/shell-util.c:104
-msgid "File System"
-msgstr "ফাইল সিস্টেম"
+#: ../plugins/launcher/launcher-dialog.glade.h:8
+msgid "East"
+msgstr "পূর্ব"
 
-#. Translators: the first string is the name of a gvfs
-#. * method, and the second string is a path. For
-#. * example, "Trash: some-directory". It means that the
-#. * directory called "some-directory" is in the trash.
-#.
-#: ../src/shell-util.c:300
+#: ../plugins/launcher/launcher-dialog.glade.h:11
+msgid "Inside Button"
+msgstr "অভ্যন্তরীণ বোতাম"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:12
+#: ../plugins/launcher/launcher.desktop.in.h:1
+msgid "Launcher"
+msgstr "আরম্ভকারী"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:15
+msgid "North"
+msgstr "উত্তর"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:16
+msgid ""
+"Select this option to disable the tooltips when moving over the panel button "
+"or menu items."
+msgstr ""
+"প্যানেল বোতাম বা মেনু আইটেমের উপর চলার সময় টুলটিপ নিষ্ক্রিয় করতে এই অপশনটি "
+"নির্বাচন করুন।"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:17
+msgid "Select this option to move the clicked menu item to the panel."
+msgstr "ক্লিক করা মেনু আইটেম প্যানেলে সরাতে এই অপশনটি নির্বাচন করুন।"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:18
+msgid "Show _label instead of icon"
+msgstr "আইকনের পরিবর্তে লেবেল প্রদর্শন (_l)"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:19
+msgid "Show last _used item in panel"
+msgstr "প্যানেলে সর্বশেষ ব্যবহৃত আইটেম প্রদর্শন (_u)"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:20
+msgid "South"
+msgstr "দক্ষিণ"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:21
+msgid "West"
+msgstr "পশ্চিম"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:22
+msgid "_Arrow button position:"
+msgstr "তীরচিহ্নযুক্ত বোতামের অবস্থান: (_A)"
+
+#: ../plugins/launcher/launcher.desktop.in.h:2
+msgid "Program launcher with optional menu"
+msgstr "ঐচ্ছিক মেনু সহকারে প্রোগ্রাম লঞ্চার"
+
+#: ../plugins/pager/pager.c:354 ../plugins/pager/pager-dialog.glade.h:8
+msgid "Workspace _Settings..."
+msgstr "কর্মপরিসরের বৈশিষ্ট্যাবলী... (_S)"
+
+#: ../plugins/pager/pager.c:429
+#, fuzzy
+msgid "Unable to open the workspace settings"
+msgstr "Xfce কর্মপরিসরের সেটিংসমূহ খুলতে ব্যর্থ"
+
+#: ../plugins/pager/pager-buttons.c:555 ../plugins/windowmenu/windowmenu.c:854
 #, c-format
-msgid "%1$s: %2$s"
-msgstr "%1$s: %2$s"
+msgid "Workspace %d"
+msgstr "%d কর্মস্থান"
 
-#~ msgid "Shut Down"
-#~ msgstr "বন্ধ"
+#: ../plugins/pager/pager-dialog.glade.h:2
+#: ../plugins/tasklist/tasklist-dialog.glade.h:3
+msgid "Behaviour"
+msgstr "আচরণ"
 
-#~ msgid "Click Shut Down to quit these applications and shut down the system."
-#~ msgstr "এ অ্যাপ্লিকেশন বন্ধ করার জন্য বন্ধ করায় ক্লিক করে সিস্টেম বন্ধ।"
+#: ../plugins/pager/pager-dialog.glade.h:3
+msgid "Number of _rows:"
+msgstr "সারির পরিমান: (_r)"
 
-#~ msgid "The system will shut down automatically in %d seconds."
-#~ msgstr "সিস্টেম %d সেকেন্ডে স্বয়ংক্রিয়ভাবে বন্ধ হয়ে যাবে।"
+#: ../plugins/pager/pager-dialog.glade.h:4
+msgid ""
+"Show a miniature view of the workspace with rectangles for the visible "
+"windows"
+msgstr ""
 
-#~ msgid "Shutting down the system."
-#~ msgstr "সিস্টেম বন্ধ করা হচ্ছে।"
+#: ../plugins/pager/pager-dialog.glade.h:5
+msgid "Show mi_niature view"
+msgstr ""
 
-#~ msgid "Confirm"
-#~ msgstr "নিশ্চিত"
+#: ../plugins/pager/pager-dialog.glade.h:6
+msgid "Switch workspaces using the mouse _wheel"
+msgstr "মাউসের চাকা ব্যবহার করে কর্মপরিসরের মধ্যে পরিবর্তন করা হবে (_w)"
+
+#: ../plugins/pager/pager-dialog.glade.h:7
+#: ../plugins/pager/pager.desktop.in.h:2
+msgid "Workspace Switcher"
+msgstr "কর্মপরিসর পরিবর্তক"
+
+#: ../plugins/pager/pager.desktop.in.h:1
+msgid "Switch between virtual desktops"
+msgstr "ভার্চুয়াল ডেস্কটপের মাঝে পরিবর্তন"
+
+#: ../plugins/separator/separator-dialog.glade.h:2
+msgid "Dots"
+msgstr "ডট"
+
+#: ../plugins/separator/separator-dialog.glade.h:3
+msgid "Handle"
+msgstr "হ্যান্ডেল"
+
+#: ../plugins/separator/separator-dialog.glade.h:4
+msgid "New Line"
+msgstr "নতুন লাইন"
+
+#: ../plugins/separator/separator-dialog.glade.h:5
+#: ../plugins/separator/separator.desktop.in.h:2
+msgid "Separator"
+msgstr "বিভাজক"
+
+#: ../plugins/separator/separator-dialog.glade.h:6
+msgid "Transparent"
+msgstr "স্বচ্ছ"
+
+#: ../plugins/separator/separator-dialog.glade.h:7
+msgid "_Expand"
+msgstr "প্রসারণ (_E)"
+
+#: ../plugins/separator/separator.desktop.in.h:1
+msgid "Adds a separator or space between panel items"
+msgstr "প্যানেল আইটেমসমূহের মধ্যে বিভাজক বা ফাঁকাস্থান যোগ করে"
+
+#: ../plugins/showdesktop/showdesktop.c:193
+msgid "Restore the minimized windows"
+msgstr "ছোটকরা উইন্ডোগুলো পূর্বাবস্থায় ফিরিয়ে আনুন"
+
+#: ../plugins/showdesktop/showdesktop.c:194
+msgid "Minimize all open windows and show the desktop"
+msgstr "সব খোলা উইন্ডো ছোট করুন এবং ডেস্কটপ প্রদর্শন করুন"
+
+#: ../plugins/showdesktop/showdesktop.desktop.in.h:1
+msgid "Hide all windows and show the desktop"
+msgstr "সব উইন্ডো আড়াল করে ডেস্কটপ প্রদর্শন করা হবে"
+
+#: ../plugins/showdesktop/showdesktop.desktop.in.h:2
+msgid "Show Desktop"
+msgstr "ডেস্কটপ প্রদর্শন করা হবে"
+
+#: ../plugins/systray/systray.c:382
+#, fuzzy
+msgid "Unable to start the notification area"
+msgstr "জরুরী ঘোষনা সক্রিয় করুন (_u)"
+
+#. create fake error and show it
+#: ../plugins/systray/systray.c:850
+#, fuzzy
+msgid ""
+"Most likely another widget took over the function of a notification area. "
+"This area will be unused."
+msgstr ""
+"সম্ভবত অন্য কোনো widget ঘোষনা এলাকার ফাংশনের স্থান দখল করেছে। এই প্লাগইনটি বন্ধ "
+"করা হবে।"
+
+#: ../plugins/systray/systray.c:852
+msgid "The notification area lost selection"
+msgstr "ঘোষনা এলাকার নির্বাচন নেই"
+
+#: ../plugins/systray/systray.c:1005
+msgid "Are you sure you want to clear the list of known applications?"
+msgstr "আপনি কি নিশ্চিত আপনি পরিচিত অ্যাপ্লিকেশনসমূহের তালিকা মুছে ফেলতে চান?"
+
+#: ../plugins/systray/systray-dialog.glade.h:2
+msgid "C_lear Known Applications"
+msgstr "পরিচিত অ্যাপ্লিকেশনসমূহ মুছে ফেলা হবে (_l)"
+
+#: ../plugins/systray/systray-dialog.glade.h:3
+msgid "Known Applications"
+msgstr "পরিচিত অ্যাপ্লিকেশন"
+
+#: ../plugins/systray/systray-dialog.glade.h:4
+#: ../plugins/systray/systray.desktop.in.h:2
+msgid "Notification Area"
+msgstr "ঘোষনা এলাকা"
+
+#: ../plugins/systray/systray-dialog.glade.h:6
+msgid "_Maximum icon size (px):"
+msgstr ""
+
+#: ../plugins/systray/systray-manager.c:406
+#, c-format
+msgid "Failed to acquire manager selection for screen %d"
+msgstr "%d পর্দার জন্য ব্যবস্থাপক নির্বাচন অর্জন করতে ব্যর্থ"
+
+#: ../plugins/systray/systray.desktop.in.h:1
+msgid "Area where notification icons appear"
+msgstr "যে এলাকায় ঘোষনা আইকন দৃশ্যমান হয়"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:1
+msgid "Always"
+msgstr "সবসময়"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:4
+msgid "D_raw window frame when hovering a button"
+msgstr "বোতামের উপর আবর্তন করার সময় উইন্ডো ফ্রেম আঁকা হবে (_r)"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:6
+msgid "Group title and timestamp"
+msgstr "শিরোনাম এবং টাইমস্ট্যাম্প গ্রুপবদ্ধ করা হবে"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:7
+msgid "Group title and window title"
+msgstr "শিরোনাম এবং উইন্ডোর শিরোনাম গ্রুপবদ্ধ করা হবে"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:8
+msgid "Never"
+msgstr "কখনও নয়"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:9
+msgid "Restore minimized windows to current _workspace"
+msgstr "বর্তমান কর্মপরিসরে ন্যূনতম বিস্তারের উইন্ডোসমূহ পূর্বাবস্থায় ফিরিয়ে আনা হবে (_w)"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:10
+msgid "Ro_tate buttons in vertical panel"
+msgstr ""
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:11
+msgid "Show _flat buttons"
+msgstr "ফ্ল্যাট বোতাম প্রদর্শন করা হবে (_f)"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:12
+msgid "Show _handle"
+msgstr "হ্যান্ডেল প্রদর্শন করা হবে (_h)"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:13
+msgid "Show button _labels"
+msgstr "বোতামের লেবেল প্রদর্শন করা হবে (_l)"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:14
+msgid "Show only _minimized windows"
+msgstr "শুধুমাত্র ছোটকরা উইন্ডোগুলো প্রদর্শন (_m)"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:15
+#, fuzzy
+msgid "Show windows from _all workspaces or viewports"
+msgstr "সব ওয়ার্কস্পেস থেকে উইন্ডোগুলো প্রদর্শন (_a)"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:16
+#, fuzzy
+msgid "Show windows from all mo_nitors"
+msgstr "সব ওয়ার্কস্পেস থেকে উইন্ডোগুলো প্রদর্শন (_a)"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:17
+msgid "Sorting _order:"
+msgstr "সাজানোর ক্রম: (_o)"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:18
+msgid "Timestamp"
+msgstr "টাইমস্ট্যাম্প"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:19
+msgid "When space is limited"
+msgstr "যখন মধ্যবর্তী ফাঁকা স্থান সীমীত"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:20
+#: ../plugins/tasklist/tasklist.desktop.in.h:2
+msgid "Window Buttons"
+msgstr "উইন্ডোর বোতাম"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:21
+msgid "Window _grouping:"
+msgstr "উইন্ডো গ্রুপবদ্ধ করা হচ্ছে: (_g)"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:22
+msgid "Window title"
+msgstr "উইন্ডোর শিরোনাম"
+
+#: ../plugins/tasklist/tasklist-widget.c:3012
+msgid "Mi_nimize All"
+msgstr "সমস্ত ছোট করা হবে (_n)"
+
+#: ../plugins/tasklist/tasklist-widget.c:3021
+msgid "Un_minimize All"
+msgstr "সমস্ত ছোট থেকে বড় করা হবে (_m)"
+
+#: ../plugins/tasklist/tasklist-widget.c:3027
+msgid "Ma_ximize All"
+msgstr "সমস্ত বড় করা হবে (_x)"
+
+#: ../plugins/tasklist/tasklist-widget.c:3036
+msgid "_Unmaximize All"
+msgstr "সমস্ত বড় থেকে ছোট করা হবে (_U)"
+
+#: ../plugins/tasklist/tasklist-widget.c:3046
+msgid "_Close All"
+msgstr "সমস্ত বন্ধ করা হবে (_C)"
+
+#: ../plugins/tasklist/tasklist.desktop.in.h:1
+msgid "Switch between open windows using buttons"
+msgstr "বোতাম ব্যবহার করে খোলা উইন্ডোসমূহের মধ্যে পরিবর্তন করা হবে"
+
+#: ../plugins/windowmenu/windowmenu.c:652
+msgid "Desktop"
+msgstr "ডেস্কটপ"
+
+#: ../plugins/windowmenu/windowmenu.c:1243
+msgid "No Windows"
+msgstr "কোন উইন্ডো নেই"
+
+#: ../plugins/windowmenu/windowmenu.c:1258
+msgid "Urgent Windows"
+msgstr "জরুরি উইন্ডো"
+
+#: ../plugins/windowmenu/windowmenu.c:1300
+msgid "Add Workspace"
+msgstr "কর্মস্থান যোগ করা হবে"
+
+#: ../plugins/windowmenu/windowmenu.c:1320
+#, c-format
+msgid "Remove Workspace \"%s\""
+msgstr "\"%s\" কর্মস্থান অপসারণ করা হবে"
+
+#: ../plugins/windowmenu/windowmenu.c:1322
+#, c-format
+msgid "Remove Workspace %d"
+msgstr "%d কর্মস্থান অপসারণ করা হবে"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:2
+msgid "Arrow"
+msgstr "তীরচিহ্ন"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:3
+msgid "Button layout:"
+msgstr "বোতামের বহির্বিন্যাস:"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:4
+msgid "Enable _urgency notification"
+msgstr "জরুরী ঘোষনা সক্রিয় করুন (_u)"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:6
+msgid "Icon"
+msgstr "আইকন"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:7
+msgid "Show windows from _all workspaces"
+msgstr "সব ওয়ার্কস্পেস থেকে উইন্ডোগুলো প্রদর্শন (_a)"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:8
+msgid "Show workspace _names"
+msgstr "কর্মপরিসরের নাম প্রদর্শন করা হবে (_n)"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:9
+msgid "Show workspace a_ctions"
+msgstr "কর্মপরিসরের ক্রিয়া প্রদর্শন করা হবে (_c)"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:10
+#: ../plugins/windowmenu/windowmenu.desktop.in.h:2
+msgid "Window Menu"
+msgstr "উইন্ডো মেনু"
+
+#: ../plugins/windowmenu/windowmenu.desktop.in.h:1
+msgid "Switch between open windows using a menu"
+msgstr "মেনু ব্যবহার করে খোলা উইন্ডোসমূহের মাঝে পরিবর্তন করুন"
+
+#~ msgid "Create a new launcher on the Xfce Panel"
+#~ msgstr "Xfce প্যানেলে একটি নতুন লঞ্চার তৈরি করা হবে"
+
+#~ msgid "Panel Preferences"
+#~ msgstr "প্যানেলের পছন্দসমূহ"
+
+#~ msgid "Transparency"
+#~ msgstr "স্বচ্ছতা"
+
+#~ msgid "Transparency when the pointer is not hovering the panel."
+#~ msgstr "পয়েন্টার প্যানেলের উপর আবর্তন না করার সময় স্বচ্ছতা।"
+
+#~ msgid "Xfce Panel"
+#~ msgstr "Xfce প্যানেল"
+
+#~ msgid "Xfce Menu"
+#~ msgstr "Xfce মেনু"
+
+#~ msgid "Failed to remove the desktop file from the config directory"
+#~ msgstr "config ডিরেক্টরি হতে ডেস্কটপ ফাইল মুছে ফেলতে ব্যর্থ"
+
+#~ msgid "_Number of rows:"
+#~ msgstr "সারির সংখ্যা: (_N)"
+
+#~ msgid "_Restart"
+#~ msgstr "পুনরায় আরম্ভ (_R)"
+
+#~ msgid "C_ompositing"
+#~ msgstr "কম্পোজিট করা হচ্ছে (_o)"
+
+#~ msgid "Failed to open manual"
+#~ msgstr "ম্যানুয়েল খুলতে ব্যর্থ"
+
+#~ msgid "Action Button"
+#~ msgstr "কাজের বোতাম"

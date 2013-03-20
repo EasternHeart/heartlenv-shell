@@ -1,1348 +1,1654 @@
-# Malay translations for heartlenv-shell package.
-# Copyright (C) 2011 Listed translators
-# This file is distributed under the same license as the heartlenv-shell package.
-# Andi Rady Kurniawan <niariot87@gmail.com>, 2011.
+# Xfce4-panel Malay translation.
+# Copyright (C) 2002-2006 The Xfce development team.
+# This file is distributed under the same license as the heartlenv-panel package.
+# Harun Musa <mharun@gmx.net>, 2003, 2011.
+# Puretech <terjemah.puretech@gmail.com>, 2011.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: heartlenv-shell master ms\n"
-"Report-Msgid-Bugs-To: http://bugzilla.heartlenv.org/enter_bug.cgi?product=heartlenv-"
-"shell&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-08-02 20:21+0000\n"
-"PO-Revision-Date: 2011-07-21 23:35+0730\n"
-"Last-Translator: Umarzuki Bin Mochlis Moktar <umar@umarzuki.com>\n"
-"Language-Team: GNOME Malay Team <heartlenv-ms@googlegroups.com>\n"
+"Project-Id-Version: heartlenv-panel 4.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-16 17:01+0100\n"
+"PO-Revision-Date: 2011-08-10 22:10+0800\n"
+"Last-Translator: Puretech <terjemah.puretech@gmail.com>\n"
+"Language-Team: Malay <>\n"
+"Language: ms\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: \n"
 
-#: ../data/heartlenv-shell.desktop.in.in.h:1
-msgid "GNOME Shell"
-msgstr "GNOME Shell"
-
-#: ../data/heartlenv-shell.desktop.in.in.h:2
-msgid "Window management and application launching"
-msgstr "Pengurusan tetingkap dan melancar aplikasi"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:1
+#: ../panel-desktop-handler.desktop.in.h:1
 msgid ""
-"Allows access to internal debugging and monitoring tools using the Alt-F2 "
-"dialog."
+"Add a new launcher to the panel based on the information of this desktop file"
 msgstr ""
-"Membolehkan alatan menyahpepijat dan memantau dicapai dengan dialog Alt-F2"
+"Tambah pelancar baru kepada panel berdasarkan maklumat fail desktop ini"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:2
-msgid "Enable internal tools useful for developers and testers from Alt-F2"
-msgstr ""
-"Bolehkan alatan dalam berguna untuk para pembangun dan pencuba menerusi Alt-"
-"F2"
+#: ../panel-desktop-handler.desktop.in.h:2
+msgid "Create Launcher on the panel"
+msgstr "Cipta pelancar pada panel"
 
-# Screencast boleh diterjemahkan sebagai rakaman skrin, tapi kerana ini slanga komputer, jadi tidak diterjemah.
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:3
-msgid "File extension used for storing the screencast"
-msgstr "Sambungan fail untuk digunakan menyimpan screencast"
+#: ../panel-preferences.desktop.in.h:1
+msgid "Customize the panel"
+msgstr "Ubahsuai panel"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:4
-msgid "Framerate used for recording screencasts."
-msgstr "Kadar bingkai diguna untuk merakam screencast"
+#: ../panel-preferences.desktop.in.h:2
+#: ../panel/panel-preferences-dialog.glade.h:24 ../panel/panel-window.c:2222
+#: ../migrate/main.c:84
+msgid "Panel"
+msgstr "Panel"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:5
+#: ../common/panel-utils.c:155
+msgid "_Read Online"
+msgstr "Baca atas talian"
+
+#: ../common/panel-utils.c:156
 msgid ""
-"GNOME Shell extensions have a uuid property; this key lists extensions which "
-"should be loaded. disabled-extensions overrides this setting for extensions "
-"that appear in both lists."
+"You can read the user manual online. This manual may however not exactly "
+"match your panel version."
 msgstr ""
-"Sambungan GNOME Shell ada sifat uuid; senarai sambungan-sambungan kekunci "
-"ini yang patut dimuatkan. disabled-extensions membatalkan tetapan untuk "
-"sambungan-sambungan yang muncul pada kedua-dua senarai."
+"Anda boleh membaca manual dalam talian.Panduan ini bagaimanapun tidak "
+"semestinya sama dengan versi panel anda."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:6
+#: ../common/panel-utils.c:158
+msgid "The user manual is not installed on your computer"
+msgstr "Panduan pengguna tidak dipasang pada komputer anda"
+
+#. display an error message to the user
+#: ../common/panel-utils.c:171
+msgid "Failed to open the documentation browser"
+msgstr "Gagal membuka pelayan dokumentasi"
+
+#. I18N: %s is the name of the plugin
+#: ../libheartlenvpanel/xfce-panel-plugin.c:889
+#: ../panel/panel-preferences-dialog.c:1048
+#, c-format
+msgid "Are you sure that you want to remove \"%s\"?"
+msgstr "Adakah anda pasti untuk membuang \"%s\"?"
+
+#: ../libheartlenvpanel/xfce-panel-plugin.c:894
+#: ../panel/panel-preferences-dialog.c:1051
+msgid "If you remove the item from the panel, it is permanently lost."
+msgstr "Jika anda membuang item.dari panel, ia akan kekal hilang"
+
+#. move item
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1054
+msgid "_Move"
+msgstr "_Pindah"
+
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1088
+msgid "Pane_l"
+msgstr "Pane_l"
+
+#. add new items
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1096 ../panel/panel-window.c:2234
+msgid "Add _New Items..."
+msgstr "Tambah item baharu"
+
+#. customize panel
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1107 ../panel/panel-window.c:2245
+msgid "Panel Pr_eferences..."
+msgstr "Ciri-ciri Pan_el"
+
+#. logout item
+#: ../libheartlenvpanel/xfce-panel-plugin.c:1124 ../panel/panel-window.c:2261
+msgid "Log _Out"
+msgstr "Daftar Keluar"
+
+#: ../panel/main.c:78
+msgid "Show the 'Panel Preferences' dialog"
+msgstr "Papar dialog 'Pilihan Panel'"
+
+#: ../panel/main.c:78 ../panel/main.c:79
+msgid "PANEL-NUMBER"
+msgstr "BILANGAN-PANEL"
+
+#: ../panel/main.c:79
+msgid "Show the 'Add New Items' dialog"
+msgstr "Papar dialog 'Tambah Item Baharu'"
+
+#: ../panel/main.c:80
+msgid "Save the panel configuration"
+msgstr "Simpan konfigurasi panel"
+
+#: ../panel/main.c:81
+msgid "Add a new plugin to the panel"
+msgstr "Tambah plugin baharu pada panel"
+
+#: ../panel/main.c:81
+msgid "PLUGIN-NAME"
+msgstr "NAMA-PLUGIN"
+
+#: ../panel/main.c:82
+msgid "Restart the running panel instance"
+msgstr "Mula semula panel yang sedang berjalan"
+
+#: ../panel/main.c:83
+msgid "Quit the running panel instance"
+msgstr "Hentikan panel yang sedang berjalan"
+
+#: ../panel/main.c:84
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:33
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:33
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:33
+msgid "Print version information and exit"
+msgstr "Papar maklumat versi dan keluar."
+
+#. parse context options
+#: ../panel/main.c:240
+msgid "[ARGUMENTS...]"
+msgstr "[ARGUMENTS...]"
+
+#: ../panel/main.c:247
+#, c-format
+msgid "Type \"%s --help\" for usage."
+msgstr "Taip \"%s --help\" untuk penggunaan."
+
+#: ../panel/main.c:266
+msgid "The Xfce development team. All rights reserved."
+msgstr "Pasukan pembangunan Xfce. Semua hak cipta terpelihara."
+
+#: ../panel/main.c:267
+#, c-format
+msgid "Please report bugs to <%s>."
+msgstr "Sila laporkan pepijat ke <%s>."
+
+#: ../panel/main.c:318
+msgid "There is already a running instance"
+msgstr "Sudah ada instance ini berjalan"
+
+#. spawn ourselfs again
+#: ../panel/main.c:367
+msgid "Restarting..."
+msgstr "Ulangmula..."
+
+#: ../panel/main.c:382
+msgid "Failed to show the preferences dialog"
+msgstr "Gagal untuk menunjukkan dialog ciri-ciri"
+
+#: ../panel/main.c:384
+msgid "Failed to show the add new items dialog"
+msgstr "Gagal untuk menunjukkan dialog tambah item baharu"
+
+#: ../panel/main.c:386
+msgid "Failed to save the panel configuration"
+msgstr "Gagal menyimpan konfigurasi panel"
+
+#: ../panel/main.c:388
+msgid "Failed to add a plugin to the panel"
+msgstr "Tambah plugin pada panel"
+
+#: ../panel/main.c:390
+msgid "Failed to restart the panel"
+msgstr "Gagal ulang semula panel"
+
+#: ../panel/main.c:392
+msgid "Failed to quit the panel"
+msgstr "Gagal menghentikan panel"
+
+#: ../panel/main.c:394
+msgid "Failed to send D-Bus message"
+msgstr "Gagal menghantar mesej D-BUS"
+
+#: ../panel/main.c:405
 msgid ""
-"GNOME Shell extensions have a uuid property; this key lists extensions which "
-"should not be loaded. This setting overrides enabled-extensions for "
-"extensions that appear in both lists."
+"Do you want to start the panel? If you do, make sure you save the session on "
+"logout, so the panel is automatically started the next time you login."
 msgstr ""
-"Sambungan GNOME Shell ada sifat uuid; senarai sambungan-sambungan kekunci "
-"ini yang tidak patut dimuatkan. Tetapan ini membatalkan enabled-extensions "
-"yang muncul pada kedua-dua senarai."
+"Adakah anda mahu memulakan panel? Jika anda melakukannya, pastikan anda "
+"menyimpan sesi pada logout, jadi panel secara automatik dimulakan apabila "
+"anda login selepas ini."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:7
-msgid "History for command (Alt-F2) dialog"
-msgstr "Sejarah untuk perintah dialog (Alt-F2)"
+#: ../panel/main.c:408 ../panel/main.c:422
+#, c-format
+msgid "No running instance of %s was found"
+msgstr "Tiada instance yang menjalankan %s ditemui"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:8
-msgid "History for the looking glass dialog"
-msgstr "Sejarah untuk dialog looking glass"
+#: ../panel/panel-application.c:196
+msgid "Failed to launch the migration application"
+msgstr "Gagal menjalankan aplikasi yang berhijrah"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:9
-msgid "If true, display date in the clock, in addition to time."
-msgstr "Jika benar, papar tarikh pada jam, bersama waktu."
+#: ../panel/panel-application.c:1446 ../plugins/actions/actions.c:413
+msgid ""
+"You have started X without session manager. Clicking Quit will close the X "
+"server."
+msgstr ""
+"Anda telah memulakan X tanpa pengurus sesi. Klik Keluar akan menutup pelayan "
+"X."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:10
-msgid "If true, display seconds in time."
-msgstr "Jika benar, papar saat dalam waktu."
+#: ../panel/panel-application.c:1447 ../plugins/actions/actions.c:414
+msgid "Are you sure you want to quit the panel?"
+msgstr "Adakah anda pasti anda mahu menghentikan panel?"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:11
-msgid "If true, display the ISO week date in the calendar."
-msgstr "Jika benar, papar tarikh minggu ISO pada kalendar."
+#: ../panel/panel-application.c:1455 ../plugins/actions/actions.c:422
+#, c-format
+msgid "Failed to execute command \"%s\""
+msgstr "Gagal melaksanakan arahan \"%s\""
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:12
-msgid "List of desktop file IDs for favorite applications"
-msgstr "Senarai ID fail desktop untuk aplikasi kegemaran"
+#: ../panel/panel-dbus-client.c:209
+msgid ""
+"Invalid plugin event syntax specified. Use PLUGIN-NAME:NAME[:TYPE:VALUE]."
+msgstr ""
+"Sintaks plugin tidak sah dinyatakan. Gunakan PLUGIN-NAME:NAME[:TYPE:VALUE]."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:14
+#: ../panel/panel-dbus-client.c:242
+#, c-format
+msgid ""
+"Invalid hint type \"%s\". Valid types are bool, double, int, string and uint."
+msgstr ""
+"Jenis petunjuk \"%s\" tidak sah. Jenis yang sah adalah bool, double, int, "
+"string dan uint."
+
+#: ../panel/panel-dialogs.c:76
+msgid "The panel of the Xfce Desktop Environment"
+msgstr "Panel untuk Persekitaran Desktop Xfce"
+
+#: ../panel/panel-dialogs.c:81
+msgid "translator-credits"
+msgstr "kredit-penterjemah"
+
+#. setup the dialog
+#: ../panel/panel-dialogs.c:122 ../plugins/launcher/launcher-dialog.glade.h:1
+msgid "Add New Item"
+msgstr "Tambah item baharu"
+
+#: ../panel/panel-dialogs.c:136
+msgid "Please choose a panel for the new plugin:"
+msgstr "Sila pilih panel untuk plugin baharu"
+
+#. I18N: panel combo box in the preferences dialog
+#: ../panel/panel-dialogs.c:147 ../panel/panel-preferences-dialog.c:767
+#, c-format
+msgid "Panel %d"
+msgstr "Panel %d"
+
+#: ../panel/panel-dialogs.c:183
+msgid ""
+"Because the panel is running in kiosk mode, you are not allowed to make "
+"changes to the panel configuration as a regular user"
+msgstr ""
+"Kerana panel sedang berjalan dalam mod kiosk, anda tidak dibenarkan untuk "
+"membuat perubahan konfigurasi panel sebagai pengguna biasa"
+
+#: ../panel/panel-dialogs.c:185
+msgid "Modifying the panel is not allowed"
+msgstr "Tidak dibenarkan mengubahsuai panel"
+
+#: ../panel/panel-item-dialog.c:188
+msgid "Add New Items"
+msgstr "Tambah item baharu"
+
+#: ../panel/panel-item-dialog.c:190
+msgid "Add new plugins to the panel"
+msgstr "Tambah plugin baharu pada panel"
+
+#: ../panel/panel-item-dialog.c:213
+#: ../plugins/launcher/launcher-dialog.glade.h:23
+msgid "_Search:"
+msgstr "_Cari"
+
+#: ../panel/panel-item-dialog.c:221
+msgid "Enter search phrase here"
+msgstr "Masukkan frasa carian di sini"
+
+#: ../panel/panel-plugin-external.c:420
+#, c-format
+msgid "Plugin \"%s\" unexpectedly left the panel, do you want to restart it?"
+msgstr ""
+"Plugin \"%s\" telah meninggalkan panel tanpa diduga, adakah anda mahu untuk "
+"memulakannya semula?"
+
+#: ../panel/panel-plugin-external.c:422
+#, c-format
+msgid ""
+"The plugin restarted more than once in the last %d seconds. If you press "
+"Execute the panel will try to restart the plugin otherwise it will be "
+"permanently removed from the panel."
+msgstr ""
+"Plugin dimulakan semula lebih daripada sekali di terakhir %d saat. Jika anda "
+"menekan Laksanakan panel akan cuba untuk memulakan semula plugin jika tidak "
+"ia akan dikeluarkan secara kekal daripada panel."
+
+#: ../panel/panel-preferences-dialog.c:453
+msgid "Automatic"
+msgstr "Automatik"
+
+#. I18N: screen name in the output selector
+#: ../panel/panel-preferences-dialog.c:472
+#, c-format
+msgid "Screen %d"
+msgstr "Skrin %d"
+
+#. I18N: monitor name in the output selector
+#: ../panel/panel-preferences-dialog.c:498
+#, c-format
+msgid "Monitor %d"
+msgstr "Monitor %d"
+
+#: ../panel/panel-preferences-dialog.c:828
+msgid "The panel and plugin configurations will be permanently removed"
+msgstr "Konfigurasi panel dan plugin akan dibuang secara kekal"
+
+#: ../panel/panel-preferences-dialog.c:829
+#, c-format
+msgid "Are you sure you want to remove panel %d?"
+msgstr "Adakah anda pasti untuk membuang panel %d?"
+
+#. I18N: append (external) in the preferences dialog if the plugin
+#. * runs external
+#: ../panel/panel-preferences-dialog.c:912
+#, c-format
+msgid "%s <span color=\"grey\" size=\"small\">(external)</span>"
+msgstr "%s <span color=\"grey\" size=\"small\">(external)</span>"
+
+#. I18N: tooltip in preferences dialog when hovering an item in the list
+#. * for external plugins
+#: ../panel/panel-preferences-dialog.c:917
+#, c-format
+msgid ""
+"Internal name: %s-%d\n"
+"PID: %d"
+msgstr ""
+"Nama  dalaman: %s-%d\n"
+"PID: %d"
+
+#. I18N: tooltip in preferences dialog when hovering an item in the list
+#. * for internal plugins
+#: ../panel/panel-preferences-dialog.c:929
+#, c-format
+msgid "Internal name: %s-%d"
+msgstr "Nama dalaman: %s-%d"
+
+#: ../panel/panel-preferences-dialog.glade.h:1
+msgid "A_utomatically increase the length"
+msgstr "Tambah panjang secara a_utomatik"
+
+#: ../panel/panel-preferences-dialog.glade.h:2
+msgid "Add a new panel"
+msgstr "Tambah panel baharu"
+
+#: ../panel/panel-preferences-dialog.glade.h:3
+msgid "Add new item to this panel"
+msgstr "Tambah item baru pada panel ini"
+
+#: ../panel/panel-preferences-dialog.glade.h:4
+msgid ""
+"Alpha value of the panel background, with 0 being fully transparent and 100 "
+"fully opaque."
+msgstr ""
+"Nilai Alpha latar belakang panel, dengan 0 untuk lutsinar sepenuhnya dan 100 "
+"untuk legap sepenuhnya "
+
+#: ../panel/panel-preferences-dialog.glade.h:5
+msgid "Appeara_nce"
+msgstr "Penampila_n"
+
+#: ../panel/panel-preferences-dialog.glade.h:6
+msgid "Automatically show and _hide the panel"
+msgstr "Papar dan _sembunyi panel secara automatik"
+
+#: ../panel/panel-preferences-dialog.glade.h:7
+msgid "Background"
+msgstr "Latar belakang"
+
+#: ../panel/panel-preferences-dialog.glade.h:8
+msgid "Background image"
+msgstr "Imej latar belakang"
+
+#: ../panel/panel-preferences-dialog.glade.h:9
+msgid "C_olor:"
+msgstr "_Warna"
+
+#: ../panel/panel-preferences-dialog.glade.h:10
+msgid "D_isplay"
+msgstr "_Paparan"
+
+#: ../panel/panel-preferences-dialog.glade.h:11
+#: ../plugins/launcher/launcher-dialog.glade.h:9
+msgid "Edit the currently selected item"
+msgstr "Sunting item yang sedang dipilih"
+
+#: ../panel/panel-preferences-dialog.glade.h:12
+#: ../plugins/launcher/launcher-dialog.glade.h:10
+msgid "General"
+msgstr "Umum"
+
+#: ../panel/panel-preferences-dialog.glade.h:13
+msgid "Horizontal"
+msgstr "Mendatar"
+
+#: ../panel/panel-preferences-dialog.glade.h:14
+msgid "Ite_ms"
+msgstr "Ite_m"
+
+#: ../panel/panel-preferences-dialog.glade.h:16
 #, no-c-format
+msgid "L_ength (%):"
+msgstr "Pan_jang (%):"
+
+#. I18N: name of the section (frame) in the panel preferences where the user can define the length and size of the panel
+#: ../panel/panel-preferences-dialog.glade.h:18
+msgid "Measurements"
+msgstr "Ukuran"
+
+#: ../panel/panel-preferences-dialog.glade.h:19
+#: ../plugins/launcher/launcher-dialog.glade.h:13
+msgid "Move currently selected item down by one row"
+msgstr "Pindah item yang sedang dipilih satu baris.ke bawah"
+
+#: ../panel/panel-preferences-dialog.glade.h:20
+#: ../plugins/launcher/launcher-dialog.glade.h:14
+msgid "Move currently selected item up by one row"
+msgstr "Pindah item yang sedang dipilih satu baris.ke atas"
+
+#: ../panel/panel-preferences-dialog.glade.h:21
+msgid "None (use system style)"
+msgstr "Tiada (gunakan gaya sistem)"
+
+#: ../panel/panel-preferences-dialog.glade.h:22
+msgid "O_utput:"
+msgstr "O_utput:"
+
+#: ../panel/panel-preferences-dialog.glade.h:23
+msgid "Opacity"
+msgstr "Kelegapan"
+
+#: ../panel/panel-preferences-dialog.glade.h:25
+msgid "Pick a Panel Color"
+msgstr "Plih Warna Panel"
+
+#: ../panel/panel-preferences-dialog.glade.h:26
+msgid "Remove currently selected item"
+msgstr "Buang item yang sedang dipilih"
+
+#: ../panel/panel-preferences-dialog.glade.h:27
+msgid "Remove the currently selected panel"
+msgstr "Buang panel yang sedang dipilih"
+
+#: ../panel/panel-preferences-dialog.glade.h:28
+msgid "Select A Background Image"
+msgstr "Pilih Imej Latar Belakang"
+
+#: ../panel/panel-preferences-dialog.glade.h:29
 msgid ""
-"Sets the GStreamer pipeline used to encode recordings. It follows the syntax "
-"used for gst-launch. The pipeline should have an unconnected sink pad where "
-"the recorded video is recorded. It will normally have a unconnected source "
-"pad; output from that pad will be written into the output file. However the "
-"pipeline can also take care of its own output - this might be used to send "
-"the output to an icecast server via shout2send or similar. When unset or set "
-"to an empty value, the default pipeline will be used. This is currently "
-"'videorate ! vp8enc quality=10 speed=2 threads=%T ! queue ! webmmux' and "
-"records to WEBM using the VP8 codec. %T is used as a placeholder for a guess "
-"at the optimal thread count on the system."
+"Select this option to automatically increase the length of the panel if the "
+"plugins request more space."
 msgstr ""
-"Tetapkan talian paip GStreamer  untuk mengekod rakaman. Sintaks yang diikut "
-"diguna untuk gst-launch. Talian paip harus mempunyai alas penadah dimana "
-"rakaman video dirakam. Selalunya ada sumber alas yang tidak disambungkan; "
-"hasil dari alas akan ditulis ke dalam fail hasilan. Bagaimanapun, talian "
-"paip juga boleh menjaga hasilannya sendiri - ini mungkin berguna untuk "
-"menghantar hasil ke pelayan icecast melalui shout2send atau yang hampir "
-"sama. Bila tetapan dibuang atau ditetapkan ke tiada nilai, talian paip lalai "
-"akan digunakan. Buat masa ini 'videorate ! vp8enc quality=10 speed=2 threads="
-"%T ! queue ! webmmux' dan merakam ke WEBM menggunakan kodek VP8. %T "
-"digunakan sebagai pemegang tempat untuk tetamu pada bilangan benang optima "
-"pada sistem."
+"Pilih pilihan ini untuk secara automatik menambah panjang panel jika plugin "
+"meminta lebih banyak ruang."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:15
-msgid "Show date in clock"
-msgstr "Tunjuk tarikh pada jam"
+#: ../panel/panel-preferences-dialog.glade.h:30
+msgid "Select this option to extend the panel over multiple monitors."
+msgstr "Pilih pilihan ini untuk memanjangkan panel ke atas berbilang monitor."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:16
-msgid "Show the week date in the calendar"
-msgstr "Tunjuk tarikh minggu pada kalendar"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:17
-msgid "Show time with seconds"
-msgstr "Tunjuk waktu beserta saat"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:18
+#: ../panel/panel-preferences-dialog.glade.h:31
 msgid ""
-"The applications corresponding to these identifiers will be displayed in the "
-"favorites area."
+"Select this option to hide the handles of the panel and lock its position."
 msgstr ""
-"Aplikasi-aplikasi bagi setiap pengenal pasti ini akan dipaparkan di kawasan "
-"kegemaran."
+"Pilih pilihan ini untuk menyembunyikan pengendali panel dan mengunci "
+"kedudukannya."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:19
+#: ../panel/panel-preferences-dialog.glade.h:32
 msgid ""
-"The filename for recorded screencasts will be a unique filename based on the "
-"current date, and use this extension. It should be changed when recording to "
-"a different container format."
+"Select this option to hide the panel when the pointer is not above it. This "
+"only works when the panel is attached to a screen edge."
 msgstr ""
-"Nama fail bagi screencast yang dirakam unik mengikut tarikh semasa, dan akan "
-"menggunakan sambungan ini. Ia patut diubah jika ingin merakam untuk format "
-"penyimpan berbeza."
+"Pilih pilihan ini untuk menyembunyikan panel apabila penunjuk tidak berada "
+"di atasnya. Ini hanya berfungsi apabila panel diletakkan ke tepi skrin."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:20
+#: ../panel/panel-preferences-dialog.glade.h:33
+msgid "Show about information of the currently selected item"
+msgstr "Papar maklumat mengenai item yang sedang dipilih"
+
+#: ../panel/panel-preferences-dialog.glade.h:34
+msgid "Solid color"
+msgstr "Warna padu"
+
+#: ../panel/panel-preferences-dialog.glade.h:35
+msgid "Span mo_nitors"
+msgstr "Rentang mo_nitor"
+
+#: ../panel/panel-preferences-dialog.glade.h:36
 msgid ""
-"The framerate of the resulting screencast recordered by GNOME Shell's "
-"screencast recorder in frames-per-second."
+"Transparency when the pointer is hovering over the panel, with 0 being fully "
+"transparent and 100 fully opaque."
 msgstr ""
-"Kadar bingkai bagi screencast yang dihasilkan oleh perakam screencast GNOME "
-"Shell dalam bingkai-se-saat."
+"Ketelusan apabila penunjuk berlegar di atas panel, dengan 0 untuk telus "
+"sepenuhnya dan 100 legap.sepenuhnya."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:21
-msgid "The gstreamer pipeline used to encode the screencast"
-msgstr "Talian paip gstreamer digunakan untuk mengekod screencast"
-
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:22
+#: ../panel/panel-preferences-dialog.glade.h:37
 msgid ""
-"The shell normally monitors active applications in order to present the most "
-"used ones (e.g. in launchers). While this data will be kept private, you may "
-"want to disable this for privacy reasons. Please note that doing so won't "
-"remove already saved data."
+"Transparency when the pointer is not hovering over the panel, with 0 being "
+"fully transparent and 100 fully opaque."
 msgstr ""
-"Shell biasanya memantau aplikasi aktif untuk tentukan yang paling kerap "
-"diguna (cth. dalam pelancar). Walaupun data ini dirahsiakan, anda mungkin "
-"mahu lumpuhkannya atas sebab privasi. Sila maklum yang berbuat demikian "
-"tidak akan membuang data yang sudah tersimpan."
+"Ketelusan apabila penunjuk tidak berlegar di atas panel, dengan 0 untuk "
+"telus sepenuhnya dan 100 legap.sepenuhnya."
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:23
-msgid "Uuids of extensions to disable"
-msgstr "Uuid sambungan untuk dilumpuhkan"
+#: ../panel/panel-preferences-dialog.glade.h:38
+msgid "Vertical"
+msgstr "Menegak"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:24
-msgid "Uuids of extensions to enable"
-msgstr "Sambungan-sambungan Uuid sambungan untuk dibenarkan"
+#: ../panel/panel-preferences-dialog.glade.h:39
+msgid "_Alpha:"
+msgstr "_Alpha:"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:25
-msgid "Whether to collect stats about applications usage"
-msgstr "Sama ada kumpul statistik tentang penggunaan aplikasi"
+#. I18N: label for the enter transparency slider
+#: ../panel/panel-preferences-dialog.glade.h:41
+msgid "_Enter:"
+msgstr "Mas_uk:"
 
-#: ../data/org.heartlenv.shell.gschema.xml.in.h:26
-msgid "disabled OpenSearch providers"
-msgstr "lumpuhkan pembekal OpenSearch"
+#: ../panel/panel-preferences-dialog.glade.h:42
+msgid "_File:"
+msgstr "_Fail:"
 
-#: ../js/misc/util.js:68
-msgid "Command not found"
-msgstr "Perintah tidak ditemui"
+#. I18N: label for the leave transparency slider
+#: ../panel/panel-preferences-dialog.glade.h:44
+msgid "_Leave:"
+msgstr "Ke_luar"
 
-#. Replace "Error invoking GLib.shell_parse_argv: " with
-#. something nicer
-#: ../js/misc/util.js:95
-msgid "Could not parse command:"
-msgstr "Tidak dapat menghurai perintah:"
+#: ../panel/panel-preferences-dialog.glade.h:45
+msgid "_Lock panel"
+msgstr "Kunci pane_l"
 
-#: ../js/misc/util.js:103
-#, c-format
-msgid "Execution of '%s' failed:"
-msgstr "Pelakuan '%s' gagal:"
+#: ../panel/panel-preferences-dialog.glade.h:46
+msgid "_Orientation:"
+msgstr "_Orientasi:"
 
-#. Translators: Filter to display all applications
-#: ../js/ui/appDisplay.js:252
-msgid "All"
-msgstr "Semua"
+#: ../panel/panel-preferences-dialog.glade.h:47
+msgid "_Size (pixels):"
+msgstr "_Saiz (pixel):"
 
-#: ../js/ui/appDisplay.js:359
-msgid "APPLICATIONS"
-msgstr "APLIKASI"
+#: ../panel/panel-preferences-dialog.glade.h:48
+#: ../plugins/separator/separator-dialog.glade.h:8
+msgid "_Style:"
+msgstr "_Gaya"
 
-#: ../js/ui/appDisplay.js:385
-msgid "SETTINGS"
-msgstr "TETAPAN"
+#: ../panel/panel-tic-tac-toe.c:123
+msgid "_New Game"
+msgstr "Permai_nan baharu"
 
-#: ../js/ui/appDisplay.js:658
-msgid "New Window"
-msgstr "Tetingkap Baru"
+#: ../panel/panel-tic-tac-toe.c:134
+msgid "_Level:"
+msgstr "_Tahap"
 
-#: ../js/ui/appDisplay.js:661
-msgid "Remove from Favorites"
-msgstr "Buang daripada Kegemaran"
+#: ../panel/panel-tic-tac-toe.c:140
+msgid "Novice"
+msgstr "Baharu"
 
-#: ../js/ui/appDisplay.js:662
-msgid "Add to Favorites"
-msgstr "Tambah ke Kegemaran"
+#: ../panel/panel-tic-tac-toe.c:141
+msgid "Intermediate"
+msgstr "Pertengahan"
 
-#: ../js/ui/appFavorites.js:89
-#, c-format
-msgid "%s has been added to your favorites."
-msgstr "%s telah ditambah ke kegemaran anda."
+#: ../panel/panel-tic-tac-toe.c:142
+msgid "Experienced"
+msgstr "Berpengalaman"
 
-#: ../js/ui/appFavorites.js:120
-#, c-format
-msgid "%s has been removed from your favorites."
-msgstr "%s telah dibuang daripada kegemaran anda."
+#: ../panel/panel-tic-tac-toe.c:143
+msgid "Expert"
+msgstr "Pakar"
 
-#: ../js/ui/autorunManager.js:591
-#, c-format
-msgid "Open with %s"
+#: ../migrate/main.c:78
+msgid "Welcome to the first start of the panel"
+msgstr "Selamat datang ke permulaan panel yang pertama"
+
+#: ../migrate/main.c:80
+msgid ""
+"Because the panel moved to a new system for storing the settings, it has to "
+"load a fresh initial configuration."
 msgstr ""
+"Oleh kerana panel berpindah ke sistem baru untuk menyimpan tetapan, ia telah "
+"memuatkan konfigurasi awal yang baharu."
 
-#: ../js/ui/autorunManager.js:617
-#, fuzzy
-#| msgid "Reject"
-msgid "Eject"
-msgstr "Tolak"
+#: ../migrate/main.c:83
+msgid "Choose below which setup you want for the first startup."
+msgstr "Pilih tetapan yang anda mahu di bawah untuk permulaan yang pertama."
 
-#. Translators: Shown in calendar event list for all day events
-#. * Keep it short, best if you can use less then 10 characters
-#.
-#: ../js/ui/calendar.js:63
-msgctxt "event list time"
-msgid "All Day"
-msgstr "Sepanjang Hari"
+#: ../migrate/main.c:89
+msgid "Migrate old config"
+msgstr "Penghijrahan konfig. lama"
 
-#. Translators: Shown in calendar event list, if 24h format
-#: ../js/ui/calendar.js:68
-msgctxt "event list time"
-msgid "%H:%M"
-msgstr "%H:%M"
+#: ../migrate/main.c:90
+msgid "Migrate the old 4.6 configuration to Xfconf"
+msgstr "Penghijrahan konfigurasi lama 4.6 ke Xfconf"
 
-#. Transators: Shown in calendar event list, if 12h format
-#: ../js/ui/calendar.js:75
-msgctxt "event list time"
-msgid "%l:%M %p"
-msgstr "%l:%M %p"
+#: ../migrate/main.c:95
+msgid "Use default config"
+msgstr "Gunakan konfig. lalai"
 
-#. Translators: Calendar grid abbreviation for Sunday.
-#. *
-#. * NOTE: These grid abbreviations are always shown together
-#. * and in order, e.g. "S M T W T F S".
-#.
-#: ../js/ui/calendar.js:115
-msgctxt "grid sunday"
-msgid "S"
-msgstr "A"
+#: ../migrate/main.c:96
+msgid "Load the default configuration"
+msgstr "Muatkan konfigurasi lalai"
 
-#. Translators: Calendar grid abbreviation for Monday
-#: ../js/ui/calendar.js:117
-msgctxt "grid monday"
-msgid "M"
-msgstr "I"
+#: ../migrate/main.c:102
+msgid "One empty panel"
+msgstr "Satu panel kosong"
 
-#. Translators: Calendar grid abbreviation for Tuesday
-#: ../js/ui/calendar.js:119
-msgctxt "grid tuesday"
-msgid "T"
-msgstr "S"
+#: ../migrate/main.c:103
+msgid "Start with one empty panel"
+msgstr "Mula dengan satu panel kosong"
 
-#. Translators: Calendar grid abbreviation for Wednesday
-#: ../js/ui/calendar.js:121
-msgctxt "grid wednesday"
-msgid "W"
-msgstr "R"
+#: ../migrate/main.c:115
+msgid "Failed to migrate the old panel configuration"
+msgstr "Gagal untuk berhijrah konfigurasi panel lama"
 
-#. Translators: Calendar grid abbreviation for Thursday
-#: ../js/ui/calendar.js:123
-msgctxt "grid thursday"
-msgid "T"
-msgstr "K"
+#: ../migrate/main.c:125
+msgid "Failed to load the default configuration"
+msgstr "Gagal memuatkan konfigurasi lalai"
 
-#. Translators: Calendar grid abbreviation for Friday
-#: ../js/ui/calendar.js:125
-msgctxt "grid friday"
-msgid "F"
-msgstr "J"
+#: ../plugins/actions/actions-dialog.glade.h:1
+#: ../plugins/actions/actions.desktop.in.h:1
+msgid "Action Buttons"
+msgstr "Butang Aksi"
 
-#. Translators: Calendar grid abbreviation for Saturday
-#: ../js/ui/calendar.js:127
-msgctxt "grid saturday"
-msgid "S"
-msgstr "S"
+#: ../plugins/actions/actions-dialog.glade.h:2
+msgid "Button Actions"
+msgstr "Aksi Butang"
 
-#. Translators: Event list abbreviation for Sunday.
-#. *
-#. * NOTE: These list abbreviations are normally not shown together
-#. * so they need to be unique (e.g. Tuesday and Thursday cannot
-#. * both be 'T').
-#.
-#: ../js/ui/calendar.js:140
-msgctxt "list sunday"
-msgid "Su"
-msgstr "A"
+#: ../plugins/actions/actions-dialog.glade.h:3
+msgid "_First button:"
+msgstr "Butang per_tama:"
 
-#. Translators: Event list abbreviation for Monday
-#: ../js/ui/calendar.js:142
-msgctxt "list monday"
-msgid "M"
-msgstr "I"
+#: ../plugins/actions/actions-dialog.glade.h:4
+msgid "_Second button:"
+msgstr "Butang ke_dua:"
 
-#. Translators: Event list abbreviation for Tuesday
-#: ../js/ui/calendar.js:144
-msgctxt "list tuesday"
-msgid "T"
-msgstr "Se"
-
-#. Translators: Event list abbreviation for Wednesday
-#: ../js/ui/calendar.js:146
-msgctxt "list wednesday"
-msgid "W"
-msgstr "R"
-
-#. Translators: Event list abbreviation for Thursday
-#: ../js/ui/calendar.js:148
-msgctxt "list thursday"
-msgid "Th"
-msgstr "K"
-
-#. Translators: Event list abbreviation for Friday
-#: ../js/ui/calendar.js:150
-msgctxt "list friday"
-msgid "F"
-msgstr "J"
-
-#. Translators: Event list abbreviation for Saturday
-#: ../js/ui/calendar.js:152
-msgctxt "list saturday"
-msgid "S"
-msgstr "S"
-
-#. Translators: Text to show if there are no events
-#: ../js/ui/calendar.js:701
-msgid "Nothing Scheduled"
-msgstr "Tiada yang Dijadualkan"
-
-#. Translators: Shown on calendar heading when selected day occurs on current year
-#: ../js/ui/calendar.js:717 ../js/ui/telepathyClient.js:749
-msgctxt "calendar heading"
-msgid "%A, %B %d"
-msgstr "%A, %d %B"
-
-#. Translators: Shown on calendar heading when selected day occurs on different year
-#: ../js/ui/calendar.js:720 ../js/ui/telepathyClient.js:752
-msgctxt "calendar heading"
-msgid "%A, %B %d, %Y"
-msgstr "%A, %d %B %Y"
-
-#: ../js/ui/calendar.js:730
-msgid "Today"
-msgstr "Hari ini"
-
-#: ../js/ui/calendar.js:734
-msgid "Tomorrow"
-msgstr "Esok"
-
-#: ../js/ui/calendar.js:743
-msgid "This week"
-msgstr "Minggu ini"
-
-#: ../js/ui/calendar.js:751
-msgid "Next week"
-msgstr "Minggu depan"
-
-#: ../js/ui/dash.js:172 ../js/ui/messageTray.js:1127
-msgid "Remove"
-msgstr "Buang"
-
-#: ../js/ui/dateMenu.js:89
-msgid "Date and Time Settings"
-msgstr "Tetapan Tarikh dan Waktu"
-
-#: ../js/ui/dateMenu.js:109
-msgid "Open Calendar"
-msgstr "Buka Kalendar"
-
-#. Translators: This is the time format with date used
-#. in 24-hour mode.
-#: ../js/ui/dateMenu.js:162
-msgid "%a %b %e, %R:%S"
-msgstr "%a %e %b, %R:%S"
-
-#: ../js/ui/dateMenu.js:163
-msgid "%a %b %e, %R"
-msgstr "%a %e %b, %R"
-
-#. Translators: This is the time format without date used
-#. in 24-hour mode.
-#: ../js/ui/dateMenu.js:167
-msgid "%a %R:%S"
-msgstr "%a %R:%S"
-
-#: ../js/ui/dateMenu.js:168
-msgid "%a %R"
-msgstr "%a %R"
-
-#. Translators: This is a time format with date used
-#. for AM/PM.
-#: ../js/ui/dateMenu.js:175
-msgid "%a %b %e, %l:%M:%S %p"
-msgstr "%a %e %b, %l:%M:%S %p"
-
-#: ../js/ui/dateMenu.js:176
-msgid "%a %b %e, %l:%M %p"
-msgstr "%a %e %b, %l:%M %p"
-
-#. Translators: This is a time format without date used
-#. for AM/PM.
-#: ../js/ui/dateMenu.js:180
-msgid "%a %l:%M:%S %p"
-msgstr "%a %l:%M:%S %p"
-
-#: ../js/ui/dateMenu.js:181
-msgid "%a %l:%M %p"
-msgstr "%a %l:%M %p"
-
-#. Translators: This is the date format to use when the calendar popup is
-#. * shown - it is shown just below the time in the shell (e.g. "Tue 9:29 AM").
-#.
-#: ../js/ui/dateMenu.js:192
-msgid "%A %B %e, %Y"
-msgstr "%A %e %B %Y"
-
-#: ../js/ui/docDisplay.js:16
-msgid "RECENT ITEMS"
-msgstr "ITEM TERBARU"
-
-#: ../js/ui/endSessionDialog.js:60
-#, c-format
-msgid "Log Out %s"
-msgstr "Log Keluar %s"
-
-#: ../js/ui/endSessionDialog.js:61 ../js/ui/endSessionDialog.js:67
-msgid "Log Out"
-msgstr "Log Keluar"
-
-#: ../js/ui/endSessionDialog.js:62
-msgid "Click Log Out to quit these applications and log out of the system."
-msgstr ""
-"Klik Log Keluar untuk berhentikan semua aplikasi ini dan log keluar daripada "
-"sistem."
-
-#: ../js/ui/endSessionDialog.js:63
-#, c-format
-msgid "%s will be logged out automatically in %d seconds."
-msgstr "%s akan dilog keluar secara automatik dalam %d saat."
-
-#: ../js/ui/endSessionDialog.js:64
-#, c-format
-msgid "You will be logged out automatically in %d seconds."
-msgstr "Anda akan dilog keluar secara automatik dalam %d saat."
-
-#: ../js/ui/endSessionDialog.js:65
-msgid "Logging out of the system."
-msgstr "Mengelog keluar daripada sistem"
-
-#: ../js/ui/endSessionDialog.js:72 ../js/ui/endSessionDialog.js:79
-msgid "Power Off"
-msgstr "Matikan"
-
-#: ../js/ui/endSessionDialog.js:73
-msgid "Click Power Off to quit these applications and power off the system."
-msgstr ""
-"Klik Matikan untuk menghentikan semua aplikasi ini dan mematikan sistem."
-
-#: ../js/ui/endSessionDialog.js:74
-#, c-format
-msgid "The system will power off automatically in %d seconds."
-msgstr "Sistem akan dimatikan secara automatik dalam %d saat."
-
-#: ../js/ui/endSessionDialog.js:75
-msgid "Powering off the system."
-msgstr "Mematikan sistem"
-
-#: ../js/ui/endSessionDialog.js:77 ../js/ui/endSessionDialog.js:85
-#: ../js/ui/endSessionDialog.js:90
-msgid "Restart"
-msgstr "Mula Semula"
-
-#: ../js/ui/endSessionDialog.js:86
-msgid "Click Restart to quit these applications and restart the system."
-msgstr ""
-"Klik Mula Semula untuk keluar semua aplikasi ini dan memulakan semula sistem."
-
-#: ../js/ui/endSessionDialog.js:87
-#, c-format
-msgid "The system will restart automatically in %d seconds."
-msgstr "Sistem akan mula semula secara automatik dalam %d saat."
-
-#: ../js/ui/endSessionDialog.js:88
-msgid "Restarting the system."
-msgstr "Memulakan semula sistem."
-
-#: ../js/ui/endSessionDialog.js:410 ../js/ui/polkitAuthenticationAgent.js:170
-#: ../js/ui/status/bluetooth.js:497
-msgid "Cancel"
-msgstr "Batal"
-
-#: ../js/ui/lookingGlass.js:641
-msgid "No extensions installed"
-msgstr "Tiada sambungan dipasang"
-
-#: ../js/ui/lookingGlass.js:678
-msgid "Enabled"
-msgstr "Dibolehkan"
-
-#. translators:
-#. * The device has been disabled
-#: ../js/ui/lookingGlass.js:680 ../src/gvc/gvc-mixer-control.c:1091
+#: ../plugins/actions/actions.c:108
 msgid "Disabled"
 msgstr "Dilumpuhkan"
 
-#: ../js/ui/lookingGlass.js:682
-msgid "Error"
-msgstr "Ralat"
-
-#: ../js/ui/lookingGlass.js:684
-msgid "Out of date"
-msgstr "Lapuk"
-
-#: ../js/ui/lookingGlass.js:709
-msgid "View Source"
-msgstr "Lihat Sumber"
-
-#: ../js/ui/lookingGlass.js:715
-msgid "Web Page"
-msgstr "Laman Web"
-
-#: ../js/ui/messageTray.js:1120
-msgid "Open"
-msgstr "Buka"
-
-#: ../js/ui/messageTray.js:2291
-msgid "System Information"
-msgstr "Maklumat Sistem"
-
-#: ../js/ui/notificationDaemon.js:419 ../js/ui/status/power.js:238
-#: ../src/shell-app-system.c:1115
-msgid "Unknown"
-msgstr "Tak diketahui"
-
-#: ../js/ui/overview.js:89
-msgid "Undo"
-msgstr "Buat asal"
-
-#: ../js/ui/overview.js:184
-msgid "Windows"
-msgstr "Tetingkap"
-
-#: ../js/ui/overview.js:187
-msgid "Applications"
-msgstr "Aplikasi"
-
-#. Translators: this is the name of the dock/favorites area on
-#. the left of the overview
-#: ../js/ui/overview.js:203
-msgid "Dash"
-msgstr "Dash"
-
-#. TODO - _quit() doesn't really work on apps in state STARTING yet
-#: ../js/ui/panel.js:532
-#, c-format
-msgid "Quit %s"
-msgstr "Berhetikan %s"
-
-#. Translators: If there is no suitable word for "Activities"
-#. in your language, you can use the word for "Overview".
-#: ../js/ui/panel.js:568
-msgid "Activities"
-msgstr "Aktiviti"
-
-#: ../js/ui/panel.js:951
-msgid "Top Bar"
-msgstr "Bar Atas"
-
-#: ../js/ui/placeDisplay.js:120
-#, c-format
-msgid "Failed to unmount '%s'"
-msgstr "Gagal menyahlekap '%s'"
-
-#: ../js/ui/placeDisplay.js:123
-msgid "Retry"
-msgstr "Cuba semula"
-
-#: ../js/ui/placeDisplay.js:163
-msgid "Connect to..."
-msgstr "Sambung kepada..."
-
-#: ../js/ui/placeDisplay.js:375
-msgid "PLACES & DEVICES"
-msgstr "TEMPAT & PERANTI"
-
-#: ../js/ui/polkitAuthenticationAgent.js:72
-msgid "Authentication Required"
-msgstr "Pengesahan Diperlukan"
-
-#: ../js/ui/polkitAuthenticationAgent.js:106
-msgid "Administrator"
-msgstr "Pengurus"
-
-#: ../js/ui/polkitAuthenticationAgent.js:174
-msgid "Authenticate"
-msgstr "Pengesahan"
-
-#. Translators: "that didn't work" refers to the fact that the
-#. * requested authentication was not gained; this can happen
-#. * because of an authentication error (like invalid password),
-#. * for instance.
-#: ../js/ui/polkitAuthenticationAgent.js:262
-msgid "Sorry, that didn't work. Please try again."
-msgstr "Maaf, tidak berjaya. Sila cuba lagi."
-
-#: ../js/ui/polkitAuthenticationAgent.js:274
-msgid "Password:"
-msgstr "Katalaluan:"
-
-#. Translators: this MUST be either "toggle-switch-us"
-#. (for toggle switches containing the English words
-#. "ON" and "OFF") or "toggle-switch-intl" (for toggle
-#. switches containing "◯" and "|"). Other values will
-#. simply result in invisible toggle switches.
-#: ../js/ui/popupMenu.js:676
-msgid "toggle-switch-us"
-msgstr "toggle-switch-us"
-
-#: ../js/ui/runDialog.js:208
-msgid "Please enter a command:"
-msgstr "Sila masukkan arahan"
-
-#: ../js/ui/searchDisplay.js:318
-msgid "Searching..."
-msgstr "Sedang mencari..."
-
-#: ../js/ui/searchDisplay.js:332
-msgid "No matching results."
-msgstr "Tiada hasil yang padan."
-
-#: ../js/ui/shellMountOperation.js:285
-msgid "Wrong password, please try again"
-msgstr ""
-
-#: ../js/ui/status/accessibility.js:60
-msgid "Zoom"
-msgstr "Zum"
-
-#. let screenReader = this._buildItem(_("Screen Reader"), APPLICATIONS_SCHEMA,
-#. 'screen-reader-enabled');
-#. this.menu.addMenuItem(screenReader);
-#. let screenKeyboard = this._buildItem(_("Screen Keyboard"), APPLICATIONS_SCHEMA,
-#. 'screen-keyboard-enabled');
-#. this.menu.addMenuItem(screenKeyboard);
-#: ../js/ui/status/accessibility.js:75
-msgid "Visual Alerts"
-msgstr "Awasan Visual"
-
-#: ../js/ui/status/accessibility.js:78
-msgid "Sticky Keys"
-msgstr "Kekunci Sticky"
-
-#: ../js/ui/status/accessibility.js:81
-msgid "Slow Keys"
-msgstr "Kekunci Lembab"
-
-# Kekunci untuk OKU yang tangan bergetar.
-#: ../js/ui/status/accessibility.js:84
-msgid "Bounce Keys"
-msgstr "Kekunci Lantun"
-
-#: ../js/ui/status/accessibility.js:87
-msgid "Mouse Keys"
-msgstr "Kekunci Tetikus"
-
-#: ../js/ui/status/accessibility.js:91
-msgid "Universal Access Settings"
-msgstr "Tetapan Capaian Menyeluruh"
-
-# contrast boleh juga diterjemah "beza jelas", tapi "senjang" (/sénjang/) dipilih kerana lebih pendek.
-#: ../js/ui/status/accessibility.js:145
-msgid "High Contrast"
-msgstr "Senjang Tinggi"
-
-#: ../js/ui/status/accessibility.js:182
-msgid "Large Text"
-msgstr "Teks Besar"
-
-#: ../js/ui/status/bluetooth.js:39 ../js/ui/status/bluetooth.js:270
-#: ../js/ui/status/bluetooth.js:364 ../js/ui/status/bluetooth.js:398
-#: ../js/ui/status/bluetooth.js:438 ../js/ui/status/bluetooth.js:471
-msgid "Bluetooth"
-msgstr "Bluetooth"
-
-#: ../js/ui/status/bluetooth.js:52
-msgid "Visibility"
-msgstr "Kebolehlihatan"
-
-#: ../js/ui/status/bluetooth.js:66
-msgid "Send Files to Device..."
-msgstr "Hantar Fail kepada Peranti..."
-
-#: ../js/ui/status/bluetooth.js:67
-msgid "Set up a New Device..."
-msgstr "Menyediakan Peranti Baharu..."
-
-#: ../js/ui/status/bluetooth.js:92
-msgid "Bluetooth Settings"
-msgstr "Tetapan Bluetooth"
-
-#. TRANSLATORS: this means that bluetooth was disabled by hardware rfkill
-#: ../js/ui/status/bluetooth.js:116
-msgid "hardware disabled"
-msgstr "perkakas dilumpuhkan"
-
-#: ../js/ui/status/bluetooth.js:217
-msgid "Connection"
-msgstr "Sambungan"
-
-#: ../js/ui/status/bluetooth.js:226 ../js/ui/status/network.js:493
-msgid "disconnecting..."
-msgstr "memutuskan..."
-
-#: ../js/ui/status/bluetooth.js:239 ../js/ui/status/network.js:499
-msgid "connecting..."
-msgstr "menyambung..."
-
-#: ../js/ui/status/bluetooth.js:257
-msgid "Send Files..."
-msgstr "Hantar Fail..."
-
-#: ../js/ui/status/bluetooth.js:262
-msgid "Browse Files..."
-msgstr "Semak Imbas Fail..."
-
-#: ../js/ui/status/bluetooth.js:271
-msgid "Error browsing device"
-msgstr "Ralat menyemak imbas peranti"
-
-#: ../js/ui/status/bluetooth.js:272
-#, c-format
-msgid "The requested device cannot be browsed, error is '%s'"
-msgstr "Peranti yang dipohon gagal disemak imbas, ralatnya ialah '%s'"
-
-#: ../js/ui/status/bluetooth.js:280
-msgid "Keyboard Settings"
-msgstr "Tetapan Papan Kekunci"
-
-#: ../js/ui/status/bluetooth.js:285
-msgid "Mouse Settings"
-msgstr "Tetapan Tetikus"
-
-#: ../js/ui/status/bluetooth.js:292 ../js/ui/status/volume.js:64
-msgid "Sound Settings"
-msgstr "Tetapan Bunyi"
-
-#: ../js/ui/status/bluetooth.js:399
-#, c-format
-msgid "Authorization request from %s"
-msgstr "Permohonan keizinan daripada %s"
-
-#: ../js/ui/status/bluetooth.js:405
-#, c-format
-msgid "Device %s wants access to the service '%s'"
-msgstr "Peranti %s ingin mencapai perkhidmatan '%s'"
-
-#: ../js/ui/status/bluetooth.js:407
-msgid "Always grant access"
-msgstr "Sentiasa berikan capaian"
-
-#: ../js/ui/status/bluetooth.js:408
-msgid "Grant this time only"
-msgstr "Berikan buat masa ini sahaja"
-
-#: ../js/ui/status/bluetooth.js:409 ../js/ui/telepathyClient.js:954
-msgid "Reject"
-msgstr "Tolak"
-
-#: ../js/ui/status/bluetooth.js:439
-#, c-format
-msgid "Pairing confirmation for %s"
-msgstr "Pengesahan pemasangan untuk %s"
-
-#: ../js/ui/status/bluetooth.js:445 ../js/ui/status/bluetooth.js:479
-#, c-format
-msgid "Device %s wants to pair with this computer"
-msgstr "Peranti %s ingin berpasang dengan komputer ini"
-
-#: ../js/ui/status/bluetooth.js:446
-#, c-format
-msgid "Please confirm whether the PIN '%s' matches the one on the device."
-msgstr "Sila sahkan sama ada PIN '%s' padan dengan yang di peranti."
-
-#: ../js/ui/status/bluetooth.js:448
-msgid "Matches"
-msgstr "Padan"
-
-#: ../js/ui/status/bluetooth.js:449
-msgid "Does not match"
-msgstr "Tidak padan"
-
-#: ../js/ui/status/bluetooth.js:472
-#, c-format
-msgid "Pairing request for %s"
-msgstr "Permohonan berpasang untuk %s"
-
-#: ../js/ui/status/bluetooth.js:480
-msgid "Please enter the PIN mentioned on the device."
-msgstr "SIla masukkan PIN yang dinyatakan di peranti."
-
-#: ../js/ui/status/bluetooth.js:496
-msgid "OK"
-msgstr "OK"
-
-#: ../js/ui/status/keyboard.js:71
-#, fuzzy
-#| msgid "Show Keyboard Layout..."
-msgid "Show Keyboard Layout"
-msgstr "Tunjuk Susun Atur Papan Kekunci..."
-
-#: ../js/ui/status/keyboard.js:75
-#, fuzzy
-#| msgid "Date and Time Settings"
-msgid "Region and Language Settings"
-msgstr "Tetapan Tarikh dan Waktu"
-
-#: ../js/ui/statusMenu.js:192 ../js/ui/statusMenu.js:196
-#: ../js/ui/statusMenu.js:262
-msgid "Power Off..."
-msgstr "Matikan..."
-
-#: ../js/ui/statusMenu.js:194 ../js/ui/statusMenu.js:196
-#: ../js/ui/statusMenu.js:261
-msgid "Suspend"
-msgstr "Tangguh"
-
-#: ../js/ui/statusMenu.js:217
-msgid "Available"
-msgstr "Ada"
-
-#: ../js/ui/statusMenu.js:222
-msgid "Busy"
-msgstr "Sibuk"
-
-#: ../js/ui/statusMenu.js:230
-msgid "My Account"
-msgstr "Akaun Saya"
-
-#: ../js/ui/statusMenu.js:234
-msgid "System Settings"
-msgstr "Tetapan Sistem"
-
-#: ../js/ui/statusMenu.js:242
+#: ../plugins/actions/actions.c:109
+msgid "Log Out Dialog"
+msgstr "Dialog Daftar Keluar"
+
+#: ../plugins/actions/actions.c:110
+msgid "Log Out"
+msgstr "Daftar Keluar"
+
+#: ../plugins/actions/actions.c:111
 msgid "Lock Screen"
 msgstr "Kunci Skrin"
 
-#: ../js/ui/statusMenu.js:247
-msgid "Switch User"
-msgstr "Tukar Pengguna"
+#: ../plugins/actions/actions.c:112
+msgid "Shut Down"
+msgstr "Matikan"
 
-#: ../js/ui/statusMenu.js:252
-msgid "Log Out..."
-msgstr "Log Keluar..."
+#: ../plugins/actions/actions.c:113
+msgid "Restart"
+msgstr "Ulangmula"
 
-#: ../js/ui/status/network.js:123
-msgid "<unknown>"
-msgstr "<unknown>"
+#: ../plugins/actions/actions.c:114
+msgid "Suspend"
+msgstr "Gantung"
 
-#. Translators: this indicates that wireless or wwan is disabled by hardware killswitch
-#: ../js/ui/status/network.js:292
-msgid "disabled"
-msgstr "dilumpuhkan"
+#: ../plugins/actions/actions.c:115
+msgid "Hibernate"
+msgstr "Hibernasi"
 
-#. Translators: this is for network devices that are physically present but are not
-#. under NetworkManager's control (and thus cannot be used in the menu)
-#: ../js/ui/status/network.js:491
-msgid "unmanaged"
-msgstr "tidak diuruskan"
+#: ../plugins/actions/actions.desktop.in.h:2
+msgid "Log out, lock or other system actions"
+msgstr "Daftar keluar, kunci atau aksi sistem lain"
 
-#. Translators: this is for network connections that require some kind of key or password
-#: ../js/ui/status/network.js:502
-msgid "authentication required"
-msgstr "pengesahan diperlukan"
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:1
+#: ../plugins/clock/clock-dialog.glade.h:3
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:1
+#: ../plugins/pager/pager-dialog.glade.h:1
+#: ../plugins/separator/separator-dialog.glade.h:1
+#: ../plugins/systray/systray-dialog.glade.h:1
+#: ../plugins/tasklist/tasklist-dialog.glade.h:2
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:1
+msgid "Appearance"
+msgstr "Penampilan"
 
-#. Translators: this is for devices that require some kind of firmware or kernel
-#. module, which is missing
-#: ../js/ui/status/network.js:512
-msgid "firmware missing"
-msgstr "firmware tidak dijumpai"
+#. I18N: default tooltip of the application menu
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:2
+#: ../plugins/applicationsmenu/applicationsmenu.c:38
+#: ../plugins/applicationsmenu/applicationsmenu.desktop.in.h:1
+msgid "Applications Menu"
+msgstr "Menu Aplikasi"
 
-#. Translators: this is for wired network devices that are physically disconnected
-#: ../js/ui/status/network.js:519
-msgid "cable unplugged"
-msgstr "Kabel dicabut"
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:3
+msgid "Button _title:"
+msgstr "_Tajuk butang"
 
-#. Translators: this is for a network device that cannot be activated (for example it
-#. is disabled by rfkill, or it has no coverage
-#: ../js/ui/status/network.js:524
-msgid "unavailable"
-msgstr "tiada"
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:4
+msgid "Ed_it Menu"
+msgstr "Sunt_ing Menu"
 
-#: ../js/ui/status/network.js:526
-msgid "connection failed"
-msgstr "sambungan gagal"
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:5
+msgid "Menu File"
+msgstr "Fail Menu"
 
-#: ../js/ui/status/network.js:582 ../js/ui/status/network.js:1507
-msgid "More..."
-msgstr "Lagi..."
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:6
+msgid "Menu _file:"
+msgstr "_Fail menu:"
 
-#. TRANSLATORS: this is the indication that a connection for another logged in user is active,
-#. and we cannot access its settings (including the name)
-#: ../js/ui/status/network.js:618 ../js/ui/status/network.js:1444
-msgid "Connected (private)"
-msgstr "Tersambung (peribadi)"
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:7
+msgid "Select A Menu File"
+msgstr "Pilih fail Menu"
 
-#: ../js/ui/status/network.js:703
-msgid "Auto Ethernet"
-msgstr "Ethernet Auto"
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:8
+msgid ""
+"Select this option to show the generic application name in the menu, for "
+"example \"File Manager\" instead of \"Thunar\""
+msgstr ""
+"Pilih pilihan ini untuk memaparkan nama aplikasi generik dalam menu, "
+"contohnya \"Pengurus Tetingkap\" dan bukannya \"Thunar\""
 
-#: ../js/ui/status/network.js:771
-msgid "Auto broadband"
-msgstr "Jalurlebar auto"
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:9
+msgid "Show application d_escription in tooltip"
+msgstr "Papar p_erihal aplikasi dalam tip alatan"
 
-#: ../js/ui/status/network.js:774
-msgid "Auto dial-up"
-msgstr "Dailan auto"
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:10
+msgid "Show generic application n_ames"
+msgstr "Papar n_ama aplikasi generik"
 
-#. TRANSLATORS: this the automatic wireless connection name (including the network name)
-#: ../js/ui/status/network.js:898 ../js/ui/status/network.js:1456
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:11
+msgid "Show ic_ons in menu"
+msgstr "Papar ik_on pada menu"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:12
+msgid "Use c_ustom menu file:"
+msgstr "Gunakan fail menu ters_uai"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:13
+msgid "Use the _default menu"
+msgstr "Gunakan menu _lalai"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:14
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:9
+msgid "_Icon:"
+msgstr "_Ikon:"
+
+#: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:15
+msgid "_Show button title"
+msgstr "Papar ta_juk butang"
+
+#: ../plugins/applicationsmenu/applicationsmenu.c:475
+#: ../plugins/directorymenu/directorymenu.c:369
+msgid "Select An Icon"
+msgstr "Pilih Icon"
+
+#: ../plugins/applicationsmenu/applicationsmenu.c:513
+#: ../plugins/applicationsmenu/applicationsmenu.c:754
+#: ../plugins/launcher/launcher.c:2264
 #, c-format
-msgid "Auto %s"
-msgstr "Auto %s"
+msgid "Failed to execute command \"%s\"."
+msgstr "Gagal melaksanakan arahan \"%s\"."
 
-#: ../js/ui/status/network.js:900
-msgid "Auto bluetooth"
-msgstr "Bluetooth auto"
+#: ../plugins/applicationsmenu/applicationsmenu.c:1010
+msgid "No applications found"
+msgstr "Tiada aplikasi dijumpai"
 
-#: ../js/ui/status/network.js:1458
-msgid "Auto wireless"
-msgstr "Wayarles auto"
+#: ../plugins/applicationsmenu/applicationsmenu.c:1033
+msgid "Failed to load the applications menu"
+msgstr "Gagal untuk memuatkan menu aplikasi"
 
-#: ../js/ui/status/network.js:1550
-msgid "Enable networking"
-msgstr "Benarkan rangkaian"
+#: ../plugins/applicationsmenu/applicationsmenu.desktop.in.h:2
+msgid "Show a menu containing categories of installed applications"
+msgstr "Papar menu yang mengandungi kategori aplikasi yang dipasang"
 
-#: ../js/ui/status/network.js:1562
-msgid "Wired"
-msgstr "Berwayar"
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:27
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:27
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:27
+msgid "Usage:"
+msgstr "Penggunaan:"
 
-#: ../js/ui/status/network.js:1573
-msgid "Wireless"
-msgstr "Wayarles"
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:28
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:28
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:28
+msgid "OPTION"
+msgstr "Opsyen"
 
-#: ../js/ui/status/network.js:1583
-msgid "Mobile broadband"
-msgstr "Jalurlebar Mudahalih"
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:30
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:30
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:30
+msgid "Options:"
+msgstr "Opsyen:"
 
-#: ../js/ui/status/network.js:1593
-msgid "VPN Connections"
-msgstr "Sambungan-sambungan VPN"
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:31
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:31
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:31
+msgid "Popup menu at current mouse position"
+msgstr "Menu popup pada kedudukan tetikus sekarang"
 
-#: ../js/ui/status/network.js:1605
-msgid "Network Settings"
-msgstr "Tetapan-tetapan Rangkaian"
+#: ../plugins/applicationsmenu/heartlenv-popup-applicationsmenu.sh:32
+#: ../plugins/directorymenu/heartlenv-popup-directorymenu.sh:32
+#: ../plugins/windowmenu/heartlenv-popup-windowmenu.sh:32
+msgid "Show help options"
+msgstr "Papar opsyen bantuan"
 
-#: ../js/ui/status/network.js:1897
-#, c-format
-msgid "You're now connected to mobile broadband connection '%s'"
-msgstr "Anda kini telah disambungkan ke sambungan jalurlebar mudahalih '%s'"
+#: ../plugins/clock/clock.c:146
+msgid "Week %V"
+msgstr "Minggu %V"
 
-#: ../js/ui/status/network.js:1901
-#, c-format
-msgid "You're now connected to wireless network '%s'"
-msgstr "Anda kini telah disambungkan ke rangkaian wayarles '%s'"
+#: ../plugins/clock/clock.c:407
+msgid "Failed to execute clock command"
+msgstr "Gagal untuk melaksanakan arahan waktu"
 
-#: ../js/ui/status/network.js:1905
-#, c-format
-msgid "You're now connected to wired network '%s'"
-msgstr "Anda kini telah disambungkan ke rangkaian berwayar '%s'"
+#: ../plugins/clock/clock.c:719
+msgid "Custom Format"
+msgstr "Format Tersuai"
 
-#: ../js/ui/status/network.js:1909
-#, c-format
-msgid "You're now connected to VPN network '%s'"
-msgstr "Anda kini telah disambungkan ke rangkaian VPN '%s'"
+#: ../plugins/clock/clock-dialog.glade.h:1
+msgid "24-_hour clock"
+msgstr "_Waktu 24-jam"
 
-#: ../js/ui/status/network.js:1914
-#, c-format
-msgid "You're now connected to '%s'"
-msgstr "Anda kini telah disambungkan ke '%s'"
+#: ../plugins/clock/clock-dialog.glade.h:2
+msgid "Analog"
+msgstr "Analog"
 
-#: ../js/ui/status/network.js:1922
-msgid "Connection established"
-msgstr "Berjaya menyambung"
+#: ../plugins/clock/clock-dialog.glade.h:4
+msgid "Binary"
+msgstr "Binari"
 
-#: ../js/ui/status/network.js:2048
-msgid "Networking is disabled"
-msgstr "Rangkaian telah dilumpuhkan"
+#: ../plugins/clock/clock-dialog.glade.h:5
+#: ../plugins/clock/clock.desktop.in.h:1
+msgid "Clock"
+msgstr "Jam"
 
-#: ../js/ui/status/network.js:2173
-msgid "Network Manager"
-msgstr "Pengurus Rangkaian"
+#: ../plugins/clock/clock-dialog.glade.h:6
+msgid "Clock Options"
+msgstr "Opsyen Jam"
 
-#: ../js/ui/status/power.js:83
-msgid "Power Settings"
-msgstr "Tetapan Kuasa"
+#: ../plugins/clock/clock-dialog.glade.h:7
+msgid "Digital"
+msgstr "Digital"
 
-#. 0 is reported when UPower does not have enough data
-#. to estimate battery life
-#: ../js/ui/status/power.js:109
-msgid "Estimating..."
-msgstr "Menganggar..."
+#: ../plugins/clock/clock-dialog.glade.h:8
+msgid "Display _seconds"
+msgstr "Papar _saat"
 
-#: ../js/ui/status/power.js:116
-#, c-format
-msgid "%d hour remaining"
-msgid_plural "%d hours remaining"
-msgstr[0] "Lagi %d jam"
-msgstr[1] "Lagi %d jam"
+#: ../plugins/clock/clock-dialog.glade.h:9
+msgid "F_ormat:"
+msgstr "F_ormat:"
 
-#. TRANSLATORS: this is a time string, as in "%d hours %d minutes remaining"
-#: ../js/ui/status/power.js:119
-#, c-format
-msgid "%d %s %d %s remaining"
-msgstr "Lagi %d %s %d %s"
+#. I18N: the fuzziness the *precision* of the fuzzy clock. Time steps of 5, 15 or parts of the day.
+#: ../plugins/clock/clock-dialog.glade.h:11
+msgid "F_uzziness:"
+msgstr "Kekab_uran:"
 
-#: ../js/ui/status/power.js:121
-msgid "hour"
-msgid_plural "hours"
-msgstr[0] "jam"
-msgstr[1] "jam"
+#: ../plugins/clock/clock-dialog.glade.h:12
+msgid "Fl_ash time separators"
+msgstr "Kelipk_an pemisah waktu"
 
-#: ../js/ui/status/power.js:121
-msgid "minute"
-msgid_plural "minutes"
-msgstr[0] "minit"
-msgstr[1] "minit"
+#: ../plugins/clock/clock-dialog.glade.h:13
+msgid "Fuzzy"
+msgstr "Kabur"
 
-#: ../js/ui/status/power.js:124
-#, c-format
-msgid "%d minute remaining"
-msgid_plural "%d minutes remaining"
-msgstr[0] "Lagi %d minit"
-msgstr[1] "Lagi %d minit"
+#: ../plugins/clock/clock-dialog.glade.h:14
+msgid "LCD"
+msgstr "LCD"
 
-#: ../js/ui/status/power.js:216
-msgid "AC adapter"
-msgstr "Penyesuai AC"
+#: ../plugins/clock/clock-dialog.glade.h:15
+msgid "Sho_w AM/PM"
+msgstr "_Papar AM/PM"
 
-#: ../js/ui/status/power.js:218
-msgid "Laptop battery"
-msgstr "Bateri laptop"
+#: ../plugins/clock/clock-dialog.glade.h:16
+#: ../plugins/systray/systray-dialog.glade.h:5
+msgid "Show _frame"
+msgstr "Papar _frame"
 
-#: ../js/ui/status/power.js:220
-msgid "UPS"
-msgstr "UPS"
+#: ../plugins/clock/clock-dialog.glade.h:17
+msgid "Show _inactive dots"
+msgstr "Papar dot t_idak aktif"
 
-#: ../js/ui/status/power.js:222
-msgid "Monitor"
-msgstr "Monitor"
+#: ../plugins/clock/clock-dialog.glade.h:18
+msgid "Show gri_d"
+msgstr "Papar gri_d"
 
-#: ../js/ui/status/power.js:224
-msgid "Mouse"
-msgstr "Tetikus"
-
-#: ../js/ui/status/power.js:226
-msgid "Keyboard"
-msgstr "Papan kekunci"
-
-#: ../js/ui/status/power.js:228
-msgid "PDA"
-msgstr "PDA"
-
-#: ../js/ui/status/power.js:230
-msgid "Cell phone"
-msgstr "Telefon bimbit"
-
-#: ../js/ui/status/power.js:232
-msgid "Media player"
-msgstr "Pemain media"
-
-#: ../js/ui/status/power.js:234
-msgid "Tablet"
-msgstr "Tablet"
-
-#: ../js/ui/status/power.js:236
-msgid "Computer"
-msgstr "Komputer"
-
-#: ../js/ui/status/volume.js:43
-msgid "Volume"
-msgstr "Jilid"
-
-#: ../js/ui/status/volume.js:56
-msgid "Microphone"
-msgstr "Mikrofon"
-
-#. We got the TpContact
-#. FIXME: We don't have a 'chat room' icon (bgo #653737) use
-#. system-users for now as Empathy does.
-#: ../js/ui/telepathyClient.js:228
-msgid "Invitation"
-msgstr "Jumputan"
-
-#. We got the TpContact
-#: ../js/ui/telepathyClient.js:291
-msgid "Call"
-msgstr "Panggilan"
-
-#: ../js/ui/telepathyClient.js:541
-#, c-format
-msgid "%s is online."
-msgstr "%s di atas talian."
-
-#: ../js/ui/telepathyClient.js:546
-#, c-format
-msgid "%s is offline."
-msgstr "%s di luar talian"
-
-#: ../js/ui/telepathyClient.js:549
-#, c-format
-msgid "%s is away."
-msgstr "%s tidak ada."
-
-#: ../js/ui/telepathyClient.js:552
-#, c-format
-msgid "%s is busy."
-msgstr "%s sibuk."
-
-#. Translators: this is a time format string followed by a date.
-#. If applicable, replace %X with a strftime format valid for your
-#. locale, without seconds.
-#: ../js/ui/telepathyClient.js:741
+#: ../plugins/clock/clock-dialog.glade.h:20
 #, no-c-format
-msgid "Sent at %X on %A"
-msgstr "Hantar pada pukul %X hari %A"
+msgid ""
+"The format describes the date and time parts to insert into the file name. "
+"For example, %Y will be substituted with the year, %m with the month and %d "
+"with the day. See the documentation of the date utility for additional "
+"information."
+msgstr ""
+"Format ini menerangkan bahagian tarikh dan masa untuk dimasukkan ke dalam "
+"nama fail. Sebagai contoh, %Y akan digantikan dengan tahun, %m bulan dan %d "
+"dengan hari. Lihat dokumentasi utiliti tarikh untuk mendapatkan maklumat "
+"tambahan"
 
-#. Translators: this is the other person changing their old IM name to their new
-#. IM name.
-#: ../js/ui/telepathyClient.js:791
+#: ../plugins/clock/clock-dialog.glade.h:21
+msgid "True _binary clock"
+msgstr "Jam _binari sebenar"
+
+#: ../plugins/clock/clock-dialog.glade.h:22
+msgid "_Layout:"
+msgstr "_Susun atur"
+
+#: ../plugins/clock/clock-dialog.glade.h:23
+msgid "_Tooltip format:"
+msgstr "Format _tip alatan"
+
+#: ../plugins/clock/clock-fuzzy.c:86
+msgid "Night"
+msgstr "Malam"
+
+#: ../plugins/clock/clock-fuzzy.c:87
+msgid "Early morning"
+msgstr "Awal pagi"
+
+#: ../plugins/clock/clock-fuzzy.c:88
+msgid "Morning"
+msgstr "Pagi"
+
+#: ../plugins/clock/clock-fuzzy.c:89
+msgid "Almost noon"
+msgstr "Hampir tengah hari"
+
+#: ../plugins/clock/clock-fuzzy.c:90
+msgid "Noon"
+msgstr "Tengah hari"
+
+#: ../plugins/clock/clock-fuzzy.c:91
+msgid "Afternoon"
+msgstr "Petang"
+
+#: ../plugins/clock/clock-fuzzy.c:92
+msgid "Evening"
+msgstr "Petang"
+
+#: ../plugins/clock/clock-fuzzy.c:93
+msgid "Late evening"
+msgstr "Lewat petang"
+
+#. I18N: %0 will be replaced with the preceding hour, %1 with
+#. * the comming hour
+#: ../plugins/clock/clock-fuzzy.c:100
+#, no-c-format
+msgid "%0 o'clock"
+msgstr "jam %0"
+
+#: ../plugins/clock/clock-fuzzy.c:101
+#, no-c-format
+msgid "five past %0"
+msgstr "lima selepas %0"
+
+#: ../plugins/clock/clock-fuzzy.c:102
+#, no-c-format
+msgid "ten past %0"
+msgstr "sepuluh selepas %0"
+
+#: ../plugins/clock/clock-fuzzy.c:103
+#, no-c-format
+msgid "quarter past %0"
+msgstr "suku selepas %0"
+
+#: ../plugins/clock/clock-fuzzy.c:104
+#, no-c-format
+msgid "twenty past %0"
+msgstr "dua puluh selepas %0"
+
+#: ../plugins/clock/clock-fuzzy.c:105
+#, no-c-format
+msgid "twenty five past %0"
+msgstr "dua puluh lima selepas %0"
+
+#: ../plugins/clock/clock-fuzzy.c:106
+#, no-c-format
+msgid "half past %0"
+msgstr "setengah selepas %0"
+
+#: ../plugins/clock/clock-fuzzy.c:107
+#, no-c-format
+msgid "twenty five to %1"
+msgstr "dua puluh lima ke %1"
+
+#: ../plugins/clock/clock-fuzzy.c:108
+#, no-c-format
+msgid "twenty to %1"
+msgstr "dua puluh ke %1"
+
+#: ../plugins/clock/clock-fuzzy.c:109
+#, no-c-format
+msgid "quarter to %1"
+msgstr "suku ke %1"
+
+#: ../plugins/clock/clock-fuzzy.c:110
+#, no-c-format
+msgid "ten to %1"
+msgstr "sepuluh ke %1"
+
+#: ../plugins/clock/clock-fuzzy.c:111
+#, no-c-format
+msgid "five to %1"
+msgstr "lima ke %1"
+
+#: ../plugins/clock/clock-fuzzy.c:112
+#, no-c-format
+msgid "%1 o'clock"
+msgstr "jam %1"
+
+#. I18N: some languages have a singular form for the first hour,
+#. * other languages should just use the same strings as above
+#: ../plugins/clock/clock-fuzzy.c:119
+#, no-c-format
+msgctxt "one"
+msgid "%0 o'clock"
+msgstr "jam %0"
+
+#: ../plugins/clock/clock-fuzzy.c:120
+#, no-c-format
+msgctxt "one"
+msgid "five past %0"
+msgstr "lima selepas %0"
+
+#: ../plugins/clock/clock-fuzzy.c:121
+#, no-c-format
+msgctxt "one"
+msgid "ten past %0"
+msgstr "sepuluh selepas %0"
+
+#: ../plugins/clock/clock-fuzzy.c:122
+#, no-c-format
+msgctxt "one"
+msgid "quarter past %0"
+msgstr "suku selepas %0"
+
+#: ../plugins/clock/clock-fuzzy.c:123
+#, no-c-format
+msgctxt "one"
+msgid "twenty past %0"
+msgstr "dua puluh selepas %0"
+
+#: ../plugins/clock/clock-fuzzy.c:124
+#, no-c-format
+msgctxt "one"
+msgid "twenty five past %0"
+msgstr "dua puluh lima selepas %0"
+
+#: ../plugins/clock/clock-fuzzy.c:125
+#, no-c-format
+msgctxt "one"
+msgid "half past %0"
+msgstr "setengah selepas %0"
+
+#: ../plugins/clock/clock-fuzzy.c:126
+#, no-c-format
+msgctxt "one"
+msgid "twenty five to %1"
+msgstr "dua puluh lima ke %1"
+
+#: ../plugins/clock/clock-fuzzy.c:127
+#, no-c-format
+msgctxt "one"
+msgid "twenty to %1"
+msgstr "dua puluh ke %1"
+
+#: ../plugins/clock/clock-fuzzy.c:128
+#, no-c-format
+msgctxt "one"
+msgid "quarter to %1"
+msgstr "suku ke %1"
+
+#: ../plugins/clock/clock-fuzzy.c:129
+#, no-c-format
+msgctxt "one"
+msgid "ten to %1"
+msgstr "sepuluh ke %1"
+
+#: ../plugins/clock/clock-fuzzy.c:130
+#, no-c-format
+msgctxt "one"
+msgid "five to %1"
+msgstr "lima ke %1"
+
+#: ../plugins/clock/clock-fuzzy.c:131
+#, no-c-format
+msgctxt "one"
+msgid "%1 o'clock"
+msgstr "jam %1"
+
+#: ../plugins/clock/clock-fuzzy.c:136
+msgid "one"
+msgstr "satu"
+
+#: ../plugins/clock/clock-fuzzy.c:137
+msgid "two"
+msgstr "dua"
+
+#: ../plugins/clock/clock-fuzzy.c:138
+msgid "three"
+msgstr "tiga"
+
+#: ../plugins/clock/clock-fuzzy.c:139
+msgid "four"
+msgstr "empat"
+
+#: ../plugins/clock/clock-fuzzy.c:140
+msgid "five"
+msgstr "lima"
+
+#: ../plugins/clock/clock-fuzzy.c:141
+msgid "six"
+msgstr "enam"
+
+#: ../plugins/clock/clock-fuzzy.c:142
+msgid "seven"
+msgstr "tujuh"
+
+#: ../plugins/clock/clock-fuzzy.c:143
+msgid "eight"
+msgstr "lapan"
+
+#: ../plugins/clock/clock-fuzzy.c:144
+msgid "nine"
+msgstr "sembilan"
+
+#: ../plugins/clock/clock-fuzzy.c:145
+msgid "ten"
+msgstr "sepuluh"
+
+#: ../plugins/clock/clock-fuzzy.c:146
+msgid "eleven"
+msgstr "sebelas"
+
+#: ../plugins/clock/clock-fuzzy.c:147
+msgid "twelve"
+msgstr "dua belas"
+
+#: ../plugins/clock/clock.desktop.in.h:2
+msgid "What time is it?"
+msgstr "Jam berapa sekarang?"
+
+#: ../plugins/directorymenu/directorymenu.c:550
 #, c-format
-msgid "%s is now known as %s"
-msgstr "%s kini dikenali sebagai %s"
+msgid "Failed to launch application \"%s\""
+msgstr "Gagal menjalankan aplikasi \"%s\""
 
-#. translators: argument is a room name like
-#. * room@jabber.org for example.
-#: ../js/ui/telepathyClient.js:898
+#: ../plugins/directorymenu/directorymenu.c:581
 #, c-format
-msgid "Invitation to %s"
-msgstr "Jemputan untuk %s"
+msgid "Failed to query content type for \"%s\""
+msgstr "Pertanyaan untuk jenis kandungan \"%s\" gagal"
 
-#. translators: first argument is the name of a contact and the second
-#. * one the name of a room. "Alice is inviting you to join room@jabber.org
-#. * for example.
-#: ../js/ui/telepathyClient.js:906
+#: ../plugins/directorymenu/directorymenu.c:590
 #, c-format
-msgid "%s is inviting you to join %s"
-msgstr "%s menjemput anda untuk menyertai %s"
+msgid "No default application found for \"%s\""
+msgstr "Tiada aplikasi lalai dijumpai untuk \"%s\""
 
-#: ../js/ui/telepathyClient.js:908
-msgid "Decline"
-msgstr "Tolak"
-
-#: ../js/ui/telepathyClient.js:909
-msgid "Accept"
-msgstr "Terima"
-
-#. translators: argument is a contact name like Alice for example.
-#: ../js/ui/telepathyClient.js:942
+#: ../plugins/directorymenu/directorymenu.c:605
 #, c-format
-msgid "Video call from %s"
-msgstr "Panggilan video dari %s"
+msgid "Failed to launch default application for \"%s\""
+msgstr "Gagal untuk menjalankan aplikasi pilihan untuk kategori \"%s\""
 
-#. translators: argument is a contact name like Alice for example.
-#: ../js/ui/telepathyClient.js:945
+#: ../plugins/directorymenu/directorymenu.c:696
 #, c-format
-msgid "Call from %s"
-msgstr "Panggilan dari %s"
+msgid "Failed to execute the preferred application for category \"%s\""
+msgstr "Gagal untuk melaksanakan aplikasi pilihan untuk kategori \"%s\""
 
-#: ../js/ui/telepathyClient.js:955
-msgid "Answer"
-msgstr "Jawapan"
+#: ../plugins/directorymenu/directorymenu.c:769
+msgid "Open Folder"
+msgstr "Buka folder"
 
-#. Translators: this is the text displayed
-#. in the search entry when no search is
-#. active; it should not exceed ~30
-#. characters.
-#: ../js/ui/viewSelector.js:120
-msgid "Type to search..."
-msgstr "Taip untuk mencari..."
+#: ../plugins/directorymenu/directorymenu.c:780
+msgid "Open in Terminal"
+msgstr "Buka dalam _Terminal"
 
-#: ../js/ui/viewSelector.js:140 ../src/shell-util.c:257
-msgid "Search"
-msgstr "Cari"
+#: ../plugins/directorymenu/directorymenu.desktop.in.h:1
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:2
+msgid "Directory Menu"
+msgstr "Menu Direktori"
 
-#: ../js/ui/windowAttentionHandler.js:40
+#: ../plugins/directorymenu/directorymenu.desktop.in.h:2
+msgid "Show a directory tree in a menu"
+msgstr "Papar pepohon direktori di dalam menu"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:3
+msgid ""
+"Enter a list of patterns that will be used to determine which files are "
+"visible in a directory. If you specify more than one pattern here, the list "
+"items must be separated with semicolons (e.g. *.txt;*.doc)."
+msgstr ""
+"Masukkan senarai corak yang akan digunakan untuk menentukan file mana yang "
+"dapat dilihat dalam direktori. Jika anda menetapkan lebih daripada satu "
+"corak di sini, senarai item hendaklah dipisahkan dengan koma bertitik "
+"(contohnya *.txt;*.doc)."
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:4
+#: ../plugins/tasklist/tasklist-dialog.glade.h:5
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:5
+msgid "Filtering"
+msgstr "Tapisan"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:5
+msgid "Select A Directory"
+msgstr "Pilih Direktori"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:6
+msgid "Show _hidden files"
+msgstr "Papar fail _tersembunyi"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:7
+msgid "_Base Directory:"
+msgstr "_Pengkalan direktori"
+
+#: ../plugins/directorymenu/directorymenu-dialog.glade.h:8
+msgid "_File Pattern:"
+msgstr "Pola _Fail:"
+
+#: ../plugins/launcher/launcher.c:1555
+msgid "Unnamed Item"
+msgstr "Item tidak bernama"
+
+#: ../plugins/launcher/launcher.c:1696
+msgid "No items"
+msgstr "Tiada item"
+
+#: ../plugins/launcher/launcher-dialog.c:740
+msgid "If you delete an item, it will be permanently removed"
+msgstr "Jika anda memadam item, ia akan dikeluarkan secara kekal"
+
+#: ../plugins/launcher/launcher-dialog.c:741
 #, c-format
-msgid "%s has finished starting"
-msgstr "%s sudah habis bermula"
+msgid "Are you sure you want to remove \"%s\"?"
+msgstr "Adakah anda pasti untuk membuang \"%s\"?"
 
-#: ../js/ui/windowAttentionHandler.js:42
-#, c-format
-msgid "'%s' is ready"
-msgstr "'%s' sudah sedia"
+#: ../plugins/launcher/launcher-dialog.c:742
+msgid "Unnamed item"
+msgstr "Item tidak bernama"
 
-#. translators:
-#. * The number of sound outputs on a particular device
-#: ../src/gvc/gvc-mixer-control.c:1098
-#, c-format
-msgid "%u Output"
-msgid_plural "%u Outputs"
-msgstr[0] "%u Output"
-msgstr[1] "%u Output"
+#: ../plugins/launcher/launcher-dialog.c:787
+msgid "Failed to open desktop item editor"
+msgstr "Gagal membuka penyunting item desktop"
 
-#. translators:
-#. * The number of sound inputs on a particular device
-#: ../src/gvc/gvc-mixer-control.c:1108
-#, c-format
-msgid "%u Input"
-msgid_plural "%u Inputs"
-msgstr[0] "%u Input"
-msgstr[1] "%u Input"
+#: ../plugins/launcher/launcher-dialog.glade.h:2
+msgid "Add a new empty item"
+msgstr "Tambah item kosong baharu"
 
-#: ../src/gvc/gvc-mixer-control.c:1406
-msgid "System Sounds"
-msgstr "Bunyi Sistem"
+#: ../plugins/launcher/launcher-dialog.glade.h:3
+msgid "Add one or more existing items to the launcher"
+msgstr "Tambah satu atau lebih item yang sedia ada untuk pelancar"
 
-#: ../src/main.c:466
-msgid "Print version"
-msgstr "Cetak versi"
+#: ../plugins/launcher/launcher-dialog.glade.h:4
+msgid "Advanced"
+msgstr "Lanjut"
 
-#: ../src/shell-app.c:464
-#, c-format
-msgid "Failed to launch '%s'"
-msgstr "Gagal melancarkan '%s'"
-
-#: ../src/shell-mobile-providers.c:80
-msgid "United Kingdom"
-msgstr "United Kingdom"
-
-#: ../src/shell-mobile-providers.c:526
+#: ../plugins/launcher/launcher-dialog.glade.h:5
 msgid "Default"
 msgstr "Lalai"
 
-#: ../src/shell-polkit-authentication-agent.c:334
-msgid "Authentication dialog was dismissed by the user"
-msgstr "Dialog pengesahan telah digugurkan oleh pengguna"
+#: ../plugins/launcher/launcher-dialog.glade.h:6
+msgid "Delete the currently selected item"
+msgstr "Buang item yang sedang dipilih"
 
-#: ../src/shell-util.c:96
-msgid "Home Folder"
-msgstr "Folder Rumah"
+#: ../plugins/launcher/launcher-dialog.glade.h:7
+msgid "Disable t_ooltips"
+msgstr "Lumpuhkan _tip.alatan"
 
-#. Translators: this is the same string as the one found in
-#. * nautilus
-#: ../src/shell-util.c:111
-msgid "File System"
-msgstr "Sistem Fail"
+#: ../plugins/launcher/launcher-dialog.glade.h:8
+msgid "East"
+msgstr "Timur"
 
-#. Translators: the first string is the name of a gvfs
-#. * method, and the second string is a path. For
-#. * example, "Trash: some-directory". It means that the
-#. * directory called "some-directory" is in the trash.
-#.
-#: ../src/shell-util.c:307
+#: ../plugins/launcher/launcher-dialog.glade.h:11
+msgid "Inside Button"
+msgstr "Dalam Butang"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:12
+#: ../plugins/launcher/launcher.desktop.in.h:1
+msgid "Launcher"
+msgstr "Pelancar"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:15
+msgid "North"
+msgstr "Utara"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:16
+msgid ""
+"Select this option to disable the tooltips when moving over the panel button "
+"or menu items."
+msgstr ""
+"Pilih pilihan ini untuk melumpuhkan tip alatan apabila bergerak ke atas "
+"butang panel atau item menu."
+
+#: ../plugins/launcher/launcher-dialog.glade.h:17
+msgid "Select this option to move the clicked menu item to the panel."
+msgstr ""
+"Pilih pilihan ini untuk menggerakkan item menu yang diklik kepada panel."
+
+#: ../plugins/launcher/launcher-dialog.glade.h:18
+msgid "Show _label instead of icon"
+msgstr "Papar _label dan bukan ikon"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:19
+msgid "Show last _used item in panel"
+msgstr "Papar item terakhir yang dig_unakan dalam panel"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:20
+msgid "South"
+msgstr "Selatan"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:21
+msgid "West"
+msgstr "Barat"
+
+#: ../plugins/launcher/launcher-dialog.glade.h:22
+msgid "_Arrow button position:"
+msgstr "Kedudukan butang _anak panah"
+
+#: ../plugins/launcher/launcher.desktop.in.h:2
+msgid "Program launcher with optional menu"
+msgstr "Program pelancar dengan menu pilihan"
+
+#: ../plugins/pager/pager.c:354 ../plugins/pager/pager-dialog.glade.h:8
+msgid "Workspace _Settings..."
+msgstr "_Tetapan Ruang Kerja"
+
+#: ../plugins/pager/pager.c:429
+msgid "Unable to open the workspace settings"
+msgstr "Tidak dapat membuka tetapan ruang kerja"
+
+#: ../plugins/pager/pager-buttons.c:555 ../plugins/windowmenu/windowmenu.c:854
 #, c-format
-msgid "%1$s: %2$s"
-msgstr "%1$s: %2$s"
+msgid "Workspace %d"
+msgstr "Ruang kerja %d"
 
-#~ msgid "Localization Settings"
-#~ msgstr "Tetapan Penyetempatan"
+#: ../plugins/pager/pager-dialog.glade.h:2
+#: ../plugins/tasklist/tasklist-dialog.glade.h:3
+msgid "Behaviour"
+msgstr "Kelakuan"
 
-#~ msgid "No such application"
-#~ msgstr "Tiada aplikasi ini"
+#: ../plugins/pager/pager-dialog.glade.h:3
+msgid "Number of _rows:"
+msgstr "Bilangan _ruang kerja:"
 
-#~ msgid "Shut Down"
-#~ msgstr "Tutup"
+#: ../plugins/pager/pager-dialog.glade.h:4
+msgid ""
+"Show a miniature view of the workspace with rectangles for the visible "
+"windows"
+msgstr ""
+"Papar gambaran kecil ruang kerja dengan segi empat tepat untuk tetingkap "
+"yang kelihatan"
 
-#~ msgid "Click Shut Down to quit these applications and shut down the system."
-#~ msgstr "Klik Tutup untuk berhentikan semua aplikasi ini dan tutup sistem."
+#: ../plugins/pager/pager-dialog.glade.h:5
+msgid "Show mi_niature view"
+msgstr "Papar pa_ndangan kecil"
 
-#~ msgid "The system will shut down automatically in %d seconds."
-#~ msgstr "Sistem akan ditutup secara automatik dalam %d saat"
+#: ../plugins/pager/pager-dialog.glade.h:6
+msgid "Switch workspaces using the mouse _wheel"
+msgstr "Tukar ruang kerja menggunakan _roda tetikus"
 
-#~ msgid "Shutting down the system."
-#~ msgstr "Menutup sistem."
+#: ../plugins/pager/pager-dialog.glade.h:7
+#: ../plugins/pager/pager.desktop.in.h:2
+msgid "Workspace Switcher"
+msgstr "Penukar ruang kerja"
 
-#~ msgid "Confirm"
-#~ msgstr "Sahkan"
+#: ../plugins/pager/pager.desktop.in.h:1
+msgid "Switch between virtual desktops"
+msgstr "Tukar diantara desktop maya"
 
-#~ msgid "Panel"
-#~ msgstr "Panel"
+#: ../plugins/separator/separator-dialog.glade.h:2
+msgid "Dots"
+msgstr "Dot"
 
-#~ msgid "Screen Reader"
-#~ msgstr "Pembaca Skrin"
+#: ../plugins/separator/separator-dialog.glade.h:3
+msgid "Handle"
+msgstr "Kendali"
 
-#~ msgid "Screen Keyboard"
-#~ msgstr "Papan Kekunci Skrin"
+#: ../plugins/separator/separator-dialog.glade.h:4
+msgid "New Line"
+msgstr "Baris baharu"
 
-#~ msgid "Less than a minute ago"
-#~ msgstr "Kurang daripada seminit lalu"
+#: ../plugins/separator/separator-dialog.glade.h:5
+#: ../plugins/separator/separator.desktop.in.h:2
+msgid "Separator"
+msgstr "Pemisah"
 
-#~ msgid "%d minute ago"
-#~ msgid_plural "%d minutes ago"
-#~ msgstr[0] "%d minit lalu"
-#~ msgstr[1] "%d minit lalu"
+#: ../plugins/separator/separator-dialog.glade.h:6
+msgid "Transparent"
+msgstr "Lutsinar"
 
-#~ msgid "%d hour ago"
-#~ msgid_plural "%d hours ago"
-#~ msgstr[0] "%d jam lalu"
-#~ msgstr[1] "%d jam lalu"
+#: ../plugins/separator/separator-dialog.glade.h:7
+msgid "_Expand"
+msgstr "K_embang"
 
-#~ msgid "%d day ago"
-#~ msgid_plural "%d days ago"
-#~ msgstr[0] "%d hari lalu"
-#~ msgstr[1] "%d hari lalu"
+#: ../plugins/separator/separator.desktop.in.h:1
+msgid "Adds a separator or space between panel items"
+msgstr "Tambah pemisah atau ruang diantara item panel"
 
-#~ msgid "%d week ago"
-#~ msgid_plural "%d weeks ago"
-#~ msgstr[0] "%d minggu lalu"
-#~ msgstr[1] "%d minggu lalu"
+#: ../plugins/showdesktop/showdesktop.c:193
+msgid "Restore the minimized windows"
+msgstr "Memulihkan tingkap yang diminimumkan"
+
+#: ../plugins/showdesktop/showdesktop.c:194
+msgid "Minimize all open windows and show the desktop"
+msgstr "Minimumkan kesemua tetingkap yang dibuka dan paparkan desktop"
+
+#: ../plugins/showdesktop/showdesktop.desktop.in.h:1
+msgid "Hide all windows and show the desktop"
+msgstr "Sembunyikan semua tetingkap dan paparkan desktop"
+
+#: ../plugins/showdesktop/showdesktop.desktop.in.h:2
+msgid "Show Desktop"
+msgstr "Papar Desktop"
+
+#: ../plugins/systray/systray.c:382
+msgid "Unable to start the notification area"
+msgstr "Tidak dapat memulakan kawasan pemberitahuan"
+
+#. create fake error and show it
+#: ../plugins/systray/systray.c:850
+msgid ""
+"Most likely another widget took over the function of a notification area. "
+"This area will be unused."
+msgstr ""
+"Kemungkinan besar widget lain mengambil alih fungsi kawasan pemberitahuan. "
+"Kawasan ini akan tidak digunakan."
+
+#: ../plugins/systray/systray.c:852
+msgid "The notification area lost selection"
+msgstr "Kawasan pemberitahuan hilang pemilihan"
+
+#: ../plugins/systray/systray.c:1005
+msgid "Are you sure you want to clear the list of known applications?"
+msgstr ""
+"Adakah anda pasti anda mahu mengosongkan senarai aplikasi yang diketahui?"
+
+#: ../plugins/systray/systray-dialog.glade.h:2
+msgid "C_lear Known Applications"
+msgstr "Kosongkan Ap_likasi Diketahui"
+
+#: ../plugins/systray/systray-dialog.glade.h:3
+msgid "Known Applications"
+msgstr "Aplikasi Diketahui"
+
+#: ../plugins/systray/systray-dialog.glade.h:4
+#: ../plugins/systray/systray.desktop.in.h:2
+msgid "Notification Area"
+msgstr "Kawasan Pemberitahuan"
+
+#: ../plugins/systray/systray-dialog.glade.h:6
+msgid "_Maximum icon size (px):"
+msgstr "Saiz ikon _maksima (px):"
+
+#: ../plugins/systray/systray-manager.c:406
+#, c-format
+msgid "Failed to acquire manager selection for screen %d"
+msgstr "Gagal mendapatkan pengurus seleksi untuk skrin %d"
+
+#: ../plugins/systray/systray.desktop.in.h:1
+msgid "Area where notification icons appear"
+msgstr "Kawasan di mana ikon pemberitahuan muncul"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:1
+msgid "Always"
+msgstr "Sentiasa"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:4
+msgid "D_raw window frame when hovering a button"
+msgstr "L_ukis bingkai tingkap apabila berlegar pada butang"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:6
+msgid "Group title and timestamp"
+msgstr "Kumpul tajuk dan tanda waktu"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:7
+msgid "Group title and window title"
+msgstr "Kumpul tajuk dan tajuk tetingkap"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:8
+msgid "Never"
+msgstr "Jangan"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:9
+msgid "Restore minimized windows to current _workspace"
+msgstr "Kembalikan tetingkap diminima ke ruang kerja _sekarang"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:10
+msgid "Ro_tate buttons in vertical panel"
+msgstr "Pu_tar butang dalam panel menegak"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:11
+msgid "Show _flat buttons"
+msgstr "_Papar butang rata"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:12
+msgid "Show _handle"
+msgstr "Papar pengendali"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:13
+msgid "Show button _labels"
+msgstr "Papar._label butang"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:14
+msgid "Show only _minimized windows"
+msgstr "Papar hanya tetingkap yang di_minimumkan"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:15
+msgid "Show windows from _all workspaces or viewports"
+msgstr "Papar tetingkap dari semua ruang kerja atau _viewport"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:16
+msgid "Show windows from all mo_nitors"
+msgstr "Papar tetingkap dari semua mo_nitor"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:17
+msgid "Sorting _order:"
+msgstr "Terti_b susunan:"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:18
+msgid "Timestamp"
+msgstr "Cap waktu"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:19
+msgid "When space is limited"
+msgstr "Apabila ruang terhad"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:20
+#: ../plugins/tasklist/tasklist.desktop.in.h:2
+msgid "Window Buttons"
+msgstr "Butang Tetingkap"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:21
+msgid "Window _grouping:"
+msgstr "_Kumpulan Tetingkap"
+
+#: ../plugins/tasklist/tasklist-dialog.glade.h:22
+msgid "Window title"
+msgstr "Tajuk tetingkap"
+
+#: ../plugins/tasklist/tasklist-widget.c:3012
+msgid "Mi_nimize All"
+msgstr "Mi_nimakan semua"
+
+#: ../plugins/tasklist/tasklist-widget.c:3021
+msgid "Un_minimize All"
+msgstr "Nyahmi_nimakan semua"
+
+#: ../plugins/tasklist/tasklist-widget.c:3027
+msgid "Ma_ximize All"
+msgstr "Maksima_kan semua"
+
+#: ../plugins/tasklist/tasklist-widget.c:3036
+msgid "_Unmaximize All"
+msgstr "Nyahma_ksimakan semua"
+
+#: ../plugins/tasklist/tasklist-widget.c:3046
+msgid "_Close All"
+msgstr "_Tutup semua"
+
+#: ../plugins/tasklist/tasklist.desktop.in.h:1
+msgid "Switch between open windows using buttons"
+msgstr "Tukar diantara tetingkap menggunakan butang"
+
+#: ../plugins/windowmenu/windowmenu.c:652
+msgid "Desktop"
+msgstr "Desktop"
+
+#: ../plugins/windowmenu/windowmenu.c:1243
+msgid "No Windows"
+msgstr "Tiada Tetingkap"
+
+#: ../plugins/windowmenu/windowmenu.c:1258
+msgid "Urgent Windows"
+msgstr "Tetingkap Penting"
+
+#: ../plugins/windowmenu/windowmenu.c:1300
+msgid "Add Workspace"
+msgstr "Tambah ruang kerja"
+
+#: ../plugins/windowmenu/windowmenu.c:1320
+#, c-format
+msgid "Remove Workspace \"%s\""
+msgstr "Buang ruang kerja \"%s\""
+
+#: ../plugins/windowmenu/windowmenu.c:1322
+#, c-format
+msgid "Remove Workspace %d"
+msgstr "Buang _ruang kerja %d"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:2
+msgid "Arrow"
+msgstr "Anak panah"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:3
+msgid "Button layout:"
+msgstr "Susun atur butang:"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:4
+msgid "Enable _urgency notification"
+msgstr "Membolehkan pemberitah_uan penting"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:6
+msgid "Icon"
+msgstr "Ikon"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:7
+msgid "Show windows from _all workspaces"
+msgstr "Papar tetingkap dari semu_a ruangkerja"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:8
+msgid "Show workspace _names"
+msgstr "Papar _nama ruang kerja"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:9
+msgid "Show workspace a_ctions"
+msgstr "_Papar aksi ruang kerja"
+
+#: ../plugins/windowmenu/windowmenu-dialog.glade.h:10
+#: ../plugins/windowmenu/windowmenu.desktop.in.h:2
+msgid "Window Menu"
+msgstr "Menu Tetingkap"
+
+#: ../plugins/windowmenu/windowmenu.desktop.in.h:1
+msgid "Switch between open windows using a menu"
+msgstr "Tukar diantara tetingkap menggunakan menu"
+
+#~ msgid "Xfce Panel"
+#~ msgstr "Panel Xfce"
+
+#, fuzzy
+#~ msgid "Xfce Menu"
+#~ msgstr "Panel Xfce"
+
+#, fuzzy
+#~ msgid "_Restart"
+#~ msgstr "/_Ulangmula"
+
+#, fuzzy
+#~ msgid "C_ompositing"
+#~ msgstr "Posisi"
+
+#, fuzzy
+#~ msgid "Action Button"
+#~ msgstr "Ikon:"

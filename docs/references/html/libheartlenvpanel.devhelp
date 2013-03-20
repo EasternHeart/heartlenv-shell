@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
+<book xmlns="http://www.devhelp.net/book" title="Libheartlenvpanel Reference Manual" link="index.html" author="Nick Schermer" name="libheartlenvpanel">
+  <chapters>
+    <sub name="Fundamentals" link="libheartlenvpanel-fundamentals.html">
+      <sub name="Version Information" link="libheartlenvpanel-Version-Information.html"/>
+      <sub name="Standard Enumerations" link="libheartlenvpanel-Standard-Enumerations.html"/>
+      <sub name="Commonly used plugin macros" link="libheartlenvpanel-Commonly-used-plugin-macros.html"/>
+    </sub>
+    <sub name="Panel Plugins" link="libheartlenvpanel-plugins.html">
+      <sub name="Register plugins with the panel" link="libheartlenvpanel-plugins.html#libheartlenvpanel-register"/>
+      <sub name="XfcePanelPlugin" link="XfcePanelPlugin.html"/>
+      <sub name="Panel Plugin Register Macros" link="libheartlenvpanel-Panel-Plugin-Register-Macros.html"/>
+      <sub name="Panel Plugin Register Macros (4.6 Style)" link="libheartlenvpanel-Panel-Plugin-Register-Macros-(4.6-Style).html"/>
+      <sub name="GObject Oriented Panel Plugin Registers Macros" link="libheartlenvpanel-GObject-Oriented-Panel-Plugin-Registers-Macros.html"/>
+    </sub>
+    <sub name="Additional Widgets" link="libheartlenvpanel-widgets.html">
+      <sub name="XfceArrowButton" link="XfceArrowButton.html"/>
+      <sub name="XfceHVBox" link="XfceHVBox.html"/>
+      <sub name="XfcePanelImage" link="XfcePanelImage.html"/>
+    </sub>
+    <sub name="Miscelleanous" link="libheartlenvpanel-miscelleanous.html">
+      <sub name="Convenience Functions" link="libheartlenvpanel-Convenience-Functions.html"/>
+    </sub>
+    <sub name="Index of all symbols" link="api-index-full.html"/>
+    <sub name="Index of deprecated symbols" link="api-index-deprecated.html"/>
+    <sub name="Index of new symbols in 4.8" link="api-index-4-8.html"/>
+    <sub name="Index of new symbols in 4.6" link="api-index-4-6.html"/>
+  </chapters>
+  <functions>
+    <function name="libheartlenvpanel_major_version" link="libheartlenvpanel-Version-Information.html#libheartlenvpanel-major-version"/>
+    <function name="libheartlenvpanel_minor_version" link="libheartlenvpanel-Version-Information.html#libheartlenvpanel-minor-version"/>
+    <function name="libheartlenvpanel_micro_version" link="libheartlenvpanel-Version-Information.html#libheartlenvpanel-micro-version"/>
+    <function name="libheartlenvpanel_check_version ()" link="libheartlenvpanel-Version-Information.html#libheartlenvpanel-check-version"/>
+    <function name="LIBXFCE4PANEL_VERSION" link="libheartlenvpanel-Version-Information.html#LIBXFCE4PANEL-VERSION:CAPS"/>
+    <function name="LIBXFCE4PANEL_MAJOR_VERSION" link="libheartlenvpanel-Version-Information.html#LIBXFCE4PANEL-MAJOR-VERSION:CAPS"/>
+    <function name="LIBXFCE4PANEL_MINOR_VERSION" link="libheartlenvpanel-Version-Information.html#LIBXFCE4PANEL-MINOR-VERSION:CAPS"/>
+    <function name="LIBXFCE4PANEL_MICRO_VERSION" link="libheartlenvpanel-Version-Information.html#LIBXFCE4PANEL-MICRO-VERSION:CAPS"/>
+    <function name="LIBXFCE4PANEL_CHECK_VERSION()" link="libheartlenvpanel-Version-Information.html#LIBXFCE4PANEL-CHECK-VERSION:CAPS"/>
+    <function name="enum XfceScreenPosition" link="libheartlenvpanel-Standard-Enumerations.html#XfceScreenPosition"/>
+    <function name="xfce_screen_position_get_orientation()" link="libheartlenvpanel-Standard-Enumerations.html#xfce-screen-position-get-orientation"/>
+    <function name="xfce_screen_position_is_bottom()" link="libheartlenvpanel-Standard-Enumerations.html#xfce-screen-position-is-bottom"/>
+    <function name="xfce_screen_position_is_floating()" link="libheartlenvpanel-Standard-Enumerations.html#xfce-screen-position-is-floating"/>
+    <function name="xfce_screen_position_is_horizontal()" link="libheartlenvpanel-Standard-Enumerations.html#xfce-screen-position-is-horizontal"/>
+    <function name="xfce_screen_position_is_left()" link="libheartlenvpanel-Standard-Enumerations.html#xfce-screen-position-is-left"/>
+    <function name="xfce_screen_position_is_right()" link="libheartlenvpanel-Standard-Enumerations.html#xfce-screen-position-is-right"/>
+    <function name="xfce_screen_position_is_top()" link="libheartlenvpanel-Standard-Enumerations.html#xfce-screen-position-is-top"/>
+    <function name="XFCE_PANEL_CHANNEL_NAME" link="libheartlenvpanel-Commonly-used-plugin-macros.html#XFCE-PANEL-CHANNEL-NAME:CAPS"/>
+    <function name="panel_slice_alloc()" link="libheartlenvpanel-Commonly-used-plugin-macros.html#panel-slice-alloc"/>
+    <function name="panel_slice_alloc0()" link="libheartlenvpanel-Commonly-used-plugin-macros.html#panel-slice-alloc0"/>
+    <function name="panel_slice_free()" link="libheartlenvpanel-Commonly-used-plugin-macros.html#panel-slice-free"/>
+    <function name="panel_slice_free1()" link="libheartlenvpanel-Commonly-used-plugin-macros.html#panel-slice-free1"/>
+    <function name="panel_slice_new()" link="libheartlenvpanel-Commonly-used-plugin-macros.html#panel-slice-new"/>
+    <function name="panel_slice_new0()" link="libheartlenvpanel-Commonly-used-plugin-macros.html#panel-slice-new0"/>
+    <function name="PANEL_PARAM_READABLE" link="libheartlenvpanel-Commonly-used-plugin-macros.html#PANEL-PARAM-READABLE:CAPS"/>
+    <function name="PANEL_PARAM_READWRITE" link="libheartlenvpanel-Commonly-used-plugin-macros.html#PANEL-PARAM-READWRITE:CAPS"/>
+    <function name="PANEL_PARAM_WRITABLE" link="libheartlenvpanel-Commonly-used-plugin-macros.html#PANEL-PARAM-WRITABLE:CAPS"/>
+    <function name="XfcePanelPlugin" link="XfcePanelPlugin.html#XfcePanelPlugin-struct"/>
+    <function name="struct XfcePanelPluginClass" link="XfcePanelPlugin.html#XfcePanelPluginClass"/>
+    <function name="xfce_panel_plugin_get_name ()" link="XfcePanelPlugin.html#xfce-panel-plugin-get-name"/>
+    <function name="xfce_panel_plugin_get_display_name ()" link="XfcePanelPlugin.html#xfce-panel-plugin-get-display-name"/>
+    <function name="xfce_panel_plugin_get_comment ()" link="XfcePanelPlugin.html#xfce-panel-plugin-get-comment"/>
+    <function name="xfce_panel_plugin_get_unique_id ()" link="XfcePanelPlugin.html#xfce-panel-plugin-get-unique-id"/>
+    <function name="xfce_panel_plugin_get_property_base ()" link="XfcePanelPlugin.html#xfce-panel-plugin-get-property-base"/>
+    <function name="xfce_panel_plugin_get_arguments ()" link="XfcePanelPlugin.html#xfce-panel-plugin-get-arguments"/>
+    <function name="xfce_panel_plugin_get_size ()" link="XfcePanelPlugin.html#xfce-panel-plugin-get-size"/>
+    <function name="xfce_panel_plugin_get_expand ()" link="XfcePanelPlugin.html#xfce-panel-plugin-get-expand"/>
+    <function name="xfce_panel_plugin_set_expand ()" link="XfcePanelPlugin.html#xfce-panel-plugin-set-expand"/>
+    <function name="xfce_panel_plugin_get_orientation ()" link="XfcePanelPlugin.html#xfce-panel-plugin-get-orientation"/>
+    <function name="xfce_panel_plugin_get_screen_position ()" link="XfcePanelPlugin.html#xfce-panel-plugin-get-screen-position"/>
+    <function name="xfce_panel_plugin_get_locked ()" link="XfcePanelPlugin.html#xfce-panel-plugin-get-locked"/>
+    <function name="xfce_panel_plugin_take_window ()" link="XfcePanelPlugin.html#xfce-panel-plugin-take-window"/>
+    <function name="xfce_panel_plugin_add_action_widget ()" link="XfcePanelPlugin.html#xfce-panel-plugin-add-action-widget"/>
+    <function name="xfce_panel_plugin_menu_insert_item ()" link="XfcePanelPlugin.html#xfce-panel-plugin-menu-insert-item"/>
+    <function name="xfce_panel_plugin_menu_show_configure ()" link="XfcePanelPlugin.html#xfce-panel-plugin-menu-show-configure"/>
+    <function name="xfce_panel_plugin_menu_show_about ()" link="XfcePanelPlugin.html#xfce-panel-plugin-menu-show-about"/>
+    <function name="xfce_panel_plugin_remove ()" link="XfcePanelPlugin.html#xfce-panel-plugin-remove"/>
+    <function name="xfce_panel_plugin_block_menu ()" link="XfcePanelPlugin.html#xfce-panel-plugin-block-menu"/>
+    <function name="xfce_panel_plugin_unblock_menu ()" link="XfcePanelPlugin.html#xfce-panel-plugin-unblock-menu"/>
+    <function name="xfce_panel_plugin_register_menu ()" link="XfcePanelPlugin.html#xfce-panel-plugin-register-menu"/>
+    <function name="xfce_panel_plugin_arrow_type ()" link="XfcePanelPlugin.html#xfce-panel-plugin-arrow-type"/>
+    <function name="xfce_panel_plugin_position_widget ()" link="XfcePanelPlugin.html#xfce-panel-plugin-position-widget"/>
+    <function name="xfce_panel_plugin_position_menu ()" link="XfcePanelPlugin.html#xfce-panel-plugin-position-menu"/>
+    <function name="xfce_panel_plugin_focus_widget ()" link="XfcePanelPlugin.html#xfce-panel-plugin-focus-widget"/>
+    <function name="xfce_panel_plugin_block_autohide ()" link="XfcePanelPlugin.html#xfce-panel-plugin-block-autohide"/>
+    <function name="xfce_panel_plugin_lookup_rc_file ()" link="XfcePanelPlugin.html#xfce-panel-plugin-lookup-rc-file"/>
+    <function name="xfce_panel_plugin_save_location ()" link="XfcePanelPlugin.html#xfce-panel-plugin-save-location"/>
+    <function name="xfce_panel_plugin_xfconf_channel_new()" link="XfcePanelPlugin.html#xfce-panel-plugin-xfconf-channel-new"/>
+    <function name="xfce_panel_plugin_set_panel_hidden()" link="XfcePanelPlugin.html#xfce-panel-plugin-set-panel-hidden"/>
+    <function name="The &quot;arguments&quot; property" link="XfcePanelPlugin.html#XfcePanelPlugin--arguments"/>
+    <function name="The &quot;comment&quot; property" link="XfcePanelPlugin.html#XfcePanelPlugin--comment"/>
+    <function name="The &quot;display-name&quot; property" link="XfcePanelPlugin.html#XfcePanelPlugin--display-name"/>
+    <function name="The &quot;expand&quot; property" link="XfcePanelPlugin.html#XfcePanelPlugin--expand"/>
+    <function name="The &quot;name&quot; property" link="XfcePanelPlugin.html#XfcePanelPlugin--name"/>
+    <function name="The &quot;orientation&quot; property" link="XfcePanelPlugin.html#XfcePanelPlugin--orientation"/>
+    <function name="The &quot;screen-position&quot; property" link="XfcePanelPlugin.html#XfcePanelPlugin--screen-position"/>
+    <function name="The &quot;size&quot; property" link="XfcePanelPlugin.html#XfcePanelPlugin--size"/>
+    <function name="The &quot;unique-id&quot; property" link="XfcePanelPlugin.html#XfcePanelPlugin--unique-id"/>
+    <function name="The &quot;about&quot; signal" link="XfcePanelPlugin.html#XfcePanelPlugin-about"/>
+    <function name="The &quot;configure-plugin&quot; signal" link="XfcePanelPlugin.html#XfcePanelPlugin-configure-plugin"/>
+    <function name="The &quot;free-data&quot; signal" link="XfcePanelPlugin.html#XfcePanelPlugin-free-data"/>
+    <function name="The &quot;orientation-changed&quot; signal" link="XfcePanelPlugin.html#XfcePanelPlugin-orientation-changed"/>
+    <function name="The &quot;remote-event&quot; signal" link="XfcePanelPlugin.html#XfcePanelPlugin-remote-event"/>
+    <function name="The &quot;removed&quot; signal" link="XfcePanelPlugin.html#XfcePanelPlugin-removed"/>
+    <function name="The &quot;save&quot; signal" link="XfcePanelPlugin.html#XfcePanelPlugin-save"/>
+    <function name="The &quot;screen-position-changed&quot; signal" link="XfcePanelPlugin.html#XfcePanelPlugin-screen-position-changed"/>
+    <function name="The &quot;size-changed&quot; signal" link="XfcePanelPlugin.html#XfcePanelPlugin-size-changed"/>
+    <function name="XfcePanelPluginCheck ()" link="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XfcePanelPluginCheck"/>
+    <function name="XfcePanelPluginFunc ()" link="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XfcePanelPluginFunc"/>
+    <function name="XfcePanelPluginPreInit ()" link="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XfcePanelPluginPreInit"/>
+    <function name="XFCE_PANEL_PLUGIN_REGISTER()" link="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XFCE-PANEL-PLUGIN-REGISTER:CAPS"/>
+    <function name="XFCE_PANEL_PLUGIN_REGISTER_WITH_CHECK()" link="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XFCE-PANEL-PLUGIN-REGISTER-WITH-CHECK:CAPS"/>
+    <function name="XFCE_PANEL_PLUGIN_REGISTER_FULL()" link="libheartlenvpanel-Panel-Plugin-Register-Macros.html#XFCE-PANEL-PLUGIN-REGISTER-FULL:CAPS"/>
+    <function name="XFCE_PANEL_PLUGIN_REGISTER_EXTERNAL()" link="libheartlenvpanel-Panel-Plugin-Register-Macros-(4.6-Style).html#XFCE-PANEL-PLUGIN-REGISTER-EXTERNAL:CAPS"/>
+    <function name="XFCE_PANEL_PLUGIN_REGISTER_EXTERNAL_FULL()" link="libheartlenvpanel-Panel-Plugin-Register-Macros-(4.6-Style).html#XFCE-PANEL-PLUGIN-REGISTER-EXTERNAL-FULL:CAPS"/>
+    <function name="XFCE_PANEL_PLUGIN_REGISTER_EXTERNAL_WITH_CHECK()" link="libheartlenvpanel-Panel-Plugin-Register-Macros-(4.6-Style).html#XFCE-PANEL-PLUGIN-REGISTER-EXTERNAL-WITH-CHECK:CAPS"/>
+    <function name="XFCE_PANEL_PLUGIN_REGISTER_INTERNAL()" link="libheartlenvpanel-Panel-Plugin-Register-Macros-(4.6-Style).html#XFCE-PANEL-PLUGIN-REGISTER-INTERNAL:CAPS"/>
+    <function name="XFCE_PANEL_PLUGIN_REGISTER_INTERNAL_WITH_CHECK()" link="libheartlenvpanel-Panel-Plugin-Register-Macros-(4.6-Style).html#XFCE-PANEL-PLUGIN-REGISTER-INTERNAL-WITH-CHECK:CAPS"/>
+    <function name="XfcePanelTypeModule" link="libheartlenvpanel-GObject-Oriented-Panel-Plugin-Registers-Macros.html#XfcePanelTypeModule"/>
+    <function name="XFCE_PANEL_DEFINE_PLUGIN()" link="libheartlenvpanel-GObject-Oriented-Panel-Plugin-Registers-Macros.html#XFCE-PANEL-DEFINE-PLUGIN:CAPS"/>
+    <function name="XFCE_PANEL_DEFINE_PLUGIN_RESIDENT()" link="libheartlenvpanel-GObject-Oriented-Panel-Plugin-Registers-Macros.html#XFCE-PANEL-DEFINE-PLUGIN-RESIDENT:CAPS"/>
+    <function name="XFCE_PANEL_DEFINE_TYPE()" link="libheartlenvpanel-GObject-Oriented-Panel-Plugin-Registers-Macros.html#XFCE-PANEL-DEFINE-TYPE:CAPS"/>
+    <function name="XFCE_PANEL_DEFINE_PREINIT_FUNC()" link="libheartlenvpanel-GObject-Oriented-Panel-Plugin-Registers-Macros.html#XFCE-PANEL-DEFINE-PREINIT-FUNC:CAPS"/>
+    <function name="XfceArrowButton" link="XfceArrowButton.html#XfceArrowButton-struct"/>
+    <function name="xfce_arrow_button_new ()" link="XfceArrowButton.html#xfce-arrow-button-new"/>
+    <function name="xfce_arrow_button_get_arrow_type ()" link="XfceArrowButton.html#xfce-arrow-button-get-arrow-type"/>
+    <function name="xfce_arrow_button_set_arrow_type ()" link="XfceArrowButton.html#xfce-arrow-button-set-arrow-type"/>
+    <function name="xfce_arrow_button_get_blinking ()" link="XfceArrowButton.html#xfce-arrow-button-get-blinking"/>
+    <function name="xfce_arrow_button_set_blinking ()" link="XfceArrowButton.html#xfce-arrow-button-set-blinking"/>
+    <function name="The &quot;arrow-type&quot; property" link="XfceArrowButton.html#XfceArrowButton--arrow-type"/>
+    <function name="The &quot;arrow-type-changed&quot; signal" link="XfceArrowButton.html#XfceArrowButton-arrow-type-changed"/>
+    <function name="XfceHVBox" link="XfceHVBox.html#XfceHVBox-struct"/>
+    <function name="xfce_hvbox_new ()" link="XfceHVBox.html#xfce-hvbox-new"/>
+    <function name="xfce_hvbox_set_orientation ()" link="XfceHVBox.html#xfce-hvbox-set-orientation"/>
+    <function name="xfce_hvbox_get_orientation ()" link="XfceHVBox.html#xfce-hvbox-get-orientation"/>
+    <function name="XfcePanelImage" link="XfcePanelImage.html#XfcePanelImage-struct"/>
+    <function name="xfce_panel_image_new ()" link="XfcePanelImage.html#xfce-panel-image-new"/>
+    <function name="xfce_panel_image_new_from_pixbuf ()" link="XfcePanelImage.html#xfce-panel-image-new-from-pixbuf"/>
+    <function name="xfce_panel_image_new_from_source ()" link="XfcePanelImage.html#xfce-panel-image-new-from-source"/>
+    <function name="xfce_panel_image_set_from_pixbuf ()" link="XfcePanelImage.html#xfce-panel-image-set-from-pixbuf"/>
+    <function name="xfce_panel_image_set_from_source ()" link="XfcePanelImage.html#xfce-panel-image-set-from-source"/>
+    <function name="xfce_panel_image_set_size ()" link="XfcePanelImage.html#xfce-panel-image-set-size"/>
+    <function name="xfce_panel_image_get_size ()" link="XfcePanelImage.html#xfce-panel-image-get-size"/>
+    <function name="xfce_panel_image_clear ()" link="XfcePanelImage.html#xfce-panel-image-clear"/>
+    <function name="The &quot;pixbuf&quot; property" link="XfcePanelImage.html#XfcePanelImage--pixbuf"/>
+    <function name="The &quot;size&quot; property" link="XfcePanelImage.html#XfcePanelImage--size"/>
+    <function name="The &quot;source&quot; property" link="XfcePanelImage.html#XfcePanelImage--source"/>
+    <function name="The &quot;force-gtk-icon-sizes&quot; style property" link="XfcePanelImage.html#XfcePanelImage--s-force-gtk-icon-sizes"/>
+    <function name="xfce_panel_create_button ()" link="libheartlenvpanel-Convenience-Functions.html#xfce-panel-create-button"/>
+    <function name="xfce_panel_create_toggle_button ()" link="libheartlenvpanel-Convenience-Functions.html#xfce-panel-create-toggle-button"/>
+    <function name="xfce_panel_get_channel_name ()" link="libheartlenvpanel-Convenience-Functions.html#xfce-panel-get-channel-name"/>
+    <function name="xfce_panel_pixbuf_from_source ()" link="libheartlenvpanel-Convenience-Functions.html#xfce-panel-pixbuf-from-source"/>
+    <function name="xfce_allow_panel_customization" link="libheartlenvpanel-Convenience-Functions.html#xfce-allow-panel-customization"/>
+    <function name="xfce_create_panel_button" link="libheartlenvpanel-Convenience-Functions.html#xfce-create-panel-button"/>
+    <function name="xfce_create_panel_toggle_button" link="libheartlenvpanel-Convenience-Functions.html#xfce-create-panel-toggle-button"/>
+  </functions>
+</book>

@@ -1,23 +1,53 @@
-# Point to our macro directory and pick up user flags from the environment
-ACLOCAL_AMFLAGS  = -I m4 ${ACLOCAL_FLAGS}
 
-SUBDIRS = data js src browser-plugin tests po man docs
+SUBDIRS = \
+	libheartlenvpanel \
+	common \
+	panel \
+	plugins \
+	wrapper \
+	migrate \
+	docs \
+	icons \
+	po
 
-EXTRA_DIST =		\
-	.project	\
-	.settings	\
-	autogen.sh	\
-	tools/check-for-missing.py
+distclean-local:
+	rm -rf *.spec *.cache *~
 
-# These are files checked into Git that we don't want to distribute
-DIST_EXCLUDE =					\
-	.gitignore				\
-	heartlenv-shell.doap			\
-	MAINTAINERS				\
-	tools/build/*
+rpm: dist
+	rpmbuild -ta $(PACKAGE)-$(VERSION).tar.gz
+	@rm -f $(PACKAGE)-$(VERSION).tar.gz
 
-distcheck-hook:
-	@echo "Checking disted files against files in git"
-	@$(srcdir)/tools/check-for-missing.py $(srcdir) $(distdir) $(DIST_EXCLUDE)
+desktopdir = $(datadir)/applications
+desktop_in_files = \
+	heartlenv-panel-desktop-handler.desktop.in \
+	heartlenv-panel-preferences.desktop.in
+desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
+@INTLTOOL_DESKTOP_RULE@
 
-DISTCHECK_CONFIGURE_FLAGS = --enable-gtk-doc
+.PHONY: ChangeLog
+
+ChangeLog: Makefile
+	(GIT_DIR=$(top_srcdir)/.git git log xfce-4.6-master..HEAD > .changelog.tmp \
+	&& mv .changelog.tmp ChangeLog; rm -f .changelog.tmp) \
+	|| (touch ChangeLog; echo 'Git directory not found: installing possibly empty changelog.' >&2)
+
+dist-hook: ChangeLog
+
+EXTRA_DIST = \
+	$(desktop_in_files) \
+	intltool-extract.in \
+	intltool-merge.in \
+	intltool-update.in
+
+DISTCLEANFILES = \
+	$(desktop_DATA) \
+	intltool-extract \
+	intltool-merge \
+	intltool-update \
+	intltool-update-tmp
+
+DISTCHECK_CONFIGURE_FLAGS = \
+	--enable-gtk-doc \
+	--enable-gen-doc
+
+# vi:set ts=8 sw=8 noet ai nocindent syntax=automake:

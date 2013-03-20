@@ -1,0 +1,41 @@
+<page xmlns="http://projectmallard.org/1.0/"
+      xmlns:e="http://projectmallard.org/experimental/"
+      type="guide"
+      id="index">
+
+  <info>
+    <title type="link">Xfce Panel</title>
+    <title type="text">Xfce Panel</title>
+    <credit type="author">
+      <name>Nick Schermer</name>
+      <email>nick@xfce.org</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+  <title>Xfce Panel</title>
+
+  <section>
+    <title>Introduction</title>
+    <p>
+      The Xfce panel is part of the Xfce Desktop Environment and features
+      program launchers, panel menus, a clock, a desktop switcher and more.
+      Many aspects of the panel can be configured through graphical dialogs,
+      but also by GTK+ style properties and hidden Xfconf settings.
+    </p>
+    <p>
+      This manual should provide you with all necessary information on
+      how to adjust the panel to your liking.
+    </p>
+  </section>
+
+  <section id="panel" style="2column">
+    <title>Panel</title>
+  </section>
+
+  <section id="plugins" style="2column">
+    <title>Plugins</title>
+  </section>
+</page>
