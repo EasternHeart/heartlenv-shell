@@ -13,9 +13,9 @@ PKG_NAME="heartlenv-shell"
     exit 1
 }
 
-which heartlenv-autogen.sh || {
-    echo "You need to install heartlenv-common from GNOME Git (or from"
+which gnome-autogen.sh || {
+    echo "You need to install gnome-common from GNOME Git (or from"
     echo "your OS vendor's package manager)."
     exit 1
 }
-USE_GNOME2_MACROS=1 USE_COMMON_DOC_BUILD=yes . heartlenv-autogen.sh
+USE_GNOME2_MACROS=1 USE_COMMON_DOC_BUILD=yes . gnome-autogen.sh
